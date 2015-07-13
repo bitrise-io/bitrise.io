@@ -19,6 +19,6 @@ Check out our Sample App repositories:
 - [Specta Sample Project](https://github.com/bitrise-io/sample-test-ios-specta)
 - [Kiwi Smaple Project](https://github.com/bitrise-io/sample-test-ios-kiwi)
 
-Or simply search our GitHub account page for [sample-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=sample-) to "show all".
+Or simply search our GitHub account page for [sample-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=sample-) to see all of our sample projects.
 
-Feel free to fork them and add them to Bitrise.
+Feel free to fork them and test them on Bitrise.
