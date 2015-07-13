@@ -11,4 +11,14 @@ You can find the Step repositories which we maintain and support by searching fo
 
 ## Sample iOS Apps
 
-You can find our Sample App repositories by searching for [sample-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=sample-) on our GitHub account page (github.com/bitrise-io).
+Check out our Sample App repositories:
+
+- [Xcode 7 Sample Project (with UI Testing)](https://github.com/bitrise-io/sample-apps-ios-xcode7)
+- [Quick Sample Project](https://github.com/bitrise-io/sample-test-ios-quick)
+- [XCTest Sample Project](https://github.com/bitrise-io/sample-test-ios-xctest)
+- [Specta Sample Project](https://github.com/bitrise-io/sample-test-ios-specta)
+- [Kiwi Smaple Project](https://github.com/bitrise-io/sample-test-ios-kiwi)
+
+Or simply search our GitHub account page for [sample-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=sample-) to see all of our sample projects.
+
+Feel free to fork them and test them on [Bitrise.io](https://www.bitrise.io).
