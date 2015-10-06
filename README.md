@@ -2,7 +2,7 @@
 
 The purpose of this repository is keep track of public issues related to [Bitrise.io](https://www.bitrise.io).
 
-If you want to **suggest a new feature** you can submit it and vote on others' on [UserVoice](https://bitrise.uservoice.com/), or if you want to **chat** with us you can sign up for our Slack group at [chat.bitrise.io](http://chat.bitrise.io/) or [![Join the chat at https://gitter.im/bitrise-io/bitrise.io](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bitrise-io/bitrise.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) for a quick chat.
+If you want to **suggest a new feature** you can submit it and vote on others' on [UserVoice](https://bitrise.uservoice.com/), or if you want to **chat** with us you can sign up for our Slack group at [chat.bitrise.io](http://chat.bitrise.io/).
 
 ## Our Step repositories
 
