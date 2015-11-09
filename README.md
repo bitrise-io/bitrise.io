@@ -24,3 +24,18 @@ Or simply search our GitHub account page for [sample-](https://github.com/bitris
 **We now started to move our Sample repositories to a dedicated GitHub account: https://github.com/bitrise-samples**
 
 Feel free to fork them and test them on [Bitrise.io](https://www.bitrise.io).
+
+
+## Contribution to bitrise stack tools & steps
+
+If you want to collaborate with us creating useful automation tools and steps please go to the https://github.com/bitrise-io/bitrise-contrib repository and follow the guide.
+
+You can help us work on existing and new Steps or tools, and you can keep track of others' projects through the `contrib` repository (https://github.com/bitrise-io/bitrise-contrib).
+
+
+## Request a tool to be pre-installed
+
+* For OS X you should create an issue or Pull Request at: https://github.com/bitrise-io/osx-box-bootstrap
+* For our Docker based stack you should create an issue or Pull Request at:
+    * for generic tools and configurations (which are not related to Android): https://github.com/bitrise-docker/bitrise-base
+    * for Android related tools and configurations: https://github.com/bitrise-docker/android
