@@ -4,6 +4,11 @@
 #
 
 
+=== Revision / ID ======================
+* BITRISE_OSX_STACK_REV_ID: 2016_01_13_1
+========================================
+
+
 === Pre-installed tool versions ========
 * Go: go version go1.5.2 darwin/amd64
 * Ruby: ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-darwin15]
@@ -17,14 +22,15 @@
 * unzip: UnZip 5.52 of 28 February 2005, by Info-ZIP.  Maintained by C. Spieler.  Send
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 
-* brew: Homebrew 0.9.5 (git revision ef28; last commit 2016-01-07)
+* brew: Homebrew 0.9.5 (git revision 80db; last commit 2016-01-12)
 * xctool: 0.2.7
 * Node.js: v5.4.0
 * NPM: 3.3.12
-* Ansible: ansible 1.9.4
+* Ansible: ansible 2.0.0.0
 * gtimeout: timeout (GNU coreutils) 8.24
 * watchman: 4.1.0
 * flow: Flow, a static type checker for JavaScript, version 0.20.1
+* tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
 --- Bitrise CLI tool versions
 * bitrise: 1.2.4
@@ -38,10 +44,39 @@
 === Ruby GEMs ==========================
 * Bundler: Bundler version 1.11.2
 * CocoaPods: 0.39.0
-* fastlane: fastlane 1.49.0
+* fastlane: fastlane 1.50.0
 * xcpretty: 0.2.2
 * Nomad CLI: 2.4.5.1
 * Nomad CLI IPA / Shenzhen: ipa 0.14.2
+========================================
+
+
+=== Checking Xcode CLT dirs ============
+
+ * ls -alh /usr/include/CommonCrypto
+total 24
+drwxr-xr-x   10 root  wheel   340B Oct 23 14:52 .
+drwxr-xr-x  258 root  wheel   8.6K Jan  8 03:46 ..
+-rw-r--r--    1 root  wheel   1.3K Oct 23 14:52 CommonCrypto.h
+-rw-r--r--    1 root  wheel   2.4K Oct 23 14:52 CommonCryptoError.h
+-rw-r--r--    1 root  wheel    33K Oct 23 14:52 CommonCryptor.h
+-rw-r--r--    1 root  wheel    11K Oct 23 14:52 CommonDigest.h
+-rw-r--r--    1 root  wheel   4.1K Oct 23 14:52 CommonHMAC.h
+-rw-r--r--    1 root  wheel   4.6K Oct 23 14:52 CommonKeyDerivation.h
+-rw-r--r--    1 root  wheel   1.7K Oct 23 14:52 CommonRandom.h
+-rw-r--r--    1 root  wheel   6.1K Oct 23 14:52 CommonSymmetricKeywrap.h
+
+ * ls -alh /Library/Developer/CommandLineTools/
+total 0
+drwxr-xr-x  4 root  admin   136B Nov 17 23:02 .
+drwxr-xr-x  4 root  admin   136B Jan  8 04:42 ..
+drwxr-xr-x  5 root  admin   170B Nov 17 23:11 Library
+drwxr-xr-x  7 root  admin   238B Nov 17 23:06 usr
+
+ * /Library/Developer/CommandLineTools/usr/bin/swift --version
+Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+
 ========================================
 
 
@@ -156,16 +191,16 @@ Software:
       Kernel Version: Darwin 15.2.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vsphere-control-4--host-prebooted_xcode_64_102
+      Computer Name: vsphere-control-3--host-prebooted_xcode_64_102
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
-      Time since boot: 1 day 8:43
+      Time since boot: 32 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2   99Gi   31Gi   68Gi    32% 8205095 17799401   32%   /
+* Free disk space: /dev/disk0s2   99Gi   31Gi   68Gi    32% 8181384 17823112   31%   /
 ========================================
