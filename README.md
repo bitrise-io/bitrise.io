@@ -4,7 +4,9 @@
 
 The purpose of this repository is to keep track of the most important public repositories related to [bitrise.io](https://www.bitrise.io).
 
-If you want to **suggest a new feature**, you can submit an issue here and vote on others' on [UserVoice](https://bitrise.uservoice.com/), or if you want to **chat** with us you can join our Slack team at [chat.bitrise.io](http://chat.bitrise.io/). If you'd like to contribute, read on to find the place you are looking for.
+If you want to **suggest a new feature**, you can submit an issue here and vote on others' on [UserVoice](https://bitrise.uservoice.com/), or if you want to **chat** with us you can join our Slack team at [chat.bitrise.io](http://chat.bitrise.io/). Follow [@bitrise](https://twitter.com/bitrise) on Twitter for #status and step updates 🚀.
+
+If you'd like to contribute, read on to find the repository you are looking for.
 
 ## Our build steps collection
 
