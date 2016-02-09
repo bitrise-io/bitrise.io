@@ -52,7 +52,7 @@ You will run into `stepman` directly most probably when you are sharing your own
 
 All Bitrise CLI tools are written in Go.
 
-## Build machines
+## Stack
 
 ### OS X
 
@@ -64,6 +64,12 @@ You can find all of our bootstrap scripts on the [OS X bootstrap GitHub page](ht
 
 We have a [base image](https://github.com/bitrise-docker/bitrise-base) and an [Android version](https://github.com/bitrise-docker/android) with pre-installed tools for Android builds.
 
+>When a new version of a stack is available there will be a system report generated under the [system_reports](https://github.com/bitrise-io/bitrise.io/blob/master/system_reports) folder of this repository.
+
+## Contribution to Bitrise stack, tools & steps
+
+If you want to collaborate with us creating useful automation tools and steps please go to the [`contrib`](https://github.com/bitrise-io/bitrise-contrib) repository and follow the guides. you can keep track of others' projects there as well.
+
 ### Request a tool to be pre-installed on a build machine
 
 * For OS X you can create an issue or pull request at [`osx-box-bootstrap`](https://github.com/bitrise-io/osx-box-bootstrap)
@@ -71,13 +77,9 @@ We have a [base image](https://github.com/bitrise-docker/bitrise-base) and an [A
     * [`bitrise-base`](https://github.com/bitrise-docker/bitrise-base), for generic tools and configurations (which are not related to Android)
     * [`android`](https://github.com/bitrise-docker/android), for Android related tools and configurations
 
-## Contribution to Bitrise stack, tools & steps
-
-If you want to collaborate with us creating useful automation tools and steps please go to the [`contrib`](https://github.com/bitrise-io/bitrise-contrib) repository and follow the guides. you can keep track of others' projects there as well.
-
 ## Sample Apps
 
-Check out our sample app repositories for a starter.
+Check out our sample app repositories.
 
 **iOS**
 
