@@ -2,42 +2,57 @@
 
 [![Slack channel](http://chat.bitrise.io/badge.svg)](http://chat.bitrise.io)
 
-The purpose of this repository is keep track of public issues related to [Bitrise.io](https://www.bitrise.io).
+The purpose of this repository is to keep track of public issues related to [bitrise.io](https://www.bitrise.io).
 
 If you want to **suggest a new feature** you can submit it and vote on others' on [UserVoice](https://bitrise.uservoice.com/), or if you want to **chat** with us you can sign up for our Slack group at [chat.bitrise.io](http://chat.bitrise.io/).
 
-## Our Step repositories
+## Our step collection
+
+We maintain a [library of Bitrise build steps](https://github.com/bitrise-io/bitrise-steplib), featuring all the [integrations](https://www.bitrise.io/integrations) we deploy to [bitrise.io](https://www.bitrise.io).
+
+You can find all of them under [/steps](https://github.com/bitrise-io/bitrise-steplib/tree/master/steps). To see how to contribute, check
 
 You can find the Step repositories which we maintain and support by searching for [steps-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=steps-) on our GitHub account page (github.com/bitrise-io).
 
+## Sample Apps
 
-## Sample iOS Apps
+Check out our sample app repositories for a starter.
 
-Check out our Sample App repositories:
+**iOS**
 
-- [Xcode 7 Sample Project (with UI Testing)](https://github.com/bitrise-io/sample-apps-ios-xcode7)
-- [Quick Sample Project](https://github.com/bitrise-io/sample-test-ios-quick)
-- [XCTest Sample Project](https://github.com/bitrise-io/sample-test-ios-xctest)
-- [Specta Sample Project](https://github.com/bitrise-io/sample-test-ios-specta)
-- [Kiwi Smaple Project](https://github.com/bitrise-io/sample-test-ios-kiwi)
+- [Xcode 7 sample project (with UI Testing)](https://github.com/bitrise-io/sample-apps-ios-xcode7)
+- [Quick sample project](https://github.com/bitrise-io/sample-test-ios-quick)
+- [XCTest sample project](https://github.com/bitrise-io/sample-test-ios-xctest)
+- [Specta sample project](https://github.com/bitrise-io/sample-test-ios-specta)
+- [Kiwi sample project](https://github.com/bitrise-io/sample-test-ios-kiwi)
+
+**Android**
+
+- [with code sign](https://github.com/bitrise-samples/android-sdk22-code-sign)
+- [without gradlew](https://github.com/bitrise-samples/android-sdk22-no-gradlew)
+
+**Xamarin**
+
+- [Android](https://github.com/bitrise-io/sample-apps-xamarin-android)
+- [iOS](https://github.com/bitrise-io/sample-apps-xamarin-ios)
+
+**React Native**
+
+- [React Native sample project](https://github.com/bitrise-samples/ReactNativeSample)
 
 Or simply search our GitHub account page for [sample-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=sample-) to see all of our sample projects.
 
-**We now started to move our Sample repositories to a dedicated GitHub account: https://github.com/bitrise-samples**
+>We now started to move our Sample repositories to a dedicated GitHub account, check it out here: https://github.com/bitrise-samples
 
-Feel free to fork them and test them on [Bitrise.io](https://www.bitrise.io).
+Feel free to fork and test them on [bitrise.io](https://www.bitrise.io) or locally with the [Bitrise CLI](https://www.bitrise.io/cli).
 
+## Contribution to Bitrise stack tools & steps
 
-## Contribution to bitrise stack tools & steps
+If you want to collaborate with us creating useful automation tools and steps please go to the [`contrib`](https://github.com/bitrise-io/bitrise-contrib) repository and follow the guides. you can keep track of others' projects there as well.
 
-If you want to collaborate with us creating useful automation tools and steps please go to the https://github.com/bitrise-io/bitrise-contrib repository and follow the guide.
+## Request a tool to be pre-installed on a build machine
 
-You can help us work on existing and new Steps or tools, and you can keep track of others' projects through the `contrib` repository (https://github.com/bitrise-io/bitrise-contrib).
-
-
-## Request a tool to be pre-installed
-
-* For OS X you should create an issue or Pull Request at: https://github.com/bitrise-io/osx-box-bootstrap
-* For our Docker based stack you should create an issue or Pull Request at:
-    * for generic tools and configurations (which are not related to Android): https://github.com/bitrise-docker/bitrise-base
-    * for Android related tools and configurations: https://github.com/bitrise-docker/android
+* For OS X you can create an issue or pull request at [`osx-box-bootstrap`](https://github.com/bitrise-io/osx-box-bootstrap)
+* For our Docker based stack you can create an issue or pull request at:
+    * [`bitrise-base`](https://github.com/bitrise-docker/bitrise-base), for generic tools and configurations (which are not related to Android)
+    * [`android`](https://github.com/bitrise-docker/android), for Android related tools and configurations
