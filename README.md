@@ -10,15 +10,23 @@ If you want to **suggest a new feature**, you can submit an issue here and vote 
 
 We maintain a [library of Bitrise build steps](https://github.com/bitrise-io/bitrise-steplib), featuring all the [integrations](https://www.bitrise.io/integrations) we deploy to [bitrise.io](https://www.bitrise.io).
 
-You can find all of them under [/steps](https://github.com/bitrise-io/bitrise-steplib/tree/master/steps).
+### Steps
 
-The step repositories which we maintain and support can be queried by searching for [steps-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=steps-) on our [GitHub page](https://github.com/bitrise-io).
+A step is a script with a corresponding `yml` that conforms to the formatting and naming conventions of the StepLib.
+
+You can find all our steps' `yml`s under [/steps](https://github.com/bitrise-io/bitrise-steplib/tree/master/steps).
+
+The repositories of steps which we maintain and support can be queried by searching for [steps-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=steps-) on our [GitHub page](https://github.com/bitrise-io).
+
+### Scripts
+
+We have most of our scripts written in Go and bash, but it's possible to write it in any language our machines have installed like Ruby or Node.js.
 
 > You can create a StepLib independently from Bitrise anytime, you will be able to use our CLI tools to maintain it, they are not tied to *our StepLib*.
 
 ## Bitrise CLI tools
 
-Check out our [CLI's page](https://www.bitrise.io/cli) for a nice intro about why is it so great to have Bitrise installed on your machine.
+Check out our [CLI's page](https://www.bitrise.io/cli) for a nice intro about why is it helpful to have Bitrise installed on your machine.
 
 ### Bitrise
 
@@ -37,6 +45,10 @@ Or `curl` down the latest version with the help of our guide on the [releases pa
 [`stepman`](https://github.com/bitrise-io/stepman) is our solution to manage decentralized StepLib step (script) collections.
 
 You will run into `stepman` directly most probably when you are sharing your own step to a StepLib.
+
+>We have a collection of useful tools under the [bitrise-tools](https://github.com/bitrise-tools) account. Not all of them part of the Bitrise CLI family, but are connected to our technology.
+
+All Bitrise CLI tools are written in Go.
 
 ## Build machines
 
@@ -60,14 +72,6 @@ We have a [base image](https://github.com/bitrise-docker/bitrise-base) and an [A
 ## Contribution to Bitrise stack, tools & steps
 
 If you want to collaborate with us creating useful automation tools and steps please go to the [`contrib`](https://github.com/bitrise-io/bitrise-contrib) repository and follow the guides. you can keep track of others' projects there as well.
-
-## Other useful tools
-
-We have a collection of useful tools under the [bitrise-tools](https://github.com/bitrise-tools) account.
-
-### codesigndoc
-
-[`codesigndoc`](https://github.com/bitrise-tools/codesigndoc) is a command line tool for fixing your code sign issues when trying to export the right identity and provisioning profile of your app for a CI for example.
 
 ## Sample Apps
 
