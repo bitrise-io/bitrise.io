@@ -91,8 +91,8 @@ Check out our sample app repositories.
 
 **Android**
 
-- [with code sign](https://github.com/bitrise-samples/android-sdk22-code-sign)
-- [without gradlew](https://github.com/bitrise-samples/android-sdk22-no-gradlew)
+- [Android sample project](https://github.com/bitrise-samples/sample-apps-android-sdk22)
+- [sample project with code sign](https://github.com/bitrise-samples/android-sdk22-code-sign)
 
 **Xamarin**
 
