@@ -68,7 +68,7 @@ We have a [base image](https://github.com/bitrise-docker/bitrise-base) and an [A
 
 ## Contribution to Bitrise stack, tools & steps
 
-If you want to collaborate with us creating useful automation tools and steps please go to the [`contrib`](https://github.com/bitrise-io/bitrise-contrib) repository and follow the guides. you can keep track of others' projects there as well.
+If you want to collaborate with us creating useful automation tools and steps please go to the [`contrib`](https://github.com/bitrise-io/bitrise-contrib) repository and follow the guides. You can keep track of others' projects there as well.
 
 ### Request a tool to be pre-installed on a build machine
 
