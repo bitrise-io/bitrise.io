@@ -5,33 +5,38 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: 2016_01_28_1
+* BITRISE_OSX_STACK_REV_ID: 2016_02_24_2
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.5.3 darwin/amd64
+* Go: go version go1.6 darwin/amd64
 * Ruby: ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-darwin15]
 * Python: Python 2.7.10
+java version "1.8.0_74"
+Java(TM) SE Runtime Environment (build 1.8.0_74-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 25.74-b02, mixed mode)
+* Java:
 
-* git: git version 2.7.0
-* mercurial/hg: Mercurial Distributed SCM (version 3.7)
+* git: git version 2.7.3
+* mercurial/hg: Mercurial Distributed SCM (version 3.7.2)
 * curl: curl 7.43.0 (x86_64-apple-darwin15.0) libcurl/7.43.0 SecureTransport zlib/1.2.5
 * wget: GNU Wget 1.17.1 built on darwin15.2.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 5.52 of 28 February 2005, by Info-ZIP.  Maintained by C. Spieler.  Send
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 
-* brew: Homebrew 0.9.5 (git revision e15a; last commit 2016-02-03)
-* xctool: 0.2.7
-* Node.js: v5.5.0
-* NPM: 3.5.3
-* Ansible: ansible 2.0.0.2
+* brew: Homebrew 0.9.5 (git revision a2b9; last commit 2016-03-17)
+* xctool: 0.2.8
+* Node.js: v5.9.0
+* NPM: 3.7.3
+* Ansible: ansible 2.0.1.0
 * gtimeout: timeout (GNU coreutils) 8.25
-* watchman: 4.1.0
-* flow: Flow, a static type checker for JavaScript, version 0.21.0
+* watchman: 4.4.0
+* flow: Flow, a static type checker for JavaScript, version 0.22.1
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
-* carthage: 0.12.0
+* carthage: 0.15.1
+* wine: wine-1.8.1
 
 --- Bitrise CLI tool versions
 * bitrise: 1.2.4
@@ -45,7 +50,7 @@
 === Ruby GEMs ==========================
 * Bundler: Bundler version 1.11.2
 * CocoaPods: 0.39.0
-* fastlane: fastlane 1.57.0
+* fastlane: fastlane 1.66.0
 * xcpretty: 0.2.2
 * Nomad CLI: 2.4.5.1
 * Nomad CLI IPA / Shenzhen: ipa 0.14.2
@@ -115,8 +120,8 @@ watchOS Simulator SDKs:
 
 * Available Simulators:
 Could not find service "com.apple.CoreSimulator.CoreSimulatorService" in domain for uid: 501
-2016-02-04 01:35:39.564 simctl[799:4102] launchctl print returned an error code: 28928
-2016-02-04 01:35:39.564 simctl[799:4102] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
+2016-03-18 02:46:25.019 simctl[805:4130] launchctl print returned an error code: 28928
+2016-03-18 02:46:25.019 simctl[805:4130] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
 == Device Types ==
 iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
 iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
@@ -257,7 +262,7 @@ Software:
       Kernel Version: Darwin 15.2.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vsphere-control-4--host-ondemand_internal_test
+      Computer Name: control-staging-1--host-ondemand_internal_test
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
@@ -268,14 +273,54 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2   99Gi   71Gi   28Gi    72% 18677075 7327421   72%   /
+* Free disk space: /dev/disk0s2   99Gi   75Gi   24Gi    76% 19652624 6351872   76%   /
 ========================================
 
 Warning: tree-1.7.0 already installed
 
 === Xamarin specific ===================
 
+--- Xamarin
+
+* Xamarin Studio
+Release ID: 600004801
+Git revision: f73f730c738baf8701a5892b7af64fd468d1dc0c
+Build date: 2016-03-14 14:28:06-04
+
+* Xamarin.Android
+mandroid 6.1.0.177246193 Starter
+
+* Xamarin.iOS
+mtouch 9.8.0.58 (master: fa3b68c)
+
 --- Android
+
+* ANDROID_HOME:
+total 8
+drwxr-xr-x  11 vagrant  staff   374B Mar 17 08:34 .
+drwxr-xr-x   5 vagrant  staff   170B Mar 17 10:24 ..
+-rw-r--r--   1 vagrant  staff   1.1K Oct 13 18:58 SDK Readme.txt
+drwxr-xr-x   3 vagrant  staff   102B Mar 17 08:34 add-ons
+drwxr-xr-x  10 vagrant  staff   340B Mar 17 08:38 build-tools
+drwxr-xr-x   4 vagrant  staff   136B Mar 17 08:42 extras
+drwxr-xr-x  13 vagrant  staff   442B Mar 17 08:34 platform-tools
+drwxr-xr-x  11 vagrant  staff   374B Mar 17 08:37 platforms
+drwxr-xr-x   8 vagrant  staff   272B Mar 17 08:41 system-images
+drwxr-xr-x   2 vagrant  staff    68B Mar 17 08:42 temp
+drwxr-xr-x  31 vagrant  staff   1.0K Mar 17 06:34 tools
+
+* platform-tools:
+NOTICE.txt
+adb
+api
+dmtracedump
+etc1tool
+fastboot
+hprof-conv
+lib64
+source.properties
+sqlite3
+systrace
 
 * build-tools:
 17.0.0
@@ -285,6 +330,7 @@ Warning: tree-1.7.0 already installed
 22.0.1
 23.0.1
 23.0.2
+24.0.0-preview
 
 * extras:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/extras
@@ -297,6 +343,9 @@ Warning: tree-1.7.0 already installed
 
 6 directories, 0 files
 
+* extra-android-support package version:
+Pkg.Revision=23.2.1
+
 * platforms:
 android-10
 android-15
@@ -306,6 +355,7 @@ android-20
 android-21
 android-22
 android-23
+android-N
 
 * system-images:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/system-images
