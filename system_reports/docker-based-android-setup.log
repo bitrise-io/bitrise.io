@@ -41,7 +41,7 @@
 
 === Linux info =========================
 * uname -a
-Linux ec6b812c7dc3 3.19.0-33-generic #38~14.04.1-Ubuntu SMP Fri Nov 6 18:17:28 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+Linux fae306531caa 3.19.0-33-generic #38~14.04.1-Ubuntu SMP Fri Nov 6 18:17:28 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 3.19.0-33-generic
 * lsb_release --all
@@ -65,25 +65,25 @@ Execution Driver: native-0.2
 Logging Driver: json-file
 Plugins:
  Volume: local
- Network: host bridge null
+ Network: null host bridge
 Kernel Version: 3.19.0-33-generic
 Operating System: Ubuntu 14.04.3 LTS
 OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
-Name: br-build-cont-us-cent1c-b1-1--host-preboot-android-005
-ID: VVSD:EI7K:3TQP:YRWL:QHFY:EQP4:JGBP:EX5Q:RX5L:HNMD:6WZE:YKXM
+Name: br-build-cont-us-cent1c-b1-stage--host-ondem-int-test-001
+ID: NG33:DWHA:2TU2:3DI6:EYSO:P3ZK:6CPH:QMOL:PPHN:APS7:ZBXK:HT5T
+WARNING: No swap limit support
 ========================================
 
 
 === System infos =======================
-WARNING: No swap limit support
 * Free disk space: /dev/loop0       40G   18G   22G  45% /
 * Free RAM & swap:
              total       used       free     shared    buffers     cached
-Mem:          7.3G       1.9G       5.4G       356K       115M       1.6G
--/+ buffers/cache:       266M       7.0G
+Mem:          7.3G       721M       6.6G       344K        11M       576M
+-/+ buffers/cache:       134M       7.2G
 Swap:           0B         0B         0B
 ========================================
 
@@ -98,18 +98,55 @@ Swap:           0B         0B         0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: 2016_03_11_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: 2016_03_17_1
 ========================================
 
 
 === Pre-installed tool versions ========
-* Gradle: Gradle 2.11
+* Gradle: Gradle 2.12
 * Maven: Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T16:41:47+00:00)
 * Java: javac 1.7.0_95
 ========================================
 
 
+=== Testing Android tools ==============
+ * adb path:
+/opt/android-sdk-linux/platform-tools/adb
+
+ * adb version:
+Android Debug Bridge version 1.0.32
+Revision 09a0d98bebce-android
+========================================
+
+
 === Android tools/dirs =================
+
+* ANDROID_HOME:
+total 4.0K
+drwxrwxr-x 1 249512 5000  166 Mar 18 10:43 .
+drwxr-xr-x 1 root   root   56 Mar 18 11:31 ..
+drwxrwxr-x 1 249512 5000    0 Oct 14 01:57 add-ons
+drwxr-xr-x 1 root   root  112 Mar 18 10:43 build-tools
+drwxr-xr-x 1 root   root   26 Mar 18 10:49 extras
+drwxrwxr-x 1 249512 5000  178 Mar 18 10:40 platforms
+drwxr-xr-x 1 root   root  180 Mar 18 10:36 platform-tools
+-rw-rw-r-- 1 249512 5000 1.2K Oct 14 01:57 SDK Readme.txt
+drwxr-xr-x 1 root   root  120 Mar 18 10:48 system-images
+drwxr-xr-x 1 root   root    0 Mar 18 10:36 temp
+drwxr-xr-x 1 249512 5000  728 Oct 14 08:02 tools
+
+* platform-tools:
+adb
+api
+dmtracedump
+etc1tool
+fastboot
+hprof-conv
+lib64
+NOTICE.txt
+source.properties
+sqlite3
+systrace
 
 * build-tools:
 17.0.0
@@ -119,6 +156,7 @@ Swap:           0B         0B         0B
 22.0.1
 23.0.1
 23.0.2
+24.0.0-preview
 
 * extras:
 /opt/android-sdk-linux/extras
@@ -143,6 +181,7 @@ android-20
 android-21
 android-22
 android-23
+android-N
 
 * system-images:
 /opt/android-sdk-linux/system-images
