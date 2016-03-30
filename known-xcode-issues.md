@@ -117,8 +117,9 @@ as simple as `xcodebuild -list`.
 
 ## Build hangs
 
-This is not Xcode related, but might be triggered by something in your
-project when it runs in an Xcode step (Xcode Test, Xcode Archive, ...),
-for example if you have a Run Phase Script in your Xcode project.
+It might also not Xcode related, but might be caused by something in your
+project when it runs in an Xcode step (Xcode Test, Xcode Archive, ...).
+For example if you have a Run Phase Script in your Xcode project, that will
+run during Xcode build/test/archive.
 
 You can find pointers to identify and solve the issue [on our DevCenter](http://devcenter.bitrise.io/docs/step-hangs-times-out-after-a-period-without-any-logs-on-bitrise).
