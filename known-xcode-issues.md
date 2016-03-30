@@ -10,7 +10,7 @@ how your builds are running on [bitrise.io](https://www.bitrise.io)),
 MacBook Airs, Mac Minis with HDD storage, ...
 
 This issue is not Bitrise specific, it can happen even if you use
-[Apple's Xcode Bots CI server](http://www.openradar.me/23386199) on non SSH
+[Apple's Xcode Bots CI server](http://www.openradar.me/23386199) on *non SSD*
 Mac Mini.
 
 Examples:
