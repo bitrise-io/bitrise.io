@@ -83,7 +83,7 @@ A quick summary:
   (if you use the Xcode Test step you can set `xcodebuild` as the "Output Tool" option/input
   to not to format the log produced by `xcodebuild`). The cause is: `xcpretty` sometimes
   omits the error message in it's output. [Related GitHub issue](https://github.com/bitrise-io/bitrise.io/issues/27).
-* If you don't use our Xcode Test step to run your UI Test you should try to run
+* If you don't use our `Xcode Test` step to run your UI Test you should try to run
   it with our Xcode Test step. We always try to improve the reliability of the step,
   implementing known workarounds for common issues.
 * If you use our Xcode Test step: make sure you use the latest version, as it
