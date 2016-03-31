@@ -18,6 +18,10 @@ Examples:
 * UI Tests fail to start
 * One or more UI Test case hangs
 
+Related links & reports:
+
+* [XCode bot error: Early unexpected exit, operation never finished bootstrapping](http://stackoverflow.com/questions/36312500/xcode-bot-error-early-unexpected-exit-operation-never-finished-bootstrapping)
+
 ### Possible solutions
 
 * Try another Xcode version.
