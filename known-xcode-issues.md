@@ -32,6 +32,7 @@ Related links & reports:
   try it with "iPhone 6s Plus")
 * Some users had success with splitting the tests into multiple Schemes,
   and running those separately, with separate Test steps.
+  * A great article about splitting tests into multiple Schemes: [http://artsy.github.io/blog/2016/04/06/Testing-Schemes](http://artsy.github.io/blog/2016/04/06/Testing-Schemes)
 
 
 ## Flaky UI tests, UI test cases failing randomly
