@@ -32,6 +32,7 @@ Related links & reports:
   try it with "iPhone 6s Plus")
 * Some users had success with splitting the tests into multiple Schemes,
   and running those separately, with separate Test steps.
+  * A great article about splitting tests into multiple Schemes: [http://artsy.github.io/blog/2016/04/06/Testing-Schemes](http://artsy.github.io/blog/2016/04/06/Testing-Schemes)
 
 
 ## Flaky UI tests, UI test cases failing randomly
@@ -103,6 +104,7 @@ A quick summary:
 * We received reports that this might also be caused by Code Coverage report generation,
   you can disable the `Generate code coverage files?` option of the Xcode Test step
   to not to generate Code Coverage files.
+* If the previous steps did not help, you should check the whole discussion and suggested solutions at: [https://github.com/bitrise-io/bitrise.io/issues/5](https://github.com/bitrise-io/bitrise.io/issues/5)
 
 
 ## Every/Any Xcode command hangs
