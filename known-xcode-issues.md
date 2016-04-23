@@ -107,7 +107,11 @@ A quick summary:
 * If the previous steps did not help, you should check the whole discussion and suggested solutions at: [https://github.com/bitrise-io/bitrise.io/issues/5](https://github.com/bitrise-io/bitrise.io/issues/5)
 
 
-## Every/Any Xcode command hangs
+## Issues which occur with the Xcode Command Line Tools (`xcodebuild`), but not with Xcode.app
+
+* [xcodebuild hangs when a test causes EXC_BAD_ACCESS kernel exception](https://openradar.appspot.com/24222858)
+
+#### Every/Any Xcode command hangs
 
 This is a rare issue, caused by running a **non shared Scheme**.
 
@@ -119,7 +123,7 @@ of an error message.
 If this is the case then any `xcodebuild` command will hang, even something
 as simple as `xcodebuild -list`.
 
-### Solution
+##### Solution
 
 [Make sure that you marked the Scheme as shared, and that you actually committed & pushed it into your repository](http://devcenter.bitrise.io/v1.0/docs/scheme-cannot-be-found).
 
