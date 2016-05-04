@@ -87,13 +87,14 @@ If you want to collaborate with us creating useful automation tools and steps pl
 * [bitrise-tools](https://github.com/bitrise-tools)
 * [bitrise-core](https://github.com/bitrise-core)
 * [bitrise-docker](https://github.com/bitrise-docker)
+* [bitrise-samples](https://github.com/bitrise-samples)
 
 ### Aggregated Issue and Pull Request lists
 
 Aggregated Issue and Pull Request lists, related to the Bitrise CLI tools, stacks and official steps (*You have to be logged in on GitHub to be able to access the aggregated lists / searches*):
 
-* [Open Pull Requests across the Bitrise CLI tools, stacks and official steps](https://github.com/pulls?utf8=✓&q=is%3Apr+user%3Abitrise-docker+user%3Abitrise-steplib+user%3Abitrise-io+user%3Abitrise-core+user%3Abitrise-tools+is%3Aopen+)
-* [Open Issues across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=✓&q=is%3Aissue+user%3Abitrise-docker+user%3Abitrise-steplib+user%3Abitrise-io+user%3Abitrise-tools+user%3Abitrise-core+is%3Aopen+)
+* [Open Pull Requests across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=✓&q=is%3Aopen+is%3Apr+user%3Abitrise-io+user%3Abitrise-steplib+user%3Abitrise-tools+user%3Abitrise-core+user%3Abitrise-docker+user%3Abitrise-samples)
+* [Open Issues across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=✓&q=is%3Aopen+is%3Aissues+user%3Abitrise-io+user%3Abitrise-steplib+user%3Abitrise-tools+user%3Abitrise-core+user%3Abitrise-docker+user%3Abitrise-samples)
 
 ## Sample Apps
 
