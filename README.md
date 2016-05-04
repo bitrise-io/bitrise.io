@@ -88,6 +88,8 @@ If you want to collaborate with us creating useful automation tools and steps pl
 * [bitrise-core](https://github.com/bitrise-core)
 * [bitrise-docker](https://github.com/bitrise-docker)
 
+### Aggregated Issue and Pull Request lists
+
 Aggregated Issue and Pull Request lists, related to the Bitrise CLI tools, stacks and official steps (*You have to be logged in on GitHub to be able to access the aggregated lists / searches*):
 
 * [Open Pull Requests across the Bitrise CLI tools, stacks and official steps](https://github.com/pulls?utf8=✓&q=is%3Apr+user%3Abitrise-docker+user%3Abitrise-steplib+user%3Abitrise-io+user%3Abitrise-core+user%3Abitrise-tools+is%3Aopen+)
