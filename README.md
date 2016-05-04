@@ -4,9 +4,11 @@
 
 The purpose of this repository is to keep track of the most important public repositories related to [bitrise.io](https://www.bitrise.io).
 
-If you want to **suggest a new feature**, you can submit an issue here and vote on others' on [UserVoice](https://bitrise.uservoice.com/), or if you want to **chat** with us you can join our Slack team at [chat.bitrise.io](http://chat.bitrise.io/). Follow [@bitrise](https://twitter.com/bitrise) on Twitter for #status and step updates 🚀.
+If you want to **suggest a new feature**, you can submit it and vote on others' on [UserVoice](https://bitrise.uservoice.com/), or if you want to **chat** with us you can join our Slack team at [chat.bitrise.io](http://chat.bitrise.io/). Follow [@bitrise](https://twitter.com/bitrise) on Twitter for #status and step updates 🚀.
 
-If you'd like to contribute, read on to find the repository you are looking for.
+**If you want to report an issue** you can do that by creating a GitHub issue in the related repository. If it's related to a specific Step, you should report it on the Step's GitHub page. If it's related to the Bitrise CLI you can do that on the [Bitrise CLI's GitHub page](https://github.com/bitrise-io/bitrise). If you want to share private information with us, please contact us through email or through the on-site chat on [bitrise.io](https://www.bitrise.io) (You have to be logged in to see the chat icon at the bottom right corner. Note: some Ad Blockers might block the chat widget).
+
+**If you'd like to contribute**, read on to find the repository you are looking for.
 
 ## Our build steps collection
 
@@ -76,6 +78,20 @@ If you want to collaborate with us creating useful automation tools and steps pl
 * For our Docker based stack you can create an issue or pull request at:
     * [`bitrise-base`](https://github.com/bitrise-docker/bitrise-base), for generic tools and configurations (which are not related to Android)
     * [`android`](https://github.com/bitrise-docker/android), for Android related tools and configurations
+
+
+## List of official Bitrise organizations on GitHub
+
+* [bitrise-io](https://github.com/bitrise-io)
+* [bitrise-steplib](https://github.com/bitrise-steplib)
+* [bitrise-tools](https://github.com/bitrise-tools)
+* [bitrise-core](https://github.com/bitrise-core)
+* [bitrise-docker](https://github.com/bitrise-docker)
+
+Aggregated Issue and Pull Request lists, related to the Bitrise CLI tools, stacks and official steps (*You have to be logged in on GitHub to be able to access the aggregated lists / searches*):
+
+* [Open Pull Requests across the Bitrise CLI tools, stacks and official steps](https://github.com/pulls?utf8=✓&q=is%3Apr+user%3Abitrise-docker+user%3Abitrise-steplib+user%3Abitrise-io+user%3Abitrise-core+user%3Abitrise-tools+is%3Aopen+)
+* [Open Issues across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=✓&q=is%3Aissue+user%3Abitrise-docker+user%3Abitrise-steplib+user%3Abitrise-io+user%3Abitrise-tools+user%3Abitrise-core+is%3Aopen+)
 
 ## Sample Apps
 
