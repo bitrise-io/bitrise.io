@@ -33,6 +33,7 @@ Related links & reports:
 * Some users had success with splitting the tests into multiple Schemes,
   and running those separately, with separate Test steps.
   * A great article about splitting tests into multiple Schemes: [http://artsy.github.io/blog/2016/04/06/Testing-Schemes](http://artsy.github.io/blog/2016/04/06/Testing-Schemes)
+* Others reported that if you add a delay after `app.launch()` it can leave enough time for Xcode / the iOS Simulator to initialize the Accessibility labels, so that UI Tests can properly find the elements by the Accessibility labels.
 
 
 ## Flaky UI tests, UI test cases failing randomly
