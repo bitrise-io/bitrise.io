@@ -111,6 +111,7 @@ A quick summary:
 ## Issues which occur with the Xcode Command Line Tools (`xcodebuild`), but not with Xcode.app
 
 * [xcodebuild hangs when a test causes EXC_BAD_ACCESS kernel exception](https://openradar.appspot.com/24222858)
+  * Note: this can happen only on sime iOS Simulators / iOS versions too, e.g. if the app only crashes on iOS 8, but not on iOS 9
 
 #### Every/Any Xcode command hangs
 
