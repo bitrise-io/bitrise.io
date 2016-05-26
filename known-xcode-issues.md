@@ -1,5 +1,8 @@
 # Known Xcode (`xcodebuild`) issues
 
+**Feel free to add your comments to this list.** [You can do it directly on GitHub, by clicking this link](https://github.com/bitrise-io/bitrise.io/edit/master/known-xcode-issues.md), just don't forget to send it as a Pull Request ;)
+
+
 ## Performance related
 
 *Note: mainly affects UI tests.*
