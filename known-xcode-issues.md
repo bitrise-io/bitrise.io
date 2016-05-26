@@ -99,6 +99,7 @@ A quick summary:
   might include additional workarounds / fixes.
 * Try [another Xcode version](http://devcenter.bitrise.io/docs/available-stacks#section-how-to-switch-to-the-new-beta-stacks),
   there are issues which are present in one Xcode version but not in another one.
+* Make sure your desired [Xcode scheme is shared](http://devcenter.bitrise.io/docs/scheme-cannot-be-found). Don't forget to commit and push the changes if you just enabled it.
 * It might also be a [project configuration issue in your Xcode project](https://github.com/bitrise-io/bitrise.io/issues/5#issuecomment-140188658),
   or a [code issue in your tests](https://github.com/bitrise-io/bitrise.io/issues/5#issuecomment-160171566),
   or a [multi threading issue in your code](https://github.com/bitrise-io/bitrise.io/issues/5#issuecomment-190163069).
