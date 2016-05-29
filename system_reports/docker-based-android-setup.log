@@ -15,7 +15,7 @@
 === Pre-installed tool versions ========
 * Go: go version go1.6.2 linux/amd64
 * Ruby: ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
-  * bundler: Bundler version 1.12.4
+  * bundler: Bundler version 1.12.3
 * Python: Python 2.7.6
 
 * git: git version 1.9.1
@@ -26,7 +26,7 @@
 * unzip: UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: tar (GNU tar) 1.27.1
-* tree: tree v1.6.0 (c) 1996 - 2011 by Steve Baker, Thomas Moore, Francesc Rocher, Kyosuke Tokoro 
+* tree: tree v1.6.0 (c) 1996 - 2011 by Steve Baker, Thomas Moore, Francesc Rocher, Kyosuke Tokoro
 
 * sudo: Sudo version 1.8.9p5
 
@@ -42,9 +42,9 @@
 
 === Linux info =========================
 * uname -a
-Linux fc9eb3187d0c 3.19.0-33-generic #38~14.04.1-Ubuntu SMP Fri Nov 6 18:17:28 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+Linux 90bb3eeec99d 3.19.0-59-generic #66~14.04.1-Ubuntu SMP Fri May 13 17:27:10 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
-3.19.0-33-generic
+3.19.0-59-generic
 * lsb_release --all
 Distributor ID:	Ubuntu
 Description:	Ubuntu 14.04.4 LTS
@@ -55,36 +55,35 @@ No LSB modules are available.
 
 
 === Docker info ========================
-WARNING: No swap limit support
 Containers: 1
  Running: 1
  Paused: 0
  Stopped: 0
 Images: 3
-Server Version: 1.10.3
+Server Version: 1.11.1
 Storage Driver: btrfs
-Execution Driver: native-0.2
 Logging Driver: json-file
-Plugins: 
+Plugins:
  Volume: local
- Network: bridge null host
-Kernel Version: 3.19.0-33-generic
-Operating System: Ubuntu 14.04.3 LTS
+ Network: host bridge null
+Kernel Version: 3.19.0-59-generic
+Operating System: Ubuntu 14.04.4 LTS
 OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
-Name: br-build-cont-us-cent1c-b5-stage--host-ondem-int-test-001
-ID: JB4R:3HFF:IBHI:ISL2:5WOT:AA2H:MNIV:JSIC:3ZIS:W2MK:KOCJ:KWMP
+Name: br-build-cont-us-cent1c-b6-stage--host-ondem-int-test-001
+ID: AHH7:6J3X:PII3:6PAL:K4XK:YD3K:I3XZ:UNET:HHCS:FMCK:JS4Y:OKG5
+WARNING: No swap limit support
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/loop0       40G   18G   22G  46% /
+* Free disk space: /dev/loop0       40G   20G   20G  50% /
 * Free RAM & swap:
              total       used       free     shared    buffers     cached
-Mem:          7.3G       730M       6.6G       348K        11M       586M
--/+ buffers/cache:       132M       7.2G
+Mem:          7.3G       741M       6.6G       396K        10M       592M
+-/+ buffers/cache:       138M       7.2G
 Swap:           0B         0B         0B
 ========================================
 
@@ -99,14 +98,14 @@ Swap:           0B         0B         0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: 2016_04_09_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: 2016_05_26_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.13
 * Maven: Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T16:41:47+00:00)
-* Fastlane: fastlane 1.89.0
+* Fastlane: fastlane 1.91.0
 * Java: javac 1.7.0_101
 ========================================
 
@@ -220,5 +219,5 @@ android-N
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: 2016_01_10_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: 2016_05_26_1
 ========================================
