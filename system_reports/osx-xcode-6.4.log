@@ -13,6 +13,7 @@
 * Go: go version go1.5.2 darwin/amd64
 * Ruby: ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-darwin15]
 * Python: Python 2.7.10
+* Java: No Java runtime present, requesting install.
 
 * git: git version 2.7.0
 * mercurial/hg: Mercurial Distributed SCM (version 3.6.3)
@@ -22,8 +23,8 @@
 * unzip: UnZip 5.52 of 28 February 2005, by Info-ZIP.  Maintained by C. Spieler.  Send
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 
-* brew: Homebrew 0.9.9 (git revision 9378; last commit 2016-04-27)
-Homebrew/homebrew-core (git revision 0485; last commit 2016-04-28)
+* brew: Homebrew 0.9.9 (git revision 0123e; last commit 2016-05-20)
+Homebrew/homebrew-core (git revision c977; last commit 2016-05-21)
 * xctool: 0.2.7
 * Node.js: v5.4.0
 * NPM: 3.3.12
@@ -31,11 +32,15 @@ Homebrew/homebrew-core (git revision 0485; last commit 2016-04-28)
 * gtimeout: timeout (GNU coreutils) 8.24
 * watchman: 4.1.0
 * flow: Flow, a static type checker for JavaScript, version 0.20.1
-* tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
+* tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
+./system_report.sh: line 52: carthage: command not found
+* carthage: 
+./system_report.sh: line 53: wine: command not found
+* wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.3.3
-* stepman: 0.9.18
+* bitrise: 1.3.4
+* stepman: 0.9.19
 * envman: 1.1.0
 * bitrise-bridge: 0.9.8
 * cmd-bridge: 0.9.4
@@ -56,23 +61,23 @@ Homebrew/homebrew-core (git revision 0485; last commit 2016-04-28)
 
  * ls -alh /usr/include/CommonCrypto
 total 24
-drwxr-xr-x   10 root  wheel   340B Oct 23 14:52 .
+drwxr-xr-x   10 root  wheel   340B Oct 23  2015 .
 drwxr-xr-x  258 root  wheel   8.6K Jan  8 03:46 ..
--rw-r--r--    1 root  wheel   1.3K Oct 23 14:52 CommonCrypto.h
--rw-r--r--    1 root  wheel   2.4K Oct 23 14:52 CommonCryptoError.h
--rw-r--r--    1 root  wheel    33K Oct 23 14:52 CommonCryptor.h
--rw-r--r--    1 root  wheel    11K Oct 23 14:52 CommonDigest.h
--rw-r--r--    1 root  wheel   4.1K Oct 23 14:52 CommonHMAC.h
--rw-r--r--    1 root  wheel   4.6K Oct 23 14:52 CommonKeyDerivation.h
--rw-r--r--    1 root  wheel   1.7K Oct 23 14:52 CommonRandom.h
--rw-r--r--    1 root  wheel   6.1K Oct 23 14:52 CommonSymmetricKeywrap.h
+-rw-r--r--    1 root  wheel   1.3K Oct 23  2015 CommonCrypto.h
+-rw-r--r--    1 root  wheel   2.4K Oct 23  2015 CommonCryptoError.h
+-rw-r--r--    1 root  wheel    33K Oct 23  2015 CommonCryptor.h
+-rw-r--r--    1 root  wheel    11K Oct 23  2015 CommonDigest.h
+-rw-r--r--    1 root  wheel   4.1K Oct 23  2015 CommonHMAC.h
+-rw-r--r--    1 root  wheel   4.6K Oct 23  2015 CommonKeyDerivation.h
+-rw-r--r--    1 root  wheel   1.7K Oct 23  2015 CommonRandom.h
+-rw-r--r--    1 root  wheel   6.1K Oct 23  2015 CommonSymmetricKeywrap.h
 
  * ls -alh /Library/Developer/CommandLineTools/
 total 0
-drwxr-xr-x  4 root  admin   136B Nov 17 23:02 .
+drwxr-xr-x  4 root  admin   136B Nov 17  2015 .
 drwxr-xr-x  4 root  admin   136B Jan  8 04:42 ..
-drwxr-xr-x  5 root  admin   170B Nov 17 23:11 Library
-drwxr-xr-x  7 root  admin   238B Nov 17 23:06 usr
+drwxr-xr-x  5 root  admin   170B Nov 17  2015 Library
+drwxr-xr-x  7 root  admin   238B Nov 17  2015 usr
 
  * /Library/Developer/CommandLineTools/usr/bin/swift --version
 Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)
@@ -196,12 +201,12 @@ Software:
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
-      Time since boot: 2 minutes
+      Time since boot: 1 minute
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2   99Gi   31Gi   68Gi    32% 8181384 17823112   31%   /
+* Free disk space: /dev/disk0s2   99Gi   31Gi   68Gi    32% 8228551 17775945   32%   /
 ========================================
