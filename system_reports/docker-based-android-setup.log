@@ -1,3 +1,4 @@
+
 ## docker-bitrise-base
 
 
@@ -42,15 +43,15 @@
 
 === Linux info =========================
 * uname -a
-Linux fbacc06c409e 4.4.0-22-generic #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux e86d35f91fdc 4.4.0-22-generic #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-22-generic
 * lsb_release --all
+No LSB modules are available.
 Distributor ID:	Ubuntu
 Description:	Ubuntu 16.04 LTS
 Release:	16.04
 Codename:	xenial
-No LSB modules are available.
 ========================================
 
 
@@ -68,7 +69,7 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins: 
  Volume: local
- Network: null host bridge
+ Network: bridge null host
 Kernel Version: 4.4.0-22-generic
 Operating System: Ubuntu 16.04 LTS
 OSType: linux
@@ -76,7 +77,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-build-cont-us-cent1c-b6-stage--host-ondem-int-test-001
-ID: QJVG:6VYC:ZJ6K:6L6I:LFG4:55OW:BVWU:ZQFU:HXQS:XCWQ:C24R:PXKC
+ID: FZCZ:BYSZ:FD2D:KJR2:TFOA:IQDK:QEVP:HV5M:HRRW:OKMQ:ZHG5:WDU6
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -89,7 +90,7 @@ WARNING: No swap limit support
 * Free disk space: /dev/loop0       50G   18G   32G  37% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        117M        6.6G        8.7M        584M        7.1G
+Mem:           7.3G        121M        6.6G        8.7M        585M        7.1G
 Swap:            0B          0B          0B
 ========================================
 
@@ -111,7 +112,7 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 1.91.0
+* Fastlane: fastlane 1.94.0
 * Java: javac 1.8.0_91
 ========================================
 
@@ -227,3 +228,5 @@ android-N
 === Revision / ID ======================
 * BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: 2016_05_26_1
 ========================================
+
+
