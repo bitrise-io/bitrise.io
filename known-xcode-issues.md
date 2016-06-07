@@ -27,6 +27,7 @@ Related links & reports:
 * [UI Testing Failure - Failed to launch within 2.5s, Interrupting test](https://forums.developer.apple.com/thread/20747)
 * [Assertion Failure: UI Testing Failure - Failed to receive completion for ...](https://forums.developer.apple.com/thread/15209)
 * [Assertion Failure: UI Testing Failure - Failed to receive completion for XCDeviceEvent: page 12 usage 64 duration 0.01s within 10.0s](https://forums.developer.apple.com/thread/31311)
+* [UI Testing Failure - Failed to perform AX action for monitoring the event loop](https://forums.developer.apple.com/thread/31312)
 
 ### Possible solutions
 
@@ -37,7 +38,8 @@ Related links & reports:
   and running those separately, with separate Test steps.
   * A great article about splitting tests into multiple Schemes: [http://artsy.github.io/blog/2016/04/06/Testing-Schemes](http://artsy.github.io/blog/2016/04/06/Testing-Schemes)
 * Others reported that if you add a delay after `app.launch()` it can leave enough time for Xcode / the iOS Simulator to initialize the Accessibility labels, so that UI Tests can properly find the elements by the Accessibility labels.
-
+* [Use the Async testing APIs](http://stackoverflow.com/questions/32002330/ios-9-ui-testing-test-fails-because-target-control-isnt-available-yet)
+* [Sometimes it's related to a code which makes Xcode to misbehave](https://github.com/fastlane/fastlane/issues/3874#issuecomment-219991408)
 
 ## Flaky UI tests, UI test cases failing randomly
 
