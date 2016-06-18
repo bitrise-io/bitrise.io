@@ -9,13 +9,13 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: 2016_05_28_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: 2016_06_18_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Go: go version go1.6.2 linux/amd64
-* Ruby: ruby 2.2.5p319 (2016-04-26 revision 54774) [x86_64-linux]
+* Ruby: ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
   * bundler: Bundler version 1.12.5
 * Python: Python 2.7.11+
 
@@ -43,7 +43,7 @@
 
 === Linux info =========================
 * uname -a
-Linux e386ee9cd957 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:27:37 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 0fdd421b69be 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:27:37 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-24-generic
 * lsb_release --all
@@ -77,7 +77,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-build-cont-us-cent1c-b6-stage--host-ondem-int-test-001
-ID: LOOY:HUSM:QHQK:EAOZ:VER7:EGME:W5UE:IJWD:IJV6:EQNK:CUNO:K3GA
+ID: IUWZ:3KEO:L32J:TY3E:QPRU:QUDG:AVEF:PJ5A:RRB5:DDLT:G55O:F6V3
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -87,10 +87,10 @@ WARNING: No swap limit support
 
 
 === System infos =======================
-* Free disk space: /dev/loop0       50G   18G   32G  37% /
+* Free disk space: /dev/loop0       50G   18G   33G  35% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        125M        6.6G        8.7M        554M        7.0G
+Mem:           7.3G        120M        6.6G        8.7M        550M        7.0G
 Swap:            0B          0B          0B
 ========================================
 
@@ -105,7 +105,7 @@ Swap:            0B          0B          0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: 2016_05_29_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: 2016_06_18_1
 ========================================
 
 
@@ -122,8 +122,8 @@ Swap:            0B          0B          0B
 /opt/android-sdk-linux/platform-tools/adb
 
  * adb version:
-Android Debug Bridge version 1.0.32
-Revision 09a0d98bebce-android
+Android Debug Bridge version 1.0.36
+Revision fd9e4d07b0f5-android
 ========================================
 
 
@@ -164,7 +164,7 @@ systrace
 23.0.1
 23.0.2
 23.0.3
-24.0.0-preview
+24.0.0
 
 * extras:
 /opt/android-sdk-linux/extras
@@ -189,7 +189,7 @@ android-20
 android-21
 android-22
 android-23
-android-N
+android-24
 
 * system-images:
 /opt/android-sdk-linux/system-images
@@ -226,7 +226,75 @@ android-N
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: 2016_05_26_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: 2016_06_18_1
 ========================================
+
+$ cat /opt/android-ndk/source.properties
+Pkg.Desc = Android NDK
+Pkg.Revision = 12.0.2931149
+
+$ tree -L 2 /opt/android-ndk
+/opt/android-ndk
+├── build
+│   ├── awk
+│   ├── core
+│   ├── gmsl
+│   ├── __init__.py
+│   ├── lib
+│   ├── ndk-build
+│   ├── ndk-build.cmd
+│   ├── NOTICE
+│   ├── repo.prop
+│   └── tools
+├── CHANGELOG.md
+├── ndk-build
+├── ndk-depends
+├── ndk-gdb
+├── ndk-stack
+├── ndk-which
+├── platforms
+│   ├── android-12
+│   ├── android-13
+│   ├── android-14
+│   ├── android-15
+│   ├── android-16
+│   ├── android-17
+│   ├── android-18
+│   ├── android-19
+│   ├── android-21
+│   ├── android-22
+│   ├── android-23
+│   ├── android-24
+│   └── android-9
+├── prebuilt
+│   ├── android-arm
+│   ├── android-arm64
+│   ├── android-mips
+│   ├── android-mips64
+│   ├── android-x86
+│   ├── android-x86_64
+│   └── linux-x86_64
+├── python-packages
+│   ├── adb
+│   ├── gdbrunner
+│   ├── NOTICE
+│   └── repo.prop
+├── shader-tools
+│   └── linux-x86_64
+├── source.properties
+├── sources
+│   ├── android
+│   ├── cxx-stl
+│   └── third_party
+└── toolchains
+    ├── aarch64-linux-android-4.9
+    ├── arm-linux-androideabi-4.9
+    ├── llvm
+    ├── mips64el-linux-android-4.9
+    ├── mipsel-linux-android-4.9
+    ├── x86-4.9
+    └── x86_64-4.9
+
+45 directories, 14 files
 
 
