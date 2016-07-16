@@ -9,7 +9,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: 2016_07_02_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_07_15_1
 ========================================
 
 
@@ -17,7 +17,9 @@
 * Go: go version go1.6.2 linux/amd64
 * Ruby: ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
   * bundler: Bundler version 1.12.5
-* Python: Python 2.7.11+
+* Python: Python 2.7.12
+* Node.js: v6.3.0
+* NPM: 3.10.3
 
 * git: git version 2.7.4
 * git lfs: git-lfs/1.2.1 (GitHub; linux amd64; go 1.5.3)
@@ -29,6 +31,7 @@
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: tar (GNU tar) 1.28
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
+* gcc: gcc (Ubuntu 5.4.0-6ubuntu1~16.04.1) 5.4.0 20160609
 
 * sudo: Sudo version 1.8.16
 
@@ -36,15 +39,15 @@
 * docker-compose: docker-compose version 1.7.1, build 0a9ab35
 
 --- Bitrise CLI tool versions
-* bitrise: 1.3.5
-* stepman: 0.9.19
+* bitrise: 1.3.6
+* stepman: 0.9.21
 * envman: 1.1.0
 ========================================
 
 
 === Linux info =========================
 * uname -a
-Linux dc375d3e39cf 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:27:37 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 371b3bcb51ba 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:27:37 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-24-generic
 * lsb_release --all
@@ -70,7 +73,7 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins: 
  Volume: local
- Network: bridge null host
+ Network: host bridge null
 Kernel Version: 4.4.0-24-generic
 Operating System: Ubuntu 16.04 LTS
 OSType: linux
@@ -78,7 +81,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-build-cont-us-cent1c-b6-stage--host-ondem-int-test-001
-ID: VOYW:SVHN:PA6M:5YRB:V6NF:U4RT:SZAJ:KKNQ:UZF5:7BBZ:LWI6:AQX4
+ID: L2FC:C4ID:JWBD:NMIW:N3ID:WF3C:N7BH:OXUP:JM3S:EKKZ:3DC6:OMYB
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -88,10 +91,10 @@ WARNING: No swap limit support
 
 
 === System infos =======================
-* Free disk space: /dev/loop0       50G   18G   33G  35% /
+* Free disk space: /dev/loop0       50G   18G   32G  35% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        191M        6.2G        8.7M        941M        6.9G
+Mem:           7.3G        126M        6.6G        8.7M        636M        7.0G
 Swap:            0B          0B          0B
 ========================================
 
