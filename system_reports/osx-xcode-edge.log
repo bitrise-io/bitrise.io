@@ -7,19 +7,21 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2016_07_14_1
+* BITRISE_OSX_STACK_REV_ID: v2016_07_21_1
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.6.2 darwin/amd64
+* Go: go version go1.6.3 darwin/amd64
 * Ruby: ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]
 * Python: Python 2.7.10
-* Java: java version "1.8.0_92"
-Java(TM) SE Runtime Environment (build 1.8.0_92-b14)
-Java HotSpot(TM) 64-Bit Server VM (build 25.92-b14, mixed mode)
+* Node.js: v6.3.0
+* NPM: 3.10.3
+* Java: java version "1.8.0_102"
+Java(TM) SE Runtime Environment (build 1.8.0_102-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)
 
-* git: git version 2.9.1
+* git: git version 2.9.2
 * git lfs: git-lfs/1.2.1 (GitHub; darwin amd64; go 1.6.2)
 * mercurial/hg: Mercurial Distributed SCM (version 3.8.4)
 * curl: curl 7.43.0 (x86_64-apple-darwin15.0) libcurl/7.43.0 SecureTransport zlib/1.2.5
@@ -30,17 +32,17 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.92-b14, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 0.9.9 (git revision 2e74; last commit 2016-07-15)
-Homebrew/homebrew-core (git revision d548; last commit 2016-07-14)
+* brew: Homebrew 0.9.9 (git revision 2b9a; last commit 2016-07-21)
+Homebrew/homebrew-core (git revision 687e; last commit 2016-07-22)
 * xctool: 0.2.9
-* Node.js: v6.3.0
-* NPM: 3.10.3
 * Ansible: ansible 2.1.0.0
 * gtimeout: timeout (GNU coreutils) 8.25
 * watchman: 4.6.0
-* flow: Flow, a static type checker for JavaScript, version 0.28.0
+* flow: Flow, a static type checker for JavaScript, version 0.29.0
 * carthage: 0.17.2
-./system_report.sh: line 60: wine: command not found
+* imagemagic (convert): Version: ImageMagick 6.9.5-2 Q16 x86_64 2016-07-13 http://www.imagemagick.org
+* ghostscript (ps2ascii): 9.19
+./system_report.sh: line 62: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
@@ -55,7 +57,7 @@ Homebrew/homebrew-core (git revision d548; last commit 2016-07-14)
 === Ruby GEMs ==========================
 * Bundler: Bundler version 1.12.5
 * CocoaPods: 1.0.1
-* fastlane: fastlane 1.97.2
+* fastlane: fastlane 1.98.0
 * xcpretty: 0.2.2
 * Nomad CLI: 2.5.1
 * Nomad CLI IPA / Shenzhen: ipa 0.14.2
@@ -124,7 +126,7 @@ watchOS Simulator SDKs:
 
 
 * Available Simulators:
-2016-07-15 01:30:49.007 simctl[820:4028] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
+2016-07-22 08:41:58.829 simctl[823:3999] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
 == Device Types ==
 iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
 iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
@@ -297,6 +299,6 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2   99Gi   65Gi   34Gi    66% 16979031 9025465   65%   /
+* Free disk space: /dev/disk0s2   99Gi   65Gi   34Gi    66% 17003282 9001214   65%   /
 ========================================
 
