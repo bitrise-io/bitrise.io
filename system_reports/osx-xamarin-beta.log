@@ -15,6 +15,8 @@
 * Go: go version go1.6.2 darwin/amd64
 * Ruby: ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-darwin15]
 * Python: Python 2.7.10
+* Node.js: v6.0.0
+* NPM: 3.8.6
 * Java: java version "1.8.0_92"
 Java(TM) SE Runtime Environment (build 1.8.0_92-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 25.92-b14, mixed mode)
@@ -34,16 +36,18 @@ Did you mean this?
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 0.9.9 (git revision 2e74; last commit 2016-07-15)
-Homebrew/homebrew-core (git revision d548; last commit 2016-07-14)
+* brew: Homebrew 0.9.9 (git revision 2b9a; last commit 2016-07-21)
+Homebrew/homebrew-core (git revision 687e; last commit 2016-07-22)
 * xctool: 0.2.9
-* Node.js: v6.0.0
-* NPM: 3.8.6
 * Ansible: ansible 2.0.2.0
 * gtimeout: timeout (GNU coreutils) 8.25
 * watchman: 4.5.0
 * flow: Flow, a static type checker for JavaScript, version 0.24.1
 * carthage: 0.16.2
+./system_report.sh: line 57: convert: command not found
+* imagemagic (convert): 
+./system_report.sh: line 58: ps2ascii: command not found
+* ghostscript (ps2ascii): 
 * wine: wine-1.8.2
 
 --- Bitrise CLI tool versions
@@ -127,7 +131,7 @@ watchOS Simulator SDKs:
 
 
 * Available Simulators:
-2016-07-15 01:27:18.168 simctl[890:4257] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
+2016-07-22 07:39:18.673 simctl[892:4216] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
 == Device Types ==
 iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
 iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
@@ -300,7 +304,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2   99Gi   87Gi   12Gi    89% 22950725 3053771   88%   /
+* Free disk space: /dev/disk0s2   99Gi   90Gi  8.9Gi    92% 23678558 2325938   91%   /
 ========================================
 
 
@@ -309,12 +313,12 @@ Software:
 --- Xamarin
 
 * Xamarin Studio
-Release ID: 600020041
-Git revision: c92f57f326843c4c6e475a26d627b240ab8580f9
-Build date: 2016-06-27 13:53:32-04
+Release ID: 600020069
+Git revision: 9e0e96423ed474edf179c070b64ad03634012766
+Build date: 2016-07-15 16:53:35-04
 
 * Mono
-Mono JIT compiler version 4.4.1 (mono-4.4.0-branch-c7sr0/4747417 Mon Jun 20 15:43:48 EDT 2016)
+Mono JIT compiler version 4.4.2 (mono-4.4.0-branch-c7sr1/4dff7a3 Mon Jul 18 14:28:30 EDT 2016)
 Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-project.com
 	TLS:           normal
 	SIGSEGV:       altstack
@@ -329,22 +333,22 @@ Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-proj
 6.1.2
 
 * Xamarin.iOS
-mtouch 9.8.2.10 (cycle7: 843a527)
+mtouch 9.8.2.16 (cycle7-sr1: db3d76f)
 
 --- Android
 
 * ANDROID_HOME:
 total 8
-drwxr-xr-x  11 vagrant  staff   374B Jul 14 22:11 .
+drwxr-xr-x  11 vagrant  staff   374B Jul 21 22:13 .
 drwxr-xr-x   4 vagrant  staff   136B May  9 01:46 ..
 -rw-r--r--   1 vagrant  staff   1.1K Oct 13  2015 SDK Readme.txt
-drwxr-xr-x   5 vagrant  staff   170B Jul 14 22:17 add-ons
-drwxr-xr-x  11 vagrant  staff   374B Jul 14 22:14 build-tools
+drwxr-xr-x   5 vagrant  staff   170B Jul 21 22:19 add-ons
+drwxr-xr-x  12 vagrant  staff   408B Jul 21 22:16 build-tools
 drwxr-xr-x   4 vagrant  staff   136B May  9 02:56 extras
-drwxr-xr-x  13 vagrant  staff   442B Jul 14 22:11 platform-tools
-drwxr-xr-x  12 vagrant  staff   408B Jul 14 22:13 platforms
-drwxr-xr-x   8 vagrant  staff   272B May  9 02:55 system-images
-drwxr-xr-x   2 vagrant  staff    68B Jul 14 22:17 temp
+drwxr-xr-x  13 vagrant  staff   442B Jul 21 22:13 platform-tools
+drwxr-xr-x  12 vagrant  staff   408B Jul 21 22:15 platforms
+drwxr-xr-x   9 vagrant  staff   306B Jul 21 22:16 system-images
+drwxr-xr-x   2 vagrant  staff    68B Jul 21 22:19 temp
 drwxr-xr-x  31 vagrant  staff   1.0K May  9 01:42 tools
 
 * platform-tools:
@@ -370,6 +374,7 @@ systrace
 23.0.2
 23.0.3
 24.0.0
+24.0.1
 
 * extras:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/extras
@@ -430,18 +435,21 @@ android-N
 ├── android-22
 │   └── default
 │       └── armeabi-v7a
-└── android-23
-    ├── armeabi-v7a
-    │   ├── NOTICE.txt
-    │   ├── build.prop
-    │   ├── kernel-qemu
-    │   ├── ramdisk.img
-    │   ├── source.properties
-    │   ├── system.img
-    │   └── userdata.img
+├── android-23
+│   ├── armeabi-v7a
+│   │   ├── NOTICE.txt
+│   │   ├── build.prop
+│   │   ├── kernel-qemu
+│   │   ├── ramdisk.img
+│   │   ├── source.properties
+│   │   ├── system.img
+│   │   └── userdata.img
+│   └── default
+│       └── armeabi-v7a
+└── android-24
     └── default
         └── armeabi-v7a
 
-21 directories, 21 files
+24 directories, 21 files
 ========================================
 

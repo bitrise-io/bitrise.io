@@ -9,12 +9,12 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_07_15_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_07_21_1
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.6.2 linux/amd64
+* Go: go version go1.6.3 linux/amd64
 * Ruby: ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
   * bundler: Bundler version 1.12.5
 * Python: Python 2.7.12
@@ -47,9 +47,9 @@
 
 === Linux info =========================
 * uname -a
-Linux 371b3bcb51ba 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:27:37 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux ab11568e392e 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
-4.4.0-24-generic
+4.4.0-28-generic
 * lsb_release --all
 No LSB modules are available.
 Distributor ID:	Ubuntu
@@ -74,14 +74,14 @@ Cgroup Driver: cgroupfs
 Plugins: 
  Volume: local
  Network: host bridge null
-Kernel Version: 4.4.0-24-generic
+Kernel Version: 4.4.0-28-generic
 Operating System: Ubuntu 16.04 LTS
 OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-build-cont-us-cent1c-b6-stage--host-ondem-int-test-001
-ID: L2FC:C4ID:JWBD:NMIW:N3ID:WF3C:N7BH:OXUP:JM3S:EKKZ:3DC6:OMYB
+ID: LO6D:2RWI:WTMT:G5VJ:SFNF:UQ7B:HDWT:3GT6:IMTI:EU23:Y5ZP:M4RZ
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -91,10 +91,10 @@ WARNING: No swap limit support
 
 
 === System infos =======================
-* Free disk space: /dev/loop0       50G   18G   32G  35% /
+* Free disk space: /dev/loop0       50G   20G   30G  40% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        126M        6.6G        8.7M        636M        7.0G
+Mem:           7.3G        194M        6.1G        8.7M        991M        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -109,14 +109,14 @@ Swap:            0B          0B          0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: 2016_06_18_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2016_07_21_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 1.97.2
+* Fastlane: fastlane 1.98.0
 * Java: javac 1.8.0_91
 ========================================
 
@@ -127,7 +127,7 @@ Swap:            0B          0B          0B
 
  * adb version:
 Android Debug Bridge version 1.0.36
-Revision fd9e4d07b0f5-android
+Revision af05c7354fe1-android
 ========================================
 
 
@@ -169,6 +169,7 @@ systrace
 23.0.2
 23.0.3
 24.0.0
+24.0.1
 
 * extras:
 /opt/android-sdk-linux/extras
@@ -212,11 +213,14 @@ android-24
 ├── android-22
 │   └── default
 │       └── armeabi-v7a
-└── android-23
+├── android-23
+│   └── default
+│       └── armeabi-v7a
+└── android-24
     └── default
         └── armeabi-v7a
 
-18 directories, 0 files
+21 directories, 0 files
 ========================================
 
 
