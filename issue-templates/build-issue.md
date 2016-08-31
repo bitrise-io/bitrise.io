@@ -1,4 +1,4 @@
-# Issue Report template
+# Bitrise Build Issue Report template
 
 ## Environment:
 
