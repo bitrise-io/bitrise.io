@@ -20,7 +20,7 @@ Linux/Android stack builds:
 
 All / other stacks: 
 
-- Can it be reproduced by running the build locally, after doing a clean git clone (git clone the repository, into a new directory, somewhere on your Mac/PC) and running the build from there?
+- Can it be reproduced by running the build locally, after doing a clean git clone (git clone the repository, into a new directory, somewhere on your Mac/PC) and running the build from there (preferably with our CLI: https://www.bitrise.io/cli )?
 
 ## Build log
 
