@@ -10,9 +10,10 @@ Where did the issue happen?
 
 ## Reproducibility
 
-- Did you try a rebuild? Did that help?
+- Does a "Rebuild" help? (You can trigger a rebuild from the Build's page, by clicking the "Rebuild" button in the top right corner of a finished build)
 - If it's an issue which happens sporadically, what's the frequency? (e.g. Once a day ; about x% of the builds)
 - When did the issue start?
+- Which build Step causes the issue and which version of the step? Does upgrading the build Step to the latest version help?
 
 Linux/Android stack builds:
 
