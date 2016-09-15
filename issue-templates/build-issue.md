@@ -18,6 +18,7 @@ Which build Step causes the issue and which version of the step?
 ## Reproducibility
 
 - Does a "Rebuild" help? (You can trigger a rebuild from the Build's page, by clicking the "Rebuild" button in the top right corner of a finished build)
+- Does a rebuild without caches help? (You can remove the `Cache:Pull` and `Cache:Push` steps temporarily to not to use the cache, or [you can **delete all the caches** on the `Settings` tab of the app](https://bitrise-io.github.io/devcenter/caching/about-caching/#downloading-and-deleting-caches).
 - If it's an issue which happens sporadically, what's the frequency? (e.g. Once a day ; about x% of the builds)
 - Does upgrading the build Step to the latest version help?
 - When did the issue start?
