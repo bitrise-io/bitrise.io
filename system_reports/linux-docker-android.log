@@ -10,16 +10,16 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_09_08_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_09_14_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Go: go version go1.7.1 linux/amd64
 * Ruby: ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
-  * bundler: Bundler version 1.12.5
+  * bundler: Bundler version 1.13.1
 * Python: Python 2.7.12
-* Node.js: v6.5.0
+* Node.js: v6.6.0
 * NPM: 3.10.3
 
 * git: git version 2.7.4
@@ -40,9 +40,9 @@
 * docker-compose: docker-compose version 1.7.1, build 0a9ab35
 
 --- Bitrise CLI tool versions
-* bitrise: 1.3.7
-* stepman: 0.9.22
-* envman: 1.1.0
+* bitrise: 1.4.0
+* stepman: 0.9.23
+* envman: 1.1.1
 * bitrise-bridge: 0.9.10
 ========================================
 
@@ -52,7 +52,7 @@ activesupport (4.2.7.1)
 addressable (2.3.8)
 babosa (1.0.2)
 bigdecimal (1.2.8)
-bundler (1.12.5)
+bundler (1.13.1)
 cert (1.4.2)
 claide (1.0.0)
 colored (1.2)
@@ -67,8 +67,8 @@ faraday (0.9.2)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.10.0)
 fastimage (1.6.8)
-fastlane (1.102.0)
-fastlane_core (0.51.0)
+fastlane (1.103.0)
+fastlane_core (0.52.0)
 frameit (2.7.0)
 gh_inspector (1.0.2)
 google-api-client (0.9.13)
@@ -76,7 +76,7 @@ googleauth (0.5.1)
 gym (1.9.0)
 highline (1.7.8)
 http-cookie (1.0.2)
-httpclient (2.8.2.3)
+httpclient (2.8.2.4)
 hurley (0.2)
 i18n (0.7.0)
 io-console (0.4.5)
@@ -85,7 +85,7 @@ jwt (1.5.4)
 krausefx-shenzhen (0.14.10)
 little-plugger (1.1.4)
 logging (2.1.0)
-match (0.6.3)
+match (0.6.4)
 memoist (0.15.0)
 mime-types (3.1)
 mime-types-data (3.2016.0521)
@@ -110,10 +110,10 @@ representable (2.3.0)
 retriable (2.1.0)
 rouge (1.11.1)
 rubyzip (1.1.7)
-scan (0.12.0)
+scan (0.12.1)
 screengrab (0.5.2)
 security (0.1.3)
-sigh (1.10.1)
+sigh (1.10.2)
 signet (0.7.3)
 slack-notifier (1.5.1)
 snapshot (1.14.0)
@@ -128,8 +128,8 @@ uber (0.0.15)
 unf (0.1.4)
 unf_ext (0.0.7.2)
 word_wrap (1.0.0)
-xcode-install (2.0.4)
-xcodeproj (1.3.0)
+xcode-install (2.0.6)
+xcodeproj (1.3.1)
 xcpretty (0.2.2)
 xcpretty-travis-formatter (0.0.4)
 ========================================
@@ -137,7 +137,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux 7a227a868d51 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 0ecdd3e530bf 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-28-generic
 * lsb_release --all
@@ -163,7 +163,7 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins: 
  Volume: local
- Network: bridge null host
+ Network: null host bridge
 Kernel Version: 4.4.0-28-generic
 Operating System: Ubuntu 16.04 LTS
 OSType: linux
@@ -171,7 +171,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-cont-us-cent1c-stage-a--host-ondem-int-test-001
-ID: FG7F:LDJK:YWBF:EV2Y:TM5I:5PLI:B4KR:A5LO:GRYY:TYRP:YV3N:TEGQ
+ID: K4EC:5G7U:QURB:JQLN:IE3N:TTR2:AJSN:MW3J:FGZA:T525:OSWN:4F7P
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -184,7 +184,7 @@ WARNING: No swap limit support
 * Free disk space: /dev/loop0       50G   20G   30G  41% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        126M        6.5G        8.7M        699M        6.9G
+Mem:           7.3G        191M        6.2G        8.7M        940M        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -206,7 +206,7 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 1.102.0
+* Fastlane: fastlane 1.103.0
 * Java: javac 1.8.0_91
 ========================================
 
@@ -217,7 +217,7 @@ Swap:            0B          0B          0B
 
  * adb version:
 Android Debug Bridge version 1.0.36
-Revision 8f855a3d9b35-android
+Revision e02fe72a18c3-android
 ========================================
 
 
