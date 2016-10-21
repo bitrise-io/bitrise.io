@@ -10,20 +10,20 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_10_12_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_10_20_1
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.7.1 linux/amd64
+* Go: go version go1.7.3 linux/amd64
 * Ruby: ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
-  * bundler: Bundler version 1.13.3
+  * bundler: Bundler version 1.13.5
 * Python: Python 2.7.12
-* Node.js: v6.8.0
+* Node.js: v6.9.1
 * NPM: 3.10.8
 
 * git: git version 2.7.4
-* git lfs: git-lfs/1.4.2 (GitHub; linux amd64; go 1.7)
+* git lfs: git-lfs/1.4.3 (GitHub; linux amd64; go 1.7.1)
 * mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
 * curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
 * wget: GNU Wget 1.17.1 built on linux-gnu.
@@ -37,11 +37,11 @@
 * sudo: Sudo version 1.8.16
 
 * docker: Docker version 1.11.1, build 5604cbe
-* docker-compose: docker-compose version 1.7.1, build 0a9ab35
+* docker-compose: docker-compose version 1.8.1, build 878cff1
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.1
-* stepman: 0.9.24
+* bitrise: 1.4.2
+* stepman: 0.9.25
 * envman: 1.1.1
 * bitrise-bridge: 0.9.10
 ========================================
@@ -52,7 +52,7 @@ activesupport (4.2.7.1)
 addressable (2.3.8)
 babosa (1.0.2)
 bigdecimal (1.2.8)
-bundler (1.13.3)
+bundler (1.13.5)
 cert (1.4.3)
 claide (1.0.1)
 colored (1.2)
@@ -62,18 +62,18 @@ deliver (1.14.2)
 did_you_mean (1.0.0)
 domain_name (0.5.20160826)
 dotenv (2.1.1)
-excon (0.53.0)
+excon (0.54.0)
 faraday (0.9.2)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.10.0)
 fastimage (1.6.8)
-fastlane (1.105.2)
-fastlane_core (0.52.1)
+fastlane (1.105.3)
+fastlane_core (0.52.3)
 frameit (2.8.0)
 gh_inspector (1.0.2)
-google-api-client (0.9.15)
+google-api-client (0.9.19)
 googleauth (0.5.1)
-gym (1.11.2)
+gym (1.11.3)
 highline (1.7.8)
 http-cookie (1.0.3)
 httpclient (2.8.2.4)
@@ -99,7 +99,7 @@ net-ssh (3.2.0)
 net-telnet (0.1.1)
 os (0.9.6)
 pem (1.3.2)
-pilot (1.10.1)
+pilot (1.11.0)
 plist (3.1.0)
 power_assert (0.2.6)
 produce (1.2.1)
@@ -130,7 +130,7 @@ unf_ext (0.0.7.2)
 unicode-display_width (1.1.1)
 word_wrap (1.0.0)
 xcode-install (2.0.7)
-xcodeproj (1.3.2)
+xcodeproj (1.3.3)
 xcpretty (0.2.4)
 xcpretty-travis-formatter (0.0.4)
 ========================================
@@ -138,7 +138,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux cd6e365ee89a 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux c2d56f1bc5c7 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-28-generic
 * lsb_release --all
@@ -171,8 +171,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
-Name: br-cont-stage-c1s-a--host-ondem-int-test-001
-ID: LPSX:P66A:GUGU:WTT7:AAVQ:JZ4G:IY6L:RN3Y:Q2KO:F2CJ:6EBE:6TNG
+Name: br-cont-stage-c1s-b--host-ondem-int-test-001
+ID: EDMI:ZRLM:FG6E:3D2O:VDQL:NUUW:AEJH:TXH3:XQME:32B3:GLN5:2FDC
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -182,10 +182,10 @@ WARNING: No swap limit support
 
 
 === System infos =======================
-* Free disk space: /dev/loop0       50G   20G   30G  41% /
+* Free disk space: /dev/loop0       50G   21G   30G  41% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        187M        6.2G        8.7M        986M        6.9G
+Mem:           7.3G        191M        6.1G        8.7M        1.0G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -200,14 +200,14 @@ Swap:            0B          0B          0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2016_07_21_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2016_10_20_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 1.105.2
+* Fastlane: fastlane 1.105.3
 * Java: javac 1.8.0_91
 ========================================
 
@@ -218,7 +218,7 @@ Swap:            0B          0B          0B
 
  * adb version:
 Android Debug Bridge version 1.0.36
-Revision e02fe72a18c3-android
+Revision 84e3321d5db3-android
 ========================================
 
 
@@ -263,6 +263,7 @@ systrace
 24.0.1
 24.0.2
 24.0.3
+25.0.0
 
 * extras:
 /opt/android-sdk-linux/extras
@@ -288,6 +289,7 @@ android-21
 android-22
 android-23
 android-24
+android-25
 
 * system-images:
 /opt/android-sdk-linux/system-images
