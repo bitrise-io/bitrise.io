@@ -10,14 +10,14 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_10_20_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_10_24_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Go: go version go1.7.3 linux/amd64
 * Ruby: ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
-  * bundler: Bundler version 1.13.5
+  * bundler: Bundler version 1.13.6
 * Python: Python 2.7.12
 * Node.js: v6.9.1
 * NPM: 3.10.8
@@ -40,7 +40,7 @@
 * docker-compose: docker-compose version 1.8.1, build 878cff1
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.2
+* bitrise: 1.4.3
 * stepman: 0.9.25
 * envman: 1.1.1
 * bitrise-bridge: 0.9.10
@@ -52,13 +52,13 @@ activesupport (4.2.7.1)
 addressable (2.3.8)
 babosa (1.0.2)
 bigdecimal (1.2.8)
-bundler (1.13.5)
+bundler (1.13.6)
 cert (1.4.3)
 claide (1.0.1)
 colored (1.2)
 commander (4.4.0)
 credentials_manager (0.16.2)
-deliver (1.14.2)
+deliver (1.14.3)
 did_you_mean (1.0.0)
 domain_name (0.5.20160826)
 dotenv (2.1.1)
@@ -68,7 +68,7 @@ faraday-cookie_jar (0.0.6)
 faraday_middleware (0.10.0)
 fastimage (1.6.8)
 fastlane (1.105.3)
-fastlane_core (0.52.3)
+fastlane_core (0.53.0)
 frameit (2.8.0)
 gh_inspector (1.0.2)
 google-api-client (0.9.19)
@@ -117,7 +117,7 @@ sigh (1.11.2)
 signet (0.7.3)
 slack-notifier (1.5.1)
 snapshot (1.16.2)
-spaceship (0.36.0)
+spaceship (0.36.1)
 supply (0.7.1)
 terminal-notifier (1.7.1)
 terminal-table (1.4.5)
@@ -138,7 +138,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux c2d56f1bc5c7 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux befacdb04b1d 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-28-generic
 * lsb_release --all
@@ -164,7 +164,7 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins: 
  Volume: local
- Network: bridge null host
+ Network: host bridge null
 Kernel Version: 4.4.0-28-generic
 Operating System: Ubuntu 16.04 LTS
 OSType: linux
@@ -172,7 +172,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: EDMI:ZRLM:FG6E:3D2O:VDQL:NUUW:AEJH:TXH3:XQME:32B3:GLN5:2FDC
+ID: CM7N:LKQA:NZTJ:XGV4:JMTM:DP56:CXMK:5BTN:DYZS:J2M3:G2EP:KKHR
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -185,7 +185,7 @@ WARNING: No swap limit support
 * Free disk space: /dev/loop0       50G   21G   30G  41% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        191M        6.1G        8.7M        1.0G        6.9G
+Mem:           7.3G        131M        6.4G        8.7M        809M        6.9G
 Swap:            0B          0B          0B
 ========================================
 
