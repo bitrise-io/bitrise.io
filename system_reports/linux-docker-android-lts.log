@@ -140,7 +140,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux e1ec555f182b 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 02a2aef1922d 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-28-generic
 * lsb_release --all
@@ -173,17 +173,17 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: CRKJ:WIUX:WXNB:QUIK:E5UE:47H7:KBA6:5UCH:33KL:2WXG:GK4T:WCET
+ID: HK4T:KG6G:A5W7:GSYB:YAVJ:DBWO:JXG6:TBM5:4N3J:IIGL:EET6:OTUH
 WARNING: No swap limit support
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/loop0       50G   33G   18G  66% /
+* Free disk space: /dev/loop0       50G   33G   18G  65% /
 * Free RAM & swap:
              total       used       free     shared    buffers     cached
-Mem:          7.3G       853M       6.5G       8.7M        12M       668M
--/+ buffers/cache:       172M       7.1G
+Mem:          7.3G       1.1G       6.2G       8.7M        13M       861M
+-/+ buffers/cache:       217M       7.1G
 Swap:           0B         0B         0B
 ========================================
 
@@ -437,5 +437,11 @@ $ tree -L 2 /opt/android-ndk
     └── x86-clang3.6
 
 87 directories, 21 files
+
+
+=== Pre-installed tool versions ========
+/bitrise/bitrise-android-ndk/system_report.sh: line 37: cmake: command not found
+* cmake: 
+========================================
 
 
