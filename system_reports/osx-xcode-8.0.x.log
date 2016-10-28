@@ -32,8 +32,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.0.8-109-gb481ed7
-Homebrew/homebrew-core (git revision e40d6; last commit 2016-10-24)
+* brew: Homebrew 1.0.8-135-g4284b82
+Homebrew/homebrew-core (git revision 516f; last commit 2016-10-28)
 * xctool: 0.2.9
 * Ansible: ansible 2.1.1.0
 * gtimeout: timeout (GNU coreutils) 8.25
@@ -58,55 +58,6 @@ Homebrew/homebrew-core (git revision e40d6; last commit 2016-10-24)
 * Bundler: Bundler version 1.13.1
 * CocoaPods: 1.0.1
 * fastlane: fastlane 1.102.0
-
-[32m#######################################################################[0m
-[32m# fastlane 1.105.3 is available. You are on 1.102.0.[0m
-[32m# It is recommended to use the latest version.[0m
-[32m# Update using 'sudo gem update fastlane'.[0m
-[32m#######################################################################[0m
-
-[32m1.105.3 Improvements[0m
-This release includes bugfixes and improvements - yes, really:
-
-* Show summary of configuration files when they're loaded
-* Set FORK_XCODE_WRITING env variable to work around xcodeproj chdir bug (#6613)
-* Update internal dependencies (#6599)
-* Provide a test for badge action ImageMagick verification (#6605)
-* Update rubocop and update styling rules (#6573)
-* Add ShareTheMeal plugin to donate food on each fastlane release (#6571)
-* Add check for ImageMagick before running the badge action (#6568)
-* add aws_device_farm to plugin list (#6566)
-* add SharetheMeal Plugin (#6563)
-* Update Google Play instructions (#6545)
-* Update description of crashlytics api key (#6535)
-* Make API token more clear for set_github_release action (#6532)
-* Update description of crashlytics api key (#6534)
-* Update docs only after the complete release is done (#6494)
-* Addressed feedback from @mfurtak (#6512)
-* Skip updating docs when environment variables are missing (#6508)
-* Update xcpretty dependency (#6510)
-
-![Screenshot](https://cloud.githubusercontent.com/assets/869950/19460877/beb1a52e-9494-11e6-8d3d-95b419313593.png)
-
-[32m1.105.2 Bugfix[0m
-Fixed a variable error in the update_project_team action
-
-[32m1.105.1 Improvements[0m
-* Improve team selection for both iTunes Connect and the Dev Portal
-* Fix update_project_team with Xcode 8 (#6453)
-* Update team selection and documentation across all fastlane actions (#6444)
-* Losen up external fastlane dependencies (#6486)
-* Update spaceship dependencies (#6485)
-* Verify docs on pull requests and releases (#6475)
-* Ensure git branch and git pull before verifying version number (#6484)
-* Losen up dependencies of subtools (#6461)
-* Improve formatting of git_commit code samples (#6476)
-* Fix typo in plugin-badge.svg (#6451)
-* Improve output of changelog action (#6434)
-
-[32mTo see all new releases, open https://github.com/fastlane/fastlane/releases[0m
-[32m
-Update using 'sudo gem update fastlane'[0m
 * xcpretty: 0.2.2
 * Nomad CLI: 2.5.1
 * Nomad CLI IPA / Shenzhen: ipa 0.14.2
@@ -255,10 +206,10 @@ drwxr-xr-x  258 root  wheel   8.6K Aug 15 09:06 ..
 
  * ls -alh /Library/Developer/CommandLineTools/
 total 0
-drwxr-xr-x  4 root  admin   136B Apr 26 16:49 .
+drwxr-xr-x  4 root  admin   136B Apr 26  2016 .
 drwxr-xr-x  4 root  admin   136B Sep 14 03:06 ..
-drwxr-xr-x  5 root  admin   170B Apr 26 16:58 Library
-drwxr-xr-x  7 root  admin   238B Apr 26 16:53 usr
+drwxr-xr-x  5 root  admin   170B Apr 26  2016 Library
+drwxr-xr-x  7 root  admin   238B Apr 26  2016 usr
 
  * /Library/Developer/CommandLineTools/usr/bin/swift --version
 Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)
@@ -503,7 +454,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 20536797 31682099   39%   /
+* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 20521334 31697562   39%   /
 ========================================
 
 
