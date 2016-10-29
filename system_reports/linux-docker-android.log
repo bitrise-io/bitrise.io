@@ -23,7 +23,7 @@
 * NPM: 3.10.8
 
 * git: git version 2.7.4
-* git lfs: git-lfs/1.4.3 (GitHub; linux amd64; go 1.7.1)
+* git lfs: git-lfs/1.4.4 (GitHub; linux amd64; go 1.7.3)
 * mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
 * curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
 * wget: GNU Wget 1.17.1 built on linux-gnu.
@@ -54,22 +54,23 @@ babosa (1.0.2)
 bigdecimal (1.2.8)
 bundler (1.13.6)
 cert (1.4.3)
+CFPropertyList (2.3.3)
 claide (1.0.1)
 colored (1.2)
 commander (4.4.0)
 credentials_manager (0.16.2)
-deliver (1.14.3)
+deliver (1.14.5)
 did_you_mean (1.0.0)
-domain_name (0.5.20160826)
+domain_name (0.5.20161021)
 dotenv (2.1.1)
 excon (0.54.0)
 faraday (0.9.2)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.10.0)
 fastimage (1.6.8)
-fastlane (1.105.3)
+fastlane (1.106.2)
 fastlane_core (0.53.0)
-frameit (2.8.0)
+frameit (3.0.0)
 gh_inspector (1.0.2)
 google-api-client (0.9.19)
 googleauth (0.5.1)
@@ -85,7 +86,7 @@ jwt (1.5.6)
 krausefx-shenzhen (0.14.10)
 little-plugger (1.1.4)
 logging (2.1.0)
-match (0.8.1)
+match (0.10.0)
 memoist (0.15.0)
 mime-types (3.1)
 mime-types-data (3.2016.0521)
@@ -94,12 +95,13 @@ minitest (5.8.3)
 multi_json (1.12.1)
 multi_xml (0.5.5)
 multipart-post (2.0.0)
+nanaimo (0.1.0)
 net-sftp (2.1.2)
 net-ssh (3.2.0)
 net-telnet (0.1.1)
 os (0.9.6)
 pem (1.3.2)
-pilot (1.11.0)
+pilot (1.11.1)
 plist (3.1.0)
 power_assert (0.2.6)
 produce (1.2.1)
@@ -116,8 +118,8 @@ security (0.1.3)
 sigh (1.11.2)
 signet (0.7.3)
 slack-notifier (1.5.1)
-snapshot (1.16.2)
-spaceship (0.36.1)
+snapshot (1.16.3)
+spaceship (0.36.2)
 supply (0.7.1)
 terminal-notifier (1.7.1)
 terminal-table (1.4.5)
@@ -129,8 +131,8 @@ unf (0.1.4)
 unf_ext (0.0.7.2)
 unicode-display_width (1.1.1)
 word_wrap (1.0.0)
-xcode-install (2.0.7)
-xcodeproj (1.3.3)
+xcode-install (2.0.8)
+xcodeproj (1.4.0)
 xcpretty (0.2.4)
 xcpretty-travis-formatter (0.0.4)
 ========================================
@@ -138,7 +140,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux befacdb04b1d 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 76eefdacc9a8 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-28-generic
 * lsb_release --all
@@ -164,7 +166,7 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins: 
  Volume: local
- Network: host bridge null
+ Network: bridge null host
 Kernel Version: 4.4.0-28-generic
 Operating System: Ubuntu 16.04 LTS
 OSType: linux
@@ -172,7 +174,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: CM7N:LKQA:NZTJ:XGV4:JMTM:DP56:CXMK:5BTN:DYZS:J2M3:G2EP:KKHR
+ID: 63IB:ZYWO:MTNU:DRXZ:6ZKV:EQYM:ZO7A:UTO5:MP7T:ML4P:IDFU:Y5NR
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -182,10 +184,10 @@ WARNING: No swap limit support
 
 
 === System infos =======================
-* Free disk space: /dev/loop0       50G   21G   30G  41% /
+* Free disk space: /dev/loop0       50G   20G   30G  40% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        131M        6.4G        8.7M        809M        6.9G
+Mem:           7.3G        198M        5.9G        8.7M        1.2G        6.8G
 Swap:            0B          0B          0B
 ========================================
 
@@ -207,7 +209,7 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 1.105.3
+* Fastlane: fastlane 1.106.2
 * Java: javac 1.8.0_91
 ========================================
 
@@ -229,6 +231,7 @@ Revision 84e3321d5db3-android
 ..
 add-ons
 build-tools
+cmake
 extras
 platforms
 platform-tools
@@ -329,17 +332,18 @@ android-25
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: 2016_06_18_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2016_10_27_1
 ========================================
 
 $ cat /opt/android-ndk/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 12.0.2931149
+Pkg.Revision = 13.1.3345770
 
 $ tree -L 2 /opt/android-ndk
 /opt/android-ndk
 ├── build
 │   ├── awk
+│   ├── cmake
 │   ├── core
 │   ├── gmsl
 │   ├── __init__.py
@@ -384,6 +388,12 @@ $ tree -L 2 /opt/android-ndk
 │   └── repo.prop
 ├── shader-tools
 │   └── linux-x86_64
+├── simpleperf
+│   ├── android
+│   ├── NOTICE
+│   ├── README.md
+│   ├── repo.prop
+│   └── simpleperf_report.py
 ├── source.properties
 ├── sources
 │   ├── android
@@ -398,6 +408,11 @@ $ tree -L 2 /opt/android-ndk
     ├── x86-4.9
     └── x86_64-4.9
 
-45 directories, 14 files
+48 directories, 18 files
+
+
+=== Pre-installed tool versions ========
+* cmake: cmake version 3.6.0-rc2
+========================================
 
 
