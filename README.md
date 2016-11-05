@@ -6,6 +6,8 @@ The purpose of this repository is to keep track of the most important public rep
 
 If you want to **suggest a new feature**, you can submit it and vote on others' on [UserVoice](https://bitrise.uservoice.com/), or if you want to **chat** with us you can join our Slack team at [chat.bitrise.io](http://chat.bitrise.io/). Follow [@bitrise](https://twitter.com/bitrise) on Twitter for #status and step updates 🚀.
 
+## Report an issue / bug
+
 **If you want to report an issue** you can do that by creating a GitHub issue in the related repository.
 
 1. If it's related to a specific Step, you should report it on the Step's GitHub page.
@@ -13,7 +15,9 @@ If you want to **suggest a new feature**, you can submit it and vote on others' 
 1. If it's related to the Bitrise CLI you can do that on the [Bitrise CLI's GitHub page](https://github.com/bitrise-io/bitrise).
 1. If you want to share private information with us, please contact us through email or through the on-site chat on [bitrise.io](https://www.bitrise.io) (You have to be logged in to see the chat icon at the bottom right corner. Note: some Ad Blockers might block the chat widget).
 
-**If you'd like to contribute**, read on to find the repository you are looking for.
+## Contribution to Bitrise (stack, tools & steps)
+
+If you want to collaborate with us creating useful automation tools and steps please go to the [`contrib`](https://github.com/bitrise-io/bitrise-contrib) repository and follow the guides. You can keep track of others' projects there as well.
 
 ## Our build steps collection
 
@@ -27,9 +31,7 @@ You can find all our steps' `yml`s under [/steps](https://github.com/bitrise-io/
 
 The repositories of steps which we maintain and support can be queried by searching for [steps-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=steps-) on our [GitHub page](https://github.com/bitrise-io).
 
-### Scripts
-
-We have most of our scripts written in Go and bash, but it's possible to write it in any language our machines have installed like Ruby or Node.js.
+We have most of our scripts written in `Go` and `bash`, but it's possible to write it in any language our machines have installed, like `Ruby` or `Node.js`.
 
 > You can create a StepLib independently from Bitrise anytime, you will be able to use our CLI tools to maintain it, they are not tied to *our StepLib*.
 
@@ -37,7 +39,7 @@ We have most of our scripts written in Go and bash, but it's possible to write i
 
 Check out our [CLI's page](https://www.bitrise.io/cli) for a nice intro about why is it helpful to have Bitrise installed on your machine.
 
-### Bitrise
+### `bitrise`
 
 [The runner itself](https://github.com/bitrise-io/bitrise), you can install it to your machine with Homebrew:
 
@@ -45,11 +47,11 @@ Check out our [CLI's page](https://www.bitrise.io/cli) for a nice intro about wh
 
 Or `curl` down the latest version with the help of our guide on the [releases page](https://github.com/bitrise-io/bitrise/releases).
 
-### envman
+### `envman`
 
 [`envman`](https://github.com/bitrise-io/envman) is our handy environment variable manager for switching between environment sets quick & easy.
 
-### stepman
+### `stepman`
 
 [`stepman`](https://github.com/bitrise-io/stepman) is our solution to manage decentralized StepLib step (script) collections.
 
@@ -73,9 +75,6 @@ We have a [base image](https://github.com/bitrise-docker/bitrise-base) and an [A
 
 >When a new version of a stack is available there will be a system report generated under the [system_reports](https://github.com/bitrise-io/bitrise.io/blob/master/system_reports) folder of this repository.
 
-## Contribution to Bitrise stack, tools & steps
-
-If you want to collaborate with us creating useful automation tools and steps please go to the [`contrib`](https://github.com/bitrise-io/bitrise-contrib) repository and follow the guides. You can keep track of others' projects there as well.
 
 ### Request a tool to be pre-installed on a build machine
 
