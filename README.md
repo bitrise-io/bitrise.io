@@ -6,7 +6,12 @@ The purpose of this repository is to keep track of the most important public rep
 
 If you want to **suggest a new feature**, you can submit it and vote on others' on [UserVoice](https://bitrise.uservoice.com/), or if you want to **chat** with us you can join our Slack team at [chat.bitrise.io](http://chat.bitrise.io/). Follow [@bitrise](https://twitter.com/bitrise) on Twitter for #status and step updates 🚀.
 
-**If you want to report an issue** you can do that by creating a GitHub issue in the related repository. If it's related to a specific Step, you should report it on the Step's GitHub page. If it's related to the Bitrise CLI you can do that on the [Bitrise CLI's GitHub page](https://github.com/bitrise-io/bitrise). If you want to share private information with us, please contact us through email or through the on-site chat on [bitrise.io](https://www.bitrise.io) (You have to be logged in to see the chat icon at the bottom right corner. Note: some Ad Blockers might block the chat widget).
+**If you want to report an issue** you can do that by creating a GitHub issue in the related repository.
+
+1. If it's related to a specific Step, you should report it on the Step's GitHub page.
+1. If it's a build issue, please report it at: [https://github.com/bitrise-io/build.issues](https://github.com/bitrise-io/build.issues)
+1. If it's related to the Bitrise CLI you can do that on the [Bitrise CLI's GitHub page](https://github.com/bitrise-io/bitrise).
+1. If you want to share private information with us, please contact us through email or through the on-site chat on [bitrise.io](https://www.bitrise.io) (You have to be logged in to see the chat icon at the bottom right corner. Note: some Ad Blockers might block the chat widget).
 
 **If you'd like to contribute**, read on to find the repository you are looking for.
 
