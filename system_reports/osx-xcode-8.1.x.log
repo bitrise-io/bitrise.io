@@ -32,8 +32,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.112-b16, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.0.9
-Homebrew/homebrew-core (git revision dc5a; last commit 2016-11-04)
+* brew: Homebrew 1.1.0
+Homebrew/homebrew-core (git revision 4207; last commit 2016-11-11)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.1.2.0
@@ -47,11 +47,11 @@ Homebrew/homebrew-core (git revision dc5a; last commit 2016-11-04)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.3
+* bitrise: 1.4.5
 * stepman: 0.9.25
-* envman: 1.1.1
-* bitrise-bridge: 0.9.10
-* cmd-bridge: 0.9.4
+* envman: 1.1.2
+* bitrise-bridge: 0.9.11
+* cmd-bridge: 0.9.5
 ========================================
 
 
@@ -61,10 +61,17 @@ Homebrew/homebrew-core (git revision dc5a; last commit 2016-11-04)
 * fastlane: fastlane 1.106.2
 
 [32m#######################################################################[0m
-[32m# fastlane 1.107.0 is available. You are on 1.106.2.[0m
+[32m# fastlane 1.108.0 is available. You are on 1.106.2.[0m
 [32m# It is recommended to use the latest version.[0m
 [32m# Update using 'sudo gem update fastlane'.[0m
 [32m#######################################################################[0m
+
+[32m1.108.0 New update_fastlane command, fastlane_require to auto-install gems & more[0m
+* Implement `fastlane_require` to automatically install gems into bundle (#6858)
+* Add new `fastlane update_fastlane` action (#6896)
+* Support keychains in custom paths and fix non-existing default keychain crash 🔐 (#6887)
+* Hide options with no description in docs (#6919)
+* Fix commit_version_bump could not find a .xcodeproj (#6676)
 
 [32m1.107.0 New actions, enhanced debugging features & more[0m
 * Add error message on `fastlane init` when fastlane directory or file already exists (#6849)
@@ -491,7 +498,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 1963406 4293003873    0%   /
+* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 1965778 4293001501    0%   /
 ========================================
 
 
