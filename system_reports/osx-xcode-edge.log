@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2016_11_02_1
+* BITRISE_OSX_STACK_REV_ID: v2016_11_10_1
 ========================================
 
 
@@ -15,8 +15,8 @@
 * Go: go version go1.7.3 darwin/amd64
 * Ruby: ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
 * Python: Python 2.7.12
-* Node.js: v7.0.0
-* NPM: 3.10.8
+* Node.js: v7.1.0
+* NPM: 3.10.9
 * Java: java version "1.8.0_112"
 Java(TM) SE Runtime Environment (build 1.8.0_112-b16)
 Java HotSpot(TM) 64-Bit Server VM (build 25.112-b16, mixed mode)
@@ -32,33 +32,33 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.112-b16, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.0.9
-Homebrew/homebrew-core (git revision dc5a; last commit 2016-11-04)
+* brew: Homebrew 1.1.0
+Homebrew/homebrew-core (git revision 0aad; last commit 2016-11-11)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
-* Ansible: ansible 2.1.2.0
+* Ansible: ansible 2.2.0.0
 * gtimeout: timeout (GNU coreutils) 8.25
 * watchman: 4.7.0
 * flow: Flow, a static type checker for JavaScript, version 0.34.0
 * carthage: 0.18.1
-* imagemagick (convert): Version: ImageMagick 6.9.6-2 Q16 x86_64 2016-10-11 http://www.imagemagick.org
+* imagemagick (convert): Version: ImageMagick 6.9.6-4 Q16 x86_64 2016-11-10 http://www.imagemagick.org
 * ghostscript (ps2ascii): 9.19
 ./system_report.sh: line 69: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.3
+* bitrise: 1.4.5
 * stepman: 0.9.25
-* envman: 1.1.1
-* bitrise-bridge: 0.9.10
-* cmd-bridge: 0.9.4
+* envman: 1.1.2
+* bitrise-bridge: 0.9.11
+* cmd-bridge: 0.9.5
 ========================================
 
 
 === Ruby GEMs ==========================
 * Bundler: Bundler version 1.13.6
 * CocoaPods: 1.1.1
-* fastlane: fastlane 1.107.0
+* fastlane: fastlane 1.108.0
 * xcpretty: 0.2.4
 * Nomad CLI: 2.5.1
 * Nomad CLI IPA / Shenzhen: ipa 0.14.2
@@ -67,13 +67,13 @@ Homebrew/homebrew-core (git revision dc5a; last commit 2016-11-04)
 
 === All Ruby GEMs ======================
 activesupport (4.2.7.1)
-addressable (2.4.0)
+addressable (2.5.0)
 aws-sdk (1.66.0)
 aws-sdk-v1 (1.66.0)
 babosa (1.0.2)
 bigdecimal (1.2.8)
 bundler (1.13.6)
-cert (1.4.3)
+cert (1.4.4)
 certified (1.0.0)
 CFPropertyList (2.3.3)
 claide (1.0.1)
@@ -102,13 +102,13 @@ faraday (0.9.2, 0.8.11)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.10.0)
 fastimage (1.6.8)
-fastlane (1.107.0)
-fastlane_core (0.53.0)
+fastlane (1.108.0)
+fastlane_core (0.55.0)
 fourflusher (2.0.1)
 frameit (3.0.0)
 fuzzy_match (2.0.4)
 gh_inspector (1.0.2)
-google-api-client (0.9.19)
+google-api-client (0.9.20)
 googleauth (0.5.1)
 gym (1.12.0)
 highline (1.7.8)
@@ -120,10 +120,10 @@ i18n (0.7.0)
 io-console (0.4.5)
 json (1.8.3)
 jwt (1.5.6)
-krausefx-shenzhen (0.14.10)
+krausefx-shenzhen (0.14.11)
 little-plugger (1.1.4)
 logging (2.1.0)
-match (0.10.0)
+match (0.11.0)
 mechanize (2.5.1)
 memoist (0.15.0)
 mime-types (1.25.1)
@@ -152,7 +152,8 @@ plist (3.1.0)
 power_assert (0.2.6)
 produce (1.3.0)
 psych (2.0.17)
-rack (1.6.4)
+public_suffix (2.0.4)
+rack (1.6.5)
 rack-protection (1.5.3)
 rake (10.4.2)
 rdoc (4.2.1)
@@ -160,7 +161,7 @@ representable (2.3.0)
 retriable (2.1.0)
 rouge (1.11.1)
 rubyzip (1.2.0, 1.1.7)
-scan (0.14.0)
+scan (0.14.1)
 screengrab (0.5.5)
 security (0.1.3)
 shenzhen (0.14.2)
@@ -184,7 +185,7 @@ unf_ext (0.0.7.2)
 venice (0.3.0)
 webrobots (0.1.2)
 word_wrap (1.0.0)
-xcode-install (2.0.8)
+xcode-install (2.0.9)
 xcodeproj (1.4.1)
 xcpretty (0.2.4)
 xcpretty-travis-formatter (0.0.4)
@@ -470,7 +471,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 1963460 4293003819    0%   /
+* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 1972617 4292994662    0%   /
 ========================================
 
 
