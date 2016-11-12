@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_10_24_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_11_09_1
 ========================================
 
 
@@ -32,7 +32,7 @@
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: tar (GNU tar) 1.28
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
-* gcc: gcc (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609
+* gcc: gcc (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
 
 * sudo: Sudo version 1.8.16
 
@@ -40,10 +40,10 @@
 * docker-compose: docker-compose version 1.8.1, build 878cff1
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.3
+* bitrise: 1.4.5
 * stepman: 0.9.25
-* envman: 1.1.1
-* bitrise-bridge: 0.9.10
+* envman: 1.1.2
+* bitrise-bridge: 0.9.11
 ========================================
 
 
@@ -53,7 +53,7 @@ addressable (2.3.8)
 babosa (1.0.2)
 bigdecimal (1.2.8)
 bundler (1.13.6)
-cert (1.4.3)
+cert (1.4.4)
 CFPropertyList (2.3.3)
 claide (1.0.1)
 colored (1.2)
@@ -68,11 +68,11 @@ faraday (0.9.2)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.10.0)
 fastimage (1.6.8)
-fastlane (1.107.0)
-fastlane_core (0.53.0)
+fastlane (1.108.0)
+fastlane_core (0.55.0)
 frameit (3.0.0)
 gh_inspector (1.0.2)
-google-api-client (0.9.19)
+google-api-client (0.9.20)
 googleauth (0.5.1)
 gym (1.12.0)
 highline (1.7.8)
@@ -83,10 +83,10 @@ i18n (0.7.0)
 io-console (0.4.5)
 json (1.8.3)
 jwt (1.5.6)
-krausefx-shenzhen (0.14.10)
+krausefx-shenzhen (0.14.11)
 little-plugger (1.1.4)
 logging (2.1.0)
-match (0.10.0)
+match (0.11.0)
 memoist (0.15.0)
 mime-types (3.1)
 mime-types-data (3.2016.0521)
@@ -102,17 +102,18 @@ net-telnet (0.1.1)
 os (0.9.6)
 pem (1.4.0)
 pilot (1.12.0)
-plist (3.1.0)
+plist (3.2.0)
 power_assert (0.2.6)
 produce (1.3.0)
 psych (2.0.17)
+public_suffix (2.0.4)
 rake (10.4.2)
 rdoc (4.2.1)
 representable (2.3.0)
 retriable (2.1.0)
 rouge (1.11.1)
 rubyzip (1.1.7)
-scan (0.14.0)
+scan (0.14.1)
 screengrab (0.5.5)
 security (0.1.3)
 sigh (1.11.2)
@@ -131,7 +132,7 @@ unf (0.1.4)
 unf_ext (0.0.7.2)
 unicode-display_width (1.1.1)
 word_wrap (1.0.0)
-xcode-install (2.0.8)
+xcode-install (2.0.9)
 xcodeproj (1.4.1)
 xcpretty (0.2.4)
 xcpretty-travis-formatter (0.0.4)
@@ -140,7 +141,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux f1f5200c2e9d 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 324f739dfd5b 4.4.0-28-generic #47-Ubuntu SMP Fri Jun 24 10:09:13 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-28-generic
 * lsb_release --all
@@ -166,7 +167,7 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins: 
  Volume: local
- Network: bridge null host
+ Network: host bridge null
 Kernel Version: 4.4.0-28-generic
 Operating System: Ubuntu 16.04 LTS
 OSType: linux
@@ -174,7 +175,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: 35QV:KKSQ:JT62:EJC2:QZP4:NXVY:FV2N:K3I3:NUWS:IGA3:34VZ:AY2W
+ID: HC7F:VYKM:KXVP:SUXC:LH34:ATAS:EBUF:RVEL:MUNS:53DH:3OO3:BSEU
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -187,7 +188,7 @@ WARNING: No swap limit support
 * Free disk space: /dev/loop0       50G   20G   30G  40% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        196M        5.9G        8.7M        1.2G        6.8G
+Mem:           7.3G        175M        6.1G        8.7M        1.0G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -209,7 +210,7 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 1.107.0
+* Fastlane: fastlane 1.108.0
 * Java: javac 1.8.0_111
 ========================================
 

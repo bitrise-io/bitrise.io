@@ -32,8 +32,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.112-b16, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.0.9
-Homebrew/homebrew-core (git revision dc5a; last commit 2016-11-04)
+* brew: Homebrew 1.1.0
+Homebrew/homebrew-core (git revision 4207; last commit 2016-11-11)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.1.2.0
@@ -47,11 +47,11 @@ Homebrew/homebrew-core (git revision dc5a; last commit 2016-11-04)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.3
+* bitrise: 1.4.5
 * stepman: 0.9.25
-* envman: 1.1.1
-* bitrise-bridge: 0.9.10
-* cmd-bridge: 0.9.4
+* envman: 1.1.2
+* bitrise-bridge: 0.9.11
+* cmd-bridge: 0.9.5
 ========================================
 
 
@@ -59,29 +59,6 @@ Homebrew/homebrew-core (git revision dc5a; last commit 2016-11-04)
 * Bundler: Bundler version 1.13.6
 * CocoaPods: 1.1.1
 * fastlane: fastlane 1.106.2
-
-[32m#######################################################################[0m
-[32m# fastlane 1.107.0 is available. You are on 1.106.2.[0m
-[32m# It is recommended to use the latest version.[0m
-[32m# Update using 'sudo gem update fastlane'.[0m
-[32m#######################################################################[0m
-[32m# Run `sudo gem cleanup` from time to time to speed up fastlane[0m
-[32m#######################################################################[0m
-
-[32m1.107.0 New actions, enhanced debugging features & more[0m
-* Add error message on `fastlane init` when fastlane directory or file already exists (#6849)
-* Update error message when using fastlane_version with bundle (#6831)
-* Automatically use GITHUB_API_TOKEN for create pull request action (#6841)
-* Add app_store_build_number action (#6790)
-* Honor system proxy settings when downloading crashlytics.jar (#6817)
-* enhance env printing + add  `--capture_output`  option
-* Move Actions.md to docs.fastlane.tools (#6809)
-* Improve `fastlane init` already exists error message (#6798)
-* Fix slack action error when passing a custom payload option (#6792)
-* Don’t ask for clipboard on non-interactive shell (#6782)
-* Update dependencies
-[32m
-Update using 'sudo gem update fastlane'[0m
 * xcpretty: 0.2.4
 * Nomad CLI: 2.5.1
 * Nomad CLI IPA / Shenzhen: ipa 0.14.2
@@ -493,7 +470,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  108Gi   91Gi    55% 2151699 4292815580    0%   /
+* Free disk space: /dev/disk0s2  199Gi  107Gi   92Gi    54% 2147287 4292819992    0%   /
 ========================================
 
 
@@ -502,12 +479,12 @@ Software:
 --- Xamarin
 
 * Xamarin Studio
-Release ID: 601005441
-Git revision: 68292d1ab289911c815ddc715dd7cc29a9752f9f
-Build date: 2016-09-09 04:43:23-04
+Release ID: 602001358
+Git revision: 9af49bfd72f62e2e065ebd33d17822a6c6c6a10e
+Build date: 2016-11-07 05:56:48-05
 
 * Mono version:
-Mono JIT compiler version 4.6.0 (mono-4.6.0-branch/746756c Thu Sep  8 05:39:12 EDT 2016)
+Mono JIT compiler version 4.8.0 (mono-4.8.0-branch/dea12ad Fri Nov  4 13:43:21 EDT 2016)
 Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-project.com
 	TLS:           normal
 	SIGSEGV:       altstack
@@ -521,25 +498,25 @@ Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-proj
 /Library/Frameworks/Mono.framework/Versions/Current/Commands/mono
 
 * Xamarin.Android
-7.0.0
+7.0.99
 
 * Xamarin.iOS
-mtouch 10.0.0.6 (xcode8: 6c3fee4)
+mtouch 10.4.0.4 (master: 050f92b)
 
 --- Android
 
 * ANDROID_HOME:
 total 8
-drwxr-xr-x  11 vagrant  staff   374B Nov  3 20:10 .
+drwxr-xr-x  11 vagrant  staff   374B Nov 10 19:06 .
 drwxr-xr-x   4 vagrant  staff   136B Nov  2 01:43 ..
 -rw-r--r--   1 vagrant  staff   1.1K Oct 13  2015 SDK Readme.txt
-drwxr-xr-x   5 vagrant  staff   170B Nov  3 20:17 add-ons
-drwxr-xr-x  15 vagrant  staff   510B Nov  3 20:13 build-tools
-drwxr-xr-x   4 vagrant  staff   136B Nov  3 20:16 extras
-drwxr-xr-x  13 vagrant  staff   442B Nov  3 20:10 platform-tools
-drwxr-xr-x  12 vagrant  staff   408B Nov  3 20:12 platforms
-drwxr-xr-x   9 vagrant  staff   306B Nov  3 20:16 system-images
-drwxr-xr-x   2 vagrant  staff    68B Nov  3 20:17 temp
+drwxr-xr-x   5 vagrant  staff   170B Nov 10 19:13 add-ons
+drwxr-xr-x  15 vagrant  staff   510B Nov 10 19:09 build-tools
+drwxr-xr-x   4 vagrant  staff   136B Nov 10 19:13 extras
+drwxr-xr-x  13 vagrant  staff   442B Nov 10 19:06 platform-tools
+drwxr-xr-x  12 vagrant  staff   408B Nov 10 19:08 platforms
+drwxr-xr-x   9 vagrant  staff   306B Nov 10 19:12 system-images
+drwxr-xr-x   2 vagrant  staff    68B Nov 10 19:13 temp
 drwxr-xr-x  31 vagrant  staff   1.0K Nov  2 01:39 tools
 
 * platform-tools:

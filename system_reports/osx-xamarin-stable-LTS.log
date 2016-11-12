@@ -32,8 +32,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.0.9-41-g0028cf9
-Homebrew/homebrew-core (git revision dc5a6; last commit 2016-11-04)
+* brew: Homebrew 1.1.0-69-g0f6cd9d
+Homebrew/homebrew-core (git revision 42076; last commit 2016-11-11)
 * xctool: 0.2.9
 * Ansible: ansible 2.1.1.0
 * gtimeout: timeout (GNU coreutils) 8.25
@@ -46,11 +46,11 @@ Homebrew/homebrew-core (git revision dc5a6; last commit 2016-11-04)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.3
+* bitrise: 1.4.5
 * stepman: 0.9.25
-* envman: 1.1.1
-* bitrise-bridge: 0.9.10
-* cmd-bridge: 0.9.4
+* envman: 1.1.2
+* bitrise-bridge: 0.9.11
+* cmd-bridge: 0.9.5
 ========================================
 
 
@@ -60,10 +60,17 @@ Homebrew/homebrew-core (git revision dc5a6; last commit 2016-11-04)
 * fastlane: fastlane 1.100.0
 
 [32m#######################################################################[0m
-[32m# fastlane 1.107.0 is available. You are on 1.100.0.[0m
+[32m# fastlane 1.108.0 is available. You are on 1.100.0.[0m
 [32m# It is recommended to use the latest version.[0m
 [32m# Update using 'sudo gem update fastlane'.[0m
 [32m#######################################################################[0m
+
+[32m1.108.0 New update_fastlane command, fastlane_require to auto-install gems & more[0m
+* Implement `fastlane_require` to automatically install gems into bundle (#6858)
+* Add new `fastlane update_fastlane` action (#6896)
+* Support keychains in custom paths and fix non-existing default keychain crash 🔐 (#6887)
+* Hide options with no description in docs (#6919)
+* Fix commit_version_bump could not find a .xcodeproj (#6676)
 
 [32m1.107.0 New actions, enhanced debugging features & more[0m
 * Add error message on `fastlane init` when fastlane directory or file already exists (#6849)
@@ -80,11 +87,6 @@ Homebrew/homebrew-core (git revision dc5a6; last commit 2016-11-04)
 
 [32m1.106.2 Updated dependencies[0m
 Update internal dependencies to support new iTunes Connect team selection (#6724)
-
-[32m1.106.1 Update frameit dependency[0m
-* Losen up _frameit_ dependency
-* Add `env` to black_list for valid lane names (#6693)
-* Markdown docs generator: only print on verbose (#6694)
 
 [32mTo see all new releases, open https://github.com/fastlane/fastlane/releases[0m
 [32m
@@ -283,7 +285,7 @@ watchOS Simulator SDKs:
 
 
 * Available Simulators:
-2016-11-04 10:53:27.436 simctl[1238:5082] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
+2016-11-11 09:52:17.856 simctl[1244:5243] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
 == Device Types ==
 iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
 iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
@@ -456,7 +458,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   91Gi  108Gi    46% 24006327 28212569   46%   /
+* Free disk space: /dev/disk0s2  199Gi   91Gi  108Gi    46% 24008835 28210061   46%   /
 ========================================
 
 
