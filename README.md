@@ -1,6 +1,6 @@
 # Bitrise.io public repositories & issues
 
-> Fun and simple development automation
+> __Fun and simple development automation__
 
 [![Slack channel](http://chat.bitrise.io/badge.svg)](http://chat.bitrise.io)
 
