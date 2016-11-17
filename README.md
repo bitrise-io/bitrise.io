@@ -1,5 +1,7 @@
 # Bitrise.io public repositories & issues
 
+> Making development automation as simple as possible
+
 [![Slack channel](http://chat.bitrise.io/badge.svg)](http://chat.bitrise.io)
 
 The purpose of this repository is to keep track of the most important public repositories related to [bitrise.io](https://www.bitrise.io).
