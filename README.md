@@ -1,6 +1,6 @@
 # Bitrise.io public repositories & issues
 
-> Making development automation as simple as possible
+> Fun and simple development automation
 
 [![Slack channel](http://chat.bitrise.io/badge.svg)](http://chat.bitrise.io)
 
