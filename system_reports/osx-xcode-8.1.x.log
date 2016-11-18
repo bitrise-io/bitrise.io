@@ -32,8 +32,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.112-b16, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.1.0
-Homebrew/homebrew-core (git revision 4207; last commit 2016-11-11)
+* brew: Homebrew 1.1.1
+Homebrew/homebrew-core (git revision 75a5; last commit 2016-11-18)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.1.2.0
@@ -59,34 +59,6 @@ Homebrew/homebrew-core (git revision 4207; last commit 2016-11-11)
 * Bundler: Bundler version 1.13.6
 * CocoaPods: 1.1.1
 * fastlane: fastlane 1.106.2
-
-[32m#######################################################################[0m
-[32m# fastlane 1.108.0 is available. You are on 1.106.2.[0m
-[32m# It is recommended to use the latest version.[0m
-[32m# Update using 'sudo gem update fastlane'.[0m
-[32m#######################################################################[0m
-
-[32m1.108.0 New update_fastlane command, fastlane_require to auto-install gems & more[0m
-* Implement `fastlane_require` to automatically install gems into bundle (#6858)
-* Add new `fastlane update_fastlane` action (#6896)
-* Support keychains in custom paths and fix non-existing default keychain crash 🔐 (#6887)
-* Hide options with no description in docs (#6919)
-* Fix commit_version_bump could not find a .xcodeproj (#6676)
-
-[32m1.107.0 New actions, enhanced debugging features & more[0m
-* Add error message on `fastlane init` when fastlane directory or file already exists (#6849)
-* Update error message when using fastlane_version with bundle (#6831)
-* Automatically use GITHUB_API_TOKEN for create pull request action (#6841)
-* Add app_store_build_number action (#6790)
-* Honor system proxy settings when downloading crashlytics.jar (#6817)
-* enhance env printing + add  `--capture_output`  option
-* Move Actions.md to docs.fastlane.tools (#6809)
-* Improve `fastlane init` already exists error message (#6798)
-* Fix slack action error when passing a custom payload option (#6792)
-* Don’t ask for clipboard on non-interactive shell (#6782)
-* Update dependencies
-[32m
-Update using 'sudo gem update fastlane'[0m
 * xcpretty: 0.2.4
 * Nomad CLI: 2.5.1
 * Nomad CLI IPA / Shenzhen: ipa 0.14.2
@@ -487,7 +459,7 @@ Software:
       Kernel Version: Darwin 16.1.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: controlosxstageahostondemandinternaltest.local
+      Computer Name: controlosxstagebhostondemandinternaltest.local
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
@@ -498,7 +470,12 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 1965778 4293001501    0%   /
+* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 1973104 4292994175    0%   /
+========================================
+
+
+=== Environment infos =======================
+MATCH_KEYCHAIN_PASSWORD environment set
 ========================================
 
 
