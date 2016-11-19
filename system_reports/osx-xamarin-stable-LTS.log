@@ -32,8 +32,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.1.0-69-g0f6cd9d
-Homebrew/homebrew-core (git revision 42076; last commit 2016-11-11)
+* brew: Homebrew 1.1.1-23-g0e22188
+Homebrew/homebrew-core (git revision 75a5; last commit 2016-11-18)
 * xctool: 0.2.9
 * Ansible: ansible 2.1.1.0
 * gtimeout: timeout (GNU coreutils) 8.25
@@ -60,37 +60,10 @@ Homebrew/homebrew-core (git revision 42076; last commit 2016-11-11)
 * fastlane: fastlane 1.100.0
 
 [32m#######################################################################[0m
-[32m# fastlane 1.108.0 is available. You are on 1.100.0.[0m
+[32m# fastlane 1.110.0 is available. You are on 1.100.0.[0m
 [32m# It is recommended to use the latest version.[0m
 [32m# Update using 'sudo gem update fastlane'.[0m
 [32m#######################################################################[0m
-
-[32m1.108.0 New update_fastlane command, fastlane_require to auto-install gems & more[0m
-* Implement `fastlane_require` to automatically install gems into bundle (#6858)
-* Add new `fastlane update_fastlane` action (#6896)
-* Support keychains in custom paths and fix non-existing default keychain crash 🔐 (#6887)
-* Hide options with no description in docs (#6919)
-* Fix commit_version_bump could not find a .xcodeproj (#6676)
-
-[32m1.107.0 New actions, enhanced debugging features & more[0m
-* Add error message on `fastlane init` when fastlane directory or file already exists (#6849)
-* Update error message when using fastlane_version with bundle (#6831)
-* Automatically use GITHUB_API_TOKEN for create pull request action (#6841)
-* Add app_store_build_number action (#6790)
-* Honor system proxy settings when downloading crashlytics.jar (#6817)
-* enhance env printing + add  `--capture_output`  option
-* Move Actions.md to docs.fastlane.tools (#6809)
-* Improve `fastlane init` already exists error message (#6798)
-* Fix slack action error when passing a custom payload option (#6792)
-* Don’t ask for clipboard on non-interactive shell (#6782)
-* Update dependencies
-
-[32m1.106.2 Updated dependencies[0m
-Update internal dependencies to support new iTunes Connect team selection (#6724)
-
-[32mTo see all new releases, open https://github.com/fastlane/fastlane/releases[0m
-[32m
-Update using 'sudo gem update fastlane'[0m
 * xcpretty: 0.2.2
 * Nomad CLI: 2.5.1
 * Nomad CLI IPA / Shenzhen: ipa 0.14.2
@@ -285,7 +258,7 @@ watchOS Simulator SDKs:
 
 
 * Available Simulators:
-2016-11-11 09:52:17.856 simctl[1244:5243] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
+2016-11-18 08:01:43.841 simctl[1234:5057] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
 == Device Types ==
 iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
 iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
@@ -447,7 +420,7 @@ Software:
       Kernel Version: Darwin 15.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: controlosxstageahostondemandinternaltest.local
+      Computer Name: controlosxstagebhostondemandinternaltest.local
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
@@ -458,7 +431,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   91Gi  108Gi    46% 24008835 28210061   46%   /
+* Free disk space: /dev/disk0s2  199Gi   91Gi  108Gi    46% 24012168 28206728   46%   /
 ========================================
 
 
@@ -493,7 +466,7 @@ mtouch 9.8.2.22 (cycle7-sr1: f37444a)
 
 --- Android
 
-* ANDROID_HOME:
+* ANDROID_HOME (/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx) content:
 total 8
 drwxr-xr-x  11 vagrant  staff   374B Sep  8 22:57 .
 drwxr-xr-x   4 vagrant  staff   136B Aug 16 05:06 ..
@@ -507,7 +480,31 @@ drwxr-xr-x   9 vagrant  staff   306B Sep  8 23:02 system-images
 drwxr-xr-x   2 vagrant  staff    68B Sep  8 23:03 temp
 drwxr-xr-x  31 vagrant  staff   1.0K Aug 16 05:00 tools
 
-* platform-tools:
+* ANDROID_NDK_HOME () content:
+total 152
+drwxr-xr-x  21 vagrant  staff   714B Nov 18 08:01 .
+drwxr-xr-x+ 41 vagrant  staff   1.4K Nov 18 08:00 ..
+drwxr-xr-x  13 vagrant  staff   442B Nov 18 08:01 .git
+-rw-r--r--   1 vagrant  staff    25B Nov 18 08:01 .gitignore
+-rw-r--r--   1 vagrant  staff     0B Nov 18 08:01 .gitmodules
+-rw-r--r--   1 vagrant  staff   4.3K Nov 18 08:01 CHANGELOG.md
+-rw-r--r--   1 vagrant  staff   1.0K Nov 18 08:01 LICENSE
+-rw-r--r--   1 vagrant  staff   562B Nov 18 08:01 PULL_REQUEST_TEMPLATE.md
+-rw-r--r--   1 vagrant  staff    11K Nov 18 08:01 README.md
+-rw-r--r--   1 vagrant  staff   3.0K Nov 18 08:01 bitrise.yml
+drwxr-xr-x   4 vagrant  staff   136B Nov 18 08:01 installers
+-rw-r--r--   1 vagrant  staff    10K Nov 18 08:01 playbook.yml
+drwxr-xr-x   8 vagrant  staff   272B Nov 18 08:01 profiles
+drwxr-xr-x   5 vagrant  staff   170B Nov 18 08:01 setupfiles
+-rw-r--r--   1 vagrant  staff   7.2K Nov 18 08:01 system_report.sh
+drwxr-xr-x   3 vagrant  staff   102B Nov 18 08:01 tools
+-rw-r--r--   1 vagrant  staff   1.6K Nov 18 08:01 vagrant-insecure_private_key
+-rw-r--r--   1 vagrant  staff   934B Nov 18 08:01 vagrant-setup-playbook.yml
+-rw-r--r--   1 vagrant  staff   3.8K Nov 18 08:01 weekly-cache-update-playbook.yml
+drwxr-xr-x   4 vagrant  staff   136B Nov 18 08:01 xamarin
+-rw-r--r--   1 vagrant  staff   6.7K Nov 18 08:01 xamarin-playbook.yml
+
+* platform-tools content:
 NOTICE.txt
 adb
 api
@@ -520,7 +517,7 @@ source.properties
 sqlite3
 systrace
 
-* build-tools:
+* build-tools content:
 17.0.0
 19.1.0
 20.0.0
@@ -533,7 +530,7 @@ systrace
 24.0.1
 24.0.2
 
-* extras:
+* extras content:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/extras
 ├── android
 │   ├── m2repository
@@ -547,7 +544,7 @@ systrace
 * extra-android-support package version:
 Pkg.Revision=23.2.1
 
-* platforms:
+* platforms content:
 android-10
 android-15
 android-17
@@ -558,7 +555,7 @@ android-22
 android-23
 android-24
 
-* system-images:
+* system-images content:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/system-images
 ├── android-15
 │   └── default
@@ -592,6 +589,11 @@ android-24
         └── armeabi-v7a
 
 22 directories, 8 files
+========================================
+
+
+=== Environment infos =======================
+MATCH_KEYCHAIN_PASSWORD environment set
 ========================================
 
 

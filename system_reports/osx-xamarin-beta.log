@@ -32,8 +32,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.112-b16, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.1.0
-Homebrew/homebrew-core (git revision 4207; last commit 2016-11-11)
+* brew: Homebrew 1.1.1
+Homebrew/homebrew-core (git revision 75a5; last commit 2016-11-18)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.1.2.0
@@ -61,10 +61,28 @@ Homebrew/homebrew-core (git revision 4207; last commit 2016-11-11)
 * fastlane: fastlane 1.106.2
 
 [32m#######################################################################[0m
-[32m# fastlane 1.108.0 is available. You are on 1.106.2.[0m
+[32m# fastlane 1.110.0 is available. You are on 1.106.2.[0m
 [32m# It is recommended to use the latest version.[0m
 [32m# Update using 'sudo gem update fastlane'.[0m
 [32m#######################################################################[0m
+
+[32m1.110.0 Improvements[0m
+* Deprecate SIGH_UDID in favor of corrected SIGH_UUID
+* Remove .positive? to support ruby < 2.3
+* Clarify version number error messaging when Xcode project is not set up correctly
+* Ignore CocoaPods paths
+* Update `fastlane_version` action to show new update message
+* Set fail_build to expect a string
+* Add bitrise.io git_branch ENV variable check
+* Add option to provide -framework option for archive Carthage command
+* Update dependency to latest `fastlane_core` to fix app-specific password prompting
+* Unit tests run on Sierra
+
+[32m1.109.0 Improvements[0m
+* Update all tools to latest fastlane_core (#7026)
+* Pass generated Fastfile ID through to enhancer (#7022)
+* Add `troubleshoot` option (#6889)
+* Improvements to 'fastlane env' (#6871, #6955, #6950)
 
 [32m1.108.0 New update_fastlane command, fastlane_require to auto-install gems & more[0m
 * Implement `fastlane_require` to automatically install gems into bundle (#6858)
@@ -73,18 +91,7 @@ Homebrew/homebrew-core (git revision 4207; last commit 2016-11-11)
 * Hide options with no description in docs (#6919)
 * Fix commit_version_bump could not find a .xcodeproj (#6676)
 
-[32m1.107.0 New actions, enhanced debugging features & more[0m
-* Add error message on `fastlane init` when fastlane directory or file already exists (#6849)
-* Update error message when using fastlane_version with bundle (#6831)
-* Automatically use GITHUB_API_TOKEN for create pull request action (#6841)
-* Add app_store_build_number action (#6790)
-* Honor system proxy settings when downloading crashlytics.jar (#6817)
-* enhance env printing + add  `--capture_output`  option
-* Move Actions.md to docs.fastlane.tools (#6809)
-* Improve `fastlane init` already exists error message (#6798)
-* Fix slack action error when passing a custom payload option (#6792)
-* Don’t ask for clipboard on non-interactive shell (#6782)
-* Update dependencies
+[32mTo see all new releases, open https://github.com/fastlane/fastlane/releases[0m
 [32m
 Update using 'sudo gem update fastlane'[0m
 * xcpretty: 0.2.4
@@ -487,7 +494,7 @@ Software:
       Kernel Version: Darwin 16.1.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: controlosxstageahostondemandinternaltest.local
+      Computer Name: controlosxstagebhostondemandinternaltest.local
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
@@ -498,7 +505,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  107Gi   92Gi    54% 2147049 4292820230    0%   /
+* Free disk space: /dev/disk0s2  199Gi  110Gi   89Gi    56% 2154098 4292813181    0%   /
 ========================================
 
 
@@ -512,7 +519,7 @@ Git revision: 0ccfcd52b95305ebd5b7eca0d88c1017035910ae
 Build date: 2016-10-28 15:12:43-04
 
 * Mono version:
-Mono JIT compiler version 4.6.2 (mono-4.6.0-branch/db69866 Mon Oct 31 16:58:55 EDT 2016)
+Mono JIT compiler version 4.6.2 (mono-4.6.0-branch/08fd525 Thu Nov 10 20:28:28 EST 2016)
 Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-project.com
 	TLS:           normal
 	SIGSEGV:       altstack
@@ -533,21 +540,39 @@ mtouch 10.2.1.5 (xcode8.1: 44931ae)
 
 --- Android
 
-* ANDROID_HOME:
+* ANDROID_HOME (/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx) content:
 total 8
-drwxr-xr-x  11 vagrant  staff   374B Nov 10 19:05 .
+drwxr-xr-x  11 vagrant  staff   374B Nov 17 19:14 .
 drwxr-xr-x   4 vagrant  staff   136B Nov  2 01:43 ..
 -rw-r--r--   1 vagrant  staff   1.1K Oct 13  2015 SDK Readme.txt
-drwxr-xr-x   5 vagrant  staff   170B Nov 10 19:13 add-ons
-drwxr-xr-x  15 vagrant  staff   510B Nov 10 19:09 build-tools
-drwxr-xr-x   4 vagrant  staff   136B Nov 10 19:12 extras
-drwxr-xr-x  13 vagrant  staff   442B Nov 10 19:05 platform-tools
-drwxr-xr-x  12 vagrant  staff   408B Nov 10 19:07 platforms
-drwxr-xr-x   9 vagrant  staff   306B Nov 10 19:11 system-images
-drwxr-xr-x   2 vagrant  staff    68B Nov 10 19:13 temp
+drwxr-xr-x   5 vagrant  staff   170B Nov 17 19:24 add-ons
+drwxr-xr-x  15 vagrant  staff   510B Nov 17 19:19 build-tools
+drwxr-xr-x   4 vagrant  staff   136B Nov 17 19:23 extras
+drwxr-xr-x  13 vagrant  staff   442B Nov 17 19:14 platform-tools
+drwxr-xr-x  12 vagrant  staff   408B Nov 17 19:17 platforms
+drwxr-xr-x   9 vagrant  staff   306B Nov 17 19:22 system-images
+drwxr-xr-x   2 vagrant  staff    68B Nov 17 19:24 temp
 drwxr-xr-x  31 vagrant  staff   1.0K Nov  2 01:39 tools
 
-* platform-tools:
+* ANDROID_NDK_HOME (/Users/vagrant/Library/Developer/Xamarin/android-ndk/android-ndk-r11c) content:
+total 64
+drwxr-xr-x  15 vagrant  staff   510B Nov  2 01:44 .
+drwxr-xr-x   3 vagrant  staff   102B Nov  2 01:43 ..
+-rw-r--r--   1 vagrant  staff   6.3K Mar 30  2016 CHANGELOG.md
+drwxr-xr-x  11 vagrant  staff   374B Nov  2 01:43 build
+-rwxr-xr-x   1 vagrant  staff    72B Mar 30  2016 ndk-build
+-rwxr-xr-x   1 vagrant  staff    95B Mar 30  2016 ndk-depends
+-rwxr-xr-x   1 vagrant  staff    91B Mar 30  2016 ndk-gdb
+-rwxr-xr-x   1 vagrant  staff    93B Mar 30  2016 ndk-stack
+-rwxr-xr-x   1 vagrant  staff    93B Mar 30  2016 ndk-which
+drwxr-xr-x  18 vagrant  staff   612B Nov  2 01:43 platforms
+drwxr-xr-x   9 vagrant  staff   306B Nov  2 01:43 prebuilt
+drwxr-xr-x   6 vagrant  staff   204B Nov  2 01:44 python-packages
+-rw-r--r--   1 vagrant  staff    51B Mar 30  2016 source.properties
+drwxr-xr-x   5 vagrant  staff   170B Nov  2 01:44 sources
+drwxr-xr-x   9 vagrant  staff   306B Nov  2 01:44 toolchains
+
+* platform-tools content:
 NOTICE.txt
 adb
 api
@@ -560,7 +585,7 @@ source.properties
 sqlite3
 systrace
 
-* build-tools:
+* build-tools content:
 17.0.0
 19.1.0
 20.0.0
@@ -575,7 +600,7 @@ systrace
 24.0.3
 25.0.0
 
-* extras:
+* extras content:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/extras
 ├── android
 │   ├── m2repository
@@ -589,7 +614,7 @@ systrace
 * extra-android-support package version:
 Pkg.Revision=23.2.1
 
-* platforms:
+* platforms content:
 android-10
 android-15
 android-17
@@ -601,7 +626,7 @@ android-23
 android-24
 android-25
 
-* system-images:
+* system-images content:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/system-images
 ├── android-15
 │   └── default
@@ -619,8 +644,6 @@ android-25
 │   └── default
 │       └── armeabi-v7a
 ├── android-23
-│   ├── default
-│   │   └── armeabi-v7a
 │   └── google_apis
 │       ├── armeabi-v7a
 │       └── x86
@@ -628,7 +651,12 @@ android-25
     └── default
         └── armeabi-v7a
 
-24 directories, 0 files
+22 directories, 0 files
+========================================
+
+
+=== Environment infos =======================
+MATCH_KEYCHAIN_PASSWORD environment set
 ========================================
 
 
