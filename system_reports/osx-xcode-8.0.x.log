@@ -32,8 +32,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.1.1-23-g0e22188
-Homebrew/homebrew-core (git revision 75a5; last commit 2016-11-18)
+* brew: Homebrew 1.1.1-66-gf8aa057
+Homebrew/homebrew-core (git revision fa0b; last commit 2016-11-24)
 * xctool: 0.2.9
 * Ansible: ansible 2.1.1.0
 * gtimeout: timeout (GNU coreutils) 8.25
@@ -58,6 +58,41 @@ Homebrew/homebrew-core (git revision 75a5; last commit 2016-11-18)
 * Bundler: Bundler version 1.13.1
 * CocoaPods: 1.0.1
 * fastlane: fastlane 1.102.0
+
+[32m#######################################################################[0m
+[32m# fastlane 1.110.0 is available. You are on 1.102.0.[0m
+[32m# It is recommended to use the latest version.[0m
+[32m# Update using 'sudo gem update fastlane'.[0m
+[32m#######################################################################[0m
+
+[32m1.110.0 Improvements[0m
+* Deprecate SIGH_UDID in favor of corrected SIGH_UUID
+* Remove .positive? to support ruby < 2.3
+* Clarify version number error messaging when Xcode project is not set up correctly
+* Ignore CocoaPods paths
+* Update `fastlane_version` action to show new update message
+* Set fail_build to expect a string
+* Add bitrise.io git_branch ENV variable check
+* Add option to provide -framework option for archive Carthage command
+* Update dependency to latest `fastlane_core` to fix app-specific password prompting
+* Unit tests run on Sierra
+
+[32m1.109.0 Improvements[0m
+* Update all tools to latest fastlane_core (#7026)
+* Pass generated Fastfile ID through to enhancer (#7022)
+* Add `troubleshoot` option (#6889)
+* Improvements to 'fastlane env' (#6871, #6955, #6950)
+
+[32m1.108.0 New update_fastlane command, fastlane_require to auto-install gems & more[0m
+* Implement `fastlane_require` to automatically install gems into bundle (#6858)
+* Add new `fastlane update_fastlane` action (#6896)
+* Support keychains in custom paths and fix non-existing default keychain crash 🔐 (#6887)
+* Hide options with no description in docs (#6919)
+* Fix commit_version_bump could not find a .xcodeproj (#6676)
+
+[32mTo see all new releases, open https://github.com/fastlane/fastlane/releases[0m
+[32m
+Update using 'sudo gem update fastlane'[0m
 * xcpretty: 0.2.2
 * Nomad CLI: 2.5.1
 * Nomad CLI IPA / Shenzhen: ipa 0.14.2
@@ -454,7 +489,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 20574095 31644801   39%   /
+* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 20574877 31644019   39%   /
 ========================================
 
 
