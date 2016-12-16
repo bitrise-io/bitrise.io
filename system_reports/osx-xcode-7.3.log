@@ -36,8 +36,8 @@ Did you mean this?
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.1.2-50-g33b34b4
-Homebrew/homebrew-core (git revision a2d3; last commit 2016-12-09)
+* brew: Homebrew 1.1.4-2-g9cd5a21
+Homebrew/homebrew-core (git revision a91c3; last commit 2016-12-16)
 * xctool: 0.2.9
 * Ansible: ansible 2.0.2.0
 * gtimeout: timeout (GNU coreutils) 8.25
@@ -51,8 +51,8 @@ Homebrew/homebrew-core (git revision a2d3; last commit 2016-12-09)
 * wine: wine-1.8.2
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.5
-* stepman: 0.9.25
+* bitrise: 1.5.1
+* stepman: 0.9.26
 * envman: 1.1.2
 * bitrise-bridge: 0.9.11
 * cmd-bridge: 0.9.5
@@ -189,25 +189,19 @@ xcpretty-travis-formatter (0.0.4)
 
 === Checking Xcode CLT dirs ============
 
- * ls -alh /usr/include/CommonCrypto
-total 24
-drwxr-xr-x   10 root  wheel   340B Sep 12 06:33 .
-drwxr-xr-x  258 root  wheel   8.6K Sep 12 06:33 ..
--rw-r--r--    1 root  wheel   1.3K Feb  4  2016 CommonCrypto.h
--rw-r--r--    1 root  wheel   2.4K Feb  4  2016 CommonCryptoError.h
--rw-r--r--    1 root  wheel    33K Feb  4  2016 CommonCryptor.h
--rw-r--r--    1 root  wheel    11K Feb  4  2016 CommonDigest.h
--rw-r--r--    1 root  wheel   4.1K Feb  4  2016 CommonHMAC.h
--rw-r--r--    1 root  wheel   4.6K Feb  4  2016 CommonKeyDerivation.h
--rw-r--r--    1 root  wheel   1.7K Feb  4  2016 CommonRandom.h
--rw-r--r--    1 root  wheel   6.1K Feb  4  2016 CommonSymmetricKeywrap.h
+ * ls -1 /usr/include/CommonCrypto
+CommonCrypto.h
+CommonCryptoError.h
+CommonCryptor.h
+CommonDigest.h
+CommonHMAC.h
+CommonKeyDerivation.h
+CommonRandom.h
+CommonSymmetricKeywrap.h
 
- * ls -alh /Library/Developer/CommandLineTools/
-total 0
-drwxr-xr-x  4 root  admin   136B Mar  8  2016 .
-drwxr-xr-x  4 root  admin   136B May  4  2016 ..
-drwxr-xr-x  5 root  admin   170B Mar  8  2016 Library
-drwxr-xr-x  7 root  admin   238B Mar  8  2016 usr
+ * ls -1 /Library/Developer/CommandLineTools/
+Library
+usr
 
  * /Library/Developer/CommandLineTools/usr/bin/swift --version
 Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)
@@ -249,7 +243,7 @@ watchOS Simulator SDKs:
 
 
 * Available Simulators:
-2016-12-09 06:08:55.426 simctl[1143:4882] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
+2016-12-16 05:12:59.002 simctl[1147:4852] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
 == Device Types ==
 iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
 iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
@@ -415,14 +409,14 @@ Software:
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
-      Time since boot: 2 minutes
+      Time since boot: 1 minute
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2   99Gi   66Gi   33Gi    67% 17248372 8756124   66%   /
+* Free disk space: /dev/disk0s2   99Gi   66Gi   33Gi    67% 17254018 8750478   66%   /
 ========================================
 
 
