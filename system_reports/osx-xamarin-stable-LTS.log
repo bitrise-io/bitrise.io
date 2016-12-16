@@ -32,8 +32,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.1.2-50-g33b34b4
-Homebrew/homebrew-core (git revision a2d3; last commit 2016-12-09)
+* brew: Homebrew 1.1.4-2-g9cd5a21
+Homebrew/homebrew-core (git revision a91c; last commit 2016-12-16)
 * xctool: 0.2.9
 * Ansible: ansible 2.1.1.0
 * gtimeout: timeout (GNU coreutils) 8.25
@@ -46,8 +46,8 @@ Homebrew/homebrew-core (git revision a2d3; last commit 2016-12-09)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.5
-* stepman: 0.9.25
+* bitrise: 1.5.1
+* stepman: 0.9.26
 * envman: 1.1.2
 * bitrise-bridge: 0.9.11
 * cmd-bridge: 0.9.5
@@ -192,25 +192,19 @@ xcpretty-travis-formatter (0.0.4)
 
 === Checking Xcode CLT dirs ============
 
- * ls -alh /usr/include/CommonCrypto
-total 24
-drwxr-xr-x   10 root  wheel   340B Feb  4  2016 .
-drwxr-xr-x  258 root  wheel   8.6K Aug 15 09:06 ..
--rw-r--r--    1 root  wheel   1.3K Feb  4  2016 CommonCrypto.h
--rw-r--r--    1 root  wheel   2.4K Feb  4  2016 CommonCryptoError.h
--rw-r--r--    1 root  wheel    33K Feb  4  2016 CommonCryptor.h
--rw-r--r--    1 root  wheel    11K Feb  4  2016 CommonDigest.h
--rw-r--r--    1 root  wheel   4.1K Feb  4  2016 CommonHMAC.h
--rw-r--r--    1 root  wheel   4.6K Feb  4  2016 CommonKeyDerivation.h
--rw-r--r--    1 root  wheel   1.7K Feb  4  2016 CommonRandom.h
--rw-r--r--    1 root  wheel   6.1K Feb  4  2016 CommonSymmetricKeywrap.h
+ * ls -1 /usr/include/CommonCrypto
+CommonCrypto.h
+CommonCryptoError.h
+CommonCryptor.h
+CommonDigest.h
+CommonHMAC.h
+CommonKeyDerivation.h
+CommonRandom.h
+CommonSymmetricKeywrap.h
 
- * ls -alh /Library/Developer/CommandLineTools/
-total 0
-drwxr-xr-x  4 root  admin   136B Apr 26  2016 .
-drwxr-xr-x  4 root  admin   136B Aug 15 15:03 ..
-drwxr-xr-x  5 root  admin   170B Apr 26  2016 Library
-drwxr-xr-x  7 root  admin   238B Apr 26  2016 usr
+ * ls -1 /Library/Developer/CommandLineTools/
+Library
+usr
 
  * /Library/Developer/CommandLineTools/usr/bin/swift --version
 Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)
@@ -252,7 +246,7 @@ watchOS Simulator SDKs:
 
 
 * Available Simulators:
-2016-12-09 05:58:30.321 simctl[1237:5058] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
+2016-12-16 05:02:44.421 simctl[1247:5202] Failed to locate a valid instance of CoreSimulatorService in the bootstrap.  Adding it now.
 == Device Types ==
 iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
 iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
@@ -418,14 +412,14 @@ Software:
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
-      Time since boot: 1 minute
+      Time since boot: 2 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   91Gi  108Gi    46% 24018481 28200415   46%   /
+* Free disk space: /dev/disk0s2  199Gi   91Gi  108Gi    46% 24027081 28191815   46%   /
 ========================================
 
 
@@ -461,42 +455,18 @@ mtouch 9.8.2.22 (cycle7-sr1: f37444a)
 --- Android
 
 * ANDROID_HOME (/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx) content:
-total 8
-drwxr-xr-x  11 vagrant  staff   374B Sep  8 22:57 .
-drwxr-xr-x   4 vagrant  staff   136B Aug 16 05:06 ..
--rw-r--r--   1 vagrant  staff   1.1K Oct 13  2015 SDK Readme.txt
-drwxr-xr-x   5 vagrant  staff   170B Sep  8 23:03 add-ons
-drwxr-xr-x  13 vagrant  staff   442B Sep  8 23:00 build-tools
-drwxr-xr-x   4 vagrant  staff   136B Sep  8 23:03 extras
-drwxr-xr-x  13 vagrant  staff   442B Sep  8 22:57 platform-tools
-drwxr-xr-x  11 vagrant  staff   374B Sep  8 22:59 platforms
-drwxr-xr-x   9 vagrant  staff   306B Sep  8 23:02 system-images
-drwxr-xr-x   2 vagrant  staff    68B Sep  8 23:03 temp
-drwxr-xr-x  31 vagrant  staff   1.0K Aug 16 05:00 tools
+SDK Readme.txt
+add-ons
+build-tools
+extras
+platform-tools
+platforms
+system-images
+temp
+tools
 
 * ANDROID_NDK_HOME () content:
-total 160
-drwxr-xr-x  21 vagrant  staff   714B Dec  9 05:58 .
-drwxr-xr-x+ 41 vagrant  staff   1.4K Dec  9 05:57 ..
-drwxr-xr-x  13 vagrant  staff   442B Dec  9 05:58 .git
--rw-r--r--   1 vagrant  staff    25B Dec  9 05:58 .gitignore
--rw-r--r--   1 vagrant  staff     0B Dec  9 05:58 .gitmodules
--rw-r--r--   1 vagrant  staff   4.4K Dec  9 05:58 CHANGELOG.md
--rw-r--r--   1 vagrant  staff   1.0K Dec  9 05:58 LICENSE
--rw-r--r--   1 vagrant  staff   562B Dec  9 05:58 PULL_REQUEST_TEMPLATE.md
--rw-r--r--   1 vagrant  staff    11K Dec  9 05:58 README.md
--rw-r--r--   1 vagrant  staff   3.0K Dec  9 05:58 bitrise.yml
-drwxr-xr-x   4 vagrant  staff   136B Dec  9 05:58 installers
--rw-r--r--   1 vagrant  staff    10K Dec  9 05:58 playbook.yml
-drwxr-xr-x   8 vagrant  staff   272B Dec  9 05:58 profiles
-drwxr-xr-x   5 vagrant  staff   170B Dec  9 05:58 setupfiles
--rw-r--r--   1 vagrant  staff   7.2K Dec  9 05:58 system_report.sh
-drwxr-xr-x   3 vagrant  staff   102B Dec  9 05:58 tools
--rw-r--r--   1 vagrant  staff   1.6K Dec  9 05:58 vagrant-insecure_private_key
--rw-r--r--   1 vagrant  staff   934B Dec  9 05:58 vagrant-setup-playbook.yml
--rw-r--r--   1 vagrant  staff   4.2K Dec  9 05:58 weekly-cache-update-playbook.yml
-drwxr-xr-x   4 vagrant  staff   136B Dec  9 05:58 xamarin
--rw-r--r--   1 vagrant  staff   6.8K Dec  9 05:58 xamarin-playbook.yml
+ (!) ANDROID_NDK_HOME environment variable is not defined!
 
 * platform-tools content:
 NOTICE.txt
@@ -534,9 +504,6 @@ systrace
     └── m2repository
 
 6 directories, 0 files
-
-* extra-android-support package version:
-Pkg.Revision=23.2.1
 
 * platforms content:
 android-10
