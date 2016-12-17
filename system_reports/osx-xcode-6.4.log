@@ -35,7 +35,7 @@ Did you mean this?
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew >1.1.0 (no git repository)
-Homebrew/homebrew-core (git revision a2d3; last commit 2016-12-09)
+Homebrew/homebrew-core (git revision a91c; last commit 2016-12-16)
 * xctool: 0.2.7
 * Ansible: ansible 2.0.0.0
 * gtimeout: timeout (GNU coreutils) 8.24
@@ -51,8 +51,8 @@ Homebrew/homebrew-core (git revision a2d3; last commit 2016-12-09)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.5
-* stepman: 0.9.25
+* bitrise: 1.5.1
+* stepman: 0.9.26
 * envman: 1.1.2
 * bitrise-bridge: 0.9.11
 * cmd-bridge: 0.9.5
@@ -191,25 +191,19 @@ xcpretty-travis-formatter (0.0.4)
 
 === Checking Xcode CLT dirs ============
 
- * ls -alh /usr/include/CommonCrypto
-total 24
-drwxr-xr-x   10 root  wheel   340B Oct 23  2015 .
-drwxr-xr-x  258 root  wheel   8.6K Jan  8  2016 ..
--rw-r--r--    1 root  wheel   1.3K Oct 23  2015 CommonCrypto.h
--rw-r--r--    1 root  wheel   2.4K Oct 23  2015 CommonCryptoError.h
--rw-r--r--    1 root  wheel    33K Oct 23  2015 CommonCryptor.h
--rw-r--r--    1 root  wheel    11K Oct 23  2015 CommonDigest.h
--rw-r--r--    1 root  wheel   4.1K Oct 23  2015 CommonHMAC.h
--rw-r--r--    1 root  wheel   4.6K Oct 23  2015 CommonKeyDerivation.h
--rw-r--r--    1 root  wheel   1.7K Oct 23  2015 CommonRandom.h
--rw-r--r--    1 root  wheel   6.1K Oct 23  2015 CommonSymmetricKeywrap.h
+ * ls -1 /usr/include/CommonCrypto
+CommonCrypto.h
+CommonCryptoError.h
+CommonCryptor.h
+CommonDigest.h
+CommonHMAC.h
+CommonKeyDerivation.h
+CommonRandom.h
+CommonSymmetricKeywrap.h
 
- * ls -alh /Library/Developer/CommandLineTools/
-total 0
-drwxr-xr-x  4 root  admin   136B Nov 17  2015 .
-drwxr-xr-x  4 root  admin   136B Jan  8  2016 ..
-drwxr-xr-x  5 root  admin   170B Nov 17  2015 Library
-drwxr-xr-x  7 root  admin   238B Nov 17  2015 usr
+ * ls -1 /Library/Developer/CommandLineTools/
+Library
+usr
 
  * /Library/Developer/CommandLineTools/usr/bin/swift --version
 Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)
@@ -340,7 +334,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2   99Gi   32Gi   67Gi    32% 8321895 17682601   32%   /
+* Free disk space: /dev/disk0s2   99Gi   32Gi   67Gi    32% 8327257 17677239   32%   /
 ========================================
 
 

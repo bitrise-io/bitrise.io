@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_11_09_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2016_12_15_1
 ========================================
 
 
@@ -40,8 +40,8 @@
 * docker-compose: docker-compose version 1.8.1, build 878cff1
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.5
-* stepman: 0.9.25
+* bitrise: 1.5.1
+* stepman: 0.9.26
 * envman: 1.1.2
 * bitrise-bridge: 0.9.11
 ========================================
@@ -49,17 +49,15 @@
 
 === All Ruby GEMs ======================
 activesupport (4.2.7.1)
-addressable (2.3.8)
+addressable (2.5.0)
 babosa (1.0.2)
 bigdecimal (1.2.8)
 bundler (1.13.6)
-cert (1.4.4)
 CFPropertyList (2.3.4)
 claide (1.0.1)
 colored (1.2)
 commander (4.4.1)
 credentials_manager (0.16.2)
-deliver (1.16.1)
 did_you_mean (1.0.0)
 domain_name (0.5.20161129)
 dotenv (2.1.1)
@@ -67,26 +65,21 @@ excon (0.54.0)
 faraday (0.10.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.10.1)
-fastimage (1.6.8)
-fastlane (1.111.0)
-fastlane_core (0.59.0)
-frameit (3.0.0)
+fastimage (2.0.1)
+fastlane (2.0.3)
 gh_inspector (1.0.2)
 google-api-client (0.9.20)
 googleauth (0.5.1)
-gym (1.12.1)
 highline (1.7.8)
 http-cookie (1.0.3)
-httpclient (2.8.2.4)
+httpclient (2.8.3)
 hurley (0.2)
 i18n (0.7.0)
 io-console (0.4.5)
 json (1.8.3)
 jwt (1.5.6)
-krausefx-shenzhen (0.14.11)
 little-plugger (1.1.4)
 logging (2.1.0)
-match (0.11.1)
 memoist (0.15.0)
 mime-types (3.1)
 mime-types-data (3.2016.0521)
@@ -96,15 +89,10 @@ multi_json (1.12.1)
 multi_xml (0.6.0)
 multipart-post (2.0.0)
 nanaimo (0.2.3)
-net-sftp (2.1.2)
-net-ssh (3.2.0)
 net-telnet (0.1.1)
 os (0.9.6)
-pem (1.4.1)
-pilot (1.12.1)
 plist (3.2.0)
 power_assert (0.2.6)
-produce (1.3.2)
 psych (2.1.0)
 public_suffix (2.0.4)
 rake (10.4.2)
@@ -112,25 +100,20 @@ rdoc (4.2.1)
 representable (2.3.0)
 retriable (2.1.0)
 rouge (1.11.1)
-rubyzip (1.1.7)
-scan (0.14.2)
-screengrab (0.5.6)
+rubyzip (1.2.0)
 security (0.1.3)
-sigh (1.12.1)
 signet (0.7.3)
 slack-notifier (1.5.1)
-snapshot (1.16.4)
-spaceship (0.38.5)
-supply (0.8.0)
+spaceship (0.39.0)
 terminal-notifier (1.7.1)
-terminal-table (1.4.5)
+terminal-table (1.7.3)
 test-unit (3.1.5)
 thread_safe (0.3.5)
 tzinfo (1.2.2)
 uber (0.0.15)
 unf (0.1.4)
 unf_ext (0.0.7.2)
-unicode-display_width (1.1.1)
+unicode-display_width (1.1.2)
 word_wrap (1.0.0)
 xcode-install (2.0.9)
 xcodeproj (1.4.1)
@@ -141,7 +124,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux 7ed92f5fa8c4 4.4.0-47-generic #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux e0997d41503b 4.4.0-47-generic #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-47-generic
 * lsb_release --all
@@ -175,7 +158,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-cont-stage-c1s-a--host-ondem-int-test-001
-ID: 4MLZ:K5RU:F34K:IFVX:W2M7:4PAO:OUM4:7VTT:Y7OI:R2YF:E7XG:4IHU
+ID: DXG3:X3IX:A5GL:64CG:BMOE:7DFZ:GPAP:5VSF:2427:MWVU:P6G6:U7NS
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -185,10 +168,10 @@ WARNING: No swap limit support
 
 
 === System infos =======================
-* Free disk space: /dev/loop0       50G   24G   27G  48% /
+* Free disk space: /dev/loop0       50G   24G   26G  49% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        203M        6.0G        8.7M        1.1G        6.8G
+Mem:           7.3G        201M        5.8G        8.6M        1.3G        6.8G
 Swap:            0B          0B          0B
 ========================================
 
@@ -203,26 +186,26 @@ Swap:            0B          0B          0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2016_11_23_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2016_12_15_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 1.111.0
+* Fastlane: fastlane 2.0.3
 * Java: javac 1.8.0_111
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 137.0.0
-alpha 2016.12.06
-beta 2016.12.06
+Google Cloud SDK 138.0.0
+alpha 2016.12.09
+beta 2016.12.09
 bq 2.0.24
 bq-nix 2.0.24
-core 2016.12.06
-core-nix 2016.12.06
+core 2016.12.09
+core-nix 2016.12.09
 gcloud 
 gsutil 4.22
 gsutil-nix 4.22
@@ -245,7 +228,7 @@ Network diagnostic (1/1 checks) passed.
 
  * adb version:
 Android Debug Bridge version 1.0.36
-Revision 302830efc153-android
+Revision 9f299f282ec9-android
 ========================================
 
 
@@ -293,20 +276,17 @@ systrace
 24.0.3
 25.0.0
 25.0.1
+25.0.2
 
 * extras:
 /opt/android-sdk-linux/extras
 ├── android
-│   ├── m2repository
-│   └── support
+│   └── m2repository
 └── google
     ├── google_play_services
     └── m2repository
 
-6 directories, 0 files
-
-* extra-android-support package version:
-Pkg.Revision=23.2.1
+5 directories, 0 files
 
 * platforms:
 android-10

@@ -32,8 +32,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.112-b16, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.1.2
-Homebrew/homebrew-core (git revision a2d3; last commit 2016-12-09)
+* brew: Homebrew 1.1.4
+Homebrew/homebrew-core (git revision a91c; last commit 2016-12-16)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.1.2.0
@@ -47,8 +47,8 @@ Homebrew/homebrew-core (git revision a2d3; last commit 2016-12-09)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.5
-* stepman: 0.9.25
+* bitrise: 1.5.1
+* stepman: 0.9.26
 * envman: 1.1.2
 * bitrise-bridge: 0.9.11
 * cmd-bridge: 0.9.5
@@ -193,25 +193,19 @@ xcpretty-travis-formatter (0.0.4)
 
 === Checking Xcode CLT dirs ============
 
- * ls -alh /usr/include/CommonCrypto
-total 24
-drwxr-xr-x   10 root  wheel   340B Oct 30 08:31 .
-drwxr-xr-x  261 root  wheel   8.7K Oct 30 08:31 ..
--rw-r--r--    1 root  wheel   1.3K Sep 21 18:42 CommonCrypto.h
--rw-r--r--    1 root  wheel   2.4K Sep 21 18:42 CommonCryptoError.h
--rw-r--r--    1 root  wheel    33K Sep 21 18:42 CommonCryptor.h
--rw-r--r--    1 root  wheel    11K Sep 21 18:42 CommonDigest.h
--rw-r--r--    1 root  wheel   4.1K Sep 21 18:42 CommonHMAC.h
--rw-r--r--    1 root  wheel   4.6K Sep 21 18:42 CommonKeyDerivation.h
--rw-r--r--    1 root  wheel   1.7K Sep 21 18:42 CommonRandom.h
--rw-r--r--    1 root  wheel   6.1K Sep 21 18:42 CommonSymmetricKeywrap.h
+ * ls -1 /usr/include/CommonCrypto
+CommonCrypto.h
+CommonCryptoError.h
+CommonCryptor.h
+CommonDigest.h
+CommonHMAC.h
+CommonKeyDerivation.h
+CommonRandom.h
+CommonSymmetricKeywrap.h
 
- * ls -alh /Library/Developer/CommandLineTools/
-total 0
-drwxr-xr-x  4 root  admin   136B Aug 28 19:29 .
-drwxr-xr-x  4 root  admin   136B Oct 30 09:16 ..
-drwxr-xr-x  5 root  admin   170B Aug 28 19:31 Library
-drwxr-xr-x  7 root  admin   238B Aug 28 19:30 usr
+ * ls -1 /Library/Developer/CommandLineTools/
+Library
+usr
 
  * /Library/Developer/CommandLineTools/usr/bin/swift --version
 Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)
@@ -463,14 +457,14 @@ Software:
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Enabled
-      Time since boot: 1 minute
+      Time since boot: 2 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   78Gi  121Gi    40% 1981854 4292985425    0%   /
+* Free disk space: /dev/disk0s2  199Gi   78Gi  120Gi    40% 1992562 4292974717    0%   /
 ========================================
 
 

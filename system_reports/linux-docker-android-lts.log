@@ -46,8 +46,8 @@ Did you mean this?
 * docker-compose: docker-compose version 1.6.2, build 4d72027
 
 --- Bitrise CLI tool versions
-* bitrise: 1.4.5
-* stepman: 0.9.25
+* bitrise: 1.5.1
+* stepman: 0.9.26
 * envman: 1.1.2
 * bitrise-bridge: 0.9.11
 ========================================
@@ -140,7 +140,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux f4f7133d4bfb 4.4.0-47-generic #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux df139c4e0e16 4.4.0-47-generic #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-47-generic
 * lsb_release --all
@@ -165,7 +165,7 @@ Storage Driver: btrfs
 Logging Driver: json-file
 Plugins: 
  Volume: local
- Network: bridge null host
+ Network: null host bridge
 Kernel Version: 4.4.0-47-generic
 Operating System: Ubuntu 16.04.1 LTS
 OSType: linux
@@ -173,7 +173,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-cont-stage-c1s-a--host-ondem-int-test-001
-ID: YZY2:DGUN:TQPK:F77N:I4T7:F3CY:ZBKL:PKPW:K6EM:D7QZ:SGUT:GXEZ
+ID: PKM7:4OMQ:NY77:GVER:KI46:3VWP:ROEX:6PS7:S2GF:VZ6I:PVAJ:DPYV
 WARNING: No swap limit support
 ========================================
 
@@ -182,8 +182,8 @@ WARNING: No swap limit support
 * Free disk space: /dev/loop0       50G   36G   14G  73% /
 * Free RAM & swap:
              total       used       free     shared    buffers     cached
-Mem:          7.3G       1.3G       6.0G       8.7M        33M       1.0G
--/+ buffers/cache:       299M       7.0G
+Mem:          7.3G       1.3G       6.0G       8.7M        35M       1.0G
+-/+ buffers/cache:       298M       7.0G
 Swap:           0B         0B         0B
 ========================================
 
@@ -279,9 +279,6 @@ systrace
     └── m2repository
 
 6 directories, 0 files
-
-* extra-android-support package version:
-Pkg.Revision=23.2.1
 
 * platforms:
 android-10
