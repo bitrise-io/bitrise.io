@@ -140,7 +140,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux 25659c345a30 4.4.0-47-generic #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 37c3aa9dae67 4.4.0-47-generic #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-47-generic
 * lsb_release --all
@@ -165,7 +165,7 @@ Storage Driver: btrfs
 Logging Driver: json-file
 Plugins: 
  Volume: local
- Network: bridge null host
+ Network: host bridge null
 Kernel Version: 4.4.0-47-generic
 Operating System: Ubuntu 16.04.1 LTS
 OSType: linux
@@ -173,17 +173,17 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-cont-stage-c1s-a--host-ondem-int-test-001
-ID: TFPF:5NE6:AUE3:3VKR:6CEJ:X3AY:VDZQ:LPIP:4D2I:5D7I:F6XU:AUOQ
+ID: VODV:AJ6W:IKH2:VAKB:CZ3O:CUXL:RBOT:MM7C:GEHP:I27P:EFPV:NWK2
 WARNING: No swap limit support
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/loop0       50G   37G   14G  73% /
+* Free disk space: /dev/loop0       50G   37G   14G  74% /
 * Free RAM & swap:
              total       used       free     shared    buffers     cached
-Mem:          7.3G       1.2G       6.1G       8.7M        24M       991M
--/+ buffers/cache:       259M       7.1G
+Mem:          7.3G       1.1G       6.2G       8.7M        13M       882M
+-/+ buffers/cache:       219M       7.1G
 Swap:           0B         0B         0B
 ========================================
 
@@ -207,6 +207,7 @@ Swap:           0B         0B         0B
 * Maven: Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T16:41:47+00:00)
 * Fastlane: fastlane 1.91.0
 * Java: javac 1.7.0_101
+ (!) Cordova & Ionic are not preinstalled on this Stack / in this image
 ========================================
 
 
