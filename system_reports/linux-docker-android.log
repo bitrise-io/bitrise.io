@@ -19,8 +19,8 @@
 * Ruby: ruby 2.3.3p222 (2016-11-21 revision 56859) [x86_64-linux]
   * bundler: Bundler version 1.13.7
 * Python: Python 2.7.12
-* Node.js: v6.9.2
-* NPM: 3.10.9
+* Node.js: v6.9.3
+* NPM: 3.10.10
 
 * git: git version 2.7.4
 * git lfs: git-lfs/1.5.4 (GitHub; linux amd64; go 1.7.4)
@@ -48,7 +48,7 @@
 
 
 === All Ruby GEMs ======================
-activesupport (4.0.13)
+activesupport (4.2.7.1)
 addressable (2.5.0)
 babosa (1.0.2)
 bigdecimal (1.2.8)
@@ -61,11 +61,11 @@ did_you_mean (1.0.0)
 domain_name (0.5.20161129)
 dotenv (2.1.1)
 excon (0.54.0)
-faraday (0.10.0)
+faraday (0.10.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.10.1)
 fastimage (2.0.1)
-fastlane (2.3.1)
+fastlane (2.5.0)
 gh_inspector (1.0.2)
 google-api-client (0.9.20)
 googleauth (0.5.1)
@@ -75,7 +75,7 @@ httpclient (2.8.3)
 hurley (0.2)
 i18n (0.7.0)
 io-console (0.4.5)
-json (2.0.2, 1.8.3)
+json (1.8.3)
 jwt (1.5.6)
 little-plugger (1.1.4)
 logging (2.1.0)
@@ -83,7 +83,7 @@ memoist (0.15.0)
 mime-types (3.1)
 mime-types-data (3.2016.0521)
 mini_magick (4.5.1)
-minitest (5.8.5, 4.7.5)
+minitest (5.8.5)
 multi_json (1.12.1)
 multi_xml (0.6.0)
 multipart-post (2.0.0)
@@ -93,7 +93,7 @@ os (0.9.6)
 plist (3.2.0)
 power_assert (0.2.6)
 psych (2.1.0)
-public_suffix (2.0.4)
+public_suffix (2.0.5)
 rake (10.4.2)
 rdoc (4.2.1)
 representable (2.3.0)
@@ -107,7 +107,7 @@ terminal-notifier (1.7.1)
 terminal-table (1.7.3)
 test-unit (3.1.5)
 thread_safe (0.3.5)
-tzinfo (0.3.52)
+tzinfo (1.2.2)
 uber (0.0.15)
 unf (0.1.4)
 unf_ext (0.0.7.2)
@@ -121,7 +121,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux ee319c2d7445 4.4.0-47-generic #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 2745c93a78bd 4.4.0-47-generic #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-47-generic
 * lsb_release --all
@@ -147,7 +147,7 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins: 
  Volume: local
- Network: host bridge null
+ Network: bridge null host
 Kernel Version: 4.4.0-47-generic
 Operating System: Ubuntu 16.04.1 LTS
 OSType: linux
@@ -155,7 +155,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.305 GiB
 Name: br-cont-stage-c1s-a--host-ondem-int-test-001
-ID: AM5E:RYKE:6AW3:BL5T:VXJR:3SNE:34ZW:SZX4:O3LD:YFT4:K4KW:CZCI
+ID: 4AAE:VEY7:2M2B:SZHU:SZ7F:DVCH:RTU2:XAYA:KVB4:UY5Q:OVHZ:DYHX
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -165,10 +165,10 @@ WARNING: No swap limit support
 
 
 === System infos =======================
-* Free disk space: /dev/loop0       50G   24G   26G  48% /
+* Free disk space: /dev/loop0       50G   24G   26G  49% /
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        156M        6.2G        8.7M        938M        6.9G
+Mem:           7.3G        162M        6.1G        8.7M        1.0G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -183,15 +183,18 @@ Swap:            0B          0B          0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2016_12_19_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2017_01_05_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.3.1
+* Fastlane: fastlane installation at path:
+fastlane 2.5.0
 * Java: javac 1.8.0_111
+* Cordova CLI version: 6.4.0
+* Ionic CLI version: 2.1.18
 ========================================
 
 
