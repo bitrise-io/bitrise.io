@@ -59,13 +59,13 @@ colored (1.2)
 commander (4.4.3)
 did_you_mean (1.0.0)
 domain_name (0.5.20161129)
-dotenv (2.1.1)
+dotenv (2.1.2)
 excon (0.54.0)
-faraday (0.10.1)
+faraday (0.11.0)
 faraday-cookie_jar (0.0.6)
-faraday_middleware (0.10.1)
+faraday_middleware (0.11.0)
 fastimage (2.0.1)
-fastlane (2.8.0)
+fastlane (2.9.0)
 gh_inspector (1.0.3)
 google-api-client (0.9.20)
 googleauth (0.5.1)
@@ -111,7 +111,7 @@ tzinfo (1.2.2)
 uber (0.0.15)
 unf (0.1.4)
 unf_ext (0.0.7.2)
-unicode-display_width (1.1.2)
+unicode-display_width (1.1.3)
 word_wrap (1.0.0)
 xcodeproj (1.4.2)
 xcpretty (0.2.4)
@@ -121,7 +121,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux 990b1893cc47 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 24f7c96a48bd 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -139,7 +139,7 @@ Containers: 1
  Paused: 0
  Stopped: 0
 Images: 3
-Server Version: 1.11.1
+Server Version: 1.12.6
 Storage Driver: btrfs
  Build Version: Btrfs v4.4
  Library Version: 101
@@ -147,15 +147,15 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins: 
  Volume: local
- Network: bridge null host
+ Network: null host bridge overlay
 Kernel Version: 4.4.0-57-generic
 Operating System: Ubuntu 16.04.1 LTS
 OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: br-cont-stage-c1s-a--host-ondem-int-test-001
-ID: B7UB:B5GC:ZNSK:7TPO:IUM7:GF7U:W6XO:TZ67:N3OG:ZZTH:JPZY:KWGH
+Name: br-cont-stage-c1s-b--host-ondem-int-test-001
+ID: FO5B:OC3M:CYRM:NQG6:H5IA:54Q5:TGLE:IEJG:W57R:62IU:7DGR:EV6J
 Docker Root Dir: /var/lib/docker
 Debug mode (client): false
 Debug mode (server): false
@@ -170,10 +170,10 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop0       50G   24G   27G  47% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        68G   52G   17G  76% /bitrise
+/dev/sda1        68G   52G   17G  77% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        133M        6.4G        8.7M        830M        6.9G
+Mem:           7.3G        196M        5.9G        8.7M        1.2G        6.8G
 Swap:            0B          0B          0B
 ========================================
 
@@ -195,21 +195,21 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.8.0
+* Fastlane: fastlane 2.9.0
 * Java: javac 1.8.0_111
 * Cordova CLI version: 6.4.0
-* Ionic CLI version: 2.1.18
+* Ionic CLI version: 2.2.1
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 139.0.1
-alpha 2017.01.12
-beta 2017.01.12
+Google Cloud SDK 140.0.0
+alpha 2017.01.17
+beta 2017.01.17
 bq 2.0.24
 bq-nix 2.0.24
-core 2017.01.12
-core-nix 2017.01.12
+core 2017.01.17
+core-nix 2017.01.17
 gcloud 
 gsutil 4.22
 gsutil-nix 4.22
