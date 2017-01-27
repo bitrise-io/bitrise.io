@@ -17,7 +17,7 @@
 === Pre-installed tool versions ========
 * Go: go version go1.7.4 linux/amd64
 * Ruby: ruby 2.3.3p222 (2016-11-21 revision 56859) [x86_64-linux]
-  * bundler: Bundler version 1.13.7
+  * bundler: Bundler version 1.14.3
 * Python: Python 2.7.12
 * Node.js: v7.4.0
 * NPM: 4.0.5
@@ -36,8 +36,8 @@
 
 * sudo: Sudo version 1.8.16
 
-* docker: Docker version 1.11.1, build 5604cbe
-* docker-compose: docker-compose version 1.8.1, build 878cff1
+* docker: Docker version 1.12.6, build 78d1802
+* docker-compose: docker-compose version 1.9.0, build 2585387
 
 --- Bitrise CLI tool versions
 * bitrise: 1.5.2
@@ -52,7 +52,7 @@ activesupport (4.2.7.1)
 addressable (2.5.0)
 babosa (1.0.2)
 bigdecimal (1.2.8)
-bundler (1.13.7)
+bundler (1.14.3)
 CFPropertyList (2.3.4)
 claide (1.0.1)
 colored (1.2)
@@ -63,11 +63,11 @@ dotenv (2.1.2)
 excon (0.54.0)
 faraday (0.11.0)
 faraday-cookie_jar (0.0.6)
-faraday_middleware (0.11.0)
+faraday_middleware (0.11.0.1)
 fastimage (2.0.1)
-fastlane (2.9.0)
+fastlane (2.12.0)
 gh_inspector (1.0.3)
-google-api-client (0.9.20)
+google-api-client (0.9.24)
 googleauth (0.5.1)
 highline (1.7.8)
 http-cookie (1.0.3)
@@ -121,7 +121,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux 24f7c96a48bd 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux a3771ad1133b 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -145,9 +145,13 @@ Storage Driver: btrfs
  Library Version: 101
 Logging Driver: json-file
 Cgroup Driver: cgroupfs
-Plugins: 
+Plugins:
  Volume: local
  Network: null host bridge overlay
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Security Options: apparmor seccomp
 Kernel Version: 4.4.0-57-generic
 Operating System: Ubuntu 16.04.1 LTS
 OSType: linux
@@ -155,12 +159,14 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
 Name: br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: FO5B:OC3M:CYRM:NQG6:H5IA:54Q5:TGLE:IEJG:W57R:62IU:7DGR:EV6J
+ID: UIDX:6JDO:UZFK:467L:7KZ7:TJIN:LT22:QU3J:VE43:JHI7:AZIM:UNIP
 Docker Root Dir: /var/lib/docker
-Debug mode (client): false
-Debug mode (server): false
+Debug Mode (client): false
+Debug Mode (server): false
 Registry: https://index.docker.io/v1/
 WARNING: No swap limit support
+Insecure Registries:
+ 127.0.0.0/8
 ========================================
 
 
@@ -195,21 +201,21 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.9.0
-* Java: javac 1.8.0_111
-* Cordova CLI version: 6.4.0
+* Fastlane: fastlane 2.12.0
+* Java: javac 1.8.0_121
+* Cordova CLI version: 6.5.0
 * Ionic CLI version: 2.2.1
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 140.0.0
-alpha 2017.01.17
-beta 2017.01.17
+Google Cloud SDK 141.0.0
+alpha 2017.01.20
+beta 2017.01.20
 bq 2.0.24
 bq-nix 2.0.24
-core 2017.01.17
-core-nix 2017.01.17
+core 2017.01.20
+core-nix 2017.01.20
 gcloud 
 gsutil 4.22
 gsutil-nix 4.22
