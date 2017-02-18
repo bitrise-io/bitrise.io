@@ -14,15 +14,29 @@
 ========================================
 
 
+=== Pre-installed lib versions ========
+* zlib1g-dev: 1:1.2.8.dfsg-1ubuntu1
+* libssl-dev: 1.0.1f-1ubuntu2.19
+* libreadline6-dev: 6.3-4ubuntu2
+* libyaml-dev: 0.1.4-3ubuntu3.1
+dpkg-query: package 'libsqlite3-dev' is not installed and no information is available
+Use dpkg --info (= dpkg-deb --info) to examine archive files,
+and dpkg --contents (= dpkg-deb --contents) to list their contents.
+* libsqlite3-dev: 
+=======================================
+
+
 === Pre-installed tool versions ========
 * Go: go version go1.6.2 linux/amd64
 * Ruby: ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
   * bundler: Bundler version 1.12.3
 * Python: Python 2.7.6
-/bitrise/bitrise-base/system_report.sh: line 33: node: command not found
+/bitrise/bitrise-base/system_report.sh: line 53: node: command not found
 * Node.js: 
-/bitrise/bitrise-base/system_report.sh: line 34: npm: command not found
+/bitrise/bitrise-base/system_report.sh: line 54: npm: command not found
 * NPM: 
+/bitrise/bitrise-base/system_report.sh: line 55: yarn: command not found
+* Yarn: 
 
 * git: git version 1.9.1
 git: 'lfs' is not a git command. See 'git --help'.
@@ -39,7 +53,7 @@ Did you mean this?
 * tar: tar (GNU tar) 1.27.1
 * tree: tree v1.6.0 (c) 1996 - 2011 by Steve Baker, Thomas Moore, Francesc Rocher, Kyosuke Tokoro 
 * gcc: gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
-/bitrise/bitrise-base/system_report.sh: line 48: convert: command not found
+/bitrise/bitrise-base/system_report.sh: line 69: convert: command not found
 * imagemagick (convert): 
 
 * sudo: Sudo version 1.8.9p5
@@ -48,8 +62,8 @@ Did you mean this?
 * docker-compose: docker-compose version 1.6.2, build 4d72027
 
 --- Bitrise CLI tool versions
-* bitrise: 1.5.2
-* stepman: 0.9.26
+* bitrise: 1.5.4
+* stepman: 0.9.28
 * envman: 1.1.3
 * bitrise-bridge: 0.9.11
 ========================================
@@ -142,7 +156,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux be2864b1d76c 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 22007a7640a0 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -167,7 +181,7 @@ Storage Driver: btrfs
 Logging Driver: json-file
 Plugins: 
  Volume: local
- Network: null bridge host overlay
+ Network: null bridge overlay host
 Kernel Version: 4.4.0-57-generic
 Operating System: Ubuntu 16.04.1 LTS
 OSType: linux
@@ -175,7 +189,7 @@ Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
 Name: br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: 4FPI:ZL3P:5WVN:BYFS:RONY:Z2IX:5LQW:A4N5:J37V:74UH:N2MA:JA64
+ID: 2RH4:GQIU:VBRD:VGNM:7S5X:MJJR:FRT2:UIEK:LH2M:MTZF:TIMD:ZFXY
 WARNING: No swap limit support
 ========================================
 
@@ -189,8 +203,8 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        68G   52G   17G  76% /bitrise
 * Free RAM & swap:
              total       used       free     shared    buffers     cached
-Mem:          7.3G       1.3G       6.0G       8.7M        21M       1.0G
--/+ buffers/cache:       268M       7.0G
+Mem:          7.3G       909M       6.4G       8.7M        12M       724M
+-/+ buffers/cache:       172M       7.1G
 Swap:           0B         0B         0B
 ========================================
 
@@ -455,8 +469,6 @@ $ tree -L 2 /opt/android-ndk
 
 
 === Pre-installed tool versions ========
-/bitrise/bitrise-android-ndk/system_report.sh: line 37: cmake: command not found
-* cmake: 
 ========================================
 
 
