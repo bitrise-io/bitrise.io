@@ -30,12 +30,13 @@ and dpkg --contents (= dpkg-deb --contents) to list their contents.
 * Go: go version go1.6.2 linux/amd64
 * Ruby: ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
   * bundler: Bundler version 1.12.3
+  * rubygems: 2.4.5.1
 * Python: Python 2.7.6
-/bitrise/bitrise-base/system_report.sh: line 53: node: command not found
+/bitrise/bitrise-base/system_report.sh: line 54: node: command not found
 * Node.js: 
-/bitrise/bitrise-base/system_report.sh: line 54: npm: command not found
+/bitrise/bitrise-base/system_report.sh: line 55: npm: command not found
 * NPM: 
-/bitrise/bitrise-base/system_report.sh: line 55: yarn: command not found
+/bitrise/bitrise-base/system_report.sh: line 56: yarn: command not found
 * Yarn: 
 
 * git: git version 1.9.1
@@ -53,7 +54,7 @@ Did you mean this?
 * tar: tar (GNU tar) 1.27.1
 * tree: tree v1.6.0 (c) 1996 - 2011 by Steve Baker, Thomas Moore, Francesc Rocher, Kyosuke Tokoro 
 * gcc: gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
-/bitrise/bitrise-base/system_report.sh: line 69: convert: command not found
+/bitrise/bitrise-base/system_report.sh: line 70: convert: command not found
 * imagemagick (convert): 
 
 * sudo: Sudo version 1.8.9p5
@@ -156,7 +157,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux 22007a7640a0 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux e1dd7a15c188 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -181,15 +182,15 @@ Storage Driver: btrfs
 Logging Driver: json-file
 Plugins: 
  Volume: local
- Network: null bridge overlay host
+ Network: bridge host null overlay
 Kernel Version: 4.4.0-57-generic
 Operating System: Ubuntu 16.04.1 LTS
 OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: 2RH4:GQIU:VBRD:VGNM:7S5X:MJJR:FRT2:UIEK:LH2M:MTZF:TIMD:ZFXY
+Name: t20170224114127-br-cont-stage-c1s-b--host-ondem-int-test-001
+ID: MQWM:GSMM:O7IY:NZLK:FLU4:HDVO:OSUD:XR4U:JOMX:PE47:SL27:DUAH
 WARNING: No swap limit support
 ========================================
 
@@ -197,14 +198,14 @@ WARNING: No swap limit support
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       50G   36G   14G  73% /
+/dev/loop0       50G   36G   14G  72% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        68G   52G   17G  76% /bitrise
 * Free RAM & swap:
              total       used       free     shared    buffers     cached
-Mem:          7.3G       909M       6.4G       8.7M        12M       724M
--/+ buffers/cache:       172M       7.1G
+Mem:          7.3G       1.4G       5.9G       8.7M        50M       1.1G
+-/+ buffers/cache:       284M       7.0G
 Swap:           0B         0B         0B
 ========================================
 
