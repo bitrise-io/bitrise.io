@@ -31,10 +31,10 @@
 * Python: Python 2.7.12
 * Node.js: v7.6.0
 * NPM: 4.1.2
-* Yarn: 0.20.3
+* Yarn: 0.21.3
 
 * git: git version 2.7.4
-* git lfs: git-lfs/1.5.6 (GitHub; linux amd64; go 1.7.4)
+* git lfs: git-lfs/2.0.0 (GitHub; linux amd64; go 1.8)
 * mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
 * curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
 * wget: GNU Wget 1.17.1 built on linux-gnu.
@@ -77,7 +77,7 @@ faraday (0.11.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.11.0.1)
 fastimage (2.1.0)
-fastlane (2.18.3)
+fastlane (2.19.1)
 gh_inspector (1.0.3)
 google-api-client (0.9.28)
 googleauth (0.5.1)
@@ -135,13 +135,13 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux 136bfdbc9bf9 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 6888a6f34632 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
 No LSB modules are available.
 Distributor ID:	Ubuntu
-Description:	Ubuntu 16.04.1 LTS
+Description:	Ubuntu 16.04.2 LTS
 Release:	16.04
 Codename:	xenial
 ========================================
@@ -161,7 +161,7 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins:
  Volume: local
- Network: null host overlay bridge
+ Network: host bridge null overlay
 Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
@@ -172,8 +172,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: t20170224113610-br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: QFSR:TVSZ:SJPD:47RH:2GT7:6C3V:B767:I4N7:4ZK4:PTTQ:NLJG:6WIQ
+Name: t20170303104827-br-cont-stage-c1s-b--host-ondem-int-test-001
+ID: 35HJ:ACI7:53DT:NKSH:WQDO:BEWM:BMS5:U7GL:5R6H:3OTO:2KAJ:JMVA
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -193,7 +193,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        68G   52G   17G  76% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        197M        5.8G        8.7M        1.3G        6.8G
+Mem:           7.3G        126M        6.3G        8.7M        872M        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -215,7 +215,7 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.18.3
+* Fastlane: fastlane 2.19.1
 * Java: javac 1.8.0_121
 * Cordova CLI version: 6.5.0
 * Ionic CLI version: 2.2.1
@@ -223,16 +223,16 @@ Swap:            0B          0B          0B
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 145.0.0
-alpha 2017.02.21
-beta 2017.02.21
+Google Cloud SDK 146.0.0
+alpha 2017.02.28
+beta 2017.02.28
 bq 2.0.24
 bq-nix 2.0.24
-core 2017.02.21
-core-nix 2017.02.21
+core 2017.02.28
+core-nix 2017.02.28
 gcloud 
-gcloud-deps 2017.02.21
-gcloud-deps-linux-x86_64 2017.02.21
+gcloud-deps 2017.02.28
+gcloud-deps-linux-x86_64 2017.02.28
 gsutil 4.22
 gsutil-nix 4.22
 ========================================
