@@ -26,15 +26,15 @@
 === Pre-installed tool versions ========
 * Go: go version go1.8 linux/amd64
 * Ruby: ruby 2.3.3p222 (2016-11-21 revision 56859) [x86_64-linux]
-  * bundler: Bundler version 1.14.5
+  * bundler: Bundler version 1.14.6
   * rubygems: 2.6.10
 * Python: Python 2.7.12
-* Node.js: v7.6.0
+* Node.js: v7.7.2
 * NPM: 4.1.2
 * Yarn: 0.21.3
 
 * git: git version 2.7.4
-* git lfs: git-lfs/2.0.0 (GitHub; linux amd64; go 1.8)
+* git lfs: git-lfs/2.0.1 (GitHub; linux amd64; go 1.8)
 * mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
 * curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
 * wget: GNU Wget 1.17.1 built on linux-gnu.
@@ -44,7 +44,7 @@
 * tar: tar (GNU tar) 1.28
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 * gcc: gcc (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609
-* imagemagick (convert): Version: ImageMagick 6.8.9-9 Q16 x86_64 2017-02-22 http://www.imagemagick.org
+* imagemagick (convert): Version: ImageMagick 6.8.9-9 Q16 x86_64 2017-03-02 http://www.imagemagick.org
 
 * sudo: Sudo version 1.8.16
 
@@ -64,7 +64,7 @@ activesupport (4.2.8)
 addressable (2.5.0)
 babosa (1.0.2)
 bigdecimal (default: 1.2.8)
-bundler (1.14.5)
+bundler (1.14.6)
 CFPropertyList (2.3.5)
 claide (1.0.1)
 colored (1.2)
@@ -77,7 +77,7 @@ faraday (0.11.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.11.0.1)
 fastimage (2.1.0)
-fastlane (2.19.1)
+fastlane (2.19.3)
 gh_inspector (1.0.3)
 google-api-client (0.9.28)
 googleauth (0.5.1)
@@ -90,7 +90,7 @@ io-console (default: 0.4.5)
 json (default: 1.8.3)
 jwt (1.5.6)
 little-plugger (1.1.4)
-logging (2.1.0)
+logging (2.2.0)
 memoist (0.15.0)
 mime-types (3.1)
 mime-types-data (3.2016.0521)
@@ -135,7 +135,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux 6888a6f34632 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 80a824595443 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -161,7 +161,7 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins:
  Volume: local
- Network: host bridge null overlay
+ Network: null bridge host overlay
 Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
@@ -172,8 +172,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: t20170303104827-br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: 35HJ:ACI7:53DT:NKSH:WQDO:BEWM:BMS5:U7GL:5R6H:3OTO:2KAJ:JMVA
+Name: t20170310095602-br-cont-stage-c1s-b--host-ondem-int-test-001
+ID: QOSR:G7OX:XUMW:NCVK:GSSG:E3AE:HJG2:BE2R:I2EM:XKX7:HOO6:B445
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -187,13 +187,13 @@ Insecure Registries:
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       50G   23G   27G  47% /
+/dev/loop0       50G   24G   27G  47% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        68G   52G   17G  76% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        126M        6.3G        8.7M        872M        6.9G
+Mem:           7.3G        223M        5.7G        8.7M        1.3G        6.8G
 Swap:            0B          0B          0B
 ========================================
 
@@ -215,7 +215,7 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.19.1
+* Fastlane: fastlane 2.19.3
 * Java: javac 1.8.0_121
 * Cordova CLI version: 6.5.0
 * Ionic CLI version: 2.2.1
