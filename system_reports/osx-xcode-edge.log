@@ -7,15 +7,15 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2017_02_15_1
+* BITRISE_OSX_STACK_REV_ID: v2017_03_14_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Go: go version go1.8 darwin/amd64
-* Ruby: ruby 2.3.3p222 (2016-11-21 revision 56859) [x86_64-darwin16]
+* Ruby: ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-darwin16]
 * Python: Python 2.7.13
-* Node.js: v7.7.2
+* Node.js: v7.7.3
 * NPM: 4.1.2
 * Yarn: 0.21.3
 * Java: java version "1.8.0_121"
@@ -34,22 +34,22 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 1.1.11
-Homebrew/homebrew-core (git revision e7c2; last commit 2017-03-10)
+Homebrew/homebrew-core (git revision 18dd; last commit 2017-03-17)
 ./system_report.sh: line 55: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.2.1.0
 * gtimeout: timeout (GNU coreutils) 8.27
 * watchman: 4.7.0
 * flow: Flow, a static type checker for JavaScript, version 0.41.0
-* carthage: 0.20.0
-* imagemagick (convert): Version: ImageMagick 7.0.5-0 Q16 x86_64 2017-02-21 http://www.imagemagick.org
-* ghostscript (ps2ascii): 9.20
+* carthage: 0.20.1
+* imagemagick (convert): Version: ImageMagick 7.0.5-2 Q16 x86_64 2017-03-11 http://www.imagemagick.org
+* ghostscript (ps2ascii): 9.21
 ./system_report.sh: line 70: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.5.4
-* stepman: 0.9.28
+* bitrise: 1.5.5
+* stepman: 0.9.29
 * envman: 1.1.3
 * bitrise-bridge: 0.9.11
 * cmd-bridge: 0.9.5
@@ -57,12 +57,12 @@ Homebrew/homebrew-core (git revision e7c2; last commit 2017-03-10)
 
 
 === Ruby GEMs ==========================
-* Rubygems: 2.5.2
+* Rubygems: 2.6.8
 * Bundler: Bundler version 1.14.6
 * CocoaPods: 1.2.0
-* fastlane: fastlane 2.19.3
+* fastlane: fastlane 2.20.0
 * xcpretty: 0.2.4
-* Nomad CLI: 2.5.2
+* Nomad CLI: 2.6.8
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
 ========================================
 
@@ -73,7 +73,7 @@ addressable (2.5.0)
 aws-sdk (1.66.0)
 aws-sdk-v1 (1.66.0)
 babosa (1.0.2)
-bigdecimal (1.2.8)
+bigdecimal (default: 1.3.0)
 bundler (1.14.6)
 certified (1.0.0)
 CFPropertyList (2.3.5)
@@ -91,7 +91,7 @@ colored (1.2)
 commander (4.4.3)
 concurrent-ruby (1.0.5)
 cupertino (1.3.4)
-did_you_mean (1.0.0)
+did_you_mean (1.1.0)
 domain_name (0.5.20170223)
 dotenv (2.2.0)
 dubai (0.1.1)
@@ -101,7 +101,7 @@ faraday (0.11.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.11.0.1)
 fastimage (2.1.0)
-fastlane (2.19.3)
+fastlane (2.20.0)
 fourflusher (2.0.1)
 fuzzy_match (2.0.4)
 gh_inspector (1.0.3)
@@ -113,8 +113,8 @@ http-cookie (1.0.3)
 httpclient (2.8.3)
 hurley (0.2)
 i18n (0.8.1)
-io-console (0.4.5)
-json (1.8.3)
+io-console (default: 0.4.6)
+json (default: 2.0.2, 1.8.6)
 jwt (1.5.6)
 little-plugger (1.1.4)
 logging (2.2.0)
@@ -123,7 +123,7 @@ memoist (0.15.0)
 mime-types (1.25.1)
 mini_magick (4.5.1)
 mini_portile2 (2.1.0)
-minitest (5.8.5)
+minitest (5.10.1)
 molinillo (0.5.7)
 multi_json (1.12.1)
 multi_xml (0.6.0)
@@ -139,15 +139,16 @@ netrc (0.7.8)
 nokogiri (1.6.8.1)
 nomad-cli (0.0.2)
 ntlm-http (0.1.1)
+openssl (default: 2.0.2)
 os (0.9.6)
 plist (3.1.0)
-power_assert (0.2.6)
-psych (2.1.0)
+power_assert (0.4.1)
+psych (default: 2.2.2)
 public_suffix (2.0.5)
 rack (1.6.5)
 rack-protection (1.5.3)
-rake (10.4.2)
-rdoc (4.2.1)
+rake (12.0.0)
+rdoc (default: 5.0.0)
 representable (2.3.0)
 retriable (2.1.0)
 rouge (1.11.1)
@@ -161,7 +162,7 @@ slack-notifier (1.5.1)
 term-ansicolor (1.0.7)
 terminal-notifier (1.7.1)
 terminal-table (1.4.5)
-test-unit (3.1.5)
+test-unit (3.2.3)
 thread_safe (0.3.6)
 tilt (2.0.6)
 tty-screen (0.5.0)
@@ -175,6 +176,7 @@ word_wrap (1.0.0)
 xcodeproj (1.4.2)
 xcpretty (0.2.4)
 xcpretty-travis-formatter (0.0.4)
+xmlrpc (0.2.1)
 ========================================
 
 
@@ -485,7 +487,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   89Gi  110Gi    45% 2254913 4292712366    0%   /
+* Free disk space: /dev/disk0s2  199Gi   89Gi  110Gi    45% 2257929 4292709350    0%   /
 ========================================
 
 
