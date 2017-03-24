@@ -29,7 +29,7 @@
   * bundler: Bundler version 1.14.6
   * rubygems: 2.6.11
 * Python: Python 2.7.12
-* Node.js: v7.7.3
+* Node.js: v7.7.4
 * NPM: 4.1.2
 * Yarn: 0.21.3
 
@@ -68,7 +68,7 @@ bundler (1.14.6)
 CFPropertyList (2.3.5)
 claide (1.0.1)
 colored (1.2)
-commander (4.4.3)
+commander-fastlane (4.4.4)
 concurrent-ruby (1.0.5)
 did_you_mean (1.0.0)
 domain_name (0.5.20170223)
@@ -78,7 +78,7 @@ faraday (0.11.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.11.0.1)
 fastimage (2.1.0)
-fastlane (2.20.0)
+fastlane (2.23.0)
 gh_inspector (1.0.3)
 google-api-client (0.9.28)
 googleauth (0.5.1)
@@ -136,7 +136,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux c92374151347 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 55b41277dae4 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -162,7 +162,7 @@ Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins:
  Volume: local
- Network: null host bridge overlay
+ Network: bridge null overlay host
 Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
@@ -173,8 +173,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: t20170317093941-br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: F2I3:VGU2:3IJF:BXUE:HBZY:577A:NIKS:54XK:PUEF:IW25:R576:V7MH
+Name: t20170324094712-br-cont-stage-c1s-b--host-ondem-int-test-001
+ID: N5NM:PMWA:MG2M:B3QP:L3JK:GM55:FF4O:VZ2V:YERX:IZJC:PTO6:56B7
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -188,13 +188,13 @@ Insecure Registries:
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       50G   26G   25G  52% /
+/dev/loop0       60G   27G   33G  45% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        68G   52G   17G  76% /bitrise
+/dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        125M        6.3G        8.7M        908M        6.9G
+Mem:           7.3G        160M        6.1G        8.7M        1.1G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -216,7 +216,7 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.20.0
+* Fastlane: fastlane 2.23.0
 * Java: javac 1.8.0_121
 * Cordova CLI version: 6.5.0
 * Ionic CLI version: 2.2.1
@@ -224,18 +224,18 @@ Swap:            0B          0B          0B
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 147.0.0
-alpha 2017.03.13
-beta 2017.03.13
+Google Cloud SDK 148.0.0
+alpha 2017.03.17
+beta 2017.03.17
 bq 2.0.24
 bq-nix 2.0.24
-core 2017.03.13
-core-nix 2017.03.13
+core 2017.03.17
+core-nix 2017.03.17
 gcloud 
-gcloud-deps 2017.03.13
-gcloud-deps-linux-x86_64 2017.03.13
-gsutil 4.22
-gsutil-nix 4.22
+gcloud-deps 2017.03.17
+gcloud-deps-linux-x86_64 2017.03.17
+gsutil 4.23
+gsutil-nix 4.23
 ========================================
 
 
@@ -366,7 +366,7 @@ android-25
 
 $ cat /opt/android-ndk/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 13.1.3345770
+Pkg.Revision = 14.0.3770861
 
 $ tree -L 2 /opt/android-ndk
 /opt/android-ndk
@@ -401,7 +401,9 @@ $ tree -L 2 /opt/android-ndk
 │   ├── android-22
 │   ├── android-23
 │   ├── android-24
-│   └── android-9
+│   ├── android-9
+│   ├── NOTICE
+│   └── repo.prop
 ├── prebuilt
 │   ├── android-arm
 │   ├── android-arm64
@@ -412,32 +414,47 @@ $ tree -L 2 /opt/android-ndk
 │   └── linux-x86_64
 ├── python-packages
 │   ├── adb
+│   ├── fastboot
 │   ├── gdbrunner
 │   ├── NOTICE
 │   └── repo.prop
 ├── shader-tools
 │   └── linux-x86_64
 ├── simpleperf
-│   ├── android
+│   ├── annotate.config
+│   ├── annotate.py
+│   ├── app_profiler.config
+│   ├── app_profiler.py
+│   ├── bin
+│   ├── binary_cache_builder.config
+│   ├── binary_cache_builder.py
 │   ├── NOTICE
 │   ├── README.md
 │   ├── repo.prop
-│   └── simpleperf_report.py
+│   ├── report.py
+│   ├── report_sample.py
+│   ├── simpleperf_report_lib.py
+│   └── utils.py
 ├── source.properties
 ├── sources
 │   ├── android
 │   ├── cxx-stl
 │   └── third_party
+├── sysroot
+│   ├── NOTICE
+│   ├── repo.prop
+│   └── usr
 └── toolchains
     ├── aarch64-linux-android-4.9
     ├── arm-linux-androideabi-4.9
     ├── llvm
     ├── mips64el-linux-android-4.9
     ├── mipsel-linux-android-4.9
+    ├── renderscript
     ├── x86-4.9
     └── x86_64-4.9
 
-48 directories, 18 files
+52 directories, 31 files
 
 
 === Pre-installed tool versions ========
