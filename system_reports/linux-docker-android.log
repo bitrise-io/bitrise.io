@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2017_03_14_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2017_03_27_1
 ========================================
 
 
@@ -29,12 +29,12 @@
   * bundler: Bundler version 1.14.6
   * rubygems: 2.6.11
 * Python: Python 2.7.12
-* Node.js: v7.7.4
-* NPM: 4.1.2
+* Node.js: v7.8.0
+* NPM: 4.2.0
 * Yarn: 0.21.3
 
 * git: git version 2.7.4
-* git lfs: git-lfs/2.0.1 (GitHub; linux amd64; go 1.8)
+* git lfs: git-lfs/2.0.2 (GitHub; linux amd64; go 1.8)
 * mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
 * curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
 * wget: GNU Wget 1.17.1 built on linux-gnu.
@@ -48,8 +48,8 @@
 
 * sudo: Sudo version 1.8.16
 
-* docker: Docker version 1.12.6, build 78d1802
-* docker-compose: docker-compose version 1.9.0, build 2585387
+* docker: Docker version 17.03.0-ce, build 3a232c8
+* docker-compose: docker-compose version 1.11.2, build dfed245
 
 --- Bitrise CLI tool versions
 * bitrise: 1.5.5
@@ -61,7 +61,7 @@
 
 === All Ruby GEMs ======================
 activesupport (4.2.8)
-addressable (2.5.0)
+addressable (2.5.1)
 babosa (1.0.2)
 bigdecimal (default: 1.2.8)
 bundler (1.14.6)
@@ -78,7 +78,7 @@ faraday (0.11.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.11.0.1)
 fastimage (2.1.0)
-fastlane (2.23.0)
+fastlane (2.24.0)
 gh_inspector (1.0.3)
 google-api-client (0.9.28)
 googleauth (0.5.1)
@@ -122,7 +122,7 @@ terminal-table (1.7.3)
 test-unit (3.1.5)
 thread_safe (0.3.6)
 tty-screen (0.5.0)
-tzinfo (1.2.2)
+tzinfo (1.2.3)
 uber (0.0.15)
 unf (0.1.4)
 unf_ext (0.0.7.2)
@@ -136,7 +136,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux 55b41277dae4 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux bd41c9757718 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -154,47 +154,56 @@ Containers: 1
  Paused: 0
  Stopped: 0
 Images: 3
-Server Version: 1.12.6
+Server Version: 17.03.0-ce
 Storage Driver: btrfs
  Build Version: Btrfs v4.4
  Library Version: 101
 Logging Driver: json-file
 Cgroup Driver: cgroupfs
-Plugins:
+Plugins: 
  Volume: local
- Network: bridge null overlay host
+ Network: bridge host macvlan null overlay
 Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
-Security Options: apparmor seccomp
+Init Binary: docker-init
+containerd version: 977c511eda0925a723debdc94d09459af49d082a
+runc version: a01dafd48bc1c7cc12bdb01206f9fea7dd6feb70
+init version: 949e6fa
+Security Options:
+ apparmor
+ seccomp
+  Profile: default
 Kernel Version: 4.4.0-57-generic
 Operating System: Ubuntu 16.04.1 LTS
 OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: t20170324094712-br-cont-stage-c1s-b--host-ondem-int-test-001
-ID: N5NM:PMWA:MG2M:B3QP:L3JK:GM55:FF4O:VZ2V:YERX:IZJC:PTO6:56B7
+Name: t20170331090105-br-cont-stage-c1s-b--host-ondem-int-test-001
+ID: LLWY:UNNX:XPYE:UVH5:X2FX:NU2V:6H4M:CAZH:5WN5:CPOG:4A4U:ZONG
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
 Registry: https://index.docker.io/v1/
 WARNING: No swap limit support
+Experimental: false
 Insecure Registries:
  127.0.0.0/8
+Live Restore Enabled: false
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   27G   33G  45% /
+/dev/loop0       60G   26G   34G  44% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        160M        6.1G        8.7M        1.1G        6.9G
+Mem:           7.3G        130M        6.3G        8.7M        890M        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -216,24 +225,24 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.23.0
+* Fastlane: fastlane 2.24.0
 * Java: javac 1.8.0_121
 * Cordova CLI version: 6.5.0
-* Ionic CLI version: 2.2.1
+* Ionic CLI version: 2.2.2
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 148.0.0
-alpha 2017.03.17
-beta 2017.03.17
+Google Cloud SDK 149.0.0
+alpha 2017.03.24
+beta 2017.03.24
 bq 2.0.24
 bq-nix 2.0.24
-core 2017.03.17
-core-nix 2017.03.17
+core 2017.03.24
+core-nix 2017.03.24
 gcloud 
-gcloud-deps 2017.03.17
-gcloud-deps-linux-x86_64 2017.03.17
+gcloud-deps 2017.03.24
+gcloud-deps-linux-x86_64 2017.03.24
 gsutil 4.23
 gsutil-nix 4.23
 ========================================
@@ -361,12 +370,12 @@ android-25
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2016_10_27_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2017_03_29_1
 ========================================
 
 $ cat /opt/android-ndk/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 14.0.3770861
+Pkg.Revision = 14.1.3816874
 
 $ tree -L 2 /opt/android-ndk
 /opt/android-ndk
