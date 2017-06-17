@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2017_05_11_1
+* BITRISE_OSX_STACK_REV_ID: v2017_06_13_1
 ========================================
 
 
@@ -15,8 +15,8 @@
 * Go: go version go1.8.3 darwin/amd64
 * Ruby: ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin16]
 * Python: Python 2.7.13
-* Node.js: v8.0.0
-* NPM: 5.0.1
+* Node.js: v8.1.2
+* NPM: 5.0.3
 * Yarn: 0.24.6
 * Java: java version "1.8.0_131"
 Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
@@ -33,24 +33,24 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.2.2
-Homebrew/homebrew-core (git revision a19b; last commit 2017-06-08)
+* brew: Homebrew 1.2.3
+Homebrew/homebrew-core (git revision 2431; last commit 2017-06-16)
 ./system_report.sh: line 55: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.3.1.0
 * gtimeout: timeout (GNU coreutils) 8.27
 * watchman: 4.7.0
-* flow: Flow, a static type checker for JavaScript, version 0.47.0
+* flow: Flow, a static type checker for JavaScript, version 0.48.0
 * carthage: 0.23.0
-* imagemagick (convert): Version: ImageMagick 7.0.5-10 Q16 x86_64 2017-06-04 http://www.imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.6-0 Q16 x86_64 2017-06-12 http://www.imagemagick.org
 * ghostscript (ps2ascii): 9.21
 ./system_report.sh: line 70: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.6.1
-* stepman: 0.9.30
-* envman: 1.1.3
+* bitrise: 1.6.2
+* stepman: 0.9.31
+* envman: 1.1.4
 * bitrise-bridge: 0.9.11
 * cmd-bridge: 0.9.5
 ========================================
@@ -60,7 +60,7 @@ Homebrew/homebrew-core (git revision a19b; last commit 2017-06-08)
 * Rubygems: 2.6.12
 * Bundler: Bundler version 1.15.1
 * CocoaPods: 1.2.1
-* fastlane: fastlane 2.37.0
+* fastlane: fastlane 2.39.0
 * xcpretty: 0.2.8
 * Nomad CLI: 2.6.12
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
@@ -92,27 +92,28 @@ colored2 (3.1.2)
 commander (4.4.3)
 commander-fastlane (4.4.4)
 cupertino (1.3.4)
+declarative (0.0.9)
+declarative-option (0.1.0)
 did_you_mean (1.1.0)
 domain_name (0.5.20170404)
 dotenv (2.2.1)
 dubai (0.1.1)
 escape (0.0.4)
-excon (0.56.0)
+excon (0.57.0)
 faraday (0.12.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.11.0.1)
 fastimage (2.1.0)
-fastlane (2.37.0)
+fastlane (2.39.0)
 fourflusher (2.0.1)
 fuzzy_match (2.0.4)
 gh_inspector (1.0.3)
-google-api-client (0.9.28)
+google-api-client (0.12.0)
 googleauth (0.5.1)
 highline (1.7.8)
 houston (2.2.4)
 http-cookie (1.0.3)
 httpclient (2.8.3)
-hurley (0.2)
 i18n (0.8.4)
 io-console (default: 0.4.6)
 json (default: 2.0.2, 1.8.6)
@@ -121,7 +122,8 @@ little-plugger (1.1.4)
 logging (2.2.2)
 mechanize (2.5.1)
 memoist (0.15.0)
-mime-types (1.25.1)
+mime-types (3.1, 1.25.1)
+mime-types-data (3.2016.0521)
 mini_magick (4.5.1)
 mini_portile2 (2.1.0)
 minitest (5.10.1)
@@ -150,8 +152,8 @@ rack (1.6.8)
 rack-protection (1.5.3)
 rake (12.0.0)
 rdoc (default: 5.0.0)
-representable (2.3.0)
-retriable (2.1.0)
+representable (3.0.4)
+retriable (3.0.2)
 rouge (2.0.7)
 ruby-macho (1.1.0)
 rubygems-update (2.6.12)
@@ -169,7 +171,7 @@ thread_safe (0.3.6)
 tilt (2.0.7)
 tty-screen (0.5.0)
 tzinfo (1.2.3)
-uber (0.0.15)
+uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.7.4)
 venice (0.3.0)
@@ -184,7 +186,7 @@ xmlrpc (0.2.1)
 
 === NPM global packages ==========================
 * Cordova: 7.0.1
-* Ionic: [2K[G3.3.0
+* Ionic: [2K[G3.4.0
 ========================================
 
 
@@ -461,10 +463,10 @@ watchOS 3.2 (3.2 - 14V243) (com.apple.CoreSimulator.SimRuntime.watchOS-3-2)
     Apple Watch - 38mm (BF347887-4520-46A0-A62C-D3A3E2EF4550) (Shutdown)
     Apple Watch - 42mm (C679BEA9-1810-407E-8B6C-A34CD11A7B6C) (Shutdown)
 -- watchOS 3.1 --
-    Apple Watch - 38mm (B0422872-5879-43A2-B393-169C842C1E35) (Shutdown)
-    Apple Watch - 42mm (91260341-E216-496A-91AA-FD937265E6E7) (Shutdown)
-    Apple Watch Series 2 - 38mm (80AE6565-6FCD-4081-8373-60CF73DA3ABA) (Shutdown)
-    Apple Watch Series 2 - 42mm (C202BA15-38D3-426A-B0E4-11853C6A15E9) (Shutdown)
+    Apple Watch - 38mm (041DD5FD-CA3C-4317-8C8F-C1B0B1219231) (Shutdown)
+    Apple Watch - 42mm (60563B6D-405F-442D-9F39-1B873A630601) (Shutdown)
+    Apple Watch Series 2 - 38mm (E3D7A96C-0A3A-457B-8AC6-B5590AC08804) (Shutdown)
+    Apple Watch Series 2 - 42mm (057BB30E-F6B0-4AD5-AE4F-95B7F88D5AD0) (Shutdown)
 -- watchOS 3.2 --
     Apple Watch - 38mm (AB0792A9-3712-4F62-BBE8-D1FBAAF40854) (Shutdown)
     Apple Watch - 42mm (35DB9537-433D-45E5-AE16-31D754559A4C) (Shutdown)
@@ -507,14 +509,14 @@ Software:
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 1 minute
+      Time since boot: 2 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  104Gi   95Gi    53% 2495428 4292471851    0%   /
+* Free disk space: /dev/disk0s2  199Gi  104Gi   95Gi    53% 2498217 4292469062    0%   /
 ========================================
 
 

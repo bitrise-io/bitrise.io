@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2017_05_29_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2017_06_13_1
 ========================================
 
 
@@ -52,9 +52,9 @@
 * docker-compose: docker-compose version 1.11.2, build dfed245
 
 --- Bitrise CLI tool versions
-* bitrise: 1.6.1
-* stepman: 0.9.30
-* envman: 1.1.3
+* bitrise: 1.6.2
+* stepman: 0.9.31
+* envman: 1.1.4
 * bitrise-bridge: 0.9.11
 ========================================
 
@@ -69,22 +69,23 @@ claide (1.0.2)
 colored (1.2)
 colored2 (3.1.2)
 commander-fastlane (4.4.4)
+declarative (0.0.9)
+declarative-option (0.1.0)
 did_you_mean (1.1.0)
 domain_name (0.5.20170404)
 dotenv (2.2.1)
-excon (0.56.0)
+excon (0.57.0)
 faraday (0.12.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.11.0.1)
 fastimage (2.1.0)
-fastlane (2.37.0)
+fastlane (2.39.0)
 gh_inspector (1.0.3)
-google-api-client (0.9.28)
+google-api-client (0.12.0)
 googleauth (0.5.1)
 highline (1.7.8)
 http-cookie (1.0.3)
 httpclient (2.8.3)
-hurley (0.2)
 io-console (default: 0.4.6)
 json (default: 2.0.2)
 jwt (1.5.6)
@@ -108,8 +109,8 @@ psych (default: 2.2.2)
 public_suffix (2.0.5)
 rake (12.0.0)
 rdoc (default: 5.0.0)
-representable (2.3.0)
-retriable (2.1.0)
+representable (3.0.4)
+retriable (3.0.2)
 rouge (2.0.7)
 rubygems-update (2.6.12)
 rubyzip (1.2.1)
@@ -120,7 +121,7 @@ terminal-notifier (1.8.0)
 terminal-table (1.8.0)
 test-unit (3.2.3)
 tty-screen (0.5.0)
-uber (0.0.15)
+uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.7.4)
 unicode-display_width (1.2.1)
@@ -134,7 +135,7 @@ xmlrpc (0.2.1)
 
 === Linux info =========================
 * uname -a
-Linux 4b222b3fe6c4 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 0a619c34a173 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -178,8 +179,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: t20170608111709-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: 73JJ:E6GF:7FAO:CIC2:AEUG:HV4N:KY4I:7DAA:L2L6:AAWQ:HJ5J:5RDP
+Name: t20170616110639-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: 3XCH:COD5:G6GW:B5XI:L6H6:2253:AOQ3:WRD4:CO3P:MOG5:KMT7:6A6E
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -195,13 +196,13 @@ Live Restore Enabled: false
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   22G   38G  37% /
+/dev/loop0       60G   23G   37G  38% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        262M        5.9G        8.8M        1.2G        6.8G
+Mem:           7.3G        125M        6.3G        8.7M        890M        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -216,26 +217,26 @@ Swap:            0B          0B          0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2017_05_10_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2017_06_10_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.37.0
+* Fastlane: fastlane 2.39.0
 * Java: javac 1.8.0_131
 * Cordova CLI version: 7.0.1
-* Ionic CLI version: [2K[G3.3.0
+* Ionic CLI version: [2K[G3.4.0
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 158.0.0
-alpha 2017.06.02
-beta 2017.06.02
+Google Cloud SDK 159.0.0
+alpha 2017.06.09
+beta 2017.06.09
 bq 2.0.24
-core 2017.06.02
+core 2017.06.09
 gcloud 
 gsutil 4.26
 ========================================
@@ -302,6 +303,7 @@ systrace
 24.0.3
 25.0.2
 25.0.3
+26.0.0
 
 * extras:
 /opt/android-sdk-linux/extras
@@ -326,6 +328,7 @@ android-22
 android-23
 android-24
 android-25
+android-26
 
 * system-images:
 /opt/android-sdk-linux/system-images
@@ -365,19 +368,21 @@ android-25
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2017_03_29_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2017_06_08_1
 ========================================
 
 $ cat /opt/android-ndk/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 14.1.3816874
+Pkg.Revision = 15.0.4075724
 
 $ tree -L 2 /opt/android-ndk
 /opt/android-ndk
 ├── build
-│   ├── awk
 │   ├── cmake
 │   ├── core
+│   ├── extract_manifest.py
+│   ├── extract_platform.py
+│   ├── gen_cygpath.py
 │   ├── gmsl
 │   ├── __init__.py
 │   ├── lib
@@ -385,8 +390,13 @@ $ tree -L 2 /opt/android-ndk
 │   ├── ndk-build.cmd
 │   ├── NOTICE
 │   ├── repo.prop
+│   ├── test_extract_manifest.py
+│   ├── test_extract_platform.py
+│   ├── test_gen_cygpath.py
 │   └── tools
 ├── CHANGELOG.md
+├── meta
+│   └── abis.json
 ├── ndk-build
 ├── ndk-depends
 ├── ndk-gdb
@@ -405,6 +415,7 @@ $ tree -L 2 /opt/android-ndk
 │   ├── android-22
 │   ├── android-23
 │   ├── android-24
+│   ├── android-26
 │   ├── android-9
 │   ├── NOTICE
 │   └── repo.prop
@@ -422,6 +433,7 @@ $ tree -L 2 /opt/android-ndk
 │   ├── gdbrunner
 │   ├── NOTICE
 │   └── repo.prop
+├── README.md
 ├── shader-tools
 │   └── linux-x86_64
 ├── simpleperf
@@ -433,6 +445,9 @@ $ tree -L 2 /opt/android-ndk
 │   ├── binary_cache_builder.config
 │   ├── binary_cache_builder.py
 │   ├── NOTICE
+│   ├── pprof_proto_generator.config
+│   ├── pprof_proto_generator.py
+│   ├── profile_pb2.py
 │   ├── README.md
 │   ├── repo.prop
 │   ├── report.py
@@ -458,7 +473,7 @@ $ tree -L 2 /opt/android-ndk
     ├── x86-4.9
     └── x86_64-4.9
 
-52 directories, 31 files
+53 directories, 42 files
 
 
 === Pre-installed tool versions ========
