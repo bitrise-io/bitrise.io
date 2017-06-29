@@ -34,7 +34,7 @@
 * Yarn: 0.24.6
 
 * git: git version 2.7.4
-* git lfs: git-lfs/2.1.1 (GitHub; linux amd64; go 1.8.1)
+* git lfs: git-lfs/2.2.0 (GitHub; linux amd64; go 1.8.1)
 * mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
 * curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
 * wget: GNU Wget 1.17.1 built on linux-gnu.
@@ -68,7 +68,7 @@ CFPropertyList (2.3.5)
 claide (1.0.2)
 colored (1.2)
 colored2 (3.1.2)
-commander-fastlane (4.4.4)
+commander-fastlane (4.4.5)
 declarative (0.0.9)
 declarative-option (0.1.0)
 did_you_mean (1.1.0)
@@ -79,7 +79,7 @@ faraday (0.12.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.11.0.1)
 fastimage (2.1.0)
-fastlane (2.41.0)
+fastlane (2.42.0)
 gh_inspector (1.0.3)
 google-api-client (0.12.0)
 googleauth (0.5.1)
@@ -135,7 +135,7 @@ xmlrpc (0.2.1)
 
 === Linux info =========================
 * uname -a
-Linux 8d9142858799 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 0b54b621204f 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -179,8 +179,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: t20170623092827-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: KDKC:J72F:QWMK:KAGS:RN2I:BT3U:22IG:6LEJ:W3ZS:PJTB:AMZM:AVEB
+Name: t20170629101155-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: 2LVW:GOSB:2DZV:FDMX:MSDY:4XNQ:LPD4:JHIS:3JTL:OG7R:KWTS:5DJL
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -196,13 +196,13 @@ Live Restore Enabled: false
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   23G   37G  38% /
+/dev/loop0       60G   23G   37G  39% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        128M        6.3G        8.7M        857M        6.9G
+Mem:           7.3G        193M        6.0G        8.7M        1.1G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -224,7 +224,7 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.41.0
+* Fastlane: fastlane 2.42.0
 * Java: javac 1.8.0_131
 * Cordova CLI version: 7.0.1
 * Ionic CLI version: [2K[G3.4.0
@@ -232,11 +232,11 @@ Swap:            0B          0B          0B
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 160.0.0
-alpha 2017.06.16
-beta 2017.06.16
+Google Cloud SDK 161.0.0
+alpha 2017.06.26
+beta 2017.06.26
 bq 2.0.24
-core 2017.06.16
+core 2017.06.26
 gcloud 
 gsutil 4.26
 ========================================
@@ -368,12 +368,12 @@ android-26
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2017_06_08_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2017_06_26_1
 ========================================
 
 $ cat /opt/android-ndk/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 15.0.4075724
+Pkg.Revision = 15.1.4119039
 
 $ tree -L 2 /opt/android-ndk
 /opt/android-ndk
