@@ -32,11 +32,13 @@ and dpkg --contents (= dpkg-deb --contents) to list their contents.
   * bundler: Bundler version 1.12.3
   * rubygems: 2.4.5.1
 * Python: Python 2.7.6
-/bitrise/bitrise-base/system_report.sh: line 54: node: command not found
+/bitrise/bitrise-base/system_report.sh: line 54: pip: command not found
+  * pip: 
+/bitrise/bitrise-base/system_report.sh: line 55: node: command not found
 * Node.js: 
-/bitrise/bitrise-base/system_report.sh: line 55: npm: command not found
+/bitrise/bitrise-base/system_report.sh: line 56: npm: command not found
 * NPM: 
-/bitrise/bitrise-base/system_report.sh: line 56: yarn: command not found
+/bitrise/bitrise-base/system_report.sh: line 57: yarn: command not found
 * Yarn: 
 
 * git: git version 1.9.1
@@ -54,7 +56,7 @@ Did you mean this?
 * tar: tar (GNU tar) 1.27.1
 * tree: tree v1.6.0 (c) 1996 - 2011 by Steve Baker, Thomas Moore, Francesc Rocher, Kyosuke Tokoro 
 * gcc: gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
-/bitrise/bitrise-base/system_report.sh: line 70: convert: command not found
+/bitrise/bitrise-base/system_report.sh: line 71: convert: command not found
 * imagemagick (convert): 
 
 * sudo: Sudo version 1.8.9p5
@@ -63,9 +65,9 @@ Did you mean this?
 * docker-compose: docker-compose version 1.6.2, build 4d72027
 
 --- Bitrise CLI tool versions
-* bitrise: 1.6.2
-* stepman: 0.9.31
-* envman: 1.1.4
+* bitrise: 1.7.0
+* stepman: 0.9.32
+* envman: 1.1.5
 * bitrise-bridge: 0.9.11
 ========================================
 
@@ -157,7 +159,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux 1fead6ee3513 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 2cf3e78f27d5 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -190,8 +192,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: t20170707100835-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: 4V3K:OQY4:C7NQ:QFFI:63O6:DFZ6:G4R5:2RFT:3B3X:H4DL:M5OC:Y67X
+Name: t20170714192037-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: Z5Q5:JIOZ:ULHO:B4BM:Q4TD:5UCD:VTRZ:TTEY:ZTJZ:5QT5:VG3V:XK5T
 WARNING: No swap limit support
 ========================================
 
@@ -205,8 +207,8 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
              total       used       free     shared    buffers     cached
-Mem:          7.3G       949M       6.4G       8.7M        13M       760M
--/+ buffers/cache:       176M       7.1G
+Mem:          7.3G       1.4G       5.9G       8.8M        21M       1.0G
+-/+ buffers/cache:       334M       7.0G
 Swap:           0B         0B         0B
 ========================================
 
@@ -251,6 +253,9 @@ Swap:           0B         0B         0B
  * adb version:
 Android Debug Bridge version 1.0.32
 Revision 09a0d98bebce-android
+
+ * SDK packages:
+ (!) Version check not available on this Stack / in this image
 ========================================
 
 
@@ -269,7 +274,7 @@ system-images
 temp
 tools
 
-* platform-tools:
+* ./platform-tools:
 adb
 api
 dmtracedump
@@ -282,7 +287,7 @@ source.properties
 sqlite3
 systrace
 
-* build-tools:
+* ./build-tools:
 17.0.0
 19.1.0
 20.0.0
@@ -293,7 +298,10 @@ systrace
 23.0.3
 24.0.0-preview
 
-* extras:
+* ./emulator:
+ (!) ./emulator dir does not exist on LTS
+
+* ./extras:
 /opt/android-sdk-linux/extras
 ├── android
 │   ├── m2repository
@@ -304,7 +312,7 @@ systrace
 
 6 directories, 0 files
 
-* platforms:
+* ./platforms:
 android-10
 android-15
 android-17
@@ -315,7 +323,7 @@ android-22
 android-23
 android-N
 
-* system-images:
+* ./system-images:
 /opt/android-sdk-linux/system-images
 ├── android-15
 │   └── default
