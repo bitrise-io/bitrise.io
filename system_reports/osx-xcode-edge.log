@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2017_06_13_1
+* BITRISE_OSX_STACK_REV_ID: v2017_07_11_1
 ========================================
 
 
@@ -15,15 +15,15 @@
 * Go: go version go1.8.3 darwin/amd64
 * Ruby: ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin16]
 * Python: Python 2.7.13
-* Node.js: v8.1.3
+* Node.js: v8.1.4
 * NPM: 5.0.3
 * Yarn: 0.27.5
 * Java: java version "1.8.0_131"
 Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 
-* git: git version 2.13.2
-* git lfs: git-lfs/2.2.0 (GitHub; darwin amd64; go 1.8.3)
+* git: git version 2.13.3
+* git lfs: git-lfs/2.2.1 (GitHub; darwin amd64; go 1.8.3)
 * mercurial/hg: Mercurial Distributed SCM (version 4.2.2)
 * curl: curl 7.51.0 (x86_64-apple-darwin16.0) libcurl/7.51.0 SecureTransport zlib/1.2.8
 * wget: GNU Wget 1.19.1 built on darwin16.6.0.
@@ -34,23 +34,23 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 1.2.4
-Homebrew/homebrew-core (git revision 695d9; last commit 2017-07-07)
+Homebrew/homebrew-core (git revision 0313; last commit 2017-07-13)
 ./system_report.sh: line 55: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.3.1.0
 * gtimeout: timeout (GNU coreutils) 8.27
 * watchman: 4.7.0
-* flow: Flow, a static type checker for JavaScript, version 0.49.1
-* carthage: 0.23.0
+* flow: Flow, a static type checker for JavaScript, version 0.50.0
+* carthage: 0.24.0
 * imagemagick (convert): Version: ImageMagick 7.0.6-0 Q16 x86_64 2017-06-12 http://www.imagemagick.org
 * ghostscript (ps2ascii): 9.21
 ./system_report.sh: line 70: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.6.2
-* stepman: 0.9.31
-* envman: 1.1.4
+* bitrise: 1.7.0
+* stepman: 0.9.32
+* envman: 1.1.5
 * bitrise-bridge: 0.9.11
 * cmd-bridge: 0.9.5
 ========================================
@@ -60,7 +60,7 @@ Homebrew/homebrew-core (git revision 695d9; last commit 2017-07-07)
 * Rubygems: 2.6.12
 * Bundler: Bundler version 1.15.1
 * CocoaPods: 1.2.1
-* fastlane: fastlane 2.45.0
+* fastlane: fastlane 2.46.1
 * xcpretty: 0.2.8
 * Nomad CLI: 2.6.12
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
@@ -97,14 +97,14 @@ declarative-option (0.1.0)
 did_you_mean (1.1.0)
 domain_name (0.5.20170404)
 dotenv (2.2.1)
-dubai (0.1.1)
+dubai (0.1.2)
 escape (0.0.4)
 excon (0.57.1)
 faraday (0.12.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.11.0.1)
 fastimage (2.1.0)
-fastlane (2.45.0)
+fastlane (2.46.1)
 fourflusher (2.0.1)
 fuzzy_match (2.0.4)
 gh_inspector (1.0.3)
@@ -114,7 +114,7 @@ highline (1.7.8)
 houston (2.2.4)
 http-cookie (1.0.3)
 httpclient (2.8.3)
-i18n (0.8.4)
+i18n (0.8.6)
 io-console (default: 0.4.6)
 json (default: 2.0.2, 1.8.6)
 jwt (1.5.6)
@@ -131,6 +131,7 @@ molinillo (0.5.7)
 multi_json (1.12.1)
 multi_xml (0.6.0)
 multipart-post (2.0.0)
+mustermann (1.0.0)
 nanaimo (0.2.3)
 nap (1.1.0)
 net-http-digest_auth (1.4.1)
@@ -148,8 +149,8 @@ plist (3.1.0)
 power_assert (0.4.1)
 psych (default: 2.2.2)
 public_suffix (2.0.5)
-rack (1.6.8)
-rack-protection (1.5.3)
+rack (2.0.3)
+rack-protection (2.0.0)
 rake (12.0.0)
 rdoc (default: 5.0.0)
 representable (3.0.4)
@@ -161,7 +162,7 @@ rubyzip (1.2.1)
 security (0.1.3)
 shenzhen (0.14.3)
 signet (0.7.3)
-sinatra (1.4.8)
+sinatra (2.0.0)
 slack-notifier (1.5.1)
 term-ansicolor (1.0.7)
 terminal-notifier (1.8.0)
@@ -186,7 +187,9 @@ xmlrpc (0.2.1)
 
 === NPM global packages ==========================
 * Cordova: 7.0.1
-* Ionic: [2K[G3.4.0
+* Ionic: [INFO] CI detected--switching to non-interactive mode.
+[INFO] CLI Flag --no-interactive saved
+3.5.0
 ========================================
 
 
@@ -463,10 +466,10 @@ watchOS 3.2 (3.2 - 14V243) (com.apple.CoreSimulator.SimRuntime.watchOS-3-2)
     Apple Watch - 38mm (BF347887-4520-46A0-A62C-D3A3E2EF4550) (Shutdown)
     Apple Watch - 42mm (C679BEA9-1810-407E-8B6C-A34CD11A7B6C) (Shutdown)
 -- watchOS 3.1 --
-    Apple Watch - 38mm (AD7ED70C-1420-4620-8D70-DBF85C68D860) (Shutdown)
-    Apple Watch - 42mm (8F4D39B9-02A2-4F80-A2D1-2F77C83D1452) (Shutdown)
-    Apple Watch Series 2 - 38mm (714FA875-713F-4B71-BBE4-2DE4B73AE968) (Shutdown)
-    Apple Watch Series 2 - 42mm (45672CBD-3895-45DB-8342-CD610216D521) (Shutdown)
+    Apple Watch - 38mm (47BDC5F9-EACD-4510-A794-E3829D47FFB6) (Shutdown)
+    Apple Watch - 42mm (A3ACDBA8-DFE8-44DB-8173-5339CA1EEECA) (Shutdown)
+    Apple Watch Series 2 - 38mm (26626E75-69E4-4F7E-8354-BDF8C3C67E39) (Shutdown)
+    Apple Watch Series 2 - 42mm (718C4A95-148A-41A2-8D43-DBBFF36F362D) (Shutdown)
 -- watchOS 3.2 --
     Apple Watch - 38mm (AB0792A9-3712-4F62-BBE8-D1FBAAF40854) (Shutdown)
     Apple Watch - 42mm (35DB9537-433D-45E5-AE16-31D754559A4C) (Shutdown)
@@ -516,7 +519,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  104Gi   95Gi    53% 2507225 4292460054    0%   /
+* Free disk space: /dev/disk0s2  199Gi  104Gi   95Gi    53% 2510522 4292456757    0%   /
 ========================================
 
 
