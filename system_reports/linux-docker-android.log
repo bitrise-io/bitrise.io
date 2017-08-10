@@ -136,7 +136,7 @@ xmlrpc (0.2.1)
 
 === Linux info =========================
 * uname -a
-Linux 77ba05bfb747 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 1f4ab4416890 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -180,8 +180,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: t20170810095925-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: PVZ6:OIRH:5VNW:NZQJ:VOLM:TKUB:5MSI:5FM2:HLM7:IYPV:NULQ:DXLZ
+Name: t20170810161350-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: 4TLG:5U22:V4P6:WGV5:4XCW:HBAV:PECL:YPN7:PJPY:TD3W:67W4:5RGN
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -203,7 +203,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        271M        5.8G        8.8M        1.2G        6.8G
+Mem:           7.3G        127M        6.3G        8.7M        890M        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -218,14 +218,14 @@ Swap:            0B          0B          0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2017_07_26_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2017_08_10_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.52.0
+* Fastlane: * New fastlane action to modify services (produce) (#10010) via Bhimsen Padalkar
 * Java: javac 1.8.0_131
 * Cordova CLI version: 7.0.1
 * Ionic CLI version: 3.7.0
@@ -265,7 +265,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * SDK Tools version: 26.0.2
 * Platform Tools version: 26.0.0
-* Emulator version: 26.1.3
+* Emulator version: 26.1.2
 ========================================
 
 
@@ -325,7 +325,6 @@ lib
 lib64
 mksdcard
 NOTICE.txt
-package.xml
 qemu
 resources
 source.properties
