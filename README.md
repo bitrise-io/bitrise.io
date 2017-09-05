@@ -89,6 +89,7 @@ We have a [base image](https://github.com/bitrise-docker/bitrise-base) and an [A
 ## List of official Bitrise organizations on GitHub
 
 * [bitrise-io](https://github.com/bitrise-io)
+* [bitrise-community](https://github.com/bitrise-community)
 * [bitrise-steplib](https://github.com/bitrise-steplib)
 * [bitrise-tools](https://github.com/bitrise-tools)
 * [bitrise-core](https://github.com/bitrise-core)
@@ -99,8 +100,8 @@ We have a [base image](https://github.com/bitrise-docker/bitrise-base) and an [A
 
 Aggregated Issue and Pull Request lists, related to the Bitrise CLI tools, stacks and official steps (*You have to be logged in on GitHub to be able to access the aggregated lists / searches*):
 
-* [Open Pull Requests across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=✓&q=is%3Aopen+is%3Apr+user%3Abitrise-io+user%3Abitrise-steplib+user%3Abitrise-tools+user%3Abitrise-core+user%3Abitrise-docker+user%3Abitrise-samples)
-* [Open Issues across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=✓&q=is%3Aopen+is%3Aissue+user%3Abitrise-io+user%3Abitrise-steplib+user%3Abitrise-tools+user%3Abitrise-core+user%3Abitrise-docker+user%3Abitrise-samples)
+* [Open Pull Requests across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+user%3Abitrise-io+user%3Abitrise-community+user%3Abitrise-steplib+user%3Abitrise-tools+user%3Abitrise-core+user%3Abitrise-docker+user%3Abitrise-samples)
+* [Open Issues across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Abitrise-io+user%3Abitrise-community+user%3Abitrise-steplib+user%3Abitrise-tools+user%3Abitrise-core+user%3Abitrise-docker+user%3Abitrise-samples)
 
 ## Sample Apps
 
