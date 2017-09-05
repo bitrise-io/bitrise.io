@@ -31,7 +31,7 @@ A step is a script with a corresponding `yml` that conforms to the formatting an
 
 You can find all our steps' `yml`s under [/steps](https://github.com/bitrise-io/bitrise-steplib/tree/master/steps).
 
-The repositories of steps which we maintain and support can be queried by searching for [steps-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=steps-) on our [GitHub page](https://github.com/bitrise-io).
+The repositories of the steps which we maintain and provide support for can be found by searching for [steps-](https://github.com/bitrise-io?utf8=%E2%9C%93&q=steps-&type=&language=) in our [bitrise-io GitHub organization](https://github.com/bitrise-io), the newer ones in the [bitrise-steplib GitHub organization](https://github.com/bitrise-steplib), and the ones we maintain with the community in the [bitrise-community GitHub organization](https://github.com/bitrise-community).
 
 We have most of our scripts written in `Go` and `bash`, but it's possible to write it in any language our machines have installed, like `Ruby` or `Node.js`.
 
