@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2017_08_14_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2017_09_07_1
 ========================================
 
 
@@ -24,7 +24,7 @@
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.8.3 linux/amd64
+* Go: go version go1.9 linux/amd64
 * Ruby: ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
   * bundler: Bundler version 1.15.4
   * rubygems: 2.6.13
@@ -50,8 +50,8 @@
 
 * sudo: Sudo version 1.8.16
 
-* docker: Docker version 17.03.1-ce, build c6d412e
-* docker-compose: docker-compose version 1.11.2, build dfed245
+* docker: Docker version 17.06.2-ce, build cec0b72
+* docker-compose: docker-compose version 1.16.0, build ea60ca1
 
 --- Bitrise CLI tool versions
 * bitrise: 1.8.0
@@ -76,14 +76,14 @@ declarative-option (0.1.0)
 did_you_mean (1.1.0)
 domain_name (0.5.20170404)
 dotenv (2.2.1)
-excon (0.58.0)
+excon (0.59.0)
 faraday (0.13.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.0)
-fastlane (2.54.4)
+fastlane (2.55.0)
 gh_inspector (1.0.3)
-google-api-client (0.13.4)
+google-api-client (0.13.5)
 googleauth (0.5.3)
 highline (1.7.8)
 http-cookie (1.0.3)
@@ -98,7 +98,7 @@ mime-types (3.1)
 mime-types-data (3.2016.0521)
 mini_magick (4.5.1)
 minitest (5.10.1)
-multi_json (1.12.1)
+multi_json (1.12.2)
 multi_xml (0.6.0)
 multipart-post (2.0.0)
 nanaimo (0.2.3)
@@ -137,7 +137,7 @@ xmlrpc (0.2.1)
 
 === Linux info =========================
 * uname -a
-Linux 91859c70fb6b 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux e71dcd528aa2 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -155,7 +155,7 @@ Containers: 1
  Paused: 0
  Stopped: 0
 Images: 3
-Server Version: 17.03.1-ce
+Server Version: 17.06.2-ce
 Storage Driver: btrfs
  Build Version: Btrfs v4.4
  Library Version: 101
@@ -164,12 +164,13 @@ Cgroup Driver: cgroupfs
 Plugins: 
  Volume: local
  Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file logentries splunk syslog
 Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
 Init Binary: docker-init
-containerd version: 4ab9917febca54791c5f071a9d1f404867857fcc
-runc version: 54296cf40ad8143b62dbcaa1d90e520a2136ddfe
+containerd version: 6e23458c129b551d5c9871e5174f6b1b7f6d1170
+runc version: 810190ceaa507aa2727d7ae6f4790c76ec150bd2
 init version: 949e6fa
 Security Options:
  apparmor
@@ -180,18 +181,19 @@ Operating System: Ubuntu 16.04.1 LTS
 OSType: linux
 Architecture: x86_64
 CPUs: 2
-Total Memory: 7.304 GiB
-Name: t20170831120311-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: JDVW:QU4T:L5EB:2H6T:NBVG:4MZS:NWBL:LYK2:CKY7:V3Z2:SZ47:TZWC
+Total Memory: 7.304GiB
+Name: t20170907120726-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: JJXB:KPOQ:STZJ:SWFA:A3UE:LM3F:TXZZ:QT4F:IK57:FTUA:2Y7Y:2TP4
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
 Registry: https://index.docker.io/v1/
-WARNING: No swap limit support
 Experimental: false
 Insecure Registries:
  127.0.0.0/8
 Live Restore Enabled: false
+
+WARNING: No swap limit support
 ========================================
 
 
@@ -204,7 +206,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        234M        5.8G        8.8M        1.3G        6.8G
+Mem:           7.3G        126M        6.2G        8.8M        1.0G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -226,7 +228,7 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.54.4
+* Fastlane: fastlane 2.55.0
 * Java: javac 1.8.0_131
 * Cordova CLI version: 7.0.1
 * Ionic CLI version: [ANNOUNCE] Hi! Welcome to CLI 3.9.
@@ -244,12 +246,11 @@ Swap:            0B          0B          0B
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 169.0.0
-alpha 2017.08.28
-beta 2017.08.28
+Google Cloud SDK 170.0.0
+alpha 2017.09.01
+beta 2017.09.01
 bq 2.0.25
-core 2017.08.28
-gcloud 
+core 2017.09.01
 gsutil 4.27
 ========================================
 
