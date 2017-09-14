@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2017_09_07_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2017_09_13_1
 ========================================
 
 
@@ -30,9 +30,9 @@
   * rubygems: 2.6.13
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
-* Node.js: v8.4.0
+* Node.js: v8.5.0
 * NPM: 5.3.0
-* Yarn: 0.27.5
+* Yarn: 1.0.2
 
 * git: git version 2.7.4
 * git lfs: git-lfs/2.2.1 (GitHub; linux amd64; go 1.8.1)
@@ -54,9 +54,9 @@
 * docker-compose: docker-compose version 1.16.0, build ea60ca1
 
 --- Bitrise CLI tool versions
-* bitrise: 1.8.0
-* stepman: 0.9.33
-* envman: 1.1.6
+* bitrise: 1.9.0
+* stepman: 0.9.34
+* envman: 1.1.7
 * bitrise-bridge: 0.9.11
 ========================================
 
@@ -71,7 +71,7 @@ claide (1.0.2)
 colored (1.2)
 colored2 (3.1.2)
 commander-fastlane (4.4.5)
-declarative (0.0.9)
+declarative (0.0.10)
 declarative-option (0.1.0)
 did_you_mean (1.1.0)
 domain_name (0.5.20170404)
@@ -81,9 +81,9 @@ faraday (0.13.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.0)
-fastlane (2.55.0)
+fastlane (2.56.0)
 gh_inspector (1.0.3)
-google-api-client (0.13.5)
+google-api-client (0.13.6)
 googleauth (0.5.3)
 highline (1.7.8)
 http-cookie (1.0.3)
@@ -137,7 +137,7 @@ xmlrpc (0.2.1)
 
 === Linux info =========================
 * uname -a
-Linux e71dcd528aa2 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux 36be4092b9b7 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -182,8 +182,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20170907120726-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: JJXB:KPOQ:STZJ:SWFA:A3UE:LM3F:TXZZ:QT4F:IK57:FTUA:2Y7Y:2TP4
+Name: t20170914090300-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: XEAX:7ZJA:IALX:TTGO:4X6W:4KER:33KJ:PSIG:FEHA:DAN3:RM7Q:5EYU
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -206,7 +206,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        126M        6.2G        8.8M        1.0G        6.9G
+Mem:           7.3G        133M        6.2G        8.7M        1.0G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -228,29 +228,19 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.55.0
+* Fastlane: fastlane 2.56.0
 * Java: javac 1.8.0_131
 * Cordova CLI version: 7.0.1
-* Ionic CLI version: [ANNOUNCE] Hi! Welcome to CLI 3.9.
-
-           We decided to merge core plugins back into the main ionic CLI package. The @ionic/cli-plugin-ionic-angular, @ionic/cli-plugin-ionic1, @ionic/cli-plugin-cordova, and @ionic/cli-plugin-gulp plugins have all been deprecated and won't be loaded by the CLI anymore. We listened to devs and determined they added unnecessary complexity. You can uninstall them from your project(s).
-           
-           No functionality was removed and all commands will continue working normally. You may wish to review the CHANGELOG: https://github.com/ionic-team/ionic-cli/blob/master/CHANGELOG.md#changelog
-           
-           Thanks,
-           The Ionic Team
-           
-           
-3.9.2
+* Ionic CLI version: 3.10.3
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 170.0.0
-alpha 2017.09.01
-beta 2017.09.01
+Google Cloud SDK 171.0.0
+alpha 2017.09.11
+beta 2017.09.11
 bq 2.0.25
-core 2017.09.01
+core 2017.09.11
 gsutil 4.27
 ========================================
 
