@@ -21,7 +21,6 @@
 * Java: java version "1.8.0_131"
 Java(TM) SE Runtime Environment (build 1.8.0_131-b11)
 Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
-* jce-unlimited-strength-policy: Not installed
 
 * git: git version 2.13.1
 * git lfs: git-lfs/2.1.1 (GitHub; darwin amd64; go 1.8.1)
@@ -36,16 +35,17 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 
 * brew: Homebrew 1.3.2
 Homebrew/homebrew-core (git revision 447ae; last commit 2017-09-14)
-./system_report.sh: line 55: xctool: command not found
+./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.3.1.0
 * gtimeout: timeout (GNU coreutils) 8.27
 * watchman: 4.7.0
 * flow: Flow, a static type checker for JavaScript, version 0.47.0
+Please update to the latest Carthage version: 0.25.0. You currently are on 0.23.0
 * carthage: 0.23.0
 * imagemagick (convert): Version: ImageMagick 7.0.5-10 Q16 x86_64 2017-06-04 http://www.imagemagick.org
 * ghostscript (ps2ascii): 9.21
-./system_report.sh: line 70: wine: command not found
+./system_report.sh: line 69: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
@@ -61,7 +61,7 @@ Homebrew/homebrew-core (git revision 447ae; last commit 2017-09-14)
 * Rubygems: 2.6.12
 * Bundler: Bundler version 1.15.1
 * CocoaPods: 1.2.1
-* fastlane: [32m# fastlane 2.59.0 is available. You are on 2.37.0.[0m
+* fastlane: * Add "fastlane update_fastlane" command to tab autocompletion (#10375) via Omer Faruk Yilmaz
 * xcpretty: 0.2.8
 * Nomad CLI: 2.6.12
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
@@ -462,10 +462,10 @@ watchOS 3.2 (3.2 - 14V243) (com.apple.CoreSimulator.SimRuntime.watchOS-3-2)
     Apple Watch - 38mm (BF347887-4520-46A0-A62C-D3A3E2EF4550) (Shutdown)
     Apple Watch - 42mm (C679BEA9-1810-407E-8B6C-A34CD11A7B6C) (Shutdown)
 -- watchOS 3.1 --
-    Apple Watch - 38mm (09ADD1D8-CFAE-4C7D-BA46-4F93094932F2) (Shutdown)
-    Apple Watch - 42mm (EE2AB537-3B44-4948-932B-46B20127E94E) (Shutdown)
-    Apple Watch Series 2 - 38mm (61B6CA74-04FE-4FDF-A8BD-CDFF18E72B4B) (Shutdown)
-    Apple Watch Series 2 - 42mm (08A3194D-392D-4CB6-81B7-56A8EC76BD9C) (Shutdown)
+    Apple Watch - 38mm (D0B4D0CE-21F9-4543-9435-C077572844AA) (Shutdown)
+    Apple Watch - 42mm (1DC45547-FFCE-4AA0-91BB-E0D07F338D53) (Shutdown)
+    Apple Watch Series 2 - 38mm (BCE0A299-F888-44CD-8D5E-DEA306CA1186) (Shutdown)
+    Apple Watch Series 2 - 42mm (4AA51165-E7CD-41DC-86DD-DBB5192575F1) (Shutdown)
 -- watchOS 3.2 --
     Apple Watch - 38mm (AB0792A9-3712-4F62-BBE8-D1FBAAF40854) (Shutdown)
     Apple Watch - 42mm (35DB9537-433D-45E5-AE16-31D754559A4C) (Shutdown)
@@ -515,7 +515,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  146Gi   53Gi    74% 2746094 4292221185    0%   /
+* Free disk space: /dev/disk0s2  199Gi  146Gi   53Gi    74% 2746201 4292221078    0%   /
 ========================================
 
 
