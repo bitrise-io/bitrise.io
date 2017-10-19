@@ -7,24 +7,24 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2017_09_18_1
+* BITRISE_OSX_STACK_REV_ID: v2017_10_10_1
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.9 darwin/amd64
+* Go: go version go1.9.1 darwin/amd64
 * Ruby: ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-darwin16]
 * Python: Python 2.7.10
-* Node.js: v8.5.0
-* NPM: 5.3.0
-* Yarn: 1.0.2
-* Java: java version "1.8.0_144"
-Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
-Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
+* Node.js: v8.7.0
+* NPM: 5.4.2
+* Yarn: 1.2.1
+* Java: java version "9"
+Java(TM) SE Runtime Environment (build 9+181)
+Java HotSpot(TM) 64-Bit Server VM (build 9+181, mixed mode)
 
-* git: git version 2.14.1
-* git lfs: git-lfs/2.3.0 (GitHub; darwin amd64; go 1.9)
-* mercurial/hg: Mercurial Distributed SCM (version 4.3.2)
+* git: git version 2.14.2
+* git lfs: git-lfs/2.3.3 (GitHub; darwin amd64; go 1.9.1)
+* mercurial/hg: Mercurial Distributed SCM (version 4.3.3)
 * curl: curl 7.54.0 (x86_64-apple-darwin16.0) libcurl/7.54.0 SecureTransport zlib/1.2.8
 * wget: GNU Wget 1.19.1 built on darwin16.6.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,17 +33,20 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.3.5
-Homebrew/homebrew-core (git revision 1d44; last commit 2017-10-12)
+* brew: Homebrew 1.3.6
+Homebrew/homebrew-core (git revision e0c4; last commit 2017-10-19)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
-* Ansible: ansible 2.3.2.0
+* Ansible: ansible 2.4.0.0
+  configured module search path = [u'/Users/vagrant/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/Cellar/ansible/2.4.0.0/libexec/lib/python2.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.28
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.55.0
-* carthage: 0.25.0
-* imagemagick (convert): Version: ImageMagick 7.0.7-3 Q16 x86_64 2017-09-18 http://www.imagemagick.org
-* ghostscript (ps2ascii): 9.21
+* flow: Flow, a static type checker for JavaScript, version 0.57.3
+* carthage: 0.26.2
+* imagemagick (convert): Version: ImageMagick 7.0.7-7 Q16 x86_64 2017-10-08 http://www.imagemagick.org
+* ghostscript (ps2ascii): 9.22
 ./system_report.sh: line 69: wine: command not found
 * wine: 
 
@@ -57,18 +60,18 @@ Homebrew/homebrew-core (git revision 1d44; last commit 2017-10-12)
 
 
 === Ruby GEMs ==========================
-* Rubygems: 2.6.13
+* Rubygems: 2.6.14
 * Bundler: Bundler version 1.15.4
 * CocoaPods: 1.3.1
-* fastlane: [32m# fastlane 2.61.0 is available. You are on 2.58.0.[0m
+* fastlane: fastlane 2.62.0
 * xcpretty: 0.2.8
-* Nomad CLI: 2.6.13
+* Nomad CLI: 2.6.14
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
 ========================================
 
 
 === All Ruby GEMs ======================
-activesupport (4.2.9)
+activesupport (4.2.10)
 addressable (2.5.2)
 aws-sdk (1.67.0)
 aws-sdk-v1 (1.67.0)
@@ -85,12 +88,13 @@ cocoapods-downloader (1.1.3)
 cocoapods-plugins (1.0.0)
 cocoapods-search (1.0.0)
 cocoapods-stats (1.0.0)
-cocoapods-trunk (1.2.0)
+cocoapods-trunk (1.3.0)
 cocoapods-try (1.1.0)
 colored (1.2)
 colored2 (3.1.2)
 commander (4.4.3)
 commander-fastlane (4.4.5)
+concurrent-ruby (1.0.5)
 cupertino (1.3.4)
 declarative (0.0.10)
 declarative-option (0.1.0)
@@ -104,7 +108,7 @@ faraday (0.13.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.0)
-fastlane (2.58.0)
+fastlane (2.62.0)
 fourflusher (2.0.1)
 fuzzy_match (2.0.4)
 gh_inspector (1.0.3)
@@ -114,7 +118,7 @@ highline (1.7.8)
 houston (2.2.4)
 http-cookie (1.0.3)
 httpclient (2.8.3)
-i18n (0.8.6)
+i18n (0.9.0)
 io-console (default: 0.4.6)
 json (default: 2.0.4, 1.8.6)
 jwt (1.5.6)
@@ -139,7 +143,7 @@ net-http-persistent (2.9.4)
 net-sftp (2.1.2)
 net-ssh (4.2.0)
 net-telnet (0.1.1)
-netrc (0.7.8)
+netrc (0.11.0)
 nokogiri (1.6.8.1)
 nomad-cli (0.0.2)
 ntlm-http (0.1.1)
@@ -157,10 +161,11 @@ representable (3.0.4)
 retriable (3.1.1)
 rouge (2.0.7)
 ruby-macho (1.1.0)
+rubygems-update (2.6.14)
 rubyzip (1.2.1)
 security (0.1.3)
 shenzhen (0.14.3)
-signet (0.7.3)
+signet (0.8.1)
 sinatra (2.0.0)
 slack-notifier (1.5.1)
 term-ansicolor (1.0.7)
@@ -174,10 +179,10 @@ tzinfo (1.2.3)
 uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.7.4)
-venice (0.3.0)
+venice (0.4.0)
 webrobots (0.1.2)
 word_wrap (1.0.0)
-xcodeproj (1.5.1)
+xcodeproj (1.5.2)
 xcpretty (0.2.8)
 xcpretty-travis-formatter (0.0.4)
 xmlrpc (0.2.1)
@@ -185,8 +190,8 @@ xmlrpc (0.2.1)
 
 
 === NPM global packages ==========================
-* Cordova: 7.0.1
-* Ionic: 3.10.3
+* Cordova: 7.1.0
+* Ionic: 3.13.1
 ========================================
 
 
@@ -208,7 +213,7 @@ SDKs
 usr
 
  * /Library/Developer/CommandLineTools/usr/bin/swift --version
-Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)
+Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)
 Target: x86_64-apple-macosx10.9
 
 ========================================
@@ -220,8 +225,8 @@ Target: x86_64-apple-macosx10.9
 /Applications/Xcode.app/Contents/Developer
 
 * Xcode Version:
-Xcode 9.0
-Build version 9A235
+Xcode 9.0.1
+Build version 9A1004
 
 * Installed SDKs:
 iOS SDKs:
@@ -257,10 +262,10 @@ iPhone 6s (com.apple.CoreSimulator.SimDeviceType.iPhone-6s)
 iPhone 6s Plus (com.apple.CoreSimulator.SimDeviceType.iPhone-6s-Plus)
 iPhone 7 (com.apple.CoreSimulator.SimDeviceType.iPhone-7)
 iPhone 7 Plus (com.apple.CoreSimulator.SimDeviceType.iPhone-7-Plus)
+iPhone 8 (com.apple.CoreSimulator.SimDeviceType.iPhone-8)
+iPhone 8 Plus (com.apple.CoreSimulator.SimDeviceType.iPhone-8-Plus)
 iPhone SE (com.apple.CoreSimulator.SimDeviceType.iPhone-SE)
-iPhone2017-A (com.apple.CoreSimulator.SimDeviceType.iPhone-8)
-iPhone2017-B (com.apple.CoreSimulator.SimDeviceType.iPhone-8-Plus)
-iPhone2017-C (com.apple.CoreSimulator.SimDeviceType.iPhone-X)
+iPhone X (com.apple.CoreSimulator.SimDeviceType.iPhone-X)
 iPad 2 (com.apple.CoreSimulator.SimDeviceType.iPad-2)
 iPad Retina (com.apple.CoreSimulator.SimDeviceType.iPad-Retina)
 iPad Air (com.apple.CoreSimulator.SimDeviceType.iPad-Air)
@@ -292,7 +297,7 @@ iOS 10.0 (10.0 - 14A345) - com.apple.CoreSimulator.SimRuntime.iOS-10-0
 iOS 10.1 (10.1 - 14B72) - com.apple.CoreSimulator.SimRuntime.iOS-10-1
 iOS 10.2 (10.2 - 14C89) - com.apple.CoreSimulator.SimRuntime.iOS-10-2
 iOS 10.3 (10.3.1 - 14E8301) - com.apple.CoreSimulator.SimRuntime.iOS-10-3
-iOS 11.0 (11.0 - 15A372) - com.apple.CoreSimulator.SimRuntime.iOS-11-0
+iOS 11.0 (11.0.1 - 15A8401) - com.apple.CoreSimulator.SimRuntime.iOS-11-0
 tvOS 9.0 (9.0 - 13T395) - com.apple.CoreSimulator.SimRuntime.tvOS-9-0
 tvOS 9.1 (9.1 - 13U85) - com.apple.CoreSimulator.SimRuntime.tvOS-9-1
 tvOS 9.2 (9.2 - 13Y234) - com.apple.CoreSimulator.SimRuntime.tvOS-9-2
@@ -459,9 +464,9 @@ watchOS 4.0 (4.0 - 15R372) - com.apple.CoreSimulator.SimRuntime.watchOS-4-0
     iPhone 6s Plus (46447546-26BD-4BE5-B19C-D4D38C37C86C) (Shutdown)
     iPhone 7 (E251E797-AB1C-49AA-80F5-6F54306712D1) (Shutdown)
     iPhone 7 Plus (748CBB4A-8B96-4874-A441-D998C9316C8D) (Shutdown)
-    iPhone SE (C582C3D2-EA15-4D9A-82F9-3452505BFC44) (Shutdown)
     iPhone 8 (AF944F78-96EE-4943-8A5E-2017AED47B6C) (Shutdown)
     iPhone 8 Plus (7C87E17E-51E8-45D9-8704-CB393C7C3599) (Shutdown)
+    iPhone SE (C582C3D2-EA15-4D9A-82F9-3452505BFC44) (Shutdown)
     iPhone X (59E4E32F-2D9F-40FC-91C7-E8C91BCD4D89) (Shutdown)
     iPad Air (5AA0B1FC-607F-42F1-ACA0-172DA7C5BE27) (Shutdown)
     iPad Air 2 (F0F91302-776D-4DAA-AAC5-C02CA522CA99) (Shutdown)
@@ -556,7 +561,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  120Gi   79Gi    61% 2810177 4292157102    0%   /
+* Free disk space: /dev/disk0s2  199Gi  120Gi   79Gi    61% 2980471 4291986808    0%   /
 ========================================
 
 
