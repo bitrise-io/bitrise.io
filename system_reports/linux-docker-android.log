@@ -137,7 +137,7 @@ xmlrpc (0.2.1)
 
 === Linux info =========================
 * uname -a
-Linux t20171110140656-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20171110180921-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -182,8 +182,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20171110140656-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: SAU2:YRBO:JGLD:XLCW:DRJC:ZU3F:VJXV:I542:5EMK:NVMU:75EL:I3NS
+Name: t20171110180921-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: 7O5K:EHMS:WFCG:YRD5:RHO4:HDGY:W3MW:ITTM:KEHG:PBXY:FIXI:L264
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -200,13 +200,13 @@ WARNING: No swap limit support
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   21G   39G  35% /
+/dev/loop0       60G   17G   43G  29% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        267M        5.7G        8.8M        1.3G        6.8G
+Mem:           7.3G        123M        6.2G        8.7M        1.0G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -221,7 +221,7 @@ Swap:            0B          0B          0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2017_11_08_2
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2017_11_10_2
 ========================================
 
 
@@ -267,7 +267,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * SDK Tools version: 26.1.1
 * Platform Tools version: 26.0.2
-* Emulator version: 26.1.4
+* Emulator version: 26.1.2
 ========================================
 
 
@@ -327,7 +327,6 @@ lib
 lib64
 mksdcard
 NOTICE.txt
-package.xml
 qemu
 resources
 source.properties
@@ -367,14 +366,11 @@ android-27
 ├── android-24
 │   └── default
 │       └── armeabi-v7a
-├── android-25
-│   └── google_apis
-│       └── armeabi-v7a
-└── android-26
+└── android-25
     └── google_apis
-        └── x86
+        └── armeabi-v7a
 
-15 directories, 0 files
+12 directories, 0 files
 ========================================
 
 
