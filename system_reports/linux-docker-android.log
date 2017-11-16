@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2017_10_10_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2017_11_14_1
 ========================================
 
 
@@ -24,7 +24,7 @@
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.9.1 linux/amd64
+* Go: go version go1.9.2 linux/amd64
 * Ruby: ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-linux]
   * bundler: Bundler version 1.16.0
   * rubygems: 2.7.2
@@ -54,7 +54,7 @@
 * docker-compose: docker-compose version 1.16.0, build ea60ca1
 
 --- Bitrise CLI tool versions
-* bitrise: 1.10.0
+* bitrise: 1.10.1
 * stepman: 0.9.35
 * envman: 1.1.8
 * bitrise-bridge: 0.9.11
@@ -81,10 +81,10 @@ faraday (0.13.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.0)
-fastlane (2.64.0)
+fastlane (2.64.1)
 gh_inspector (1.0.3)
 google-api-client (0.13.6)
-googleauth (0.6.1)
+googleauth (0.6.2)
 highline (1.7.8)
 http-cookie (1.0.3)
 httpclient (2.8.3)
@@ -137,7 +137,7 @@ xmlrpc (0.2.1)
 
 === Linux info =========================
 * uname -a
-Linux t20171110180921-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20171116095736-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -182,8 +182,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20171110180921-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: 7O5K:EHMS:WFCG:YRD5:RHO4:HDGY:W3MW:ITTM:KEHG:PBXY:FIXI:L264
+Name: t20171116095736-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: I25B:5FBI:KUDV:AHXR:DYMU:VCSG:2C7D:U2I5:MVMP:YBJA:4RG4:Q3II
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -200,13 +200,13 @@ WARNING: No swap limit support
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   17G   43G  29% /
+/dev/loop0       60G   17G   43G  28% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        123M        6.2G        8.7M        1.0G        6.9G
+Mem:           7.3G        130M        6.2G        8.7M        1.0G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -228,7 +228,7 @@ Swap:            0B          0B          0B
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.64.0
+* Fastlane: fastlane 2.64.1
 * Java: javac 1.8.0_151
 * Cordova CLI version: 7.1.0
 * Ionic CLI version: 3.18.0
@@ -236,11 +236,11 @@ Swap:            0B          0B          0B
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 179.0.0
-alpha 2017.11.06
-beta 2017.11.06
+Google Cloud SDK 180.0.0
+alpha 2017.11.10
+beta 2017.11.10
 bq 2.0.27
-core 2017.11.06
+core 2017.11.10
 gsutil 4.28
 ========================================
 
@@ -384,12 +384,12 @@ android-27
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2017_08_07_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2017_11_15_1
 ========================================
 
 $ cat /opt/android-ndk/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 15.2.4203891
+Pkg.Revision = 16.0.4442984
 
 $ tree -L 2 /opt/android-ndk
 /opt/android-ndk
@@ -400,6 +400,7 @@ $ tree -L 2 /opt/android-ndk
 │   ├── extract_platform.py
 │   ├── gen_cygpath.py
 │   ├── gmsl
+│   ├── import_abi_metadata.py
 │   ├── __init__.py
 │   ├── lib
 │   ├── ndk-build
@@ -409,6 +410,7 @@ $ tree -L 2 /opt/android-ndk
 │   ├── test_extract_manifest.py
 │   ├── test_extract_platform.py
 │   ├── test_gen_cygpath.py
+│   ├── test_import_abi_metadata.py
 │   └── tools
 ├── CHANGELOG.md
 ├── meta
@@ -419,8 +421,6 @@ $ tree -L 2 /opt/android-ndk
 ├── ndk-stack
 ├── ndk-which
 ├── platforms
-│   ├── android-12
-│   ├── android-13
 │   ├── android-14
 │   ├── android-15
 │   ├── android-16
@@ -432,7 +432,7 @@ $ tree -L 2 /opt/android-ndk
 │   ├── android-23
 │   ├── android-24
 │   ├── android-26
-│   ├── android-9
+│   ├── android-27
 │   ├── NOTICE
 │   └── repo.prop
 ├── prebuilt
@@ -445,6 +445,7 @@ $ tree -L 2 /opt/android-ndk
 │   └── linux-x86_64
 ├── python-packages
 │   ├── adb
+│   ├── Android.bp
 │   ├── fastboot
 │   ├── gdbrunner
 │   ├── NOTICE
@@ -453,21 +454,22 @@ $ tree -L 2 /opt/android-ndk
 ├── shader-tools
 │   └── linux-x86_64
 ├── simpleperf
-│   ├── annotate.config
 │   ├── annotate.py
-│   ├── app_profiler.config
 │   ├── app_profiler.py
 │   ├── bin
-│   ├── binary_cache_builder.config
 │   ├── binary_cache_builder.py
+│   ├── ChangeLog
+│   ├── doc
+│   ├── inferno
+│   ├── inferno.sh
+│   ├── __init__.py
 │   ├── NOTICE
-│   ├── pprof_proto_generator.config
 │   ├── pprof_proto_generator.py
 │   ├── profile_pb2.py
-│   ├── README.md
 │   ├── repo.prop
 │   ├── report.py
 │   ├── report_sample.py
+│   ├── run_simpleperf_on_device.py
 │   ├── simpleperf_report_lib.py
 │   └── utils.py
 ├── source.properties
@@ -489,7 +491,7 @@ $ tree -L 2 /opt/android-ndk
     ├── x86-4.9
     └── x86_64-4.9
 
-53 directories, 42 files
+53 directories, 44 files
 
 
 === Pre-installed tool versions ========
