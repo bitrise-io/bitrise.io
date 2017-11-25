@@ -81,7 +81,7 @@ faraday (0.13.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.0)
-fastlane (2.64.1)
+fastlane (2.66.2)
 gh_inspector (1.0.3)
 google-api-client (0.13.6)
 googleauth (0.6.2)
@@ -122,7 +122,7 @@ slack-notifier (1.5.1)
 terminal-notifier (1.8.0)
 terminal-table (1.8.0)
 test-unit (3.2.3)
-tty-screen (0.5.1)
+tty-screen (0.6.3)
 uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.7.4)
@@ -137,7 +137,7 @@ xmlrpc (0.2.1)
 
 === Linux info =========================
 * uname -a
-Linux t20171116095736-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20171123102120-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -182,8 +182,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20171116095736-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: I25B:5FBI:KUDV:AHXR:DYMU:VCSG:2C7D:U2I5:MVMP:YBJA:4RG4:Q3II
+Name: t20171123102120-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: VONX:SGXE:BM6B:NXA3:UHCR:H4U7:UOIQ:GKLR:LAAK:2T22:FMMB:GR7T
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -200,13 +200,13 @@ WARNING: No swap limit support
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   17G   43G  28% /
+/dev/loop0       60G   20G   40G  34% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        130M        6.2G        8.7M        1.0G        6.9G
+Mem:           7.3G        131M        6.2G        8.7M        1.0G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -221,26 +221,26 @@ Swap:            0B          0B          0B
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2017_11_10_2
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2017_11_22_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Fastlane: fastlane 2.64.1
+* Fastlane: fastlane 2.66.2
 * Java: javac 1.8.0_151
 * Cordova CLI version: 7.1.0
-* Ionic CLI version: 3.18.0
+* Ionic CLI version: 3.19.0
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 180.0.0
-alpha 2017.11.10
-beta 2017.11.10
+Google Cloud SDK 180.0.1
+alpha 2017.11.20
+beta 2017.11.20
 bq 2.0.27
-core 2017.11.10
+core 2017.11.20
 gsutil 4.28
 ========================================
 
@@ -267,7 +267,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * SDK Tools version: 26.1.1
 * Platform Tools version: 26.0.2
-* Emulator version: 26.1.2
+* Emulator version: 26.1.4
 ========================================
 
 
@@ -327,6 +327,7 @@ lib
 lib64
 mksdcard
 NOTICE.txt
+package.xml
 qemu
 resources
 source.properties
@@ -366,11 +367,14 @@ android-27
 ├── android-24
 │   └── default
 │       └── armeabi-v7a
-└── android-25
+├── android-25
+│   └── google_apis
+│       └── armeabi-v7a
+└── android-26
     └── google_apis
-        └── armeabi-v7a
+        └── x86
 
-12 directories, 0 files
+15 directories, 0 files
 ========================================
 
 
