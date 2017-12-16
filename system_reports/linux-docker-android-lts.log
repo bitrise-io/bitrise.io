@@ -40,6 +40,8 @@ and dpkg --contents (= dpkg-deb --contents) to list their contents.
 * NPM: 
 /bitrise/bitrise-base/system_report.sh: line 57: yarn: command not found
 * Yarn: 
+/bitrise/bitrise-base/system_report.sh: line 58: aws: command not found
+* aws: 
 
 * git: git version 1.9.1
 git: 'lfs' is not a git command. See 'git --help'.
@@ -56,9 +58,9 @@ Did you mean this?
 * tar: tar (GNU tar) 1.27.1
 * tree: tree v1.6.0 (c) 1996 - 2011 by Steve Baker, Thomas Moore, Francesc Rocher, Kyosuke Tokoro 
 * gcc: gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
-/bitrise/bitrise-base/system_report.sh: line 71: clang: command not found
+/bitrise/bitrise-base/system_report.sh: line 72: clang: command not found
 * clang: 
-/bitrise/bitrise-base/system_report.sh: line 72: convert: command not found
+/bitrise/bitrise-base/system_report.sh: line 73: convert: command not found
 * imagemagick (convert): 
 
 * sudo: Sudo version 1.8.9p5
@@ -67,8 +69,8 @@ Did you mean this?
 * docker-compose: docker-compose version 1.6.2, build 4d72027
 
 --- Bitrise CLI tool versions
-* bitrise: 1.10.1
-* stepman: 0.9.35
+* bitrise: 1.11.0
+* stepman: 0.9.36
 * envman: 1.1.8
 * bitrise-bridge: 0.9.11
 ========================================
@@ -161,7 +163,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux t20171207101518-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20171215104426-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -194,8 +196,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: t20171207101518-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: XJZM:KZ6S:GC6M:6RPC:BPNY:7AXY:F6GC:X3EA:6DFY:UILR:FCIK:3DMC
+Name: t20171215104426-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: PKSR:U4FZ:SCEG:NKEM:46TN:MDT4:LZG6:VKJR:RROS:2VKM:LOUM:PROA
 WARNING: No swap limit support
 ========================================
 
@@ -203,14 +205,14 @@ WARNING: No swap limit support
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   32G   27G  55% /
+/dev/loop0       60G   36G   24G  60% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
              total       used       free     shared    buffers     cached
-Mem:          7.3G       933M       6.4G       8.7M        12M       741M
--/+ buffers/cache:       179M       7.1G
+Mem:          7.3G       1.4G       5.9G       8.8M        26M       1.1G
+-/+ buffers/cache:       244M       7.1G
 Swap:           0B         0B         0B
 ========================================
 
