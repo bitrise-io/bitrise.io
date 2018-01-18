@@ -86,7 +86,7 @@ faraday (0.13.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.1)
-fastlane (2.75.1)
+fastlane (2.76.1)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -129,7 +129,7 @@ scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
 signet (0.8.1)
-slack-notifier (1.5.1)
+slack-notifier (2.3.2)
 stringio (default: 0.0.1)
 strscan (default: 1.0.0)
 terminal-notifier (1.8.0)
@@ -137,7 +137,7 @@ terminal-table (1.8.0)
 test-unit (3.2.7)
 tty-cursor (0.5.0)
 tty-screen (0.6.4)
-tty-spinner (0.7.0)
+tty-spinner (0.8.0)
 uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.7.4)
@@ -154,7 +154,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux t20180111162432-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20180118124831-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -199,8 +199,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20180111162432-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: LOBB:HZGJ:ZHMH:O4BZ:336H:4KQN:44MD:RUXM:VVUI:T23J:NZ5I:GVFI
+Name: t20180118124831-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: 2Z2G:UQKV:XIEH:JB4C:PM57:WFQV:ETWJ:EVJI:H5IH:SJRP:IZCC:BHTK
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -214,6 +214,15 @@ WARNING: No swap limit support
 ========================================
 
 
+=== Docker pre-cached images ===========
+REPOSITORY                       TAG                 IMAGE ID            CREATED             SIZE
+bitriseio/android-ndk-alpha      latest              a8f468806371        9 hours ago         20.5GB
+quay.io/bitriseio/android-ndk    alpha               a8f468806371        9 hours ago         20.5GB
+quay.io/bitriseio/android        alpha               5c6bac8243ce        10 hours ago        17.6GB
+quay.io/bitriseio/bitrise-base   alpha               24b38d3fd276        11 hours ago        1.95GB
+========================================
+
+
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
@@ -223,7 +232,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   62G   36G  64% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        133M        6.1G        8.7M        1.0G        6.9G
+Mem:           7.3G        183M        5.7G        8.8M        1.5G        6.9G
 Swap:            0B          0B          0B
 ========================================
 
@@ -247,16 +256,16 @@ Swap:            0B          0B          0B
 * Maven: Apache Maven 3.3.9
 * Java: javac 1.8.0_151
 * Cordova CLI version: 8.0.0
-* Ionic CLI version: 3.19.0
+* Ionic CLI version: 3.19.1
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 184.0.0
-alpha 2018.01.05
-beta 2018.01.05
+Google Cloud SDK 185.0.0
+alpha 2018.01.12
+beta 2018.01.12
 bq 2.0.28
-core 2018.01.05
+core 2018.01.12
 gsutil 4.28
 ========================================
 
@@ -264,7 +273,7 @@ gsutil 4.28
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-..................................................................done.
+done.
 Reachability Check passed.
 Network diagnostic (1/1 checks) passed.
 
