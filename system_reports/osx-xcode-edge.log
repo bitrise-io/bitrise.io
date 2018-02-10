@@ -12,10 +12,10 @@
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.9.3 darwin/amd64
+* Go: go version go1.9.4 darwin/amd64
 * Ruby: ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-darwin16]
 * Python: Python 2.7.10
-* Node.js: v9.4.0
+* Node.js: v9.5.0
 * NPM: 5.6.0
 * Yarn: 1.3.2
 * Java: java version "9.0.4"
@@ -24,7 +24,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 9.0.4+11, mixed mode)
 
 * git: git version 2.16.1
 * git lfs: git-lfs/2.3.4 (GitHub; darwin amd64; go 1.9.1)
-* mercurial/hg: Mercurial Distributed SCM (version 4.4.2)
+* mercurial/hg: Mercurial Distributed SCM (version 4.5)
 * curl: curl 7.54.0 (x86_64-apple-darwin16.0) libcurl/7.54.0 SecureTransport zlib/1.2.8
 * wget: GNU Wget 1.19.4 built on darwin16.7.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,17 +33,17 @@ Java HotSpot(TM) 64-Bit Server VM (build 9.0.4+11, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.5.2
-Homebrew/homebrew-core (git revision b5c5; last commit 2018-02-01)
+* brew: Homebrew 1.5.3
+Homebrew/homebrew-core (git revision 40e1; last commit 2018-02-08)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
-* Ansible: ansible 2.4.2.0
+* Ansible: ansible 2.4.3.0
   configured module search path = [u'/Users/vagrant/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.4.2.0_2/libexec/lib/python2.7/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.4.3.0/libexec/lib/python2.7/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.29
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.64.0
+* flow: Flow, a static type checker for JavaScript, version 0.65.0
 * carthage: 0.28.0
 * imagemagick (convert): Version: ImageMagick 7.0.7-22 Q16 x86_64 2018-01-22 http://www.imagemagick.org
 * ghostscript (ps2ascii): 9.22
@@ -60,11 +60,11 @@ Homebrew/homebrew-core (git revision b5c5; last commit 2018-02-01)
 
 
 === Ruby GEMs ==========================
-* Rubygems: 2.7.4
-* Bundler: Bundler version 1.16.0
+* Rubygems: 2.7.5
+* Bundler: Bundler version 1.16.1
 * CocoaPods: 1.4.0
 * xcpretty: 0.2.8
-* Nomad CLI: 2.7.4
+* Nomad CLI: 2.7.5
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
 ========================================
 
@@ -72,11 +72,12 @@ Homebrew/homebrew-core (git revision b5c5; last commit 2018-02-01)
 === All Ruby GEMs ======================
 activesupport (4.2.10)
 addressable (2.5.2)
+atomos (0.1.2)
 aws-sdk (1.67.0)
 aws-sdk-v1 (1.67.0)
 babosa (1.0.2)
 bigdecimal (default: 1.3.4)
-bundler (default: 1.16.0)
+bundler (default: 1.16.1)
 certified (1.0.0)
 CFPropertyList (2.3.6)
 claide (1.0.2)
@@ -112,13 +113,13 @@ faraday (0.14.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.1)
-fastlane (2.79.0)
+fastlane (2.80.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
 fourflusher (2.0.1)
 fuzzy_match (2.0.4)
-gh_inspector (1.0.3)
+gh_inspector (1.1.1)
 google-api-client (0.13.6)
 googleauth (0.6.2)
 highline (1.7.10)
@@ -169,6 +170,7 @@ representable (3.0.4)
 retriable (3.1.1)
 rouge (2.0.7)
 ruby-macho (1.1.0)
+rubygems-update (2.7.5)
 rubyzip (1.2.1)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
@@ -188,15 +190,15 @@ tilt (2.0.8)
 tty-cursor (0.5.0)
 tty-screen (0.6.4)
 tty-spinner (0.8.0)
-tzinfo (1.2.4)
+tzinfo (1.2.5)
 uber (0.1.0)
 unf (0.1.4)
-unf_ext (0.0.7.4)
+unf_ext (0.0.7.5)
 venice (0.4.2)
 webrick (default: 1.4.2)
 webrobots (0.1.2)
 word_wrap (1.0.0)
-xcodeproj (1.5.4)
+xcodeproj (1.5.6)
 xcpretty (0.2.8)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
@@ -591,7 +593,7 @@ Software:
       Kernel Version: Darwin 16.7.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: xstagebhostondemandinternalteststandard1.local
+      Computer Name: xstagebhostondemandinternalteststandard2.local
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
@@ -602,7 +604,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  135Gi   64Gi    68% 3143276 4291824003    0%   /
+* Free disk space: /dev/disk0s2  199Gi  101Gi   98Gi    51% 3146681 4291820598    0%   /
 ========================================
 
 
