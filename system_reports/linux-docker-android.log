@@ -27,7 +27,7 @@
 * Go: go version go1.9.4 linux/amd64
 * Ruby: ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-linux]
   * bundler: Bundler version 1.16.1
-  * rubygems: 2.7.5
+  * rubygems: 2.7.6
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
 * Node.js: v8.9.4
@@ -45,7 +45,7 @@
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: tar (GNU tar) 1.28
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
-* gcc: gcc (Ubuntu 5.4.0-6ubuntu1~16.04.6) 5.4.0 20160609
+* gcc: gcc (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609
 * clang: clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)
 * imagemagick (convert): Version: ImageMagick 6.8.9-9 Q16 x86_64 2017-07-31 http://www.imagemagick.org
 
@@ -73,7 +73,7 @@ claide (1.0.2)
 cmath (default: 1.0.0)
 colored (1.2)
 colored2 (3.1.2)
-commander-fastlane (4.4.5)
+commander-fastlane (4.4.6)
 csv (default: 1.0.0)
 date (default: 1.0.0)
 declarative (0.0.10)
@@ -124,7 +124,7 @@ rdoc (default: 6.0.1)
 representable (3.0.4)
 retriable (3.1.1)
 rouge (2.0.7)
-rubygems-update (2.7.5)
+rubygems-update (2.7.6)
 rubyzip (1.2.1)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
@@ -155,7 +155,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux t20180215110817-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20180222110317-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -173,7 +173,7 @@ Containers: 1
  Paused: 0
  Stopped: 0
 Images: 3
-Server Version: 17.06.2-ce
+Server Version: 17.12.0-ce
 Storage Driver: btrfs
  Build Version: Btrfs v4.4
  Library Version: 101
@@ -187,8 +187,8 @@ Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
 Init Binary: docker-init
-containerd version: 6e23458c129b551d5c9871e5174f6b1b7f6d1170
-runc version: 810190ceaa507aa2727d7ae6f4790c76ec150bd2
+containerd version: 89623f28b87a6004d4b785663257362d1658a729
+runc version: b2567b37d7b75eb4cf325b77297b140ea686ce8f
 init version: 949e6fa
 Security Options:
  apparmor
@@ -200,12 +200,13 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20180215110817-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: 5RZC:QHXI:6OPJ:C2CB:O6WF:XDGF:24P4:WPFU:TVSG:FIS5:GB6L:XP5Q
+Name: t20180222110317-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: WM66:WAEH:LQZS:Q2CV:SZXJ:N75Q:2N4V:3UHM:WDMM:4ATA:M6G7:TAVN
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
 Registry: https://index.docker.io/v1/
+Labels:
 Experimental: false
 Insecure Registries:
  127.0.0.0/8
@@ -216,8 +217,8 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-alpha - 20.5GB
 quay.io/bitriseio/android-ndk - 20.5GB
+bitriseio/android-ndk-alpha - 20.5GB
 quay.io/bitriseio/android - 17.6GB
 quay.io/bitriseio/bitrise-base - 1.95GB
 ========================================
@@ -229,11 +230,11 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop0       60G   20G   39G  34% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        97G   62G   36G  64% /bitrise
+/dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        170M        5.9G        8.8M        1.2G        6.9G
-Swap:            0B          0B          0B
+Mem:           7.3G        146M        6.1G        8.7M        1.1G        6.9G
+Swap:          4.0G          0B        4.0G
 ========================================
 
 
@@ -261,11 +262,11 @@ Swap:            0B          0B          0B
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 189.0.0
-alpha 2018.02.12
-beta 2018.02.12
+Google Cloud SDK 190.0.0
+alpha 2018.02.16
+beta 2018.02.16
 bq 2.0.29
-core 2018.02.12
+core 2018.02.16
 gsutil 4.28
 ========================================
 
