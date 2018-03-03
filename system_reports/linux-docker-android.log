@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2018_02_13_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2018_02_26_1
 ========================================
 
 
@@ -24,7 +24,7 @@
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.9.4 linux/amd64
+* Go: go version go1.10 linux/amd64
 * Ruby: ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-linux]
   * bundler: Bundler version 1.16.1
   * rubygems: 2.7.6
@@ -32,7 +32,7 @@
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
 * Node.js: v8.9.4
 * NPM: 5.6.0
-* Yarn: 1.3.2
+* Yarn: 1.5.1
 * aws: aws-cli/1.11.13 Python/3.5.2 Linux/4.4.0-57-generic botocore/1.4.70
 
 * git: git version 2.7.4
@@ -51,8 +51,8 @@
 
 * sudo: Sudo version 1.8.16
 
-* docker: Docker version 17.06.2-ce, build cec0b72
-* docker-compose: docker-compose version 1.16.0, build ea60ca1
+* docker: Docker version 17.12.0-ce, build c97c6d6
+* docker-compose: docker-compose version 1.19.0, build 9e633ef
 
 --- Bitrise CLI tool versions
 * bitrise: 1.13.0
@@ -87,7 +87,7 @@ faraday (0.14.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.1)
-fastlane (2.81.0)
+fastlane (2.84.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -155,7 +155,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux t20180222110317-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20180302161534-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -179,7 +179,7 @@ Storage Driver: btrfs
  Library Version: 101
 Logging Driver: json-file
 Cgroup Driver: cgroupfs
-Plugins: 
+Plugins:
  Volume: local
  Network: bridge host macvlan null overlay
  Log: awslogs fluentd gcplogs gelf journald json-file logentries splunk syslog
@@ -200,8 +200,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20180222110317-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: WM66:WAEH:LQZS:Q2CV:SZXJ:N75Q:2N4V:3UHM:WDMM:4ATA:M6G7:TAVN
+Name: t20180302161534-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: KELF:X4V6:YG2Y:KDQ6:XZBR:CWOR:ALWY:NTJW:SNIV:MJVU:5YKU:TMEB
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -217,23 +217,22 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-quay.io/bitriseio/android-ndk - 20.5GB
-bitriseio/android-ndk-alpha - 20.5GB
-quay.io/bitriseio/android - 17.6GB
-quay.io/bitriseio/bitrise-base - 1.95GB
+quay.io/bitriseio/android-ndk - 20.6GB
+quay.io/bitriseio/android - 17.7GB
+quay.io/bitriseio/bitrise-base - 2.04GB
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   20G   39G  34% /
+/dev/loop0       60G   21G   39G  35% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        146M        6.1G        8.7M        1.1G        6.9G
+Mem:           7.3G        189M        5.6G        8.7M        1.5G        6.8G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -262,11 +261,11 @@ Swap:          4.0G          0B        4.0G
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 190.0.0
-alpha 2018.02.16
-beta 2018.02.16
+Google Cloud SDK 191.0.0
+alpha 2018.02.23
+beta 2018.02.23
 bq 2.0.29
-core 2018.02.16
+core 2018.02.23
 gsutil 4.28
 ========================================
 
@@ -293,7 +292,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * SDK Tools version: 26.1.1
 * Platform Tools version: 27.0.1
-* Emulator version: 27.1.7
+* Emulator version: 27.1.10
 ========================================
 
 
