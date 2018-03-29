@@ -72,7 +72,8 @@ Did you mean this?
 * bitrise: 1.14.0
 * stepman: 0.9.39
 * envman: 1.1.11
-* bitrise-bridge: 0.9.11
+/bitrise/bitrise-base/system_report.sh: line 91: bitrise-bridge: command not found
+* bitrise-bridge: 
 ========================================
 
 
@@ -163,7 +164,7 @@ xcpretty-travis-formatter (0.0.4)
 
 === Linux info =========================
 * uname -a
-Linux t20180322125205-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux staging-latest-us-central1-b-a-1522323092549170719 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -180,7 +181,7 @@ Containers: 1
  Running: 1
  Paused: 0
  Stopped: 0
-Images: 3
+Images: 4
 Server Version: 17.12.0-ce
 Storage Driver: btrfs
  Build Version: Btrfs v4.4
@@ -196,8 +197,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304 GiB
-Name: t20180322125205-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: U7GF:SJHH:6QWU:ORTZ:ML5W:OTJN:6SNH:N3UJ:PATY:KHOI:CUOJ:WCX3
+Name: staging-latest-us-central1-b-a-1522323092549170719
+ID: FL23:3CH3:2CQF:AGAY:4ILL:P37C:DDWS:QUVG:3M2R:6ZE5:GT53:F4VM
 WARNING: No swap limit support
 Labels:
 ========================================
@@ -206,25 +207,27 @@ Labels:
 === Docker pre-cached images ===========
 quay.io/bitriseio/android-ndk-lts - 18.57 GB
 quay.io/bitriseio/android-ndk-lts - 18.57 GB
+quay.io/bitriseio/android-ndk - 20.64 GB
+quay.io/bitriseio/android-ndk - 20.64 GB
 quay.io/bitriseio/android - 17.71 GB
 quay.io/bitriseio/android - 17.71 GB
-quay.io/bitriseio/bitrise-base - 2.044 GB
-quay.io/bitriseio/bitrise-base - 2.044 GB
+quay.io/bitriseio/bitrise-base - 2.045 GB
+quay.io/bitriseio/bitrise-base - 2.045 GB
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   36G   24G  61% /
+/dev/loop0       60G   39G   20G  67% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
              total       used       free     shared    buffers     cached
-Mem:          7.3G       1.5G       5.8G       8.7M        30M       1.2G
--/+ buffers/cache:       285M       7.0G
-Swap:         4.0G         0B       4.0G
+Mem:          7.3G       7.2G       154M       8.4M       6.0M       6.6G
+-/+ buffers/cache:       559M       6.8G
+Swap:         4.0G       2.8M       4.0G
 ========================================
 
 
