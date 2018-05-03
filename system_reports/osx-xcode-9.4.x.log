@@ -7,24 +7,24 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2018_03_13_1
+* BITRISE_OSX_STACK_REV_ID: v2018_04_12_1
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.10.1 darwin/amd64
+* Go: go version go1.10.2 darwin/amd64
 * Ruby: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-darwin17]
-* Python: Python 2.7.14
-* Node.js: v9.10.1
+* Python: Python 2.7.15
+* Node.js: v10.0.0
 * NPM: 5.6.0
-* Yarn: 1.5.1
-* Java: java version "10" 2018-03-20
-Java(TM) SE Runtime Environment 18.3 (build 10+46)
-Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10+46, mixed mode)
+* Yarn: 1.6.0
+* Java: java version "10.0.1" 2018-04-17
+Java(TM) SE Runtime Environment 18.3 (build 10.0.1+10)
+Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.1+10, mixed mode)
 
 * git: git version 2.17.0
 * git lfs: git-lfs/2.4.0 (GitHub; darwin amd64; go 1.10)
-* mercurial/hg: Mercurial Distributed SCM (version 4.5.2)
+* mercurial/hg: Mercurial Distributed SCM (version 4.5.3)
 * curl: curl 7.54.0 (x86_64-apple-darwin17.0) libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0
 * wget: GNU Wget 1.19.4 built on darwin17.3.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,20 +33,20 @@ Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10+46, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.6.2
-Homebrew/homebrew-core (git revision e964; last commit 2018-04-25)
+* brew: Homebrew 1.6.3
+Homebrew/homebrew-core (git revision c38b; last commit 2018-05-03)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
-* Ansible: ansible 2.5.0
+* Ansible: ansible 2.5.2
   configured module search path = [u'/Users/vagrant/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.5.0/libexec/lib/python2.7/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.5.2/libexec/lib/python2.7/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.29
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.69.0
+* flow: Flow, a static type checker for JavaScript, version 0.71.0
 * carthage: 0.29.0
-* imagemagick (convert): Version: ImageMagick 7.0.7-28 Q16 x86_64 2018-03-25 http://www.imagemagick.org
-* ghostscript (ps2ascii): 9.22
+* imagemagick (convert): Version: ImageMagick 7.0.7-30 Q16 x86_64 2018-05-02 https://www.imagemagick.org
+* ghostscript (ps2ascii): 9.23
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
 ./system_report.sh: line 70: wine: command not found
 * wine: 
@@ -63,7 +63,7 @@ Homebrew/homebrew-core (git revision e964; last commit 2018-04-25)
 === Ruby GEMs ==========================
 * Rubygems: 2.7.6
 * Bundler: Bundler version 1.16.1
-* CocoaPods: 1.4.0
+* CocoaPods: 1.5.0
 * xcpretty: 0.2.8
 * Nomad CLI: 2.7.6
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
@@ -83,10 +83,10 @@ certified (1.0.0)
 CFPropertyList (3.0.0)
 claide (1.0.2)
 cmath (default: 1.0.0)
-cocoapods (1.4.0)
-cocoapods-core (1.4.0)
+cocoapods (1.5.0)
+cocoapods-core (1.5.0)
 cocoapods-deintegrate (1.0.2)
-cocoapods-downloader (1.1.3)
+cocoapods-downloader (1.2.0)
 cocoapods-plugins (1.0.0)
 cocoapods-search (1.0.0)
 cocoapods-stats (1.0.0)
@@ -104,17 +104,18 @@ dbm (default: 1.0.0)
 declarative (0.0.10)
 declarative-option (0.1.0)
 did_you_mean (1.2.0)
-domain_name (0.5.20170404)
-dotenv (2.2.1)
+domain_name (0.5.20180417)
+dotenv (2.4.0)
 dubai (0.1.2)
+emoji_regex (0.1.1)
 escape (0.0.4)
 etc (default: 1.0.0)
 excon (0.62.0)
-faraday (0.14.0)
+faraday (0.15.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
-fastimage (2.1.1)
-fastlane (2.89.0)
+fastimage (2.1.3)
+fastlane (2.94.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -146,7 +147,7 @@ multi_json (1.13.1)
 multi_xml (0.6.0)
 multipart-post (2.0.0)
 mustermann (1.0.2)
-nanaimo (0.2.4)
+nanaimo (0.2.5)
 nap (1.1.0)
 naturally (2.1.0)
 net-http-digest_auth (1.4.1)
@@ -164,7 +165,7 @@ plist (3.1.0)
 power_assert (1.1.1)
 psych (default: 3.0.2)
 public_suffix (2.0.5)
-rack (2.0.4)
+rack (2.0.5)
 rack-protection (2.0.0)
 rake (12.3.0)
 rdoc (default: 6.0.1)
@@ -178,7 +179,7 @@ sdbm (default: 1.0.0)
 security (0.1.3)
 shenzhen (0.14.3)
 signet (0.8.1)
-simctl (1.6.3)
+simctl (1.6.4)
 sinatra (2.0.0)
 slack-notifier (2.3.2)
 stringio (default: 0.0.1)
@@ -196,7 +197,7 @@ tzinfo (1.2.5)
 uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.7.5)
-venice (0.4.2)
+venice (0.4.3)
 webrick (default: 1.4.2)
 webrobots (0.1.2)
 word_wrap (1.0.0)
@@ -245,7 +246,7 @@ Target: x86_64-apple-darwin17.5.0
 
 * Xcode Version:
 Xcode 9.4
-Build version 9Q1004a
+Build version 9Q1019a
 
 * Installed SDKs:
 iOS SDKs:
@@ -294,6 +295,7 @@ iPad Pro (9.7-inch) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro--9-7-inch-)
 iPad Pro (12.9-inch) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro)
 iPad Pro (12.9-inch) (2nd generation) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro--12-9-inch---2nd-generation-)
 iPad Pro (10.5-inch) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro--10-5-inch-)
+iPad (6th generation) (com.apple.CoreSimulator.SimDeviceType.iPad--6th-generation-)
 Apple TV (com.apple.CoreSimulator.SimDeviceType.Apple-TV-1080p)
 Apple TV 4K (com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-4K)
 Apple TV 4K (at 1080p) (com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-1080p)
@@ -315,7 +317,8 @@ iOS 10.3 (10.3.1 - 14E8301) - com.apple.CoreSimulator.SimRuntime.iOS-10-3
 iOS 11.0 (11.0.1 - 15A8401) - com.apple.CoreSimulator.SimRuntime.iOS-11-0
 iOS 11.1 (11.1 - 15B87) - com.apple.CoreSimulator.SimRuntime.iOS-11-1
 iOS 11.2 (11.2 - 15C107) - com.apple.CoreSimulator.SimRuntime.iOS-11-2
-iOS 11.4 (11.4 - 15F5037c) - com.apple.CoreSimulator.SimRuntime.iOS-11-4
+iOS 11.3 (11.3 - 15E217) - com.apple.CoreSimulator.SimRuntime.iOS-11-3
+iOS 11.4 (11.4 - 15F5061c) - com.apple.CoreSimulator.SimRuntime.iOS-11-4
 tvOS 9.0 (9.0 - 13T395) - com.apple.CoreSimulator.SimRuntime.tvOS-9-0
 tvOS 9.1 (9.1 - 13U85) - com.apple.CoreSimulator.SimRuntime.tvOS-9-1
 tvOS 9.2 (9.2 - 13Y234) - com.apple.CoreSimulator.SimRuntime.tvOS-9-2
@@ -325,7 +328,8 @@ tvOS 10.2 (10.2 - 14W260) - com.apple.CoreSimulator.SimRuntime.tvOS-10-2
 tvOS 11.0 (11.0 - 15J380) - com.apple.CoreSimulator.SimRuntime.tvOS-11-0
 tvOS 11.1 (11.1 - 15J580) - com.apple.CoreSimulator.SimRuntime.tvOS-11-1
 tvOS 11.2 (11.2 - 15K104) - com.apple.CoreSimulator.SimRuntime.tvOS-11-2
-tvOS 11.4 (11.4 - 15L5536b) - com.apple.CoreSimulator.SimRuntime.tvOS-11-4
+tvOS 11.3 (11.3 - 15L211) - com.apple.CoreSimulator.SimRuntime.tvOS-11-3
+tvOS 11.4 (11.4 - 15L5560b) - com.apple.CoreSimulator.SimRuntime.tvOS-11-4
 watchOS 2.0 (2.0 - 13S343) - com.apple.CoreSimulator.SimRuntime.watchOS-2-0
 watchOS 2.1 (2.1 - 13S661) - com.apple.CoreSimulator.SimRuntime.watchOS-2-1
 watchOS 2.2 (2.2 - 13V144) - com.apple.CoreSimulator.SimRuntime.watchOS-2-2
@@ -501,6 +505,25 @@ watchOS 4.3 (4.3 - 15T212) - com.apple.CoreSimulator.SimRuntime.watchOS-4-3
     iPad Pro (12.9-inch) (BFBF0D65-9656-40BE-AD6C-202E2BEC0159) (Shutdown)
     iPad Pro (12.9-inch) (2nd generation) (EFD93092-0C1C-477E-866D-9ED7F9E2BB10) (Shutdown)
     iPad Pro (10.5-inch) (A7CAE039-3050-4AD7-865F-37FD7353EBF7) (Shutdown)
+-- iOS 11.3 --
+    iPhone 5s (F10E4511-3468-49CE-AB38-8955A4A5CAF5) (Shutdown)
+    iPhone 6 (BB6740E9-B2DB-45F5-8773-46E44D76557A) (Shutdown)
+    iPhone 6 Plus (FE322C06-1FD0-455E-9BA7-EACEDEF7AD8E) (Shutdown)
+    iPhone 6s (F5723A63-E31E-4225-B3DF-29E20900A16E) (Shutdown)
+    iPhone 6s Plus (4FD808C8-6E5C-4BA1-B178-706C9B870C06) (Shutdown)
+    iPhone 7 (9FF1CC19-B80C-4AA5-91AA-544DD6701623) (Shutdown)
+    iPhone 7 Plus (548F4D2F-8940-43DE-B7D4-3E97D61D5E6D) (Shutdown)
+    iPhone 8 (6CF3295D-99CA-4E2F-BB3B-A483415BD5C0) (Shutdown)
+    iPhone 8 Plus (3E017178-4325-49B3-A718-BEF503750435) (Shutdown)
+    iPhone SE (623EA919-E2DE-43F7-8146-5DEA04888DAF) (Shutdown)
+    iPhone X (7D72748B-EBC9-45CD-AC18-ED073080383A) (Shutdown)
+    iPad Air (A2B74C15-B9A3-4DA5-8C58-079DEFFC0626) (Shutdown)
+    iPad Air 2 (67181877-F0F0-4FA2-98B1-001489C28296) (Shutdown)
+    iPad (5th generation) (3B2D9C3C-DC50-44AD-A2DC-681872EB59B4) (Shutdown)
+    iPad Pro (9.7-inch) (D105F71D-D84A-4F47-9308-7F702EF59632) (Shutdown)
+    iPad Pro (12.9-inch) (02182377-6F11-4204-A15F-2AC6B7D9EC90) (Shutdown)
+    iPad Pro (12.9-inch) (2nd generation) (F2643F96-355D-4454-90F9-12D5F115A936) (Shutdown)
+    iPad Pro (10.5-inch) (5173F334-CC1F-4683-B834-5EBE468B3CBB) (Shutdown)
 -- iOS 11.4 --
     iPhone 5s (649EF1BB-17FC-4DD2-9065-BD7E1FC83F0A) (Shutdown)
     iPhone 6 (182F4FE3-587F-4CA1-BB46-C9688FFD5408) (Shutdown)
@@ -544,6 +567,10 @@ watchOS 4.3 (4.3 - 15T212) - com.apple.CoreSimulator.SimRuntime.watchOS-4-3
     Apple TV (90986B8C-5F91-4F81-9624-1C3D7AFAE05F) (Shutdown)
     Apple TV 4K (D0349F60-3358-4FE4-8A89-7EB0F7F2A238) (Shutdown)
     Apple TV 4K (at 1080p) (E95F0B37-2FBB-4112-AB27-F1D92C6E5C5E) (Shutdown)
+-- tvOS 11.3 --
+    Apple TV (B0BFEA66-F293-4C17-8095-19F1C004E36E) (Shutdown)
+    Apple TV 4K (FF453617-B444-48D5-8FFE-6ACEE0FEC5F4) (Shutdown)
+    Apple TV 4K (at 1080p) (78046BAC-61FB-4D02-A86F-1FCEF604163C) (Shutdown)
 -- tvOS 11.4 --
     Apple TV (32EA6333-E521-4287-86DD-28DDF1E6FECB) (Shutdown)
     Apple TV 4K (70DAAB5C-A7A4-4741-BA9C-65CBE5370074) (Shutdown)
@@ -617,14 +644,14 @@ E69ECCFF-8C75-4103-9E8A-7BC5F84C0519 (active, disconnected)
 * sw_vers
 ProductName:	Mac OS X
 ProductVersion:	10.13.4
-BuildVersion:	17E199
+BuildVersion:	17E202
 
 * system_profiler SPSoftwareDataType
 Software:
 
     System Software Overview:
 
-      System Version: macOS 10.13.4 (17E199)
+      System Version: macOS 10.13.4 (17E202)
       Kernel Version: Darwin 17.5.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
@@ -639,7 +666,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  113Gi   85Gi    58% 3434815 4291532464    0%   /
+* Free disk space: /dev/disk0s2  199Gi  122Gi   77Gi    62% 3630993 4291336286    0%   /
 ========================================
 
 
