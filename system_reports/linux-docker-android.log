@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2018_05_18_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2018_06_14_1
 ========================================
 
 
@@ -30,7 +30,7 @@
   * rubygems: 2.7.7
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
-* Node.js: v8.11.2
+* Node.js: v8.11.3
 * NPM: 5.6.0
 * Yarn: 1.7.0
 * aws: aws-cli/1.11.13 Python/3.5.2 Linux/4.4.0-57-generic botocore/1.4.70
@@ -47,7 +47,7 @@
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 * gcc: gcc (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609
 * clang: clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)
-* imagemagick (convert): Version: ImageMagick 6.8.9-9 Q16 x86_64 2017-07-31 http://www.imagemagick.org
+* imagemagick (convert): Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-06-11 http://www.imagemagick.org
 
 * sudo: Sudo version 1.8.16
 
@@ -55,9 +55,9 @@
 * docker-compose: docker-compose version 1.19.0, build 9e633ef
 
 --- Bitrise CLI tool versions
-* bitrise: 1.16.1
-* stepman: 0.9.42
-* envman: 1.1.13
+* bitrise: 1.17.0
+* stepman: 0.9.43
+* envman: 1.1.14
 * bitrise-bridge: 0.9.11
 ========================================
 
@@ -124,7 +124,7 @@ public_suffix (2.0.5)
 rake (12.3.0)
 rdoc (default: 6.0.1)
 representable (3.0.4)
-retriable (3.1.1)
+retriable (3.1.2)
 rouge (2.0.7)
 rubygems-update (2.7.7)
 rubyzip (1.2.1)
@@ -158,7 +158,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux t20180607093836-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20180614124544-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -203,8 +203,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20180607093836-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: 4QLI:4YER:VZHN:D3D4:43PK:VNQV:RKCX:A5PM:3QJA:RHNZ:3V7K:VJIM
+Name: t20180614124544-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: LQOZ:TCCF:VAI7:W3UO:T3DF:JNWP:RGWE:2DNU:PCDE:KVLV:KEGV:GFJQ
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -222,7 +222,7 @@ WARNING: No swap limit support
 === Docker pre-cached images ===========
 quay.io/bitriseio/android-ndk - 20.2GB
 quay.io/bitriseio/android - 17.8GB
-quay.io/bitriseio/bitrise-base - 2.1GB
+quay.io/bitriseio/bitrise-base - 2.11GB
 ========================================
 
 
@@ -235,7 +235,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        172M        5.7G        8.7M        1.4G        6.9G
+Mem:           7.3G        138M        6.0G        8.7M        1.2G        6.9G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -423,12 +423,12 @@ android-27
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2018_05_09_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2018_06_13_1
 ========================================
 
 $ cat /opt/android-ndk/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 17.0.4754217
+Pkg.Revision = 17.1.4828580
 
 $ tree -L 2 /opt/android-ndk
 /opt/android-ndk
