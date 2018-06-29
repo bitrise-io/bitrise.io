@@ -55,9 +55,9 @@
 * docker-compose: docker-compose version 1.19.0, build 9e633ef
 
 --- Bitrise CLI tool versions
-* bitrise: 1.17.0
-* stepman: 0.9.43
-* envman: 1.1.14
+* bitrise: 1.18.1
+* stepman: 0.10.0
+* envman: 1.2.0
 * bitrise-bridge: 0.9.11
 ========================================
 
@@ -157,7 +157,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux t20180621072522-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20180629123332-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -175,7 +175,7 @@ Containers: 1
  Paused: 0
  Stopped: 0
 Images: 3
-Server Version: 17.12.0-ce
+Server Version: 18.03.1-ce
 Storage Driver: btrfs
  Build Version: Btrfs v4.4
  Library Version: 101
@@ -189,8 +189,8 @@ Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
 Init Binary: docker-init
-containerd version: 89623f28b87a6004d4b785663257362d1658a729
-runc version: b2567b37d7b75eb4cf325b77297b140ea686ce8f
+containerd version: 773c489c9c1b21a6d78b5c538cd395416ec50f88
+runc version: 4fc53a81fb7c994640722ac585fa9ca548971871
 init version: 949e6fa
 Security Options:
  apparmor
@@ -202,8 +202,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20180621072522-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: JAVF:PYC7:GSL4:LVFU:C5ZI:VMYB:EU75:ERUF:IF3S:SRYE:AZKI:Q6FQ
+Name: t20180629123332-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: TDM2:SPU4:2E5T:5MFK:GU5L:DDZB:NICQ:VVXW:UQCH:IFBE:D4XW:IGH3
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -220,8 +220,8 @@ WARNING: No swap limit support
 
 === Docker pre-cached images ===========
 quay.io/bitriseio/android-ndk-lts - 21.3GB
-quay.io/bitriseio/android - 17.8GB
-quay.io/bitriseio/bitrise-base - 2.11GB
+quay.io/bitriseio/android - 17.9GB
+quay.io/bitriseio/bitrise-base - 2.15GB
 ========================================
 
 
@@ -234,7 +234,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        134M        6.0G        8.7M        1.2G        6.9G
+Mem:           7.3G        161M        5.9G        8.7M        1.2G        6.9G
 Swap:          4.0G          0B        4.0G
 ========================================
 
