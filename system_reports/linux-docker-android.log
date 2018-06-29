@@ -10,54 +10,57 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2018_06_14_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2018_06_28_1
 ========================================
 
 
 === Pre-installed lib versions ========
-* zlib1g-dev: 1:1.2.8.dfsg-2ubuntu4.1
-* libssl-dev: 1.0.2g-1ubuntu4.12
-* libreadline6-dev: 6.3-8ubuntu2
-* libyaml-dev: 0.1.6-3
-* libsqlite3-dev: 3.11.0-1ubuntu1
+* zlib1g-dev: 1:1.2.11.dfsg-0ubuntu2
+* libssl-dev: 1.1.0g-2ubuntu4.1
+dpkg-query: package 'libreadline6-dev' is not installed and no information is available
+Use dpkg --info (= dpkg-deb --info) to examine archive files,
+and dpkg --contents (= dpkg-deb --contents) to list their contents.
+* libreadline6-dev: 
+* libyaml-dev: 0.1.7-2ubuntu3
+* libsqlite3-dev: 3.22.0-1
 =======================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.10.2 linux/amd64
+* Go: go version go1.10.3 linux/amd64
 * Ruby: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
   * bundler: Bundler version 1.16.2
   * rubygems: 2.7.7
-* Python: Python 2.7.12
-  * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
+* Python: Python 2.7.15rc1
+  * pip: pip 9.0.1 from /usr/lib/python2.7/dist-packages (python 2.7)
 * Node.js: v8.11.3
 * NPM: 5.6.0
 * Yarn: 1.7.0
-* aws: aws-cli/1.11.13 Python/3.5.2 Linux/4.4.0-57-generic botocore/1.4.70
+* aws: aws-cli/1.14.44 Python/3.6.5 Linux/4.4.0-57-generic botocore/1.8.48
 
-* git: git version 2.7.4
+* git: git version 2.17.1
 * git lfs: git-lfs/2.4.2 (GitHub; linux amd64; go 1.8.3)
-* mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
-* curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
-* wget: GNU Wget 1.17.1 built on linux-gnu.
-* rsync: rsync  version 3.1.1  protocol version 31
+* mercurial/hg: Mercurial Distributed SCM (version 4.5.3)
+* curl: curl 7.58.0 (x86_64-pc-linux-gnu) libcurl/7.58.0 OpenSSL/1.1.0g zlib/1.2.11 libidn2/2.0.4 libpsl/0.19.1 (+libidn2/2.0.4) nghttp2/1.30.0 librtmp/2.3
+* wget: GNU Wget 1.19.4 built on linux-gnu.
+* rsync: rsync  version 3.1.2  protocol version 31
 * unzip: UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
-* tar: tar (GNU tar) 1.28
+* tar: tar (GNU tar) 1.29
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
-* gcc: gcc (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609
-* clang: clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)
-* imagemagick (convert): Version: ImageMagick 6.8.9-9 Q16 x86_64 2018-06-11 http://www.imagemagick.org
+* gcc: gcc (Ubuntu 7.3.0-16ubuntu3) 7.3.0
+* clang: clang version 6.0.0-1ubuntu2 (tags/RELEASE_600/final)
+* imagemagick (convert): Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 http://www.imagemagick.org
 
-* sudo: Sudo version 1.8.16
+* sudo: Sudo version 1.8.21p2
 
-* docker: Docker version 17.12.0-ce, build c97c6d6
-* docker-compose: docker-compose version 1.19.0, build 9e633ef
+* docker: Docker version 18.03.1-ce, build 9ee9f40
+* docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
-* bitrise: 1.17.0
-* stepman: 0.9.43
-* envman: 1.1.14
+* bitrise: 1.18.1
+* stepman: 0.10.0
+* envman: 1.2.0
 * bitrise-bridge: 0.9.11
 ========================================
 
@@ -80,7 +83,7 @@ declarative (0.0.10)
 declarative-option (0.1.0)
 did_you_mean (1.2.0)
 domain_name (0.5.20180417)
-dotenv (2.4.0)
+dotenv (2.5.0)
 emoji_regex (0.1.1)
 etc (default: 1.0.0)
 excon (0.62.0)
@@ -158,15 +161,15 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux t20180621065053-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20180629121653-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
 No LSB modules are available.
 Distributor ID:	Ubuntu
-Description:	Ubuntu 16.04.4 LTS
-Release:	16.04
-Codename:	xenial
+Description:	Ubuntu 18.04 LTS
+Release:	18.04
+Codename:	bionic
 ========================================
 
 
@@ -176,7 +179,7 @@ Containers: 1
  Paused: 0
  Stopped: 0
 Images: 3
-Server Version: 17.12.0-ce
+Server Version: 18.03.1-ce
 Storage Driver: btrfs
  Build Version: Btrfs v4.4
  Library Version: 101
@@ -190,8 +193,8 @@ Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
 Init Binary: docker-init
-containerd version: 89623f28b87a6004d4b785663257362d1658a729
-runc version: b2567b37d7b75eb4cf325b77297b140ea686ce8f
+containerd version: 773c489c9c1b21a6d78b5c538cd395416ec50f88
+runc version: 4fc53a81fb7c994640722ac585fa9ca548971871
 init version: 949e6fa
 Security Options:
  apparmor
@@ -203,8 +206,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20180621065053-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: ARFF:UZMO:YZPK:SA5Q:IYLK:I6VR:EBIV:O2KI:KH4P:5CZA:D3Q7:CGKF
+Name: t20180629121653-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: 2322:C2ZT:UOJ3:SBKD:M7IB:4GML:LDLP:XTQF:4RCB:4JWC:ZD2Y:3NGT
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -220,9 +223,9 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-quay.io/bitriseio/android-ndk - 20.2GB
-quay.io/bitriseio/android - 17.8GB
-quay.io/bitriseio/bitrise-base - 2.11GB
+quay.io/bitriseio/android-ndk - 20.3GB
+quay.io/bitriseio/android - 17.9GB
+quay.io/bitriseio/bitrise-base - 2.15GB
 ========================================
 
 
@@ -235,7 +238,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        148M        6.0G        8.7M        1.2G        6.9G
+Mem:           7.3G        171M        5.9G        8.7M        1.3G        6.9G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -255,8 +258,8 @@ Swap:          4.0G          0B        4.0G
 
 
 === Pre-installed tool versions ========
-* Gradle: Gradle 2.10
-* Maven: Apache Maven 3.3.9
+* Gradle: Gradle 3.4.1
+* Maven: [1mApache Maven 3.5.2[m
 * Java: javac 1.8.0_171
 * Cordova CLI version: 8.0.0
 * Ionic CLI version: 3.20.0
@@ -264,11 +267,11 @@ Swap:          4.0G          0B        4.0G
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 206.0.0
-alpha 2018.06.18
-beta 2018.06.18
+Google Cloud SDK 207.0.0
+alpha 2018.06.22
+beta 2018.06.22
 bq 2.0.34
-core 2018.06.18
+core 2018.06.22
 gsutil 4.32
 ========================================
 
