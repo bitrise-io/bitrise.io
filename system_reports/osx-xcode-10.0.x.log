@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2018_07_25_1
+* BITRISE_OSX_STACK_REV_ID: v2018_08_02_1
 ========================================
 
 
@@ -15,16 +15,16 @@
 * Go: go version go1.10.3 darwin/amd64
 * Ruby: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-darwin17]
 * Python: Python 2.7.15
-* Node.js: v10.7.0
+* Node.js: v8.11.3
 * NPM: 6.2.0
-* Yarn: 1.9.2
+* Yarn: 1.9.4
 * Java: java version "10.0.2" 2018-07-17
 Java(TM) SE Runtime Environment 18.3 (build 10.0.2+13)
 Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.2+13, mixed mode)
 
 * git: git version 2.18.0
-* git lfs: git-lfs/2.5.0 (GitHub; darwin amd64; go 1.10.3)
-* mercurial/hg: Mercurial Distributed SCM (version 4.6.2)
+* git lfs: git-lfs/2.5.1 (GitHub; darwin amd64; go 1.10.3)
+* mercurial/hg: Mercurial Distributed SCM (version 4.7)
 * curl: curl 7.54.0 (x86_64-apple-darwin17.0) libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0
 * wget: GNU Wget 1.19.5 built on darwin17.5.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -34,7 +34,7 @@ Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.2+13, mixed mode)
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 1.7.1
-Homebrew/homebrew-core (git revision 3eb1; last commit 2018-08-09)
+Homebrew/homebrew-core (git revision e5ba; last commit 2018-08-17)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.6.2
@@ -43,18 +43,18 @@ Homebrew/homebrew-core (git revision 3eb1; last commit 2018-08-09)
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.30
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.77.0
+* flow: Flow, a static type checker for JavaScript, version 0.78.0
 * carthage: 0.30.1
-* imagemagick (convert): Version: ImageMagick 7.0.8-8 Q16 x86_64 2018-07-23 https://www.imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.8-10 Q16 x86_64 2018-08-15 https://www.imagemagick.org
 * ghostscript (ps2ascii): 9.23
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
 ./system_report.sh: line 70: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.20.0
-* stepman: 0.10.0
-* envman: 1.2.0
+* bitrise: 1.21.0
+* stepman: 0.10.2
+* envman: 1.2.1
 * bitrise-bridge: 0.9.11
 * cmd-bridge: 0.9.5
 ========================================
@@ -73,7 +73,7 @@ Homebrew/homebrew-core (git revision 3eb1; last commit 2018-08-09)
 === All Ruby GEMs ======================
 activesupport (4.2.10)
 addressable (2.5.2)
-atomos (0.1.2)
+atomos (0.1.3)
 aws-sdk (1.67.0)
 aws-sdk-v1 (1.67.0)
 babosa (1.0.2)
@@ -94,7 +94,7 @@ cocoapods-trunk (1.3.0)
 cocoapods-try (1.1.0)
 colored (1.2)
 colored2 (3.1.2)
-commander (4.4.5)
+commander (4.4.6)
 commander-fastlane (4.4.6)
 concurrent-ruby (1.0.5)
 connection_pool (2.2.2)
@@ -116,15 +116,15 @@ faraday (0.15.2)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.3)
-fastlane (2.100.1)
+fastlane (2.101.1)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
 fourflusher (2.0.1)
 fuzzy_match (2.0.4)
 gh_inspector (1.1.3)
-google-api-client (0.21.2)
-googleauth (0.6.2)
+google-api-client (0.23.4)
+googleauth (0.6.4)
 highline (1.7.10)
 houston (2.2.4)
 http-cookie (1.0.3)
@@ -134,16 +134,14 @@ io-console (default: 0.4.6)
 ipaddr (default: 1.2.0)
 json (default: 2.1.0, 1.8.6)
 jwt (2.1.0)
-little-plugger (1.1.4)
-logging (2.2.2)
 mechanize (2.7.6)
 memoist (0.16.0)
-mime-types (3.1)
-mime-types-data (3.2016.0521)
+mime-types (3.2.2)
+mime-types-data (3.2018.0812)
 mini_magick (4.5.1)
 mini_portile2 (2.3.0)
 minitest (5.10.3)
-molinillo (0.6.5)
+molinillo (0.6.6)
 multi_json (1.13.1)
 multi_xml (0.6.0)
 multipart-post (2.0.0)
@@ -161,7 +159,7 @@ nokogiri (1.8.4)
 nomad-cli (0.0.2)
 ntlm-http (0.1.1)
 openssl (default: 2.1.0)
-os (0.9.6)
+os (1.0.0)
 plist (3.1.0)
 power_assert (1.1.1)
 psych (default: 3.0.2)
@@ -215,7 +213,7 @@ zlib (default: 1.0.0)
 
 === NPM global packages ==========================
 * Cordova: 8.0.0
-* Ionic: 4.0.2
+* Ionic: 4.0.6
 ========================================
 
 
@@ -250,7 +248,7 @@ Target: x86_64-apple-darwin17.6.0
 
 * Xcode Version:
 Xcode 10.0
-Build version 10L221o
+Build version 10L232m
 
 * Installed SDKs:
 iOS SDKs:
@@ -319,7 +317,7 @@ iOS 11.1 (11.1 - 15B87) - com.apple.CoreSimulator.SimRuntime.iOS-11-1
 iOS 11.2 (11.2 - 15C107) - com.apple.CoreSimulator.SimRuntime.iOS-11-2
 iOS 11.3 (11.3 - 15E217) - com.apple.CoreSimulator.SimRuntime.iOS-11-3
 iOS 11.4 (11.4 - 15F79) - com.apple.CoreSimulator.SimRuntime.iOS-11-4
-iOS 12.0 (12.0 - 16A5339e) - com.apple.CoreSimulator.SimRuntime.iOS-12-0
+iOS 12.0 (12.0 - 16A5354b) - com.apple.CoreSimulator.SimRuntime.iOS-12-0
 tvOS 10.0 (10.0 - 14T328) - com.apple.CoreSimulator.SimRuntime.tvOS-10-0
 tvOS 10.1 (10.1 - 14U591) - com.apple.CoreSimulator.SimRuntime.tvOS-10-1
 tvOS 10.2 (10.2 - 14W260) - com.apple.CoreSimulator.SimRuntime.tvOS-10-2
@@ -328,13 +326,13 @@ tvOS 11.1 (11.1 - 15J580) - com.apple.CoreSimulator.SimRuntime.tvOS-11-1
 tvOS 11.2 (11.2 - 15K104) - com.apple.CoreSimulator.SimRuntime.tvOS-11-2
 tvOS 11.3 (11.3 - 15L211) - com.apple.CoreSimulator.SimRuntime.tvOS-11-3
 tvOS 11.4 (11.4 - 15L576) - com.apple.CoreSimulator.SimRuntime.tvOS-11-4
-tvOS 12.0 (12.0 - 16J5334d) - com.apple.CoreSimulator.SimRuntime.tvOS-12-0
+tvOS 12.0 (12.0 - 16J5349a) - com.apple.CoreSimulator.SimRuntime.tvOS-12-0
 watchOS 3.1 (3.1 - 14S471a) - com.apple.CoreSimulator.SimRuntime.watchOS-3-1
 watchOS 3.2 (3.2 - 14V243) - com.apple.CoreSimulator.SimRuntime.watchOS-3-2
 watchOS 4.0 (4.0 - 15R372) - com.apple.CoreSimulator.SimRuntime.watchOS-4-0
 watchOS 4.1 (4.1 - 15R844) - com.apple.CoreSimulator.SimRuntime.watchOS-4-1
 watchOS 4.2 (4.2 - 15S100) - com.apple.CoreSimulator.SimRuntime.watchOS-4-2
-watchOS 5.0 (5.0 - 16R5334e) - com.apple.CoreSimulator.SimRuntime.watchOS-5-0
+watchOS 5.0 (5.0 - 16R5349a) - com.apple.CoreSimulator.SimRuntime.watchOS-5-0
 == Devices ==
 -- iOS 10.0 --
     iPhone 5 (E324E12C-2005-47A3-B6C7-00BC3F602626) (Shutdown)
@@ -581,12 +579,9 @@ watchOS 5.0 (5.0 - 16R5334e) - com.apple.CoreSimulator.SimRuntime.watchOS-5-0
 DD47BFAC-34D7-40F5-AD94-4756CEDC6E9D (active, disconnected)
     Watch: Apple Watch Series 2 - 42mm (4CBAD2E9-F56E-4A51-8083-E0870816F023) (Shutdown)
     Phone: iPhone 7 Plus (54E18C85-C349-4F51-8C8D-AA0F0E9F956B) (Shutdown)
-99DFCED9-9E18-438A-BC46-0FE73598D69F (active, disconnected)
+88994D43-AAFE-4D2F-8A73-3E1C14570111 (active, disconnected)
     Watch: Apple Watch Series 3 - 38mm (8216DD7D-1DC7-4DB7-9E89-A1F3A963FA84) (Shutdown)
-    Phone: iPhone 8 (E4E2A448-2589-4A36-A6AA-106A8D2C7F92) (Shutdown)
-19282CD2-0887-4919-9EDD-329744AB671A (active, disconnected)
-    Watch: Apple Watch Series 3 - 42mm (CBA0E51E-3DBF-4161-81A2-FB474589971C) (Shutdown)
-    Phone: iPhone 8 Plus (3DFF827D-801F-49F7-9F35-7CD8A31E6CFF) (Shutdown)
+    Phone: iPhone X (EAA94B4D-263F-4EB3-AD09-5F0B41CD6C2A) (Shutdown)
 
 ========================================
 
@@ -607,7 +602,7 @@ Software:
       Kernel Version: Darwin 17.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: xstagebhostondemandinternalteststandard2.local
+      Computer Name: xstagebhostondemandinternalteststandard1.local
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
@@ -618,7 +613,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  102Gi   96Gi    52% 3340283 4291626996    0%   /
+* Free disk space: /dev/disk0s2  199Gi  102Gi   96Gi    52% 3350904 4291616375    0%   /
 ========================================
 
 
