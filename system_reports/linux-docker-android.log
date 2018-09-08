@@ -88,12 +88,12 @@ faraday (0.15.2)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.3)
-fastlane (2.102.0)
+fastlane (2.103.1)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
 gh_inspector (1.1.3)
-google-api-client (0.23.7)
+google-api-client (0.23.8)
 googleauth (0.6.6)
 highline (1.7.10)
 http-cookie (1.0.3)
@@ -125,7 +125,7 @@ representable (3.0.4)
 retriable (3.1.2)
 rouge (2.0.7)
 rubygems-update (2.7.7)
-rubyzip (1.2.1)
+rubyzip (1.2.2)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
@@ -147,7 +147,7 @@ unicode-display_width (1.4.0)
 webrick (default: 1.4.2)
 word_wrap (1.0.0)
 xcodeproj (1.6.0)
-xcpretty (0.2.8)
+xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
 zlib (default: 1.0.0)
@@ -156,7 +156,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux t20180831125809-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux t20180906091622-br-cont-stage-c1s-x--host-ondem-int-test-001 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -201,8 +201,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: t20180831125809-br-cont-stage-c1s-x--host-ondem-int-test-001
-ID: TIRW:55J2:UDVH:T4KN:FXYF:LANY:7AYS:U6EO:RRLO:THBI:SHHI:ZXW5
+Name: t20180906091622-br-cont-stage-c1s-x--host-ondem-int-test-001
+ID: CART:IFRB:QDLD:E5SU:BOIY:NMCG:OY5P:SCSZ:X72G:DN4H:MOOR:SC74
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -218,10 +218,10 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 23.5GB
-quay.io/bitriseio/android-ndk - 23.5GB
-quay.io/bitriseio/android - 21.2GB
-bitriseio/android - 21.2GB
+bitriseio/android-ndk - 23.7GB
+quay.io/bitriseio/android-ndk - 23.7GB
+bitriseio/android - 21.3GB
+quay.io/bitriseio/android - 21.3GB
 bitriseio/bitrise-base - 2.23GB
 quay.io/bitriseio/bitrise-base - 2.23GB
 ========================================
@@ -230,13 +230,13 @@ quay.io/bitriseio/bitrise-base - 2.23GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   23G   37G  39% /
+/dev/loop0       60G   23G   36G  39% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        189M        5.7G        8.7M        1.4G        6.9G
+Mem:           7.3G        191M        5.7G        8.7M        1.5G        6.9G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -251,7 +251,7 @@ Swap:          4.0G          0B        4.0G
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2018_07_15_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2018_08_31_1
 ========================================
 
 
@@ -260,18 +260,18 @@ Swap:          4.0G          0B        4.0G
 * Maven: Apache Maven 3.3.9
 * Java: javac 1.8.0_181
 * Cordova CLI version: 8.0.0
-* Ionic CLI version: 4.1.1
+* Ionic CLI version: 4.1.2
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 214.0.0
-alpha 2018.08.24
-beta 2018.08.24
+Google Cloud SDK 215.0.0
+alpha 2018.09.04
+beta 2018.09.04
 bq 2.0.34
-core 2018.08.24
+core 2018.09.04
 gsutil 4.33
-kubectl 2018.08.24
+kubectl 2018.09.04
 ========================================
 
 
@@ -291,12 +291,12 @@ Network diagnostic (1/1 checks) passed.
 
  * adb version:
 Android Debug Bridge version 1.0.40
-Version 4797878
+Version 4986621
 Installed as /opt/android-sdk-linux/platform-tools/adb
 
  * SDK packages:
 * SDK Tools version: 26.1.1
-* Platform Tools version: 28.0.0
+* Platform Tools version: 28.0.1
 * Emulator version: 27.3.10
 ========================================
 
@@ -353,6 +353,7 @@ systrace
 27.0.3
 28.0.0
 28.0.1
+28.0.2
 
 * ./emulator:
 bin64
