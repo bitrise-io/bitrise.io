@@ -68,7 +68,6 @@ addressable (2.5.2)
 atomos (0.1.3)
 babosa (1.0.2)
 bigdecimal (default: 1.3.4)
-bootsnap (1.3.2)
 bundler (default: 1.16.2)
 CFPropertyList (3.0.0)
 claide (1.0.2)
@@ -90,7 +89,7 @@ faraday (0.15.3)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.12.2)
 fastimage (2.1.4)
-fastlane (2.106.0)
+fastlane (2.107.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -109,7 +108,6 @@ mime-types (3.2.2)
 mime-types-data (3.2018.0812)
 mini_magick (4.5.1)
 minitest (5.10.3)
-msgpack (1.2.4)
 multi_json (1.13.1)
 multi_xml (0.6.0)
 multipart-post (2.0.0)
@@ -149,7 +147,7 @@ unf_ext (0.0.7.5)
 unicode-display_width (1.4.0)
 webrick (default: 1.4.2)
 word_wrap (1.0.0)
-xcodeproj (1.6.0)
+xcodeproj (1.7.0)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
@@ -159,7 +157,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-181012132840-ojycez28ass9ketrwx2s97 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-181018071537-m5hsguyzv4az5he4qc5qje 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -204,8 +202,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: stg-latest-usc1b-181012132840-ojycez28ass9ketrwx2s97
-ID: K7KS:TDR4:DEBU:AUQR:YVAZ:UAZZ:N7GD:TM3R:NY2U:2X4W:B5BC:YQKM
+Name: stg-latest-usc1b-181018071537-m5hsguyzv4az5he4qc5qje
+ID: BZGP:EVS4:MR6U:UKOC:2QVN:75TU:J72V:YOXF:BMSR:4AEC:H3L5:JR2I
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -239,7 +237,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        167M        5.9G        8.7M        1.2G        6.9G
+Mem:           7.3G        163M        5.9G        8.7M        1.2G        6.9G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -268,13 +266,13 @@ Swap:          4.0G          0B        4.0G
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 220.0.0
-alpha 2018.10.08
-beta 2018.10.08
-bq 2.0.34
-core 2018.10.08
+Google Cloud SDK 221.0.0
+alpha 2018.10.12
+beta 2018.10.12
+bq 2.0.35
+core 2018.10.12
 gsutil 4.34
-kubectl 2018.10.08
+kubectl 2018.10.12
 ========================================
 
 
@@ -288,14 +286,8 @@ Network diagnostic (1/1 checks) passed.
 Property diagnostic detects issues that may be caused by properties.
 Checking hidden properties...
 done.
-ERROR: Hidden Property Check failed.
-The following hidden properties have been set:
-    [command_name]
-Properties files
-    User: /root/.config/gcloud/configurations/config_default
-    Installation: /usr/lib/google-cloud-sdk/properties
-
-ERROR: Property diagnostic (0/1 checks) failed.
+Hidden Property Check passed.
+Property diagnostic (1/1 checks) passed.
 
 ========================================
 
