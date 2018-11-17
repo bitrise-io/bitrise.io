@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2018_10_10_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2018_11_14_1
 ========================================
 
 
@@ -55,9 +55,9 @@
 * docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
-* bitrise: 1.23.0
-* stepman: 0.10.4
-* envman: 2.1.0
+* bitrise: 1.24.0
+* stepman: 0.10.5
+* envman: 2.1.1
 /bitrise/bitrise-base/system_report.sh: line 91: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
@@ -157,7 +157,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-181108133752-tzsbhdd7x4yeczjk2gi55m 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-181115091946-5fjdwjy9jofabaqa4bwrah 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -202,8 +202,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: stg-latest-usc1b-181108133752-tzsbhdd7x4yeczjk2gi55m
-ID: V7GV:VMNT:HZKM:SQYC:52TO:H64K:XDQH:W337:YYFU:ESSM:AACW:RXBT
+Name: stg-latest-usc1b-181115091946-5fjdwjy9jofabaqa4bwrah
+ID: AJZZ:UXI2:HFK3:FMNM:MO26:MCZS:T32D:GDJU:RB2K:XVAZ:WZTV:YOX7
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -219,10 +219,10 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 23.4GB
-quay.io/bitriseio/android-ndk - 23.4GB
-quay.io/bitriseio/android - 21.4GB
+bitriseio/android-ndk - 23.3GB
+quay.io/bitriseio/android-ndk - 23.3GB
 bitriseio/android - 21.4GB
+quay.io/bitriseio/android - 21.4GB
 bitriseio/bitrise-base - 2.23GB
 quay.io/bitriseio/bitrise-base - 2.23GB
 ========================================
@@ -237,7 +237,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        201M        5.6G        8.7M        1.5G        6.8G
+Mem:           7.3G        164M        5.9G        8.7M        1.2G        6.9G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -266,13 +266,13 @@ Swap:          4.0G          0B        4.0G
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 224.0.0
-alpha 2018.11.02
-beta 2018.11.02
-bq 2.0.36
-core 2018.11.02
+Google Cloud SDK 225.0.0
+alpha 2018.11.09
+beta 2018.11.09
+bq 2.0.37
+core 2018.11.09
 gsutil 4.34
-kubectl 2018.11.02
+kubectl 2018.11.09
 ========================================
 
 
@@ -304,7 +304,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * SDK Tools version: 26.1.1
 * Platform Tools version: 28.0.1
-* Emulator version: 27.3.10
+* Emulator version: 28.0.16
 ========================================
 
 
@@ -364,11 +364,11 @@ systrace
 28.0.3
 
 * ./emulator:
+android-info.txt
 bin64
 emulator
 emulator64-arm
 emulator64-crash-service
-emulator64-mips
 emulator64-x86
 emulator-check
 lib
