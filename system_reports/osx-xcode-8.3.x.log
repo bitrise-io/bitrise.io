@@ -13,7 +13,6 @@
 
 === Pre-installed tool versions ========
 * Go: go version go1.8.3 darwin/amd64
-* Ruby: ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin16]
 * Python: Python 2.7.13
 * Node.js: v8.0.0
 * NPM: 5.0.1
@@ -33,10 +32,10 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.131-b11, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 1.8.3
-Homebrew/homebrew-core (git revision 5bb310b; last commit 2018-11-21)
-Homebrew/homebrew-cask (git revision 73124; last commit 2018-11-21)
-./system_report.sh: line 54: xctool: command not found
+* brew: Homebrew 1.8.4
+Homebrew/homebrew-core (git revision 79416; last commit 2018-11-28)
+Homebrew/homebrew-cask (git revision 2f1bc; last commit 2018-11-29)
+./system_report.sh: line 53: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.3.1.0
 * gtimeout: timeout (GNU coreutils) 8.27
@@ -46,7 +45,7 @@ Homebrew/homebrew-cask (git revision 73124; last commit 2018-11-21)
 * imagemagick (convert): Version: ImageMagick 7.0.5-10 Q16 x86_64 2017-06-04 http://www.imagemagick.org
 * ghostscript (ps2ascii): 9.21
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-./system_report.sh: line 70: wine: command not found
+./system_report.sh: line 69: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
@@ -58,7 +57,8 @@ Homebrew/homebrew-cask (git revision 73124; last commit 2018-11-21)
 ========================================
 
 
-=== Ruby GEMs ==========================
+=== Ruby and rubygems ==================
+* Ruby: ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin16]
 * Rubygems: 2.6.12
 * Bundler: Bundler version 1.15.1
 * CocoaPods: 1.2.1
@@ -462,10 +462,10 @@ watchOS 3.2 (3.2 - 14V243) (com.apple.CoreSimulator.SimRuntime.watchOS-3-2)
     Apple Watch - 38mm (BF347887-4520-46A0-A62C-D3A3E2EF4550) (Shutdown)
     Apple Watch - 42mm (C679BEA9-1810-407E-8B6C-A34CD11A7B6C) (Shutdown)
 -- watchOS 3.1 --
-    Apple Watch - 38mm (8D8E8928-F68E-44A7-95C1-F6EA773E46AB) (Shutdown)
-    Apple Watch - 42mm (4C7269A3-321B-4A11-9ACB-62B4BB5463A1) (Shutdown)
-    Apple Watch Series 2 - 38mm (C61D78D3-1A40-4435-87A9-E8F4A539C748) (Shutdown)
-    Apple Watch Series 2 - 42mm (ABEBBB3E-DC3B-447D-AE83-8B633C4AE130) (Shutdown)
+    Apple Watch - 38mm (4590C53D-DC4B-4838-B94C-3312F23E3422) (Shutdown)
+    Apple Watch - 42mm (9C079079-BB47-475D-9568-05C204554C83) (Shutdown)
+    Apple Watch Series 2 - 38mm (4271C97B-F02E-45E9-BBFB-4F4A5764EA04) (Shutdown)
+    Apple Watch Series 2 - 42mm (9B7DE511-4E85-4B04-817B-E833CF5CFB85) (Shutdown)
 -- watchOS 3.2 --
     Apple Watch - 38mm (AB0792A9-3712-4F62-BBE8-D1FBAAF40854) (Shutdown)
     Apple Watch - 42mm (35DB9537-433D-45E5-AE16-31D754559A4C) (Shutdown)
@@ -504,7 +504,7 @@ Software:
       Kernel Version: Darwin 16.7.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: xstagebhostondemandinternalteststandard2.local
+      Computer Name: xstagebhostondemandinternalteststandard1.local
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
@@ -515,7 +515,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi   81Gi  118Gi    41% 2781521 4292185758    0%   /
+* Free disk space: /dev/disk0s2  199Gi   81Gi  118Gi    41% 2785329 4292181950    0%   /
 ========================================
 
 
