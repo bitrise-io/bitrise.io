@@ -17,9 +17,9 @@
 * Node.js: v8.12.0
 * NPM: 6.4.1
 * Yarn: 1.12.1
-* Java: openjdk version "11.0.1" 2018-10-16
-OpenJDK Runtime Environment 18.9 (build 11.0.1+13)
-OpenJDK 64-Bit Server VM 18.9 (build 11.0.1+13, mixed mode)
+* Java: java version "1.8.0_202"
+Java(TM) SE Runtime Environment (build 1.8.0_202-b08)
+Java HotSpot(TM) 64-Bit Server VM (build 25.202-b08, mixed mode)
 
 * git: git version 2.19.1
 * git lfs: git-lfs/2.5.2 (GitHub; darwin amd64; go 1.11)
@@ -33,8 +33,8 @@ OpenJDK 64-Bit Server VM 18.9 (build 11.0.1+13, mixed mode)
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.0.2
-Homebrew/homebrew-core (git revision 7939; last commit 2019-02-21)
-Homebrew/homebrew-cask (git revision 12f1d; last commit 2019-02-21)
+Homebrew/homebrew-core (git revision 55b0; last commit 2019-02-28)
+Homebrew/homebrew-cask (git revision 9e2d2; last commit 2019-02-28)
 ./system_report.sh: line 53: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.7.1
@@ -647,18 +647,144 @@ Software:
       Kernel Version: Darwin 17.7.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-10-1-190221152554-KccHTj2NGrwfNNxwVHC3ea
+      Computer Name: stg-xcode-10-1-190301095126-D6PbnWTEuWVJLg8LPsxzeX
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes
+      Time since boot: 3 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  115Gi   84Gi    58% 3747318 4291219961    0%   /
+* Free disk space: /dev/disk0s2  199Gi  136Gi   63Gi    69% 3921226 4291046053    0%   /
+========================================
+
+--- Android
+
+* ANDROID_HOME (/usr/local/share/android-sdk) content:
+add-ons
+build-tools
+emulator
+extras
+licenses
+patcher
+platform-tools
+platforms
+system-images
+tools
+
+* ANDROID_NDK_HOME (/opt/android-ndk/android-ndk-r16b) content:
+CHANGELOG.md
+README.md
+build
+meta
+ndk-build
+ndk-depends
+ndk-gdb
+ndk-stack
+ndk-which
+platforms
+prebuilt
+python-packages
+shader-tools
+simpleperf
+source.properties
+sources
+sysroot
+toolchains
+
+* Android NDK Version:
+Pkg.Desc = Android NDK
+Pkg.Revision = 16.1.4479499
+
+* platform-tools content:
+NOTICE.txt
+adb
+api
+dmtracedump
+e2fsdroid
+etc1tool
+fastboot
+hprof-conv
+lib
+make_f2fs
+mke2fs
+mke2fs.conf
+package.xml
+sload_f2fs
+source.properties
+sqlite3
+systrace
+
+* build-tools content:
+17.0.0
+19.1.0
+21.1.2
+22.0.1
+23.0.3
+24.0.3
+25.0.3
+26.0.1
+26.0.2
+27.0.0
+27.0.1
+27.0.2
+27.0.3
+28.0.0
+28.0.1
+28.0.2
+28.0.3
+
+* extras content:
+/usr/local/share/android-sdk/extras
+├── android
+│   └── m2repository
+├── google
+│   ├── google_play_services
+│   └── m2repository
+└── m2repository
+    └── com
+
+7 directories, 0 files
+
+* platforms content:
+android-15
+android-17
+android-19
+android-21
+android-22
+android-23
+android-24
+android-25
+android-26
+android-27
+android-28
+
+* system-images content:
+/usr/local/share/android-sdk/system-images
+├── android-19
+│   └── default
+│       └── armeabi-v7a
+├── android-22
+│   └── default
+│       └── armeabi-v7a
+├── android-24
+│   └── default
+│       └── armeabi-v7a
+├── android-25
+│   └── google_apis
+│       └── armeabi-v7a
+├── android-26
+│   └── google_apis
+│       └── x86
+└── android-28
+    └── google_apis
+        └── x86
+
+18 directories, 0 files
+
 ========================================
 
 
