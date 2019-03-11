@@ -27,10 +27,10 @@
 * Go: go version go1.11.2 linux/amd64
 * Ruby: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
   * bundler: Bundler version 1.17.3
-  * rubygems: 3.0.2
+  * rubygems: 3.0.3
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
-* Node.js: v8.15.0
+* Node.js: v8.15.1
 * NPM: 6.4.1
 * Yarn: 1.13.0
 * aws: aws-cli/1.11.13 Python/3.5.2 Linux/4.4.0-57-generic botocore/1.4.70
@@ -90,7 +90,7 @@ faraday (0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.5)
-fastlane (2.116.1)
+fastlane (2.117.1)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -129,7 +129,7 @@ rdoc (default: 6.0.1)
 representable (3.0.4)
 retriable (3.1.2)
 rouge (2.0.7)
-rubygems-update (3.0.2)
+rubygems-update (3.0.3)
 rubyzip (1.2.2)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
@@ -142,13 +142,13 @@ strscan (default: 1.0.0)
 terminal-notifier (1.8.0)
 terminal-table (1.8.0)
 test-unit (3.2.7)
-tty-cursor (0.6.0)
+tty-cursor (0.6.1)
 tty-screen (0.6.5)
 tty-spinner (0.9.0)
 uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.7.5)
-unicode-display_width (1.4.1)
+unicode-display_width (1.5.0)
 webrick (default: 1.4.2)
 word_wrap (1.0.0)
 xcodeproj (1.8.1)
@@ -161,7 +161,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-190228071531-nbyydxipzthiz28za69jlp 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-190307101842-qqjqegf6rxqqguduggjobo 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -206,8 +206,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: stg-latest-usc1b-190228071531-nbyydxipzthiz28za69jlp
-ID: 5CPS:3FM5:6XTA:4TZH:3WH6:NSSD:EO7Z:KIIG:IG5R:2L3F:QKYV:LSRM
+Name: stg-latest-usc1b-190307101842-qqjqegf6rxqqguduggjobo
+ID: IVH3:G2UU:QJIP:OWGG:JWQK:255Z:IQSQ:TTHH:QXSX:GQHJ:XSTH:JNAR
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -227,8 +227,8 @@ bitriseio/android-ndk - 24.3GB
 quay.io/bitriseio/android-ndk - 24.3GB
 bitriseio/android - 21.4GB
 quay.io/bitriseio/android - 21.4GB
-bitriseio/bitrise-base - 2.21GB
 quay.io/bitriseio/bitrise-base - 2.21GB
+bitriseio/bitrise-base - 2.21GB
 ========================================
 
 
@@ -238,10 +238,10 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop0       60G   24G   36G  40% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        97G   66G   31G  69% /bitrise
+/dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        183M        3.7G         32M        3.5G        6.8G
+Mem:           7.3G        175M        3.7G         40M        3.4G        6.8G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -265,25 +265,25 @@ Swap:          4.0G          0B        4.0G
 * Maven: Apache Maven 3.3.9
 * Java: javac 1.8.0_191
 * Cordova CLI version: 8.1.2 (cordova-lib@8.1.1)
-* Ionic CLI version: 4.10.3
+* Ionic CLI version: 4.11.0
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 236.0.0
-alpha 2019.02.22
-beta 2019.02.22
-bq 2.0.41
-core 2019.02.22
-gsutil 4.36
-kubectl 2019.02.22
+Google Cloud SDK 237.0.0
+alpha 2019.03.01
+beta 2019.03.01
+bq 2.0.42
+core 2019.03.01
+gsutil 4.37
+kubectl 2019.03.01
 ========================================
 
 
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-..done.
+...done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 

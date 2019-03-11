@@ -7,14 +7,14 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_02_20_1
+* BITRISE_OSX_STACK_REV_ID: v2019_02_28_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Go: go version go1.12 darwin/amd64
-* Python: Python 2.7.15
-* Node.js: v10.15.1
+* Python: Python 2.7.16
+* Node.js: v10.15.2
 * NPM: 6.7.0
 * Yarn: 1.13.0
 * Java: java version "1.8.0_202"
@@ -32,9 +32,9 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.202-b08, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.0.2
-Homebrew/homebrew-core (git revision 55b0; last commit 2019-02-28)
-Homebrew/homebrew-cask (git revision 8402c; last commit 2019-02-28)
+* brew: Homebrew 2.0.3
+Homebrew/homebrew-core (git revision 6e42; last commit 2019-03-08)
+Homebrew/homebrew-cask (git revision d8dd9; last commit 2019-03-07)
 ./system_report.sh: line 53: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.7.8
@@ -45,7 +45,7 @@ Homebrew/homebrew-cask (git revision 8402c; last commit 2019-02-28)
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.81.0
 * carthage: 0.32.0
-* imagemagick (convert): Version: ImageMagick 7.0.8-28 Q16 x86_64 2019-02-19 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.8-29 Q16 x86_64 2019-03-02 https://imagemagick.org
 * ghostscript (ps2ascii): 9.26
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
 ./system_report.sh: line 69: wine: command not found
@@ -70,11 +70,11 @@ Homebrew/homebrew-cask (git revision 8402c; last commit 2019-02-28)
 * 2.5.3 (set by /Users/vagrant/.rbenv/version)
 -------------------------------
 * rbenv: 1.1.1
-* Rubygems: 3.0.2
+* Rubygems: 3.0.3
 * Bundler: Bundler version 1.17.3
 * CocoaPods: 1.6.1
 * xcpretty: 0.3.0
-* Nomad CLI: 3.0.2
+* Nomad CLI: 3.0.3
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
 ========================================
 
@@ -125,7 +125,7 @@ faraday (0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.5)
-fastlane (2.116.1)
+fastlane (2.117.1)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -185,7 +185,7 @@ representable (3.0.4)
 retriable (3.1.2)
 rouge (2.0.7)
 ruby-macho (1.4.0)
-rubygems-update (3.0.2)
+rubygems-update (3.0.3)
 rubyzip (1.2.2)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
@@ -203,7 +203,7 @@ terminal-table (1.4.5)
 test-unit (3.2.7)
 thread_safe (0.3.6)
 tilt (2.0.9)
-tty-cursor (0.6.0)
+tty-cursor (0.6.1)
 tty-screen (0.6.5)
 tty-spinner (0.9.0)
 tzinfo (1.2.5)
@@ -224,7 +224,7 @@ zlib (default: 1.0.0)
 
 === NPM global packages ==========================
 * Cordova: 8.1.2 (cordova-lib@8.1.1)
-* Ionic: 4.10.3
+* Ionic: 4.11.0
 ========================================
 
 
@@ -661,23 +661,23 @@ Software:
       Kernel Version: Darwin 17.7.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-190301095126-iKd9P6yPDeV4GF9ehfFv2B
+      Computer Name: stg-xcode-edge-190308081750-uvz6oTbP6gqJJ22NMLmdZe
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 3 minutes
+      Time since boot: 6 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  137Gi   62Gi    69% 3965918 4291001361    0%   /
+* Free disk space: /dev/disk0s2  199Gi  136Gi   63Gi    69% 3968285 4290998994    0%   /
 ========================================
 
 --- Android
 
-* ANDROID_HOME (/opt/android-sdk) content:
+* ANDROID_HOME (/usr/local/share/android-sdk) content:
 add-ons
 build-tools
 emulator
@@ -752,7 +752,7 @@ systrace
 28.0.3
 
 * extras content:
-/opt/android-sdk/extras
+/usr/local/share/android-sdk/extras
 ├── android
 │   └── m2repository
 ├── google
@@ -777,7 +777,7 @@ android-27
 android-28
 
 * system-images content:
-/opt/android-sdk/system-images
+/usr/local/share/android-sdk/system-images
 ├── android-19
 │   └── default
 │       └── armeabi-v7a
