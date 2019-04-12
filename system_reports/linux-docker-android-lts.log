@@ -55,9 +55,9 @@
 * docker-compose: docker-compose version 1.19.0, build 9e633ef
 
 --- Bitrise CLI tool versions
-* bitrise: 1.28.0
-* stepman: 0.11.2
-* envman: 2.2.1
+* bitrise: 1.29.0
+* stepman: 0.11.3
+* envman: 2.2.2
 /bitrise/bitrise-base/system_report.sh: line 91: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
@@ -158,7 +158,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-lts-usc1b-190404100204-tkoefqhyfsurlejb2f8uqi 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-lts-usc1b-190411055749-5gu8tjhhozz5rf4l7enfne 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -176,23 +176,23 @@ Containers: 1
  Paused: 0
  Stopped: 0
 Images: 3
-Server Version: 18.03.1-ce
+Server Version: 18.09.4
 Storage Driver: btrfs
- Build Version: Btrfs v4.4
+ Build Version: Btrfs v4.7.3
  Library Version: 101
 Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins:
  Volume: local
  Network: bridge host macvlan null overlay
- Log: awslogs fluentd gcplogs gelf journald json-file logentries splunk syslog
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
 Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
 Init Binary: docker-init
-containerd version: 773c489c9c1b21a6d78b5c538cd395416ec50f88
-runc version: 4fc53a81fb7c994640722ac585fa9ca548971871
-init version: 949e6fa
+containerd version: bb71b10fd8f58240ca47fbb579b9d1028eea7c84
+runc version: 2b18fe1d885ee5083ef9f0838fee39b62d653e30
+init version: fec3683
 Security Options:
  apparmor
  seccomp
@@ -203,8 +203,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: stg-lts-usc1b-190404100204-tkoefqhyfsurlejb2f8uqi
-ID: RUVT:MUGK:C5HJ:N2LT:B7J3:XMBQ:UP2L:RRUJ:R2DG:NWID:IE2U:IL3W
+Name: stg-lts-usc1b-190411055749-5gu8tjhhozz5rf4l7enfne
+ID: IP47:7VAC:GJSD:UJKP:XP3S:JNK7:DOAZ:VDYC:TO3V:75ZC:FMNV:3M25
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -222,10 +222,10 @@ WARNING: No swap limit support
 === Docker pre-cached images ===========
 bitriseio/android-ndk-lts - 21.4GB
 quay.io/bitriseio/android-ndk-lts - 21.4GB
-bitriseio/android - 21.5GB
-quay.io/bitriseio/android - 21.5GB
-bitriseio/bitrise-base - 2.25GB
-quay.io/bitriseio/bitrise-base - 2.25GB
+quay.io/bitriseio/android - 21.6GB
+bitriseio/android - 21.6GB
+bitriseio/bitrise-base - 2.31GB
+quay.io/bitriseio/bitrise-base - 2.31GB
 ========================================
 
 
@@ -238,7 +238,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        182M        6.0G        8.7M        1.1G        6.9G
+Mem:           7.3G        199M        5.9G        8.7M        1.2G        6.9G
 Swap:          4.0G          0B        4.0G
 ========================================
 
