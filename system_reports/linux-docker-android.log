@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_03_13_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_04_10_1
 ========================================
 
 
@@ -33,7 +33,7 @@
 * Node.js: v8.15.1
 * NPM: 6.4.1
 * Yarn: 1.15.2
-aws-cli/1.16.138 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.128
+aws-cli/1.16.140 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.130
 * aws: 
 
 * git: git version 2.7.4
@@ -52,13 +52,13 @@ aws-cli/1.16.138 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.128
 
 * sudo: Sudo version 1.8.16
 
-* docker: Docker version 18.03.1-ce, build 9ee9f40
+* docker: Docker version 18.09.4, build d14af54
 * docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
-* bitrise: 1.28.0
-* stepman: 0.11.2
-* envman: 2.2.1
+* bitrise: 1.29.0
+* stepman: 0.11.3
+* envman: 2.2.2
 /bitrise/bitrise-base/system_report.sh: line 91: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
@@ -91,7 +91,7 @@ faraday (0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.5)
-fastlane (2.119.0)
+fastlane (2.120.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -162,7 +162,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-190404100204-zat2c4xb7ewb768oswmpvd 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-190411055750-kukbnaujzed7f2xuyrnaxe 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -180,23 +180,23 @@ Containers: 1
  Paused: 0
  Stopped: 0
 Images: 3
-Server Version: 18.03.1-ce
+Server Version: 18.09.4
 Storage Driver: btrfs
- Build Version: Btrfs v4.4
+ Build Version: Btrfs v4.7.3
  Library Version: 101
 Logging Driver: json-file
 Cgroup Driver: cgroupfs
 Plugins:
  Volume: local
  Network: bridge host macvlan null overlay
- Log: awslogs fluentd gcplogs gelf journald json-file logentries splunk syslog
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
 Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
 Init Binary: docker-init
-containerd version: 773c489c9c1b21a6d78b5c538cd395416ec50f88
-runc version: 4fc53a81fb7c994640722ac585fa9ca548971871
-init version: 949e6fa
+containerd version: bb71b10fd8f58240ca47fbb579b9d1028eea7c84
+runc version: 2b18fe1d885ee5083ef9f0838fee39b62d653e30
+init version: fec3683
 Security Options:
  apparmor
  seccomp
@@ -207,8 +207,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: stg-latest-usc1b-190404100204-zat2c4xb7ewb768oswmpvd
-ID: Q4KG:KS34:NZPD:NJSQ:ZWW4:SJZB:AAKO:LD6Z:5RIH:SA63:5BNN:HI3Z
+Name: stg-latest-usc1b-190411055750-kukbnaujzed7f2xuyrnaxe
+ID: YHI7:3WJI:DRCL:V3KM:V2ZM:QAD6:EP4Q:BYW7:VYWU:GMG6:P63K:JDWM
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -218,18 +218,19 @@ Experimental: false
 Insecure Registries:
  127.0.0.0/8
 Live Restore Enabled: false
+Product License: Community Engine
 
 WARNING: No swap limit support
 ========================================
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 24.4GB
-quay.io/bitriseio/android-ndk - 24.4GB
-bitriseio/android - 21.5GB
-quay.io/bitriseio/android - 21.5GB
-bitriseio/bitrise-base - 2.25GB
-quay.io/bitriseio/bitrise-base - 2.25GB
+bitriseio/android-ndk - 24.5GB
+quay.io/bitriseio/android-ndk - 24.5GB
+bitriseio/android - 21.6GB
+quay.io/bitriseio/android - 21.6GB
+quay.io/bitriseio/bitrise-base - 2.31GB
+bitriseio/bitrise-base - 2.31GB
 ========================================
 
 
@@ -242,7 +243,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        184M        5.1G        8.7M        2.0G        6.8G
+Mem:           7.3G        199M        5.9G        8.7M        1.2G        6.9G
 Swap:          4.0G          0B        4.0G
 ========================================
 
