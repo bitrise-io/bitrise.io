@@ -7,12 +7,12 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_04_10_1
+* BITRISE_OSX_STACK_REV_ID: v2019_05_07_1
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.12.4 darwin/amd64
+* Go: go version go1.12.5 darwin/amd64
 * Python: Python 2.7.16
 * Node.js: v10.15.3
 * NPM: 6.9.0
@@ -24,7 +24,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.212-b03, mixed mode)
 
 * git: git version 2.21.0
 * git lfs: git-lfs/2.7.2 (GitHub; darwin amd64; go 1.12.4)
-* mercurial/hg: Mercurial Distributed SCM (version 4.9.1)
+* mercurial/hg: Mercurial Distributed SCM (version 5.0)
 * curl: curl 7.54.0 (x86_64-apple-darwin18.0) libcurl/7.54.0 LibreSSL/2.6.5 zlib/1.2.11 nghttp2/1.24.1
 * wget: GNU Wget 1.20.3 built on darwin18.2.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.212-b03, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.1.1
-Homebrew/homebrew-core (git revision acb1; last commit 2019-05-03)
-Homebrew/homebrew-cask (git revision dc5ad; last commit 2019-05-03)
+* brew: Homebrew 2.1.2
+Homebrew/homebrew-core (git revision c33a; last commit 2019-05-09)
+Homebrew/homebrew-cask (git revision 300fe; last commit 2019-05-09)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.7.10
@@ -44,9 +44,9 @@ Homebrew/homebrew-cask (git revision dc5ad; last commit 2019-05-03)
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.31
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.98.0
+* flow: Flow, a static type checker for JavaScript, version 0.98.1
 * carthage: 0.33.0
-* imagemagick (convert): Version: ImageMagick 7.0.8-42 Q16 x86_64 2019-04-24 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.8-43 Q16 x86_64 2019-05-03 https://imagemagick.org
 * ghostscript (ps2ascii): 9.26
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
 ./system_report.sh: line 70: wine: command not found
@@ -61,17 +61,18 @@ Homebrew/homebrew-cask (git revision dc5ad; last commit 2019-05-03)
 
 
 === Ruby and rubygems ==================
-* Ruby (default): ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-darwin18]
+* Ruby (default): ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
 --- Available ruby versions ---
   system
   2.2.10
   2.3.8
-  2.4.5
-* 2.5.3 (set by /Users/vagrant/.rbenv/version)
+  2.4.6
+  2.5.5
+* 2.6.3 (set by /Users/vagrant/.rbenv/version)
 -------------------------------
 * rbenv: 1.1.2
 * Rubygems: 3.0.3
-* Bundler: Bundler version 1.17.3
+* Bundler: Bundler version 1.17.2
 * CocoaPods: 1.6.1
 * xcpretty: 0.3.0
 * Nomad CLI: 3.0.3
@@ -86,8 +87,8 @@ atomos (0.1.3)
 aws-sdk (1.67.0)
 aws-sdk-v1 (1.67.0)
 babosa (1.0.2)
-bigdecimal (default: 1.3.4)
-bundler (default: 1.17.3)
+bigdecimal (default: 1.4.1)
+bundler (default: 1.17.2)
 certified (1.0.0)
 CFPropertyList (3.0.0)
 claide (1.0.2)
@@ -106,29 +107,31 @@ colored2 (3.1.2)
 commander (4.4.7)
 commander-fastlane (4.4.6)
 concurrent-ruby (1.1.5)
-csv (default: 1.0.0)
+csv (default: 3.0.9)
 cupertino (1.3.4)
-date (default: 1.0.0)
+date (default: 2.0.0)
 dbm (default: 1.0.0)
 declarative (0.0.10)
 declarative-option (0.1.0)
-did_you_mean (1.2.0)
+did_you_mean (1.3.0)
 digest-crc (0.4.1)
 domain_name (0.5.20180417)
 dotenv (2.7.2)
 dubai (0.1.2)
+e2mmap (default: 0.1.0)
 emoji_regex (1.0.1)
 escape (0.0.4)
-etc (default: 1.0.0)
+etc (default: 1.0.1)
 excon (0.64.0)
 faraday (0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.5)
-fastlane (2.121.1)
+fastlane (2.122.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
-fileutils (default: 1.0.2)
+fileutils (default: 1.1.0)
+forwardable (default: 1.2.0)
 fourflusher (2.2.0)
 fuzzy_match (2.0.4)
 gdbm (default: 2.0.0)
@@ -143,22 +146,26 @@ houston (2.4.0)
 http-cookie (1.0.3)
 httpclient (2.8.3)
 i18n (0.9.5)
-io-console (default: 0.4.6)
-ipaddr (default: 1.2.0)
+io-console (default: 0.4.7)
+ipaddr (default: 1.2.2)
+irb (default: 1.0.0)
 json (default: 2.1.0, 1.8.6)
 jwt (2.1.0)
+logger (default: 1.3.0)
+matrix (default: 0.1.0)
 mechanize (2.5.1)
 memoist (0.16.0)
 mime-types (3.2.2, 1.25.1)
 mime-types-data (3.2019.0331)
 mini_magick (4.5.1)
 mini_portile2 (2.1.0)
-minitest (5.10.3)
+minitest (5.11.3)
 molinillo (0.6.6)
 multi_json (1.13.1)
 multi_xml (0.6.0)
-multipart-post (2.0.0)
+multipart-post (2.1.0, 2.0.0)
 mustermann (1.0.3)
+mutex_m (default: 0.1.0)
 nanaimo (0.2.6)
 nap (1.1.0)
 naturally (2.2.0)
@@ -166,43 +173,50 @@ net-http-digest_auth (1.4.1)
 net-http-persistent (2.9.4)
 net-sftp (2.1.2)
 net-ssh (5.2.0)
-net-telnet (0.1.1)
+net-telnet (0.2.0)
 netrc (0.11.0)
 nokogiri (1.6.8.1)
 nomad-cli (0.0.2)
 ntlm-http (0.1.1)
 openssl (default: 2.1.2)
 os (1.0.1)
+ostruct (default: 0.1.0)
 plist (3.1.0)
-power_assert (1.1.1)
-psych (default: 3.0.2)
+power_assert (1.1.3)
+prime (default: 0.1.0)
+psych (default: 3.1.0)
 public_suffix (2.0.5)
 rack (2.0.7)
 rack-protection (2.0.0)
-rake (12.3.0)
-rdoc (default: 6.0.1)
+rake (12.3.2)
+rdoc (default: 6.1.0)
 representable (3.0.4)
 retriable (3.1.2)
+rexml (default: 3.1.9)
 rouge (2.0.7)
+rss (default: 0.2.7)
 ruby-macho (1.4.0)
-rubygems-update (3.0.3)
 rubyzip (1.2.2)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
+shell (default: 0.7)
 shenzhen (0.14.3)
 signet (0.11.0)
 simctl (1.6.5)
 sinatra (2.0.0)
 slack-notifier (2.3.2)
-stringio (default: 0.0.1)
+stringio (default: 0.0.2)
 strscan (default: 1.0.0)
+sync (default: 0.5.0)
 term-ansicolor (1.0.7)
 terminal-notifier (2.0.0)
 terminal-table (1.4.5)
-test-unit (3.2.7)
+test-unit (3.2.9)
 thread_safe (0.3.6)
+thwait (default: 0.1.0)
 tilt (2.0.9)
+tracer (default: 0.1.0)
 tty-cursor (0.6.1)
 tty-screen (0.6.5)
 tty-spinner (0.9.0)
@@ -214,7 +228,7 @@ venice (0.5.0)
 webrick (default: 1.4.2)
 webrobots (0.1.2)
 word_wrap (1.0.0)
-xcodeproj (1.8.2)
+xcodeproj (1.9.0)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
@@ -704,18 +718,18 @@ Software:
       Kernel Version: Darwin 18.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-190503143737-mgeqzG9fM8yZzhobzLLU9U
+      Computer Name: stg-xcode-edge-190509124713-s8fJm2bkbm3HFXwGqDQpug
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 13 minutes
+      Time since boot: 2 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  138Gi   59Gi    70% 4274235 9223372036850501572    0%   /
+* Free disk space: /dev/disk1s1  200Gi  138Gi   61Gi    70% 4295694 9223372036850480113    0%   /
 ========================================
 
 --- Android
