@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_04_10_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_05_15_1
 ========================================
 
 
@@ -24,7 +24,7 @@
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.11.2 linux/amd64
+* Go: go version go1.12.5 linux/amd64
 * Ruby: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
   * bundler: Bundler version 1.17.3
   * rubygems: 3.0.3
@@ -32,8 +32,8 @@
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
 * Node.js: v8.16.0
 * NPM: 6.4.1
-* Yarn: 1.15.2
-aws-cli/1.16.155 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.145
+* Yarn: 1.16.0
+aws-cli/1.16.164 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.154
 * aws: 
 
 * git: git version 2.7.4
@@ -56,9 +56,9 @@ aws-cli/1.16.155 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.145
 * docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
-* bitrise: 1.29.0
-* stepman: 0.11.3
-* envman: 2.2.2
+* bitrise: 1.30.0
+* stepman: 0.11.5
+* envman: 2.2.3
 /bitrise/bitrise-base/system_report.sh: line 91: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
@@ -91,7 +91,7 @@ faraday (0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.5)
-fastlane (2.122.0)
+fastlane (2.123.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -144,7 +144,7 @@ terminal-notifier (2.0.0)
 terminal-table (1.8.0)
 test-unit (3.2.7)
 tty-cursor (0.6.1)
-tty-screen (0.6.5)
+tty-screen (0.7.0)
 tty-spinner (0.9.0)
 uber (0.1.0)
 unf (0.1.4)
@@ -162,7 +162,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-190509101205-raqjxmmdh9tnyev9vkjepi 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-190523094048-cxfrj3wjx6s5lqcvzkragf 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -207,8 +207,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: stg-latest-usc1b-190509101205-raqjxmmdh9tnyev9vkjepi
-ID: ALKU:BLJG:DFDW:4HDX:AHGD:IB7N:YMC4:XNBB:V6RX:NBH4:DP4L:HGUW
+Name: stg-latest-usc1b-190523094048-cxfrj3wjx6s5lqcvzkragf
+ID: PEUJ:GIJW:W56I:3CJS:3XFH:BY45:JOBX:GRJM:LLND:L27P:WQI4:ICNU
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -225,12 +225,12 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-quay.io/bitriseio/android-ndk - 24.9GB
 bitriseio/android-ndk - 24.9GB
+quay.io/bitriseio/android-ndk - 24.9GB
 bitriseio/android - 22GB
 quay.io/bitriseio/android - 22GB
-quay.io/bitriseio/bitrise-base - 2.3GB
-bitriseio/bitrise-base - 2.3GB
+bitriseio/bitrise-base - 2.31GB
+quay.io/bitriseio/bitrise-base - 2.31GB
 ========================================
 
 
@@ -240,10 +240,10 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop0       60G   25G   35G  41% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        97G   66G   32G  68% /bitrise
+/dev/sda1        97G   66G   31G  69% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        208M        5.0G        8.7M        2.1G        6.8G
+Mem:           7.3G        346M        4.6G        8.7M        2.4G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -265,27 +265,27 @@ Swap:          4.0G          0B        4.0G
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Java: javac 1.8.0_191
+* Java: javac 1.8.0_212
 * Cordova CLI version: 9.0.0 (cordova-lib@9.0.1)
 * Ionic CLI version: 4.12.0
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 245.0.0
-alpha 2019.05.03
-beta 2019.05.03
+Google Cloud SDK 247.0.0
+alpha 2019.05.17
+beta 2019.05.17
 bq 2.0.43
-core 2019.05.03
+core 2019.05.17
 gsutil 4.38
-kubectl 2019.05.03
+kubectl 2019.05.17
 ========================================
 
 
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-..done.
+...done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
