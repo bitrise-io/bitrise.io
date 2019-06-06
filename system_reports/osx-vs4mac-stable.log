@@ -20,7 +20,59 @@
 * Java: openjdk version "1.8.0_212"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_212-b03)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.212-b03, mixed mode)
-* Flutter: Flutter 1.2.1 • channel stable • https://github.com/flutter/flutter.git
+Unhandled exception:
+FileSystemException: writeFrom failed, path = '' (OS Error: Broken pipe, errno = 32)
+#0      _RandomAccessFile.writeFromSync (dart:io/file_impl.dart:879:7)
+#1      _StdConsumer.addStream.<anonymous closure> (dart:io/stdio.dart:308:15)
+#2      _rootRunUnary (dart:async/zone.dart:1132:38)
+#3      _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#4      _CustomZone.runUnaryGuarded (dart:async/zone.dart:931:7)
+#5      _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:336:11)
+#6      _BufferingStreamSubscription._add (dart:async/stream_impl.dart:263:7)
+#7      _SyncStreamController._sendData (dart:async/stream_controller.dart:764:19)
+#8      _StreamController._add (dart:async/stream_controller.dart:640:7)
+#9      _StreamController.add (dart:async/stream_controller.dart:586:5)
+#10     _StreamSinkImpl.add (dart:io/io_sink.dart:156:17)
+#11     _IOSinkImpl.write (dart:io/io_sink.dart:289:5)
+#12     _StdSink.write (dart:io/stdio.dart:337:11)
+#13     StdoutLogger.writeToStdOut (package:flutter_tools/src/base/logger.dart:183:12)
+#14     StdoutLogger.printStatus (package:flutter_tools/src/base/logger.dart:177:5)
+#15     printStatus (package:flutter_tools/src/globals.dart:61:10)
+#16     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:389:11)
+<asynchronous suspension>
+#17     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:142:29)
+<asynchronous suspension>
+#18     _rootRun (dart:async/zone.dart:1124:13)
+#19     _CustomZone.run (dart:async/zone.dart:1021:19)
+#20     _runZoned (dart:async/zone.dart:1516:10)
+#21     runZoned (dart:async/zone.dart:1463:12)
+#22     AppContext.run (package:flutter_tools/src/base/context.dart:141:18)
+<asynchronous suspension>
+#23     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:356:19)
+<asynchronous suspension>
+#24     CommandRunner.run.<anonymous closure> (package:args/command_runner.dart:111:29)
+#25     new Future.sync (dart:async/future.dart:224:31)
+#26     CommandRunner.run (package:args/command_runner.dart:111:11)
+#27     FlutterCommandRunner.run (package:flutter_tools/src/runner/flutter_command_runner.dart:242:18)
+#28     run.<anonymous closure> (package:flutter_tools/runner.dart:60:20)
+<asynchronous suspension>
+#29     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:142:29)
+<asynchronous suspension>
+#30     _rootRun (dart:async/zone.dart:1124:13)
+#31     _CustomZone.run (dart:async/zone.dart:1021:19)
+#32     _runZoned (dart:async/zone.dart:1516:10)
+#33     runZoned (dart:async/zone.dart:1463:12)
+#34     AppContext.run (package:flutter_tools/src/base/context.dart:141:18)
+<asynchronous suspension>
+#35     runInContext (package:flutter_tools/src/context_runner.dart:48:24)
+<asynchronous suspension>
+#36     run (package:flutter_tools/runner.dart:51:10)
+#37     main (package:flutter_tools/executable.dart:52:9)
+<asynchronous suspension>
+#38     main (file:///b/rr/tmp6N7O2E/w/archive/flutter/packages/flutter_tools/bin/flutter_tools.dart:8:3)
+#39     _startIsolate.<anonymous closure> (dart:isolate/runtime/libisolate_patch.dart:298:32)
+#40     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:171:12)
+* Flutter:   ╔════════════════════════════════════════════════════════════════════════════╗
 
 * git: git version 2.21.0
 * git lfs: git-lfs/2.7.1 (GitHub; darwin amd64; go 1.12)
@@ -704,18 +756,18 @@ Software:
       Kernel Version: Darwin 18.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-190523121221-846zGLtWvvTNr6VCx7gdUT
+      Computer Name: stg-vs4mac-stable-190606175353-AmaDno36MBdzkQFvb3WwMA
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 5 minutes
+      Time since boot: 7 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  152Gi   47Gi    77% 4329482 9223372036850446325    0%   /
+* Free disk space: /dev/disk1s1  200Gi  152Gi   47Gi    77% 4329579 9223372036850446228    0%   /
 ========================================
 
 
