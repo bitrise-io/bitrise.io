@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_03_20_1
+* BITRISE_OSX_STACK_REV_ID: v2019_05_15_1
 ========================================
 
 
@@ -20,7 +20,7 @@
 * Java: openjdk version "1.8.0_212"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_212-b03)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.212-b03, mixed mode)
-* Flutter: Flutter 1.2.1 • channel stable • https://github.com/flutter/flutter.git
+* Flutter: Flutter 1.5.4-hotfix.2 • channel stable • https://github.com/flutter/flutter.git
 
 * git: git version 2.21.0
 * git lfs: git-lfs/2.7.1 (GitHub; darwin amd64; go 1.12)
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.212-b03, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.1.3
-Homebrew/homebrew-core (git revision 51ad; last commit 2019-05-23)
-Homebrew/homebrew-cask (git revision e8515; last commit 2019-05-23)
+* brew: Homebrew 2.1.4
+Homebrew/homebrew-core (git revision 2780; last commit 2019-06-07)
+Homebrew/homebrew-cask (git revision cecf69; last commit 2019-06-07)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.7.9
@@ -704,187 +704,18 @@ Software:
       Kernel Version: Darwin 18.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-beta-190523121221-axMBsRTZ3YsCdMcHz25zTR
+      Computer Name: stg-vs4mac-beta-190607130651-6yWXLDTcTQ9iHez7opEKyj
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 5 minutes
+      Time since boot: 3 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  154Gi   45Gi    78% 4334275 9223372036850441532    0%   /
-========================================
-
-
-=== Xamarin specific ===================
-
---- Xamarin
-
-* Visual Studio
-Release ID: 801002460
-Git revision: f8e004f45bb52a2f5b7b0b80b96496a76205e48d
-Build date: 2019-05-10 18:53:20+00
-Build branch: release-8.1
-* Mono version:
-Mono JIT compiler version 5.18.1.24 (2018-08/082e1a23463 Tue Apr 30 13:26:14 EDT 2019)
-Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-project.com
-	TLS:           
-	SIGSEGV:       altstack
-	Notification:  kqueue
-	Architecture:  amd64
-	Disabled:      none
-	Misc:          softdebug 
-	Interpreter:   yes
-	LLVM:          yes(600)
-	Suspend:       preemptive
-	GC:            sgen (concurrent by default)
-* Mono path:
-/Library/Frameworks/Mono.framework/Versions/Current/Commands/mono
-
-* Xamarin.Android
-9.3.0
-
-* Xamarin.iOS
-mtouch 12.10.0.150 (d16-1): 99c0cfab)
-
-* debug.keystore path:
-/Users/vagrant/.local/share/Xamarin/Mono for Android/debug.keystore
---- Android
-
-* ANDROID_HOME (/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx) content:
-add-ons
-build-tools
-emulator
-extras
-licenses
-ndk-bundle
-patcher
-platform-tools
-platforms
-system-images
-tools
-
-* ANDROID_NDK_HOME (/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/ndk-bundle) content:
-CHANGELOG.md
-README.md
-build
-meta
-ndk-build
-ndk-depends
-ndk-gdb
-ndk-stack
-ndk-which
-package.xml
-platforms
-prebuilt
-python-packages
-shader-tools
-simpleperf
-source.properties
-sources
-sysroot
-toolchains
-wrap.sh
-
-* Android NDK Version:
-Pkg.Desc = Android NDK
-Pkg.Revision = 17.1.4828580
-
-* platform-tools content:
-NOTICE.txt
-adb
-api
-deployagent
-deployagent.jar
-deploypatchgenerator.jar
-dmtracedump
-e2fsdroid
-etc1tool
-fastboot
-hprof-conv
-lib64
-make_f2fs
-mke2fs
-mke2fs.conf
-package.xml
-sload_f2fs
-source.properties
-sqlite3
-systrace
-
-* build-tools content:
-17.0.0
-19.1.0
-21.1.2
-22.0.1
-23.0.3
-24.0.3
-25.0.3
-26.0.1
-26.0.2
-27.0.0
-27.0.1
-27.0.2
-27.0.3
-28.0.0
-28.0.1
-28.0.2
-28.0.3
-
-* extras content:
-/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/extras
-├── android
-│   └── m2repository
-├── google
-│   ├── google_play_services
-│   └── m2repository
-└── m2repository
-    └── com
-
-7 directories, 0 files
-
-* platforms content:
-android-15
-android-17
-android-19
-android-21
-android-22
-android-23
-android-24
-android-25
-android-26
-android-27
-android-28
-
-* system-images content:
-/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/system-images
-├── android-19
-│   └── default
-│       └── armeabi-v7a
-├── android-22
-│   └── default
-│       └── armeabi-v7a
-├── android-24
-│   └── default
-│       └── armeabi-v7a
-├── android-25
-│   └── google_apis
-│       └── armeabi-v7a
-├── android-26
-│   └── google_apis
-│       └── x86
-├── android-27
-│   └── google_apis_playstore
-│       └── x86
-└── android-28
-    └── google_apis
-        └── x86
-
-21 directories, 0 files
-
+* Free disk space: /dev/disk1s1  200Gi  155Gi   44Gi    78% 4342593 9223372036850433214    0%   /
 ========================================
 
 
