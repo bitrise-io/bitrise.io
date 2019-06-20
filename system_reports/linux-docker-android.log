@@ -19,7 +19,7 @@
 * libssl-dev: 1.0.2g-1ubuntu4.15
 * libreadline6-dev: 6.3-8ubuntu2
 * libyaml-dev: 0.1.6-3
-* libsqlite3-dev: 3.11.0-1ubuntu1.1
+* libsqlite3-dev: 3.11.0-1ubuntu1.2
 =======================================
 
 
@@ -33,7 +33,7 @@
 * Node.js: v8.16.0
 * NPM: 6.4.1
 * Yarn: 1.16.0
-aws-cli/1.16.181 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.171
+aws-cli/1.16.182 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.172
 * aws: 
 
 * git: git version 2.7.4
@@ -162,7 +162,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-190619181128-kufechpvgypymigjhtaqyl 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-190620065518-vccr5eqoc834x72p3hnxae 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -207,8 +207,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: stg-latest-usc1b-190619181128-kufechpvgypymigjhtaqyl
-ID: 5RL6:ZRQM:4TQG:PR5C:YSYL:DRQI:EO5O:VM7L:4KHI:U7X3:B7ET:SLRH
+Name: stg-latest-usc1b-190620065518-vccr5eqoc834x72p3hnxae
+ID: THG3:HMOW:VHLR:2LKA:QSUE:VNBP:CEDH:HCJ2:PCT2:TRB4:IG7K:GOJ2
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -227,8 +227,8 @@ WARNING: No swap limit support
 === Docker pre-cached images ===========
 bitriseio/android-ndk - 24.9GB
 quay.io/bitriseio/android-ndk - 24.9GB
-bitriseio/android - 22GB
 quay.io/bitriseio/android - 22GB
+bitriseio/android - 22GB
 bitriseio/bitrise-base - 2.32GB
 quay.io/bitriseio/bitrise-base - 2.32GB
 ========================================
@@ -240,10 +240,10 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop0       60G   25G   35G  41% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1       194G   66G  128G  34% /bitrise
+/dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        205M        4.8G         16M        2.3G        6.8G
+Mem:           7.3G        219M        5.6G        8.7M        1.4G        6.8G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -285,7 +285,7 @@ kubectl 2019.06.14
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-.done.
+..done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
