@@ -33,7 +33,7 @@
 * Node.js: v8.16.0
 * NPM: 6.4.1
 * Yarn: 1.16.0
-aws-cli/1.16.188 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.178
+aws-cli/1.16.196 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.186
 * aws: 
 
 * git: git version 2.7.4
@@ -52,7 +52,7 @@ aws-cli/1.16.188 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.178
 
 * sudo: Sudo version 1.8.16
 
-* docker: Docker version 18.09.6, build 481bc77
+* docker: Docker version 18.09.7, build 2d0083d
 * docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
@@ -82,7 +82,7 @@ declarative (0.0.10)
 declarative-option (0.1.0)
 did_you_mean (1.2.0)
 digest-crc (0.4.1)
-domain_name (0.5.20180417)
+domain_name (0.5.20190701)
 dotenv (2.7.4)
 emoji_regex (1.0.1)
 etc (default: 1.0.0)
@@ -91,7 +91,7 @@ faraday (0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.5)
-fastlane (2.126.0)
+fastlane (2.127.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -152,7 +152,7 @@ unf_ext (0.0.7.6)
 unicode-display_width (1.6.0)
 webrick (default: 1.4.2)
 word_wrap (1.0.0)
-xcodeproj (1.10.0)
+xcodeproj (1.11.0)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
@@ -162,7 +162,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-190627072012-lmvqjuu4sd4njgeexyfudl 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-190711072932-ee2h9qks2gawkkeel26zud 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -194,8 +194,8 @@ Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
 Init Binary: docker-init
-containerd version: bb71b10fd8f58240ca47fbb579b9d1028eea7c84
-runc version: 2b18fe1d885ee5083ef9f0838fee39b62d653e30
+containerd version: 894b81a4b802e4eb2a91d1ce216b8817763c29fb
+runc version: 425e105d5a03fabd737a126ad93d62a9eeede87f
 init version: fec3683
 Security Options:
  apparmor
@@ -207,8 +207,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: stg-latest-usc1b-190627072012-lmvqjuu4sd4njgeexyfudl
-ID: UG4G:Y453:P4CG:EMX4:5YI7:3236:AJEB:JVUF:THLO:WJIZ:4TP2:JYOB
+Name: stg-latest-usc1b-190711072932-ee2h9qks2gawkkeel26zud
+ID: SSYI:FCNG:L7L4:S4MF:WYYG:K5Z4:LRBC:FUFZ:4YJE:ULGC:F3T5:JPP7
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -225,25 +225,25 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 24.9GB
-quay.io/bitriseio/android-ndk - 24.9GB
-bitriseio/android - 22GB
-quay.io/bitriseio/android - 22GB
-bitriseio/bitrise-base - 2.32GB
-quay.io/bitriseio/bitrise-base - 2.32GB
+quay.io/bitriseio/android-ndk - 28.7GB
+bitriseio/android-ndk - 28.7GB
+bitriseio/android - 25.6GB
+quay.io/bitriseio/android - 25.6GB
+bitriseio/bitrise-base - 2.33GB
+quay.io/bitriseio/bitrise-base - 2.33GB
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   25G   35G  41% /
+/dev/loop0       60G   28G   32G  47% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        97G   67G   31G  69% /bitrise
+/dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        281M        4.6G        8.7M        2.4G        6.7G
+Mem:           7.3G        283M        4.9G        8.7M        2.1G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -258,7 +258,7 @@ Swap:          4.0G          0B        4.0G
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2018_10_05_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2019_06_21_1
 ========================================
 
 
@@ -267,18 +267,18 @@ Swap:          4.0G          0B        4.0G
 * Maven: Apache Maven 3.3.9
 * Java: javac 1.8.0_212
 * Cordova CLI version: 9.0.0 (cordova-lib@9.0.1)
-* Ionic CLI version: 5.2.0
+* Ionic CLI version: 5.2.2
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 252.0.0
-alpha 2019.06.21
-beta 2019.06.21
-bq 2.0.43
-core 2019.06.21
+Google Cloud SDK 253.0.0
+alpha 2019.06.28
+beta 2019.06.28
+bq 2.0.44
+core 2019.06.28
 gsutil 4.39
-kubectl 2019.06.21
+kubectl 2019.06.28
 ========================================
 
 
@@ -371,6 +371,7 @@ systrace
 28.0.1
 28.0.2
 28.0.3
+29.0.0
 
 * ./emulator:
 android-info.txt
@@ -414,6 +415,7 @@ android-25
 android-26
 android-27
 android-28
+android-29
 
 * ./system-images:
 /opt/android-sdk-linux/system-images
@@ -432,11 +434,14 @@ android-28
 ├── android-26
 │   └── google_apis
 │       └── x86
-└── android-28
+├── android-28
+│   └── google_apis
+│       └── x86
+└── android-29
     └── google_apis
         └── x86
 
-18 directories, 0 files
+21 directories, 0 files
 ========================================
 
 
@@ -450,12 +455,12 @@ android-28
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2019_01_17_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2019_06_16_1
 ========================================
 
 $ cat /opt/android-ndk/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 19.0.5232133
+Pkg.Revision = 20.0.5594570
 
 $ tree -L 2 /opt/android-ndk
 /opt/android-ndk
@@ -473,6 +478,7 @@ $ tree -L 2 /opt/android-ndk
 │   ├── lib
 │   ├── ndk-build
 │   ├── ndk-build.cmd
+│   ├── __pycache__
 │   ├── test_extract_manifest.py
 │   ├── test_extract_platform.py
 │   ├── test_gen_cygpath.py
@@ -500,7 +506,8 @@ $ tree -L 2 /opt/android-ndk
 │   ├── android-24
 │   ├── android-26
 │   ├── android-27
-│   └── android-28
+│   ├── android-28
+│   └── android-29
 ├── prebuilt
 │   ├── android-arm
 │   ├── android-arm64
@@ -559,7 +566,7 @@ $ tree -L 2 /opt/android-ndk
     ├── asan.x86_64.sh
     └── asan.x86.sh
 
-49 directories, 50 files
+51 directories, 50 files
 
 
 === Pre-installed tool versions ========
