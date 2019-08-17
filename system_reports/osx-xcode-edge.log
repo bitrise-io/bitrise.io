@@ -14,17 +14,75 @@
 === Pre-installed tool versions ========
 * Go: go version go1.12.7 darwin/amd64
 * Python: Python 2.7.16
-* Node.js: v10.16.0
-* NPM: 6.9.0
+* Node.js: v10.16.2
+* NPM: 6.10.3
 * Yarn: 1.17.3
 * Java: openjdk version "1.8.0_222"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_222-b10)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
-* Flutter: Flutter 1.7.8+hotfix.3 • channel stable • https://github.com/flutter/flutter.git
+Unhandled exception:
+FileSystemException: writeFrom failed, path = '' (OS Error: Broken pipe, errno = 32)
+#0      _RandomAccessFile.writeFromSync (dart:io/file_impl.dart:879:7)
+#1      _StdConsumer.addStream.<anonymous closure> (dart:io/stdio.dart:308:15)
+#2      _rootRunUnary (dart:async/zone.dart:1132:38)
+#3      _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#4      _CustomZone.runUnaryGuarded (dart:async/zone.dart:931:7)
+#5      _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:336:11)
+#6      _BufferingStreamSubscription._add (dart:async/stream_impl.dart:263:7)
+#7      _SyncStreamController._sendData (dart:async/stream_controller.dart:764:19)
+#8      _StreamController._add (dart:async/stream_controller.dart:640:7)
+#9      _StreamController.add (dart:async/stream_controller.dart:586:5)
+#10     _StreamSinkImpl.add (dart:io/io_sink.dart:156:17)
+#11     _IOSinkImpl.write (dart:io/io_sink.dart:289:5)
+#12     _StdSink.write (dart:io/stdio.dart:337:11)
+#13     StdoutLogger.writeToStdOut (package:flutter_tools/src/base/logger.dart:204:12)
+#14     StdoutLogger.printStatus (package:flutter_tools/src/base/logger.dart:198:5)
+#15     printStatus (package:flutter_tools/src/globals.dart:61:10)
+#16     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:389:11)
+<asynchronous suspension>
+#17     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:29)
+<asynchronous suspension>
+#18     _rootRun (dart:async/zone.dart:1124:13)
+#19     _CustomZone.run (dart:async/zone.dart:1021:19)
+#20     _runZoned (dart:async/zone.dart:1516:10)
+#21     runZoned (dart:async/zone.dart:1463:12)
+#22     AppContext.run (package:flutter_tools/src/base/context.dart:152:18)
+<asynchronous suspension>
+#23     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:356:19)
+<asynchronous suspension>
+#24     CommandRunner.run.<anonymous closure> (package:args/command_runner.dart:112:25)
+#25     new Future.sync (dart:async/future.dart:224:31)
+#26     CommandRunner.run (package:args/command_runner.dart:112:14)
+#27     FlutterCommandRunner.run (package:flutter_tools/src/runner/flutter_command_runner.dart:242:18)
+#28     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:62:22)
+<asynchronous suspension>
+#29     _rootRun (dart:async/zone.dart:1124:13)
+#30     _CustomZone.run (dart:async/zone.dart:1021:19)
+#31     _runZoned (dart:async/zone.dart:1516:10)
+#32     runZoned (dart:async/zone.dart:1500:12)
+#33     run.<anonymous closure> (package:flutter_tools/runner.dart:60:18)
+<asynchronous suspension>
+#34     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:29)
+<asynchronous suspension>
+#35     _rootRun (dart:async/zone.dart:1124:13)
+#36     _CustomZone.run (dart:async/zone.dart:1021:19)
+#37     _runZoned (dart:async/zone.dart:1516:10)
+#38     runZoned (dart:async/zone.dart:1463:12)
+#39     AppContext.run (package:flutter_tools/src/base/context.dart:152:18)
+<asynchronous suspension>
+#40     runInContext (package:flutter_tools/src/context_runner.dart:56:24)
+<asynchronous suspension>
+#41     run (package:flutter_tools/runner.dart:51:10)
+#42     main (package:flutter_tools/executable.dart:62:9)
+<asynchronous suspension>
+#43     main (file:///b/s/w/ir/k/archive/flutter/packages/flutter_tools/bin/flutter_tools.dart:8:3)
+#44     _startIsolate.<anonymous closure> (dart:isolate-patch/isolate_patch.dart:299:32)
+#45     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:172:12)
+* Flutter:   ╔════════════════════════════════════════════════════════════════════════════╗
 
 * git: git version 2.22.0
 * git lfs: git-lfs/2.8.0 (GitHub; darwin amd64; go 1.12.7)
-* mercurial/hg: Mercurial Distributed SCM (version 5.0.2)
+* mercurial/hg: Mercurial Distributed SCM (version 5.1)
 * curl: curl 7.54.0 (x86_64-apple-darwin18.0) libcurl/7.54.0 LibreSSL/2.6.5 zlib/1.2.11 nghttp2/1.24.1
 * wget: GNU Wget 1.20.3 built on darwin18.6.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -34,8 +92,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.1.9
-Homebrew/homebrew-core (git revision 67f3; last commit 2019-07-31)
-Homebrew/homebrew-cask (git revision 97e4e; last commit 2019-08-01)
+Homebrew/homebrew-core (git revision bb5f; last commit 2019-08-08)
+Homebrew/homebrew-cask (git revision ca7d4; last commit 2019-08-08)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.8.3
@@ -46,7 +104,7 @@ Homebrew/homebrew-cask (git revision 97e4e; last commit 2019-08-01)
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.102.0
 * carthage: 0.33.0
-* imagemagick (convert): Version: ImageMagick 7.0.8-56 Q16 x86_64 2019-07-24 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.8-59 Q16 x86_64 2019-08-05 https://imagemagick.org
 * ghostscript (ps2ascii): 9.27
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
 ./system_report.sh: line 70: wine: command not found
@@ -91,7 +149,7 @@ bigdecimal (default: 1.4.1)
 bundler (default: 1.17.3)
 certified (1.0.0)
 CFPropertyList (3.0.0)
-claide (1.0.2)
+claide (1.0.3)
 cmath (default: 1.0.0)
 cocoapods (1.7.5)
 cocoapods-core (1.7.5)
@@ -122,7 +180,7 @@ e2mmap (default: 0.1.0)
 emoji_regex (1.0.1)
 escape (0.0.4)
 etc (default: 1.0.1)
-excon (0.65.0)
+excon (0.66.0)
 faraday (0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
@@ -228,7 +286,7 @@ venice (0.5.0)
 webrick (default: 1.4.2)
 webrobots (0.1.2)
 word_wrap (1.0.0)
-xcodeproj (1.11.0)
+xcodeproj (1.12.0)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
@@ -238,7 +296,7 @@ zlib (default: 1.0.0)
 
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
-* Ionic: 5.2.3
+* Ionic: 5.2.4
 ========================================
 
 
@@ -718,7 +776,7 @@ Software:
       Kernel Version: Darwin 18.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-190801185622-ioyUnENhxAWp7TVytpoYc5
+      Computer Name: stg-xcode-edge-190812083924-mtNLXhHTxsWznECkcoQNKk
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
@@ -729,7 +787,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  140Gi   59Gi    71% 4373828 9223372036850401979    0%   /
+* Free disk space: /dev/disk1s1  200Gi  140Gi   59Gi    71% 4380216 9223372036850395591    0%   /
 ========================================
 
 --- Android
