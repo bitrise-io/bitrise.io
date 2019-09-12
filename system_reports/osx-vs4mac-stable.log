@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_08_21_1
+* BITRISE_OSX_STACK_REV_ID: v2019_09_11_2
 ========================================
 
 
@@ -34,8 +34,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.1.11
-Homebrew/homebrew-core (git revision 3e6b; last commit 2019-09-05)
-Homebrew/homebrew-cask (git revision 07774; last commit 2019-09-05)
+Homebrew/homebrew-core (git revision 79a0; last commit 2019-09-12)
+Homebrew/homebrew-cask (git revision c5709; last commit 2019-09-12)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.7.9
@@ -53,9 +53,9 @@ Homebrew/homebrew-cask (git revision 07774; last commit 2019-09-05)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.33.0
-* stepman: 0.11.8
-* envman: 2.2.6
+* bitrise: 1.34.0
+* stepman: 0.11.9
+* envman: 2.2.7
 * cmd-bridge: 0.9.5
 ========================================
 
@@ -704,18 +704,18 @@ Software:
       Kernel Version: Darwin 18.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-190905105944-pSKayUAsUCHxCqqo7MKHKA
+      Computer Name: stg-vs4mac-stable-190912134454-Y44p9zFP4tXCJaia3vr93k
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 6 minutes
+      Time since boot: 3 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  156Gi   43Gi    79% 4400237 9223372036850375570    0%   /
+* Free disk space: /dev/disk1s1  200Gi  160Gi   39Gi    81% 4418237 9223372036850357570    0%   /
 ========================================
 
 
@@ -724,12 +724,12 @@ Software:
 --- Xamarin
 
 * Visual Studio
-Release ID: 802050005
-Git revision: 94d90d630b6c7876d1d5298730d14ec97bbde3f9
-Build date: 2019-08-22 21:31:34+00
+Release ID: 802060026
+Git revision: a4ea4d00345f4d98a95bd2322b1d04935eb553e1
+Build date: 2019-09-05 18:24:25+00
 Build branch: release-8.2
 * Mono version:
-Mono JIT compiler version 6.0.0.327 (2019-02/f8ea05bddcb Sat Aug 10 18:47:12 EDT 2019)
+Mono JIT compiler version 6.0.0.334 (2019-02/6256b82d62f Tue Sep  3 17:44:33 EDT 2019)
 Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-project.com
 	TLS:           
 	SIGSEGV:       altstack
@@ -797,9 +797,6 @@ Pkg.Revision = 17.1.4828580
 NOTICE.txt
 adb
 api
-deployagent
-deployagent.jar
-deploypatchgenerator.jar
 dmtracedump
 e2fsdroid
 etc1tool
@@ -833,6 +830,9 @@ systrace
 28.0.1
 28.0.2
 28.0.3
+29.0.0
+29.0.1
+29.0.2
 
 * extras content:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/extras
@@ -858,6 +858,7 @@ android-25
 android-26
 android-27
 android-28
+android-29
 
 * system-images content:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/system-images
@@ -879,11 +880,14 @@ android-28
 ├── android-27
 │   └── google_apis_playstore
 │       └── x86
-└── android-28
+├── android-28
+│   └── google_apis
+│       └── x86
+└── android-29
     └── google_apis
         └── x86
 
-21 directories, 0 files
+24 directories, 0 files
 
 ========================================
 
