@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_08_21_1
+* BITRISE_OSX_STACK_REV_ID: v2019_09_11_2
 ========================================
 
 
@@ -15,7 +15,7 @@
 * Go: go version go1.13 darwin/amd64
 * Python: Python 2.7.16
 * Node.js: v10.16.3
-* NPM: 6.10.3
+* NPM: 6.11.3
 * Yarn: 1.17.3
 * Java: openjdk version "1.8.0_222"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_222-b10)
@@ -24,7 +24,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 
 * git: git version 2.23.0
 * git lfs: git-lfs/2.8.0 (GitHub; darwin amd64; go 1.12.7)
-* mercurial/hg: Mercurial Distributed SCM (version 5.1)
+* mercurial/hg: Mercurial Distributed SCM (version 5.1.1)
 * curl: curl 7.54.0 (x86_64-apple-darwin18.0) libcurl/7.54.0 LibreSSL/2.6.5 zlib/1.2.11 nghttp2/1.24.1
 * wget: GNU Wget 1.20.3 built on darwin18.6.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -34,17 +34,17 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.1.11
-Homebrew/homebrew-core (git revision 3e6b; last commit 2019-09-05)
-Homebrew/homebrew-cask (git revision 0777; last commit 2019-09-05)
+Homebrew/homebrew-core (git revision 79a0; last commit 2019-09-12)
+Homebrew/homebrew-cask (git revision c5709; last commit 2019-09-12)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.8.4
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.8.4_1/libexec/lib/python3.7/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.8.4_2/libexec/lib/python3.7/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.31
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.106.3
+* flow: Flow, a static type checker for JavaScript, version 0.107.0
 * carthage: 0.33.0
 * imagemagick (convert): Version: ImageMagick 7.0.8-59 Q16 x86_64 2019-08-05 https://imagemagick.org
 * ghostscript (ps2ascii): 9.27
@@ -53,9 +53,9 @@ Homebrew/homebrew-cask (git revision 0777; last commit 2019-09-05)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.33.0
-* stepman: 0.11.8
-* envman: 2.2.6
+* bitrise: 1.34.0
+* stepman: 0.11.9
+* envman: 2.2.7
 * cmd-bridge: 0.9.5
 ========================================
 
@@ -126,7 +126,7 @@ excon (0.66.0)
 faraday (0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
-fastimage (2.1.5)
+fastimage (2.1.7)
 fastlane (2.130.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
@@ -196,7 +196,7 @@ rouge (2.0.7)
 rss (default: 0.2.7)
 ruby-macho (1.4.0)
 rubygems-update (3.0.6)
-rubyzip (1.2.3)
+rubyzip (1.2.4)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
@@ -238,7 +238,7 @@ zlib (default: 1.0.0)
 
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
-* Ionic: 5.2.7
+* Ionic: 5.2.8
 ========================================
 
 
@@ -703,18 +703,18 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-190905105812-rFV4dF9ZMLjuHPLBADM8kU
+      Computer Name: stg-xcode-edge-190912135059-JH35EUKdN6q2ZFPSb58fHB
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes
+      Time since boot: 3 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  131Gi   68Gi    66% 4212310 9223372036850563497    0%   /
+* Free disk space: /dev/disk1s1  200Gi  135Gi   64Gi    68% 4254665 9223372036850521142    0%   /
 ========================================
 
 --- Android
@@ -759,9 +759,6 @@ Pkg.Revision = 16.1.4479499
 NOTICE.txt
 adb
 api
-deployagent
-deployagent.jar
-deploypatchgenerator.jar
 dmtracedump
 e2fsdroid
 etc1tool
@@ -795,6 +792,9 @@ systrace
 28.0.1
 28.0.2
 28.0.3
+29.0.0
+29.0.1
+29.0.2
 
 * extras content:
 /usr/local/share/android-sdk/extras
@@ -820,6 +820,7 @@ android-25
 android-26
 android-27
 android-28
+android-29
 
 * system-images content:
 /usr/local/share/android-sdk/system-images
@@ -838,11 +839,14 @@ android-28
 ├── android-26
 │   └── google_apis
 │       └── x86
-└── android-28
+├── android-28
+│   └── google_apis
+│       └── x86
+└── android-29
     └── google_apis
         └── x86
 
-18 directories, 0 files
+21 directories, 0 files
 
 ========================================
 
