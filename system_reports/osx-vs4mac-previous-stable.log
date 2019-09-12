@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_08_21_1
+* BITRISE_OSX_STACK_REV_ID: v2019_09_11_2
 ========================================
 
 
@@ -34,8 +34,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.212-b03, mixed mode)
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.1.11
-Homebrew/homebrew-core (git revision 545e; last commit 2019-09-04)
-Homebrew/homebrew-cask (git revision 414b27; last commit 2019-09-05)
+Homebrew/homebrew-core (git revision e1e69; last commit 2019-09-11)
+Homebrew/homebrew-cask (git revision 3d3d4; last commit 2019-09-12)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.7.1
@@ -53,9 +53,9 @@ Homebrew/homebrew-cask (git revision 414b27; last commit 2019-09-05)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.33.0
-* stepman: 0.11.8
-* envman: 2.2.6
+* bitrise: 1.34.0
+* stepman: 0.11.9
+* envman: 2.2.7
 * cmd-bridge: 0.9.5
 ========================================
 
@@ -651,7 +651,7 @@ Software:
       Kernel Version: Darwin 17.7.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-previous-190905105515-47Ph3CPF8jzoL82UQMsuNo
+      Computer Name: stg-vs4mac-stable-previous-190912135059-7M56RLUgTmGMTnGHhs4hzR
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
@@ -662,7 +662,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  157Gi   42Gi    80% 4142315 4290824964    0%   /
+* Free disk space: /dev/disk0s2  199Gi  161Gi   38Gi    81% 4160167 4290807112    0%   /
 ========================================
 
 
@@ -740,9 +740,6 @@ Pkg.Revision = 14.1.3816874
 NOTICE.txt
 adb
 api
-deployagent
-deployagent.jar
-deploypatchgenerator.jar
 dmtracedump
 e2fsdroid
 etc1tool
@@ -776,6 +773,9 @@ systrace
 28.0.1
 28.0.2
 28.0.3
+29.0.0
+29.0.1
+29.0.2
 
 * extras content:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/extras
@@ -801,6 +801,7 @@ android-25
 android-26
 android-27
 android-28
+android-29
 
 * system-images content:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/system-images
@@ -822,11 +823,14 @@ android-28
 ├── android-27
 │   └── google_apis_playstore
 │       └── x86
-└── android-28
+├── android-28
+│   └── google_apis
+│       └── x86
+└── android-29
     └── google_apis
         └── x86
 
-21 directories, 0 files
+24 directories, 0 files
 
 ========================================
 
