@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_08_21_1
+* BITRISE_OSX_STACK_REV_ID: v2019_09_11_2
 ========================================
 
 
@@ -34,8 +34,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.1.11
-Homebrew/homebrew-core (git revision 545e; last commit 2019-09-04)
-Homebrew/homebrew-cask (git revision 1f6ffe; last commit 2019-09-05)
+Homebrew/homebrew-core (git revision e1e69; last commit 2019-09-11)
+Homebrew/homebrew-cask (git revision 3d3d4; last commit 2019-09-12)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.7.1
@@ -53,9 +53,9 @@ Homebrew/homebrew-cask (git revision 1f6ffe; last commit 2019-09-05)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.33.0
-* stepman: 0.11.8
-* envman: 2.2.6
+* bitrise: 1.34.0
+* stepman: 0.11.9
+* envman: 2.2.7
 * cmd-bridge: 0.9.5
 ========================================
 
@@ -651,18 +651,18 @@ Software:
       Kernel Version: Darwin 17.7.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-10-1-190905105305-XNnJyAJqxJQJ8YuWaPR3vb
+      Computer Name: stg-xcode-10-1-190912132118-5KJqVUj4Rk3P8h5GRFGAp9
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 3 minutes
+      Time since boot: 15 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  138Gi   61Gi    70% 4045666 4290921613    0%   /
+* Free disk space: /dev/disk0s2  199Gi  141Gi   58Gi    71% 4063455 4290903824    0%   /
 ========================================
 
 --- Android
@@ -707,9 +707,6 @@ Pkg.Revision = 16.1.4479499
 NOTICE.txt
 adb
 api
-deployagent
-deployagent.jar
-deploypatchgenerator.jar
 dmtracedump
 e2fsdroid
 etc1tool
@@ -743,6 +740,9 @@ systrace
 28.0.1
 28.0.2
 28.0.3
+29.0.0
+29.0.1
+29.0.2
 
 * extras content:
 /usr/local/share/android-sdk/extras
@@ -768,6 +768,7 @@ android-25
 android-26
 android-27
 android-28
+android-29
 
 * system-images content:
 /usr/local/share/android-sdk/system-images
@@ -786,11 +787,14 @@ android-28
 ├── android-26
 │   └── google_apis
 │       └── x86
-└── android-28
+├── android-28
+│   └── google_apis
+│       └── x86
+└── android-29
     └── google_apis
         └── x86
 
-18 directories, 0 files
+21 directories, 0 files
 
 ========================================
 

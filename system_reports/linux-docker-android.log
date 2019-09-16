@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_08_28_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_09_11_1
 ========================================
 
 
@@ -33,7 +33,7 @@
 * Node.js: v10.16.3
 * NPM: 6.9.0
 * Yarn: 1.17.3
-aws-cli/1.16.232 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.222
+aws-cli/1.16.237 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.227
 * aws: 
 
 * git: git version 2.7.4
@@ -56,9 +56,9 @@ aws-cli/1.16.232 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.222
 * docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
-* bitrise: 1.33.0
-* stepman: 0.11.8
-* envman: 2.2.6
+* bitrise: 1.34.0
+* stepman: 0.11.9
+* envman: 2.2.7
 /bitrise/bitrise-base/system_report.sh: line 91: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
@@ -90,7 +90,7 @@ excon (0.66.0)
 faraday (0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
-fastimage (2.1.5)
+fastimage (2.1.7)
 fastlane (2.130.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
@@ -131,7 +131,7 @@ representable (3.0.4)
 retriable (3.1.2)
 rouge (2.0.7)
 rubygems-update (3.0.6)
-rubyzip (1.2.3)
+rubyzip (1.2.4)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
@@ -162,7 +162,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-190905093241-y2vdj7vh5vnqxzjurv5fsh 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-190912091853-5urvsjui4gwpwporkatqrf 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -211,8 +211,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-190905093241-y2vdj7vh5vnqxzjurv5fsh
- ID: VGKK:7VKU:VMZY:R24B:7M7Q:U4F5:3IWT:2U56:E2QZ:T4HS:GWPC:2WO7
+ Name: stg-latest-usc1b-190912091853-5urvsjui4gwpwporkatqrf
+ ID: 4PS3:OEPY:DBVQ:PZB6:M73K:UKFF:N7Z2:55L4:LTCA:N7TO:XUPN:BN63
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -228,10 +228,10 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 28.7GB
-quay.io/bitriseio/android-ndk - 28.7GB
-bitriseio/android - 25.6GB
-quay.io/bitriseio/android - 25.6GB
+bitriseio/android-ndk - 29.2GB
+quay.io/bitriseio/android-ndk - 29.2GB
+bitriseio/android - 26.1GB
+quay.io/bitriseio/android - 26.1GB
 bitriseio/bitrise-base - 2.48GB
 quay.io/bitriseio/bitrise-base - 2.48GB
 ========================================
@@ -240,13 +240,13 @@ quay.io/bitriseio/bitrise-base - 2.48GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   28G   32G  47% /
+/dev/loop0       60G   29G   31G  48% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        245M        5.3G        8.7M        1.7G        6.8G
+Mem:           7.3G        312M        5.2G        8.7M        1.8G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -270,18 +270,18 @@ Swap:          4.0G          0B        4.0G
 * Maven: Apache Maven 3.3.9
 * Java: javac 1.8.0_222
 * Cordova CLI version: 9.0.0 (cordova-lib@9.0.1)
-* Ionic CLI version: 5.2.7
+* Ionic CLI version: 5.2.8
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 261.0.0
-alpha 2019.08.30
-beta 2019.08.30
+Google Cloud SDK 262.0.0
+alpha 2019.09.06
+beta 2019.09.06
 bq 2.0.47
-core 2019.08.30
+core 2019.09.06
 gsutil 4.42
-kubectl 2019.08.30
+kubectl 2019.09.06
 ========================================
 
 
@@ -307,13 +307,13 @@ Property diagnostic passed (1/1 checks passed).
 
  * adb version:
 Android Debug Bridge version 1.0.41
-Version 29.0.2-5738569
+Version 29.0.3-5806383
 Installed as /opt/android-sdk-linux/platform-tools/adb
 
  * SDK packages:
 * SDK Tools version: 26.1.1
-* Platform Tools version: 29.0.2
-* Emulator version: 29.1.12
+* Platform Tools version: 29.0.3
+* Emulator version: 29.1.13
 ========================================
 
 
@@ -337,9 +337,6 @@ tools
 * ./platform-tools:
 adb
 api
-deployagent
-deployagent.jar
-deploypatchgenerator.jar
 dmtracedump
 e2fsdroid
 etc1tool
