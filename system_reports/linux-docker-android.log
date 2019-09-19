@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_09_11_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_09_17_1
 ========================================
 
 
@@ -24,7 +24,7 @@
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.12.5 linux/amd64
+* Go: go version go1.13 linux/amd64
 * Ruby: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
   * bundler: Bundler version 1.17.3
   * rubygems: 3.0.6
@@ -33,7 +33,7 @@
 * Node.js: v10.16.3
 * NPM: 6.9.0
 * Yarn: 1.17.3
-aws-cli/1.16.237 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.227
+aws-cli/1.16.241 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.12.231
 * aws: 
 
 * git: git version 2.7.4
@@ -91,7 +91,7 @@ faraday (0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.7)
-fastlane (2.130.0)
+fastlane (2.131.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -136,7 +136,7 @@ scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
 signet (0.11.0)
-simctl (1.6.5)
+simctl (1.6.6)
 slack-notifier (2.3.2)
 stringio (default: 0.0.1)
 strscan (default: 1.0.0)
@@ -162,7 +162,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-190912091853-5urvsjui4gwpwporkatqrf 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-190919083511-a9wrrymki8bgytfhlskegb 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -211,8 +211,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-190912091853-5urvsjui4gwpwporkatqrf
- ID: 4PS3:OEPY:DBVQ:PZB6:M73K:UKFF:N7Z2:55L4:LTCA:N7TO:XUPN:BN63
+ Name: stg-latest-usc1b-190919083511-a9wrrymki8bgytfhlskegb
+ ID: FCRY:QCWA:OXQW:75GY:WMWY:IZLE:IPAF:4HKI:J4IQ:6L5G:5KYM:ESUX
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -228,25 +228,25 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 29.2GB
-quay.io/bitriseio/android-ndk - 29.2GB
-bitriseio/android - 26.1GB
-quay.io/bitriseio/android - 26.1GB
-bitriseio/bitrise-base - 2.48GB
-quay.io/bitriseio/bitrise-base - 2.48GB
+bitriseio/android-ndk - 28.6GB
+quay.io/bitriseio/android-ndk - 28.6GB
+bitriseio/android - 25.6GB
+quay.io/bitriseio/android - 25.6GB
+bitriseio/bitrise-base - 2.47GB
+quay.io/bitriseio/bitrise-base - 2.47GB
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   29G   31G  48% /
+/dev/loop0       60G   28G   32G  47% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        97G   66G   32G  68% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        312M        5.2G        8.7M        1.8G        6.7G
+Mem:           7.3G        240M        5.3G        8.7M        1.8G        6.8G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -270,25 +270,25 @@ Swap:          4.0G          0B        4.0G
 * Maven: Apache Maven 3.3.9
 * Java: javac 1.8.0_222
 * Cordova CLI version: 9.0.0 (cordova-lib@9.0.1)
-* Ionic CLI version: 5.2.8
+* Ionic CLI version: 5.3.0
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 262.0.0
-alpha 2019.09.06
-beta 2019.09.06
+Google Cloud SDK 263.0.0
+alpha 2019.09.13
+beta 2019.09.13
 bq 2.0.47
-core 2019.09.06
+core 2019.09.13
 gsutil 4.42
-kubectl 2019.09.06
+kubectl 2019.09.13
 ========================================
 
 
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-...done.
+.done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -307,13 +307,13 @@ Property diagnostic passed (1/1 checks passed).
 
  * adb version:
 Android Debug Bridge version 1.0.41
-Version 29.0.3-5806383
+Version 29.0.4-5871666
 Installed as /opt/android-sdk-linux/platform-tools/adb
 
  * SDK packages:
 * SDK Tools version: 26.1.1
-* Platform Tools version: 29.0.3
-* Emulator version: 29.1.13
+* Platform Tools version: 29.0.4
+* Emulator version: 29.2.0
 ========================================
 
 
