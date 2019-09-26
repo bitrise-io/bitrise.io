@@ -20,7 +20,7 @@
 * Java: openjdk version "1.8.0_222"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_222-b10)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
-* Flutter: Flutter 1.7.8+hotfix.4 • channel stable • https://github.com/flutter/flutter.git
+* Flutter: Flutter 1.9.1+hotfix.2 • channel stable • https://github.com/flutter/flutter.git
 
 * git: git version 2.21.0
 * git lfs: git-lfs/2.7.1 (GitHub; darwin amd64; go 1.12)
@@ -34,8 +34,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.1.11
-Homebrew/homebrew-core (git revision 46bc; last commit 2019-09-18)
-Homebrew/homebrew-cask (git revision 8d5e9; last commit 2019-09-19)
+Homebrew/homebrew-core (git revision 9bc22; last commit 2019-09-25)
+Homebrew/homebrew-cask (git revision 6bc29; last commit 2019-09-26)
 ./system_report.sh: line 54: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.7.9
@@ -704,18 +704,18 @@ Software:
       Kernel Version: Darwin 18.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-10-2-190919123915-AYHpXNkyZQnotK69q7PSuY
+      Computer Name: stg-xcode-10-2-190926160207-bvdDjo6sATRoJom5VVx9Pj
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 57 minutes
+      Time since boot: 2 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  142Gi   57Gi    72% 4368686 9223372036850407121    0%   /
+* Free disk space: /dev/disk1s1  200Gi  143Gi   56Gi    72% 4373014 9223372036850402793    0%   /
 ========================================
 
 --- Android
@@ -732,13 +732,14 @@ platforms
 system-images
 tools
 
-* ANDROID_NDK_HOME (/opt/android-ndk/android-ndk-r16b) content:
+* ANDROID_NDK_HOME (/opt/android-ndk/android-ndk-r20) content:
 CHANGELOG.md
+NOTICE
+NOTICE.toolchain
 README.md
 build
 meta
 ndk-build
-ndk-depends
 ndk-gdb
 ndk-stack
 ndk-which
@@ -751,10 +752,11 @@ source.properties
 sources
 sysroot
 toolchains
+wrap.sh
 
 * Android NDK Version:
 Pkg.Desc = Android NDK
-Pkg.Revision = 16.1.4479499
+Pkg.Revision = 20.0.5594570
 
 * platform-tools content:
 NOTICE.txt
