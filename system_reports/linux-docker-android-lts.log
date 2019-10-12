@@ -158,7 +158,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-lts-usc1b-191003150222-6jjn6uem8bfow2rds9hs9c 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-lts-usc1b-191010071253-tjavwcczwkauvxlwhj799g 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -190,8 +190,8 @@ Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
 Init Binary: docker-init
-containerd version: 894b81a4b802e4eb2a91d1ce216b8817763c29fb
-runc version: 425e105d5a03fabd737a126ad93d62a9eeede87f
+containerd version: b34a5c8af56e510852c35414db4c1f4fa6172339
+runc version: 3e425f80a8c931f88e6d94a8c831b9d5aa481657
 init version: fec3683
 Security Options:
  apparmor
@@ -203,8 +203,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: stg-lts-usc1b-191003150222-6jjn6uem8bfow2rds9hs9c
-ID: JVD4:AIY5:KZWZ:YLPN:2M7P:IZYR:P3EL:JDWX:FUDB:B35O:I7RD:YNPY
+Name: stg-lts-usc1b-191010071253-tjavwcczwkauvxlwhj799g
+ID: 4H6X:LBBS:MHYR:WFVT:DV3F:DW6N:3SDI:X5YP:3BC3:FN2Y:6T7G:777U
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -221,8 +221,9 @@ WARNING: No swap limit support
 
 === Docker pre-cached images ===========
 bitriseio/android-ndk-lts - 21.4GB
-bitriseio/android - 26.5GB
-quay.io/bitriseio/android - 26.5GB
+quay.io/bitriseio/android-ndk-lts - 21.4GB
+bitriseio/android - 26.6GB
+quay.io/bitriseio/android - 26.6GB
 bitriseio/bitrise-base - 2.48GB
 quay.io/bitriseio/bitrise-base - 2.48GB
 ========================================
@@ -231,13 +232,13 @@ quay.io/bitriseio/bitrise-base - 2.48GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0       60G   47G   13G  79% /
+/dev/loop0       60G   47G   13G  80% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        97G   66G   32G  68% /bitrise
+/dev/sda1        97G   66G   31G  69% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        224M        4.8G         16M        2.3G        6.8G
+Mem:           7.3G        234M        4.7G         32M        2.4G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
