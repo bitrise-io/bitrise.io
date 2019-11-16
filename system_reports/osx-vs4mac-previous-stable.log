@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_11_06_1
+* BITRISE_OSX_STACK_REV_ID: v2019_11_15_2
 ========================================
 
 
@@ -34,8 +34,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.1.16
-Homebrew/homebrew-core (git revision 1b8d4; last commit 2019-11-07)
-Homebrew/homebrew-cask (git revision f4260; last commit 2019-11-07)
+Homebrew/homebrew-core (git revision 4e64; last commit 2019-11-16)
+Homebrew/homebrew-cask (git revision 262c0; last commit 2019-11-15)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.7.9
@@ -49,13 +49,20 @@ Homebrew/homebrew-cask (git revision f4260; last commit 2019-11-07)
 * imagemagick (convert): Version: ImageMagick 7.0.8-35 Q16 x86_64 2019-03-25 https://imagemagick.org
 * ghostscript (ps2ascii): 9.26
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-./system_report.sh: line 74: wine: command not found
+Error: No available formula with the name "swift-sh" 
+Warning: homebrew/core is shallow clone. To get complete history run:
+  git -C "$(brew --repo homebrew/core)" fetch --unshallow
+
+Error: No previously deleted formula found.
+* swift-sh: for
+* firebase: ]0;Firebase CLI7.7.0
+./system_report.sh: line 76: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.35.0
-* stepman: 0.11.10
-* envman: 2.2.8
+* bitrise: 1.36.0
+* stepman: 0.11.11
+* envman: 2.2.9
 * cmd-bridge: 0.9.5
 ========================================
 
@@ -704,18 +711,18 @@ Software:
       Kernel Version: Darwin 18.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-previous-191107215714-8ahaYfuhnefHMRtUHf8Whd
+      Computer Name: stg-vs4mac-stable-previous-191116040356-4KXRcP29JXn38q3wxaww9Y
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 17 minutes
+      Time since boot: 2:46
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  157Gi   42Gi    79% 4443079 9223372036850332728    0%   /
+* Free disk space: /dev/disk1s1  200Gi  148Gi   51Gi    75% 4394311 9223372036850381496    0%   /
 ========================================
 
 
@@ -813,13 +820,6 @@ sqlite3
 systrace
 
 * build-tools content:
-17.0.0
-19.1.0
-21.1.2
-22.0.1
-23.0.3
-24.0.3
-25.0.3
 26.0.1
 26.0.2
 27.0.0
@@ -847,14 +847,6 @@ systrace
 7 directories, 0 files
 
 * platforms content:
-android-15
-android-17
-android-19
-android-21
-android-22
-android-23
-android-24
-android-25
 android-26
 android-27
 android-28
@@ -862,18 +854,6 @@ android-29
 
 * system-images content:
 /Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/system-images
-├── android-19
-│   └── default
-│       └── armeabi-v7a
-├── android-22
-│   └── default
-│       └── armeabi-v7a
-├── android-24
-│   └── default
-│       └── armeabi-v7a
-├── android-25
-│   └── google_apis
-│       └── armeabi-v7a
 ├── android-26
 │   └── google_apis
 │       └── x86
@@ -887,7 +867,7 @@ android-29
     └── google_apis
         └── x86
 
-24 directories, 0 files
+12 directories, 0 files
 
 ========================================
 
