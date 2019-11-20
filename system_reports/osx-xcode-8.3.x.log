@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_11_06_1
+* BITRISE_OSX_STACK_REV_ID: v2019_11_15_2
 ========================================
 
 
@@ -34,8 +34,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.1.16
-Homebrew/homebrew-core (git revision 9b218; last commit 2019-11-06)
-Homebrew/homebrew-cask (git revision c096; last commit 2019-11-07)
+Homebrew/homebrew-core (git revision 4e647; last commit 2019-11-16)
+Homebrew/homebrew-cask (git revision 262c; last commit 2019-11-15)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.3.1.0
@@ -46,13 +46,20 @@ Homebrew/homebrew-cask (git revision c096; last commit 2019-11-07)
 * imagemagick (convert): Version: ImageMagick 7.0.5-10 Q16 x86_64 2017-06-04 http://www.imagemagick.org
 * ghostscript (ps2ascii): 9.21
 * screen: Screen version 4.07.00 (GNU) 02-Oct-19
-./system_report.sh: line 74: wine: command not found
+Error: No available formula with the name "swift-sh" 
+Warning: homebrew/core is shallow clone. To get complete history run:
+  git -C "$(brew --repo homebrew/core)" fetch --unshallow
+
+Error: No previously deleted formula found.
+* swift-sh: for
+* firebase: ]0;Firebase CLI7.7.0
+./system_report.sh: line 76: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.35.0
-* stepman: 0.11.10
-* envman: 2.2.8
+* bitrise: 1.36.0
+* stepman: 0.11.11
+* envman: 2.2.9
 * cmd-bridge: 0.9.5
 ========================================
 
@@ -185,7 +192,7 @@ xmlrpc (0.2.1)
 
 === NPM global packages ==========================
 * Cordova: 7.0.1
-* Ionic: ? The Ionic CLI has an update available (3.3.0 => 5.4.5)! Would you like to inst
+* Ionic: ? The Ionic CLI has an update available (3.3.0 => 5.4.6)! Would you like to inst
 all it? (Y/n) [1A[14D[94C
 [1B
 ========================================
@@ -468,10 +475,10 @@ watchOS 3.2 (3.2 - 14V243) (com.apple.CoreSimulator.SimRuntime.watchOS-3-2)
     Apple Watch - 38mm (BF347887-4520-46A0-A62C-D3A3E2EF4550) (Shutdown)
     Apple Watch - 42mm (C679BEA9-1810-407E-8B6C-A34CD11A7B6C) (Shutdown)
 -- watchOS 3.1 --
-    Apple Watch - 38mm (D8E3B7B4-1C5E-4DB1-8F37-581E34CF7FDF) (Shutdown)
-    Apple Watch - 42mm (757CEDD2-11A9-42AC-ABE3-3AA6EB1210AA) (Shutdown)
-    Apple Watch Series 2 - 38mm (2A17C550-9849-4CCF-BC6D-FF787D1B71DF) (Shutdown)
-    Apple Watch Series 2 - 42mm (3520286D-35A5-4EEF-BA08-9FE6232E136F) (Shutdown)
+    Apple Watch - 38mm (7B4AD0A0-F7F0-45EF-8F69-0DCEEA425FE7) (Shutdown)
+    Apple Watch - 42mm (7CC6AAC3-4553-452A-88E5-C8C0B8984DB8) (Shutdown)
+    Apple Watch Series 2 - 38mm (24E8B104-066B-412E-BAEA-13300A462136) (Shutdown)
+    Apple Watch Series 2 - 42mm (2EDB365C-4CEE-4BAB-8B5D-8504F4E8F2A3) (Shutdown)
 -- watchOS 3.2 --
     Apple Watch - 38mm (AB0792A9-3712-4F62-BBE8-D1FBAAF40854) (Shutdown)
     Apple Watch - 42mm (35DB9537-433D-45E5-AE16-31D754559A4C) (Shutdown)
@@ -510,18 +517,18 @@ Software:
       Kernel Version: Darwin 16.7.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-8-3-191107214854-RQDxUR8FdNYWegM77FsgrP
+      Computer Name: stg-xcode-8-3-191116040356-VfaE2MLWYqs8hctzfvJCXK
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 24 minutes
+      Time since boot: 2:45
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  108Gi   91Gi    55% 3179317 4291787962    0%   /
+* Free disk space: /dev/disk0s2  199Gi  100Gi   99Gi    51% 3131387 4291835892    0%   /
 ========================================
 
 --- Android
@@ -584,13 +591,6 @@ sqlite3
 systrace
 
 * build-tools content:
-17.0.0
-19.1.0
-21.1.2
-22.0.1
-23.0.3
-24.0.3
-25.0.3
 26.0.1
 26.0.2
 27.0.0
@@ -618,14 +618,6 @@ systrace
 7 directories, 0 files
 
 * platforms content:
-android-15
-android-17
-android-19
-android-21
-android-22
-android-23
-android-24
-android-25
 android-26
 android-27
 android-28
@@ -633,18 +625,6 @@ android-29
 
 * system-images content:
 /usr/local/share/android-sdk/system-images
-├── android-19
-│   └── default
-│       └── armeabi-v7a
-├── android-22
-│   └── default
-│       └── armeabi-v7a
-├── android-24
-│   └── default
-│       └── armeabi-v7a
-├── android-25
-│   └── google_apis
-│       └── armeabi-v7a
 ├── android-26
 │   └── google_apis
 │       └── x86
@@ -655,7 +635,7 @@ android-29
     └── google_apis
         └── x86
 
-21 directories, 0 files
+9 directories, 0 files
 
 ========================================
 
