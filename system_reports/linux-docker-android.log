@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_10_24_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_11_13_1
 ========================================
 
 
@@ -33,7 +33,7 @@
 * Node.js: v10.17.0
 * NPM: 6.11.3
 * Yarn: 1.19.1
-aws-cli/1.16.281 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.13.17
+aws-cli/1.16.287 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.13.23
 * aws: 
 
 * git: git version 2.7.4
@@ -48,17 +48,17 @@ aws-cli/1.16.281 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.13.17
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 * gcc: gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
 * clang: clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)
-* imagemagick (convert): Version: ImageMagick 6.8.9-9 Q16 x86_64 2019-06-15 http://www.imagemagick.org
+* imagemagick (convert): Version: ImageMagick 6.8.9-9 Q16 x86_64 2019-11-12 http://www.imagemagick.org
 
 * sudo: Sudo version 1.8.16
 
-* docker: Docker version 19.03.4, build 9013bf583a
+* docker: Docker version 19.03.5, build 633a0ea838
 * docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
-* bitrise: 1.35.0
-* stepman: 0.11.10
-* envman: 2.2.8
+* bitrise: 1.36.0
+* stepman: 0.11.11
+* envman: 2.2.9
 /bitrise/bitrise-base/system_report.sh: line 91: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
@@ -91,7 +91,7 @@ faraday (0.17.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.7)
-fastlane (2.135.2)
+fastlane (2.136.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
@@ -162,7 +162,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-191114140149-jagaerovnq7pjvowdxmhrm 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-191121074808-pfsdesgl9fdjvpbkc7ydnm 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -211,8 +211,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-191114140149-jagaerovnq7pjvowdxmhrm
- ID: QGAB:ZS3A:NBC5:3D7M:OUVR:BTKI:ABNR:GLZH:ADE3:JJFF:GLHX:4GDK
+ Name: stg-latest-usc1b-191121074808-pfsdesgl9fdjvpbkc7ydnm
+ ID: LPJB:M5X4:KVCO:ZVGG:3BUI:7AVO:Z7W6:ND7Q:PWIS:SEBG:ZS5V:3DVP
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -228,12 +228,12 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-quay.io/bitriseio/android-ndk - 29.7GB
 bitriseio/android-ndk - 29.7GB
-quay.io/bitriseio/android - 26.6GB
-bitriseio/android - 26.6GB
-bitriseio/bitrise-base - 2.47GB
-quay.io/bitriseio/bitrise-base - 2.47GB
+quay.io/bitriseio/android-ndk - 29.7GB
+quay.io/bitriseio/android - 26.7GB
+bitriseio/android - 26.7GB
+bitriseio/bitrise-base - 2.51GB
+quay.io/bitriseio/bitrise-base - 2.51GB
 ========================================
 
 
@@ -243,10 +243,10 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop0       60G   29G   31G  49% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        97G   66G   32G  68% /bitrise
+/dev/sda1        97G   66G   31G  69% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        275M        5.2G        8.7M        1.8G        6.8G
+Mem:           7.3G        230M        4.6G        8.7M        2.5G        6.8G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -275,18 +275,18 @@ Swap:          4.0G          0B        4.0G
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 271.0.0
-alpha 2019.11.08
-beta 2019.11.08
+Google Cloud SDK 272.0.0
+alpha 2019.11.16
+beta 2019.11.16
 bq 2.0.50
-core 2019.11.08
+core 2019.11.16
 gsutil 4.46
-kubectl 2019.11.08
+kubectl 2019.11.16
 ========================================
 
 
 === Firebase Tools components ==========
-7.7.0
+7.8.1
 ========================================
 
 
@@ -318,7 +318,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * SDK Tools version: 26.1.1
 * Platform Tools version: 29.0.5
-* Emulator version: 29.2.8
+* Emulator version: 29.2.9
 ========================================
 
 
