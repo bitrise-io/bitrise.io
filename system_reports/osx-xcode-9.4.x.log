@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.0
-Homebrew/homebrew-core (git revision c2ba6; last commit 2019-11-27)
-Homebrew/homebrew-cask (git revision 60b11; last commit 2019-11-28)
+* brew: Homebrew 2.1.16
+Homebrew/homebrew-core (git revision 079ce5; last commit 2019-11-21)
+Homebrew/homebrew-cask (git revision b6142; last commit 2019-11-21)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.5.4
@@ -64,6 +64,229 @@ Error: No previously deleted formula found.
 * stepman: 0.11.11
 * envman: 2.2.9
 * cmd-bridge: 0.9.5
+========================================
+
+
+=== Brew list versions ==================
+ansible 2.5.4
+ant 1.10.7
+carthage 0.29.0
+coreutils 8.29
+flow 0.74.0
+freetype 2.9.1
+gdbm 1.14.1_1
+gettext 0.19.8.1
+ghostscript 9.23
+git 2.17.1
+git-lfs 2.4.2
+go 1.10.3
+gradle 6.0.1
+icu4c 61.1
+imagemagick 7.0.8-0
+jenv 0.5.2
+jpeg 9c
+libidn2 2.0.5
+libpng 1.6.34
+libtiff 4.0.9_3
+libtool 2.4.6_1
+libunistring 0.9.10
+libyaml 0.1.7
+little-cms2 2.9
+maven 3.6.2
+mercurial 4.6.1
+node 10.4.1
+openssl 1.0.2o_1
+pcre 8.42
+python@2 2.7.15
+readline 7.0.3_1
+ruby 2.5.1
+screen 4.6.2
+sqlite 3.24.0
+tree 1.7.0
+watchman 4.9.0
+wget 1.19.5
+xz 5.2.4
+yarn 1.7.0
+========================================
+
+
+=== Brew deps tree ==================
+ansible
+├── libyaml
+├── openssl@1.1
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+ant
+
+carthage
+
+coreutils
+
+flow
+
+freetype
+└── libpng
+
+gdbm
+
+gettext
+
+ghostscript
+└── libtiff
+    └── jpeg
+
+git
+├── gettext
+└── pcre2
+
+git-lfs
+
+go
+
+gradle
+
+icu4c
+
+imagemagick
+├── freetype
+│   └── libpng
+├── jpeg
+├── libheif
+│   ├── jpeg
+│   ├── libde265
+│   ├── libpng
+│   ├── shared-mime-info
+│   │   ├── gettext
+│   │   └── glib
+│   │       ├── gettext
+│   │       ├── libffi
+│   │       ├── pcre
+│   │       └── python
+│   │           ├── gdbm
+│   │           ├── openssl@1.1
+│   │           ├── readline
+│   │           ├── sqlite
+│   │           │   └── readline
+│   │           └── xz
+│   └── x265
+├── libomp
+├── libpng
+├── libtiff
+│   └── jpeg
+├── libtool
+├── little-cms2
+│   ├── jpeg
+│   └── libtiff
+│       └── jpeg
+├── openexr
+│   └── ilmbase
+├── openjpeg
+│   ├── libpng
+│   ├── libtiff
+│   │   └── jpeg
+│   └── little-cms2
+│       ├── jpeg
+│       └── libtiff
+│           └── jpeg
+├── webp
+│   ├── jpeg
+│   ├── libpng
+│   └── libtiff
+│       └── jpeg
+└── xz
+
+jenv
+
+jpeg
+
+libidn2
+├── gettext
+└── libunistring
+
+libpng
+
+libtiff
+└── jpeg
+
+libtool
+
+libunistring
+
+libyaml
+
+little-cms2
+├── jpeg
+└── libtiff
+    └── jpeg
+
+maven
+
+mercurial
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+node
+└── icu4c
+
+openssl
+
+pcre
+
+python@2
+├── gdbm
+├── openssl@1.1
+├── readline
+└── sqlite
+    └── readline
+
+readline
+
+ruby
+├── libyaml
+├── openssl@1.1
+└── readline
+
+screen
+
+sqlite
+└── readline
+
+tree
+
+watchman
+├── openssl@1.1
+├── pcre
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+wget
+├── libidn2
+│   ├── gettext
+│   └── libunistring
+└── openssl@1.1
+
+xz
+
+yarn
+└── node
+    └── icu4c
+
 ========================================
 
 
@@ -668,18 +891,18 @@ Software:
       Kernel Version: Darwin 17.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-9-4-191128162735-LR2PUSz5DNNo6VACwEwUFY
+      Computer Name: prd-std-b-xcode-9-4-191204095345-YamNJ7vksGr7UYisgfoKFP
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 24 minutes
+      Time since boot: 1:03
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  141Gi   58Gi    71% 4175790 4290791489    0%   /
+* Free disk space: /dev/disk0s2  199Gi  141Gi   58Gi    71% 4171793 4290795486    0%   /
 ========================================
 
 --- Android
