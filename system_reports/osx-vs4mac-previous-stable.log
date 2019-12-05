@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.0
-Homebrew/homebrew-core (git revision c2ba6; last commit 2019-11-27)
-Homebrew/homebrew-cask (git revision 60b11; last commit 2019-11-28)
+* brew: Homebrew 2.1.16
+Homebrew/homebrew-core (git revision 079ce5; last commit 2019-11-21)
+Homebrew/homebrew-cask (git revision b6142; last commit 2019-11-21)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.7.9
@@ -45,7 +45,6 @@ Homebrew/homebrew-cask (git revision 60b11; last commit 2019-11-28)
 * gtimeout: timeout (GNU coreutils) 8.31
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.95.2
-Please update to the latest Carthage version: 0.34.0. You currently are on 0.33.0
 * carthage: 0.33.0
 * imagemagick (convert): Version: ImageMagick 7.0.8-35 Q16 x86_64 2019-03-25 https://imagemagick.org
 * ghostscript (ps2ascii): 9.26
@@ -65,6 +64,333 @@ Error: No previously deleted formula found.
 * stepman: 0.11.11
 * envman: 2.2.9
 * cmd-bridge: 0.9.5
+========================================
+
+
+=== Brew list versions ==================
+ansible 2.7.9
+autoconf 2.69
+carthage 0.33.0
+coreutils 8.31
+flow 0.95.2
+freetype 2.10.0
+gdbm 1.18.1
+gettext 0.19.8.1
+ghostscript 9.26_1
+git 2.21.0
+git-lfs 2.7.1
+glib 2.60.0_1
+go 1.12.1
+icu4c 63.1
+ilmbase 2.2.1
+imagemagick 7.0.8-35
+jenv 0.5.2
+jpeg 9c
+libde265 1.0.3
+libffi 3.2.1
+libheif 1.4.0
+libidn2 2.1.1a
+libomp 7.0.0
+libpng 1.6.36
+libtiff 4.0.10_1
+libtool 2.4.6_1
+libunistring 0.9.10
+libyaml 0.2.2
+little-cms2 2.9
+mercurial 4.9.1
+node 11.12.0
+node@10 10.15.2
+openexr 2.2.0_1
+openjpeg 2.3.0
+openssl 1.0.2r
+pcre 8.43
+pcre2 10.32
+pkg-config 0.29.2
+python 3.7.2_2
+python@2 2.7.16
+rbenv 1.1.2
+readline 8.0.0
+ruby-build 20190320
+screen 4.6.2
+shared-mime-info 1.12
+sqlite 3.27.2
+tree 1.8.0
+watchman 4.9.0_2
+webp 1.0.2
+wget 1.20.1_4
+x265 3.0
+xz 5.2.4
+yarn 1.15.2
+========================================
+
+
+=== Brew deps tree ==================
+ansible
+├── libyaml
+├── openssl@1.1
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+autoconf
+
+carthage
+
+coreutils
+
+flow
+
+freetype
+└── libpng
+
+gdbm
+
+gettext
+
+ghostscript
+└── libtiff
+    └── jpeg
+
+git
+├── gettext
+└── pcre2
+
+git-lfs
+
+glib
+├── gettext
+├── libffi
+├── pcre
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+go
+
+icu4c
+
+ilmbase
+
+imagemagick
+├── freetype
+│   └── libpng
+├── jpeg
+├── libheif
+│   ├── jpeg
+│   ├── libde265
+│   ├── libpng
+│   ├── shared-mime-info
+│   │   ├── gettext
+│   │   └── glib
+│   │       ├── gettext
+│   │       ├── libffi
+│   │       ├── pcre
+│   │       └── python
+│   │           ├── gdbm
+│   │           ├── openssl@1.1
+│   │           ├── readline
+│   │           ├── sqlite
+│   │           │   └── readline
+│   │           └── xz
+│   └── x265
+├── libomp
+├── libpng
+├── libtiff
+│   └── jpeg
+├── libtool
+├── little-cms2
+│   ├── jpeg
+│   └── libtiff
+│       └── jpeg
+├── openexr
+│   └── ilmbase
+├── openjpeg
+│   ├── libpng
+│   ├── libtiff
+│   │   └── jpeg
+│   └── little-cms2
+│       ├── jpeg
+│       └── libtiff
+│           └── jpeg
+├── webp
+│   ├── jpeg
+│   ├── libpng
+│   └── libtiff
+│       └── jpeg
+└── xz
+
+jenv
+
+jpeg
+
+libde265
+
+libffi
+
+libheif
+├── jpeg
+├── libde265
+├── libpng
+├── shared-mime-info
+│   ├── gettext
+│   └── glib
+│       ├── gettext
+│       ├── libffi
+│       ├── pcre
+│       └── python
+│           ├── gdbm
+│           ├── openssl@1.1
+│           ├── readline
+│           ├── sqlite
+│           │   └── readline
+│           └── xz
+└── x265
+
+libidn2
+├── gettext
+└── libunistring
+
+libomp
+
+libpng
+
+libtiff
+└── jpeg
+
+libtool
+
+libunistring
+
+libyaml
+
+little-cms2
+├── jpeg
+└── libtiff
+    └── jpeg
+
+mercurial
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+node
+└── icu4c
+
+node@10
+└── icu4c
+
+openexr
+└── ilmbase
+
+openjpeg
+├── libpng
+├── libtiff
+│   └── jpeg
+└── little-cms2
+    ├── jpeg
+    └── libtiff
+        └── jpeg
+
+openssl
+
+pcre
+
+pcre2
+
+pkg-config
+
+python
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+└── xz
+
+python@2
+├── gdbm
+├── openssl@1.1
+├── readline
+└── sqlite
+    └── readline
+
+rbenv
+└── ruby-build
+    ├── autoconf
+    ├── pkg-config
+    └── readline
+
+readline
+
+ruby-build
+├── autoconf
+├── pkg-config
+└── readline
+
+screen
+
+shared-mime-info
+├── gettext
+└── glib
+    ├── gettext
+    ├── libffi
+    ├── pcre
+    └── python
+        ├── gdbm
+        ├── openssl@1.1
+        ├── readline
+        ├── sqlite
+        │   └── readline
+        └── xz
+
+sqlite
+└── readline
+
+tree
+
+watchman
+├── openssl@1.1
+├── pcre
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+webp
+├── jpeg
+├── libpng
+└── libtiff
+    └── jpeg
+
+wget
+├── libidn2
+│   ├── gettext
+│   └── libunistring
+└── openssl@1.1
+
+x265
+
+xz
+
+yarn
+└── node
+    └── icu4c
+
 ========================================
 
 
@@ -712,18 +1038,18 @@ Software:
       Kernel Version: Darwin 18.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-previous-191128163145-DNrhpFTtJSym2Tvhjf7YxS
+      Computer Name: prd-std-y-vs4mac-stable-previous-191204101511-8JggrshD7xnZAeqjGoEbTK
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 22 minutes
+      Time since boot: 42 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  150Gi   50Gi    76% 4468198 9223372036850307609    0%   /
+* Free disk space: /dev/disk1s1  200Gi  150Gi   50Gi    76% 4464068 9223372036850311739    0%   /
 ========================================
 
 

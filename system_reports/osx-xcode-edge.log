@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.0
-Homebrew/homebrew-core (git revision 808d3; last commit 2019-11-28)
-Homebrew/homebrew-cask (git revision e1f2f4; last commit 2019-11-28)
+* brew: Homebrew 2.1.16
+Homebrew/homebrew-core (git revision 079c; last commit 2019-11-21)
+Homebrew/homebrew-cask (git revision 3dd39d; last commit 2019-11-21)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.8.5
@@ -64,6 +64,342 @@ Error: No previously deleted formula found.
 * stepman: 0.11.11
 * envman: 2.2.9
 * cmd-bridge: 0.9.5
+========================================
+
+
+=== Brew list versions ==================
+ansible 2.8.5
+ant 1.10.7
+autoconf 2.69
+carthage 0.33.0
+coreutils 8.31
+flow 0.109.0
+freetype 2.10.1
+gdbm 1.18.1
+gettext 0.20.1
+ghostscript 9.27_1
+git 2.23.0_1
+git-lfs 2.8.0
+glib 2.62.0_1
+go 1.13.1
+gradle 5.6.2
+icu4c 64.2
+ilmbase 2.3.0
+imagemagick 7.0.8-66
+jenv 0.5.2
+jpeg 9c
+libde265 1.0.3
+libffi 3.2.1
+libheif 1.5.1
+libidn2 2.2.0_1
+libomp 9.0.0
+libpng 1.6.37
+libtiff 4.0.10_1
+libtool 2.4.6_1
+libunistring 0.9.10
+libyaml 0.2.2
+little-cms2 2.9
+maven 3.6.2
+mercurial 5.1.1_2
+node 12.11.1
+node@10 10.16.3
+openexr 2.3.0
+openjpeg 2.3.1
+openssl@1.1 1.1.1d
+pcre 8.43
+pcre2 10.33
+pkg-config 0.29.2
+python 3.7.4_1
+python@2 2.7.16_1
+rbenv 1.1.2
+readline 8.0.1
+ruby-build 20191004
+screen 4.6.2
+shared-mime-info 1.14
+sqlite 3.29.0
+tree 1.8.0
+watchman 4.9.0_3
+webp 1.0.3
+wget 1.20.3_1
+x265 3.1.2
+xz 5.2.4
+yarn 1.19.0
+========================================
+
+
+=== Brew deps tree ==================
+ansible
+├── libyaml
+├── openssl@1.1
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+ant
+
+autoconf
+
+carthage
+
+coreutils
+
+flow
+
+freetype
+└── libpng
+
+gdbm
+
+gettext
+
+ghostscript
+└── libtiff
+    └── jpeg
+
+git
+├── gettext
+└── pcre2
+
+git-lfs
+
+glib
+├── gettext
+├── libffi
+├── pcre
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+go
+
+gradle
+
+icu4c
+
+ilmbase
+
+imagemagick
+├── freetype
+│   └── libpng
+├── jpeg
+├── libheif
+│   ├── jpeg
+│   ├── libde265
+│   ├── libpng
+│   ├── shared-mime-info
+│   │   ├── gettext
+│   │   └── glib
+│   │       ├── gettext
+│   │       ├── libffi
+│   │       ├── pcre
+│   │       └── python
+│   │           ├── gdbm
+│   │           ├── openssl@1.1
+│   │           ├── readline
+│   │           ├── sqlite
+│   │           │   └── readline
+│   │           └── xz
+│   └── x265
+├── libomp
+├── libpng
+├── libtiff
+│   └── jpeg
+├── libtool
+├── little-cms2
+│   ├── jpeg
+│   └── libtiff
+│       └── jpeg
+├── openexr
+│   └── ilmbase
+├── openjpeg
+│   ├── libpng
+│   ├── libtiff
+│   │   └── jpeg
+│   └── little-cms2
+│       ├── jpeg
+│       └── libtiff
+│           └── jpeg
+├── webp
+│   ├── jpeg
+│   ├── libpng
+│   └── libtiff
+│       └── jpeg
+└── xz
+
+jenv
+
+jpeg
+
+libde265
+
+libffi
+
+libheif
+├── jpeg
+├── libde265
+├── libpng
+├── shared-mime-info
+│   ├── gettext
+│   └── glib
+│       ├── gettext
+│       ├── libffi
+│       ├── pcre
+│       └── python
+│           ├── gdbm
+│           ├── openssl@1.1
+│           ├── readline
+│           ├── sqlite
+│           │   └── readline
+│           └── xz
+└── x265
+
+libidn2
+├── gettext
+└── libunistring
+
+libomp
+
+libpng
+
+libtiff
+└── jpeg
+
+libtool
+
+libunistring
+
+libyaml
+
+little-cms2
+├── jpeg
+└── libtiff
+    └── jpeg
+
+maven
+
+mercurial
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+node
+└── icu4c
+
+node@10
+└── icu4c
+
+openexr
+└── ilmbase
+
+openjpeg
+├── libpng
+├── libtiff
+│   └── jpeg
+└── little-cms2
+    ├── jpeg
+    └── libtiff
+        └── jpeg
+
+openssl@1.1
+
+pcre
+
+pcre2
+
+pkg-config
+
+python
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+└── xz
+
+python@2
+├── gdbm
+├── openssl@1.1
+├── readline
+└── sqlite
+    └── readline
+
+rbenv
+└── ruby-build
+    ├── autoconf
+    ├── pkg-config
+    └── readline
+
+readline
+
+ruby-build
+├── autoconf
+├── pkg-config
+└── readline
+
+screen
+
+shared-mime-info
+├── gettext
+└── glib
+    ├── gettext
+    ├── libffi
+    ├── pcre
+    └── python
+        ├── gdbm
+        ├── openssl@1.1
+        ├── readline
+        ├── sqlite
+        │   └── readline
+        └── xz
+
+sqlite
+└── readline
+
+tree
+
+watchman
+├── openssl@1.1
+├── pcre
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+webp
+├── jpeg
+├── libpng
+└── libtiff
+    └── jpeg
+
+wget
+├── libidn2
+│   ├── gettext
+│   └── libunistring
+└── openssl@1.1
+
+x265
+
+xz
+
+yarn
+└── node
+    └── icu4c
+
 ========================================
 
 
@@ -131,12 +467,12 @@ e2mmap (default: 0.1.0)
 emoji_regex (1.0.1)
 escape (0.0.4)
 etc (default: 1.0.1)
-excon (0.69.1)
-faraday (0.17.1)
+excon (0.68.0)
+faraday (0.17.0)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.7)
-fastlane (2.137.0)
+fastlane (2.136.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.1.0)
@@ -742,18 +1078,18 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-191128163600-ffUQGroLtkXhg6b78ARfic
+      Computer Name: prd-std-r-xcode-edge-191203165745-SirhjKBk6gi8UFzCNtj3Pd
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 5 minutes
+      Time since boot: 17:59
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  162Gi   38Gi    82% 4679257 9223372036850096550    0%   /
+* Free disk space: /dev/disk1s1  200Gi  161Gi   38Gi    82% 4674795 9223372036850101012    0%   /
 ========================================
 
 --- Android
