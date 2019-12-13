@@ -24,73 +24,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 
 * git: git version 2.17.1
 * git lfs: git-lfs/2.4.2 (GitHub; darwin amd64; go 1.10.2)
-ERROR:root:code for hash md5 was not found.
-Traceback (most recent call last):
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type md5
-ERROR:root:code for hash sha1 was not found.
-Traceback (most recent call last):
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type sha1
-ERROR:root:code for hash sha224 was not found.
-Traceback (most recent call last):
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type sha224
-ERROR:root:code for hash sha256 was not found.
-Traceback (most recent call last):
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type sha256
-ERROR:root:code for hash sha384 was not found.
-Traceback (most recent call last):
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type sha384
-ERROR:root:code for hash sha512 was not found.
-Traceback (most recent call last):
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/Cellar/python@2/2.7.15/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type sha512
-Traceback (most recent call last):
-  File "/usr/local/bin/hg", line 41, in <module>
-    dispatch.run()
-  File "/usr/local/Cellar/mercurial/4.6.1/lib/python2.7/site-packages/hgdemandimport/demandimportpy2.py", line 145, in __getattr__
-    self._load()
-  File "/usr/local/Cellar/mercurial/4.6.1/lib/python2.7/site-packages/hgdemandimport/demandimportpy2.py", line 90, in _load
-    mod = _hgextimport(_origimport, head, globals, locals, None, level)
-  File "/usr/local/Cellar/mercurial/4.6.1/lib/python2.7/site-packages/hgdemandimport/demandimportpy2.py", line 41, in _hgextimport
-    return importfunc(name, globals, *args, **kwargs)
-  File "/usr/local/Cellar/mercurial/4.6.1/lib/python2.7/site-packages/mercurial/dispatch.py", line 597, in <module>
-    class lazyaliasentry(object):
-  File "/usr/local/Cellar/mercurial/4.6.1/lib/python2.7/site-packages/mercurial/dispatch.py", line 607, in lazyaliasentry
-    @util.propertycache
-  File "/usr/local/Cellar/mercurial/4.6.1/lib/python2.7/site-packages/hgdemandimport/demandimportpy2.py", line 145, in __getattr__
-    self._load()
-  File "/usr/local/Cellar/mercurial/4.6.1/lib/python2.7/site-packages/hgdemandimport/demandimportpy2.py", line 90, in _load
-    mod = _hgextimport(_origimport, head, globals, locals, None, level)
-  File "/usr/local/Cellar/mercurial/4.6.1/lib/python2.7/site-packages/hgdemandimport/demandimportpy2.py", line 41, in _hgextimport
-    return importfunc(name, globals, *args, **kwargs)
-  File "/usr/local/Cellar/mercurial/4.6.1/lib/python2.7/site-packages/mercurial/util.py", line 212, in <module>
-    'md5': hashlib.md5,
-  File "/usr/local/Cellar/mercurial/4.6.1/lib/python2.7/site-packages/hgdemandimport/demandimportpy2.py", line 146, in __getattr__
-    return getattr(self._module, attr)
-AttributeError: 'module' object has no attribute 'md5'
-* mercurial/hg: 
+* mercurial/hg: Mercurial Distributed SCM (version 5.2)
 * curl: curl 7.54.0 (x86_64-apple-darwin17.0) libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0
 * wget: GNU Wget 1.20.3 built on darwin17.7.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -104,66 +38,13 @@ Homebrew/homebrew-core (git revision 341a18; last commit 2019-12-12)
 Homebrew/homebrew-cask (git revision 42947; last commit 2019-12-12)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
-ERROR:root:code for hash md5 was not found.
-Traceback (most recent call last):
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type md5
-ERROR:root:code for hash sha1 was not found.
-Traceback (most recent call last):
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type sha1
-ERROR:root:code for hash sha224 was not found.
-Traceback (most recent call last):
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type sha224
-ERROR:root:code for hash sha256 was not found.
-Traceback (most recent call last):
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type sha256
-ERROR:root:code for hash sha384 was not found.
-Traceback (most recent call last):
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type sha384
-ERROR:root:code for hash sha512 was not found.
-Traceback (most recent call last):
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 147, in <module>
-    globals()[__func_name] = __get_hash(__func_name)
-  File "/usr/local/opt/python@2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/hashlib.py", line 97, in __get_builtin_constructor
-    raise ValueError('unsupported hash type ' + name)
-ValueError: unsupported hash type sha512
-Traceback (most recent call last):
-  File "/usr/local/bin/ansible", line 67, in <module>
-    import ansible.constants as C
-  File "/usr/local/Cellar/ansible/2.5.4/libexec/lib/python2.7/site-packages/ansible/constants.py", line 11, in <module>
-    from jinja2 import Template
-  File "/usr/local/Cellar/ansible/2.5.4/libexec/lib/python2.7/site-packages/jinja2/__init__.py", line 36, in <module>
-    from jinja2.loaders import BaseLoader, FileSystemLoader, PackageLoader, \
-  File "/usr/local/Cellar/ansible/2.5.4/libexec/lib/python2.7/site-packages/jinja2/loaders.py", line 16, in <module>
-    from hashlib import sha1
-ImportError: cannot import name sha1
-* Ansible: 
+* Ansible: ansible 2.9.2
+  configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/Cellar/ansible/2.9.2/libexec/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.29
-dyld: Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
-  Referenced from: /usr/local/Cellar/watchman/4.9.0/libexec/bin/watchman
-  Reason: image not found
-* watchman: 
+* watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.74.0
-Please update to the latest Carthage version: 0.34.0. You currently are on 0.29.0
 * carthage: 0.29.0
 * imagemagick (convert): Version: ImageMagick 7.0.8-0 Q16 x86_64 2018-06-13 https://www.imagemagick.org
 * ghostscript (ps2ascii): 9.23
@@ -187,14 +68,14 @@ Error: No previously deleted formula found.
 
 
 === Brew list versions ==================
-ansible 2.5.4
+ansible 2.9.2
 ant 1.10.7
 autoconf 2.69
 carthage 0.29.0
 coreutils 8.29
 flow 0.74.0
 freetype 2.9.1
-gdbm 1.14.1_1
+gdbm 1.14.1_1 1.18.1
 gettext 0.19.8.1 0.20.1
 ghostscript 9.23
 git 2.17.1
@@ -210,23 +91,24 @@ libpng 1.6.34
 libtiff 4.0.9_3
 libtool 2.4.6_1
 libunistring 0.9.10
-libyaml 0.1.7
+libyaml 0.1.7 0.2.2
 little-cms2 2.9
 maven 3.6.3
-mercurial 4.6.1
+mercurial 5.2_1
 node 10.4.1
 openssl 1.0.2o_1
 openssl@1.1 1.1.1d
-pcre 8.42
+pcre 8.42 8.43
 pkg-config 0.29.2
+python 3.7.5
 python@2 2.7.15
 rbenv 1.1.2
 readline 7.0.3_1 8.0.1
 ruby-build 20191205
 screen 4.6.2
-sqlite 3.24.0
+sqlite 3.24.0 3.30.1
 tree 1.7.0
-watchman 4.9.0
+watchman 4.9.0_3
 wget 1.20.3_2
 xz 5.2.4
 yarn 1.7.0
@@ -369,6 +251,14 @@ openssl@1.1
 pcre
 
 pkg-config
+
+python
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+└── xz
 
 python@2
 ├── gdbm
@@ -1034,18 +924,18 @@ Software:
       Kernel Version: Darwin 17.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-9-4-191213134200-zSLTY9VFLdBeesMSsmmQ9N
+      Computer Name: stg-xcode-9-4-191213173335-enGRCG9xJ2v5jsbttFR4rf
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 17 minutes
+      Time since boot: 21 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  142Gi   57Gi    72% 4246442 4290720837    0%   /
+* Free disk space: /dev/disk0s2  199Gi  142Gi   57Gi    72% 4258007 4290709272    0%   /
 ========================================
 
 --- Android
