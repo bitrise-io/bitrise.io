@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_11_20_1
+* BITRISE_OSX_STACK_REV_ID: v2019_12_12_1
 ========================================
 
 
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.1.16
-Homebrew/homebrew-core (git revision 079c; last commit 2019-11-21)
-Homebrew/homebrew-cask (git revision b6142; last commit 2019-11-21)
+* brew: Homebrew 2.2.1
+Homebrew/homebrew-core (git revision 341a18; last commit 2019-12-12)
+Homebrew/homebrew-cask (git revision 75d40; last commit 2019-12-12)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.8.5
@@ -55,14 +55,14 @@ Warning: homebrew/core is shallow clone. To get complete history run:
 
 Error: No previously deleted formula found.
 * swift-sh: for
-* firebase: ]0;Firebase CLI7.8.1
+* firebase: ]0;Firebase CLI7.9.0
 ./system_report.sh: line 76: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.36.0
-* stepman: 0.11.11
-* envman: 2.2.9
+* bitrise: 1.37.0
+* stepman: 0.11.12
+* envman: 2.2.10
 * cmd-bridge: 0.9.5
 ========================================
 
@@ -404,15 +404,12 @@ yarn
 
 
 === Ruby and rubygems ==================
-* Ruby (default): ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-darwin18]
+* Ruby (default): ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-darwin18]
 --- Available ruby versions ---
   system
-  2.4.5
   2.4.9
-  2.5.3
   2.5.7
-* 2.6.3 (set by /Users/vagrant/.rbenv/version)
-  2.6.5
+* 2.6.5 (set by /Users/vagrant/.rbenv/version)
 -------------------------------
 * rbenv: 1.1.2
 * Rubygems: 3.0.6
@@ -438,8 +435,8 @@ certified (1.0.0)
 CFPropertyList (3.0.1)
 claide (1.0.3)
 cmath (default: 1.0.0)
-cocoapods (1.8.4)
-cocoapods-core (1.8.4)
+cocoapods (1.8.4, 1.8.1)
+cocoapods-core (1.8.4, 1.8.1)
 cocoapods-deintegrate (1.0.4)
 cocoapods-downloader (1.2.2)
 cocoapods-plugins (1.0.0)
@@ -467,12 +464,12 @@ e2mmap (default: 0.1.0)
 emoji_regex (1.0.1)
 escape (0.0.4)
 etc (default: 1.0.1)
-excon (0.68.0)
-faraday (0.17.0)
+excon (0.67.0)
+faraday (0.16.2, 0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.7)
-fastlane (2.134.0)
+fastlane (2.133.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.1.0)
@@ -482,11 +479,11 @@ fuzzy_match (2.0.4)
 gdbm (default: 2.0.0)
 gh_inspector (1.1.3)
 google-api-client (0.23.9)
-google-cloud-core (1.4.1)
-google-cloud-env (1.3.0)
+google-cloud-core (1.3.1)
+google-cloud-env (1.2.1)
 google-cloud-storage (1.16.0)
 googleauth (0.6.7)
-highline (2.0.3, 1.7.10)
+highline (2.0.2, 1.7.10)
 houston (2.4.0)
 http-cookie (1.0.3)
 httpclient (2.8.3)
@@ -501,12 +498,12 @@ matrix (default: 0.1.0)
 mechanize (2.5.1)
 memoist (0.16.0)
 mime-types (3.3, 1.25.1)
-mime-types-data (3.2019.1009)
+mime-types-data (3.2019.0904)
 mini_magick (4.9.5)
 mini_portile2 (2.1.0)
 minitest (5.11.3)
 molinillo (0.6.6)
-multi_json (1.14.1)
+multi_json (1.13.1)
 multi_xml (0.6.0)
 multipart-post (2.1.1, 2.0.0)
 mutex_m (default: 0.1.0)
@@ -533,7 +530,7 @@ public_suffix (2.0.5)
 rack (1.6.11)
 rack-protection (1.5.5)
 rake (12.3.2)
-rdoc (default: 6.1.0)
+rdoc (default: 6.1.2)
 representable (3.0.4)
 retriable (3.1.2)
 rexml (default: 3.1.9)
@@ -547,7 +544,7 @@ sdbm (default: 1.0.0)
 security (0.1.3)
 shell (default: 0.7)
 shenzhen (0.14.3)
-signet (0.12.0)
+signet (0.11.0)
 simctl (1.6.6)
 sinatra (1.4.8)
 slack-notifier (2.3.2)
@@ -573,7 +570,7 @@ venice (0.5.0)
 webrick (default: 1.4.2)
 webrobots (0.1.2)
 word_wrap (1.0.0)
-xcodeproj (1.13.0)
+xcodeproj (1.12.0)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
@@ -705,6 +702,8 @@ iOS 12.0 (12.0 - 16A366) - com.apple.CoreSimulator.SimRuntime.iOS-12-0
 iOS 12.1 (12.1 - 16B91) - com.apple.CoreSimulator.SimRuntime.iOS-12-1 
 iOS 12.2 (12.2 - 16E226) - com.apple.CoreSimulator.SimRuntime.iOS-12-2 
 iOS 12.4 (12.4 - 16G73) - com.apple.CoreSimulator.SimRuntime.iOS-12-4 
+iOS 13.0 (13.0 - 17A577) - com.apple.CoreSimulator.SimRuntime.iOS-13-0 
+iOS 13.1 (13.1 - 17A844) - com.apple.CoreSimulator.SimRuntime.iOS-13-1 
 iOS 13.2 (13.2.2 - 17B102) - com.apple.CoreSimulator.SimRuntime.iOS-13-2 
 tvOS 10.2 (10.2 - 14W260) - com.apple.CoreSimulator.SimRuntime.tvOS-10-2 
 tvOS 11.0 (11.0 - 15J380) - com.apple.CoreSimulator.SimRuntime.tvOS-11-0 
@@ -725,6 +724,7 @@ watchOS 5.0 (5.0 - 16R363) - com.apple.CoreSimulator.SimRuntime.watchOS-5-0
 watchOS 5.1 (5.1 - 16R591) - com.apple.CoreSimulator.SimRuntime.watchOS-5-1 
 watchOS 5.2 (5.2 - 16T224) - com.apple.CoreSimulator.SimRuntime.watchOS-5-2 
 watchOS 5.3 (5.3 - 16U567) - com.apple.CoreSimulator.SimRuntime.watchOS-5-3 
+watchOS 6.0 (6.0 - 17R575) - com.apple.CoreSimulator.SimRuntime.watchOS-6-0 
 watchOS 6.1 (6.1 - 17S83) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1 
 == Devices ==
 -- iOS 10.3 --
@@ -939,6 +939,26 @@ watchOS 6.1 (6.1 - 17S83) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
     iPad Pro (11-inch) (FF9112B3-B40F-4A23-A94D-DBF8F1A232FB) (Shutdown) 
     iPad Pro (12.9-inch) (3rd generation) (81B34853-B7B7-4629-93D8-902D888E73D3) (Shutdown) 
     iPad Air (3rd generation) (444A91A1-EAD7-4F6B-8EC5-EA5F039F09B1) (Shutdown) 
+-- iOS 13.0 --
+    iPhone 8 (BAB6DAB1-F34B-4556-982E-411E19F4476B) (Shutdown) 
+    iPhone 8 Plus (E3FB30EC-9D60-4CDC-BDD9-4E72EC9218BC) (Shutdown) 
+    iPhone 11 (C229DD1B-3CE6-4952-B8A7-C96062995FA9) (Shutdown) 
+    iPhone 11 Pro (F86E4687-4DBB-4DBE-8785-F9077D0051A5) (Shutdown) 
+    iPhone 11 Pro Max (6F7364EF-D179-40B3-AAE8-847FE677D073) (Shutdown) 
+    iPad Pro (9.7-inch) (87709C1B-A2A5-44F2-90EB-A0CF04325575) (Shutdown) 
+    iPad Pro (11-inch) (84D7408C-2A44-4B30-A83A-0FFA2303EBA7) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (B466AAC3-1E2A-427F-B18E-DA33AFD56CDD) (Shutdown) 
+    iPad Air (3rd generation) (9AFBFBB7-00BF-4BB8-8C1C-1FEDD4928FF8) (Shutdown) 
+-- iOS 13.1 --
+    iPhone 8 (46121397-1271-47FC-ADEC-14C573F8B1C7) (Shutdown) 
+    iPhone 8 Plus (7FDC0186-E323-4DCC-A551-F1E8BE3DFF81) (Shutdown) 
+    iPhone 11 (5F553FBA-D19E-40F3-993C-444BB7AD8614) (Shutdown) 
+    iPhone 11 Pro (DAB5082C-4D8B-41AD-9C17-4B70D627B929) (Shutdown) 
+    iPhone 11 Pro Max (9EB86A56-B8A9-4EFB-83DD-CA545B03E380) (Shutdown) 
+    iPad Pro (9.7-inch) (CFADC040-4C11-45F6-A993-7C1547F0BF96) (Shutdown) 
+    iPad Pro (11-inch) (B3A6DA7F-F69F-4014-B858-C0231AEB8EA6) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (B02BFD3E-8952-4785-9533-BBD96F8E303E) (Shutdown) 
+    iPad Air (3rd generation) (0CB42FD9-79CF-4B88-9DB4-348B2FB6FD1A) (Shutdown) 
 -- iOS 13.2 --
     iPhone 8 (7AE647E5-603E-4FB4-B420-D5C3F18E6BF9) (Shutdown) 
     iPhone 8 Plus (D52FCB1A-7C77-4A93-8B90-C214E810C7F3) (Shutdown) 
@@ -1046,6 +1066,11 @@ watchOS 6.1 (6.1 - 17S83) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
     Apple Watch Series 3 - 42mm (503C2038-DD8D-406C-9DBB-72A00AFDEE2F) (Shutdown) 
     Apple Watch Series 4 - 40mm (08FEC067-9872-4D78-8C2A-2A8B6B710D03) (Shutdown) 
     Apple Watch Series 4 - 44mm (23DB7D1F-C1BD-4493-8144-F816A92F339E) (Shutdown) 
+-- watchOS 6.0 --
+    Apple Watch Series 4 - 40mm (92E7A712-5892-4B48-8703-0C5E7B1FA998) (Shutdown) 
+    Apple Watch Series 4 - 44mm (8FD07916-D8DB-4653-AF98-C70D727C2969) (Shutdown) 
+    Apple Watch Series 5 - 40mm (BC7AA0B1-3FB6-4E3D-8E09-F039E67F6063) (Shutdown) 
+    Apple Watch Series 5 - 44mm (5D86025B-896E-42FF-94E6-12FA6FBE20B1) (Shutdown) 
 -- watchOS 6.1 --
     Apple Watch Series 4 - 40mm (3CA4F728-BC02-4800-B8FA-ADCB545EB117) (Shutdown) 
     Apple Watch Series 4 - 44mm (9A2CA57F-6E8E-4B1F-A8AD-CD34A0486EF7) (Shutdown) 
@@ -1078,18 +1103,18 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: prd-std-g-xcode-11-2-191204105418-9hUBzxUuXrVGdkP5zNwQN3
+      Computer Name: stg-xcode-11-2-191213172314-9VxxWrVara4EktRspugmP8
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 3 minutes
+      Time since boot: 22 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  162Gi   37Gi    82% 4695906 9223372036850079901    0%   /
+* Free disk space: /dev/disk1s1  200Gi  172Gi   27Gi    87% 5072689 9223372036849703118    0%   /
 ========================================
 
 --- Android

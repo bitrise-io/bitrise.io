@@ -7,13 +7,13 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_11_20_1
+* BITRISE_OSX_STACK_REV_ID: v2019_12_12_1
 ========================================
 
 
 === Pre-installed tool versions ========
 * Go: go version go1.8.3 darwin/amd64
-* Python: Python 2.7.13
+* Python: Python 2.7.10
 * Node.js: v8.0.0
 * NPM: 5.0.1
 * Yarn: 0.24.6
@@ -24,23 +24,26 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 
 * git: git version 2.13.1
 * git lfs: git-lfs/2.1.1 (GitHub; darwin amd64; go 1.8.1)
-* mercurial/hg: Mercurial Distributed SCM (version 4.2.1)
+* mercurial/hg: Mercurial Distributed SCM (version 5.2)
 * curl: curl 7.54.0 (x86_64-apple-darwin16.0) libcurl/7.54.0 SecureTransport zlib/1.2.8
-* wget: GNU Wget 1.19.1 built on darwin16.6.0.
+* wget: GNU Wget 1.20.3 built on darwin16.7.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.1.16
-Homebrew/homebrew-core (git revision 079ce5; last commit 2019-11-21)
-Homebrew/homebrew-cask (git revision 98a4; last commit 2019-11-21)
+* brew: Homebrew 2.2.1
+Homebrew/homebrew-core (git revision 341a18; last commit 2019-12-12)
+Homebrew/homebrew-cask (git revision 4294; last commit 2019-12-12)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
-* Ansible: ansible 2.3.1.0
+* Ansible: ansible 2.9.2
+  configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/Cellar/ansible/2.9.2/libexec/lib/python3.7/site-packages/ansible
+  executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.27
-* watchman: 4.7.0
+* watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.47.0
 * carthage: 0.23.0
 * imagemagick (convert): Version: ImageMagick 7.0.5-10 Q16 x86_64 2017-06-04 http://www.imagemagick.org
@@ -52,20 +55,20 @@ Warning: homebrew/core is shallow clone. To get complete history run:
 
 Error: No previously deleted formula found.
 * swift-sh: for
-* firebase: ]0;Firebase CLI7.8.1
+* firebase: ]0;Firebase CLI7.9.0
 ./system_report.sh: line 76: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.36.0
-* stepman: 0.11.11
-* envman: 2.2.9
+* bitrise: 1.37.0
+* stepman: 0.11.12
+* envman: 2.2.10
 * cmd-bridge: 0.9.5
 ========================================
 
 
 === Brew list versions ==================
-ansible 2.3.1.0
+ansible 2.9.2
 ant 1.10.7
 autoconf 2.69
 automake 1.16.1_1
@@ -73,7 +76,8 @@ carthage 0.23.0
 coreutils 8.27
 flow 0.47.0
 freetype 2.8
-gdbm 1.13
+gdbm 1.13 1.18.1
+gettext 0.20.1
 ghostscript 9.21_1
 git 2.13.1
 git-lfs 2.1.1
@@ -83,26 +87,30 @@ icu4c 58.2
 imagemagick 7.0.5-10
 jenv 0.5.2
 jpeg 8d
+libidn2 2.3.0
 libpng 1.6.29
 libtiff 4.0.8
 libtool 2.4.6_1
-libyaml 0.1.7
+libunistring 0.9.10
+libyaml 0.1.7 0.2.2
 little-cms2 2.8
-maven 3.6.2
-mercurial 4.2.1
+maven 3.6.3
+mercurial 5.2_1
 node 8.0.0_1
 openssl 1.0.2l
-openssl@1.1 1.1.0f
-pcre 8.40
-python 2.7.13
-readline 7.0.3_1
-ruby 2.4.1_1
+openssl@1.1 1.1.1d
+pcre 8.40 8.43
+pkg-config 0.29.2
+python 2.7.13 3.7.5
+rbenv 1.1.2
+readline 7.0.3_1 8.0.1
+ruby-build 20191205
 screen 4.7.0
-sqlite 3.19.2
+sqlite 3.19.2 3.30.1
 tree 1.7.0
-watchman 4.7.0
-wget 1.19.1_1
-xz 5.2.3
+watchman 4.9.0_3
+wget 1.20.3_2
+xz 5.2.3 5.2.4
 yarn 0.24.6
 ========================================
 
@@ -136,6 +144,8 @@ freetype
 └── libpng
 
 gdbm
+
+gettext
 
 ghostscript
 └── libtiff
@@ -205,12 +215,18 @@ jenv
 
 jpeg
 
+libidn2
+├── gettext
+└── libunistring
+
 libpng
 
 libtiff
 └── jpeg
 
 libtool
+
+libunistring
 
 libyaml
 
@@ -233,11 +249,11 @@ mercurial
 node
 └── icu4c
 
-openssl
-
 openssl@1.1
 
 pcre
+
+pkg-config
 
 python
 ├── gdbm
@@ -247,11 +263,17 @@ python
 │   └── readline
 └── xz
 
+rbenv
+└── ruby-build
+    ├── autoconf
+    ├── pkg-config
+    └── readline
+
 readline
 
-ruby
-├── libyaml
-├── openssl@1.1
+ruby-build
+├── autoconf
+├── pkg-config
 └── readline
 
 screen
@@ -288,136 +310,169 @@ yarn
 
 
 === Ruby and rubygems ==================
-* Ruby: ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin16]
-* Rubygems: 2.6.12
-* Bundler: Bundler version 1.15.1
-* CocoaPods: 1.2.1
-* xcpretty: 0.2.8
-* Nomad CLI: 2.6.12
+* Ruby (default): ruby 2.5.7p206 (2019-10-01 revision 67816) [x86_64-darwin16]
+--- Available ruby versions ---
+  system
+  2.4.9
+* 2.5.7 (set by /Users/vagrant/.rbenv/version)
+  2.6.5
+-------------------------------
+* rbenv: 1.1.2
+* Rubygems: 2.7.6.2
+* Bundler: Bundler version 2.0.2
+* CocoaPods: 1.8.4
+* xcpretty: 0.3.0
+* Nomad CLI: 2.7.6.2
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
 ========================================
 
 
 === All Ruby GEMs ======================
-activesupport (4.2.8)
-addressable (2.5.1)
+activesupport (4.2.11.1)
+addressable (2.7.0)
+algoliasearch (1.27.1)
+atomos (0.1.3)
 aws-sdk (1.67.0)
 aws-sdk-v1 (1.67.0)
-babosa (1.0.2)
-bigdecimal (default: 1.3.0)
-bundler (1.15.1)
+babosa (1.0.3)
+bigdecimal (default: 1.3.4)
+bundler (2.0.2)
 certified (1.0.0)
-CFPropertyList (2.3.5)
-claide (1.0.2)
-cocoapods (1.2.1)
-cocoapods-core (1.2.1)
-cocoapods-deintegrate (1.0.1)
-cocoapods-downloader (1.1.3)
+CFPropertyList (3.0.2)
+claide (1.0.3)
+cmath (default: 1.0.0)
+cocoapods (1.8.4)
+cocoapods-core (1.8.4)
+cocoapods-deintegrate (1.0.4)
+cocoapods-downloader (1.3.0)
 cocoapods-plugins (1.0.0)
 cocoapods-search (1.0.0)
-cocoapods-stats (1.0.0)
-cocoapods-trunk (1.2.0)
+cocoapods-stats (1.1.0)
+cocoapods-trunk (1.4.1)
 cocoapods-try (1.1.0)
 colored (1.2)
 colored2 (3.1.2)
-commander (4.4.3)
-commander-fastlane (4.4.4)
+commander (4.4.7)
+commander-fastlane (4.4.6)
+concurrent-ruby (1.1.5)
+csv (default: 1.0.0)
 cupertino (1.3.4)
-did_you_mean (1.1.0)
-domain_name (0.5.20170404)
-dotenv (2.2.1)
-dubai (0.1.1)
+date (default: 1.0.0)
+dbm (default: 1.0.0)
+declarative (0.0.10)
+declarative-option (0.1.0)
+did_you_mean (1.2.0)
+digest-crc (0.4.1)
+domain_name (0.5.20190701)
+dotenv (2.7.5)
+dubai (0.2.0)
+emoji_regex (1.0.1)
 escape (0.0.4)
-excon (0.56.0)
-faraday (0.12.1)
+etc (default: 1.0.0)
+excon (0.70.0)
+faraday (0.17.1)
 faraday-cookie_jar (0.0.6)
-faraday_middleware (0.11.0.1)
-fastimage (2.1.0)
-fastlane (2.37.0)
-fourflusher (2.0.1)
+faraday_middleware (0.13.1)
+fastimage (2.1.7)
+fastlane (2.137.0)
+fcntl (default: 1.0.0)
+fiddle (default: 1.0.0)
+fileutils (default: 1.0.2)
+fourflusher (2.3.1)
 fuzzy_match (2.0.4)
-gh_inspector (1.0.3)
-google-api-client (0.9.28)
-googleauth (0.5.1)
-highline (1.7.8)
-houston (2.2.4)
+gdbm (default: 2.0.0)
+gh_inspector (1.1.3)
+google-api-client (0.23.9)
+google-cloud-core (1.4.1)
+google-cloud-env (1.3.0)
+google-cloud-storage (1.16.0)
+googleauth (0.6.7)
+highline (2.0.3, 1.7.10)
+houston (2.4.0)
 http-cookie (1.0.3)
 httpclient (2.8.3)
-hurley (0.2)
-i18n (0.8.4)
+i18n (0.9.5)
 io-console (default: 0.4.6)
-json (default: 2.0.2, 1.8.6)
-jwt (1.5.6)
-little-plugger (1.1.4)
-logging (2.2.2)
+ipaddr (default: 1.2.0)
+json (default: 2.1.0, 1.8.6)
+jwt (2.1.0)
 mechanize (2.5.1)
-memoist (0.15.0)
-mime-types (1.25.1)
-mini_magick (4.5.1)
+memoist (0.16.2)
+mime-types (3.3, 1.25.1)
+mime-types-data (3.2019.1009)
+mini_magick (4.9.5)
 mini_portile2 (2.1.0)
-minitest (5.10.1)
-molinillo (0.5.7)
-multi_json (1.12.1)
+minitest (5.10.3)
+molinillo (0.6.6)
+multi_json (1.14.1)
 multi_xml (0.6.0)
-multipart-post (2.0.0)
-nanaimo (0.2.3)
+multipart-post (2.1.1, 2.0.0)
+nanaimo (0.2.6)
 nap (1.1.0)
+naturally (2.2.0)
 net-http-digest_auth (1.4.1)
 net-http-persistent (2.9.4)
 net-sftp (2.1.2)
-net-ssh (4.1.0)
+net-ssh (5.2.0)
 net-telnet (0.1.1)
-netrc (0.7.8)
+netrc (0.11.0)
 nokogiri (1.6.8.1)
 nomad-cli (0.0.2)
 ntlm-http (0.1.1)
-openssl (default: 2.0.3)
-os (0.9.6)
+openssl (default: 2.1.2)
+os (1.0.1)
 plist (3.1.0)
-power_assert (0.4.1)
-psych (default: 2.2.2)
+power_assert (1.1.1)
+psych (default: 3.0.2)
 public_suffix (2.0.5)
-rack (1.6.8)
-rack-protection (1.5.3)
-rake (12.0.0)
-rdoc (default: 5.0.0)
-representable (2.3.0)
-retriable (2.1.0)
+rack (1.6.11)
+rack-protection (1.5.5)
+rake (12.3.0)
+rdoc (default: 6.0.1.1)
+representable (3.0.4)
+retriable (3.1.2)
 rouge (2.0.7)
-ruby-macho (1.1.0)
-rubygems-update (2.6.12)
-rubyzip (1.2.1)
+ruby-macho (1.4.0)
+rubyzip (1.3.0)
+scanf (default: 1.0.0)
+sdbm (default: 1.0.0)
 security (0.1.3)
 shenzhen (0.14.3)
-signet (0.7.3)
+signet (0.12.0)
+simctl (1.6.6)
 sinatra (1.4.8)
-slack-notifier (1.5.1)
+slack-notifier (2.3.2)
+stringio (default: 0.0.1)
+strscan (default: 1.0.0)
 term-ansicolor (1.0.7)
-terminal-notifier (1.8.0)
+terminal-notifier (2.0.0)
 terminal-table (1.4.5)
-test-unit (3.2.3)
+test-unit (3.2.7)
 thread_safe (0.3.6)
-tilt (2.0.7)
-tty-screen (0.5.0)
-tzinfo (1.2.3)
-uber (0.0.15)
+tilt (2.0.10)
+tty-cursor (0.7.0)
+tty-screen (0.7.0)
+tty-spinner (0.9.2)
+tzinfo (1.2.5)
+uber (0.1.0)
 unf (0.1.4)
-unf_ext (0.0.7.4)
-venice (0.3.0)
+unf_ext (0.0.7.6)
+venice (0.6.0)
+webrick (default: 1.4.2)
 webrobots (0.1.2)
 word_wrap (1.0.0)
-xcodeproj (1.5.0)
-xcpretty (0.2.8)
-xcpretty-travis-formatter (0.0.4)
-xmlrpc (0.2.1)
+xcode-install (2.6.3)
+xcodeproj (1.13.0)
+xcpretty (0.3.0)
+xcpretty-travis-formatter (1.0.0)
+xmlrpc (0.3.0)
+zlib (default: 1.0.0)
 ========================================
 
 
 === NPM global packages ==========================
 * Cordova: 7.0.1
-* Ionic: ? The Ionic CLI has an update available (3.3.0 => 5.4.9)! Would you like to inst
-all it? (Y/n) [1A[14D[94C
-[1B
+* Ionic: [2K[G3.3.0
 ========================================
 
 
@@ -698,10 +753,10 @@ watchOS 3.2 (3.2 - 14V243) (com.apple.CoreSimulator.SimRuntime.watchOS-3-2)
     Apple Watch - 38mm (BF347887-4520-46A0-A62C-D3A3E2EF4550) (Shutdown)
     Apple Watch - 42mm (C679BEA9-1810-407E-8B6C-A34CD11A7B6C) (Shutdown)
 -- watchOS 3.1 --
-    Apple Watch - 38mm (82257F66-CF0B-43EA-8192-80DAA87591C5) (Shutdown)
-    Apple Watch - 42mm (43EA2804-615C-4288-8810-B2DF27B8F754) (Shutdown)
-    Apple Watch Series 2 - 38mm (AF6DC259-D996-4B82-8D3B-8EE47BB641AD) (Shutdown)
-    Apple Watch Series 2 - 42mm (50185754-D380-42E9-B1CD-5A37F33F57ED) (Shutdown)
+    Apple Watch - 38mm (D0F64C80-CA58-4EC5-8BE2-B4B5B2B7021B) (Shutdown)
+    Apple Watch - 42mm (D0C6D5B8-1CD6-4148-AAA6-D51B1B15CA91) (Shutdown)
+    Apple Watch Series 2 - 38mm (F05A37E0-0F13-491F-8808-20437A98706A) (Shutdown)
+    Apple Watch Series 2 - 42mm (F9CF08A2-4042-4996-849B-7343F5D892CF) (Shutdown)
 -- watchOS 3.2 --
     Apple Watch - 38mm (AB0792A9-3712-4F62-BBE8-D1FBAAF40854) (Shutdown)
     Apple Watch - 42mm (35DB9537-433D-45E5-AE16-31D754559A4C) (Shutdown)
@@ -740,18 +795,18 @@ Software:
       Kernel Version: Darwin 16.7.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: prd-std-b-xcode-8-3-191204095540-mHVfc3H9JVSNAdyKPPFuYD
+      Computer Name: stg-xcode-8-3-191213173700-3Sk4TyMYaM63qaXJrgoMJY
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 1:01
+      Time since boot: 19 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  101Gi   98Gi    51% 3201302 4291765977    0%   /
+* Free disk space: /dev/disk0s2  199Gi  102Gi   97Gi    52% 3314561 4291652718    0%   /
 ========================================
 
 --- Android
