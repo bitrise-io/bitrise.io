@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_11_13_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2019_12_12_1
 ========================================
 
 
@@ -26,18 +26,18 @@
 === Pre-installed tool versions ========
 * Go: go version go1.13 linux/amd64
 * Ruby: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
-  * bundler: Bundler version 1.17.3
-  * rubygems: 3.0.6
+  * bundler: Bundler version 2.1.0
+  * rubygems: 3.1.1
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
-* Node.js: v10.17.0
-* NPM: 6.11.3
+* Node.js: v10.18.0
+* NPM: 6.13.4
 * Yarn: 1.21.1
-aws-cli/1.16.301 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.13.37
+aws-cli/1.16.306 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.13.42
 * aws: 
 
 * git: git version 2.7.4
-* git lfs: git-lfs/2.9.1 (GitHub; linux amd64; go 1.13.1)
+* git lfs: git-lfs/2.9.2 (GitHub; linux amd64; go 1.13.1)
 * mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
 * curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
 * wget: GNU Wget 1.17.1 built on linux-gnu.
@@ -56,9 +56,9 @@ aws-cli/1.16.301 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.13.37
 * docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
-* bitrise: 1.36.0
-* stepman: 0.11.11
-* envman: 2.2.9
+* bitrise: 1.37.0
+* stepman: 0.11.12
+* envman: 2.2.10
 /bitrise/bitrise-base/system_report.sh: line 91: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
@@ -69,7 +69,7 @@ addressable (2.7.0)
 atomos (0.1.3)
 babosa (1.0.3)
 bigdecimal (default: 1.3.4)
-bundler (default: 1.17.3)
+bundler (default: 2.1.0)
 CFPropertyList (3.0.2)
 claide (1.0.3)
 cmath (default: 1.0.0)
@@ -86,7 +86,7 @@ domain_name (0.5.20190701)
 dotenv (2.7.5)
 emoji_regex (1.0.1)
 etc (default: 1.0.0)
-excon (0.70.0)
+excon (0.71.1)
 faraday (0.17.1)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
@@ -130,13 +130,13 @@ rdoc (default: 6.0.1)
 representable (3.0.4)
 retriable (3.1.2)
 rouge (2.0.7)
-rubygems-update (3.0.6)
+rubygems-update (3.1.1)
 rubyzip (1.3.0)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
 signet (0.12.0)
-simctl (1.6.6)
+simctl (1.6.7)
 slack-notifier (2.3.2)
 stringio (default: 0.0.1)
 strscan (default: 1.0.0)
@@ -152,7 +152,7 @@ unf_ext (0.0.7.6)
 unicode-display_width (1.6.0)
 webrick (default: 1.4.2)
 word_wrap (1.0.0)
-xcodeproj (1.13.0)
+xcodeproj (1.14.0)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
@@ -162,7 +162,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-191212140439-6earferd5cnvfgyb3uliej 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-191219065710-axzdfpwzkvzhdg8aue5xnm 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -211,8 +211,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-191212140439-6earferd5cnvfgyb3uliej
- ID: 5XTT:V2W7:AZSX:O2KW:K4VW:4SZ3:NPWY:NYKS:QQAF:SBRY:5WMU:G2N5
+ Name: stg-latest-usc1b-191219065710-axzdfpwzkvzhdg8aue5xnm
+ ID: WSTI:EXYI:BFZ7:BOT3:XYF4:BE4Z:GX4D:JLL5:IBRJ:CTCB:Q33I:SPA2
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -228,10 +228,10 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-quay.io/bitriseio/android-ndk - 29GB
-bitriseio/android-ndk - 29GB
-bitriseio/android - 26GB
-quay.io/bitriseio/android - 26GB
+bitriseio/android-ndk - 29.8GB
+quay.io/bitriseio/android-ndk - 29.8GB
+bitriseio/android - 26.7GB
+quay.io/bitriseio/android - 26.7GB
 bitriseio/bitrise-base - 2.51GB
 quay.io/bitriseio/bitrise-base - 2.51GB
 ========================================
@@ -240,13 +240,13 @@ quay.io/bitriseio/bitrise-base - 2.51GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0      160G   29G  132G  18% /
+/dev/loop0      160G   29G  131G  19% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1       194G  166G   29G  86% /bitrise
+/dev/sda1       194G  166G   28G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        273M        5.2G        8.7M        1.8G        6.8G
+Mem:           7.3G        239M        4.6G        8.7M        2.5G        6.8G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -268,32 +268,32 @@ Swap:          4.0G          0B        4.0G
 === Pre-installed tool versions ========
 * Gradle: Gradle 2.10
 * Maven: Apache Maven 3.3.9
-* Java: javac 1.8.0_222
+* Java: javac 1.8.0_232
 * Cordova CLI version: 9.0.0 (cordova-lib@9.0.1)
-* Ionic CLI version: 5.4.12
+* Ionic CLI version: 5.4.13
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 273.0.0
-alpha 2019.12.06
-beta 2019.12.06
-bq 2.0.50
-core 2019.12.06
+Google Cloud SDK 274.0.0
+alpha 2019.12.17
+beta 2019.12.17
+bq 2.0.51
+core 2019.12.17
 gsutil 4.46
-kubectl 2019.12.06
+kubectl 2019.12.17
 ========================================
 
 
 === Firebase Tools components ==========
-7.9.0
+7.11.0
 ========================================
 
 
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-.done.
+..done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -318,7 +318,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * SDK Tools version: 26.1.1
 * Platform Tools version: 29.0.5
-* Emulator version: 29.3.0
+* Emulator version: 29.3.2
 ========================================
 
 
