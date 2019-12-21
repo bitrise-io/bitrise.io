@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_11_20_1
+* BITRISE_OSX_STACK_REV_ID: v2019_12_12_1
 ========================================
 
 
@@ -24,23 +24,23 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 
 * git: git version 2.21.0
 * git lfs: git-lfs/2.7.1 (GitHub; darwin amd64; go 1.12)
-* mercurial/hg: Mercurial Distributed SCM (version 4.9.1)
+* mercurial/hg: Mercurial Distributed SCM (version 5.2)
 * curl: curl 7.54.0 (x86_64-apple-darwin18.0) libcurl/7.54.0 LibreSSL/2.6.5 zlib/1.2.11 nghttp2/1.24.1
-* wget: GNU Wget 1.20.1 built on darwin18.2.0.
+* wget: GNU Wget 1.20.3 built on darwin18.7.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.0
-Homebrew/homebrew-core (git revision c2ba6; last commit 2019-11-27)
-Homebrew/homebrew-cask (git revision 60b11; last commit 2019-11-28)
+* brew: Homebrew 2.2.1
+Homebrew/homebrew-core (git revision 56db; last commit 2019-12-18)
+Homebrew/homebrew-cask (git revision 09e73c; last commit 2019-12-19)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
-* Ansible: ansible 2.7.9
+* Ansible: ansible 2.9.2
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.7.9/libexec/lib/python3.7/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.9.2/libexec/lib/python3.7/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.31
 * watchman: 4.9.0
@@ -55,27 +55,27 @@ Warning: homebrew/core is shallow clone. To get complete history run:
 
 Error: No previously deleted formula found.
 * swift-sh: for
-* firebase: ]0;Firebase CLI7.8.1
+* firebase: ]0;Firebase CLI7.11.0
 ./system_report.sh: line 76: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.36.0
-* stepman: 0.11.11
-* envman: 2.2.9
+* bitrise: 1.37.0
+* stepman: 0.11.12
+* envman: 2.2.10
 * cmd-bridge: 0.9.5
 ========================================
 
 
 === Brew list versions ==================
-ansible 2.7.9
+ansible 2.9.2
 autoconf 2.69
 carthage 0.33.0
 coreutils 8.31
 flow 0.95.2
 freetype 2.10.0
 gdbm 1.18.1
-gettext 0.19.8.1
+gettext 0.20.1 0.19.8.1
 ghostscript 9.26_1
 git 2.21.0
 git-lfs 2.7.1
@@ -89,7 +89,7 @@ jpeg 9c
 libde265 1.0.3
 libffi 3.2.1
 libheif 1.4.0
-libidn2 2.1.1a
+libidn2 2.3.0 2.1.1a
 libomp 7.0.0
 libpng 1.6.36
 libtiff 4.0.10_1
@@ -97,27 +97,28 @@ libtool 2.4.6_1
 libunistring 0.9.10
 libyaml 0.2.2
 little-cms2 2.9
-mercurial 4.9.1
+mercurial 5.2_1
 node 11.12.0
 node@10 10.15.2
 openexr 2.2.0_1
 openjpeg 2.3.0
 openssl 1.0.2r
+openssl@1.1 1.1.1d
 pcre 8.43
 pcre2 10.32
 pkg-config 0.29.2
-python 3.7.2_2
+python 3.7.2_2 3.7.5
 python@2 2.7.16
 rbenv 1.1.2
-readline 8.0.0
+readline 8.0.0 8.0.1
 ruby-build 20190320
 screen 4.6.2
 shared-mime-info 1.12
-sqlite 3.27.2
+sqlite 3.27.2 3.30.1
 tree 1.8.0
-watchman 4.9.0_2
+watchman 4.9.0_3
 webp 1.0.2
-wget 1.20.1_4
+wget 1.20.3_2
 x265 3.0
 xz 5.2.4
 yarn 1.15.2
@@ -398,15 +399,13 @@ yarn
 * Ruby (default): ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-darwin18]
 --- Available ruby versions ---
   system
-  2.2.10
-  2.3.8
   2.4.5
 * 2.5.3 (set by /Users/vagrant/.rbenv/version)
 -------------------------------
 * rbenv: 1.1.2
 * Rubygems: 3.0.3
 * Bundler: Bundler version 1.17.3
-* CocoaPods: 1.6.1
+* CocoaPods: 1.8.4
 * xcpretty: 0.3.0
 * Nomad CLI: 3.0.3
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
@@ -416,6 +415,7 @@ yarn
 === All Ruby GEMs ======================
 activesupport (4.2.11.1)
 addressable (2.6.0)
+algoliasearch (1.27.1)
 atomos (0.1.3)
 aws-sdk (1.67.0)
 aws-sdk-v1 (1.67.0)
@@ -426,14 +426,14 @@ certified (1.0.0)
 CFPropertyList (3.0.0)
 claide (1.0.2)
 cmath (default: 1.0.0)
-cocoapods (1.6.1)
-cocoapods-core (1.6.1)
+cocoapods (1.8.4, 1.6.1)
+cocoapods-core (1.8.4, 1.6.1)
 cocoapods-deintegrate (1.0.3)
 cocoapods-downloader (1.2.2)
 cocoapods-plugins (1.0.0)
 cocoapods-search (1.0.0)
 cocoapods-stats (1.1.0)
-cocoapods-trunk (1.3.1)
+cocoapods-trunk (1.4.1, 1.3.1)
 cocoapods-try (1.1.0)
 colored (1.2)
 colored2 (3.1.2)
@@ -455,15 +455,15 @@ emoji_regex (1.0.1)
 escape (0.0.4)
 etc (default: 1.0.0)
 excon (0.62.0)
-faraday (0.15.4)
+faraday (0.17.1, 0.15.4)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.5)
-fastlane (2.119.0)
+fastlane (2.137.0, 2.119.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
-fourflusher (2.2.0)
+fourflusher (2.3.1, 2.2.0)
 fuzzy_match (2.0.4)
 gdbm (default: 2.0.0)
 gh_inspector (1.1.3)
@@ -485,7 +485,7 @@ mechanize (2.5.1)
 memoist (0.16.0)
 mime-types (3.2.2, 1.25.1)
 mime-types-data (3.2018.0812)
-mini_magick (4.5.1)
+mini_magick (4.9.5, 4.5.1)
 mini_portile2 (2.1.0)
 minitest (5.10.3)
 molinillo (0.6.6)
@@ -520,7 +520,7 @@ retriable (3.1.2)
 rouge (2.0.7)
 ruby-macho (1.4.0)
 rubygems-update (3.0.3)
-rubyzip (1.2.2)
+rubyzip (1.3.0, 1.2.2)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
@@ -548,7 +548,8 @@ venice (0.5.0)
 webrick (default: 1.4.2)
 webrobots (0.1.2)
 word_wrap (1.0.0)
-xcodeproj (1.8.1)
+xcode-install (2.6.3)
+xcodeproj (1.13.0, 1.8.1)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
@@ -1038,7 +1039,7 @@ Software:
       Kernel Version: Darwin 18.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-previous-191213173700-QNB8NA5UYs4wuu6G8hVU7k
+      Computer Name: stg-vs4mac-stable-previous-191220192253-LFLtiSJs4RwqP7Guo4jzvP
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
@@ -1049,7 +1050,7 @@ Software:
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  150Gi   50Gi    76% 4468175 9223372036850307632    0%   /
+* Free disk space: /dev/disk1s1  200Gi  150Gi   49Gi    76% 4466193 9223372036850309614    0%   /
 ========================================
 
 
