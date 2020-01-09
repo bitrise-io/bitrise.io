@@ -26,14 +26,14 @@
 === Pre-installed tool versions ========
 * Go: go version go1.13 linux/amd64
 * Ruby: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
-  * bundler: Bundler version 2.1.0
-  * rubygems: 3.1.1
+  * bundler: Bundler version 2.1.2
+  * rubygems: 3.1.2
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
 * Node.js: v10.18.0
 * NPM: 6.13.4
 * Yarn: 1.21.1
-aws-cli/1.16.306 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.13.42
+aws-cli/1.16.313 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.13.49
 * aws: 
 
 * git: git version 2.7.4
@@ -69,7 +69,7 @@ addressable (2.7.0)
 atomos (0.1.3)
 babosa (1.0.3)
 bigdecimal (default: 1.3.4)
-bundler (default: 2.1.0)
+bundler (default: 2.1.2)
 CFPropertyList (3.0.2)
 claide (1.0.3)
 cmath (default: 1.0.0)
@@ -87,20 +87,20 @@ dotenv (2.7.5)
 emoji_regex (1.0.1)
 etc (default: 1.0.0)
 excon (0.71.1)
-faraday (0.17.1)
+faraday (0.17.3)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.13.1)
 fastimage (2.1.7)
-fastlane (2.137.0)
+fastlane (2.140.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.0.2)
 gh_inspector (1.1.3)
-google-api-client (0.23.9)
+google-api-client (0.36.4)
 google-cloud-core (1.4.1)
 google-cloud-env (1.3.0)
-google-cloud-storage (1.16.0)
-googleauth (0.6.7)
+google-cloud-storage (1.25.1)
+googleauth (0.10.0)
 highline (1.7.10)
 http-cookie (1.0.3)
 httpclient (2.8.3)
@@ -109,9 +109,8 @@ ipaddr (default: 1.2.0)
 json (default: 2.1.0)
 jwt (2.1.0)
 memoist (0.16.2)
-mime-types (3.3)
-mime-types-data (3.2019.1009)
-mini_magick (4.9.5)
+mini_magick (4.10.1)
+mini_mime (1.0.2)
 minitest (5.10.3)
 multi_json (1.14.1)
 multi_xml (0.6.0)
@@ -130,7 +129,7 @@ rdoc (default: 6.0.1)
 representable (3.0.4)
 retriable (3.1.2)
 rouge (2.0.7)
-rubygems-update (3.1.1)
+rubygems-update (3.1.2)
 rubyzip (1.3.0)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
@@ -162,7 +161,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-191219073018-ub8lmm2dwmqrwajersgi3k 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-200109132856-zeddqogfjtjbft4szqgrg 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -211,8 +210,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-191219073018-ub8lmm2dwmqrwajersgi3k
- ID: WSTI:EXYI:BFZ7:BOT3:XYF4:BE4Z:GX4D:JLL5:IBRJ:CTCB:Q33I:SPA2
+ Name: stg-latest-usc1b-200109132856-zeddqogfjtjbft4szqgrg
+ ID: Z6PA:7657:FWSD:MI7I:5BE7:JQLC:RDPS:HLO4:W4GW:HIY3:ADS4:7KWC
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -228,25 +227,25 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 29.8GB
-quay.io/bitriseio/android-ndk - 29.8GB
-bitriseio/android - 26.7GB
-quay.io/bitriseio/android - 26.7GB
-bitriseio/bitrise-base - 2.51GB
-quay.io/bitriseio/bitrise-base - 2.51GB
+quay.io/bitriseio/android-ndk - 29GB
+bitriseio/android-ndk - 29GB
+bitriseio/android - 26GB
+quay.io/bitriseio/android - 26GB
+bitriseio/bitrise-base - 2.52GB
+quay.io/bitriseio/bitrise-base - 2.52GB
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0      160G   29G  131G  19% /
+/dev/loop0      160G   29G  132G  18% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1       194G  166G   28G  86% /bitrise
+/dev/sda1       194G  166G   29G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        235M        4.6G        8.7M        2.5G        6.8G
+Mem:           7.3G        232M        5.5G        8.7M        1.6G        6.8G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -275,13 +274,13 @@ Swap:          4.0G          0B        4.0G
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 274.0.0
-alpha 2019.12.17
-beta 2019.12.17
+Google Cloud SDK 275.0.0
+alpha 2020.01.03
+beta 2020.01.03
 bq 2.0.51
-core 2019.12.17
+core 2020.01.03
 gsutil 4.46
-kubectl 2019.12.17
+kubectl 2020.01.03
 ========================================
 
 
@@ -293,7 +292,7 @@ kubectl 2019.12.17
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-.done.
+..done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -318,7 +317,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * SDK Tools version: 26.1.1
 * Platform Tools version: 29.0.5
-* Emulator version: 29.3.2
+* Emulator version: 29.3.4
 ========================================
 
 
