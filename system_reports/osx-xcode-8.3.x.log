@@ -15,7 +15,7 @@
 * Go: go version go1.8.3 darwin/amd64
 * Python: Python 2.7.10
 * Node.js: v8.0.0
-* NPM: 5.0.1
+* NPM: 6.13.4
 * Yarn: 0.24.6
 * Java: openjdk version "1.8.0_232"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_232-b09)
@@ -24,7 +24,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 
 * git: git version 2.13.1
 * git lfs: git-lfs/2.1.1 (GitHub; darwin amd64; go 1.8.1)
-* mercurial/hg: Mercurial Distributed SCM (version 5.2)
+* mercurial/hg: Mercurial Distributed SCM (version 5.2.2)
 * curl: curl 7.54.0 (x86_64-apple-darwin16.0) libcurl/7.54.0 SecureTransport zlib/1.2.8
 * wget: GNU Wget 1.20.3 built on darwin16.7.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,20 +33,20 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.1
-Homebrew/homebrew-core (git revision 56db1; last commit 2019-12-18)
-Homebrew/homebrew-cask (git revision 09e7; last commit 2019-12-19)
+* brew: Homebrew 2.2.2
+Homebrew/homebrew-core (git revision ff9bd8; last commit 2020-01-09)
+Homebrew/homebrew-cask (git revision 078e; last commit 2020-01-09)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.9.2
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.9.2/libexec/lib/python3.7/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.9.2_1/libexec/lib/python3.8/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.27
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.47.0
 * carthage: 0.23.0
-* imagemagick (convert): Version: ImageMagick 7.0.5-10 Q16 x86_64 2017-06-04 http://www.imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-08 https://imagemagick.org
 * ghostscript (ps2ascii): 9.21
 * screen: Screen version 4.07.00 (GNU) 02-Oct-19
 Error: No available formula with the name "swift-sh" 
@@ -68,49 +68,69 @@ Error: No previously deleted formula found.
 
 
 === Brew list versions ==================
-ansible 2.9.2
+ansible 2.9.2_1
 ant 1.10.7
 autoconf 2.69
 automake 1.16.1_1
 carthage 0.23.0
+cmake 3.16.2
 coreutils 8.27
 flow 0.47.0
-freetype 2.8
-gdbm 1.13 1.18.1
+freetype 2.10.1 2.8
+gdbm 1.18.1
 gettext 0.20.1
 ghostscript 9.21_1
 git 2.13.1
 git-lfs 2.1.1
+glib 2.62.4
 go 1.8.3
 gradle 6.0.1
 icu4c 58.2
-imagemagick 7.0.5-10
+ilmbase 2.4.0
+imagemagick 7.0.9-14
+intltool 0.51.0
+itstool 2.0.6
 jenv 0.5.2
-jpeg 8d
+jpeg 8d 9c
+libde265 1.0.4
+libffi 3.2.1
+libheif 1.6.1
 libidn2 2.3.0
-libpng 1.6.29
-libtiff 4.0.8
+libomp 9.0.0
+libpng 1.6.29 1.6.37
+libtiff 4.0.8 4.1.0
 libtool 2.4.6_1
 libunistring 0.9.10
-libyaml 0.1.7 0.2.2
-little-cms2 2.8
+libxml2 2.9.10
+libyaml 0.2.2
+little-cms2 2.8 2.9
 maven 3.6.3
-mercurial 5.2_1
+mercurial 5.2.2
+meson 0.53.0
+nasm 2.14.02
+ninja 1.9.0
 node 8.0.0_1
+openexr 2.4.0
+openjpeg 2.3.1
 openssl 1.0.2l
 openssl@1.1 1.1.1d
-pcre 8.40 8.43
+pcre 8.43
 pkg-config 0.29.2
-python 2.7.13 3.7.5
+python 2.7.13 3.7.5 3.7.6_1
+python@3.8 3.8.1
 rbenv 1.1.2
-readline 7.0.3_1 8.0.1
+readline 8.0.1
 ruby-build 20191205
 screen 4.7.0
-sqlite 3.19.2 3.30.1
+shared-mime-info 1.15
+sphinx-doc 2.3.1
+sqlite 3.30.1
 tree 1.7.0
 watchman 4.9.0_3
+webp 1.0.3
 wget 1.20.3_2
-xz 5.2.3 5.2.4
+x265 3.2.1
+xz 5.2.4
 yarn 0.24.6
 ========================================
 
@@ -119,7 +139,7 @@ yarn 0.24.6
 ansible
 ├── libyaml
 ├── openssl@1.1
-└── python
+└── python@3.8
     ├── gdbm
     ├── openssl@1.1
     ├── readline
@@ -135,6 +155,8 @@ automake
 └── autoconf
 
 carthage
+
+cmake
 
 coreutils
 
@@ -157,11 +179,25 @@ git
 
 git-lfs
 
+glib
+├── gettext
+├── libffi
+├── pcre
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
 go
 
 gradle
 
 icu4c
+
+ilmbase
 
 imagemagick
 ├── freetype
@@ -211,13 +247,58 @@ imagemagick
 │       └── jpeg
 └── xz
 
+intltool
+
+itstool
+├── libxml2
+│   ├── python
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   └── xz
+│   └── readline
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
 jenv
 
 jpeg
 
+libde265
+
+libffi
+
+libheif
+├── jpeg
+├── libde265
+├── libpng
+├── shared-mime-info
+│   ├── gettext
+│   └── glib
+│       ├── gettext
+│       ├── libffi
+│       ├── pcre
+│       └── python
+│           ├── gdbm
+│           ├── openssl@1.1
+│           ├── readline
+│           ├── sqlite
+│           │   └── readline
+│           └── xz
+└── x265
+
 libidn2
 ├── gettext
 └── libunistring
+
+libomp
 
 libpng
 
@@ -227,6 +308,16 @@ libtiff
 libtool
 
 libunistring
+
+libxml2
+├── python
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+└── readline
 
 libyaml
 
@@ -246,8 +337,34 @@ mercurial
     │   └── readline
     └── xz
 
+meson
+├── ninja
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+nasm
+
+ninja
+
 node
 └── icu4c
+
+openexr
+└── ilmbase
+
+openjpeg
+├── libpng
+├── libtiff
+│   └── jpeg
+└── little-cms2
+    ├── jpeg
+    └── libtiff
+        └── jpeg
 
 openssl@1.1
 
@@ -256,6 +373,14 @@ pcre
 pkg-config
 
 python
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+└── xz
+
+python@3.8
 ├── gdbm
 ├── openssl@1.1
 ├── readline
@@ -278,6 +403,29 @@ ruby-build
 
 screen
 
+shared-mime-info
+├── gettext
+└── glib
+    ├── gettext
+    ├── libffi
+    ├── pcre
+    └── python
+        ├── gdbm
+        ├── openssl@1.1
+        ├── readline
+        ├── sqlite
+        │   └── readline
+        └── xz
+
+sphinx-doc
+└── python
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
 sqlite
 └── readline
 
@@ -294,11 +442,19 @@ watchman
     │   └── readline
     └── xz
 
+webp
+├── jpeg
+├── libpng
+└── libtiff
+    └── jpeg
+
 wget
 ├── libidn2
 │   ├── gettext
 │   └── libunistring
 └── openssl@1.1
+
+x265
 
 xz
 
@@ -755,10 +911,10 @@ watchOS 3.2 (3.2 - 14V243) (com.apple.CoreSimulator.SimRuntime.watchOS-3-2)
     Apple Watch - 38mm (BF347887-4520-46A0-A62C-D3A3E2EF4550) (Shutdown)
     Apple Watch - 42mm (C679BEA9-1810-407E-8B6C-A34CD11A7B6C) (Shutdown)
 -- watchOS 3.1 --
-    Apple Watch - 38mm (2143FC22-2675-407D-AC6D-50ED7B733D42) (Shutdown)
-    Apple Watch - 42mm (73F35349-78DB-4228-BF06-F7447D6D318B) (Shutdown)
-    Apple Watch Series 2 - 38mm (50AFD0B9-D8B3-4663-88CF-A19D3E0FC8A1) (Shutdown)
-    Apple Watch Series 2 - 42mm (10B7098F-D659-42E1-BAAA-76019664C619) (Shutdown)
+    Apple Watch - 38mm (BEECC6D2-ABAF-4A57-BE03-83B9F9F77B0D) (Shutdown)
+    Apple Watch - 42mm (ED8BEF69-0509-450F-9897-FB20342B22D5) (Shutdown)
+    Apple Watch Series 2 - 38mm (A7B409E2-2F97-447A-9124-24BE1338AF50) (Shutdown)
+    Apple Watch Series 2 - 42mm (1EB543CF-97B0-45B3-B05C-115B8322922D) (Shutdown)
 -- watchOS 3.2 --
     Apple Watch - 38mm (AB0792A9-3712-4F62-BBE8-D1FBAAF40854) (Shutdown)
     Apple Watch - 42mm (35DB9537-433D-45E5-AE16-31D754559A4C) (Shutdown)
@@ -797,18 +953,18 @@ Software:
       Kernel Version: Darwin 16.7.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-8-3-191220191903-FFzRDSdpq3eCGhvPbnkq5A
+      Computer Name: stg-xcode-8-3-200109150615-TeBqBKERBvmkJGLCDBJbPj
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 22 minutes
+      Time since boot: 33 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  102Gi   97Gi    52% 3318150 4291649129    0%   /
+* Free disk space: /dev/disk0s2  199Gi  103Gi   96Gi    52% 3364648 4291602631    0%   /
 ========================================
 
 --- Android
