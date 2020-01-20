@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_12_12_1
+* BITRISE_OSX_STACK_REV_ID: v2020_01_15_1
 ========================================
 
 
@@ -20,7 +20,7 @@
 * Java: openjdk version "1.8.0_232"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_232-b09)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
-* Flutter: Flutter 1.9.1+hotfix.6 • channel stable • https://github.com/flutter/flutter.git
+* Flutter: Flutter 1.12.13+hotfix.5 • channel stable • https://github.com/flutter/flutter.git
 
 * git: git version 2.21.0
 * git lfs: git-lfs/2.7.1 (GitHub; darwin amd64; go 1.12)
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.2
-Homebrew/homebrew-core (git revision fa88b4; last commit 2020-01-09)
-Homebrew/homebrew-cask (git revision 50a17; last commit 2020-01-09)
+* brew: Homebrew 2.2.3
+Homebrew/homebrew-core (git revision 7fb78; last commit 2020-01-15)
+Homebrew/homebrew-cask (git revision bfe55; last commit 2020-01-16)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.9.2
@@ -43,26 +43,23 @@ Homebrew/homebrew-cask (git revision 50a17; last commit 2020-01-09)
   ansible python module location = /usr/local/Cellar/ansible/2.9.2_1/libexec/lib/python3.8/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.31
-* watchman: 4.9.0
+dyld: Library not loaded: /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib
+  Referenced from: /usr/local/Cellar/watchman/4.9.0_2/libexec/bin/watchman
+  Reason: image not found
+* watchman: 
 * flow: Flow, a static type checker for JavaScript, version 0.95.2
 * carthage: 0.33.0
 * imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-06 https://imagemagick.org
 * ghostscript (ps2ascii): 9.26
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-Error: No available formula with the name "swift-sh" 
-Warning: homebrew/core is shallow clone. To get complete history run:
-  git -C "$(brew --repo homebrew/core)" fetch --unshallow
-
-Error: No previously deleted formula found.
-* swift-sh: for
-* firebase: ]0;Firebase CLI7.11.0
-./system_report.sh: line 76: wine: command not found
+* firebase: ]0;Firebase CLI7.12.1
+./system_report.sh: line 75: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.37.0
-* stepman: 0.11.12
-* envman: 2.2.10
+* bitrise: 1.38.0
+* stepman: 0.11.13
+* envman: 2.2.11
 * cmd-bridge: 0.9.5
 ========================================
 
@@ -88,7 +85,7 @@ jenv 0.5.2
 jpeg 9c
 libde265 1.0.4 1.0.3
 libffi 3.2.1
-libheif 1.6.1.reinstall 1.4.0
+libheif 1.6.1
 libidn2 2.3.0
 libomp 7.0.0 9.0.0
 libpng 1.6.37 1.6.36
@@ -107,16 +104,16 @@ openssl@1.1 1.1.1d
 pcre 8.43
 pcre2 10.32
 pkg-config 0.29.2
-python 3.7.6_1 3.7.2_2
+python 3.7.6_1
 python@3.8 3.8.1
 rbenv 1.1.2
-readline 8.0.0 8.0.1
+readline 8.0.1
 ruby-build 20190320
 screen 4.6.2
-shared-mime-info 1.12 1.15.reinstall
-sqlite 3.27.2 3.30.1
+shared-mime-info 1.15
+sqlite 3.30.1
 tree 1.8.0
-watchman 4.9.0_3
+watchman 4.9.0_2
 webp 1.0.3 1.0.2
 wget 1.20.3_2
 x265 3.0 3.2.1
@@ -1040,18 +1037,18 @@ Software:
       Kernel Version: Darwin 18.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-previous-200109162205-T98QWfsX7Qz4TKeEJY2TzE
+      Computer Name: stg-vs4mac-stable-previous-200116100148-Jbt4YTfaePY8ktwpppzGyC
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 18 minutes
+      Time since boot: 2 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  150Gi   49Gi    76% 4475778 9223372036850300029    0%   /
+* Free disk space: /dev/disk1s1  200Gi  151Gi   48Gi    76% 4493927 9223372036850281880    0%   /
 ========================================
 
 

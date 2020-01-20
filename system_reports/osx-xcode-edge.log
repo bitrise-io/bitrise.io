@@ -7,22 +7,22 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2019_12_12_1
+* BITRISE_OSX_STACK_REV_ID: v2020_01_15_1
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.13.5 darwin/amd64
+* Go: go version go1.13.6 darwin/amd64
 * Python: Python 2.7.16
-* Node.js: v10.18.0
+* Node.js: v10.18.1
 * NPM: 6.13.4
 * Yarn: 1.21.1
 * Java: openjdk version "1.8.0_232"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_232-b09)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
-* Flutter: Flutter 1.9.1+hotfix.6 • channel stable • https://github.com/flutter/flutter.git
+* Flutter: Flutter 1.12.13+hotfix.5 • channel stable • https://github.com/flutter/flutter.git
 
-* git: git version 2.24.1
+* git: git version 2.25.0
 * git lfs: git-lfs/2.9.2 (GitHub; darwin amd64; go 1.13.5)
 * mercurial/hg: Mercurial Distributed SCM (version 5.2.2)
 * curl: curl 7.54.0 (x86_64-apple-darwin18.0) libcurl/7.54.0 LibreSSL/2.6.5 zlib/1.2.11 nghttp2/1.24.1
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.2
-Homebrew/homebrew-core (git revision 6403; last commit 2020-01-09)
-Homebrew/homebrew-cask (git revision 897b76; last commit 2020-01-09)
+* brew: Homebrew 2.2.3
+Homebrew/homebrew-core (git revision 7fb7; last commit 2020-01-15)
+Homebrew/homebrew-cask (git revision bfe55; last commit 2020-01-16)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.9.2
@@ -44,25 +44,19 @@ Homebrew/homebrew-cask (git revision 897b76; last commit 2020-01-09)
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.31
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.115.0
+* flow: Flow, a static type checker for JavaScript, version 0.116.0
 * carthage: 0.34.0
-* imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-06 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.9-16 Q16 x86_64 2020-01-12 https://imagemagick.org
 * ghostscript (ps2ascii): 9.50
 * screen: Screen version 4.07.00 (GNU) 02-Oct-19
-Error: No available formula with the name "swift-sh" 
-Warning: homebrew/core is shallow clone. To get complete history run:
-  git -C "$(brew --repo homebrew/core)" fetch --unshallow
-
-Error: No previously deleted formula found.
-* swift-sh: for
-* firebase: ]0;Firebase CLI7.11.0
-./system_report.sh: line 76: wine: command not found
+* firebase: ]0;Firebase CLI7.12.1
+./system_report.sh: line 75: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.37.0
-* stepman: 0.11.12
-* envman: 2.2.10
+* bitrise: 1.38.0
+* stepman: 0.11.13
+* envman: 2.2.11
 * cmd-bridge: 0.9.5
 ========================================
 
@@ -73,19 +67,19 @@ ant 1.10.7
 autoconf 2.69
 carthage 0.34.0
 coreutils 8.31
-flow 0.115.0
+flow 0.116.0
 freetype 2.10.1
 gdbm 1.18.1
 gettext 0.20.1
 ghostscript 9.50
-git 2.24.1
+git 2.25.0
 git-lfs 2.9.2
 glib 2.62.4
-go 1.13.5
+go 1.13.6
 gradle 6.0.1
 icu4c 64.2
 ilmbase 2.4.0
-imagemagick 7.0.9-14
+imagemagick 7.0.9-16
 jenv 0.5.2
 jpeg 9c
 libde265 1.0.4
@@ -102,7 +96,7 @@ little-cms2 2.9
 maven 3.6.3
 mercurial 5.2.2
 node 13.6.0
-node@10 10.18.0
+node@10 10.18.1
 openexr 2.4.0
 openjpeg 2.3.1
 openssl@1.1 1.1.1d
@@ -119,7 +113,7 @@ shared-mime-info 1.15
 sqlite 3.30.1
 tree 1.8.0
 watchman 4.9.0_3
-webp 1.0.3
+webp 1.1.0
 wget 1.20.3_2
 x265 3.2.1
 xz 5.2.4
@@ -480,8 +474,9 @@ fuzzy_match (2.0.4)
 gdbm (default: 2.0.0)
 gh_inspector (1.1.3)
 google-api-client (0.36.4)
-google-cloud-core (1.4.1)
+google-cloud-core (1.5.0)
 google-cloud-env (1.3.0)
+google-cloud-errors (1.0.0)
 google-cloud-storage (1.25.1)
 googleauth (0.10.0)
 highline (2.0.3, 1.7.10)
@@ -582,7 +577,7 @@ zlib (default: 1.0.0)
 
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
-* Ionic: 5.4.13
+* Ionic: 5.4.15
 ========================================
 
 
@@ -610,8 +605,8 @@ Target: x86_64-apple-darwin18.7.0
 /Applications/Xcode.app/Contents/Developer
 
 * Xcode Version:
-Xcode 11.3
-Build version 11C29
+Xcode 11.3.1
+Build version 11C504
 
 * /usr/bin/swift --version
 Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
@@ -1100,18 +1095,18 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-200109161615-A2Xnnzd7RQCdxba2Kx4pFY
+      Computer Name: stg-xcode-edge-200116094224-k9xFJ8NQsLDWwzFgDLyewf
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 10 minutes
+      Time since boot: 6 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  169Gi   30Gi    85% 5197599 9223372036849578208    0%   /
+* Free disk space: /dev/disk1s1  200Gi  170Gi   29Gi    86% 5222389 9223372036849553418    0%   /
 ========================================
 
 --- Android
