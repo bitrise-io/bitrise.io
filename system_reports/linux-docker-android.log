@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2020_01_15_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2020_02_12_2
 ========================================
 
 
@@ -25,15 +25,15 @@
 
 === Pre-installed tool versions ========
 * Go: go version go1.13 linux/amd64
-* Ruby: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
+* Ruby: ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
   * bundler: Bundler version 2.1.2
   * rubygems: 3.1.2
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
-* Node.js: v10.18.1
+* Node.js: v10.19.0
 * NPM: 6.13.4
 * Yarn: 1.21.1
-aws-cli/1.17.9 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.14.9
+aws-cli/1.17.16 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.14.16
 * aws: 
 
 * git: git version 2.7.4
@@ -56,8 +56,8 @@ aws-cli/1.17.9 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.14.9
 * docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
-* bitrise: 1.38.0
-* stepman: 0.11.13
+* bitrise: 1.39.0
+* stepman: 0.12.0
 * envman: 2.2.11
 /bitrise/bitrise-base/system_report.sh: line 91: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
@@ -68,24 +68,26 @@ aws-cli/1.17.9 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.14.9
 addressable (2.7.0)
 atomos (0.1.3)
 babosa (1.0.3)
-bigdecimal (default: 1.3.4)
+benchmark (default: 0.1.0)
+bigdecimal (default: 2.0.0)
 bundler (default: 2.1.2)
 CFPropertyList (3.0.2)
+cgi (default: 0.1.0)
 claide (1.0.3)
-cmath (default: 1.0.0)
 colored (1.2)
 colored2 (3.1.2)
 commander-fastlane (4.4.6)
-csv (default: 1.0.0)
-date (default: 1.0.0)
+csv (default: 3.1.2)
+date (default: 3.0.0)
 declarative (0.0.10)
 declarative-option (0.1.0)
-did_you_mean (1.2.0)
+delegate (default: 0.1.0)
+did_you_mean (default: 1.4.0)
 digest-crc (0.4.1)
 domain_name (0.5.20190701)
 dotenv (2.7.5)
 emoji_regex (1.0.1)
-etc (default: 1.0.0)
+etc (default: 1.1.0)
 excon (0.72.0)
 faraday (0.17.3)
 faraday-cookie_jar (0.0.6)
@@ -94,7 +96,9 @@ fastimage (2.1.7)
 fastlane (2.141.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
-fileutils (default: 1.0.2)
+fileutils (default: 1.4.1)
+forwardable (default: 1.3.1)
+getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
 google-api-client (0.36.4)
 google-cloud-core (1.5.0)
@@ -105,64 +109,84 @@ googleauth (0.10.0)
 highline (1.7.10)
 http-cookie (1.0.3)
 httpclient (2.8.3)
-io-console (default: 0.4.6)
-ipaddr (default: 1.2.0)
-json (default: 2.1.0)
+io-console (default: 0.5.3)
+ipaddr (default: 1.2.2)
+irb (default: 1.2.1)
+json (default: 2.3.0)
 jwt (2.1.0)
+logger (default: 1.4.2)
+matrix (default: 0.2.0)
 memoist (0.16.2)
 mini_magick (4.10.1)
 mini_mime (1.0.2)
-minitest (5.10.3)
+minitest (5.13.0)
 multi_json (1.14.1)
 multi_xml (0.6.0)
 multipart-post (2.0.0)
+mutex_m (default: 0.1.0)
 nanaimo (0.2.6)
 naturally (2.2.0)
-net-telnet (0.1.1)
-openssl (default: 2.1.0)
+net-pop (default: 0.1.0)
+net-smtp (default: 0.1.0)
+net-telnet (0.2.0)
+observer (default: 0.1.0)
+open3 (default: 0.1.0)
+openssl (default: 2.1.2)
 os (1.0.1)
+ostruct (default: 0.2.0)
 plist (3.5.0)
-power_assert (1.1.1)
-psych (default: 3.0.2)
+power_assert (1.1.5)
+prime (default: 0.1.1)
+pstore (default: 0.1.0)
+psych (default: 3.1.0)
 public_suffix (2.0.5)
-rake (12.3.0)
-rdoc (default: 6.0.1)
+racc (default: 1.4.16)
+rake (13.0.1)
+rdoc (default: 6.2.1)
+readline (default: 0.0.2)
+readline-ext (default: 0.1.0)
+reline (default: 0.1.2)
 representable (3.0.4)
 retriable (3.1.2)
+rexml (default: 3.2.3)
 rouge (2.0.7)
-rubygems-update (3.1.2)
+rss (default: 0.2.8)
 rubyzip (1.3.0)
-scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
 signet (0.12.0)
-simctl (1.6.7)
+simctl (1.6.8)
+singleton (default: 0.1.0)
 slack-notifier (2.3.2)
-stringio (default: 0.0.1)
-strscan (default: 1.0.0)
+stringio (default: 0.1.0)
+strscan (default: 1.0.3)
 terminal-notifier (2.0.0)
 terminal-table (1.8.0)
-test-unit (3.2.7)
+test-unit (3.3.4)
+timeout (default: 0.1.0)
+tracer (default: 0.1.0)
 tty-cursor (0.7.1)
-tty-screen (0.7.0)
+tty-screen (0.7.1)
 tty-spinner (0.9.3)
 uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.7.6)
 unicode-display_width (1.6.1)
-webrick (default: 1.4.2)
+uri (default: 0.10.0)
+webrick (default: 1.6.0)
 word_wrap (1.0.0)
-xcodeproj (1.14.0)
+xcodeproj (1.15.0)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
-zlib (default: 1.0.0)
+yaml (default: 0.1.0)
+zlib (default: 1.1.0)
 ========================================
 
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-200130133207-3lav3z4kfhdggtzayfvlne 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-200213141743-erxqxcy9rwjytskp69nvwy 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -198,8 +222,8 @@ Server:
  Runtimes: runc
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: b34a5c8af56e510852c35414db4c1f4fa6172339
- runc version: 3e425f80a8c931f88e6d94a8c831b9d5aa481657
+ containerd version: 35bd7a5f69c13e1563af8a93431411cd9ecf5021
+ runc version: dc9208a3303feef5b3839f4323d9beb36df0a9dd
  init version: fec3683
  Security Options:
   apparmor
@@ -211,8 +235,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-200130133207-3lav3z4kfhdggtzayfvlne
- ID: OQK5:GES5:LJKD:7T4F:IGE7:5F6N:X5IW:4UUP:D4X6:YFIN:AQRJ:KYUF
+ Name: stg-latest-usc1b-200213141743-erxqxcy9rwjytskp69nvwy
+ ID: QIP4:BSV6:ZQTW:YMRZ:IWBO:2EEI:T7OO:KAOE:W6CA:QCUD:U42F:CJCC
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -228,25 +252,25 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 29.8GB
-quay.io/bitriseio/android-ndk - 29.8GB
-bitriseio/android - 26.8GB
-quay.io/bitriseio/android - 26.8GB
-bitriseio/bitrise-base - 2.53GB
-quay.io/bitriseio/bitrise-base - 2.53GB
+bitriseio/android-ndk - 30.7GB
+quay.io/bitriseio/android-ndk - 30.7GB
+bitriseio/android - 26.9GB
+quay.io/bitriseio/android - 26.9GB
+bitriseio/bitrise-base - 2.55GB
+quay.io/bitriseio/bitrise-base - 2.55GB
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0      160G   29G  131G  19% /
+/dev/loop0      160G   30G  130G  19% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1       194G  166G   28G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        236M        4.6G        8.7M        2.5G        6.8G
+Mem:           7.3G        291M        4.5G        8.7M        2.5G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -270,23 +294,23 @@ Swap:          4.0G          0B        4.0G
 * Maven: Apache Maven 3.3.9
 * Java: javac 1.8.0_242
 * Cordova CLI version: 9.0.0 (cordova-lib@9.0.1)
-* Ionic CLI version: 5.4.15
+* Ionic CLI version: 5.4.16
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 278.0.0
-alpha 2020.01.24
-beta 2020.01.24
-bq 2.0.52
-core 2020.01.24
+Google Cloud SDK 280.0.0
+alpha 2020.02.07
+beta 2020.02.07
+bq 2.0.53
+core 2020.02.07
 gsutil 4.47
-kubectl 2020.01.24
+kubectl 2020.02.07
 ========================================
 
 
 === Firebase Tools components ==========
-7.12.1
+7.13.0
 ========================================
 
 
@@ -472,12 +496,12 @@ Android Asset Packaging Tool (aapt) 2:19
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2019_06_16_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID_NDK: v2020_01_16_1
 ========================================
 
 $ cat /opt/android-ndk/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 20.0.5594570
+Pkg.Revision = 21.0.6113669
 
 $ tree -L 2 /opt/android-ndk
 /opt/android-ndk
@@ -502,6 +526,7 @@ $ tree -L 2 /opt/android-ndk
 │   ├── test_ldflags_to_sanitizers.py
 │   └── tools
 ├── CHANGELOG.md
+│   └── Changelog-r21.md
 ├── meta
 │   ├── abis.json
 │   ├── platforms.json
@@ -533,16 +558,18 @@ $ tree -L 2 /opt/android-ndk
 │   └── linux-x86_64
 ├── python-packages
 │   ├── adb
-│   ├── Android.bp
 │   ├── fastboot
 │   ├── gdbrunner
 │   ├── NOTICE
 │   └── OWNERS
 ├── README.md
+│   └── UserReadme.md
 ├── shader-tools
 │   └── linux-x86_64
 ├── simpleperf
 │   ├── annotate.py
+│   ├── api_profiler.py
+│   ├── app_api
 │   ├── app_profiler.py
 │   ├── bin
 │   ├── binary_cache_builder.py
@@ -578,12 +605,9 @@ $ tree -L 2 /opt/android-ndk
 │   ├── x86-4.9
 │   └── x86_64-4.9
 └── wrap.sh
-    ├── asan.arm64-v8a.sh
-    ├── asan.armeabi-v7a.sh
-    ├── asan.x86_64.sh
-    └── asan.x86.sh
+    └── asan.sh
 
-51 directories, 50 files
+54 directories, 47 files
 
 
 === Pre-installed tool versions ========
