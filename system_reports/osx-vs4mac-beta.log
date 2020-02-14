@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_01_15_1
+* BITRISE_OSX_STACK_REV_ID: v2020_02_12_1
 ========================================
 
 
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.4
-Homebrew/homebrew-core (git revision 0e8b1; last commit 2020-01-29)
-Homebrew/homebrew-cask (git revision c7022; last commit 2020-01-30)
+* brew: Homebrew 2.2.5
+Homebrew/homebrew-core (git revision e974; last commit 2020-02-13)
+Homebrew/homebrew-cask (git revision bb78e; last commit 2020-02-13)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.8.5
@@ -49,13 +49,13 @@ Homebrew/homebrew-cask (git revision c7022; last commit 2020-01-30)
 * imagemagick (convert): Version: ImageMagick 7.0.8-66 Q16 x86_64 2019-09-23 https://imagemagick.org
 * ghostscript (ps2ascii): 9.27
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: ]0;Firebase CLI7.12.1
+* firebase: ]0;Firebase CLI7.13.0
 ./system_report.sh: line 75: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.38.0
-* stepman: 0.11.13
+* bitrise: 1.39.0
+* stepman: 0.12.0
 * envman: 2.2.11
 * cmd-bridge: 0.9.5
 ========================================
@@ -134,6 +134,7 @@ ansible
     └── xz
 
 ant
+└── openjdk
 
 autoconf
 
@@ -175,6 +176,7 @@ glib
 go
 
 gradle
+└── openjdk
 
 icu4c
 
@@ -278,6 +280,7 @@ little-cms2
     └── jpeg
 
 maven
+└── openjdk
 
 mercurial
 └── python
@@ -637,6 +640,8 @@ watchOS Simulator SDKs:
 
 
 * Available Simulators:
+Install Started
+1%.........20.........40.........60.........80.........Install Succeeded
 == Device Types ==
 iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
 iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
@@ -934,16 +939,16 @@ watchOS 6.1 (6.1.1 - 17S445) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
     iPad Pro (12.9-inch) (3rd generation) (81B34853-B7B7-4629-93D8-902D888E73D3) (Shutdown) 
     iPad Air (3rd generation) (444A91A1-EAD7-4F6B-8EC5-EA5F039F09B1) (Shutdown) 
 -- iOS 13.3 --
-    iPhone 8 (0A8AB58D-6869-4D92-BE34-D9D18528AABE) (Shutdown) 
-    iPhone 8 Plus (98B5F3CB-7BAF-4E5B-A948-54B55612B1E4) (Shutdown) 
-    iPhone 11 (ADFEDC37-06F2-435D-A1BC-F1137D5DAEF3) (Shutdown) 
-    iPhone 11 Pro (84D4C2F7-96FD-44CF-AD1E-72E6C647B14C) (Shutdown) 
-    iPhone 11 Pro Max (3AAF6F5D-323C-48A3-9130-16B6C3EB14C0) (Shutdown) 
-    iPad Pro (9.7-inch) (FB591A7A-8D37-4F3F-B5BA-7360040CD478) (Shutdown) 
-    iPad (7th generation) (546CB9B9-4F8F-4E47-9956-C12E0553DDB9) (Shutdown) 
-    iPad Pro (11-inch) (F09B36AC-A633-476B-9CC7-02F9580A9D9C) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (CFE1C6AD-15CA-4367-9134-52190EF4B54B) (Shutdown) 
-    iPad Air (3rd generation) (85594876-A9FC-4803-9555-D7CB42B08CAE) (Shutdown) 
+    iPhone 8 (1443A8FA-43C9-4DB1-A860-C23B81CDDDBE) (Shutdown) 
+    iPhone 8 Plus (7F513E52-41DF-488E-90B1-5970E170D16E) (Shutdown) 
+    iPhone 11 (B258F029-49B8-4FF0-94D4-DDD6F41C748D) (Shutdown) 
+    iPhone 11 Pro (20FAA444-5DFB-4BFF-942A-E304A72FDE89) (Shutdown) 
+    iPhone 11 Pro Max (E8EE4957-FC5F-4131-97F9-320C355A36F6) (Shutdown) 
+    iPad Pro (9.7-inch) (32521D6A-9A77-463D-AE5E-723B7E626AD6) (Shutdown) 
+    iPad (7th generation) (F1A63F02-4877-4535-BDF0-903071D16313) (Shutdown) 
+    iPad Pro (11-inch) (080779BB-E055-4E68-AFEF-311DE4F72CBF) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (711980A8-9840-42DD-840B-705526B8020E) (Shutdown) 
+    iPad Air (3rd generation) (7CC75461-6695-43BB-82A9-073D082704FC) (Shutdown) 
 -- tvOS 10.2 --
     Apple TV 1080p (5BB8092F-4AE8-4FED-8248-1F4BD3BFF0E3) (Shutdown) 
 -- tvOS 11.0 --
@@ -983,9 +988,9 @@ watchOS 6.1 (6.1.1 - 17S445) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
     Apple TV 4K (35F5AC89-D382-4C32-A7BB-35A9FF1C7F24) (Shutdown) 
     Apple TV 4K (at 1080p) (535D7EC7-00DE-494A-943A-D6CA9FE415D1) (Shutdown) 
 -- tvOS 13.3 --
-    Apple TV (943953F5-E52D-48CE-B66B-3A47C3C91EEA) (Shutdown) 
-    Apple TV 4K (3A536FCE-41E3-4F06-862E-A8A5AF08628F) (Shutdown) 
-    Apple TV 4K (at 1080p) (B65BB795-EE91-41B6-BD4A-2392014378BF) (Shutdown) 
+    Apple TV (DA0706CD-9C54-4E6E-88B4-1E5F05E8FAAA) (Shutdown) 
+    Apple TV 4K (E3BD0C53-34A4-4723-980E-25CF34B2DA73) (Shutdown) 
+    Apple TV 4K (at 1080p) (7646E9AF-FA6D-4FF6-8EF7-C4D61A39101C) (Shutdown) 
 -- watchOS 3.2 --
     Apple Watch - 38mm (3FB936CE-A2A9-4F33-B291-E480B3171455) (Shutdown) 
     Apple Watch - 42mm (DF6903E1-17CE-4CE9-BEED-2344D44F9208) (Shutdown) 
@@ -1046,12 +1051,12 @@ watchOS 6.1 (6.1.1 - 17S445) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
     Apple Watch Series 5 - 40mm (6C52FCAD-FA54-4789-AE25-5DADE6EFBD0A) (Shutdown) 
     Apple Watch Series 5 - 44mm (8090FC13-D7EA-4152-B6AB-5B19895C6D27) (Shutdown) 
 == Device Pairs ==
-D4154C66-9737-46A7-AEB8-E273217B71BA (active, disconnected)
+BB47D9E8-4B74-4AF7-894C-906A029DBFF0 (active, disconnected)
     Watch: Apple Watch Series 5 - 40mm (6C52FCAD-FA54-4789-AE25-5DADE6EFBD0A) (Shutdown)
-    Phone: iPhone 11 Pro (84D4C2F7-96FD-44CF-AD1E-72E6C647B14C) (Shutdown)
-532C977D-90E6-4B7E-8520-EF0D82002DC0 (active, disconnected)
+    Phone: iPhone 11 Pro (20FAA444-5DFB-4BFF-942A-E304A72FDE89) (Shutdown)
+25023EC6-9BC7-4E72-A3CE-E1444D75FC5F (active, disconnected)
     Watch: Apple Watch Series 5 - 44mm (8090FC13-D7EA-4152-B6AB-5B19895C6D27) (Shutdown)
-    Phone: iPhone 11 Pro Max (3AAF6F5D-323C-48A3-9130-16B6C3EB14C0) (Shutdown)
+    Phone: iPhone 11 Pro Max (E8EE4957-FC5F-4131-97F9-320C355A36F6) (Shutdown)
 
 ========================================
 
@@ -1072,18 +1077,18 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-beta-200130154020-FUks3nkhF8ibt6xLjq4WLM
+      Computer Name: stg-vs4mac-beta-200214092013-RtwxcuZ7VE4EPmPMLdh3x6
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 21 minutes
+      Time since boot: 4:59
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  167Gi   32Gi    84% 4780713 9223372036849995094    0%   /
+* Free disk space: /dev/disk1s1  200Gi  168Gi   30Gi    85% 4791138 9223372036849984669    0%   /
 ========================================
 
 
@@ -1092,12 +1097,12 @@ Software:
 --- Xamarin
 
 * Visual Studio
-Release ID: 805001543
-Git revision: c91d9639b1c8c8dff574f5c4fd46bca48dbfd21f
-Build date: 2020-01-09 16:05:44-05
-Build branch: release-8.5
+Release ID: 805002739
+Git revision: 263967358dccc898fdabde5fc9cc6fbd037580ef
+Build date: 2020-02-06 16:15:04-05
+Build branch: release-8.5-preview2.1
 * Mono version:
-Mono JIT compiler version 6.8.0.87 (2019-10/df42020fe6f Mon Jan  6 18:03:33 EST 2020)
+Mono JIT compiler version 6.8.0.104 (2019-10/1cca0cfebfc Tue Jan 28 09:49:56 EST 2020)
 Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-project.com
 	TLS:           
 	SIGSEGV:       altstack
