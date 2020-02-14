@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_01_15_1
+* BITRISE_OSX_STACK_REV_ID: v2020_02_12_1
 ========================================
 
 
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.4
-Homebrew/homebrew-core (git revision 0e8b1; last commit 2020-01-29)
-Homebrew/homebrew-cask (git revision 54128; last commit 2020-01-30)
+* brew: Homebrew 2.2.5
+Homebrew/homebrew-core (git revision e9746; last commit 2020-02-13)
+Homebrew/homebrew-cask (git revision bb78e; last commit 2020-02-13)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.9.2
@@ -49,13 +49,13 @@ Homebrew/homebrew-cask (git revision 54128; last commit 2020-01-30)
 * imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-06 https://imagemagick.org
 * ghostscript (ps2ascii): 9.23
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: ]0;Firebase CLI7.12.1
+* firebase: ]0;Firebase CLI7.13.0
 ./system_report.sh: line 75: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.38.0
-* stepman: 0.11.13
+* bitrise: 1.39.0
+* stepman: 0.12.0
 * envman: 2.2.11
 * cmd-bridge: 0.9.5
 ========================================
@@ -63,12 +63,12 @@ Homebrew/homebrew-cask (git revision 54128; last commit 2020-01-30)
 
 === Brew list versions ==================
 ansible 2.9.2_1
-ant 1.10.7
+ant 1.10.7_1
 autoconf 2.69
 carthage 0.29.0
 coreutils 8.29
 flow 0.74.0
-freetype 2.10.1 2.9.1
+freetype 2.10.1
 gdbm 1.18.1
 gettext 0.20.1
 ghostscript 9.23
@@ -76,7 +76,7 @@ git 2.17.1
 git-lfs 2.4.2
 glib 2.62.4
 go 1.10.3
-gradle 6.1.1
+gradle 6.1.1_1
 icu4c 61.1
 ilmbase 2.4.0
 imagemagick 7.0.9-14
@@ -87,22 +87,23 @@ libffi 3.2.1
 libheif 1.6.1
 libidn2 2.3.0
 libomp 9.0.0
-libpng 1.6.34 1.6.37
-libtiff 4.0.9_3 4.1.0
+libpng 1.6.37
+libtiff 4.1.0
 libtool 2.4.6_1
 libunistring 0.9.10
 libyaml 0.2.2
 little-cms2 2.9
-maven 3.6.3
+maven 3.6.3_1
 mercurial 5.2.2
 node 10.4.1
 openexr 2.4.0
+openjdk 13.0.2+8_2
 openjpeg 2.3.1
 openssl 1.0.2o_1
 openssl@1.1 1.1.1d
 pcre 8.43
 pkg-config 0.29.2
-python 3.7.5 3.7.6_1
+python 3.7.6_1
 python@3.8 3.8.1
 rbenv 1.1.2
 readline 8.0.1
@@ -133,6 +134,7 @@ ansible
     └── xz
 
 ant
+└── openjdk
 
 autoconf
 
@@ -174,6 +176,7 @@ glib
 go
 
 gradle
+└── openjdk
 
 icu4c
 
@@ -277,6 +280,7 @@ little-cms2
     └── jpeg
 
 maven
+└── openjdk
 
 mercurial
 └── python
@@ -292,6 +296,8 @@ node
 
 openexr
 └── ilmbase
+
+openjdk
 
 openjpeg
 ├── libpng
@@ -1003,18 +1009,18 @@ Software:
       Kernel Version: Darwin 17.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-9-4-200130154020-EnwhL6kzRoMqW85vYSaYvV
+      Computer Name: stg-xcode-9-4-200214075427-nNCA85q7pV9JBC5JEpZmbD
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 18 minutes
+      Time since boot: 24 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  143Gi   56Gi    72% 4295588 4290671691    0%   /
+* Free disk space: /dev/disk0s2  199Gi  143Gi   56Gi    72% 4297228 4290670051    0%   /
 ========================================
 
 --- Android
