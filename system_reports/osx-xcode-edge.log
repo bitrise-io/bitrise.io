@@ -7,16 +7,16 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_01_15_1
+* BITRISE_OSX_STACK_REV_ID: v2020_02_12_1
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.13.7 darwin/amd64
+* Go: go version go1.13.8 darwin/amd64
 * Python: Python 2.7.16
-* Node.js: v10.18.1
-* NPM: 6.13.6
-* Yarn: 1.21.1
+* Node.js: v10.19.0
+* NPM: 6.13.7
+* Yarn: 1.22.0
 * Java: openjdk version "1.8.0_242"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_242-b08)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
@@ -24,7 +24,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
 
 * git: git version 2.25.0
 * git lfs: git-lfs/2.10.0 (GitHub; darwin amd64; go 1.13.6)
-* mercurial/hg: Mercurial Distributed SCM (version 5.2.2)
+* mercurial/hg: Mercurial Distributed SCM (version 5.3)
 * curl: curl 7.54.0 (x86_64-apple-darwin18.0) libcurl/7.54.0 LibreSSL/2.6.5 zlib/1.2.11 nghttp2/1.24.1
 * wget: GNU Wget 1.20.3 built on darwin18.7.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,41 +33,41 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.4
-Homebrew/homebrew-core (git revision 0e8b; last commit 2020-01-29)
-Homebrew/homebrew-cask (git revision c7022; last commit 2020-01-30)
+* brew: Homebrew 2.2.5
+Homebrew/homebrew-core (git revision e974; last commit 2020-02-13)
+Homebrew/homebrew-cask (git revision bb78e; last commit 2020-02-13)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
-* Ansible: ansible 2.9.3
+* Ansible: ansible 2.9.4
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.9.3/libexec/lib/python3.8/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.9.4/libexec/lib/python3.8/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.31
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.117.0
+* flow: Flow, a static type checker for JavaScript, version 0.118.0
 * carthage: 0.34.0
-* imagemagick (convert): Version: ImageMagick 7.0.9-20 Q16 x86_64 2020-01-28 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.9-21 Q16 x86_64 2020-02-04 https://imagemagick.org
 * ghostscript (ps2ascii): 9.50
-* screen: Screen version 4.07.00 (GNU) 02-Oct-19
-* firebase: ]0;Firebase CLI7.12.1
+* screen: Screen version 4.08.00 (GNU) 05-Feb-20
+* firebase: ]0;Firebase CLI7.13.0
 ./system_report.sh: line 75: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.38.0
-* stepman: 0.11.13
+* bitrise: 1.39.0
+* stepman: 0.12.0
 * envman: 2.2.11
 * cmd-bridge: 0.9.5
 ========================================
 
 
 === Brew list versions ==================
-ansible 2.9.3
-ant 1.10.7
+ansible 2.9.4
+ant 1.10.7_1
 autoconf 2.69
 carthage 0.34.0
 coreutils 8.31
-flow 0.117.0
+flow 0.118.0
 freetype 2.10.1
 gdbm 1.18.1
 gettext 0.20.1
@@ -75,29 +75,30 @@ ghostscript 9.50
 git 2.25.0_1
 git-lfs 2.10.0
 glib 2.62.4
-go 1.13.7
-gradle 6.1.1
+go 1.13.8
+gradle 6.1.1_1
 icu4c 64.2
 ilmbase 2.4.0
-imagemagick 7.0.9-20
+imagemagick 7.0.9-21
 jenv 0.5.2
 jpeg 9d
 libde265 1.0.5
 libffi 3.2.1
-libheif 1.6.1
+libheif 1.6.2
 libidn2 2.3.0
-libomp 9.0.0
+libomp 9.0.1
 libpng 1.6.37
 libtiff 4.1.0
 libtool 2.4.6_1
 libunistring 0.9.10
 libyaml 0.2.2
 little-cms2 2.9
-maven 3.6.3
-mercurial 5.2.2
-node 13.7.0
-node@10 10.18.1
+maven 3.6.3_1
+mercurial 5.3
+node 13.8.0
+node@10 10.19.0
 openexr 2.4.0
+openjdk 13.0.2+8_2
 openjpeg 2.3.1
 openssl@1.1 1.1.1d
 pcre 8.43
@@ -108,16 +109,16 @@ python@3.8 3.8.1
 rbenv 1.1.2
 readline 8.0.1
 ruby-build 20200115
-screen 4.7.0
+screen 4.8.0
 shared-mime-info 1.15
-sqlite 3.30.1
+sqlite 3.31.1
 tree 1.8.0
 watchman 4.9.0_3
 webp 1.1.0
 wget 1.20.3_2
 x265 3.2.1
 xz 5.2.4
-yarn 1.21.1
+yarn 1.22.0
 ========================================
 
 
@@ -134,6 +135,7 @@ ansible
     └── xz
 
 ant
+└── openjdk
 
 autoconf
 
@@ -175,6 +177,7 @@ glib
 go
 
 gradle
+└── openjdk
 
 icu4c
 
@@ -278,6 +281,7 @@ little-cms2
     └── jpeg
 
 maven
+└── openjdk
 
 mercurial
 └── python
@@ -296,6 +300,8 @@ node@10
 
 openexr
 └── ilmbase
+
+openjdk
 
 openjpeg
 ├── libpng
@@ -443,7 +449,7 @@ colored (1.2)
 colored2 (3.1.2)
 commander (4.5.0)
 commander-fastlane (4.4.6)
-concurrent-ruby (1.1.5)
+concurrent-ruby (1.1.6)
 csv (default: 3.0.9)
 cupertino (1.3.4)
 date (default: 2.0.0)
@@ -523,7 +529,7 @@ power_assert (1.1.3)
 prime (default: 0.1.0)
 psych (default: 3.1.0)
 public_suffix (2.0.5)
-rack (1.6.12)
+rack (1.6.13)
 rack-protection (1.5.5)
 rake (12.3.2)
 rdoc (default: 6.1.2)
@@ -541,7 +547,7 @@ security (0.1.3)
 shell (default: 0.7)
 shenzhen (0.14.3)
 signet (0.12.0)
-simctl (1.6.7)
+simctl (1.6.8)
 sinatra (1.4.8)
 slack-notifier (2.3.2)
 stringio (default: 0.0.2)
@@ -556,7 +562,7 @@ thwait (default: 0.1.0)
 tilt (2.0.10)
 tracer (default: 0.1.0)
 tty-cursor (0.7.1)
-tty-screen (0.7.0)
+tty-screen (0.7.1)
 tty-spinner (0.9.3)
 tzinfo (1.2.6)
 uber (0.1.0)
@@ -567,7 +573,7 @@ webrick (default: 1.4.2)
 webrobots (0.1.2)
 word_wrap (1.0.0)
 xcode-install (2.6.3)
-xcodeproj (1.14.0)
+xcodeproj (1.15.0)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
@@ -577,7 +583,7 @@ zlib (default: 1.0.0)
 
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
-* Ionic: 5.4.15
+* Ionic: 5.4.16
 ========================================
 
 
@@ -1095,18 +1101,18 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-200130153355-6RJsuTCCHpAySopzRFhx6H
+      Computer Name: stg-xcode-edge-200214071018-f8EZssLNWnqutNn8gxYjzP
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 13 minutes
+      Time since boot: 5:18
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  170Gi   29Gi    86% 5222000 9223372036849553807    0%   /
+* Free disk space: /dev/disk1s1  200Gi  171Gi   29Gi    86% 5228213 9223372036849547594    0%   /
 ========================================
 
 --- Android
