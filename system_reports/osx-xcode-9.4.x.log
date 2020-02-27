@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.5
-Homebrew/homebrew-core (git revision e9746; last commit 2020-02-13)
-Homebrew/homebrew-cask (git revision bb78e; last commit 2020-02-13)
+* brew: Homebrew 2.2.6
+Homebrew/homebrew-core (git revision 79aa7; last commit 2020-02-27)
+Homebrew/homebrew-cask (git revision d0d29; last commit 2020-02-27)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.9.2
@@ -49,7 +49,7 @@ Homebrew/homebrew-cask (git revision bb78e; last commit 2020-02-13)
 * imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-06 https://imagemagick.org
 * ghostscript (ps2ascii): 9.23
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: ]0;Firebase CLI7.13.0
+* firebase: ]0;Firebase CLI7.14.0
 ./system_report.sh: line 75: wine: command not found
 * wine: 
 
@@ -76,7 +76,7 @@ git 2.17.1
 git-lfs 2.4.2
 glib 2.62.4
 go 1.10.3
-gradle 6.1.1_1
+gradle 6.2.1
 icu4c 61.1
 ilmbase 2.4.0
 imagemagick 7.0.9-14
@@ -125,6 +125,11 @@ yarn 1.7.0
 ansible
 ├── libyaml
 ├── openssl@1.1
+├── gdbm
+├── readline
+├── sqlite
+│   └── readline
+├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -152,12 +157,12 @@ gdbm
 gettext
 
 ghostscript
-└── libtiff
-    └── jpeg
+└── little-cms2
+    ├── jpeg
+    └── libtiff
+        └── jpeg
 
 git
-├── gettext
-└── pcre2
 
 git-lfs
 
@@ -165,6 +170,12 @@ glib
 ├── gettext
 ├── libffi
 ├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
 └── python
     ├── gdbm
     ├── openssl@1.1
@@ -183,19 +194,143 @@ icu4c
 ilmbase
 
 imagemagick
+├── libpng
 ├── freetype
 │   └── libpng
 ├── jpeg
+├── libde265
+├── gettext
+├── libffi
+├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
+├── python
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+├── glib
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   └── python
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
+├── shared-mime-info
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   ├── python
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   └── xz
+│   └── glib
+│       ├── gettext
+│       ├── libffi
+│       ├── pcre
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       ├── xz
+│       └── python
+│           ├── gdbm
+│           ├── openssl@1.1
+│           ├── readline
+│           ├── sqlite
+│           │   └── readline
+│           └── xz
+├── x265
 ├── libheif
 │   ├── jpeg
 │   ├── libde265
 │   ├── libpng
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   ├── python
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   └── xz
+│   ├── glib
+│   │   ├── gettext
+│   │   ├── libffi
+│   │   ├── pcre
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   ├── xz
+│   │   └── python
+│   │       ├── gdbm
+│   │       ├── openssl@1.1
+│   │       ├── readline
+│   │       ├── sqlite
+│   │       │   └── readline
+│   │       └── xz
 │   ├── shared-mime-info
 │   │   ├── gettext
+│   │   ├── libffi
+│   │   ├── pcre
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   ├── xz
+│   │   ├── python
+│   │   │   ├── gdbm
+│   │   │   ├── openssl@1.1
+│   │   │   ├── readline
+│   │   │   ├── sqlite
+│   │   │   │   └── readline
+│   │   │   └── xz
 │   │   └── glib
 │   │       ├── gettext
 │   │       ├── libffi
 │   │       ├── pcre
+│   │       ├── gdbm
+│   │       ├── openssl@1.1
+│   │       ├── readline
+│   │       ├── sqlite
+│   │       │   └── readline
+│   │       ├── xz
 │   │       └── python
 │   │           ├── gdbm
 │   │           ├── openssl@1.1
@@ -205,7 +340,6 @@ imagemagick
 │   │           └── xz
 │   └── x265
 ├── libomp
-├── libpng
 ├── libtiff
 │   └── jpeg
 ├── libtool
@@ -213,22 +347,23 @@ imagemagick
 │   ├── jpeg
 │   └── libtiff
 │       └── jpeg
+├── ilmbase
 ├── openexr
 │   └── ilmbase
 ├── openjpeg
 │   ├── libpng
+│   ├── jpeg
 │   ├── libtiff
 │   │   └── jpeg
 │   └── little-cms2
 │       ├── jpeg
 │       └── libtiff
 │           └── jpeg
-├── webp
-│   ├── jpeg
-│   ├── libpng
-│   └── libtiff
-│       └── jpeg
-└── xz
+└── webp
+    ├── jpeg
+    ├── libpng
+    └── libtiff
+        └── jpeg
 
 jenv
 
@@ -242,12 +377,66 @@ libheif
 ├── jpeg
 ├── libde265
 ├── libpng
+├── gettext
+├── libffi
+├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
+├── python
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+├── glib
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   └── python
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
 ├── shared-mime-info
 │   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   ├── python
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   └── xz
 │   └── glib
 │       ├── gettext
 │       ├── libffi
 │       ├── pcre
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       ├── xz
 │       └── python
 │           ├── gdbm
 │           ├── openssl@1.1
@@ -283,6 +472,12 @@ maven
 └── openjdk
 
 mercurial
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
 └── python
     ├── gdbm
     ├── openssl@1.1
@@ -301,6 +496,7 @@ openjdk
 
 openjpeg
 ├── libpng
+├── jpeg
 ├── libtiff
 │   └── jpeg
 └── little-cms2
@@ -331,6 +527,9 @@ python@3.8
 └── xz
 
 rbenv
+├── autoconf
+├── pkg-config
+├── readline
 └── ruby-build
     ├── autoconf
     ├── pkg-config
@@ -347,10 +546,31 @@ screen
 
 shared-mime-info
 ├── gettext
+├── libffi
+├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
+├── python
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
 └── glib
     ├── gettext
     ├── libffi
     ├── pcre
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    ├── xz
     └── python
         ├── gdbm
         ├── openssl@1.1
@@ -367,6 +587,11 @@ tree
 watchman
 ├── openssl@1.1
 ├── pcre
+├── gdbm
+├── readline
+├── sqlite
+│   └── readline
+├── xz
 └── python
     ├── gdbm
     ├── openssl@1.1
@@ -382,6 +607,8 @@ webp
     └── jpeg
 
 wget
+├── gettext
+├── libunistring
 ├── libidn2
 │   ├── gettext
 │   └── libunistring
@@ -1009,18 +1236,18 @@ Software:
       Kernel Version: Darwin 17.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-9-4-200214081143-jstmNdowNrZp342jS3rUxK
+      Computer Name: stg-xcode-9-4-200227145206-4uZD82zvxUC7J5obXfGUvn
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 4:26
+      Time since boot: 21 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  143Gi   56Gi    72% 4297234 4290670045    0%   /
+* Free disk space: /dev/disk0s2  199Gi  143Gi   56Gi    73% 4303043 4290664236    0%   /
 ========================================
 
 --- Android
