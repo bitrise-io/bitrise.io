@@ -7,12 +7,12 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_02_12_1
+* BITRISE_OSX_STACK_REV_ID: v2020_02_26_1
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.13.8 darwin/amd64
+* Go: go version go1.14 darwin/amd64
 * Python: Python 2.7.16
 * Node.js: v10.19.0
 * NPM: 6.13.7
@@ -33,58 +33,58 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.5
-Homebrew/homebrew-core (git revision e974; last commit 2020-02-13)
-Homebrew/homebrew-cask (git revision bb78e; last commit 2020-02-13)
+* brew: Homebrew 2.2.9
+Homebrew/homebrew-core (git revision 3aa801; last commit 2020-03-06)
+Homebrew/homebrew-cask (git revision 89d53; last commit 2020-03-07)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.9.4
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.9.4/libexec/lib/python3.8/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.9.4_1/libexec/lib/python3.8/site-packages/ansible
   executable location = /usr/local/bin/ansible
-* gtimeout: timeout (GNU coreutils) 8.31
+* gtimeout: timeout (GNU coreutils) 8.32
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.118.0
+* flow: Flow, a static type checker for JavaScript, version 0.120.1
 * carthage: 0.34.0
-* imagemagick (convert): Version: ImageMagick 7.0.9-21 Q16 x86_64 2020-02-04 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.9-27 Q16 x86_64 2020-03-04 https://imagemagick.org
 * ghostscript (ps2ascii): 9.50
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
-* firebase: ]0;Firebase CLI7.13.0
+* firebase: ]0;Firebase CLI7.14.0
 ./system_report.sh: line 75: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.39.0
-* stepman: 0.12.0
+* bitrise: 1.39.1
+* stepman: 0.12.1
 * envman: 2.2.11
 * cmd-bridge: 0.9.5
 ========================================
 
 
 === Brew list versions ==================
-ansible 2.9.4
+ansible 2.9.4_1
 ant 1.10.7_1
 autoconf 2.69
 carthage 0.34.0
-coreutils 8.31
-flow 0.118.0
+coreutils 8.32
+flow 0.120.1
 freetype 2.10.1
 gdbm 1.18.1
 gettext 0.20.1
 ghostscript 9.50
 git 2.25.0_1
 git-lfs 2.10.0
-glib 2.62.4
-go 1.13.8
-gradle 6.1.1_1
+glib 2.64.0
+go 1.14
+gradle 6.2.2
 icu4c 64.2
 ilmbase 2.4.0
-imagemagick 7.0.9-21
+imagemagick 7.0.9-27
 jenv 0.5.2
 jpeg 9d
 libde265 1.0.5
 libffi 3.2.1
-libheif 1.6.2
+libheif 1.6.2_1
 libidn2 2.3.0
 libomp 9.0.1
 libpng 1.6.37
@@ -95,20 +95,20 @@ libyaml 0.2.2
 little-cms2 2.9
 maven 3.6.3_1
 mercurial 5.3
-node 13.8.0
+node 13.10.1
 node@10 10.19.0
 openexr 2.4.0
 openjdk 13.0.2+8_2
 openjpeg 2.3.1
 openssl@1.1 1.1.1d
-pcre 8.43
+pcre 8.44
 pcre2 10.34
 pkg-config 0.29.2
 python 3.7.6_1
 python@3.8 3.8.1
 rbenv 1.1.2
-readline 8.0.1
-ruby-build 20200115
+readline 8.0.4
+ruby-build 20200224
 screen 4.8.0
 shared-mime-info 1.15
 sqlite 3.31.1
@@ -116,7 +116,7 @@ tree 1.8.0
 watchman 4.9.0_3
 webp 1.1.0
 wget 1.20.3_2
-x265 3.2.1
+x265 3.3
 xz 5.2.4
 yarn 1.22.0
 ========================================
@@ -126,6 +126,11 @@ yarn 1.22.0
 ansible
 ├── libyaml
 ├── openssl@1.1
+├── gdbm
+├── readline
+├── sqlite
+│   └── readline
+├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -153,6 +158,7 @@ gdbm
 gettext
 
 ghostscript
+├── jpeg
 └── libtiff
     └── jpeg
 
@@ -166,6 +172,12 @@ glib
 ├── gettext
 ├── libffi
 ├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
 └── python
     ├── gdbm
     ├── openssl@1.1
@@ -184,19 +196,143 @@ icu4c
 ilmbase
 
 imagemagick
+├── libpng
 ├── freetype
 │   └── libpng
 ├── jpeg
+├── libde265
+├── gettext
+├── libffi
+├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
+├── python
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+├── glib
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   └── python
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
+├── shared-mime-info
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   ├── python
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   └── xz
+│   └── glib
+│       ├── gettext
+│       ├── libffi
+│       ├── pcre
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       ├── xz
+│       └── python
+│           ├── gdbm
+│           ├── openssl@1.1
+│           ├── readline
+│           ├── sqlite
+│           │   └── readline
+│           └── xz
+├── x265
 ├── libheif
 │   ├── jpeg
 │   ├── libde265
 │   ├── libpng
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   ├── python
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   └── xz
+│   ├── glib
+│   │   ├── gettext
+│   │   ├── libffi
+│   │   ├── pcre
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   ├── xz
+│   │   └── python
+│   │       ├── gdbm
+│   │       ├── openssl@1.1
+│   │       ├── readline
+│   │       ├── sqlite
+│   │       │   └── readline
+│   │       └── xz
 │   ├── shared-mime-info
 │   │   ├── gettext
+│   │   ├── libffi
+│   │   ├── pcre
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   ├── xz
+│   │   ├── python
+│   │   │   ├── gdbm
+│   │   │   ├── openssl@1.1
+│   │   │   ├── readline
+│   │   │   ├── sqlite
+│   │   │   │   └── readline
+│   │   │   └── xz
 │   │   └── glib
 │   │       ├── gettext
 │   │       ├── libffi
 │   │       ├── pcre
+│   │       ├── gdbm
+│   │       ├── openssl@1.1
+│   │       ├── readline
+│   │       ├── sqlite
+│   │       │   └── readline
+│   │       ├── xz
 │   │       └── python
 │   │           ├── gdbm
 │   │           ├── openssl@1.1
@@ -206,7 +342,6 @@ imagemagick
 │   │           └── xz
 │   └── x265
 ├── libomp
-├── libpng
 ├── libtiff
 │   └── jpeg
 ├── libtool
@@ -214,22 +349,23 @@ imagemagick
 │   ├── jpeg
 │   └── libtiff
 │       └── jpeg
+├── ilmbase
 ├── openexr
 │   └── ilmbase
 ├── openjpeg
 │   ├── libpng
+│   ├── jpeg
 │   ├── libtiff
 │   │   └── jpeg
 │   └── little-cms2
 │       ├── jpeg
 │       └── libtiff
 │           └── jpeg
-├── webp
-│   ├── jpeg
-│   ├── libpng
-│   └── libtiff
-│       └── jpeg
-└── xz
+└── webp
+    ├── jpeg
+    ├── libpng
+    └── libtiff
+        └── jpeg
 
 jenv
 
@@ -243,12 +379,66 @@ libheif
 ├── jpeg
 ├── libde265
 ├── libpng
+├── gettext
+├── libffi
+├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
+├── python
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+├── glib
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   └── python
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
 ├── shared-mime-info
 │   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   ├── python
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   └── xz
 │   └── glib
 │       ├── gettext
 │       ├── libffi
 │       ├── pcre
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       ├── xz
 │       └── python
 │           ├── gdbm
 │           ├── openssl@1.1
@@ -284,6 +474,12 @@ maven
 └── openjdk
 
 mercurial
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
 └── python
     ├── gdbm
     ├── openssl@1.1
@@ -305,6 +501,7 @@ openjdk
 
 openjpeg
 ├── libpng
+├── jpeg
 ├── libtiff
 │   └── jpeg
 └── little-cms2
@@ -337,6 +534,9 @@ python@3.8
 └── xz
 
 rbenv
+├── autoconf
+├── pkg-config
+├── readline
 └── ruby-build
     ├── autoconf
     ├── pkg-config
@@ -353,10 +553,31 @@ screen
 
 shared-mime-info
 ├── gettext
+├── libffi
+├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
+├── python
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
 └── glib
     ├── gettext
     ├── libffi
     ├── pcre
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    ├── xz
     └── python
         ├── gdbm
         ├── openssl@1.1
@@ -373,6 +594,11 @@ tree
 watchman
 ├── openssl@1.1
 ├── pcre
+├── gdbm
+├── readline
+├── sqlite
+│   └── readline
+├── xz
 └── python
     ├── gdbm
     ├── openssl@1.1
@@ -388,6 +614,8 @@ webp
     └── jpeg
 
 wget
+├── gettext
+├── libunistring
 ├── libidn2
 │   ├── gettext
 │   └── libunistring
@@ -398,6 +626,7 @@ x265
 xz
 
 yarn
+├── icu4c
 └── node
     └── icu4c
 
@@ -415,7 +644,7 @@ yarn
 * rbenv: 1.1.2
 * Rubygems: 3.1.2
 * Bundler: Bundler version 2.1.2
-* CocoaPods: 1.8.4
+* CocoaPods: 1.9.0
 * xcpretty: 0.3.0
 * Nomad CLI: 3.1.2
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
@@ -427,8 +656,12 @@ activesupport (4.2.11.1)
 addressable (2.7.0)
 algoliasearch (1.27.1)
 atomos (0.1.3)
-aws-sdk (1.67.0)
+aws-eventstream (1.0.3)
+aws-sdk (2.11.461, 1.67.0)
+aws-sdk-core (2.11.461)
+aws-sdk-resources (2.11.461)
 aws-sdk-v1 (1.67.0)
+aws-sigv4 (1.1.1)
 babosa (1.0.3)
 bigdecimal (default: 1.4.1)
 bundler (default: 2.1.2)
@@ -436,8 +669,8 @@ certified (1.0.0)
 CFPropertyList (3.0.2)
 claide (1.0.3)
 cmath (default: 1.0.0)
-cocoapods (1.8.4)
-cocoapods-core (1.8.4)
+cocoapods (1.9.0)
+cocoapods-core (1.9.0)
 cocoapods-deintegrate (1.0.4)
 cocoapods-downloader (1.3.0)
 cocoapods-plugins (1.0.0)
@@ -457,7 +690,7 @@ dbm (default: 1.0.0)
 declarative (0.0.10)
 declarative-option (0.1.0)
 did_you_mean (1.3.0)
-digest-crc (0.4.1)
+digest-crc (0.5.1)
 domain_name (0.5.20190701)
 dotenv (2.7.5)
 dubai (0.2.0)
@@ -465,13 +698,15 @@ e2mmap (default: 0.1.0)
 emoji_regex (1.0.1)
 escape (0.0.4)
 etc (default: 1.0.1)
+ethon (0.12.0)
 excon (0.72.0)
 faraday (0.17.3)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.14.0, 0.13.1)
 fastimage (2.1.7)
-fastlane (2.141.0)
+fastlane (2.143.0)
 fcntl (default: 1.0.0)
+ffi (1.12.2)
 fiddle (default: 1.0.0)
 fileutils (default: 1.1.0)
 forwardable (default: 1.2.0)
@@ -481,10 +716,10 @@ gdbm (default: 2.0.0)
 gh_inspector (1.1.3)
 google-api-client (0.36.4)
 google-cloud-core (1.5.0)
-google-cloud-env (1.3.0)
+google-cloud-env (1.3.1)
 google-cloud-errors (1.0.0)
 google-cloud-storage (1.25.1)
-googleauth (0.10.0)
+googleauth (0.11.0)
 highline (2.0.3, 1.7.10)
 houston (2.4.0)
 http-cookie (1.0.3)
@@ -493,6 +728,7 @@ i18n (0.9.5)
 io-console (default: 0.4.7)
 ipaddr (default: 1.2.2)
 irb (default: 1.0.0)
+jmespath (1.4.0)
 json (default: 2.1.0, 1.8.6)
 jwt (2.1.0)
 logger (default: 1.3.0)
@@ -546,7 +782,7 @@ sdbm (default: 1.0.0)
 security (0.1.3)
 shell (default: 0.7)
 shenzhen (0.14.3)
-signet (0.12.0)
+signet (0.13.0)
 simctl (1.6.8)
 sinatra (1.4.8)
 slack-notifier (2.3.2)
@@ -564,6 +800,7 @@ tracer (default: 0.1.0)
 tty-cursor (0.7.1)
 tty-screen (0.7.1)
 tty-spinner (0.9.3)
+typhoeus (1.3.1)
 tzinfo (1.2.6)
 uber (0.1.0)
 unf (0.1.4)
@@ -1101,18 +1338,18 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-200214071018-f8EZssLNWnqutNn8gxYjzP
+      Computer Name: stg-xcode-edge-200306160631-cqi26D6fSsZnujjjsg6tt6
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 5:18
+      Time since boot: 11 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  171Gi   29Gi    86% 5228213 9223372036849547594    0%   /
+* Free disk space: /dev/disk1s1  200Gi  171Gi   28Gi    86% 5239722 9223372036849536085    0%   /
 ========================================
 
 --- Android
