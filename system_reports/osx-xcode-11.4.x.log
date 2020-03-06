@@ -12,7 +12,7 @@
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.13.8 darwin/amd64
+* Go: go version go1.14 darwin/amd64
 * Python: Python 2.7.16
 * Node.js: v10.19.0
 * NPM: 6.13.7
@@ -33,30 +33,31 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.6
-Homebrew/homebrew-core (git revision f861b; last commit 2020-02-25)
-Homebrew/homebrew-cask (git revision 1f2d7; last commit 2020-02-26)
+* brew: Homebrew 2.2.9
+Homebrew/homebrew-core (git revision c735e; last commit 2020-03-04)
+Homebrew/homebrew-cask (git revision 7f066; last commit 2020-03-05)
+./system_report.sh: line 58: xctool: command not found
+* xctool: 
 * Ansible: ansible 2.9.4
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/Cellar/ansible/2.9.4_1/libexec/lib/python3.8/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.31
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.119.0
+* flow: Flow, a static type checker for JavaScript, version 0.119.1
 * carthage: 0.34.0
-* imagemagick (convert): Version: ImageMagick 7.0.9-23 Q16 x86_64 2020-02-16 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.9-26 Q16 x86_64 2020-02-27 https://imagemagick.org
 * ghostscript (ps2ascii): 9.50
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
-* firebase: ]0;Firebase CLI7.13.1
+* firebase: ]0;Firebase CLI7.14.0
 ./system_report.sh: line 75: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.39.0
-* stepman: 0.12.0
+* bitrise: 1.39.1
+* stepman: 0.12.1
 * envman: 2.2.11
 * cmd-bridge: 0.9.5
-========================================
 
 
 === Brew list versions ==================
@@ -65,19 +66,19 @@ ant 1.10.7_1
 autoconf 2.69
 carthage 0.34.0
 coreutils 8.31
-flow 0.119.0
+flow 0.119.1
 freetype 2.10.1
 gdbm 1.18.1
 gettext 0.20.1
 ghostscript 9.50
 git 2.25.0_1
 git-lfs 2.10.0
-glib 2.62.5
-go 1.13.8
-gradle 6.2
+glib 2.64.0
+go 1.14
+gradle 6.2.2
 icu4c 64.2
 ilmbase 2.4.0
-imagemagick 7.0.9-23
+imagemagick 7.0.9-26
 jenv 0.5.2
 jpeg 9d
 libde265 1.0.5
@@ -106,7 +107,7 @@ python 3.7.6_1
 python@3.8 3.8.1
 rbenv 1.1.2
 readline 8.0.4
-ruby-build 20200218
+ruby-build 20200224
 screen 4.8.0
 shared-mime-info 1.15
 sqlite 3.31.1
@@ -117,7 +118,6 @@ wget 1.20.3_2
 x265 3.3
 xz 5.2.4
 yarn 1.22.0
-========================================
 
 
 === Brew deps tree ==================
@@ -628,7 +628,6 @@ yarn
 └── node
     └── icu4c
 
-========================================
 
 
 === Ruby and rubygems ==================
@@ -638,15 +637,14 @@ yarn
   2.4.5
   2.5.3
 * 2.6.5 (set by /Users/vagrant/.rbenv/version)
--------------------------------
 * rbenv: 1.1.2
 * Rubygems: 3.1.2
 * Bundler: Bundler version 2.1.2
-* CocoaPods: 1.8.4
+* CocoaPods: 1.9.0
 * xcpretty: 0.3.0
 * Nomad CLI: 3.1.2
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
-========================================
+
 
 
 === All Ruby GEMs ======================
@@ -663,8 +661,8 @@ certified (1.0.0)
 CFPropertyList (3.0.2)
 claide (1.0.3)
 cmath (default: 1.0.0)
-cocoapods (1.8.4)
-cocoapods-core (1.8.4)
+cocoapods (1.9.0)
+cocoapods-core (1.9.0)
 cocoapods-deintegrate (1.0.4)
 cocoapods-downloader (1.3.0)
 cocoapods-plugins (1.0.0)
@@ -684,7 +682,7 @@ dbm (default: 1.0.0)
 declarative (0.0.10)
 declarative-option (0.1.0)
 did_you_mean (1.3.0)
-digest-crc (0.4.1)
+digest-crc (0.5.1)
 domain_name (0.5.20190701)
 dotenv (2.7.5)
 dubai (0.2.0)
@@ -692,6 +690,7 @@ e2mmap (default: 0.1.0)
 emoji_regex (1.0.1)
 escape (0.0.4)
 etc (default: 1.0.1)
+ethon (0.12.0)
 excon (0.72.0)
 faraday (0.17.3)
 faraday-cookie_jar (0.0.6)
@@ -699,6 +698,7 @@ faraday_middleware (0.14.0, 0.13.1)
 fastimage (2.1.7)
 fastlane (2.142.0)
 fcntl (default: 1.0.0)
+ffi (1.12.2)
 fiddle (default: 1.0.0)
 fileutils (default: 1.1.0)
 forwardable (default: 1.2.0)
@@ -708,10 +708,10 @@ gdbm (default: 2.0.0)
 gh_inspector (1.1.3)
 google-api-client (0.36.4)
 google-cloud-core (1.5.0)
-google-cloud-env (1.3.0)
+google-cloud-env (1.3.1)
 google-cloud-errors (1.0.0)
 google-cloud-storage (1.25.1)
-googleauth (0.10.0)
+googleauth (0.11.0)
 highline (2.0.3, 1.7.10)
 houston (2.4.0)
 http-cookie (1.0.3)
@@ -773,7 +773,7 @@ sdbm (default: 1.0.0)
 security (0.1.3)
 shell (default: 0.7)
 shenzhen (0.14.3)
-signet (0.12.0)
+signet (0.13.0)
 simctl (1.6.8)
 sinatra (1.4.8)
 slack-notifier (2.3.2)
@@ -791,6 +791,7 @@ tracer (default: 0.1.0)
 tty-cursor (0.7.1)
 tty-screen (0.7.1)
 tty-spinner (0.9.3)
+typhoeus (1.3.1)
 tzinfo (1.2.6)
 uber (0.1.0)
 unf (0.1.4)
@@ -810,11 +811,14 @@ zlib (default: 1.0.0)
 
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
-* Ionic: 6.1.0
+* Ionic: 5.4.16
 ========================================
 
 
 === Checking Xcode CLT dirs ============
+
+ * ls -1 /usr/include/CommonCrypto
+ls: /usr/include/CommonCrypto: No such file or directory
 
  * ls -1 /Library/Developer/CommandLineTools/
 Library
@@ -835,10 +839,10 @@ Target: x86_64-apple-darwin19.3.0
 
 * Xcode Version:
 Xcode 11.4
-Build version 11N123k
+Build version 11N132i
 
 * /usr/bin/swift --version
-Apple Swift version 5.2 (swiftlang-1103.0.25.1 clang-1103.2.32.5)
+Apple Swift version 5.2 (swiftlang-1103.0.30 clang-1103.0.30)
 Target: x86_64-apple-darwin19.3.0
 
 * Installed SDKs:
@@ -918,11 +922,6 @@ Apple Watch Series 4 - 44mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-S
 Apple Watch Series 5 - 40mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-5-40mm)
 Apple Watch Series 5 - 44mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-5-44mm)
 == Runtimes ==
-iOS 11.0 (11.0.1 - 15A8401) - com.apple.CoreSimulator.SimRuntime.iOS-11-0 
-iOS 11.1 (11.1 - 15B87) - com.apple.CoreSimulator.SimRuntime.iOS-11-1 
-iOS 11.2 (11.2 - 15C107) - com.apple.CoreSimulator.SimRuntime.iOS-11-2 
-iOS 11.3 (11.3 - 15E217) - com.apple.CoreSimulator.SimRuntime.iOS-11-3 
-iOS 11.4 (11.4 - 15F79) - com.apple.CoreSimulator.SimRuntime.iOS-11-4 
 iOS 12.0 (12.0 - 16A366) - com.apple.CoreSimulator.SimRuntime.iOS-12-0 
 iOS 12.1 (12.1 - 16B91) - com.apple.CoreSimulator.SimRuntime.iOS-12-1 
 iOS 12.2 (12.2 - 16E226) - com.apple.CoreSimulator.SimRuntime.iOS-12-2 
@@ -930,382 +929,236 @@ iOS 12.4 (12.4 - 16G73) - com.apple.CoreSimulator.SimRuntime.iOS-12-4
 iOS 13.0 (13.0 - 17A577) - com.apple.CoreSimulator.SimRuntime.iOS-13-0 
 iOS 13.1 (13.1 - 17A844) - com.apple.CoreSimulator.SimRuntime.iOS-13-1 
 iOS 13.2 (13.2.2 - 17B102) - com.apple.CoreSimulator.SimRuntime.iOS-13-2 
-iOS 13.4 (13.4 - 17E5233e) - com.apple.CoreSimulator.SimRuntime.iOS-13-4 
-tvOS 11.0 (11.0 - 15J380) - com.apple.CoreSimulator.SimRuntime.tvOS-11-0 
-tvOS 11.1 (11.1 - 15J580) - com.apple.CoreSimulator.SimRuntime.tvOS-11-1 
-tvOS 11.2 (11.2 - 15K104) - com.apple.CoreSimulator.SimRuntime.tvOS-11-2 
-tvOS 11.3 (11.3 - 15L211) - com.apple.CoreSimulator.SimRuntime.tvOS-11-3 
-tvOS 11.4 (11.4 - 15L576) - com.apple.CoreSimulator.SimRuntime.tvOS-11-4 
+iOS 13.4 (13.4 - 17E5249a) - com.apple.CoreSimulator.SimRuntime.iOS-13-4 
 tvOS 12.0 (12.0 - 16J364) - com.apple.CoreSimulator.SimRuntime.tvOS-12-0 
 tvOS 12.1 (12.1 - 16J602) - com.apple.CoreSimulator.SimRuntime.tvOS-12-1 
 tvOS 12.2 (12.2 - 16L225) - com.apple.CoreSimulator.SimRuntime.tvOS-12-2 
 tvOS 12.4 (12.4 - 16M567) - com.apple.CoreSimulator.SimRuntime.tvOS-12-4 
 tvOS 13.0 (13.0 - 17J585) - com.apple.CoreSimulator.SimRuntime.tvOS-13-0 
 tvOS 13.2 (13.2 - 17K90) - com.apple.CoreSimulator.SimRuntime.tvOS-13-2 
-tvOS 13.4 (13.4 - 17L5235d) - com.apple.CoreSimulator.SimRuntime.tvOS-13-4 
-watchOS 4.0 (4.0 - 15R372) - com.apple.CoreSimulator.SimRuntime.watchOS-4-0 
-watchOS 4.1 (4.1 - 15R844) - com.apple.CoreSimulator.SimRuntime.watchOS-4-1 
-watchOS 4.2 (4.2 - 15S100) - com.apple.CoreSimulator.SimRuntime.watchOS-4-2 
+tvOS 13.4 (13.4 - 17L5251a) - com.apple.CoreSimulator.SimRuntime.tvOS-13-4 
 watchOS 5.0 (5.0 - 16R363) - com.apple.CoreSimulator.SimRuntime.watchOS-5-0 
 watchOS 5.1 (5.1 - 16R591) - com.apple.CoreSimulator.SimRuntime.watchOS-5-1 
 watchOS 5.2 (5.2 - 16T224) - com.apple.CoreSimulator.SimRuntime.watchOS-5-2 
 watchOS 5.3 (5.3 - 16U567) - com.apple.CoreSimulator.SimRuntime.watchOS-5-3 
 watchOS 6.0 (6.0 - 17R575) - com.apple.CoreSimulator.SimRuntime.watchOS-6-0 
-watchOS 6.2 (6.2 - 17T5234d) - com.apple.CoreSimulator.SimRuntime.watchOS-6-2 
+watchOS 6.2 (6.2 - 17T5250a) - com.apple.CoreSimulator.SimRuntime.watchOS-6-2 
 == Devices ==
--- iOS 11.0 --
-    iPhone 5s (2AEAA4A2-16AE-4FE7-AFDA-208C7CA53CCB) (Shutdown) 
-    iPhone 6 Plus (4C98E745-BE7F-4A36-AB2F-AD9B91B91316) (Shutdown) 
-    iPhone 6 (CAD5953F-C77C-4698-B7A7-A1B13041965A) (Shutdown) 
-    iPhone 6s (0670869D-628D-441C-B534-E0B03A731237) (Shutdown) 
-    iPhone 6s Plus (6F2AC64E-6DD3-47DB-BFAB-72B93126033C) (Shutdown) 
-    iPhone SE (7572DE04-E95F-4F42-8CF2-03EE3FFCD0E9) (Shutdown) 
-    iPhone 7 (8EF82BDE-F5C6-489D-9FC5-ACAC393C60D0) (Shutdown) 
-    iPhone 7 Plus (AAAF6D0F-3E56-404F-A108-A8D264DAAE57) (Shutdown) 
-    iPhone 8 (21B1563F-B55C-45E4-A4A5-814100F02555) (Shutdown) 
-    iPhone 8 Plus (C1CE0010-8146-43F8-AC7D-CAFE948B1DA0) (Shutdown) 
-    iPhone X (EFA2163B-172D-439C-93DC-7C03AEFC4536) (Shutdown) 
-    iPad Air (580CFDFE-BD54-4AF5-B2F5-7BA3F39AFBCC) (Shutdown) 
-    iPad Air 2 (E9B461F2-A9AC-448A-8960-F80D02F26FA0) (Shutdown) 
-    iPad Pro (9.7-inch) (A3130024-6EC8-49DF-91FB-640703984E3E) (Shutdown) 
-    iPad Pro (12.9-inch) (049BC3C4-323B-4D0F-8D70-6BB977E2E3D7) (Shutdown) 
-    iPad (5th generation) (97DA5AB5-51E0-4B71-BCDD-B96F853838B7) (Shutdown) 
-    iPad Pro (12.9-inch) (2nd generation) (DD658EC7-ACE0-494B-B830-52F421E4502E) (Shutdown) 
-    iPad Pro (10.5-inch) (DCE51338-3777-4487-8CE8-61EE477ACF44) (Shutdown) 
--- iOS 11.1 --
-    iPhone 5s (E803CD1C-2726-4BA2-8372-973CBA3CF6A8) (Shutdown) 
-    iPhone 6 Plus (12DD988D-B2F7-4D63-AA4F-8DC2F55AD10E) (Shutdown) 
-    iPhone 6 (61655A4B-3E98-48CA-B500-21CE614AAD5B) (Shutdown) 
-    iPhone 6s (74049ED8-2885-43AD-B07D-F5E40BDFFA77) (Shutdown) 
-    iPhone 6s Plus (01C0A613-B408-497C-818B-0AA3A4BA3506) (Shutdown) 
-    iPhone SE (23220145-F4E9-4C07-BB76-977BFD2D7720) (Shutdown) 
-    iPhone 7 (1537B82F-280E-4E60-B473-4D18B7E8F966) (Shutdown) 
-    iPhone 7 Plus (9562615A-1AF8-4975-9F5D-83ECE16E9205) (Shutdown) 
-    iPhone 8 (3DE2C525-877C-4F80-8253-CB862D3ED772) (Shutdown) 
-    iPhone 8 Plus (373F4FB9-4EA6-40B5-8A41-01441D28109E) (Shutdown) 
-    iPhone X (0D73A170-9498-4975-83C4-8039B3C1398F) (Shutdown) 
-    iPad Air (412CA0C3-944F-4D82-B60F-9CFCF6C51EE7) (Shutdown) 
-    iPad Air 2 (D9C81DC5-2912-477E-A870-17D43511E224) (Shutdown) 
-    iPad Pro (9.7-inch) (33C1DAA9-9E4B-4796-9586-62B57CA4188B) (Shutdown) 
-    iPad Pro (12.9-inch) (3CD0D68E-A783-45DE-9532-F751C54052F6) (Shutdown) 
-    iPad (5th generation) (93AD074F-2389-4844-A535-43E41A47F5A8) (Shutdown) 
-    iPad Pro (12.9-inch) (2nd generation) (B3F8F686-4FB9-4A48-8151-B8B68FE56832) (Shutdown) 
-    iPad Pro (10.5-inch) (2131F558-380D-4E50-934D-EA8E36E291AE) (Shutdown) 
--- iOS 11.2 --
-    iPhone 5s (14A0A982-6D37-41ED-91EF-595E21FFA583) (Shutdown) 
-    iPhone 6 Plus (0FF345FC-2EFD-4F09-B459-8E1881E0E53D) (Shutdown) 
-    iPhone 6 (493023F3-10A5-4903-A94F-3C47EF17E14A) (Shutdown) 
-    iPhone 6s (E0E5D152-18BF-4588-92C7-CAEACD2888D4) (Shutdown) 
-    iPhone 6s Plus (56C70586-7437-46C2-8ECD-4A1089791DD6) (Shutdown) 
-    iPhone SE (DE61C031-6C25-4659-B2C0-9D512B83978E) (Shutdown) 
-    iPhone 7 (EF5D6EBB-91D9-4633-9342-6D6653408A8A) (Shutdown) 
-    iPhone 7 Plus (151F30B8-AF2E-4246-A536-F2F8FCAC85F9) (Shutdown) 
-    iPhone 8 (221A4FE1-A2AB-442D-B75F-FB58E5B77577) (Shutdown) 
-    iPhone 8 Plus (95B4D4A4-8737-4A61-A0BD-E0C664B23FF1) (Shutdown) 
-    iPhone X (A7CEB375-EEA0-4BDE-AD7F-088FD461B8B2) (Shutdown) 
-    iPad Air (81D51AC8-63C8-4B1F-8F5A-BCCEF9F0D6E9) (Shutdown) 
-    iPad Air 2 (CB9856DE-B000-4074-9164-2C2A94B18A1A) (Shutdown) 
-    iPad Pro (9.7-inch) (F89D8D0D-2EBF-4096-9EAB-A02011450B81) (Shutdown) 
-    iPad Pro (12.9-inch) (D126ACDD-C45D-45D6-8A66-FF91DE09236C) (Shutdown) 
-    iPad (5th generation) (32FFF3B7-386E-4D03-B50F-44BEDCD0BCA0) (Shutdown) 
-    iPad Pro (12.9-inch) (2nd generation) (9C464A91-803B-4DE0-BBCF-B10828869123) (Shutdown) 
-    iPad Pro (10.5-inch) (183375E0-ABC7-4648-B4BF-D44F8281BB6E) (Shutdown) 
--- iOS 11.3 --
-    iPhone 5s (D5B9BB4E-7750-4E57-A76E-5BFA4B0608D0) (Shutdown) 
-    iPhone 6 Plus (393AA829-B887-4456-9DA3-F2B1CF94AB42) (Shutdown) 
-    iPhone 6 (1D39ABF2-3C3C-4380-9220-6ABA48035344) (Shutdown) 
-    iPhone 6s (4F1CB233-B371-4EF3-802D-929C96DDE307) (Shutdown) 
-    iPhone 6s Plus (9D48EA76-9B42-4CED-83E2-6624F5719BD5) (Shutdown) 
-    iPhone SE (BD29655A-9B97-4847-AA0C-408E9C6F8C37) (Shutdown) 
-    iPhone 7 (3B281A2F-1DC0-4FBF-9FE5-11B0EDB843F3) (Shutdown) 
-    iPhone 7 Plus (6E6934D6-19A1-4F5A-9E7F-78D08CE3D049) (Shutdown) 
-    iPhone 8 (E86642A6-D7BC-4DC7-BA1B-059073E10EEC) (Shutdown) 
-    iPhone 8 Plus (39EFC04D-BC47-4BD0-A898-41F48D57E098) (Shutdown) 
-    iPhone X (0B16D657-9679-46E3-86A3-F3BFCA098150) (Shutdown) 
-    iPad Air (9B013815-005B-4BBC-A0DB-D4BB24CE5689) (Shutdown) 
-    iPad Air 2 (F1333184-4715-4E6D-B569-D9A9B3F7739A) (Shutdown) 
-    iPad Pro (9.7-inch) (BC4649F2-F8D3-45F0-AE9A-424B5FA35B4A) (Shutdown) 
-    iPad Pro (12.9-inch) (D1AEE652-01DF-4C00-80F1-E76F2D3C1658) (Shutdown) 
-    iPad (5th generation) (AAD4C316-675E-4EC2-BC33-0E806F22F2EC) (Shutdown) 
-    iPad Pro (12.9-inch) (2nd generation) (CFA957AC-A632-4553-9203-65FE06214771) (Shutdown) 
-    iPad Pro (10.5-inch) (500582D9-F160-4F63-8DC1-8EC039A8B2FA) (Shutdown) 
-    iPad (6th generation) (3CE91EC4-3F80-4E34-957B-CE4EAC9BD741) (Shutdown) 
--- iOS 11.4 --
-    iPhone 5s (A09E8805-2AC3-4397-B762-20E71800E604) (Shutdown) 
-    iPhone 6 Plus (F11F613D-FFA3-4C2B-A3A5-E9C82C885F7C) (Shutdown) 
-    iPhone 6 (B7388EC8-4894-4689-AB2B-5E0A6F5A364E) (Shutdown) 
-    iPhone 6s (2A5C905E-8206-4771-8331-A2F5CE3AD2B2) (Shutdown) 
-    iPhone 6s Plus (A6E3DBF3-ED6E-4B4C-865A-FC144C1DB1E3) (Shutdown) 
-    iPhone SE (37A792F7-2BF6-410C-A2AB-818CB8671D08) (Shutdown) 
-    iPhone 7 (35FD192F-CF39-49D9-901E-494DEBBA7F3C) (Shutdown) 
-    iPhone 7 Plus (49315F8C-E8C8-48F0-A060-9DD23CC4486C) (Shutdown) 
-    iPhone 8 (4DCB3221-F80B-40EB-92E0-87BC0C9E5FA7) (Shutdown) 
-    iPhone 8 Plus (6789F9FE-4677-4ED5-B4CF-95C2C5D0F7C0) (Shutdown) 
-    iPhone X (9C091ED6-1162-4698-BCF2-E38F66524111) (Shutdown) 
-    iPad Air (94A78D6A-3EE0-4818-BA84-907C3E87381C) (Shutdown) 
-    iPad Air 2 (6C2D457F-DDF3-4EEF-8CE7-D9EFBD46ABCE) (Shutdown) 
-    iPad Pro (9.7-inch) (F5DD4135-BDA4-4C07-BA4C-4E9C65BAB8CD) (Shutdown) 
-    iPad Pro (12.9-inch) (7ACBEF7E-FD95-4DC2-A4C4-56727EC2DB2B) (Shutdown) 
-    iPad (5th generation) (304ED0AA-AF5D-465D-8033-2DBD76A056EE) (Shutdown) 
-    iPad Pro (12.9-inch) (2nd generation) (D0C87DAA-D682-4BB6-9C40-279389B96649) (Shutdown) 
-    iPad Pro (10.5-inch) (7BFB640D-3194-4406-9944-1BC5E0923640) (Shutdown) 
-    iPad (6th generation) (93526950-4184-43CC-A367-B3C4447158A6) (Shutdown) 
 -- iOS 12.0 --
-    iPhone 5s (C74D5390-56A2-4039-894B-F0BD94D620BC) (Shutdown) 
-    iPhone 6 Plus (6FB348E5-ACCC-4DD1-83C8-477F7B272454) (Shutdown) 
-    iPhone 6 (FBD3020C-1E09-4E41-898A-1197D4DEAF51) (Shutdown) 
-    iPhone 6s (2FCE81ED-D273-4A97-9153-2BDD45C4E4F1) (Shutdown) 
-    iPhone 6s Plus (BECBB93F-BA7E-4A36-B7EE-3A8EB2A7EDB8) (Shutdown) 
-    iPhone SE (1F927EA8-985B-43F4-94C4-0489113880B0) (Shutdown) 
-    iPhone 7 (BF05F526-11DE-490C-AC8B-B1FC1952AF3F) (Shutdown) 
-    iPhone 7 Plus (0BE1DF88-C2D2-45DC-A1DB-0585DD096B28) (Shutdown) 
-    iPhone 8 (54E6BEC2-6DC2-4F14-B34E-CC0810038FCC) (Shutdown) 
-    iPhone 8 Plus (1821F2DD-AF3B-4471-B596-D1267CA70205) (Shutdown) 
-    iPhone X (6FA6D3F8-9210-4A00-9812-98D55417E260) (Shutdown) 
-    iPhone Xs (BBC54F2B-D15B-4F59-A487-93E5AA476F4F) (Shutdown) 
-    iPhone Xs Max (57D81839-2F0A-42C9-BE41-FDE203F0CE24) (Shutdown) 
-    iPhone Xʀ (E809C5ED-832D-4ABA-B055-0A3F409C990A) (Shutdown) 
-    iPad Air (7876BBBC-FD8B-4C20-9454-A93E1F2406B8) (Shutdown) 
-    iPad Air 2 (71A1B9FE-AD58-4312-BD65-3C7DCDA1023C) (Shutdown) 
-    iPad Pro (9.7-inch) (AD81CC50-5CFB-4308-9368-E399B9447C38) (Shutdown) 
-    iPad Pro (12.9-inch) (D8089C83-58A3-4D0F-ABCA-36320DB81032) (Shutdown) 
-    iPad (5th generation) (14D6B204-5F3C-4BB9-98F9-031FE2C2B1FF) (Shutdown) 
-    iPad Pro (12.9-inch) (2nd generation) (C7E8743B-572D-4A6E-8843-00E48DDFEBC8) (Shutdown) 
-    iPad Pro (10.5-inch) (5B81FA0F-17D0-4A39-A5FE-83490ACC4A74) (Shutdown) 
-    iPad (6th generation) (5234DB1A-4721-4D91-A54D-EEC87C600DA9) (Shutdown) 
+    iPhone 5s (EB833638-F27C-4176-8259-BA1660B53C47) (Shutdown) 
+    iPhone 6 Plus (65A3C5C2-E649-4AB1-B522-5423F72A7B89) (Shutdown) 
+    iPhone 6 (72E12662-0B9F-478F-A383-A4F392E912AA) (Shutdown) 
+    iPhone 6s (7E83EFD5-4DDB-447D-941B-F98B07045936) (Shutdown) 
+    iPhone 6s Plus (F81B023D-D29E-4CDD-B6DD-ADD69406F8D9) (Shutdown) 
+    iPhone SE (E5809493-8E48-44F2-8CF2-4D49E09C808E) (Shutdown) 
+    iPhone 7 (3867C376-26A1-4AD9-AA2E-266759A28B0E) (Shutdown) 
+    iPhone 7 Plus (ECD27786-F799-4D6D-82B8-D7DE6368A70D) (Shutdown) 
+    iPhone 8 (90DC2574-43BF-4CD2-9A8A-E40562717F23) (Shutdown) 
+    iPhone 8 Plus (C911FD75-AC69-4C49-B285-4A54FD9BA571) (Shutdown) 
+    iPhone X (CDEFB333-9B81-4909-9F76-01190ECCBB9D) (Shutdown) 
+    iPhone Xs (B0F2D50F-6777-4281-81DD-BE502BDC60DC) (Shutdown) 
+    iPhone Xs Max (653BDC61-3BC0-4D4F-8348-DAAB6B555919) (Shutdown) 
+    iPhone Xʀ (848D2C39-C45C-4642-A2FE-1D5DB3A6F61F) (Shutdown) 
+    iPad Air (6874C77A-FBDA-4AB1-A62B-B2A2A372946E) (Shutdown) 
+    iPad Air 2 (0CEEE9C1-D3E6-4D17-BE97-309FE6F927E4) (Shutdown) 
+    iPad Pro (9.7-inch) (B364D044-85EB-4156-8D13-45DA6EFF0F30) (Shutdown) 
+    iPad Pro (12.9-inch) (A4CAD05D-9801-4E6D-B9CC-B0CB31B5403F) (Shutdown) 
+    iPad (5th generation) (850C34C1-B7F6-4B08-B08A-F516E9987149) (Shutdown) 
+    iPad Pro (12.9-inch) (2nd generation) (CF86A7BD-94D4-4330-A05E-F95A0F0595E6) (Shutdown) 
+    iPad Pro (10.5-inch) (9E8541EA-3833-4E58-891F-3EBCF4F8528B) (Shutdown) 
+    iPad (6th generation) (873D2137-99F8-401F-ACFB-C72F6F3D3A20) (Shutdown) 
 -- iOS 12.1 --
-    iPhone 5s (60BE4A6F-32C3-45CB-B7D8-1A7C2E202094) (Shutdown) 
-    iPhone 6 Plus (AAB8CBF2-BE3F-4E94-A8BF-44DC015D6B59) (Shutdown) 
-    iPhone 6 (66E5A506-9751-4DDB-8A46-586A3499DCD5) (Shutdown) 
-    iPhone 6s (7DAFA0B9-E62E-444F-9503-12BB589DEC13) (Shutdown) 
-    iPhone 6s Plus (FE0FEFE4-CF3E-4592-973E-10164F6A0C2C) (Shutdown) 
-    iPhone SE (9D30F572-1265-4858-AE66-A6C271F3379F) (Shutdown) 
-    iPhone 7 (B5F50BD6-0563-49A3-99E1-860156C6DDD7) (Shutdown) 
-    iPhone 7 Plus (DDBE7404-A5EA-4412-9189-58CB4020F2B6) (Shutdown) 
-    iPhone 8 (9407A393-6EB7-4D6D-B0F7-461C2AAEDFFB) (Shutdown) 
-    iPhone 8 Plus (A2011F17-7EA2-43F3-ABE8-F8A69F2A7272) (Shutdown) 
-    iPhone X (A3B8D2B3-C45E-4E1A-B220-DE769D8E30F1) (Shutdown) 
-    iPhone Xs (6ED8BC9E-3B46-4BD5-85EB-DFD111E2603C) (Shutdown) 
-    iPhone Xs Max (36FA0C91-9BC6-41E3-8F9B-52C23A9C9C55) (Shutdown) 
-    iPhone Xʀ (33B6A58A-AE67-4375-ACF8-378E6BE9D054) (Shutdown) 
-    iPad Air (CBCF777C-5B2C-447F-8A23-E2F4EA3BFA92) (Shutdown) 
-    iPad Air 2 (0D667038-F0C5-4AAB-B6AF-1E825B24DB54) (Shutdown) 
-    iPad Pro (9.7-inch) (DB969A31-03BA-4983-99B1-FB0B2F4343F1) (Shutdown) 
-    iPad Pro (12.9-inch) (A6DA62DB-A881-4151-A2FF-15AD653F339A) (Shutdown) 
-    iPad (5th generation) (C347C363-4EA7-4806-ADBF-CDFDB245C1A8) (Shutdown) 
-    iPad Pro (12.9-inch) (2nd generation) (32023B2E-9A5A-4360-8338-BE9A8C99C62C) (Shutdown) 
-    iPad Pro (10.5-inch) (79E5B2F7-C284-45A8-ACC0-67C02DDE5061) (Shutdown) 
-    iPad (6th generation) (D5DEDC83-9959-430E-8540-6F3C1C3D22FD) (Shutdown) 
-    iPad Pro (11-inch) (36421BBD-382D-4AC7-83B9-DFFA2509611B) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (F2627C71-7A44-4648-8F02-74331116E70B) (Shutdown) 
+    iPhone 5s (79F8CA94-78FD-4E30-BCB9-669CB3FF8F19) (Shutdown) 
+    iPhone 6 Plus (C71F24C7-4A3E-4658-85CE-7F1775B69F7A) (Shutdown) 
+    iPhone 6 (4E721898-4B8E-4D02-BCE6-EEDD6F4D40FC) (Shutdown) 
+    iPhone 6s (C5BC89F6-48C4-46AB-965B-AD4A3F446065) (Shutdown) 
+    iPhone 6s Plus (FBDA135F-42D5-47A5-A38C-DA9661C561A0) (Shutdown) 
+    iPhone SE (6547E7EF-4D94-40AD-AE5D-90370A7E8185) (Shutdown) 
+    iPhone 7 (40CB31EA-612F-4674-BD4B-864E88B09ED5) (Shutdown) 
+    iPhone 7 Plus (004AB187-57E0-478F-B6D3-FBF6CBD9EF9A) (Shutdown) 
+    iPhone 8 (81F05052-3B09-4789-94CA-0612E069E6B7) (Shutdown) 
+    iPhone 8 Plus (8682FB80-117E-466F-B4B0-E25AABACDAAC) (Shutdown) 
+    iPhone X (F79F959F-9E35-45F4-A22A-1BB0EEF7F308) (Shutdown) 
+    iPhone Xs (2AD14F0D-C851-4107-9BF1-48E4A64B527C) (Shutdown) 
+    iPhone Xs Max (539F0286-B8E1-484B-849B-3D301FE3E0DF) (Shutdown) 
+    iPhone Xʀ (045BB077-637C-46D0-AC8D-DAE351502325) (Shutdown) 
+    iPad Air (94012587-A9D2-464F-93C0-777A8871C0D2) (Shutdown) 
+    iPad Air 2 (7F1712CB-21F8-4A4C-A2B4-B0B6C3018EFE) (Shutdown) 
+    iPad Pro (9.7-inch) (68275310-FB44-416F-8948-40E495FE627B) (Shutdown) 
+    iPad Pro (12.9-inch) (A1A33423-3956-416F-84B4-D3B53813B8F7) (Shutdown) 
+    iPad (5th generation) (FDE29F03-DA45-4506-B273-2E766098778E) (Shutdown) 
+    iPad Pro (12.9-inch) (2nd generation) (DD8A0881-6BE7-4B43-B3FA-F57051ABB3B9) (Shutdown) 
+    iPad Pro (10.5-inch) (14E1F03E-150E-4157-AA0D-A89330096095) (Shutdown) 
+    iPad (6th generation) (7322AF70-5DAF-49B9-85DA-57AE23AAAF47) (Shutdown) 
+    iPad Pro (11-inch) (23C6B177-290F-45B1-9D01-D1C78AAFD658) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (0E2F3F60-A221-497B-9BFE-6557CECB0484) (Shutdown) 
 -- iOS 12.2 --
-    iPhone 5s (0A88B53E-C7C1-4E4B-9447-CC3B2B2D5A66) (Shutdown) 
-    iPhone 6 Plus (BA2248E0-E005-45A4-AE36-DB624E28DC0F) (Shutdown) 
-    iPhone 6 (67AC7A19-8BB1-474C-8733-70B94B3C9431) (Shutdown) 
-    iPhone 6s (BA8F7C6E-AA7C-4712-B983-F2E06922CF0B) (Shutdown) 
-    iPhone 6s Plus (729E2015-5E8A-42B3-91A4-879D0F70F82E) (Shutdown) 
-    iPhone SE (59529002-B0BE-46DE-A05E-70500569CA2F) (Shutdown) 
-    iPhone 7 (34EDF0CC-CACF-46F0-83D5-05DA9102C9CA) (Shutdown) 
-    iPhone 7 Plus (A7B65F8C-9470-4E7D-AA1E-FD782934FE26) (Shutdown) 
-    iPhone 8 (E0D53807-4B2F-49B3-B185-192115F03429) (Shutdown) 
-    iPhone 8 Plus (403448D6-D60F-4F6D-B6AC-745F8883E471) (Shutdown) 
-    iPhone X (BBAC4D56-0939-485F-9267-8CAC3B867510) (Shutdown) 
-    iPhone Xs (860E0420-5BDC-4844-97AB-C7F66DAD1AE4) (Shutdown) 
-    iPhone Xs Max (E3803BE1-A9EF-4DF7-AE03-CFECA3D49100) (Shutdown) 
-    iPhone Xʀ (3EF1762A-0A3B-42DC-B1E8-FB0CBCDAD8A0) (Shutdown) 
-    iPad Air (D72CDA3B-430F-4440-87E2-409923F824D7) (Shutdown) 
-    iPad Air 2 (7E8954EB-0A1D-4C8D-BC88-BB1D224E4061) (Shutdown) 
-    iPad Pro (9.7-inch) (E2AC6509-029B-42B8-828F-93D9455660D8) (Shutdown) 
-    iPad Pro (12.9-inch) (08F404D0-66AD-419C-B26A-9DA5B116DE86) (Shutdown) 
-    iPad (5th generation) (F639A7EF-CC57-42A2-A6E0-75CF6505CD82) (Shutdown) 
-    iPad Pro (12.9-inch) (2nd generation) (C239E284-D8B2-4D01-844C-E8E456218277) (Shutdown) 
-    iPad Pro (10.5-inch) (D1A02994-CC3C-4C9D-A439-4FB40A39FF1C) (Shutdown) 
-    iPad (6th generation) (AA9DE772-296C-4155-9D1A-9560EE6B1690) (Shutdown) 
-    iPad Pro (11-inch) (F64FE85B-6112-4B5D-B9C4-46790B1CEE7A) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (B386D900-AD0B-4CC1-B49D-7865B720848C) (Shutdown) 
-    iPad Air (3rd generation) (00E560FA-CA12-44B9-A25E-C48392411B8F) (Shutdown) 
+    iPhone 5s (B5A180E3-A7BB-4C38-8DA5-983034151013) (Shutdown) 
+    iPhone 6 Plus (08660B29-2F71-4071-8BEE-E77D3A5A488C) (Shutdown) 
+    iPhone 6 (5CB7F930-4D16-4EB3-A1CB-42EBE4F684FB) (Shutdown) 
+    iPhone 6s (C325DAD0-CADA-4E50-8440-CBFBEEE11FE8) (Shutdown) 
+    iPhone 6s Plus (EA51AD4D-9FC2-47FB-972F-1B2576640C26) (Shutdown) 
+    iPhone SE (FABA9090-3F97-4AD8-8F98-E33C9C098376) (Shutdown) 
+    iPhone 7 (6F4FFB2F-5A17-4FE2-BB1F-858393A3FDE3) (Shutdown) 
+    iPhone 7 Plus (BB0A1B2B-5E18-422A-AD91-16D72A46A1A8) (Shutdown) 
+    iPhone 8 (6BA4CB90-14D9-46A5-83DF-743E8FD954B9) (Shutdown) 
+    iPhone 8 Plus (6F9E6D77-F35C-47D3-B48D-44E8E2AC0726) (Shutdown) 
+    iPhone X (37BFE824-80CF-48CF-818E-0D3957006A79) (Shutdown) 
+    iPhone Xs (193BD4E5-7432-4D90-B677-B03C317924FA) (Shutdown) 
+    iPhone Xs Max (5D5D6CA5-6250-4915-94A4-81B9EF2D5868) (Shutdown) 
+    iPhone Xʀ (E6879C93-471A-486C-B14E-B85308C86C43) (Shutdown) 
+    iPad Air (9365590B-3921-4586-AAF1-50F0C7FFEE4D) (Shutdown) 
+    iPad Air 2 (54ADAA12-C6ED-4209-A063-958B6E0DC8DC) (Shutdown) 
+    iPad Pro (9.7-inch) (963124F6-B48F-4590-B60B-9194481914F7) (Shutdown) 
+    iPad Pro (12.9-inch) (FF72EBC8-D56C-4618-AB44-F624AE88715D) (Shutdown) 
+    iPad (5th generation) (DA90A806-940F-4914-9F82-CFEA3357971D) (Shutdown) 
+    iPad Pro (12.9-inch) (2nd generation) (79EF25FE-1284-4E0C-9BCC-57FD3D5FE7A3) (Shutdown) 
+    iPad Pro (10.5-inch) (90B01E19-4711-4749-A66A-5FDA3E6B6F91) (Shutdown) 
+    iPad (6th generation) (D4D25C50-7BD6-42D0-845E-3636023FAA67) (Shutdown) 
+    iPad Pro (11-inch) (A16D5694-A0BD-4C3E-8D51-0C6EE4A1FB57) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (75E7E17C-DF27-4EE1-B551-28091698A783) (Shutdown) 
+    iPad Air (3rd generation) (BE23E2F1-1625-46B3-84B3-A757E3D83328) (Shutdown) 
 -- iOS 12.4 --
-    iPhone 5s (6B7449B8-080E-45D2-896C-87D9D351F717) (Shutdown) 
-    iPhone 6 Plus (A1ED6779-63BC-4AD3-BDEB-A91F6F089EEF) (Shutdown) 
-    iPhone 6 (DA3328C6-04DC-48C9-9F5A-FD374C31BDCD) (Shutdown) 
-    iPhone 6s (6F85B5C0-75F5-4944-A65F-C50937DFBBD1) (Shutdown) 
-    iPhone 6s Plus (BC06C0C4-5D4E-4832-B195-B009B6DBAA3E) (Shutdown) 
-    iPhone SE (5DDDCEA0-0343-4E00-A989-0F6A3E8E4DE2) (Shutdown) 
-    iPhone 7 (5276FB94-44DD-49A5-8D2E-5960B53B8E0A) (Shutdown) 
-    iPhone 7 Plus (D3AF2620-3354-4A8F-BBB7-F1A5D22DD9C1) (Shutdown) 
-    iPhone 8 (AB86C18C-C982-454D-9918-7375D9D039FF) (Shutdown) 
-    iPhone 8 Plus (84BAD9A0-0BAE-429C-BA94-E0D7F98B79D7) (Shutdown) 
-    iPhone X (5383612B-4A49-4E8B-B903-ED706065508A) (Shutdown) 
-    iPhone Xs (DFC46478-C04C-48C5-9CBC-5247074C9B94) (Shutdown) 
-    iPhone Xs Max (4603A812-42FD-42B6-9865-8A79C45870C5) (Shutdown) 
-    iPhone Xʀ (9653C9C5-BD25-4047-9508-FD3A4139447C) (Shutdown) 
-    iPad Air (A16AFD90-473D-4974-85B3-FCB2E5414518) (Shutdown) 
-    iPad Air 2 (246A33AE-99A3-4BBE-860F-9C676F1EF0DA) (Shutdown) 
-    iPad Pro (9.7-inch) (C4B676F6-637F-46F9-8CF2-1DEECB772BFE) (Shutdown) 
-    iPad Pro (12.9-inch) (9CFA2294-F2B4-4C95-8525-8E94E4D70D38) (Shutdown) 
-    iPad (5th generation) (8298038E-847A-4CF2-A93D-28B460F238EF) (Shutdown) 
-    iPad Pro (12.9-inch) (2nd generation) (44E0F39B-459B-40B3-8C72-3955FA8F63D7) (Shutdown) 
-    iPad Pro (10.5-inch) (9DE9D5BB-6E8C-4824-94E6-32FBA7650302) (Shutdown) 
-    iPad (6th generation) (941D11F7-9AAB-4B3C-864D-84A1B5B1CCB4) (Shutdown) 
-    iPad Pro (11-inch) (6779FA25-2E52-4CE9-8816-A9582CA412B9) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (4F026C71-2BD6-436E-BB38-2CFA47DC91B1) (Shutdown) 
-    iPad Air (3rd generation) (234C7D26-225E-4A9C-B57E-A3FAC5A5BE74) (Shutdown) 
+    iPhone 5s (A2B32A45-599C-42FC-AEAD-B28803621007) (Shutdown) 
+    iPhone 6 Plus (CC53F529-CC8E-4A09-97B0-EE4EB3738CE1) (Shutdown) 
+    iPhone 6 (A88947D1-B092-4DC5-BF9E-4BF7B13E4BB7) (Shutdown) 
+    iPhone 6s (4479FB9B-F6BB-4C6B-98E1-2ECC13B5FFD0) (Shutdown) 
+    iPhone 6s Plus (3A78DD43-37CB-4145-968D-C3B1CC85C3AC) (Shutdown) 
+    iPhone SE (BCBDC803-826F-4E73-A525-3BF1EB34FB4D) (Shutdown) 
+    iPhone 7 (F83F3CBF-2696-45D1-AC1A-C6FC9E88507B) (Shutdown) 
+    iPhone 7 Plus (2397EE03-D076-40DC-ACA0-35A983B81A9C) (Shutdown) 
+    iPhone 8 (4555F117-E3EC-45BE-A09E-67CBE7FB0F0A) (Shutdown) 
+    iPhone 8 Plus (2C0B491C-1326-4D63-A128-419C0A322D65) (Shutdown) 
+    iPhone X (AD4DAFEE-B8D8-42AA-866B-AD592A96379D) (Shutdown) 
+    iPhone Xs (3093B653-5652-42E3-97DB-C24E8DDC554E) (Shutdown) 
+    iPhone Xs Max (6DB32E54-2C99-44C0-9569-936BFC71552C) (Shutdown) 
+    iPhone Xʀ (A0075F54-1F1F-4EB8-89B0-57E1C2CDE3EE) (Shutdown) 
+    iPad Air (E64892D7-A919-4179-989C-FBD8A0130455) (Shutdown) 
+    iPad Air 2 (B834CD4A-23D1-4C83-8205-1EF437949090) (Shutdown) 
+    iPad Pro (9.7-inch) (3E607035-D638-4633-AD23-00CDD69C9A56) (Shutdown) 
+    iPad Pro (12.9-inch) (B9555242-EAC3-4C59-A23D-804CAA2DC35C) (Shutdown) 
+    iPad (5th generation) (00F06FE6-1029-431C-93A9-4A3D2894E436) (Shutdown) 
+    iPad Pro (12.9-inch) (2nd generation) (D8CD93C1-C692-406C-9708-275526D282D6) (Shutdown) 
+    iPad Pro (10.5-inch) (E0FA513A-E046-4323-B555-7668CC9C086E) (Shutdown) 
+    iPad (6th generation) (E29B1404-41AA-40E9-9FEA-759C6FF1437D) (Shutdown) 
+    iPad Pro (11-inch) (8692F151-2070-43BB-B82C-000781D9406E) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (C7E5AAE0-C487-4D3C-BC18-FA1E00BF0ABD) (Shutdown) 
+    iPad Air (3rd generation) (DA5F7101-6FDA-425B-B781-06C0F429416C) (Shutdown) 
 -- iOS 13.0 --
-    iPhone 8 (D3100EF3-CA81-41F2-A794-A8A88FC375DC) (Shutdown) 
-    iPhone 8 Plus (2114BDF8-D621-414E-8070-45B99E99124E) (Shutdown) 
-    iPhone 11 (EAFE7899-3D8D-4BEF-A782-593D88D52E4C) (Shutdown) 
-    iPhone 11 Pro (7B797B42-C09F-4653-BAF5-12B6F36D92FC) (Shutdown) 
-    iPhone 11 Pro Max (9DADBEFD-1F55-41D9-B48A-7503CCCA4CD5) (Shutdown) 
-    iPad Pro (9.7-inch) (CB34B00F-D986-45B7-BC0D-98D78D7E825D) (Shutdown) 
-    iPad Pro (11-inch) (96E88B90-5C52-4A15-8AF2-9979B6E30B8D) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (447D7D3C-B71E-4065-8773-3D8595281A7F) (Shutdown) 
-    iPad Air (3rd generation) (F59E5A91-DB34-4E33-864C-70A5FD5DA190) (Shutdown) 
+    iPhone 8 (3A52B8C0-C4D4-4B6F-A467-DFAEC28E0BF0) (Shutdown) 
+    iPhone 8 Plus (4451C47B-29D6-4B8A-8BC5-AB33E0EF5D09) (Shutdown) 
+    iPhone 11 (B7D351D8-0161-48D2-8CF5-050C88FC6E7C) (Shutdown) 
+    iPhone 11 Pro (9231276D-6D8F-40F7-9B3F-FB98B2A66411) (Shutdown) 
+    iPhone 11 Pro Max (466A2185-4254-426D-803C-7414444A12A5) (Shutdown) 
+    iPad Pro (9.7-inch) (51FCEB92-07C0-44C9-8A6A-2F9D934BCD04) (Shutdown) 
+    iPad Pro (11-inch) (AB8B825F-F214-4BD3-8D11-00B7706A6990) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (30436B94-5E11-40B2-BEDF-E0DD40E23FBA) (Shutdown) 
+    iPad Air (3rd generation) (368D7385-5146-47D9-9F52-F7632BBD3E6C) (Shutdown) 
 -- iOS 13.1 --
-    iPhone 8 (A5C9119E-6BE7-453A-9653-0EF360A47BFA) (Shutdown) 
-    iPhone 8 Plus (7A77A05A-2B8D-4C6C-AAEF-0E08C5ED389D) (Shutdown) 
-    iPhone 11 (4680872D-6FB9-4172-81AA-C9C45D0B0649) (Shutdown) 
-    iPhone 11 Pro (50C5B13E-0169-4E73-9C41-EE9B3F6B4455) (Shutdown) 
-    iPhone 11 Pro Max (71D1C4BE-0292-4445-B5F3-B0433709E0B7) (Shutdown) 
-    iPad Pro (9.7-inch) (711EE326-32A2-4255-AD03-059F888FAB42) (Shutdown) 
-    iPad Pro (11-inch) (B3970D5D-CF26-41EC-95C4-D6066BA53E63) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (B500AA6F-A919-445D-B923-3CD95E42CEBF) (Shutdown) 
-    iPad Air (3rd generation) (752DEB2E-983C-49E4-921A-44CE6EEC6EBD) (Shutdown) 
+    iPhone 8 (F714E500-4916-4F2D-9AAB-CAFE0A6976B0) (Shutdown) 
+    iPhone 8 Plus (79D8174C-C68A-4C6E-951B-2A35EFA186F1) (Shutdown) 
+    iPhone 11 (E646E105-19C2-477B-992D-0531AC3300E2) (Shutdown) 
+    iPhone 11 Pro (041FAE2B-2071-4CF4-837E-91D7A1C98D04) (Shutdown) 
+    iPhone 11 Pro Max (44265010-F38C-475C-81C2-FA3AA9040DD7) (Shutdown) 
+    iPad Pro (9.7-inch) (BED8D0FA-CE00-4BFE-B914-4E872BC8E1EC) (Shutdown) 
+    iPad Pro (11-inch) (6F24FF00-348E-4572-9A8B-876E786F4E5F) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (CD3DBDB7-1D08-4018-87F2-0DC35594F873) (Shutdown) 
+    iPad Air (3rd generation) (038526EF-FCC9-4EB7-8261-508DE1E645DD) (Shutdown) 
 -- iOS 13.2 --
-    iPhone 8 (A74C6955-029A-4B68-8346-FCBE0C4CD73B) (Shutdown) 
-    iPhone 8 Plus (54BD8FAF-A29F-4F01-AF48-A39671815F11) (Shutdown) 
-    iPhone 11 (3714BF15-7B9F-4B1A-BDC7-248C9CF81A85) (Shutdown) 
-    iPhone 11 Pro (5ED35822-3F23-4FC3-9850-29FB30F9202B) (Shutdown) 
-    iPhone 11 Pro Max (8E772FE0-7468-4CDA-9FCF-CAACDBDAE102) (Shutdown) 
-    iPad Pro (9.7-inch) (7AD0D8E2-790F-4C57-A719-3ECA76E44509) (Shutdown) 
-    iPad (7th generation) (37BD23ED-4F06-4EB2-A84B-59D2D94A1BCF) (Shutdown) 
-    iPad Pro (11-inch) (7F6E3732-7DF9-4F95-9B68-AF8C20036109) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (8FA8E880-544F-47AB-BB95-2ECBB7E33DA1) (Shutdown) 
-    iPad Air (3rd generation) (8B9D302B-5809-4A94-A1F1-7D8AE414BB57) (Shutdown) 
+    iPhone 8 (66258115-394A-4639-A2E6-87723CDC9084) (Shutdown) 
+    iPhone 8 Plus (EAC3EB5A-99C5-47D3-8B5A-D979D5319FB6) (Shutdown) 
+    iPhone 11 (EB966C2B-38B4-4119-9037-CC5423812A2A) (Shutdown) 
+    iPhone 11 Pro (8E79C84C-8C43-44A3-A0D5-0B5E3DA9DC81) (Shutdown) 
+    iPhone 11 Pro Max (359ECD7E-C728-423D-9887-B979A2A6CFF1) (Shutdown) 
+    iPad Pro (9.7-inch) (9AA3D58F-1A60-4E7C-B278-003E17769759) (Shutdown) 
+    iPad (7th generation) (625247A2-6EA7-47DE-ABD4-45F0C1A5B7D6) (Shutdown) 
+    iPad Pro (11-inch) (E1826151-24BF-40E5-8B71-FBA0AFFAD960) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (C25DB8AA-845E-4FD0-870C-96EC441F11A9) (Shutdown) 
+    iPad Air (3rd generation) (0EA7BE97-B026-4F88-952D-814B9969FB82) (Shutdown) 
 -- iOS 13.4 --
-    iPhone 8 (336E17F1-C1B7-453A-B6DE-0D21EEB243CC) (Shutdown) 
-    iPhone 8 Plus (41E5E41E-274C-4821-842B-9482E8A9941D) (Shutdown) 
-    iPhone 11 (AC5C4EA0-98A5-42C1-90A7-88623D554130) (Shutdown) 
-    iPhone 11 Pro (E0668900-3E9E-4908-9EE6-F3E35DC23DDF) (Shutdown) 
-    iPhone 11 Pro Max (9D6EAAA8-7AE9-457B-9E83-345216DF8B8E) (Shutdown) 
-    iPad Pro (9.7-inch) (996E07DC-5E4D-4BB4-A8C7-17E2E00C5861) (Shutdown) 
-    iPad (7th generation) (91BA5D98-C40A-440C-AC4A-A594700C37A6) (Shutdown) 
-    iPad Pro (11-inch) (A4C3A496-2761-46DD-B2F9-E1D378A39C94) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (04BAB806-6005-46A4-A560-7936B9B66F67) (Shutdown) 
-    iPad Air (3rd generation) (55216EA5-C107-41AC-8104-A232B9677B41) (Shutdown) 
--- tvOS 11.0 --
-    Apple TV (498441AE-2A76-430E-831D-C91D3D795162) (Shutdown) 
-    Apple TV 4K (950AEB70-A247-40CB-BF67-6E226AEAC623) (Shutdown) 
-    Apple TV 4K (at 1080p) (CEB87583-A4B1-4A3E-BA4B-CD9EE80BA809) (Shutdown) 
--- tvOS 11.1 --
-    Apple TV (D0AF6835-4909-45D0-9557-9ADFFAB4860F) (Shutdown) 
-    Apple TV 4K (37604CEF-3024-4D2B-B5A1-88DAD7C18DA4) (Shutdown) 
-    Apple TV 4K (at 1080p) (CE4CCEBC-5B7F-45E9-B9D4-58309270D52C) (Shutdown) 
--- tvOS 11.2 --
-    Apple TV (46503D29-4900-4C37-B585-3CF018902CE8) (Shutdown) 
-    Apple TV 4K (8A2FC70B-ECCD-4F62-8BC6-B9E59CCC404E) (Shutdown) 
-    Apple TV 4K (at 1080p) (69FF5A9D-B892-48F2-9B19-1DF6FCB472D5) (Shutdown) 
--- tvOS 11.3 --
-    Apple TV (4AD0BE1E-952A-4B2C-8BDD-101641F89084) (Shutdown) 
-    Apple TV 4K (9165B40F-A4DC-4C3C-A52A-8718F524D245) (Shutdown) 
-    Apple TV 4K (at 1080p) (602B68E4-C43B-4AEE-AA85-102D193D99D3) (Shutdown) 
--- tvOS 11.4 --
-    Apple TV (4947964F-196A-49C7-AE1D-A00D75BDAF16) (Shutdown) 
-    Apple TV 4K (7B0ECC0E-6E11-4C3C-AA18-D33C76080962) (Shutdown) 
-    Apple TV 4K (at 1080p) (543AE0AC-4A7F-4315-9846-F177C5E4D478) (Shutdown) 
+    iPhone 8 (DF1E715B-6418-41CE-B84F-35FAABA960B1) (Shutdown) 
+    iPhone 8 Plus (E2B1CE88-9D95-46F0-8187-2DDBD1765196) (Shutdown) 
+    iPhone 11 (D52B4E5E-E1B9-41C9-97CE-D13B9B80B401) (Shutdown) 
+    iPhone 11 Pro (F10E93C4-247E-4DFF-830C-DC419B542146) (Shutdown) 
+    iPhone 11 Pro Max (95F3305F-377F-4E23-AB9A-CBC731AF67F1) (Shutdown) 
+    iPad Pro (9.7-inch) (346D2ADC-8E1E-4424-89A7-8D7095EB246B) (Shutdown) 
+    iPad (7th generation) (BB4F19AF-5B7A-49C4-B6BC-2199B3281948) (Shutdown) 
+    iPad Pro (11-inch) (8AB363B7-7AAA-40EF-BCDC-8E15618FCEF3) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (DDEF226F-0F5A-42DF-960F-BA5351336300) (Shutdown) 
+    iPad Air (3rd generation) (A61AF80E-0F8E-4E2A-95A1-7858B491B359) (Shutdown) 
 -- tvOS 12.0 --
-    Apple TV (A0F04886-16A7-4485-A8E6-25F27FF5ADBC) (Shutdown) 
-    Apple TV 4K (58AF1515-CEC5-44FE-844E-704E36207B75) (Shutdown) 
-    Apple TV 4K (at 1080p) (C236F4C4-E371-45C3-B6C8-A4B21768592B) (Shutdown) 
+    Apple TV (1A6128FC-7B04-4D5A-9FBE-B19E854C7B4C) (Shutdown) 
+    Apple TV 4K (C3F4D654-88E1-4C96-89D3-64E0C03DDF2F) (Shutdown) 
+    Apple TV 4K (at 1080p) (00E25CF0-D25D-48C5-8100-C48181A92DB6) (Shutdown) 
 -- tvOS 12.1 --
-    Apple TV (F533A857-887A-43D6-ACAE-E4E0D66B865D) (Shutdown) 
-    Apple TV 4K (A68D72B1-51A9-41E8-A62D-CB0023AFF639) (Shutdown) 
-    Apple TV 4K (at 1080p) (32F2FE22-72AE-4D92-9D4E-A12DAEB6FC9D) (Shutdown) 
+    Apple TV (EAE99825-3B34-4D2A-B4EF-2DF227B7F8AA) (Shutdown) 
+    Apple TV 4K (F5DA410A-8F70-4FB6-905C-6D53A90E9A45) (Shutdown) 
+    Apple TV 4K (at 1080p) (6F2D5EBF-ADAD-4E55-BDC6-51EE0D8C8B5F) (Shutdown) 
 -- tvOS 12.2 --
-    Apple TV (5614FC82-B001-42FE-89F8-107875799B2D) (Shutdown) 
-    Apple TV 4K (D7CDD48C-95AE-4F6E-A5B1-4886A12F0158) (Shutdown) 
-    Apple TV 4K (at 1080p) (D6FF0D4A-09B4-4DFA-9FB7-BAABBDD10445) (Shutdown) 
+    Apple TV (C5E3C7CB-A7CB-4CFF-9F03-6C0B76837CC0) (Shutdown) 
+    Apple TV 4K (843AE6AF-ECDF-47FC-AC03-D8880B2252A1) (Shutdown) 
+    Apple TV 4K (at 1080p) (64941F91-0B9C-47E6-84D1-74C26133B2CA) (Shutdown) 
 -- tvOS 12.4 --
-    Apple TV (A412C255-15F7-4A86-989D-16F3859A4BE3) (Shutdown) 
-    Apple TV 4K (43245977-5357-4AAF-B038-F25844EA4C3B) (Shutdown) 
-    Apple TV 4K (at 1080p) (E272F0F1-2248-413F-9F31-08BE923AEEAE) (Shutdown) 
+    Apple TV (905BF7A0-B97A-441E-B1A0-F659554CDB10) (Shutdown) 
+    Apple TV 4K (AD280F8C-246B-443E-8BB5-FF99A71C7214) (Shutdown) 
+    Apple TV 4K (at 1080p) (763B11C8-331B-4E98-870B-C4A2B8E02E7E) (Shutdown) 
 -- tvOS 13.0 --
-    Apple TV (F4EEAA04-CD59-42A1-943D-DA3DED77494B) (Shutdown) 
-    Apple TV 4K (AE74DC9E-4DE0-4707-97F1-4E5264CD2BD4) (Shutdown) 
-    Apple TV 4K (at 1080p) (0ADB40D7-0E3E-4D70-825A-40787CDD4C2A) (Shutdown) 
+    Apple TV (AC654592-F354-4404-A293-7DCD3F02E45A) (Shutdown) 
+    Apple TV 4K (8CB6A0B0-37CF-431A-9ABA-1560EAF18FA1) (Shutdown) 
+    Apple TV 4K (at 1080p) (E5AF66BC-CC55-4D90-88B8-0BFFF041471B) (Shutdown) 
 -- tvOS 13.2 --
-    Apple TV (18EFBFBF-88FA-4EDE-9536-EF6EFDB4949A) (Shutdown) 
-    Apple TV 4K (3943D4DA-A9EC-4D48-99B5-8AE4CD678A3B) (Shutdown) 
-    Apple TV 4K (at 1080p) (A9483458-DE0D-4771-8A9E-1E412FDEA2D9) (Shutdown) 
+    Apple TV (30DB19C4-DA5C-40D6-9D88-7E68FDD7D194) (Shutdown) 
+    Apple TV 4K (856CA801-3503-4C4E-8C00-C950AE558701) (Shutdown) 
+    Apple TV 4K (at 1080p) (8336A476-0360-4981-B345-2DC73D06FA58) (Shutdown) 
 -- tvOS 13.4 --
-    Apple TV (FC7E4E29-7246-45F1-897C-C51B3E2F2E54) (Shutdown) 
-    Apple TV 4K (BDBC67F1-931A-4787-BD46-FC985067F5FF) (Shutdown) 
-    Apple TV 4K (at 1080p) (53061824-D06A-4F97-BD65-D2060F386764) (Shutdown) 
--- watchOS 4.0 --
-    Apple Watch - 38mm (D5BA2E95-1C2F-4706-B8D3-A9B348177F5B) (Shutdown) 
-    Apple Watch - 42mm (708721E9-0A9C-4C0E-A434-AF7EFE87537F) (Shutdown) 
-    Apple Watch Series 2 - 38mm (2831F5C1-24F0-4D15-B4EB-1E3934B04ECC) (Shutdown) 
-    Apple Watch Series 2 - 42mm (B4DB99EA-4F17-4FA0-9C38-C1C1447096E7) (Shutdown) 
-    Apple Watch Series 3 - 38mm (253183AB-2B56-4008-806C-F409DCB76458) (Shutdown) 
-    Apple Watch Series 3 - 42mm (439D6C0A-DFC3-4F03-BC21-909FAF78467F) (Shutdown) 
--- watchOS 4.1 --
-    Apple Watch - 38mm (45DBCC7D-77F5-4D45-B7EE-851A98314FD6) (Shutdown) 
-    Apple Watch - 42mm (F428AFCB-2664-4706-B5B3-447A0492E315) (Shutdown) 
-    Apple Watch Series 2 - 38mm (51F1BE8D-5B46-4DFE-8448-C4EAB1EA5399) (Shutdown) 
-    Apple Watch Series 2 - 42mm (351AC760-A935-42FA-A662-99C1E7E3D4DC) (Shutdown) 
-    Apple Watch Series 3 - 38mm (F6B4910D-A281-405F-9D84-080957CFAE0F) (Shutdown) 
-    Apple Watch Series 3 - 42mm (B56E4984-3A3A-4E44-A857-B510427F4F78) (Shutdown) 
--- watchOS 4.2 --
-    Apple Watch - 38mm (1AA6E4BF-0187-410B-A62C-FAD4D0727F51) (Shutdown) 
-    Apple Watch - 42mm (D7F97D02-DF11-4026-8C38-62DED45C57A5) (Shutdown) 
-    Apple Watch Series 2 - 38mm (08DCD5E4-8029-4D23-9680-B64FDA071C06) (Shutdown) 
-    Apple Watch Series 2 - 42mm (B8D7D3B1-EF56-44A9-B924-690432709AFC) (Shutdown) 
-    Apple Watch Series 3 - 38mm (675030FE-590E-419C-A36C-F2CD7A5B432E) (Shutdown) 
-    Apple Watch Series 3 - 42mm (B5D0F131-5DAD-43FD-8206-0C1C9EE6EC38) (Shutdown) 
+    Apple TV (EC7E6840-B9BC-4508-B0B1-57E862EEE2F0) (Shutdown) 
+    Apple TV 4K (203CDDCD-5685-4715-915D-3BBF7CE417AF) (Shutdown) 
+    Apple TV 4K (at 1080p) (DCD80E76-E577-4EA4-AA39-C95AD0AFD959) (Shutdown) 
 -- watchOS 5.0 --
-    Apple Watch Series 2 - 38mm (55029853-9849-4532-9873-CC882B15BDD3) (Shutdown) 
-    Apple Watch Series 2 - 42mm (7E2E0338-7FC2-4CA2-B184-70495B03DC2E) (Shutdown) 
-    Apple Watch Series 3 - 38mm (5B822EEE-43AC-44FF-B23D-0937300F5974) (Shutdown) 
-    Apple Watch Series 3 - 42mm (A3E79D98-874A-44FC-B4EC-694C50488075) (Shutdown) 
-    Apple Watch Series 4 - 40mm (EA3219F1-4677-48BC-86A7-A2FDD1B684DE) (Shutdown) 
-    Apple Watch Series 4 - 44mm (4B0F56F8-5B08-4211-A8B1-2295F8488485) (Shutdown) 
+    Apple Watch Series 2 - 38mm (CE0F437C-A5BC-4C2E-B11C-7787A64A776F) (Shutdown) 
+    Apple Watch Series 2 - 42mm (F5B07B73-ABD1-47A9-BED7-D0A106CAD2D8) (Shutdown) 
+    Apple Watch Series 3 - 38mm (BFEC1F73-B3F8-48E1-836A-01C729F48C7D) (Shutdown) 
+    Apple Watch Series 3 - 42mm (CFAF83C6-8741-4234-A3F8-7DD1FE191B53) (Shutdown) 
+    Apple Watch Series 4 - 40mm (6EE502AD-6AF4-43D1-9CDA-D44500279BF6) (Shutdown) 
+    Apple Watch Series 4 - 44mm (FF45C86C-7A65-4ADE-AB25-8A18C7D30164) (Shutdown) 
 -- watchOS 5.1 --
-    Apple Watch Series 2 - 38mm (0E582C5D-894A-4AB1-BF66-264AB1444B7D) (Shutdown) 
-    Apple Watch Series 2 - 42mm (3E592445-609A-4FA9-8084-9F9A62220FD7) (Shutdown) 
-    Apple Watch Series 3 - 38mm (F8BE01FC-ABAB-419F-BA35-4C11494641A7) (Shutdown) 
-    Apple Watch Series 3 - 42mm (9318329B-7489-418D-BA5F-AC635A1335A8) (Shutdown) 
-    Apple Watch Series 4 - 40mm (C5AAC13D-12C5-4F7D-AC35-2167683AABDC) (Shutdown) 
-    Apple Watch Series 4 - 44mm (92F78ED5-A1D1-482F-AC7B-A93325750BF4) (Shutdown) 
+    Apple Watch Series 2 - 38mm (8472520E-6097-4D77-AFEA-690AED57DC53) (Shutdown) 
+    Apple Watch Series 2 - 42mm (B6528D59-2BE2-40EF-ACA0-1F7F7B6DB526) (Shutdown) 
+    Apple Watch Series 3 - 38mm (CC531545-C553-4A7C-9A0E-3380EC47B339) (Shutdown) 
+    Apple Watch Series 3 - 42mm (3FA3D2E8-9FA3-4A5A-B119-8DB12A404BE2) (Shutdown) 
+    Apple Watch Series 4 - 40mm (5D12E164-ACE1-4B33-967F-3BB1E1926476) (Shutdown) 
+    Apple Watch Series 4 - 44mm (2554DE80-87A1-419C-9264-51A15EA24E52) (Shutdown) 
 -- watchOS 5.2 --
-    Apple Watch Series 2 - 38mm (4CD9D1DA-7330-421B-B97E-F1D4193FE95C) (Shutdown) 
-    Apple Watch Series 2 - 42mm (8655583F-83FC-4193-9821-9030AAA7963E) (Shutdown) 
-    Apple Watch Series 3 - 38mm (B2F5CA17-5335-4B8D-A4DE-AC1EDAB19FC9) (Shutdown) 
-    Apple Watch Series 3 - 42mm (2C44C0F0-0ECA-4E7C-B988-239C39594FFB) (Shutdown) 
-    Apple Watch Series 4 - 40mm (C49FDD9B-E31F-4BD1-AD7E-9F968ED35371) (Shutdown) 
-    Apple Watch Series 4 - 44mm (9680A193-8A1F-48BF-9AC9-80EA0B6C9AFB) (Shutdown) 
+    Apple Watch Series 2 - 38mm (F0034794-A3EA-4585-BEA0-AD2D80E34E37) (Shutdown) 
+    Apple Watch Series 2 - 42mm (2DFE45D6-EE5D-44D8-B970-C62448D38359) (Shutdown) 
+    Apple Watch Series 3 - 38mm (F4A6D015-8340-4374-9209-994D957140F2) (Shutdown) 
+    Apple Watch Series 3 - 42mm (FF68F9CD-0B31-4206-9D47-30E489C01914) (Shutdown) 
+    Apple Watch Series 4 - 40mm (C4AB6B3A-B5E9-4AC9-9EF4-E40F20B35174) (Shutdown) 
+    Apple Watch Series 4 - 44mm (617678A7-046D-4B4A-B91A-25DC49CB2386) (Shutdown) 
 -- watchOS 5.3 --
-    Apple Watch Series 2 - 38mm (3103D9B9-7223-44EB-A9E3-0EDE87A9062E) (Shutdown) 
-    Apple Watch Series 2 - 42mm (472B623D-E490-4E30-8E37-8597874D31DD) (Shutdown) 
-    Apple Watch Series 3 - 38mm (9F311AEE-26EC-4F60-BC39-6771AFA5E704) (Shutdown) 
-    Apple Watch Series 3 - 42mm (2C88C21C-4CBC-4C11-9118-C5891BAD38E8) (Shutdown) 
-    Apple Watch Series 4 - 40mm (B268CF6F-B36B-4C15-A649-A04FE7614149) (Shutdown) 
-    Apple Watch Series 4 - 44mm (0B904FB5-7655-475D-8078-673435E7FB7D) (Shutdown) 
+    Apple Watch Series 2 - 38mm (155AD818-948F-4902-8BF8-CBE51C55939D) (Shutdown) 
+    Apple Watch Series 2 - 42mm (63C129FD-768F-4D7B-BC03-FEB3319E417D) (Shutdown) 
+    Apple Watch Series 3 - 38mm (C3412859-A517-4265-87ED-BB3287F75FC4) (Shutdown) 
+    Apple Watch Series 3 - 42mm (7EB0156A-10A4-42D9-B083-5A771F42CDCD) (Shutdown) 
+    Apple Watch Series 4 - 40mm (FA32F13F-7F90-458A-85F1-B3E872D88FCF) (Shutdown) 
+    Apple Watch Series 4 - 44mm (1E1353C5-8523-4D4F-B471-0EE7A10C074E) (Shutdown) 
 -- watchOS 6.0 --
-    Apple Watch Series 4 - 40mm (194FF5DC-B127-40D3-B8CE-7389B410C8EA) (Shutdown) 
-    Apple Watch Series 4 - 44mm (70902808-511E-41CD-A5FA-16FE4DEB74BF) (Shutdown) 
-    Apple Watch Series 5 - 40mm (8F89BB63-2DB6-4A16-AECA-08C59DA25A88) (Shutdown) 
-    Apple Watch Series 5 - 44mm (14054FE4-C2F1-4AD1-9097-1057403325C3) (Shutdown) 
+    Apple Watch Series 4 - 40mm (749F05F8-FD15-4583-BFB6-D914F1ABB3FF) (Shutdown) 
+    Apple Watch Series 4 - 44mm (ABFE7213-BDCC-44A7-938E-FD58918101F1) (Shutdown) 
+    Apple Watch Series 5 - 40mm (E6280A8F-66BC-406B-9B09-B753D306DF50) (Shutdown) 
+    Apple Watch Series 5 - 44mm (3E6BD01D-31BD-4E4B-BDA8-9575927662F8) (Shutdown) 
 -- watchOS 6.2 --
-    Apple Watch Series 4 - 40mm (317C1AEE-D762-4734-AB99-D688FE660F1A) (Shutdown) 
-    Apple Watch Series 4 - 44mm (819CC44A-1AF0-4D1A-94AF-85CC27392B3F) (Shutdown) 
-    Apple Watch Series 5 - 40mm (B5FF2F66-5BA8-4D53-AE91-F8D0862D17B3) (Shutdown) 
-    Apple Watch Series 5 - 44mm (4798996D-1EB7-445F-B8DA-7C376987AC1C) (Shutdown) 
+    Apple Watch Series 4 - 40mm (2F8A91A2-5AAF-4F40-9F43-80C09665530D) (Shutdown) 
+    Apple Watch Series 4 - 44mm (A0224580-8877-4CAE-AB18-CE3CB9CE583B) (Shutdown) 
+    Apple Watch Series 5 - 40mm (7A19F972-FDA8-4D16-B1AF-005532A3AB0F) (Shutdown) 
+    Apple Watch Series 5 - 44mm (1517A158-F2E7-4F99-A0A9-5605D4A9F670) (Shutdown) 
 == Device Pairs ==
-1D2A3287-3131-493A-9532-074687BA35B4 (active, disconnected)
-    Watch: Apple Watch Series 5 - 40mm (B5FF2F66-5BA8-4D53-AE91-F8D0862D17B3) (Shutdown)
-    Phone: iPhone 11 Pro (E0668900-3E9E-4908-9EE6-F3E35DC23DDF) (Shutdown)
-4C082134-978B-4CD2-8854-D4363B457DB8 (active, disconnected)
-    Watch: Apple Watch Series 5 - 44mm (4798996D-1EB7-445F-B8DA-7C376987AC1C) (Shutdown)
-    Phone: iPhone 11 Pro Max (9D6EAAA8-7AE9-457B-9E83-345216DF8B8E) (Shutdown)
+696E54C2-2535-4448-AC37-8D750C37CD64 (active, disconnected)
+    Watch: Apple Watch Series 5 - 40mm (7A19F972-FDA8-4D16-B1AF-005532A3AB0F) (Shutdown)
+    Phone: iPhone 11 Pro (F10E93C4-247E-4DFF-830C-DC419B542146) (Shutdown)
+A49741D0-DBEE-488A-BC36-636DDF0560EE (active, disconnected)
+    Watch: Apple Watch Series 5 - 44mm (1517A158-F2E7-4F99-A0A9-5605D4A9F670) (Shutdown)
+    Phone: iPhone 11 Pro Max (95F3305F-377F-4E23-AB9A-CBC731AF67F1) (Shutdown)
 
 ========================================
 
@@ -1326,18 +1179,18 @@ Software:
       Kernel Version: Darwin 19.3.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-4-200225171238-9rWQJMSyrATqRKHNevZsqj
+      Computer Name: stg-xcode-11-4-200305141116-cFNsFshJgWjHy62k7AvbRU
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 4 minutes
+      Time since boot: 19 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s5  200Gi   10Gi   24Gi    30%  484105 2093308775    0%   /
+* Free disk space: /dev/disk1s5  200Gi   10Gi   65Gi    14%  483838 2094619762    0%   /
 ========================================
 
 --- Android
