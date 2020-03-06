@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_02_12_1
+* BITRISE_OSX_STACK_REV_ID: v2020_02_26_1
 ========================================
 
 
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.5
-Homebrew/homebrew-core (git revision e974; last commit 2020-02-13)
-Homebrew/homebrew-cask (git revision bb78e; last commit 2020-02-13)
+* brew: Homebrew 2.2.9
+Homebrew/homebrew-core (git revision 3aa80; last commit 2020-03-06)
+Homebrew/homebrew-cask (git revision 89d53; last commit 2020-03-07)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.8.5
@@ -49,13 +49,13 @@ Homebrew/homebrew-cask (git revision bb78e; last commit 2020-02-13)
 * imagemagick (convert): Version: ImageMagick 7.0.8-66 Q16 x86_64 2019-09-23 https://imagemagick.org
 * ghostscript (ps2ascii): 9.27
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: ]0;Firebase CLI7.13.0
+* firebase: ]0;Firebase CLI7.14.0
 ./system_report.sh: line 75: wine: command not found
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.39.0
-* stepman: 0.12.0
+* bitrise: 1.39.1
+* stepman: 0.12.1
 * envman: 2.2.11
 * cmd-bridge: 0.9.5
 ========================================
@@ -125,7 +125,12 @@ yarn 1.19.0
 ansible
 ├── libyaml
 ├── openssl@1.1
-└── python@3.8
+├── gdbm
+├── readline
+├── sqlite
+│   └── readline
+├── xz
+└── python
     ├── gdbm
     ├── openssl@1.1
     ├── readline
@@ -134,7 +139,6 @@ ansible
     └── xz
 
 ant
-└── openjdk
 
 autoconf
 
@@ -152,6 +156,7 @@ gdbm
 gettext
 
 ghostscript
+├── jpeg
 └── libtiff
     └── jpeg
 
@@ -165,6 +170,12 @@ glib
 ├── gettext
 ├── libffi
 ├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
 └── python
     ├── gdbm
     ├── openssl@1.1
@@ -176,26 +187,149 @@ glib
 go
 
 gradle
-└── openjdk
 
 icu4c
 
 ilmbase
 
 imagemagick
+├── libpng
 ├── freetype
 │   └── libpng
 ├── jpeg
+├── libde265
+├── gettext
+├── libffi
+├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
+├── python
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+├── glib
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   └── python
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
+├── shared-mime-info
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   ├── python
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   └── xz
+│   └── glib
+│       ├── gettext
+│       ├── libffi
+│       ├── pcre
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       ├── xz
+│       └── python
+│           ├── gdbm
+│           ├── openssl@1.1
+│           ├── readline
+│           ├── sqlite
+│           │   └── readline
+│           └── xz
+├── x265
 ├── libheif
 │   ├── jpeg
 │   ├── libde265
 │   ├── libpng
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   ├── python
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   └── xz
+│   ├── glib
+│   │   ├── gettext
+│   │   ├── libffi
+│   │   ├── pcre
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   ├── xz
+│   │   └── python
+│   │       ├── gdbm
+│   │       ├── openssl@1.1
+│   │       ├── readline
+│   │       ├── sqlite
+│   │       │   └── readline
+│   │       └── xz
 │   ├── shared-mime-info
 │   │   ├── gettext
+│   │   ├── libffi
+│   │   ├── pcre
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   ├── xz
+│   │   ├── python
+│   │   │   ├── gdbm
+│   │   │   ├── openssl@1.1
+│   │   │   ├── readline
+│   │   │   ├── sqlite
+│   │   │   │   └── readline
+│   │   │   └── xz
 │   │   └── glib
 │   │       ├── gettext
 │   │       ├── libffi
 │   │       ├── pcre
+│   │       ├── gdbm
+│   │       ├── openssl@1.1
+│   │       ├── readline
+│   │       ├── sqlite
+│   │       │   └── readline
+│   │       ├── xz
 │   │       └── python
 │   │           ├── gdbm
 │   │           ├── openssl@1.1
@@ -205,7 +339,6 @@ imagemagick
 │   │           └── xz
 │   └── x265
 ├── libomp
-├── libpng
 ├── libtiff
 │   └── jpeg
 ├── libtool
@@ -213,22 +346,23 @@ imagemagick
 │   ├── jpeg
 │   └── libtiff
 │       └── jpeg
+├── ilmbase
 ├── openexr
 │   └── ilmbase
 ├── openjpeg
 │   ├── libpng
+│   ├── jpeg
 │   ├── libtiff
 │   │   └── jpeg
 │   └── little-cms2
 │       ├── jpeg
 │       └── libtiff
 │           └── jpeg
-├── webp
-│   ├── jpeg
-│   ├── libpng
-│   └── libtiff
-│       └── jpeg
-└── xz
+└── webp
+    ├── jpeg
+    ├── libpng
+    └── libtiff
+        └── jpeg
 
 jenv
 
@@ -242,12 +376,66 @@ libheif
 ├── jpeg
 ├── libde265
 ├── libpng
+├── gettext
+├── libffi
+├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
+├── python
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+├── glib
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   └── python
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
 ├── shared-mime-info
 │   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   ├── python
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   └── xz
 │   └── glib
 │       ├── gettext
 │       ├── libffi
 │       ├── pcre
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       ├── xz
 │       └── python
 │           ├── gdbm
 │           ├── openssl@1.1
@@ -280,16 +468,19 @@ little-cms2
     └── jpeg
 
 maven
-└── openjdk
 
 mercurial
-└── python
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+└── python@2
     ├── gdbm
     ├── openssl@1.1
     ├── readline
-    ├── sqlite
-    │   └── readline
-    └── xz
+    └── sqlite
+        └── readline
 
 node
 └── icu4c
@@ -302,6 +493,7 @@ openexr
 
 openjpeg
 ├── libpng
+├── jpeg
 ├── libtiff
 │   └── jpeg
 └── little-cms2
@@ -333,8 +525,13 @@ python@2
     └── readline
 
 rbenv
+├── autoconf
+├── openssl@1.1
+├── pkg-config
+├── readline
 └── ruby-build
     ├── autoconf
+    ├── openssl@1.1
     ├── pkg-config
     └── readline
 
@@ -342,6 +539,7 @@ readline
 
 ruby-build
 ├── autoconf
+├── openssl@1.1
 ├── pkg-config
 └── readline
 
@@ -349,10 +547,31 @@ screen
 
 shared-mime-info
 ├── gettext
+├── libffi
+├── pcre
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+├── xz
+├── python
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
 └── glib
     ├── gettext
     ├── libffi
     ├── pcre
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    ├── xz
     └── python
         ├── gdbm
         ├── openssl@1.1
@@ -369,6 +588,11 @@ tree
 watchman
 ├── openssl@1.1
 ├── pcre
+├── gdbm
+├── readline
+├── sqlite
+│   └── readline
+├── xz
 └── python
     ├── gdbm
     ├── openssl@1.1
@@ -384,6 +608,8 @@ webp
     └── jpeg
 
 wget
+├── gettext
+├── libunistring
 ├── libidn2
 │   ├── gettext
 │   └── libunistring
@@ -394,6 +620,7 @@ x265
 xz
 
 yarn
+├── icu4c
 └── node
     └── icu4c
 
@@ -640,8 +867,6 @@ watchOS Simulator SDKs:
 
 
 * Available Simulators:
-Install Started
-1%.........20.........40.........60.........80.........Install Succeeded
 == Device Types ==
 iPhone 4s (com.apple.CoreSimulator.SimDeviceType.iPhone-4s)
 iPhone 5 (com.apple.CoreSimulator.SimDeviceType.iPhone-5)
@@ -939,16 +1164,16 @@ watchOS 6.1 (6.1.1 - 17S445) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
     iPad Pro (12.9-inch) (3rd generation) (81B34853-B7B7-4629-93D8-902D888E73D3) (Shutdown) 
     iPad Air (3rd generation) (444A91A1-EAD7-4F6B-8EC5-EA5F039F09B1) (Shutdown) 
 -- iOS 13.3 --
-    iPhone 8 (1443A8FA-43C9-4DB1-A860-C23B81CDDDBE) (Shutdown) 
-    iPhone 8 Plus (7F513E52-41DF-488E-90B1-5970E170D16E) (Shutdown) 
-    iPhone 11 (B258F029-49B8-4FF0-94D4-DDD6F41C748D) (Shutdown) 
-    iPhone 11 Pro (20FAA444-5DFB-4BFF-942A-E304A72FDE89) (Shutdown) 
-    iPhone 11 Pro Max (E8EE4957-FC5F-4131-97F9-320C355A36F6) (Shutdown) 
-    iPad Pro (9.7-inch) (32521D6A-9A77-463D-AE5E-723B7E626AD6) (Shutdown) 
-    iPad (7th generation) (F1A63F02-4877-4535-BDF0-903071D16313) (Shutdown) 
-    iPad Pro (11-inch) (080779BB-E055-4E68-AFEF-311DE4F72CBF) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (711980A8-9840-42DD-840B-705526B8020E) (Shutdown) 
-    iPad Air (3rd generation) (7CC75461-6695-43BB-82A9-073D082704FC) (Shutdown) 
+    iPhone 8 (9AB98F4C-1AF2-4F2C-98EE-ED09CE4D69B9) (Shutdown) 
+    iPhone 8 Plus (E160F15D-9E6E-4121-B781-372D93099D5E) (Shutdown) 
+    iPhone 11 (BFFAB047-56AC-4DC1-AEED-6BBF0C2AEEA0) (Shutdown) 
+    iPhone 11 Pro (33B8FA51-951A-4155-A653-F328A5200B20) (Shutdown) 
+    iPhone 11 Pro Max (562D6D3F-6C85-4673-A555-6893B5A62580) (Shutdown) 
+    iPad Pro (9.7-inch) (566EFAB0-BC8C-4126-A4A8-8F4CDB5F7EBE) (Shutdown) 
+    iPad (7th generation) (ABC6496F-CD6A-409E-BAA4-CC3E6F8E4D36) (Shutdown) 
+    iPad Pro (11-inch) (D41CF2EB-DFD1-488D-90BD-A0F4A32F9061) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (156833B9-79B6-4DB6-B31B-603CA3507647) (Shutdown) 
+    iPad Air (3rd generation) (85D03C64-AAC7-4126-BA6B-2429BC81A0A5) (Shutdown) 
 -- tvOS 10.2 --
     Apple TV 1080p (5BB8092F-4AE8-4FED-8248-1F4BD3BFF0E3) (Shutdown) 
 -- tvOS 11.0 --
@@ -988,9 +1213,9 @@ watchOS 6.1 (6.1.1 - 17S445) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
     Apple TV 4K (35F5AC89-D382-4C32-A7BB-35A9FF1C7F24) (Shutdown) 
     Apple TV 4K (at 1080p) (535D7EC7-00DE-494A-943A-D6CA9FE415D1) (Shutdown) 
 -- tvOS 13.3 --
-    Apple TV (DA0706CD-9C54-4E6E-88B4-1E5F05E8FAAA) (Shutdown) 
-    Apple TV 4K (E3BD0C53-34A4-4723-980E-25CF34B2DA73) (Shutdown) 
-    Apple TV 4K (at 1080p) (7646E9AF-FA6D-4FF6-8EF7-C4D61A39101C) (Shutdown) 
+    Apple TV (105666F9-BB2C-4CED-A1D1-FFE5E2A7CC44) (Shutdown) 
+    Apple TV 4K (DEE1FCCB-2D63-4554-BCCF-7EE1B97D8C9C) (Shutdown) 
+    Apple TV 4K (at 1080p) (F7FD1B44-C53A-4A6B-9BE2-4C3F64D9C329) (Shutdown) 
 -- watchOS 3.2 --
     Apple Watch - 38mm (3FB936CE-A2A9-4F33-B291-E480B3171455) (Shutdown) 
     Apple Watch - 42mm (DF6903E1-17CE-4CE9-BEED-2344D44F9208) (Shutdown) 
@@ -1051,12 +1276,12 @@ watchOS 6.1 (6.1.1 - 17S445) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
     Apple Watch Series 5 - 40mm (6C52FCAD-FA54-4789-AE25-5DADE6EFBD0A) (Shutdown) 
     Apple Watch Series 5 - 44mm (8090FC13-D7EA-4152-B6AB-5B19895C6D27) (Shutdown) 
 == Device Pairs ==
-BB47D9E8-4B74-4AF7-894C-906A029DBFF0 (active, disconnected)
+073DD309-FFF1-4F7B-B680-B626C439ABC5 (active, disconnected)
     Watch: Apple Watch Series 5 - 40mm (6C52FCAD-FA54-4789-AE25-5DADE6EFBD0A) (Shutdown)
-    Phone: iPhone 11 Pro (20FAA444-5DFB-4BFF-942A-E304A72FDE89) (Shutdown)
-25023EC6-9BC7-4E72-A3CE-E1444D75FC5F (active, disconnected)
+    Phone: iPhone 11 Pro (33B8FA51-951A-4155-A653-F328A5200B20) (Shutdown)
+A1083270-8544-47AC-9936-6B698EFDE83D (active, disconnected)
     Watch: Apple Watch Series 5 - 44mm (8090FC13-D7EA-4152-B6AB-5B19895C6D27) (Shutdown)
-    Phone: iPhone 11 Pro Max (E8EE4957-FC5F-4131-97F9-320C355A36F6) (Shutdown)
+    Phone: iPhone 11 Pro Max (562D6D3F-6C85-4673-A555-6893B5A62580) (Shutdown)
 
 ========================================
 
@@ -1077,18 +1302,18 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-beta-200214092013-RtwxcuZ7VE4EPmPMLdh3x6
+      Computer Name: stg-vs4mac-beta-200306160741-aNQseCLWfRj5hC2ZkS4D7D
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 4:59
+      Time since boot: 27 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  168Gi   30Gi    85% 4791138 9223372036849984669    0%   /
+* Free disk space: /dev/disk1s1  200Gi  167Gi   32Gi    84% 4802363 9223372036849973444    0%   /
 ========================================
 
 
@@ -1097,12 +1322,12 @@ Software:
 --- Xamarin
 
 * Visual Studio
-Release ID: 805002739
-Git revision: 263967358dccc898fdabde5fc9cc6fbd037580ef
-Build date: 2020-02-06 16:15:04-05
-Build branch: release-8.5-preview2.1
+Release ID: 805003129
+Git revision: 71ac230e7eba057992b059f9fea8c61fea796d7c
+Build date: 2020-02-27 14:54:38-05
+Build branch: release-8.5
 * Mono version:
-Mono JIT compiler version 6.8.0.104 (2019-10/1cca0cfebfc Tue Jan 28 09:49:56 EST 2020)
+Mono JIT compiler version 6.8.0.121 (2019-10/fb4d8f5eb1c Mon Feb 24 16:03:59 EST 2020)
 Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-project.com
 	TLS:           
 	SIGSEGV:       altstack
