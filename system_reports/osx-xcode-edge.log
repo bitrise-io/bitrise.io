@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_02_12_1
+* BITRISE_OSX_STACK_REV_ID: v2020_02_28_1
 ========================================
 
 
@@ -16,15 +16,15 @@
 * Python: Python 2.7.16
 * Node.js: v10.19.0
 * NPM: 6.13.7
-* Yarn: 1.22.0
+* Yarn: 1.22.4
 * Java: openjdk version "1.8.0_242"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_242-b08)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
-* Flutter: Flutter 1.12.13+hotfix.5 • channel stable • https://github.com/flutter/flutter.git
+* Flutter: Flutter 1.12.13+hotfix.8 • channel stable • https://github.com/flutter/flutter.git
 
-* git: git version 2.25.0
+* git: git version 2.25.1
 * git lfs: git-lfs/2.10.0 (GitHub; darwin amd64; go 1.13.6)
-* mercurial/hg: Mercurial Distributed SCM (version 5.3)
+* mercurial/hg: Mercurial Distributed SCM (version 5.3.1)
 * curl: curl 7.54.0 (x86_64-apple-darwin18.0) libcurl/7.54.0 LibreSSL/2.6.5 zlib/1.2.11 nghttp2/1.24.1
 * wget: GNU Wget 1.20.3 built on darwin18.7.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,20 +33,20 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.6
-Homebrew/homebrew-core (git revision 79aa71; last commit 2020-02-27)
-Homebrew/homebrew-cask (git revision a866e; last commit 2020-02-27)
+* brew: Homebrew 2.2.10
+Homebrew/homebrew-core (git revision a15ba8; last commit 2020-03-12)
+Homebrew/homebrew-cask (git revision d9ce1; last commit 2020-03-12)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
-* Ansible: ansible 2.9.4
+* Ansible: ansible 2.9.6
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.9.4_1/libexec/lib/python3.8/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.9.6_1/libexec/lib/python3.8/site-packages/ansible
   executable location = /usr/local/bin/ansible
-* gtimeout: timeout (GNU coreutils) 8.31
+* gtimeout: timeout (GNU coreutils) 8.32
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.119.1
+* flow: Flow, a static type checker for JavaScript, version 0.120.1
 * carthage: 0.34.0
-* imagemagick (convert): Version: ImageMagick 7.0.9-23 Q16 x86_64 2020-02-16 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.10-0 Q16 x86_64 2020-03-08 https://imagemagick.org
 * ghostscript (ps2ascii): 9.50
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
 * firebase: ]0;Firebase CLI7.14.0
@@ -54,32 +54,32 @@ Homebrew/homebrew-cask (git revision a866e; last commit 2020-02-27)
 * wine: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.39.0
-* stepman: 0.12.0
+* bitrise: 1.39.1
+* stepman: 0.12.1
 * envman: 2.2.11
 * cmd-bridge: 0.9.5
 ========================================
 
 
 === Brew list versions ==================
-ansible 2.9.4_1
+ansible 2.9.6_1
 ant 1.10.7_1
 autoconf 2.69
 carthage 0.34.0
-coreutils 8.31
-flow 0.119.1
+coreutils 8.32
+flow 0.120.1
 freetype 2.10.1
 gdbm 1.18.1
 gettext 0.20.1
 ghostscript 9.50
-git 2.25.0_1
+git 2.25.1
 git-lfs 2.10.0
-glib 2.62.5
+glib 2.64.1
 go 1.14
-gradle 6.2.1
+gradle 6.2.2
 icu4c 64.2
-ilmbase 2.4.0
-imagemagick 7.0.9-23
+ilmbase 2.4.1
+imagemagick 7.0.10-0
 jenv 0.5.2
 jpeg 9d
 libde265 1.0.5
@@ -94,18 +94,18 @@ libunistring 0.9.10
 libyaml 0.2.2
 little-cms2 2.9
 maven 3.6.3_1
-mercurial 5.3
-node 13.8.0
+mercurial 5.3.1
+node 13.10.1
 node@10 10.19.0
-openexr 2.4.0
+openexr 2.4.1
 openjdk 13.0.2+8_2
 openjpeg 2.3.1
 openssl@1.1 1.1.1d
 pcre 8.44
 pcre2 10.34
 pkg-config 0.29.2
-python 3.7.6_1
-python@3.8 3.8.1
+python 3.7.7
+python@3.8 3.8.2
 rbenv 1.1.2
 readline 8.0.4
 ruby-build 20200224
@@ -118,7 +118,7 @@ webp 1.1.0
 wget 1.20.3_2
 x265 3.3
 xz 5.2.4
-yarn 1.22.0
+yarn 1.22.4
 ========================================
 
 
@@ -644,7 +644,7 @@ yarn
 * rbenv: 1.1.2
 * Rubygems: 3.1.2
 * Bundler: Bundler version 2.1.2
-* CocoaPods: 1.9.0
+* CocoaPods: 1.9.1
 * xcpretty: 0.3.0
 * Nomad CLI: 3.1.2
 * Nomad CLI IPA / Shenzhen: ipa 0.14.3
@@ -656,8 +656,12 @@ activesupport (4.2.11.1)
 addressable (2.7.0)
 algoliasearch (1.27.1)
 atomos (0.1.3)
-aws-sdk (1.67.0)
+aws-eventstream (1.0.3)
+aws-sdk (2.11.463, 1.67.0)
+aws-sdk-core (2.11.463)
+aws-sdk-resources (2.11.463)
 aws-sdk-v1 (1.67.0)
+aws-sigv4 (1.1.1)
 babosa (1.0.3)
 bigdecimal (default: 1.4.1)
 bundler (default: 2.1.2)
@@ -665,8 +669,8 @@ certified (1.0.0)
 CFPropertyList (3.0.2)
 claide (1.0.3)
 cmath (default: 1.0.0)
-cocoapods (1.9.0)
-cocoapods-core (1.9.0)
+cocoapods (1.9.1)
+cocoapods-core (1.9.1)
 cocoapods-deintegrate (1.0.4)
 cocoapods-downloader (1.3.0)
 cocoapods-plugins (1.0.0)
@@ -676,7 +680,7 @@ cocoapods-trunk (1.4.1)
 cocoapods-try (1.1.0)
 colored (1.2)
 colored2 (3.1.2)
-commander (4.5.0)
+commander (4.5.1)
 commander-fastlane (4.4.6)
 concurrent-ruby (1.1.6)
 csv (default: 3.0.9)
@@ -686,7 +690,7 @@ dbm (default: 1.0.0)
 declarative (0.0.10)
 declarative-option (0.1.0)
 did_you_mean (1.3.0)
-digest-crc (0.4.1)
+digest-crc (0.5.1)
 domain_name (0.5.20190701)
 dotenv (2.7.5)
 dubai (0.2.0)
@@ -700,7 +704,7 @@ faraday (0.17.3)
 faraday-cookie_jar (0.0.6)
 faraday_middleware (0.14.0, 0.13.1)
 fastimage (2.1.7)
-fastlane (2.142.0)
+fastlane (2.143.0)
 fcntl (default: 1.0.0)
 ffi (1.12.2)
 fiddle (default: 1.0.0)
@@ -712,7 +716,7 @@ gdbm (default: 2.0.0)
 gh_inspector (1.1.3)
 google-api-client (0.36.4)
 google-cloud-core (1.5.0)
-google-cloud-env (1.3.0)
+google-cloud-env (1.3.1)
 google-cloud-errors (1.0.0)
 google-cloud-storage (1.25.1)
 googleauth (0.11.0)
@@ -724,6 +728,7 @@ i18n (0.9.5)
 io-console (default: 0.4.7)
 ipaddr (default: 1.2.2)
 irb (default: 1.0.0)
+jmespath (1.4.0)
 json (default: 2.1.0, 1.8.6)
 jwt (2.1.0)
 logger (default: 1.3.0)
@@ -1333,18 +1338,18 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-200227145521-TeaVNCWNteNpHxQpf4CT7c
+      Computer Name: stg-xcode-edge-200312113056-jLVHzuCHC3FpZrj3eEcGFf
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 7 minutes
+      Time since boot: 1:07
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  171Gi   28Gi    86% 5234027 9223372036849541780    0%   /
+* Free disk space: /dev/disk1s1  200Gi  172Gi   28Gi    87% 5235418 9223372036849540389    0%   /
 ========================================
 
 --- Android
@@ -1361,7 +1366,7 @@ platforms
 system-images
 tools
 
-* ANDROID_NDK_HOME (/opt/android-ndk/android-ndk-r20) content:
+* ANDROID_NDK_HOME (/opt/android-ndk/android-ndk-r21) content:
 CHANGELOG.md
 NOTICE
 NOTICE.toolchain
@@ -1385,7 +1390,7 @@ wrap.sh
 
 * Android NDK Version:
 Pkg.Desc = Android NDK
-Pkg.Revision = 20.0.5594570
+Pkg.Revision = 21.0.6113669
 
 * platform-tools content:
 NOTICE.txt
@@ -1427,6 +1432,7 @@ systrace
 29.0.0
 29.0.1
 29.0.2
+29.0.3
 
 * extras content:
 /usr/local/share/android-sdk/extras
