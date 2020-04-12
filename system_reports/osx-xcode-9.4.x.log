@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_02_28_1
+* BITRISE_OSX_STACK_REV_ID: v2020_04_02_1
 ========================================
 
 
@@ -34,8 +34,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.2.11
-Homebrew/homebrew-core (git revision 0d1eb; last commit 2020-04-02)
-Homebrew/homebrew-cask (git revision dde78; last commit 2020-04-02)
+Homebrew/homebrew-core (git revision 4de79; last commit 2020-04-08)
+Homebrew/homebrew-cask (git revision a2df6; last commit 2020-04-08)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.9.2
@@ -49,7 +49,7 @@ Homebrew/homebrew-cask (git revision dde78; last commit 2020-04-02)
 * imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-06 https://imagemagick.org
 * ghostscript (ps2ascii): 9.23
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: ]0;Firebase CLI8.0.0
+* firebase: ]0;Firebase CLI8.0.2
 ./system_report.sh: line 75: wine: command not found
 * wine: 
 
@@ -636,6 +636,7 @@ yarn
 * rbenv: 1.1.2
 * Rubygems: 2.7.6.2
 * Bundler: Bundler version 2.0.2
+/Users/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/cocoapods-1.8.4/lib/cocoapods/executable.rb:93: warning: Insecure world writable dir /usr/local/share/android-sdk/tools in PATH, mode 040777
 * CocoaPods: 1.8.4
 * xcpretty: 0.3.0
 * Nomad CLI: 2.7.6.2
@@ -1236,18 +1237,18 @@ Software:
       Kernel Version: Darwin 17.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-9-4-200403144041-Nt7eMBe6xjWehup4UMxZbe
+      Computer Name: stg-xcode-9-4-200408113243-w9TMfCuRkq7HH6BMgSaWGb
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 29 minutes
+      Time since boot: 1:41
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk0s2  199Gi  144Gi   55Gi    73% 4317079 4290650200    0%   /
+* Free disk space: /dev/disk0s2  199Gi  144Gi   55Gi    73% 4321042 4290646237    0%   /
 ========================================
 
 --- Android
@@ -1259,7 +1260,6 @@ emulator
 extras
 licenses
 patcher
-platform-tools
 platforms
 system-images
 tools
@@ -1291,23 +1291,7 @@ Pkg.Desc = Android NDK
 Pkg.Revision = 21.0.6113669
 
 * platform-tools content:
-NOTICE.txt
-adb
-api
-dmtracedump
-e2fsdroid
-etc1tool
-fastboot
-hprof-conv
-lib64
-make_f2fs
-mke2fs
-mke2fs.conf
-package.xml
-sload_f2fs
-source.properties
-sqlite3
-systrace
+ls: /usr/local/share/android-sdk/platform-tools: No such file or directory
 
 * build-tools content:
 17.0.0

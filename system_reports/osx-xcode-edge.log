@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_02_28_1
+* BITRISE_OSX_STACK_REV_ID: v2020_04_02_1
 ========================================
 
 
@@ -24,7 +24,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
 
 * git: git version 2.26.0
 * git lfs: git-lfs/2.10.0 (GitHub; darwin amd64; go 1.13.6)
-* mercurial/hg: Mercurial Distributed SCM (version 5.3.1)
+* mercurial/hg: Mercurial Distributed SCM (version 5.3.2)
 * curl: curl 7.64.1 (x86_64-apple-darwin19.0) libcurl/7.64.1 (SecureTransport) LibreSSL/2.8.3 zlib/1.2.11 nghttp2/1.39.2
 * wget: GNU Wget 1.20.3 built on darwin19.0.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.242-b08, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.11
-Homebrew/homebrew-core (git revision c974d; last commit 2020-04-02)
-Homebrew/homebrew-cask (git revision ab6e8e; last commit 2020-04-02)
+* brew: Homebrew 2.2.12
+Homebrew/homebrew-core (git revision dadeff; last commit 2020-04-08)
+Homebrew/homebrew-cask (git revision 0a4cc5; last commit 2020-04-08)
 ./system_report.sh: line 58: xctool: command not found
 * xctool: 
 * Ansible: ansible 2.9.6
@@ -44,12 +44,12 @@ Homebrew/homebrew-cask (git revision ab6e8e; last commit 2020-04-02)
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.32
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.121.0
+* flow: Flow, a static type checker for JavaScript, version 0.122.0
 * carthage: 0.34.0
-* imagemagick (convert): Version: ImageMagick 7.0.10-0 Q16 x86_64 2020-03-08 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.10-0 Q16 x86_64 2020-04-04 https://imagemagick.org
 * ghostscript (ps2ascii): 9.52
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
-* firebase: ]0;Firebase CLI8.0.0
+* firebase: ]0;Firebase CLI8.0.2
 ./system_report.sh: line 75: wine: command not found
 * wine: 
 
@@ -67,14 +67,14 @@ ant 1.10.7_1
 autoconf 2.69
 carthage 0.34.0
 coreutils 8.32
-flow 0.121.0
+flow 0.122.0
 freetype 2.10.1
 gdbm 1.18.1
 gettext 0.20.1
 ghostscript 9.52
 git 2.26.0
 git-lfs 2.10.0
-glib 2.64.1
+glib 2.64.1_1
 go 1.14.1
 gradle 6.3
 icu4c 64.2
@@ -94,7 +94,7 @@ libunistring 0.9.10
 libyaml 0.2.2
 little-cms2 2.9
 maven 3.6.3_1
-mercurial 5.3.1
+mercurial 5.3.2
 node 13.12.0
 node@10 10.19.0
 openexr 2.4.1
@@ -178,7 +178,7 @@ glib
 ├── sqlite
 │   └── readline
 ├── xz
-└── python
+└── python@3.8
     ├── gdbm
     ├── openssl@1.1
     ├── readline
@@ -200,6 +200,12 @@ imagemagick
 ├── freetype
 │   └── libpng
 ├── jpeg
+├── libtiff
+│   └── jpeg
+├── ghostscript
+│   ├── jpeg
+│   └── libtiff
+│       └── jpeg
 ├── libde265
 ├── gettext
 ├── libffi
@@ -210,7 +216,7 @@ imagemagick
 ├── sqlite
 │   └── readline
 ├── xz
-├── python
+├── python@3.8
 │   ├── gdbm
 │   ├── openssl@1.1
 │   ├── readline
@@ -227,7 +233,7 @@ imagemagick
 │   ├── sqlite
 │   │   └── readline
 │   ├── xz
-│   └── python
+│   └── python@3.8
 │       ├── gdbm
 │       ├── openssl@1.1
 │       ├── readline
@@ -244,7 +250,7 @@ imagemagick
 │   ├── sqlite
 │   │   └── readline
 │   ├── xz
-│   ├── python
+│   ├── python@3.8
 │   │   ├── gdbm
 │   │   ├── openssl@1.1
 │   │   ├── readline
@@ -261,7 +267,7 @@ imagemagick
 │       ├── sqlite
 │       │   └── readline
 │       ├── xz
-│       └── python
+│       └── python@3.8
 │           ├── gdbm
 │           ├── openssl@1.1
 │           ├── readline
@@ -282,7 +288,7 @@ imagemagick
 │   ├── sqlite
 │   │   └── readline
 │   ├── xz
-│   ├── python
+│   ├── python@3.8
 │   │   ├── gdbm
 │   │   ├── openssl@1.1
 │   │   ├── readline
@@ -299,7 +305,7 @@ imagemagick
 │   │   ├── sqlite
 │   │   │   └── readline
 │   │   ├── xz
-│   │   └── python
+│   │   └── python@3.8
 │   │       ├── gdbm
 │   │       ├── openssl@1.1
 │   │       ├── readline
@@ -316,7 +322,7 @@ imagemagick
 │   │   ├── sqlite
 │   │   │   └── readline
 │   │   ├── xz
-│   │   ├── python
+│   │   ├── python@3.8
 │   │   │   ├── gdbm
 │   │   │   ├── openssl@1.1
 │   │   │   ├── readline
@@ -333,7 +339,7 @@ imagemagick
 │   │       ├── sqlite
 │   │       │   └── readline
 │   │       ├── xz
-│   │       └── python
+│   │       └── python@3.8
 │   │           ├── gdbm
 │   │           ├── openssl@1.1
 │   │           ├── readline
@@ -342,8 +348,6 @@ imagemagick
 │   │           └── xz
 │   └── x265
 ├── libomp
-├── libtiff
-│   └── jpeg
 ├── libtool
 ├── little-cms2
 │   ├── jpeg
@@ -388,7 +392,7 @@ libheif
 ├── sqlite
 │   └── readline
 ├── xz
-├── python
+├── python@3.8
 │   ├── gdbm
 │   ├── openssl@1.1
 │   ├── readline
@@ -405,7 +409,7 @@ libheif
 │   ├── sqlite
 │   │   └── readline
 │   ├── xz
-│   └── python
+│   └── python@3.8
 │       ├── gdbm
 │       ├── openssl@1.1
 │       ├── readline
@@ -422,7 +426,7 @@ libheif
 │   ├── sqlite
 │   │   └── readline
 │   ├── xz
-│   ├── python
+│   ├── python@3.8
 │   │   ├── gdbm
 │   │   ├── openssl@1.1
 │   │   ├── readline
@@ -439,7 +443,7 @@ libheif
 │       ├── sqlite
 │       │   └── readline
 │       ├── xz
-│       └── python
+│       └── python@3.8
 │           ├── gdbm
 │           ├── openssl@1.1
 │           ├── readline
@@ -561,7 +565,7 @@ shared-mime-info
 ├── sqlite
 │   └── readline
 ├── xz
-├── python
+├── python@3.8
 │   ├── gdbm
 │   ├── openssl@1.1
 │   ├── readline
@@ -578,7 +582,7 @@ shared-mime-info
     ├── sqlite
     │   └── readline
     ├── xz
-    └── python
+    └── python@3.8
         ├── gdbm
         ├── openssl@1.1
         ├── readline
@@ -644,6 +648,7 @@ yarn
 * rbenv: 1.1.2
 * Rubygems: 3.1.2
 * Bundler: Bundler version 2.1.2
+/Users/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/cocoapods-1.9.1/lib/cocoapods/executable.rb:93: warning: Insecure world writable dir /usr/local/share/android-sdk/tools in PATH, mode 040777
 * CocoaPods: 1.9.1
 * xcpretty: 0.3.0
 * Nomad CLI: 3.1.2
@@ -802,7 +807,7 @@ tty-cursor (0.7.1)
 tty-screen (0.7.1)
 tty-spinner (0.9.3)
 typhoeus (1.3.1)
-tzinfo (1.2.6)
+tzinfo (1.2.7)
 uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.7.7)
@@ -1178,11 +1183,11 @@ Software:
       Kernel Version: Darwin 19.3.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-200403144601-wjLUAZDsX43zukLDGsSTPk
+      Computer Name: stg-xcode-edge-200408122642-TAAnY2iZexLqEubGQvyJtC
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 9 minutes
+      Time since boot: 34 minutes
 
 
 ========================================
@@ -1201,7 +1206,6 @@ emulator
 extras
 licenses
 patcher
-platform-tools
 platforms
 system-images
 tools
@@ -1233,23 +1237,7 @@ Pkg.Desc = Android NDK
 Pkg.Revision = 21.0.6113669
 
 * platform-tools content:
-NOTICE.txt
-adb
-api
-dmtracedump
-e2fsdroid
-etc1tool
-fastboot
-hprof-conv
-lib64
-make_f2fs
-mke2fs
-mke2fs.conf
-package.xml
-sload_f2fs
-source.properties
-sqlite3
-systrace
+ls: /usr/local/share/android-sdk/platform-tools: No such file or directory
 
 * build-tools content:
 17.0.0
