@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_04_02_1
+* BITRISE_OSX_STACK_REV_ID: v2020_04_09_1
 ========================================
 
 
@@ -33,11 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.232-b09, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.11
-Homebrew/homebrew-core (git revision 4de7; last commit 2020-04-08)
-Homebrew/homebrew-cask (git revision a2df6d; last commit 2020-04-08)
-./system_report.sh: line 58: xctool: command not found
-* xctool: 
+* brew: Homebrew 2.2.13
+Homebrew/homebrew-core (git revision ea737; last commit 2020-04-16)
+Homebrew/homebrew-cask (git revision 1a6a56; last commit 2020-04-16)
 * Ansible: ansible 2.9.2
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/Cellar/ansible/2.9.2_1/libexec/lib/python3.8/site-packages/ansible
@@ -50,8 +48,6 @@ Homebrew/homebrew-cask (git revision a2df6d; last commit 2020-04-08)
 * ghostscript (ps2ascii): 9.50
 * screen: Screen version 4.07.00 (GNU) 02-Oct-19
 * firebase: ]0;Firebase CLI7.12.0
-./system_report.sh: line 75: wine: command not found
-* wine: 
 
 --- Bitrise CLI tool versions
 * bitrise: 1.40.1
@@ -638,7 +634,6 @@ yarn
 * rbenv: 1.1.2
 * Rubygems: 3.1.2
 * Bundler: Bundler version 2.1.2
-/Users/vagrant/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/cocoapods-1.8.4/lib/cocoapods/executable.rb:93: warning: Insecure world writable dir /usr/local/share/android-sdk/tools in PATH, mode 040777
 * CocoaPods: 1.8.4
 * xcpretty: 0.3.0
 * Nomad CLI: 3.1.2
@@ -808,13 +803,23 @@ zlib (default: 1.0.0)
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
 * Ionic: 5.4.14
+./system_report.sh: line 123: appcenter: command not found
+* AppCenter CLI: 
 ========================================
 
 
 === Checking Xcode CLT dirs ============
 
- * ls -1 /usr/include/CommonCrypto
-ls: /usr/include/CommonCrypto: No such file or directory
+ ls -1 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/CommonCrypto
+CommonCrypto.h
+CommonCryptoError.h
+CommonCryptor.h
+CommonDigest.h
+CommonHMAC.h
+CommonKeyDerivation.h
+CommonRandom.h
+CommonSymmetricKeywrap.h
+module.modulemap
 
  * ls -1 /Library/Developer/CommandLineTools/
 Library
@@ -1325,18 +1330,20 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-3-200408112907-A24kVBUmA4hANtbSVdDrHj
+      Computer Name: stg-xcode-11-3-200417164940-SmoQSW3Ldvc7hWJ5PDVfa5
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 1:34
+      Time since boot: 15 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  174Gi   25Gi    88% 5285989 9223372036849489818    0%   /
+* Free disk space: 
+    Filesystem         Size        Avail
+  /dev/disk1s1        200Gi         25Gi
 ========================================
 
 --- Android
