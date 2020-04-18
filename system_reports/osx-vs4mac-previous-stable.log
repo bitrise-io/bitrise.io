@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_04_02_1
+* BITRISE_OSX_STACK_REV_ID: v2020_04_09_1
 ========================================
 
 
@@ -33,11 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.11
-Homebrew/homebrew-core (git revision 4de7; last commit 2020-04-08)
-Homebrew/homebrew-cask (git revision a2df6d; last commit 2020-04-08)
-./system_report.sh: line 58: xctool: command not found
-* xctool: 
+* brew: Homebrew 2.2.13
+Homebrew/homebrew-core (git revision ea737; last commit 2020-04-16)
+Homebrew/homebrew-cask (git revision 72f4e; last commit 2020-04-16)
 * Ansible: ansible 2.8.5
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/Cellar/ansible/2.8.5/libexec/lib/python3.7/site-packages/ansible
@@ -49,9 +47,7 @@ Homebrew/homebrew-cask (git revision a2df6d; last commit 2020-04-08)
 * imagemagick (convert): Version: ImageMagick 7.0.8-66 Q16 x86_64 2019-09-23 https://imagemagick.org
 * ghostscript (ps2ascii): 9.27
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: ]0;Firebase CLI8.0.2
-./system_report.sh: line 75: wine: command not found
-* wine: 
+* firebase: ]0;Firebase CLI8.0.3
 
 --- Bitrise CLI tool versions
 * bitrise: 1.40.1
@@ -808,13 +804,23 @@ zlib (default: 1.0.0)
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
 * Ionic: 5.4.2
+./system_report.sh: line 123: appcenter: command not found
+* AppCenter CLI: 
 ========================================
 
 
 === Checking Xcode CLT dirs ============
 
- * ls -1 /usr/include/CommonCrypto
-ls: /usr/include/CommonCrypto: No such file or directory
+ ls -1 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/CommonCrypto
+CommonCrypto.h
+CommonCryptoError.h
+CommonCryptor.h
+CommonDigest.h
+CommonHMAC.h
+CommonKeyDerivation.h
+CommonRandom.h
+CommonSymmetricKeywrap.h
+module.modulemap
 
  * ls -1 /Library/Developer/CommandLineTools/
 Library
@@ -1302,18 +1308,20 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-previous-200408113243-NduAWUT8NwKJXgGGHq8Ch5
+      Computer Name: stg-vs4mac-stable-previous-200417164850-rHeQhb8UWutMuvLtrdnEVA
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 1:43
+      Time since boot: 27 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: /dev/disk1s1  200Gi  167Gi   32Gi    85% 4819757 9223372036849956050    0%   /
+* Free disk space: 
+    Filesystem         Size        Avail
+  /dev/disk1s1        200Gi         32Gi
 ========================================
 
 
@@ -1343,10 +1351,12 @@ Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-proj
 /Library/Frameworks/Mono.framework/Versions/Current/Commands/mono
 
 * Xamarin.Android
-cat: /Developer/MonoAndroid/usr/Version: No such file or directory
+10.2.0.100
+Current
 
 * Xamarin.iOS
-./system_report.sh: line 214: /Developer/MonoTouch/usr/bin/mtouch: No such file or directory
+13.14.1.39
+Current
 
 * debug.keystore path:
 /Users/vagrant/.local/share/Xamarin/Mono for Android/debug.keystore
@@ -1393,23 +1403,7 @@ Pkg.Desc = Android NDK
 Pkg.Revision = 20.1.5948944
 
 * platform-tools content:
-NOTICE.txt
-adb
-api
-dmtracedump
-e2fsdroid
-etc1tool
-fastboot
-hprof-conv
-lib64
-make_f2fs
-mke2fs
-mke2fs.conf
-package.xml
-sload_f2fs
-source.properties
-sqlite3
-systrace
+ls: /usr/local/Caskroom/android-sdk/4333796/platform-tools: No such file or directory
 
 * build-tools content:
 17.0.0
