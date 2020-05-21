@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_04_09_1
+* BITRISE_OSX_STACK_REV_ID: v2020_04_28_1
 ========================================
 
 
@@ -23,7 +23,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
 * Flutter: Flutter 1.12.13+hotfix.8 • channel stable • https://github.com/flutter/flutter.git
 
 * git: git version 2.26.2
-* git lfs: git-lfs/2.10.0 (GitHub; darwin amd64; go 1.13.6)
+* git lfs: git-lfs/2.11.0 (GitHub; darwin amd64; go 1.14.2)
 * mercurial/hg: Mercurial Distributed SCM (version 5.4)
 * curl: curl 7.64.1 (x86_64-apple-darwin19.0) libcurl/7.64.1 (SecureTransport) LibreSSL/2.8.3 zlib/1.2.11 nghttp2/1.39.2
 * wget: GNU Wget 1.20.3 built on darwin19.0.0.
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.15
-Homebrew/homebrew-core (git revision 0b6f4; last commit 2020-05-07)
-Homebrew/homebrew-cask (git revision 5c9ce; last commit 2020-05-07)
+* brew: Homebrew 2.2.16
+Homebrew/homebrew-core (git revision 78552a; last commit 2020-05-14)
+Homebrew/homebrew-cask (git revision e55f2; last commit 2020-05-13)
 * Ansible: ansible 2.9.7
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/Cellar/ansible/2.9.7/libexec/lib/python3.8/site-packages/ansible
@@ -44,7 +44,7 @@ Homebrew/homebrew-cask (git revision 5c9ce; last commit 2020-05-07)
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.124.0
 * carthage: 0.34.0
-* imagemagick (convert): Version: ImageMagick 7.0.10-10 Q16 x86_64 2020-04-28 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.10-11 Q16 x86_64 2020-05-09 https://imagemagick.org
 * ghostscript (ps2ascii): 9.52
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
 * firebase: ]0;Firebase CLI8.2.0
@@ -62,18 +62,21 @@ ansible 2.9.7
 autoconf 2.69
 carthage 0.34.0
 coreutils 8.32
+docbook 5.1_1
+docbook-xsl 1.79.2_1
 flow 0.124.0
 freetype 2.10.1
 gdbm 1.18.1
 gettext 0.20.2_1
 ghostscript 9.52
 git 2.26.2
-git-lfs 2.10.0
+git-lfs 2.11.0
 glib 2.64.2_1
+gnu-getopt 2.35.1
 go 1.14.2_1
 icu4c 66.1
 ilmbase 2.4.1
-imagemagick 7.0.10-10
+imagemagick 7.0.10-11
 jenv 0.5.2
 jpeg 9d
 libde265 1.0.5
@@ -88,13 +91,13 @@ libunistring 0.9.10
 libyaml 0.2.4
 little-cms2 2.9
 mercurial 5.4
-node 14.1.0
+node 14.2.0
 node@10 10.20.1_1
 openexr 2.4.1
 openjpeg 2.3.1
 openssl@1.1 1.1.1g
 pcre 8.44
-pcre2 10.34
+pcre2 10.35
 pkg-config 0.29.2
 python 3.7.7
 python@3.8 3.8.2
@@ -102,13 +105,14 @@ rbenv 1.1.2
 readline 8.0.4
 ruby-build 20200224
 screen 4.8.0
-shared-mime-info 1.15
+shared-mime-info 2.0
 sqlite 3.31.1
 tree 1.8.0
 watchman 4.9.0_4
 webp 1.1.0
 wget 1.20.3_2
 x265 3.3
+xmlto 0.0.28
 xz 5.2.5
 yarn 1.22.4
 ========================================
@@ -136,6 +140,11 @@ autoconf
 carthage
 
 coreutils
+
+docbook
+
+docbook-xsl
+└── docbook
 
 flow
 
@@ -174,6 +183,8 @@ glib
     ├── sqlite
     │   └── readline
     └── xz
+
+gnu-getopt
 
 go
 
@@ -226,6 +237,15 @@ imagemagick
 │       ├── sqlite
 │       │   └── readline
 │       └── xz
+├── docbook
+├── docbook-xsl
+│   └── docbook
+├── gnu-getopt
+├── xmlto
+│   ├── docbook
+│   ├── docbook-xsl
+│   │   └── docbook
+│   └── gnu-getopt
 ├── shared-mime-info
 │   ├── gettext
 │   ├── libffi
@@ -243,23 +263,32 @@ imagemagick
 │   │   ├── sqlite
 │   │   │   └── readline
 │   │   └── xz
-│   └── glib
-│       ├── gettext
-│       ├── libffi
-│       ├── pcre
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       ├── xz
-│       └── python@3.8
-│           ├── gdbm
-│           ├── openssl@1.1
-│           ├── readline
-│           ├── sqlite
-│           │   └── readline
-│           └── xz
+│   ├── glib
+│   │   ├── gettext
+│   │   ├── libffi
+│   │   ├── pcre
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   ├── xz
+│   │   └── python@3.8
+│   │       ├── gdbm
+│   │       ├── openssl@1.1
+│   │       ├── readline
+│   │       ├── sqlite
+│   │       │   └── readline
+│   │       └── xz
+│   ├── docbook
+│   ├── docbook-xsl
+│   │   └── docbook
+│   ├── gnu-getopt
+│   └── xmlto
+│       ├── docbook
+│       ├── docbook-xsl
+│       │   └── docbook
+│       └── gnu-getopt
 ├── x265
 ├── libheif
 │   ├── jpeg
@@ -298,6 +327,15 @@ imagemagick
 │   │       ├── sqlite
 │   │       │   └── readline
 │   │       └── xz
+│   ├── docbook
+│   ├── docbook-xsl
+│   │   └── docbook
+│   ├── gnu-getopt
+│   ├── xmlto
+│   │   ├── docbook
+│   │   ├── docbook-xsl
+│   │   │   └── docbook
+│   │   └── gnu-getopt
 │   ├── shared-mime-info
 │   │   ├── gettext
 │   │   ├── libffi
@@ -315,23 +353,32 @@ imagemagick
 │   │   │   ├── sqlite
 │   │   │   │   └── readline
 │   │   │   └── xz
-│   │   └── glib
-│   │       ├── gettext
-│   │       ├── libffi
-│   │       ├── pcre
-│   │       ├── gdbm
-│   │       ├── openssl@1.1
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       ├── xz
-│   │       └── python@3.8
-│   │           ├── gdbm
-│   │           ├── openssl@1.1
-│   │           ├── readline
-│   │           ├── sqlite
-│   │           │   └── readline
-│   │           └── xz
+│   │   ├── glib
+│   │   │   ├── gettext
+│   │   │   ├── libffi
+│   │   │   ├── pcre
+│   │   │   ├── gdbm
+│   │   │   ├── openssl@1.1
+│   │   │   ├── readline
+│   │   │   ├── sqlite
+│   │   │   │   └── readline
+│   │   │   ├── xz
+│   │   │   └── python@3.8
+│   │   │       ├── gdbm
+│   │   │       ├── openssl@1.1
+│   │   │       ├── readline
+│   │   │       ├── sqlite
+│   │   │       │   └── readline
+│   │   │       └── xz
+│   │   ├── docbook
+│   │   ├── docbook-xsl
+│   │   │   └── docbook
+│   │   ├── gnu-getopt
+│   │   └── xmlto
+│   │       ├── docbook
+│   │       ├── docbook-xsl
+│   │       │   └── docbook
+│   │       └── gnu-getopt
 │   └── x265
 ├── libomp
 ├── libtool
@@ -402,6 +449,15 @@ libheif
 │       ├── sqlite
 │       │   └── readline
 │       └── xz
+├── docbook
+├── docbook-xsl
+│   └── docbook
+├── gnu-getopt
+├── xmlto
+│   ├── docbook
+│   ├── docbook-xsl
+│   │   └── docbook
+│   └── gnu-getopt
 ├── shared-mime-info
 │   ├── gettext
 │   ├── libffi
@@ -419,23 +475,32 @@ libheif
 │   │   ├── sqlite
 │   │   │   └── readline
 │   │   └── xz
-│   └── glib
-│       ├── gettext
-│       ├── libffi
-│       ├── pcre
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       ├── xz
-│       └── python@3.8
-│           ├── gdbm
-│           ├── openssl@1.1
-│           ├── readline
-│           ├── sqlite
-│           │   └── readline
-│           └── xz
+│   ├── glib
+│   │   ├── gettext
+│   │   ├── libffi
+│   │   ├── pcre
+│   │   ├── gdbm
+│   │   ├── openssl@1.1
+│   │   ├── readline
+│   │   ├── sqlite
+│   │   │   └── readline
+│   │   ├── xz
+│   │   └── python@3.8
+│   │       ├── gdbm
+│   │       ├── openssl@1.1
+│   │       ├── readline
+│   │       ├── sqlite
+│   │       │   └── readline
+│   │       └── xz
+│   ├── docbook
+│   ├── docbook-xsl
+│   │   └── docbook
+│   ├── gnu-getopt
+│   └── xmlto
+│       ├── docbook
+│       ├── docbook-xsl
+│       │   └── docbook
+│       └── gnu-getopt
 └── x265
 
 libidn2
@@ -553,23 +618,32 @@ shared-mime-info
 │   ├── sqlite
 │   │   └── readline
 │   └── xz
-└── glib
-    ├── gettext
-    ├── libffi
-    ├── pcre
-    ├── gdbm
-    ├── openssl@1.1
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    ├── xz
-    └── python@3.8
-        ├── gdbm
-        ├── openssl@1.1
-        ├── readline
-        ├── sqlite
-        │   └── readline
-        └── xz
+├── glib
+│   ├── gettext
+│   ├── libffi
+│   ├── pcre
+│   ├── gdbm
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── xz
+│   └── python@3.8
+│       ├── gdbm
+│       ├── openssl@1.1
+│       ├── readline
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
+├── docbook
+├── docbook-xsl
+│   └── docbook
+├── gnu-getopt
+└── xmlto
+    ├── docbook
+    ├── docbook-xsl
+    │   └── docbook
+    └── gnu-getopt
 
 sqlite
 └── readline
@@ -607,6 +681,12 @@ wget
 └── openssl@1.1
 
 x265
+
+xmlto
+├── docbook
+├── docbook-xsl
+│   └── docbook
+└── gnu-getopt
 
 xz
 
@@ -786,7 +866,7 @@ tracer (default: 0.1.0)
 tty-cursor (0.7.1)
 tty-screen (0.7.1)
 tty-spinner (0.9.3)
-typhoeus (1.3.1)
+typhoeus (1.4.0)
 tzinfo (1.2.7)
 uber (0.1.0)
 unf (0.1.4)
@@ -808,7 +888,7 @@ zlib (default: 1.0.0)
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
 * Ionic: 5.4.16
-* AppCenter CLI: appcenter version 2.5.0
+* AppCenter CLI: appcenter version 2.5.2
 ========================================
 
 
@@ -1172,7 +1252,7 @@ Software:
       Kernel Version: Darwin 19.3.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-beta-200508043308-jjtiYmpqCDphHyXZwUcxgH
+      Computer Name: stg-vs4mac-beta-200514104724-TBzBj7aynq8sy4rroFP8KN
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
@@ -1194,9 +1274,9 @@ Software:
 --- Xamarin
 
 * Visual Studio
-Release ID: 806004387
-Git revision: e9c7399e5072db3ea9868e0143f949d3a543c594
-Build date: 2020-04-28 15:43:52-04
+Release ID: 806004446
+Git revision: f8bd8b667d9ce1cd47819dc22684b58eb8d03046
+Build date: 2020-05-05 13:53:41-04
 Build branch: release-8.6
 * Mono version:
 Mono JIT compiler version 6.10.0.103 (2019-12/4a2a26ce694 Fri Apr 24 14:04:06 EDT 2020)
@@ -1215,7 +1295,7 @@ Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-proj
 /Library/Frameworks/Mono.framework/Versions/Current/Commands/mono
 
 * Xamarin.Android
-10.3.0.74
+10.3.0.80
 Current
 
 * Xamarin.iOS
