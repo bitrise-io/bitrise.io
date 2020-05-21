@@ -2,11 +2,11 @@
 
 > __Fun and simple development automation__
 
-[![Slack channel](http://chat.bitrise.io/badge.svg)](http://chat.bitrise.io)
+[![Slack channel](https://chat.bitrise.io/badge.svg)](https://chat.bitrise.io)
 
 The purpose of this repository is to keep track of the most important public repositories related to [bitrise.io](https://www.bitrise.io).
 
-If you want to **suggest a new feature**, you can submit it and vote on others' on [discuss.bitrise.io/c/feature-requests](https://discuss.bitrise.io/c/feature-requests), or if you want to **chat** with us and the Bitrise Community you can join [discuss.bitrise.io](https://discuss.bitrise.io) or Slack at [chat.bitrise.io](http://chat.bitrise.io/). Follow [@bitrise](https://twitter.com/bitrise) on Twitter for #status and step updates 🚀.
+If you want to **suggest a new feature**, you can submit it and vote on others' on [discuss.bitrise.io/c/feature-requests](https://discuss.bitrise.io/c/feature-requests), or if you want to **chat** with us and the Bitrise Community you can join [discuss.bitrise.io](https://discuss.bitrise.io) or Slack at [chat.bitrise.io](https://chat.bitrise.io/). Follow [@bitrise](https://twitter.com/bitrise) on Twitter for #status and step updates 🚀.
 
 ## Report an issue / bug
 
@@ -59,7 +59,7 @@ Or `curl` down the latest version with the help of our guide on the [releases pa
 
 You will run into `stepman` directly most probably when you are sharing your own step to a StepLib.
 
->We have a collection of useful tools under the [bitrise-tools](https://github.com/bitrise-tools) account. Not all of them part of the Bitrise CLI family, but are connected to our technology.
+>We have a collection of useful tools under the [bitrise-io](https://github.com/bitrise-io) account. Not all of them part of the Bitrise CLI family, but are connected to our technology.
 
 All Bitrise CLI tools are written in Go.
 
@@ -67,13 +67,13 @@ All Bitrise CLI tools are written in Go.
 
 ### OS X
 
-We are working with [vSphere](https://www.vmware.com/products/vsphere), [Ansible](http://docs.ansible.com/) and [vagrant](https://www.vagrantup.com/docs/) to virtualize, bootstrap and fire up the OS X build machines for builds on [bitrise.io](https://www.bitrise.io).
+We are working with [vSphere](https://www.vmware.com/products/vsphere), [Ansible](https://docs.ansible.com/) and [vagrant](https://www.vagrantup.com/docs/) to virtualize, bootstrap and fire up the OS X build machines for builds on [bitrise.io](https://www.bitrise.io).
 
 You can find all of our bootstrap scripts on the [OS X bootstrap GitHub page](https://github.com/bitrise-io/osx-box-bootstrap).
 
 ### Docker
 
-We have a [base image](https://github.com/bitrise-docker/bitrise-base) and an [Android version](https://github.com/bitrise-docker/android) with pre-installed tools for Android builds.
+We have a [base image](https://github.com/bitrise-io/bitrise-base) and an [Android version](https://github.com/bitrise-io/android) with pre-installed tools for Android builds.
 
 >When a new version of a stack is available there will be a system report generated under the [system_reports](https://github.com/bitrise-io/bitrise.io/blob/master/system_reports) folder of this repository.
 
@@ -82,26 +82,21 @@ We have a [base image](https://github.com/bitrise-docker/bitrise-base) and an [A
 
 * For OS X you can create an issue or pull request at [`osx-box-bootstrap`](https://github.com/bitrise-io/osx-box-bootstrap)
 * For our Docker based stack you can create an issue or pull request at:
-    * [`bitrise-base`](https://github.com/bitrise-docker/bitrise-base), for generic tools and configurations (which are not related to Android)
-    * [`android`](https://github.com/bitrise-docker/android), for Android related tools and configurations
+    * [`bitrise-base`](https://github.com/bitrise-io/bitrise-base), for generic tools and configurations (which are not related to Android)
+    * [`android`](https://github.com/bitrise-io/android), for Android related tools and configurations
 
 
 ## List of official Bitrise organizations on GitHub
 
 * [bitrise-io](https://github.com/bitrise-io)
-* [bitrise-community](https://github.com/bitrise-community)
 * [bitrise-steplib](https://github.com/bitrise-steplib)
-* [bitrise-tools](https://github.com/bitrise-tools)
-* [bitrise-core](https://github.com/bitrise-core)
-* [bitrise-docker](https://github.com/bitrise-docker)
-* [bitrise-samples](https://github.com/bitrise-samples)
 
 ### Aggregated Issue and Pull Request lists
 
 Aggregated Issue and Pull Request lists, related to the Bitrise CLI tools, stacks and official steps (*You have to be logged in on GitHub to be able to access the aggregated lists / searches*):
 
-* [Open Pull Requests across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+user%3Abitrise-io+user%3Abitrise-community+user%3Abitrise-steplib+user%3Abitrise-tools+user%3Abitrise-core+user%3Abitrise-docker+user%3Abitrise-samples)
-* [Open Issues across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Abitrise-io+user%3Abitrise-community+user%3Abitrise-steplib+user%3Abitrise-tools+user%3Abitrise-core+user%3Abitrise-docker+user%3Abitrise-samples)
+* [Open Pull Requests across the Bitrise CLI tools, stacks and official steps](https://github.com/pulls?q=is%3Aopen+is%3Apr+user%3Abitrise-io+user%3Abitrise-steplib)
+* [Open Issues across the Bitrise CLI tools, stacks and official steps](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Abitrise-io+user%3Abitrise-steplib)
 
 ## Sample Apps
 
@@ -117,8 +112,8 @@ Check out our sample app repositories.
 
 **Android**
 
-- [Android sample project](https://github.com/bitrise-samples/sample-apps-android-sdk22)
-- [sample project with code sign](https://github.com/bitrise-samples/android-sdk22-code-sign)
+- [Android sample project](https://github.com/bitrise-io/sample-apps-android-sdk22)
+- [sample project with code sign](https://github.com/bitrise-io/android-sdk22-code-sign)
 
 **Xamarin**
 
@@ -127,10 +122,8 @@ Check out our sample app repositories.
 
 **React Native**
 
-- [React Native sample project](https://github.com/bitrise-samples/ReactNativeSample)
+- [React Native sample project](https://github.com/bitrise-io/ReactNativeSample)
 
 Or simply search our GitHub account page for [sample-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=sample-) to see all of our sample projects.
-
->We now started to move our Sample repositories to a dedicated GitHub account, check it out here: https://github.com/bitrise-samples
 
 Feel free to fork and test them on [bitrise.io](https://www.bitrise.io) or locally with the [Bitrise CLI](https://www.bitrise.io/cli).
