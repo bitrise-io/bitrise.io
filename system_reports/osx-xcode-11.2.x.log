@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_04_28_1
+* BITRISE_OSX_STACK_REV_ID: v2020_05_29_1
 ========================================
 
 
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.2.17
-Homebrew/homebrew-core (git revision fba9; last commit 2020-05-28)
-Homebrew/homebrew-cask (git revision cef42; last commit 2020-05-28)
+* brew: Homebrew 2.3.0
+Homebrew/homebrew-core (git revision fffe4; last commit 2020-06-04)
+Homebrew/homebrew-cask (git revision 343f5; last commit 2020-06-04)
 * Ansible: ansible 2.9.2
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/Cellar/ansible/2.9.2_1/libexec/lib/python3.8/site-packages/ansible
@@ -47,7 +47,8 @@ Homebrew/homebrew-cask (git revision cef42; last commit 2020-05-28)
 * imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-06 https://imagemagick.org
 * ghostscript (ps2ascii): 9.27
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: ]0;Firebase CLI8.4.0
+* firebase: ]0;Firebase CLI8.4.1
+* applesimutils version 0.7.7
 
 --- Bitrise CLI tool versions
 * bitrise: 1.42.0
@@ -60,6 +61,7 @@ Homebrew/homebrew-cask (git revision cef42; last commit 2020-05-28)
 === Brew list versions ==================
 ansible 2.9.2_1
 ant 1.10.7
+applesimutils 0.7.7
 autoconf 2.69
 carthage 0.33.0
 coreutils 8.31
@@ -84,7 +86,7 @@ libheif 1.6.1
 libidn2 2.2.0_1
 libomp 9.0.0
 libpng 1.6.37
-libtiff 4.1.0 4.0.10_1
+libtiff 4.1.0
 libtool 2.4.6_1
 libunistring 0.9.10
 libyaml 0.2.2
@@ -135,6 +137,8 @@ ansible
     └── xz
 
 ant
+
+wix/brew/applesimutils
 
 autoconf
 
@@ -804,7 +808,7 @@ zlib (default: 1.0.0)
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
 * Ionic: 5.4.2
-./system_report.sh: line 123: appcenter: command not found
+./system_report.sh: line 124: appcenter: command not found
 * AppCenter CLI: 
 ========================================
 
@@ -1336,11 +1340,11 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-2-200528095835-aMT3DVWimGEhNASAGKTjHb
+      Computer Name: stg-xcode-11-2-200605102708-uqECAKbgFCdBFT9gGM5cLj
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 25 minutes
+      Time since boot: 16 minutes
 
 
 ========================================
