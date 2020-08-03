@@ -33,23 +33,23 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.4.7
-Homebrew/homebrew-core (git revision 1c6836; last commit 2020-07-16)
-Homebrew/homebrew-cask (git revision 9e6cc5; last commit 2020-07-16)
-* Ansible: ansible 2.9.10
+* brew: Homebrew 2.4.9
+Homebrew/homebrew-core (git revision 1aaf53; last commit 2020-07-30)
+Homebrew/homebrew-cask (git revision ca2500; last commit 2020-07-30)
+* Ansible: ansible 2.9.11
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.9.10/libexec/lib/python3.8/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.9.11/libexec/lib/python3.8/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.32
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.125.1
 * carthage: 0.34.0
-* imagemagick (convert): Version: ImageMagick 7.0.10-23 Q16 x86_64 2020-07-05 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.10-24 Q16 x86_64 2020-07-18 https://imagemagick.org
 * ghostscript (ps2ascii): 9.52
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
 * firebase: ]0;Firebase CLI8.3.0
-* applesimutils version 0.7.8
+* applesimutils version 0.8
 
 --- Bitrise CLI tool versions
 * bitrise: 1.42.0
@@ -60,9 +60,9 @@ Homebrew/homebrew-cask (git revision 9e6cc5; last commit 2020-07-16)
 
 
 === Brew list versions ==================
-ansible 2.9.10
+ansible 2.9.11
 ant 1.10.8_1
-applesimutils 0.7.8
+applesimutils 0.8
 autoconf 2.69
 carthage 0.34.0
 coreutils 8.32
@@ -70,18 +70,18 @@ docbook 5.1_1
 docbook-xsl 1.79.2_1
 flow 0.125.1
 freetype 2.10.1 2.10.2
-gdbm 1.18.1
+gdbm 1.18.1_1
 gettext 0.20.2_1
 ghostscript 9.52
 git 2.26.2
 git-lfs 2.11.0
-glib 2.64.4
-gnu-getopt 2.35.1 2.35.2
+glib 2.64.4_1
+gnu-getopt 2.35.1 2.36
 go 1.14.3
 gradle 6.5.1
 icu4c 66.1
 ilmbase 2.5.2 2.5.1
-imagemagick 7.0.10-23
+imagemagick 7.0.10-24
 jenv 0.5.3
 jpeg 9d
 libde265 1.0.5
@@ -107,7 +107,7 @@ openssl@1.1 1.1.1g
 pcre 8.44
 pcre2 10.35
 pkg-config 0.29.2_3
-python@3.8 3.8.4
+python@3.8 3.8.5
 rbenv 1.1.2
 readline 8.0.4
 ruby-build 20200518
@@ -1330,11 +1330,11 @@ Software:
       Kernel Version: Darwin 19.4.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-5-200717200341-pRGR9n3yBDhiTwds4mRK9i
+      Computer Name: stg-xcode-11-5-200731115507-8krWvkUUNue4yuPdxGUMjm
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 18 minutes
+      Time since boot: 2 days 23:13
 
 
 ========================================
@@ -1343,7 +1343,7 @@ Software:
 === System infos =======================
 * Free disk space: 
     Filesystem         Size        Avail
-  /dev/disk1s5        200Gi         65Gi
+  /dev/disk1s5        200Gi         61Gi
 ========================================
 
 --- Android
@@ -1388,7 +1388,23 @@ Pkg.Desc = Android NDK
 Pkg.Revision = 21.0.6113669
 
 * platform-tools content:
-ls: /usr/local/Caskroom/android-platform-tools/*/platform-tools: No such file or directory
+NOTICE.txt
+adb
+api
+dmtracedump
+e2fsdroid
+etc1tool
+fastboot
+hprof-conv
+lib64
+make_f2fs
+mke2fs
+mke2fs.conf
+package.xml
+sload_f2fs
+source.properties
+sqlite3
+systrace
 
 * build-tools content:
 17.0.0
@@ -1412,6 +1428,7 @@ ls: /usr/local/Caskroom/android-platform-tools/*/platform-tools: No such file or
 29.0.1
 29.0.2
 29.0.3
+30.0.0
 
 * extras content:
 /usr/local/share/android-sdk/extras
@@ -1438,6 +1455,7 @@ android-26
 android-27
 android-28
 android-29
+android-30
 
 * system-images content:
 /usr/local/share/android-sdk/system-images
@@ -1447,11 +1465,14 @@ android-29
 ├── android-28
 │   └── google_apis
 │       └── x86_64
-└── android-29
+├── android-29
+│   └── google_apis
+│       └── x86
+└── android-30
     └── google_apis
         └── x86
 
-9 directories, 0 files
+12 directories, 0 files
 
 ========================================
 
