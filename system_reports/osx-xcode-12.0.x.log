@@ -911,14 +911,14 @@ Target: x86_64-apple-darwin19.5.0
 === Xcode ==============================
 
 * Active Xcode Command Line Tools:
-/Applications/Xcode-beta.app/Contents/Developer
+/Applications/Xcode-12.beta.3.app/Contents/Developer
 
 * Xcode Version:
 Xcode 12.0
-Build version 12A6163b
+Build version 12A8169g
 
 * /usr/bin/swift --version
-Apple Swift version 5.3 (swiftlang-1200.0.16.13 clang-1200.0.22.25)
+Apple Swift version 5.3 (swiftlang-1200.0.22.4 clang-1200.0.25.1)
 Target: x86_64-apple-darwin19.5.0
 
 * Installed SDKs:
@@ -930,7 +930,7 @@ iOS Simulator SDKs:
 
 macOS SDKs:
 	DriverKit 20.0                	-sdk driverkit.macosx20.0
-	macOS 10.16                   	-sdk macosx10.16
+	macOS 11.0                    	-sdk macosx11.0
 
 tvOS SDKs:
 	tvOS 14.0                     	-sdk appletvos14.0
@@ -967,6 +967,7 @@ iPhone 11 (com.apple.CoreSimulator.SimDeviceType.iPhone-11)
 iPhone 11 Pro (com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro)
 iPhone 11 Pro Max (com.apple.CoreSimulator.SimDeviceType.iPhone-11-Pro-Max)
 iPhone SE (2nd generation) (com.apple.CoreSimulator.SimDeviceType.iPhone-SE--2nd-generation-)
+iPod touch (7th generation) (com.apple.CoreSimulator.SimDeviceType.iPod-touch--7th-generation-)
 iPad 2 (com.apple.CoreSimulator.SimDeviceType.iPad-2)
 iPad Retina (com.apple.CoreSimulator.SimDeviceType.iPad-Retina)
 iPad Air (com.apple.CoreSimulator.SimDeviceType.iPad-Air)
@@ -1007,16 +1008,16 @@ iOS 13.2 (13.2.2 - 17B102) - com.apple.CoreSimulator.SimRuntime.iOS-13-2
 iOS 13.3 (13.3 - 17C45) - com.apple.CoreSimulator.SimRuntime.iOS-13-3
 iOS 13.4 (13.4 - 17E255) - com.apple.CoreSimulator.SimRuntime.iOS-13-4
 iOS 13.5 (13.5 - 17F61) - com.apple.CoreSimulator.SimRuntime.iOS-13-5
-iOS 14.0 (14.0 - 18A5319g) - com.apple.CoreSimulator.SimRuntime.iOS-14-0
+iOS 14.0 (14.0 - 18A5332e) - com.apple.CoreSimulator.SimRuntime.iOS-14-0
 tvOS 13.0 (13.0 - 17J585) - com.apple.CoreSimulator.SimRuntime.tvOS-13-0
 tvOS 13.2 (13.2 - 17K90) - com.apple.CoreSimulator.SimRuntime.tvOS-13-2
 tvOS 13.3 (13.3 - 17K446) - com.apple.CoreSimulator.SimRuntime.tvOS-13-3
 tvOS 13.4 (13.4 - 17L255) - com.apple.CoreSimulator.SimRuntime.tvOS-13-4
-tvOS 14.0 (14.0 - 18J5331g) - com.apple.CoreSimulator.SimRuntime.tvOS-14-0
+tvOS 14.0 (14.0 - 18J5344e) - com.apple.CoreSimulator.SimRuntime.tvOS-14-0
 watchOS 6.0 (6.0 - 17R575) - com.apple.CoreSimulator.SimRuntime.watchOS-6-0
 watchOS 6.1 (6.1.1 - 17S445) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
 watchOS 6.2 (6.2.1 - 17T531) - com.apple.CoreSimulator.SimRuntime.watchOS-6-2
-watchOS 7.0 (7.0 - 18R5327h) - com.apple.CoreSimulator.SimRuntime.watchOS-7-0
+watchOS 7.0 (7.0 - 18R5340c) - com.apple.CoreSimulator.SimRuntime.watchOS-7-0
 == Devices ==
 -- iOS 13.0 --
     iPhone 8 (07FAE96F-6E37-4F41-ADEC-74EB31DE9CB8) (Shutdown) 
@@ -1162,11 +1163,11 @@ Software:
       Kernel Version: Darwin 19.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-12-200717200807-WeeueZniv58MxF96cnfis6
+      Computer Name: stg-xcode-12-200803063652-okae5MWSWrP7KRyZUnULcB
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 11 minutes
+      Time since boot: 4:31
 
 
 ========================================
@@ -1175,7 +1176,7 @@ Software:
 === System infos =======================
 * Free disk space: 
     Filesystem         Size        Avail
-  /dev/disk1s5        200Gi         67Gi
+  /dev/disk1s5        200Gi         52Gi
 ========================================
 
 --- Android
@@ -1220,7 +1221,23 @@ Pkg.Desc = Android NDK
 Pkg.Revision = 21.0.6113669
 
 * platform-tools content:
-ls: /usr/local/Caskroom/android-platform-tools/*/platform-tools: No such file or directory
+NOTICE.txt
+adb
+api
+dmtracedump
+e2fsdroid
+etc1tool
+fastboot
+hprof-conv
+lib64
+make_f2fs
+mke2fs
+mke2fs.conf
+package.xml
+sload_f2fs
+source.properties
+sqlite3
+systrace
 
 * build-tools content:
 17.0.0
