@@ -12,7 +12,7 @@
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.14.5 darwin/amd64
+* Go: go version go1.14.7 darwin/amd64
 * Python: Python 2.7.16
 * Node.js: v12.18.2
 * NPM: 6.14.5
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.4.7
-Homebrew/homebrew-core (git revision 04943; last commit 2020-07-17)
-Homebrew/homebrew-cask (git revision ff753a; last commit 2020-07-17)
+* brew: Homebrew 2.4.11
+Homebrew/homebrew-core (git revision 5b46c; last commit 2020-08-13)
+Homebrew/homebrew-cask (git revision 1ad3df; last commit 2020-08-13)
 * Ansible: ansible 2.9.10
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
@@ -49,7 +49,7 @@ Homebrew/homebrew-cask (git revision ff753a; last commit 2020-07-17)
 * ghostscript (ps2ascii): 9.52
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
 * firebase: 8.6.0
-* applesimutils version 0.7.8
+* applesimutils version 0.8.1
 
 --- Bitrise CLI tool versions
 * bitrise: 1.42.0
@@ -61,7 +61,7 @@ Homebrew/homebrew-cask (git revision ff753a; last commit 2020-07-17)
 
 === Brew list versions ==================
 ansible 2.9.10
-applesimutils 0.7.8
+applesimutils 0.8.1
 autoconf 2.69
 carthage 0.35.0
 coreutils 8.32
@@ -76,7 +76,7 @@ git 2.27.0
 git-lfs 2.11.0
 glib 2.64.4
 gnu-getopt 2.35.2
-go 1.14.5
+go 1.14.7
 icu4c 67.1
 ilmbase 2.5.2
 imagemagick 7.0.10-23
@@ -122,14 +122,11 @@ yarn 1.22.4
 
 
 === Brew deps tree ==================
+bitrise-io/cask-versions/adoptopenjdk8
+
 ansible
 ├── libyaml
 ├── openssl@1.1
-├── gdbm
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -161,7 +158,6 @@ gdbm
 gettext
 
 ghostscript
-├── jpeg
 └── libtiff
     └── jpeg
 
@@ -175,12 +171,6 @@ glib
 ├── gettext
 ├── libffi
 ├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -198,176 +188,22 @@ icu4c
 ilmbase
 
 imagemagick
-├── libpng
 ├── freetype
 │   └── libpng
-├── jpeg
-├── libtiff
-│   └── jpeg
 ├── ghostscript
-│   ├── jpeg
 │   └── libtiff
 │       └── jpeg
-├── libde265
-├── gettext
-├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── glib
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   └── python@3.8
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-├── docbook
-├── docbook-xsl
-│   └── docbook
-├── gnu-getopt
-├── xmlto
-│   ├── docbook
-│   ├── docbook-xsl
-│   │   └── docbook
-│   └── gnu-getopt
-├── shared-mime-info
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   ├── python@3.8
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   └── xz
-│   ├── glib
-│   │   ├── gettext
-│   │   ├── libffi
-│   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
-│   │   └── python@3.8
-│   │       ├── gdbm
-│   │       ├── openssl@1.1
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
-│   ├── docbook
-│   ├── docbook-xsl
-│   │   └── docbook
-│   ├── gnu-getopt
-│   └── xmlto
-│       ├── docbook
-│       ├── docbook-xsl
-│       │   └── docbook
-│       └── gnu-getopt
-├── x265
+├── jpeg
 ├── libheif
 │   ├── jpeg
 │   ├── libde265
 │   ├── libpng
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   ├── python@3.8
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   └── xz
-│   ├── glib
-│   │   ├── gettext
-│   │   ├── libffi
-│   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
-│   │   └── python@3.8
-│   │       ├── gdbm
-│   │       ├── openssl@1.1
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
-│   ├── docbook
-│   ├── docbook-xsl
-│   │   └── docbook
-│   ├── gnu-getopt
-│   ├── xmlto
-│   │   ├── docbook
-│   │   ├── docbook-xsl
-│   │   │   └── docbook
-│   │   └── gnu-getopt
 │   ├── shared-mime-info
 │   │   ├── gettext
-│   │   ├── libffi
-│   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
-│   │   ├── python@3.8
-│   │   │   ├── gdbm
-│   │   │   ├── openssl@1.1
-│   │   │   ├── readline
-│   │   │   ├── sqlite
-│   │   │   │   └── readline
-│   │   │   └── xz
 │   │   ├── glib
 │   │   │   ├── gettext
 │   │   │   ├── libffi
 │   │   │   ├── pcre
-│   │   │   ├── gdbm
-│   │   │   ├── openssl@1.1
-│   │   │   ├── readline
-│   │   │   ├── sqlite
-│   │   │   │   └── readline
-│   │   │   ├── xz
 │   │   │   └── python@3.8
 │   │   │       ├── gdbm
 │   │   │       ├── openssl@1.1
@@ -375,10 +211,6 @@ imagemagick
 │   │   │       ├── sqlite
 │   │   │       │   └── readline
 │   │   │       └── xz
-│   │   ├── docbook
-│   │   ├── docbook-xsl
-│   │   │   └── docbook
-│   │   ├── gnu-getopt
 │   │   └── xmlto
 │   │       ├── docbook
 │   │       ├── docbook-xsl
@@ -386,32 +218,10 @@ imagemagick
 │   │       └── gnu-getopt
 │   └── x265
 ├── liblqr
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   ├── python@3.8
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   └── xz
 │   └── glib
 │       ├── gettext
 │       ├── libffi
 │       ├── pcre
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       ├── xz
 │       └── python@3.8
 │           ├── gdbm
 │           ├── openssl@1.1
@@ -420,28 +230,30 @@ imagemagick
 │           │   └── readline
 │           └── xz
 ├── libomp
+├── libpng
+├── libtiff
+│   └── jpeg
 ├── libtool
 ├── little-cms2
 │   ├── jpeg
 │   └── libtiff
 │       └── jpeg
-├── ilmbase
 ├── openexr
 │   └── ilmbase
 ├── openjpeg
 │   ├── libpng
-│   ├── jpeg
 │   ├── libtiff
 │   │   └── jpeg
 │   └── little-cms2
 │       ├── jpeg
 │       └── libtiff
 │           └── jpeg
-└── webp
-    ├── jpeg
-    ├── libpng
-    └── libtiff
-        └── jpeg
+├── webp
+│   ├── jpeg
+│   ├── libpng
+│   └── libtiff
+│       └── jpeg
+└── xz
 
 jenv
 
@@ -455,75 +267,12 @@ libheif
 ├── jpeg
 ├── libde265
 ├── libpng
-├── gettext
-├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── glib
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   └── python@3.8
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-├── docbook
-├── docbook-xsl
-│   └── docbook
-├── gnu-getopt
-├── xmlto
-│   ├── docbook
-│   ├── docbook-xsl
-│   │   └── docbook
-│   └── gnu-getopt
 ├── shared-mime-info
 │   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   ├── python@3.8
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   └── xz
 │   ├── glib
 │   │   ├── gettext
 │   │   ├── libffi
 │   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
 │   │   └── python@3.8
 │   │       ├── gdbm
 │   │       ├── openssl@1.1
@@ -531,10 +280,6 @@ libheif
 │   │       ├── sqlite
 │   │       │   └── readline
 │   │       └── xz
-│   ├── docbook
-│   ├── docbook-xsl
-│   │   └── docbook
-│   ├── gnu-getopt
 │   └── xmlto
 │       ├── docbook
 │       ├── docbook-xsl
@@ -547,32 +292,10 @@ libidn2
 └── libunistring
 
 liblqr
-├── gettext
-├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
 └── glib
     ├── gettext
     ├── libffi
     ├── pcre
-    ├── gdbm
-    ├── openssl@1.1
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    ├── xz
     └── python@3.8
         ├── gdbm
         ├── openssl@1.1
@@ -600,12 +323,6 @@ little-cms2
     └── jpeg
 
 mercurial
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -625,7 +342,6 @@ openexr
 
 openjpeg
 ├── libpng
-├── jpeg
 ├── libtiff
 │   └── jpeg
 └── little-cms2
@@ -650,9 +366,6 @@ python@3.8
 └── xz
 
 rbenv
-├── autoconf
-├── pkg-config
-├── readline
 └── ruby-build
     ├── autoconf
     ├── pkg-config
@@ -669,31 +382,10 @@ screen
 
 shared-mime-info
 ├── gettext
-├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
 ├── glib
 │   ├── gettext
 │   ├── libffi
 │   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
 │   └── python@3.8
 │       ├── gdbm
 │       ├── openssl@1.1
@@ -701,10 +393,6 @@ shared-mime-info
 │       ├── sqlite
 │       │   └── readline
 │       └── xz
-├── docbook
-├── docbook-xsl
-│   └── docbook
-├── gnu-getopt
 └── xmlto
     ├── docbook
     ├── docbook-xsl
@@ -719,11 +407,6 @@ tree
 watchman
 ├── openssl@1.1
 ├── pcre
-├── gdbm
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -739,8 +422,6 @@ webp
     └── jpeg
 
 wget
-├── gettext
-├── libunistring
 ├── libidn2
 │   ├── gettext
 │   └── libunistring
@@ -757,7 +438,6 @@ xmlto
 xz
 
 yarn
-├── icu4c
 └── node
     └── icu4c
 
@@ -1290,11 +970,11 @@ Software:
       Kernel Version: Darwin 19.4.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-previous-200717200951-Tv9mU5xJBu7L33BVXGML7W
+      Computer Name: stg-vs4mac-stable-previous-200814135647-CmGi5J3kozNdQjgMjiTBRG
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 27 minutes
+      Time since boot: 22 minutes
 
 
 ========================================
@@ -1381,7 +1061,23 @@ Pkg.Desc = Android NDK
 Pkg.Revision = 20.1.5948944
 
 * platform-tools content:
-ls: /usr/local/Caskroom/android-platform-tools/*/platform-tools: No such file or directory
+NOTICE.txt
+adb
+api
+dmtracedump
+e2fsdroid
+etc1tool
+fastboot
+hprof-conv
+lib64
+make_f2fs
+mke2fs
+mke2fs.conf
+package.xml
+sload_f2fs
+source.properties
+sqlite3
+systrace
 
 * build-tools content:
 29.0.2
