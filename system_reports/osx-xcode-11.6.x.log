@@ -84,6 +84,7 @@ ilmbase 2.5.1
 imagemagick 7.0.10-14
 jenv 0.5.4
 jpeg 9d
+jq 1.6
 libde265 1.0.5
 libffi 3.3
 libheif 1.6.2_1
@@ -99,6 +100,7 @@ maven 3.6.3_1
 mercurial 5.4
 node 14.3.0
 node@12 12.17.0
+oniguruma 6.9.5-rev1
 openexr 2.5.1
 openjdk 14.0.1
 openjpeg 2.3.1
@@ -119,6 +121,8 @@ watchman 4.9.0_4
 webp 1.1.0
 wget 1.20.3_2
 x265 3.3
+xcbeautify 0.8.1
+xclogparser 0.2.18
 xmlto 0.0.28
 xz 5.2.5
 yarn 1.22.4
@@ -269,6 +273,9 @@ jenv
 
 jpeg
 
+jq
+└── oniguruma
+
 libde265
 
 libffi
@@ -336,6 +343,8 @@ node
 
 node@12
 └── icu4c
+
+oniguruma
 
 openexr
 └── ilmbase
@@ -431,6 +440,10 @@ wget
 
 x265
 
+thii/xcbeautify/xcbeautify
+
+xclogparser
+
 xmlto
 ├── docbook
 ├── docbook-xsl
@@ -478,6 +491,7 @@ bigdecimal (default: 1.4.1)
 bundler (2.1.4, default: 1.17.2)
 CFPropertyList (3.0.2)
 claide (1.0.3)
+clamp (1.3.2)
 cmath (default: 1.0.0)
 cocoapods (1.9.1)
 cocoapods-core (1.9.1)
@@ -541,6 +555,7 @@ matrix (default: 0.1.0)
 memoist (0.16.2)
 mini_magick (4.10.1)
 mini_mime (1.0.2)
+mini_portile2 (2.4.0)
 minitest (5.11.3)
 molinillo (0.6.6)
 multi_json (1.15.0)
@@ -552,6 +567,7 @@ nap (1.1.0)
 naturally (2.2.0)
 net-telnet (0.2.0)
 netrc (0.11.0)
+nokogiri (1.10.10)
 openssl (default: 2.1.2)
 os (1.1.0)
 ostruct (default: 0.1.0)
@@ -576,6 +592,7 @@ shell (default: 0.7)
 signet (0.14.0)
 simctl (1.6.8)
 slack-notifier (2.3.2)
+slather (2.5.0)
 stringio (default: 0.0.2)
 strscan (default: 1.0.0)
 sync (default: 0.5.0)
@@ -585,6 +602,7 @@ test-unit (3.2.9)
 thread_safe (0.3.6)
 thwait (default: 0.1.0)
 tracer (default: 0.1.0)
+trainer (0.9.1)
 tty-cursor (0.7.1)
 tty-screen (0.8.0)
 tty-spinner (0.9.3)
@@ -598,6 +616,7 @@ webrick (default: 1.4.2)
 word_wrap (1.0.0)
 xcodeproj (1.17.0)
 xcpretty (0.3.0)
+xcpretty-json-formatter (0.1.1)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
 zlib (default: 1.0.0)
@@ -879,11 +898,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-6-200903143940-FeFe9zNa5KHbGz3yLKbqMT
+      Computer Name: stg-xcode-11-6-200904205759-JnXV3TTqvNohytx7YY8q2T
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 9 minutes
+      Time since boot: 13 minutes
 
 
 ========================================
@@ -892,7 +911,7 @@ Software:
 === System infos =======================
 * Free disk space: 
     Filesystem         Size        Avail
-  /dev/disk1s5        200Gi         86Gi
+  /dev/disk1s5        200Gi         87Gi
 ========================================
 
 --- Android
