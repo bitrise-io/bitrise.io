@@ -12,11 +12,11 @@
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.14.6 darwin/amd64
+* Go: go version go1.15 darwin/amd64
 * Python: Python 2.7.16
 * Node.js: v12.18.3
 * NPM: 6.14.6
-* Yarn: 1.22.4
+* Yarn: 1.22.5
 * Java: openjdk version "1.8.0_252"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_252-b09)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
@@ -24,7 +24,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
 
 * git: git version 2.28.0
 * git lfs: git-lfs/2.11.0 (GitHub; darwin amd64; go 1.14.2)
-* mercurial/hg: Mercurial Distributed SCM (version 5.4.2)
+* mercurial/hg: Mercurial Distributed SCM (version 5.5)
 * curl: curl 7.64.1 (x86_64-apple-darwin19.0) libcurl/7.64.1 (SecureTransport) LibreSSL/2.8.3 zlib/1.2.11 nghttp2/1.39.2
 * wget: GNU Wget 1.20.3 built on darwin19.0.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.4.14
-Homebrew/homebrew-core (git revision 18922; last commit 2020-08-04)
-Homebrew/homebrew-cask (git revision 0fdc95; last commit 2020-08-04)
+* brew: Homebrew 2.4.16
+Homebrew/homebrew-core (git revision a87c; last commit 2020-09-01)
+Homebrew/homebrew-cask (git revision 902cd; last commit 2020-09-01)
 * Ansible: ansible 2.9.11
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
@@ -43,12 +43,12 @@ Homebrew/homebrew-cask (git revision 0fdc95; last commit 2020-08-04)
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.32
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.130.0
+* flow: Flow, a static type checker for JavaScript, version 0.132.0
 * carthage: 0.35.0
-* imagemagick (convert): Version: ImageMagick 7.0.10-25 Q16 x86_64 2020-08-01 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.10-28 Q16 x86_64 2020-08-16 https://imagemagick.org
 * ghostscript (ps2ascii): 9.52
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
-* firebase: 8.9.0
+* firebase: 8.9.2
 * applesimutils version 0.8.1
 
 --- Bitrise CLI tool versions
@@ -68,28 +68,29 @@ carthage 0.35.0
 coreutils 8.32
 docbook 5.1_1
 docbook-xsl 1.79.2_1
-flow 0.130.0
+flow 0.132.0
 freetype 2.10.2
 gdbm 1.18.1_1
 gettext 0.21
 ghostscript 9.52
 git 2.28.0
 git-lfs 2.11.0
-glib 2.64.4_2
+glib 2.64.5
 gnu-getopt 2.36
-go 1.14.6
-gradle 6.5.1
+go 1.15
+gradle 6.6.1
 icu4c 67.1
-ilmbase 2.5.2
-imagemagick 7.0.10-25
-jenv 0.5.3
+ilmbase 2.5.3
+imagemagick 7.0.10-28
+jenv 0.5.4
 jpeg 9d
-libde265 1.0.5
+jq 1.6
+libde265 1.0.6
 libffi 3.3
-libheif 1.7.0
+libheif 1.8.0
 libidn2 2.3.0
 liblqr 0.4.2_1
-libomp 10.0.0
+libomp 10.0.1
 libpng 1.6.37
 libtiff 4.1.0
 libtool 2.4.6_2
@@ -97,10 +98,11 @@ libunistring 0.9.10
 libyaml 0.2.5
 little-cms2 2.11
 maven 3.6.3_1
-mercurial 5.4.2
-node 14.7.0
+mercurial 5.5
+node 14.9.0
 node@12 12.18.3
-openexr 2.5.2
+oniguruma 6.9.5-rev1
+openexr 2.5.3
 openjdk 14.0.1
 openjpeg 2.3.1
 openssl@1.1 1.1.1g
@@ -113,15 +115,17 @@ readline 8.0.4
 ruby-build 20200520
 screen 4.8.0
 shared-mime-info 2.0
-sqlite 3.32.3
+sqlite 3.33.0
 tree 1.8.0
 watchman 4.9.0_4
 webp 1.1.0
 wget 1.20.3_2
 x265 3.4
+xcbeautify 0.8.1
+xclogparser 0.2.18
 xmlto 0.0.28
 xz 5.2.5
-yarn 1.22.4
+yarn 1.22.5
 ========================================
 
 
@@ -269,6 +273,9 @@ jenv
 
 jpeg
 
+jq
+└── oniguruma
+
 libde265
 
 libffi
@@ -349,6 +356,8 @@ node
 
 node@12
 └── icu4c
+
+oniguruma
 
 openexr
 └── ilmbase
@@ -444,6 +453,10 @@ wget
 
 x265
 
+thii/xcbeautify/xcbeautify
+
+xclogparser
+
 xmlto
 ├── docbook
 ├── docbook-xsl
@@ -491,6 +504,7 @@ bigdecimal (default: 1.4.1)
 bundler (2.1.4, default: 1.17.2)
 CFPropertyList (3.0.2)
 claide (1.0.3)
+clamp (1.3.2)
 cmath (default: 1.0.0)
 cocoapods (1.9.1)
 cocoapods-core (1.9.1)
@@ -554,6 +568,7 @@ matrix (default: 0.1.0)
 memoist (0.16.2)
 mini_magick (4.10.1)
 mini_mime (1.0.2)
+mini_portile2 (2.4.0)
 minitest (5.11.3)
 molinillo (0.6.6)
 multi_json (1.15.0)
@@ -565,6 +580,7 @@ nap (1.1.0)
 naturally (2.2.0)
 net-telnet (0.2.0)
 netrc (0.11.0)
+nokogiri (1.10.10)
 openssl (default: 2.1.2)
 os (1.1.0)
 ostruct (default: 0.1.0)
@@ -589,6 +605,7 @@ shell (default: 0.7)
 signet (0.14.0)
 simctl (1.6.8)
 slack-notifier (2.3.2)
+slather (2.5.0)
 stringio (default: 0.0.2)
 strscan (default: 1.0.0)
 sync (default: 0.5.0)
@@ -598,6 +615,7 @@ test-unit (3.2.9)
 thread_safe (0.3.6)
 thwait (default: 0.1.0)
 tracer (default: 0.1.0)
+trainer (0.9.1)
 tty-cursor (0.7.1)
 tty-screen (0.8.0)
 tty-spinner (0.9.3)
@@ -611,6 +629,7 @@ webrick (default: 1.4.2)
 word_wrap (1.0.0)
 xcodeproj (1.17.0)
 xcpretty (0.3.0)
+xcpretty-json-formatter (0.1.1)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
 zlib (default: 1.0.0)
@@ -892,11 +911,11 @@ Software:
       Kernel Version: Darwin 19.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-edge-200831072319-N4QNCpeKSCUj6RppU8g8ig
+      Computer Name: stg-xcode-edge-200904205759-bW66Y7fYANPVntocNeJNpQ
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 4:10
+      Time since boot: 11 minutes
 
 
 ========================================
