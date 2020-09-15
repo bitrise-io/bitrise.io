@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.4.16
-Homebrew/homebrew-core (git revision cae39; last commit 2020-09-04)
-Homebrew/homebrew-cask (git revision 803e00; last commit 2020-09-04)
+* brew: Homebrew 2.5.0
+Homebrew/homebrew-core (git revision 279ca; last commit 2020-09-10)
+Homebrew/homebrew-cask (git revision 0bd096; last commit 2020-09-10)
 * Ansible: ansible 2.9.2
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
@@ -44,13 +44,17 @@ Homebrew/homebrew-cask (git revision 803e00; last commit 2020-09-04)
 * gtimeout: timeout (GNU coreutils) 8.31
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.109.0
-Please update to the latest Carthage version: 0.35.0. You currently are on 0.33.0
 * carthage: 0.33.0
 * imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-06 https://imagemagick.org
 * ghostscript (ps2ascii): 9.27
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
 * firebase: 8.10.0
 * applesimutils version 0.8.1
+* jq: 1.6
+* Version: 0.8.1
+* XCLogParser 0.2.19
+* Screen 4.06.02
+* applesimutils 0.8.1
 
 --- Bitrise CLI tool versions
 * bitrise: 1.42.0
@@ -119,13 +123,15 @@ webp 1.0.3
 wget 1.20.3_1
 x265 3.1.2 3.2.1
 xcbeautify 0.8.1
-xclogparser 0.2.18
+xclogparser 0.2.19
 xz 5.2.4
 yarn 1.19.0
 ========================================
 
 
 === Brew deps tree ==================
+adoptopenjdk/openjdk/adoptopenjdk11
+
 bitrise-io/cask-versions/adoptopenjdk8
 
 ansible
@@ -620,7 +626,7 @@ zlib (default: 1.0.0)
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
 * Ionic: 5.4.2
-./system_report.sh: line 122: appcenter: command not found
+./system_report.sh: line 127: appcenter: command not found
 * AppCenter CLI: 
 ========================================
 
@@ -1152,11 +1158,11 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-2-200904205553-kHFu9dmBVakXnWcECNNRkc
+      Computer Name: stg-xcode-11-2-200915121920-bH4uX37mSbPxJ6bRKhAC3A
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 21 minutes
+      Time since boot: 1:33
 
 
 ========================================
@@ -1165,7 +1171,7 @@ Software:
 === System infos =======================
 * Free disk space: 
     Filesystem         Size        Avail
-  /dev/disk1s1        200Gi         26Gi
+  /dev/disk1s1        200Gi         25Gi
 ========================================
 
 --- Android
