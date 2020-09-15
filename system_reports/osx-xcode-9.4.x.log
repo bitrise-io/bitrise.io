@@ -17,9 +17,9 @@
 * Node.js: v10.4.1
 * NPM: 6.13.4
 * Yarn: 1.7.0
-* Java: openjdk version "1.8.0_252"
-OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_252-b09)
-OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
+* Java: openjdk version "1.8.0_265"
+OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_265-b01)
+OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.265-b01, mixed mode)
 * Flutter: Flutter 1.20.2 • channel stable • https://github.com/flutter/flutter.git
 
 * git: git version 2.17.1
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.252-b09, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.4.14
-Homebrew/homebrew-core (git revision 3ecce; last commit 2020-08-28)
-Homebrew/homebrew-cask (git revision 403d7; last commit 2020-08-28)
+* brew: Homebrew 2.5.1
+Homebrew/homebrew-core (git revision 86706; last commit 2020-09-14)
+Homebrew/homebrew-cask (git revision ff8e64; last commit 2020-09-14)
 * Ansible: ansible 2.9.2
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
@@ -48,8 +48,17 @@ Homebrew/homebrew-cask (git revision 403d7; last commit 2020-08-28)
 * imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-06 https://imagemagick.org
 * ghostscript (ps2ascii): 9.23
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: 8.9.2
+* firebase: 8.10.0
 * applesimutils version 0.8.1
+* jq: 1.6
+dyld: Library not loaded: @rpath/libswiftCore.dylib
+  Referenced from: /usr/local/bin/xcbeautify
+  Reason: image not found
+* 
+./system_report.sh: line 70: xclogparser: command not found
+* 
+* Screen 4.06.02
+* applesimutils 0.8.1
 
 --- Bitrise CLI tool versions
 * bitrise: 1.42.0
@@ -61,7 +70,7 @@ Homebrew/homebrew-cask (git revision 403d7; last commit 2020-08-28)
 
 === Brew list versions ==================
 ansible 2.9.2_1
-ant 1.10.8_1
+ant 1.10.8_2
 applesimutils 0.8.1
 autoconf 2.69
 carthage 0.29.0
@@ -81,6 +90,7 @@ ilmbase 2.4.0
 imagemagick 7.0.9-14
 jenv 0.5.4
 jpeg 9c
+jq 1.6
 libde265 1.0.4
 libffi 3.2.1
 libheif 1.6.1
@@ -95,6 +105,7 @@ little-cms2 2.9
 maven 3.6.3_1
 mercurial 5.2.2
 node 10.4.1
+oniguruma 6.9.5-rev1
 openexr 2.4.0
 openjdk 14.0.1
 openjpeg 2.3.1
@@ -115,13 +126,16 @@ watchman 4.9.0_3
 webp 1.0.3
 wget 1.20.3_2
 x265 3.2.1
+xcbeautify 0.8.1
 xz 5.2.4
 yarn 1.7.0
 ========================================
 
 
 === Brew deps tree ==================
-bitrise-io/cask-versions/adoptopenjdk8
+adoptopenjdk/openjdk/adoptopenjdk11
+
+adoptopenjdk/openjdk/adoptopenjdk8
 
 ansible
 ├── libyaml
@@ -257,6 +271,9 @@ jenv
 
 jpeg
 
+jq
+└── oniguruma
+
 libde265
 
 libffi
@@ -321,6 +338,8 @@ mercurial
 
 node
 └── icu4c
+
+oniguruma
 
 openexr
 └── ilmbase
@@ -414,6 +433,8 @@ wget
 
 x265
 
+thii/xcbeautify/xcbeautify
+
 xz
 
 yarn
@@ -452,6 +473,7 @@ bundler (2.1.4, 2.0.2)
 certified (1.0.0)
 CFPropertyList (3.0.2)
 claide (1.0.3)
+clamp (1.3.2)
 cmath (default: 1.0.0)
 cocoapods (1.8.4)
 cocoapods-core (1.8.4)
@@ -513,7 +535,7 @@ memoist (0.16.2)
 mime-types (3.3, 1.25.1)
 mime-types-data (3.2019.1009)
 mini_magick (4.9.5)
-mini_portile2 (2.1.0)
+mini_portile2 (2.4.0, 2.1.0)
 minitest (5.10.3)
 molinillo (0.6.6)
 multi_json (1.14.1)
@@ -528,7 +550,7 @@ net-sftp (2.1.2)
 net-ssh (5.2.0)
 net-telnet (0.1.1)
 netrc (0.11.0)
-nokogiri (1.6.8.1)
+nokogiri (1.10.10, 1.6.8.1)
 nomad-cli (0.0.2)
 ntlm-http (0.1.1)
 openssl (default: 2.1.2)
@@ -554,6 +576,7 @@ signet (0.12.0)
 simctl (1.6.6)
 sinatra (1.4.8)
 slack-notifier (2.3.2)
+slather (2.5.0)
 stringio (default: 0.0.1)
 strscan (default: 1.0.0)
 term-ansicolor (1.0.7)
@@ -562,6 +585,7 @@ terminal-table (1.4.5)
 test-unit (3.2.7)
 thread_safe (0.3.6)
 tilt (2.0.10)
+trainer (0.9.1)
 tty-cursor (0.7.0)
 tty-screen (0.7.0)
 tty-spinner (0.9.2)
@@ -576,6 +600,7 @@ word_wrap (1.0.0)
 xcode-install (2.6.3)
 xcodeproj (1.13.0)
 xcpretty (0.3.0)
+xcpretty-json-formatter (0.1.1)
 xcpretty-travis-formatter (1.0.0)
 xmlrpc (0.3.0)
 zlib (default: 1.0.0)
@@ -585,7 +610,7 @@ zlib (default: 1.0.0)
 === NPM global packages ==========================
 * Cordova: 8.0.0
 * Ionic: 3.20.0
-./system_report.sh: line 122: appcenter: command not found
+./system_report.sh: line 127: appcenter: command not found
 * AppCenter CLI: 
 ========================================
 
@@ -1034,11 +1059,11 @@ Software:
       Kernel Version: Darwin 17.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-9-4-200904205759-qg4RGAUNjW3wMs6cQM9jBY
+      Computer Name: stg-xcode-9-4-200915122550-dssZGy6DF4Gv8YUVoi7h87
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 23 minutes
+      Time since boot: 1:32
 
 
 ========================================
