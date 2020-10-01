@@ -33,7 +33,7 @@
 * Node.js: v12.18.4
 * NPM: 6.13.4
 * Yarn: 1.22.5
-aws-cli/1.18.145 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.18.4
+aws-cli/1.18.150 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.18.9
 * aws: 
 
 * git: git version 2.7.4
@@ -68,10 +68,10 @@ aws-cli/1.18.145 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.18.4
 addressable (2.7.0)
 atomos (0.1.3)
 aws-eventstream (1.1.0)
-aws-partitions (1.374.0)
-aws-sdk-core (3.107.0)
-aws-sdk-kms (1.38.0)
-aws-sdk-s3 (1.81.0)
+aws-partitions (1.378.0)
+aws-sdk-core (3.109.0)
+aws-sdk-kms (1.39.0)
+aws-sdk-s3 (1.82.0)
 aws-sigv4 (1.2.2)
 babosa (1.0.3)
 benchmark (default: 0.1.0)
@@ -99,7 +99,7 @@ faraday (1.0.1)
 faraday-cookie_jar (0.0.7)
 faraday_middleware (1.0.0)
 fastimage (2.2.0)
-fastlane (2.160.0)
+fastlane (2.161.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.4.1)
@@ -193,7 +193,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-200924061355-3vhuryhciamj9nfhvfb7sw 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-201001061057-weuxh5klelpchqu8ojw7fa 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -242,8 +242,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-200924061355-3vhuryhciamj9nfhvfb7sw
- ID: POWD:6FYY:XK56:FD7K:J3PI:OSE2:WOKL:YMJC:2IPQ:CHTC:7JY5:A6DX
+ Name: stg-latest-usc1b-201001061057-weuxh5klelpchqu8ojw7fa
+ ID: PYX5:PTAU:2QIV:6MYK:6UCL:EKNR:ACRT:53P6:4TKF:VIFF:LZTG:CQT4
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -258,10 +258,10 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 35.2GB
-quay.io/bitriseio/android-ndk - 35.2GB
-bitriseio/android - 31GB
-quay.io/bitriseio/android - 31GB
+bitriseio/android-ndk - 35.6GB
+quay.io/bitriseio/android-ndk - 35.6GB
+bitriseio/android - 31.4GB
+quay.io/bitriseio/android - 31.4GB
 bitriseio/bitrise-base - 2.62GB
 quay.io/bitriseio/bitrise-base - 2.62GB
 ========================================
@@ -270,13 +270,13 @@ quay.io/bitriseio/bitrise-base - 2.62GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0      160G   34G  126G  22% /
+/dev/loop0      160G   35G  125G  22% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1       194G  167G   28G  86% /bitrise
+/dev/sda1       194G  166G   29G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        321M        4.4G        8.7M        2.6G        6.7G
+Mem:           7.3G        317M        5.4G        8.7M        1.6G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -303,20 +303,26 @@ Swap:          4.0G          0B        4.0G
 * Ionic CLI version: 5.4.16
 ========================================
 
+=== Java ===============================
+* JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
+* Java: openjdk version "1.8.0_265"
+* Javac: javac 1.8.0_265
+========================================
+
 
 === Google Cloud SDK components ========
-Google Cloud SDK 311.0.0
-alpha 2020.09.18
-beta 2020.09.18
-bq 2.0.60
-core 2020.09.18
+Google Cloud SDK 312.0.0
+alpha 2020.09.25
+beta 2020.09.25
+bq 2.0.61
+core 2020.09.25
 gsutil 4.53
 kubectl 1.15.11
 ========================================
 
 
 === Firebase Tools components ==========
-8.11.0
+8.11.2
 ========================================
 
 
@@ -348,7 +354,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * Command line Tools version: 2.1
 * Platform Tools version: 30.0.4
-* Emulator version: 30.1.4
+* Emulator version: 30.2.0
 ========================================
 
 
