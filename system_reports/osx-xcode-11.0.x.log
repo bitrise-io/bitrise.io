@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_09_11_1
+* BITRISE_OSX_STACK_REV_ID: v2020_10_01
 ========================================
 
 
@@ -22,9 +22,9 @@ OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_222-b10)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * Flutter: Flutter 1.20.3 • channel stable • https://github.com/flutter/flutter.git
 
-* git: git version 2.22.0
+* git: git version 2.28.0
 * git lfs: git-lfs/2.8.0 (GitHub; darwin amd64; go 1.12.7)
-* mercurial/hg: Mercurial Distributed SCM (version 5.2.2)
+* mercurial/hg: Mercurial Distributed SCM (version 5.5.1)
 * curl: curl 7.54.0 (x86_64-apple-darwin18.0) libcurl/7.54.0 LibreSSL/2.6.5 zlib/1.2.11 nghttp2/1.24.1
 * wget: GNU Wget 1.20.3 built on darwin18.7.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -34,8 +34,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
 * brew: Homebrew 2.5.2
-Homebrew/homebrew-core (git revision bac690; last commit 2020-09-25)
-Homebrew/homebrew-cask (git revision b896a; last commit 2020-09-25)
+Homebrew/homebrew-core (git revision e25484; last commit 2020-10-02)
+Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
 * Ansible: ansible 2.9.2
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
@@ -45,20 +45,21 @@ Homebrew/homebrew-cask (git revision b896a; last commit 2020-09-25)
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.102.0
 * carthage: 0.36.0
-* imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-06 https://imagemagick.org
-* ghostscript (ps2ascii): 9.27
+* imagemagick (convert): Version: ImageMagick 7.0.10-31 Q16 x86_64 2020-09-28 https://imagemagick.org
+* ghostscript (ps2ascii): 9.53.3
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: 8.11.1
+* firebase: 8.11.2
 * applesimutils version 0.8.2
 * jq: 1.6
 * Version: 0.8.1
 * XCLogParser 0.2.19
 * Screen 4.06.02
 * applesimutils 0.8.2
+* OpenConnect version v8.10
 
 --- Bitrise CLI tool versions
-* bitrise: 1.42.0
-* stepman: 0.12.3
+* bitrise: 1.43.0
+* stepman: 0.13.0
 * envman: 2.3.0
 * cmd-bridge: 0.9.5
 ========================================
@@ -69,63 +70,79 @@ ansible 2.9.2_1
 ant 1.10.6
 applesimutils 0.8.2
 autoconf 2.69
+bdw-gc 8.0.4
 carthage 0.36.0
 coreutils 8.31
+docbook 5.1_1
+docbook-xsl 1.79.2_1
 flow 0.102.0
-freetype 2.10.1
-gdbm 1.18.1
-gettext 0.20.1
-ghostscript 9.27_1
-git 2.22.0_1
+freetype 2.10.1 2.10.2
+gdbm 1.18.1_1 1.18.1
+gettext 0.20.1 0.21
+ghostscript 9.53.3 9.27_1
+git 2.28.0
 git-lfs 2.8.0
-glib 2.62.4
+glib 2.66.0
+gmp 6.2.0
+gnu-getopt 2.36
+gnutls 3.6.15
 go 1.12.7
 gradle 5.5.1
+guile 3.0.4
 icu4c 64.2
-ilmbase 2.3.0 2.4.0
-imagemagick 7.0.9-14
+ilmbase 2.5.3 2.3.0 2.4.0
+imagemagick 7.0.10-31
 jenv 0.5.2
-jpeg 9c
+jpeg 9d 9c
 jq 1.6
-libde265 1.0.4 1.0.3
-libffi 3.2.1
-libheif 1.6.1
+libde265 1.0.7 1.0.4 1.0.3
+libevent 2.1.12
+libffi 3.3 3.2.1
+libheif 1.9.1
 libidn2 2.3.0
-libomp 8.0.0 9.0.0
+liblqr 0.4.2_1
+libomp 8.0.0 9.0.0 10.0.1
 libpng 1.6.37
+libtasn1 4.16.0
 libtiff 4.1.0
-libtool 2.4.6_1
+libtool 2.4.6_1 2.4.6_2
 libunistring 0.9.10
 libyaml 0.2.2
-little-cms2 2.9
+little-cms2 2.11 2.9
 maven 3.6.1
-mercurial 5.2.2
+mercurial 5.5.1
+nettle 3.6
 node 12.6.0
 node@10 10.16.0
 oniguruma 6.9.5-rev1
-openexr 2.3.0 2.4.0
+openconnect 8.10
+openexr 2.5.3 2.3.0 2.4.0
 openjpeg 2.3.1
 openssl 1.0.2s
-openssl@1.1 1.1.1d
-pcre 8.43
-pcre2 10.33
-pkg-config 0.29.2
-python 3.7.6_1 3.7.4 3.7.5
-python@3.8 3.8.1
+openssl@1.1 1.1.1g 1.1.1d
+p11-kit 0.23.21
+pcre 8.43 8.44
+pcre2 10.33 10.35
+pkg-config 0.29.2_3 0.29.2
+python 3.7.6_1
+python@3.8 3.8.5 3.8.1
 rbenv 1.1.2
-readline 8.0.1
+readline 8.0.4 8.0.1
 ruby-build 20190615
 screen 4.6.2
-shared-mime-info 1.15
-sqlite 3.30.1
+shared-mime-info 1.15 2.0
+sqlite 3.33.0
+stoken 0.92_1
 tree 1.8.0
+unbound 1.11.0
 watchman 4.9.0_3
-webp 1.0.3
+webp 1.1.0 1.0.3
 wget 1.20.3_2
-x265 3.1.1 3.2.1
+x265 3.4 3.1.1 3.2.1
 xcbeautify 0.8.1
 xclogparser 0.2.19
-xz 5.2.4
+xmlto 0.0.28
+xz 5.2.5 5.2.4
 yarn 1.17.3
 ========================================
 
@@ -133,7 +150,7 @@ yarn 1.17.3
 === Brew deps tree ==================
 adoptopenjdk/openjdk/adoptopenjdk11
 
-bitrise-io/cask-versions/adoptopenjdk8
+adoptopenjdk/openjdk/adoptopenjdk8
 
 ansible
 ├── libyaml
@@ -153,9 +170,16 @@ wix/brew/applesimutils
 
 autoconf
 
+bdw-gc
+
 carthage
 
 coreutils
+
+docbook
+
+docbook-xsl
+└── docbook
 
 flow
 
@@ -188,10 +212,47 @@ glib
     │   └── readline
     └── xz
 
+gmp
+
+gnu-getopt
+
+gnutls
+├── gmp
+├── guile
+│   ├── bdw-gc
+│   ├── gmp
+│   ├── libffi
+│   ├── libtool
+│   ├── libunistring
+│   ├── pkg-config
+│   └── readline
+├── libidn2
+│   ├── gettext
+│   └── libunistring
+├── libtasn1
+├── libunistring
+├── nettle
+│   └── gmp
+├── p11-kit
+│   └── libffi
+└── unbound
+    ├── libevent
+    │   └── openssl@1.1
+    └── openssl@1.1
+
 go
 
 gradle
 └── openjdk
+
+guile
+├── bdw-gc
+├── gmp
+├── libffi
+├── libtool
+├── libunistring
+├── pkg-config
+└── readline
 
 icu4c
 
@@ -274,6 +335,9 @@ jq
 
 libde265
 
+libevent
+└── openssl@1.1
+
 libffi
 
 libheif
@@ -304,9 +368,24 @@ libidn2
 ├── gettext
 └── libunistring
 
+liblqr
+└── glib
+    ├── gettext
+    ├── libffi
+    ├── pcre
+    └── python@3.8
+        ├── gdbm
+        ├── openssl@1.1
+        ├── readline
+        ├── sqlite
+        │   └── readline
+        └── xz
+
 libomp
 
 libpng
+
+libtasn1
 
 libtiff
 └── jpeg
@@ -334,6 +413,9 @@ mercurial
     │   └── readline
     └── xz
 
+nettle
+└── gmp
+
 node
 └── icu4c
 
@@ -341,6 +423,35 @@ node@10
 └── icu4c
 
 oniguruma
+
+openconnect
+├── gettext
+├── gnutls
+│   ├── gmp
+│   ├── guile
+│   │   ├── bdw-gc
+│   │   ├── gmp
+│   │   ├── libffi
+│   │   ├── libtool
+│   │   ├── libunistring
+│   │   ├── pkg-config
+│   │   └── readline
+│   ├── libidn2
+│   │   ├── gettext
+│   │   └── libunistring
+│   ├── libtasn1
+│   ├── libunistring
+│   ├── nettle
+│   │   └── gmp
+│   ├── p11-kit
+│   │   └── libffi
+│   └── unbound
+│       ├── libevent
+│       │   └── openssl@1.1
+│       └── openssl@1.1
+└── stoken
+    └── nettle
+        └── gmp
 
 openexr
 └── ilmbase
@@ -355,6 +466,9 @@ openjpeg
         └── jpeg
 
 openssl@1.1
+
+p11-kit
+└── libffi
 
 pcre
 
@@ -407,7 +521,16 @@ shared-mime-info
 sqlite
 └── readline
 
+stoken
+└── nettle
+    └── gmp
+
 tree
+
+unbound
+├── libevent
+│   └── openssl@1.1
+└── openssl@1.1
 
 watchman
 ├── openssl@1.1
@@ -437,6 +560,12 @@ x265
 thii/xcbeautify/xcbeautify
 
 xclogparser
+
+xmlto
+├── docbook
+├── docbook-xsl
+│   └── docbook
+└── gnu-getopt
 
 xz
 
@@ -628,7 +757,7 @@ zlib (default: 1.0.0)
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
 * Ionic: 5.2.3
-./system_report.sh: line 127: appcenter: command not found
+./system_report.sh: line 128: appcenter: command not found
 * AppCenter CLI: 
 ========================================
 
@@ -1104,11 +1233,11 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-200925130520-yyRckHE78ni3sQRx7D42Tf
+      Computer Name: stg-xcode-11-201005103933-vs6pZ9zjVWE8EaGBD6RgUS
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 54 minutes
+      Time since boot: 29 minutes
 
 
 ========================================
@@ -1117,7 +1246,7 @@ Software:
 === System infos =======================
 * Free disk space: 
     Filesystem         Size        Avail
-  /dev/disk1s1        200Gi         53Gi
+  /dev/disk1s1        200Gi         52Gi
 ========================================
 
 --- Android
