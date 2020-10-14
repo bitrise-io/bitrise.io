@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_10_01
+* BITRISE_OSX_STACK_REV_ID: v2020_10_07
 ========================================
 
 
@@ -24,7 +24,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.265-b01, mixed mode)
 
 * git: git version 2.28.0
 * git lfs: git-lfs/2.11.0 (GitHub; darwin amd64; go 1.14.2)
-* mercurial/hg: Mercurial Distributed SCM (version 5.5)
+* mercurial/hg: Mercurial Distributed SCM (version 5.5.2)
 * curl: curl 7.64.1 (x86_64-apple-darwin19.0) libcurl/7.64.1 (SecureTransport) LibreSSL/2.8.3 zlib/1.2.11 nghttp2/1.39.2
 * wget: GNU Wget 1.20.3 built on darwin19.0.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,20 +33,20 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.265-b01, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.5.2
-Homebrew/homebrew-core (git revision e3440; last commit 2020-10-02)
+* brew: Homebrew 2.5.5
+Homebrew/homebrew-core (git revision bf61d; last commit 2020-10-11)
 Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
-* Ansible: ansible 2.9.11
+* Ansible: ansible 2.9.13
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.9.11/libexec/lib/python3.8/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.9.13/libexec/lib/python3.8/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.32
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.132.0
 * carthage: 0.35.0
-* imagemagick (convert): Version: ImageMagick 7.0.10-28 Q16 x86_64 2020-08-16 https://imagemagick.org
-* ghostscript (ps2ascii): 9.52
+* imagemagick (convert): Version: ImageMagick 7.0.10-34 Q16 x86_64 2020-10-09 https://imagemagick.org
+* ghostscript (ps2ascii): 9.53.3
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
 * firebase: 8.10.0
 * applesimutils version 0.8.2
@@ -66,7 +66,7 @@ Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
 
 
 === Brew list versions ==================
-ansible 2.9.11
+ansible 2.9.13
 applesimutils 0.8.2
 autoconf 2.69
 bdw-gc 8.0.4
@@ -75,13 +75,13 @@ coreutils 8.32
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 flow 0.132.0
-freetype 2.10.2
+freetype 2.10.3 2.10.2
 gdbm 1.18.1_1
 gettext 0.21
-ghostscript 9.52
+ghostscript 9.53.3 9.52
 git 2.28.0
 git-lfs 2.11.0
-glib 2.64.5
+glib 2.66.1
 gmp 6.2.0
 gnu-getopt 2.36
 gnutls 3.6.15
@@ -89,14 +89,14 @@ go 1.15.2
 guile 3.0.4
 icu4c 67.1
 ilmbase 2.5.3
-imagemagick 7.0.10-28
+imagemagick 7.0.10-34
 jenv 0.5.4
 jpeg 9d
 jq 1.6
-libde265 1.0.6
+libde265 1.0.7 1.0.6
 libevent 2.1.12
 libffi 3.3
-libheif 1.8.0
+libheif 1.9.1
 libidn2 2.3.0
 liblqr 0.4.2_1
 libomp 10.0.1
@@ -107,7 +107,7 @@ libtool 2.4.6_2
 libunistring 0.9.10
 libyaml 0.2.5
 little-cms2 2.11
-mercurial 5.5
+mercurial 5.5.2
 nettle 3.6
 node 14.9.0
 node@12 12.18.3
@@ -115,12 +115,13 @@ oniguruma 6.9.5-rev1
 openconnect 8.10
 openexr 2.5.3
 openjpeg 2.3.1
-openssl@1.1 1.1.1g
+openssl@1.1 1.1.1h 1.1.1g
 p11-kit 0.23.21
 pcre 8.44
 pcre2 10.35
 pkg-config 0.29.2_3
-python@3.8 3.8.5
+python@3.8 3.8.6
+python@3.9 3.9.0
 rbenv 1.1.2
 readline 8.0.4
 ruby-build 20200819
@@ -129,8 +130,8 @@ shared-mime-info 2.0
 sqlite 3.33.0
 stoken 0.92_1
 tree 1.8.0
-unbound 1.11.0
-watchman 4.9.0_4
+unbound 1.12.0
+watchman 4.9.0_5
 webp 1.1.0
 wget 1.20.3_2
 x265 3.4
@@ -472,6 +473,14 @@ python@3.8
 │   └── readline
 └── xz
 
+python@3.9
+├── gdbm
+├── openssl@1.1
+├── readline
+├── sqlite
+│   └── readline
+└── xz
+
 rbenv
 └── ruby-build
     ├── autoconf
@@ -523,7 +532,7 @@ unbound
 watchman
 ├── openssl@1.1
 ├── pcre
-└── python@3.8
+└── python@3.9
     ├── gdbm
     ├── openssl@1.1
     ├── readline
@@ -1016,11 +1025,11 @@ Software:
       Kernel Version: Darwin 19.5.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-previous-201005103933-Vq9hWFyWjCg5vjLGxqJDXA
+      Computer Name: stg-vs4mac-stable-previous-201012020055-BFL5viFwN7aJdaG4uJiixT
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 33 minutes
+      Time since boot: 38 minutes
 
 
 ========================================
