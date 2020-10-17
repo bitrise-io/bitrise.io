@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_10_07
+* BITRISE_OSX_STACK_REV_ID: v2020_10_10_1
 ========================================
 
 
@@ -20,7 +20,7 @@
 * Java: openjdk version "1.8.0_265"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_265-b01)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.265-b01, mixed mode)
-* Flutter: Flutter 1.20.3 • channel stable • https://github.com/flutter/flutter.git
+* Flutter: Flutter 1.22.1 • channel stable • https://github.com/flutter/flutter.git
 
 * git: git version 2.28.0
 * git lfs: git-lfs/2.12.0 (GitHub; darwin amd64; go 1.15)
@@ -33,13 +33,13 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.265-b01, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.5.5
-Homebrew/homebrew-core (git revision bf61d; last commit 2020-10-11)
+* brew: Homebrew 2.5.6
+Homebrew/homebrew-core (git revision a7549a; last commit 2020-10-15)
 Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
 * Ansible: ansible 2.9.13
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.9.13/libexec/lib/python3.8/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.9.13_1/libexec/lib/python3.9/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.32
 * watchman: 4.9.0
@@ -66,7 +66,7 @@ Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
 
 
 === Brew list versions ==================
-ansible 2.9.13
+ansible 2.9.13_1
 applesimutils 0.8.2
 autoconf 2.69
 bdw-gc 8.0.4
@@ -99,7 +99,7 @@ libffi 3.3
 libheif 1.9.1
 libidn2 2.3.0
 liblqr 0.4.2_1
-libomp 10.0.1
+libomp 11.0.0 10.0.1
 libpng 1.6.37
 libtasn1 4.16.0
 libtiff 4.1.0
@@ -148,12 +148,10 @@ adoptopenjdk/openjdk/adoptopenjdk11
 
 adoptopenjdk/openjdk/adoptopenjdk8
 
-android-ndk
-
 ansible
 ├── libyaml
 ├── openssl@1.1
-└── python@3.8
+└── python@3.9
     ├── gdbm
     ├── openssl@1.1
     ├── readline
@@ -402,8 +400,6 @@ mercurial
     │   └── readline
     └── xz
 
-mono-mdk-for-visual-studio
-
 nettle
 └── gmp
 
@@ -530,8 +526,6 @@ unbound
 ├── libevent
 │   └── openssl@1.1
 └── openssl@1.1
-
-visual-studio
 
 watchman
 ├── openssl@1.1
@@ -990,11 +984,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-beta-201012020055-t5iLf2XU4SQwEQj6oLSbaG
+      Computer Name: stg-vs4mac-beta-201017152346-uwkUJbAp24EyUFfoGZKtAZ
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 41 minutes
+      Time since boot: 1:16
 
 
 ========================================
@@ -1003,7 +997,7 @@ Software:
 === System infos =======================
 * Free disk space: 
     Filesystem         Size        Avail
-  /dev/disk1s5        200Gi         50Gi
+  /dev/disk1s5        200Gi         53Gi
 ========================================
 
 
@@ -1012,9 +1006,9 @@ Software:
 --- Xamarin
 
 * Visual Studio
-Release ID: 808002120
-Git revision: 3925df4356a7f10b6951f10e0f88ceecb8e66a23
-Build date: 2020-09-09 08:15:50-04
+Release ID: 808002811
+Git revision: c2511e043f96618435996078ddfd3e0fb34aa645
+Build date: 2020-10-08 13:30:34-04
 Build branch: release-8.8
 * Mono version:
 Mono JIT compiler version 6.12.0.93 (2020-02/620cf538206 Tue Aug 25 14:04:52 EDT 2020)
@@ -1033,11 +1027,11 @@ Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-proj
 /Library/Frameworks/Mono.framework/Versions/Current/Commands/mono
 
 * Xamarin.Android
-11.1.0.3
+11.1.0.15
 Current
 
 * Xamarin.iOS
-13.22.1.23
+14.4.0.9
 Current
 
 * debug.keystore path:
