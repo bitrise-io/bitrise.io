@@ -17,12 +17,12 @@
 * Node.js: v10.20.1
 * NPM: 6.14.4
 * Yarn: 1.22.4
-* Java: openjdk version "1.8.0_265"
-OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_265-b01)
-OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.265-b01, mixed mode)
+* Java: openjdk version "1.8.0_272"
+OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_272-b10)
+OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.272-b10, mixed mode)
 * Flutter: Flutter 1.22.1 • channel stable • https://github.com/flutter/flutter.git
 
-* git: git version 2.29.0
+* git: git version 2.29.2
 * git lfs: git-lfs/2.11.0 (GitHub; darwin amd64; go 1.14.2)
 * mercurial/hg: Mercurial Distributed SCM (version 5.5.2)
 * curl: curl 7.64.1 (x86_64-apple-darwin19.0) libcurl/7.64.1 (SecureTransport) LibreSSL/2.8.3 zlib/1.2.11 nghttp2/1.39.2
@@ -33,8 +33,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.265-b01, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.5.6
-Homebrew/homebrew-core (git revision ab0c4; last commit 2020-10-22)
+* brew: Homebrew 2.5.7
+Homebrew/homebrew-core (git revision e95fa0; last commit 2020-10-30)
 Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
 * Ansible: ansible 2.9.7
   config file = /Users/vagrant/git/ansible.cfg
@@ -80,9 +80,9 @@ freetype 2.10.1 2.10.4
 gdbm 1.18.1_1 1.18.1
 gettext 0.20.2_1 0.21
 ghostscript 9.53.3 9.52
-git 2.29.0
+git 2.29.2
 git-lfs 2.11.0
-glib 2.66.2
+glib 2.66.2_1
 gmp 6.2.0
 gnu-getopt 2.35.1 2.36
 gnutls 3.6.15
@@ -110,14 +110,14 @@ libunistring 0.9.10
 libyaml 0.2.4
 little-cms2 2.11 2.9
 maven 3.6.3_1
-mercurial 5.5.2
+mercurial 5.5.2_1
 nettle 3.6
 node 14.2.0
 node@10 10.20.1_1
 oniguruma 6.9.5-rev1
 openconnect 8.10
 openexr 2.5.3 2.5.1
-openjdk 14.0.1
+openjdk 14.0.1 15.0.1
 openjpeg 2.3.1
 openssl@1.1 1.1.1h 1.1.1g
 p11-kit 0.23.21
@@ -125,8 +125,8 @@ pcre 8.44
 pcre2 10.35
 pkg-config 0.29.2_3
 python 3.7.7
-python@3.8 3.8.2 3.8.6
-python@3.9 3.9.0
+python@3.8 3.8.6_1
+python@3.9 3.9.0_1
 rbenv 1.1.2
 readline 8.0.4
 ruby-build 20200518
@@ -136,7 +136,7 @@ sqlite 3.31.1 3.33.0
 stoken 0.92_1
 tree 1.8.0
 unbound 1.12.0
-watchman 4.9.0_5
+watchman 4.9.0_4
 webp 1.1.0
 wget 1.20.3_2
 x265 3.3 3.4
@@ -205,7 +205,7 @@ glib
 ├── gettext
 ├── libffi
 ├── pcre
-└── python@3.8
+└── python@3.9
     ├── gdbm
     ├── openssl@1.1
     ├── readline
@@ -276,7 +276,7 @@ imagemagick
 │   │   │   ├── gettext
 │   │   │   ├── libffi
 │   │   │   ├── pcre
-│   │   │   └── python@3.8
+│   │   │   └── python@3.9
 │   │   │       ├── gdbm
 │   │   │       ├── openssl@1.1
 │   │   │       ├── readline
@@ -294,7 +294,7 @@ imagemagick
 │       ├── gettext
 │       ├── libffi
 │       ├── pcre
-│       └── python@3.8
+│       └── python@3.9
 │           ├── gdbm
 │           ├── openssl@1.1
 │           ├── readline
@@ -351,7 +351,7 @@ libheif
 │   │   ├── gettext
 │   │   ├── libffi
 │   │   ├── pcre
-│   │   └── python@3.8
+│   │   └── python@3.9
 │   │       ├── gdbm
 │   │       ├── openssl@1.1
 │   │       ├── readline
@@ -374,7 +374,7 @@ liblqr
     ├── gettext
     ├── libffi
     ├── pcre
-    └── python@3.8
+    └── python@3.9
         ├── gdbm
         ├── openssl@1.1
         ├── readline
@@ -406,7 +406,7 @@ maven
 └── openjdk
 
 mercurial
-└── python@3.8
+└── python@3.9
     ├── gdbm
     ├── openssl@1.1
     ├── readline
@@ -516,7 +516,7 @@ shared-mime-info
 │   ├── gettext
 │   ├── libffi
 │   ├── pcre
-│   └── python@3.8
+│   └── python@3.9
 │       ├── gdbm
 │       ├── openssl@1.1
 │       ├── readline
@@ -1142,11 +1142,11 @@ Software:
       Kernel Version: Darwin 19.4.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-5-201022095847-h7rmmkVTs3MSkoLm2RoeAe
+      Computer Name: stg-xcode-11-5-201030111116-gsxjgyLvRHrXievboRQEUe
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 24 minutes
+      Time since boot: 25 minutes
 
 
 ========================================
