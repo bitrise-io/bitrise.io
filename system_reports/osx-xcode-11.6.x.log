@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_10_10_1
+* BITRISE_OSX_STACK_REV_ID: v2020_11_03_1
 ========================================
 
 
@@ -33,8 +33,8 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.272-b10, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.5.7
-Homebrew/homebrew-core (git revision e95fa0; last commit 2020-10-30)
+* brew: Homebrew 2.5.8
+Homebrew/homebrew-core (git revision 4d6504; last commit 2020-11-05)
 Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
 * Ansible: ansible 2.9.9
   config file = /Users/vagrant/git/ansible.cfg
@@ -45,7 +45,7 @@ Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.125.1
 * carthage: 0.35.0
-* imagemagick (convert): Version: ImageMagick 7.0.10-34 Q16 x86_64 2020-10-09 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.10-35 Q16 x86_64 2020-11-01 https://imagemagick.org
 * ghostscript (ps2ascii): 9.53.3
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
 * firebase: 8.6.0
@@ -58,7 +58,7 @@ Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
 * OpenConnect version v8.10
 
 --- Bitrise CLI tool versions
-* bitrise: 1.43.0
+* bitrise: 1.44.0
 * stepman: 0.13.0
 * envman: 2.3.0
 * cmd-bridge: 0.9.5
@@ -91,11 +91,11 @@ gradle 6.7
 guile 3.0.4
 icu4c 66.1
 ilmbase 2.5.3 2.5.1
-imagemagick 7.0.10-34
+imagemagick 7.0.10-35
 jenv 0.5.4
 jpeg 9d
 jq 1.6
-libde265 1.0.7 1.0.5
+libde265 1.0.8 1.0.5
 libevent 2.1.12
 libffi 3.3
 libheif 1.9.1
@@ -139,7 +139,7 @@ unbound 1.12.0
 watchman 4.9.0_4
 webp 1.1.0
 wget 1.20.3_2
-x265 3.3 3.4
+x265 3.3 3.4_1
 xcbeautify 0.8.1
 xclogparser 0.2.19
 xmlto 0.0.28
@@ -1026,11 +1026,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-6-201030110835-6amzH5TSgjUpNTtqnbkiH5
+      Computer Name: stg-xcode-11-6-201106123111-FaHNbjo8LZbmoEXtosEgYB
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 26 minutes
+      Time since boot: 20 minutes
 
 
 ========================================
@@ -1094,6 +1094,7 @@ fastboot
 hprof-conv
 lib64
 make_f2fs
+make_f2fs_casefold
 mke2fs
 mke2fs.conf
 package.xml
