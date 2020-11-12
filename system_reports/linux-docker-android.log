@@ -33,11 +33,11 @@
 * Node.js: v12.19.0
 * NPM: 6.13.4
 * Yarn: 1.22.5
-aws-cli/1.18.170 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.10
+aws-cli/1.18.176 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.16
 * aws: 
 
 * git: git version 2.7.4
-* git lfs: git-lfs/2.12.0 (GitHub; linux amd64; go 1.13.4)
+* git lfs: git-lfs/2.12.1 (GitHub; linux amd64; go 1.13.4)
 * mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
 * curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
 * wget: GNU Wget 1.17.1 built on linux-gnu.
@@ -68,10 +68,10 @@ aws-cli/1.18.170 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.10
 addressable (2.7.0)
 atomos (0.1.3)
 aws-eventstream (1.1.0)
-aws-partitions (1.388.0)
-aws-sdk-core (3.109.1)
+aws-partitions (1.391.0)
+aws-sdk-core (3.109.2)
 aws-sdk-kms (1.39.0)
-aws-sdk-s3 (1.83.1)
+aws-sdk-s3 (1.84.1)
 aws-sigv4 (1.2.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
@@ -124,7 +124,7 @@ jwt (2.2.2)
 logger (default: 1.4.2)
 matrix (default: 0.2.0)
 memoist (0.16.2)
-mini_magick (4.10.1)
+mini_magick (4.11.0)
 mini_mime (1.0.2)
 minitest (5.13.0)
 multi_json (1.15.0)
@@ -194,7 +194,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-201105100246-ffvcxtwxt9gcxn4gkderqs 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-201112092033-rqquqgxzzp2vmjzfuvz4xp 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -243,8 +243,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-201105100246-ffvcxtwxt9gcxn4gkderqs
- ID: AHLU:HAJ4:JCIT:6SFS:3YJK:FQ67:OAS6:USHX:PE32:GHLR:DUXN:ANWG
+ Name: stg-latest-usc1b-201112092033-rqquqgxzzp2vmjzfuvz4xp
+ ID: ON2T:7RPV:FIV3:JBOE:OMHX:CVMP:FUS3:U2P4:5IBB:D3E4:5GXT:634L
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -259,25 +259,25 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
+bitriseio/android-ndk - 35.8GB
+quay.io/bitriseio/android-ndk - 35.8GB
+bitriseio/android - 31.6GB
+quay.io/bitriseio/android - 31.6GB
 bitriseio/bitrise-base - 2.63GB
 quay.io/bitriseio/bitrise-base - 2.63GB
-bitriseio/android-ndk - 35.6GB
-quay.io/bitriseio/android-ndk - 35.6GB
-quay.io/bitriseio/android - 31.4GB
-bitriseio/android - 31.4GB
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0      160G   37G  123G  24% /
+/dev/loop0      160G   35G  125G  22% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1       194G  166G   29G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        320M        5.3G        8.7M        1.6G        6.7G
+Mem:           7.3G        320M        5.4G        8.7M        1.6G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -292,7 +292,7 @@ Swap:          4.0G          0B        4.0G
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2020_06_14_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2020_09_22_1
 ========================================
 
 
@@ -312,18 +312,18 @@ Swap:          4.0G          0B        4.0G
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 317.0.0
-alpha 2020.10.30
-beta 2020.10.30
+Google Cloud SDK 318.0.0
+alpha 2020.11.06
+beta 2020.11.06
 bq 2.0.62
-core 2020.10.30
+core 2020.11.06
 gsutil 4.54
 kubectl 1.16.13
 ========================================
 
 
 === Firebase Tools components ==========
-8.14.1
+8.16.0
 ========================================
 
 
@@ -349,13 +349,13 @@ Property diagnostic passed (1/1 checks passed).
 
  * adb version:
 Android Debug Bridge version 1.0.41
-Version 30.0.4-6686687
+Version 30.0.5-6877874
 Installed as /opt/android-sdk-linux/platform-tools/adb
 
  * SDK packages:
 * Command line Tools version: 2.1
-* Platform Tools version: 30.0.4
-* Emulator version: 30.2.4
+* Platform Tools version: 30.0.5
+* Emulator version: 30.3.0
 ========================================
 
 
@@ -388,6 +388,7 @@ fastboot
 hprof-conv
 lib64
 make_f2fs
+make_f2fs_casefold
 mke2fs
 mke2fs.conf
 NOTICE.txt
@@ -420,6 +421,7 @@ systrace
 29.0.2
 29.0.3
 30.0.0
+30.0.2
 
 * ./emulator:
 android-info.txt
