@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_11_13
+* BITRISE_OSX_STACK_REV_ID: v2020_11_16
 ========================================
 
 
@@ -33,22 +33,22 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.5.10
-Homebrew/homebrew-core (git revision 542ff0; last commit 2020-11-13)
+* brew: Homebrew 2.5.11
+Homebrew/homebrew-core (git revision 5e957; last commit 2020-11-25)
 Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
-* Ansible: ansible 2.9.15
+* Ansible: ansible 2.10.3
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.9.15/libexec/lib/python3.9/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.10.3_1/libexec/lib/python3.9/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.31
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.109.0
 * carthage: 0.36.0
-* imagemagick (convert): Version: ImageMagick 7.0.10-37 Q16 x86_64 2020-11-09 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.10-43 Q16 x86_64 2020-11-23 https://imagemagick.org
 * ghostscript (ps2ascii): 9.53.3
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: 8.16.1
+* firebase: 8.16.2
 * applesimutils version 0.8.2
 * jq: 1.6
 * Version: 0.8.1
@@ -66,11 +66,12 @@ Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
 
 
 === Brew list versions ==================
-ansible 2.9.15
+ansible 2.10.3_1
 ant 1.10.7
 applesimutils 0.8.2
 autoconf 2.69
 bdw-gc 8.0.4
+c-ares 1.17.1
 carthage 0.36.0
 coreutils 8.31
 docbook 5.1_1
@@ -83,19 +84,22 @@ ghostscript 9.53.3
 git 2.29.2
 git-lfs 2.8.0
 glib 2.66.2_1
-gmp 6.2.0
-gnu-getopt 2.36
+gmp 6.2.1
+gnu-getopt 2.36.1
 gnutls 3.6.15
 go 1.13.1
 gradle 5.6.2
 guile 3.0.4
 icu4c 64.2
 ilmbase 2.5.3
-imagemagick 7.0.10-37
+imagemagick 7.0.10-43
+jansson 2.13.1
+jemalloc 5.2.1_1
 jenv 0.5.2
 jpeg 9d
 jq 1.6
 libde265 1.0.8
+libev 4.33
 libevent 2.1.12
 libffi 3.3
 libheif 1.9.1
@@ -104,7 +108,7 @@ liblqr 0.4.2_1
 libomp 11.0.0
 libpng 1.6.37
 libtasn1 4.16.0
-libtiff 4.1.0
+libtiff 4.1.0_1
 libtool 2.4.6_2
 libunistring 0.9.10
 libyaml 0.2.5
@@ -112,6 +116,7 @@ little-cms2 2.11
 maven 3.6.2
 mercurial 5.6
 nettle 3.6
+nghttp2 1.42.0
 node 12.11.1
 node@10 10.16.3
 oniguruma 6.9.6
@@ -124,17 +129,17 @@ pcre 8.44
 pcre2 10.35
 pkg-config 0.29.2_3
 python 3.7.6_1
-python@3.8 3.8.6_1
-python@3.9 3.9.0_1
+python@3.8 3.8.6_2
+python@3.9 3.9.0_2
 rbenv 1.1.2
 readline 8.0.4 8.0.1
-ruby-build 20201005 20191004
+ruby-build 20201118 20191004
 screen 4.6.2
 shared-mime-info 1.15 2.0
 sqlite 3.33.0 3.30.1
 stoken 0.92_1
 tree 1.8.0
-unbound 1.12.0
+unbound 1.12.0_1
 watchman 4.9.0_3 4.9.0_5
 webp 1.1.0 1.0.3
 wget 1.20.3_2 1.20.3_1
@@ -171,6 +176,8 @@ wix/brew/applesimutils
 autoconf
 
 bdw-gc
+
+c-ares
 
 carthage
 
@@ -237,6 +244,14 @@ gnutls
 │   └── libffi
 └── unbound
     ├── libevent
+    │   └── openssl@1.1
+    ├── nghttp2
+    │   ├── c-ares
+    │   ├── jansson
+    │   ├── jemalloc
+    │   ├── libev
+    │   ├── libevent
+    │   │   └── openssl@1.1
     │   └── openssl@1.1
     └── openssl@1.1
 
@@ -326,6 +341,10 @@ imagemagick
 │       └── jpeg
 └── xz
 
+jansson
+
+jemalloc
+
 jenv
 
 jpeg
@@ -334,6 +353,8 @@ jq
 └── oniguruma
 
 libde265
+
+libev
 
 libevent
 └── openssl@1.1
@@ -416,6 +437,15 @@ mercurial
 nettle
 └── gmp
 
+nghttp2
+├── c-ares
+├── jansson
+├── jemalloc
+├── libev
+├── libevent
+│   └── openssl@1.1
+└── openssl@1.1
+
 node
 └── icu4c
 
@@ -447,6 +477,14 @@ openconnect
 │   │   └── libffi
 │   └── unbound
 │       ├── libevent
+│       │   └── openssl@1.1
+│       ├── nghttp2
+│       │   ├── c-ares
+│       │   ├── jansson
+│       │   ├── jemalloc
+│       │   ├── libev
+│       │   ├── libevent
+│       │   │   └── openssl@1.1
 │       │   └── openssl@1.1
 │       └── openssl@1.1
 └── stoken
@@ -538,6 +576,14 @@ tree
 unbound
 ├── libevent
 │   └── openssl@1.1
+├── nghttp2
+│   ├── c-ares
+│   ├── jansson
+│   ├── jemalloc
+│   ├── libev
+│   ├── libevent
+│   │   └── openssl@1.1
+│   └── openssl@1.1
 └── openssl@1.1
 
 watchman
@@ -606,10 +652,10 @@ addressable (2.7.0)
 algoliasearch (1.27.5)
 atomos (0.1.3)
 aws-eventstream (1.1.0)
-aws-partitions (1.392.0)
-aws-sdk-core (3.109.2)
+aws-partitions (1.399.0)
+aws-sdk-core (3.109.3)
 aws-sdk-kms (1.39.0)
-aws-sdk-s3 (1.84.1)
+aws-sdk-s3 (1.85.0)
 aws-sigv4 (1.2.2)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
@@ -1278,11 +1324,11 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-2-201113183918-YiEGLFAKf7Zd8578nc6PT3
+      Computer Name: stg-xcode-11-2-201126212304-nit5QQn7GJmZ7tRhgLCcXD
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 23 minutes
+      Time since boot: 21 minutes
 
 
 ========================================
