@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2020_08_20_1
+* BITRISE_OSX_STACK_REV_ID: v2020_11_16
 ========================================
 
 
@@ -17,14 +17,14 @@
 * Node.js: v10.4.1
 * NPM: 6.13.4
 * Yarn: 1.7.0
-* Java: openjdk version "1.8.0_265"
-OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_265-b01)
-OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.265-b01, mixed mode)
-* Flutter: Flutter 1.20.2 • channel stable • https://github.com/flutter/flutter.git
+* Java: openjdk version "1.8.0_275"
+OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_275-b01)
+OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.275-b01, mixed mode)
+* Flutter: Flutter 1.22.1 • channel stable • https://github.com/flutter/flutter.git
 
 * git: git version 2.17.1
 * git lfs: git-lfs/2.4.2 (GitHub; darwin amd64; go 1.10.2)
-* mercurial/hg: Mercurial Distributed SCM (version 5.2.2)
+* mercurial/hg: Mercurial Distributed SCM (version 5.6)
 * curl: curl 7.54.0 (x86_64-apple-darwin17.0) libcurl/7.54.0 LibreSSL/2.0.20 zlib/1.2.11 nghttp2/1.24.0
 * wget: GNU Wget 1.20.3 built on darwin17.7.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,23 +33,23 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.265-b01, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.5.11
-Homebrew/homebrew-core (git revision 5e957; last commit 2020-11-25)
-Homebrew/homebrew-cask (git revision 81196; last commit 2020-11-25)
-* Ansible: ansible 2.9.2
+* brew: Homebrew 2.6.0
+Homebrew/homebrew-core (git revision e24f56; last commit 2020-12-03)
+Homebrew/homebrew-cask (git revision e88495; last commit 2020-09-30)
+* Ansible: ansible 2.10.3
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.9.2_1/libexec/lib/python3.8/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.10.3_1/libexec/lib/python3.9/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.29
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.74.0
 * carthage: 0.29.0
-* imagemagick (convert): Version: ImageMagick 7.0.9-14 Q16 x86_64 2020-01-06 https://imagemagick.org
-* ghostscript (ps2ascii): 9.23
+* imagemagick (convert): Version: ImageMagick 7.0.10-45 Q16 x86_64 2020-12-03 https://imagemagick.org
+* ghostscript (ps2ascii): 9.53.3
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: 8.16.2
-* applesimutils version 0.8.2
+* firebase: 8.17.0
+* applesimutils version 0.9
 * jq: 1.6
 dyld: Library not loaded: @rpath/libswiftCore.dylib
   Referenced from: /usr/local/bin/xcbeautify
@@ -58,9 +58,10 @@ dyld: Library not loaded: @rpath/libswiftCore.dylib
 ./system_report.sh: line 70: xclogparser: command not found
 * 
 * Screen 4.06.02
-* applesimutils 0.8.2
-./system_report.sh: line 73: openconnect: command not found
-* 
+* applesimutils 0.9
+* OpenConnect version v8.10
+./system_report.sh: line 74: aws: command not found
+* aws-cli: 
 
 --- Bitrise CLI tool versions
 * bitrise: 1.44.0
@@ -71,70 +72,98 @@ dyld: Library not loaded: @rpath/libswiftCore.dylib
 
 
 === Brew list versions ==================
-ansible 2.9.2_1
+ansible 2.10.3_1
 ant 1.10.9
-applesimutils 0.8.2
+applesimutils 0.9
 autoconf 2.69
+bdw-gc 8.0.4
+c-ares 1.17.1
 carthage 0.29.0
+cmake 3.19.1
 coreutils 8.29
+cunit 2.1-3
+docbook 5.1_1
+docbook-xsl 1.79.2_1
 flow 0.74.0
-freetype 2.10.1
-gdbm 1.18.1
-gettext 0.20.1
-ghostscript 9.23
+freetype 2.10.4
+gdbm 1.18.1_1
+gettext 0.21
+ghostscript 9.53.3
 git 2.17.1
 git-lfs 2.4.2
-glib 2.62.4
+glib 2.66.2_1
+gmp 6.2.1
+gnu-getopt 2.36.1
+gnutls 3.6.15
 go 1.10.3
 gradle 6.7.1
+guile 3.0.4
 icu4c 61.1
-ilmbase 2.4.0
-imagemagick 7.0.9-14
+ilmbase 2.5.3
+imagemagick 7.0.10-45
+jansson 2.13.1
+jemalloc 5.2.1_1
 jenv 0.5.4
-jpeg 9c
+jpeg 9d
 jq 1.6
-libde265 1.0.4
-libffi 3.2.1
-libheif 1.6.1
+libde265 1.0.8
+libev 4.33
+libevent 2.1.12
+libffi 3.3
+libheif 1.9.1
 libidn2 2.3.0
-libomp 9.0.0
+liblqr 0.4.2_1
+libomp 11.0.0
 libpng 1.6.37
-libtiff 4.1.0
-libtool 2.4.6_1
+libtasn1 4.16.0
+libtiff 4.1.0_1
+libtool 2.4.6_2
 libunistring 0.9.10
-libyaml 0.2.2
-little-cms2 2.9
+libyaml 0.2.5
+little-cms2 2.11
 maven 3.6.3_1
-mercurial 5.2.2
+mercurial 5.6
+nettle 3.6
+nghttp2 1.42.0
+ninja 1.10.2
 node 10.4.1
 oniguruma 6.9.6
-openexr 2.4.0
+openconnect 8.10
+openexr 2.5.3
 openjdk 15.0.1
 openjpeg 2.3.1
-openssl@1.1 1.1.1d
-pcre 8.43
-pkg-config 0.29.2
+openssl@1.1 1.1.1h
+p11-kit 0.23.21
+pcre 8.44
+pkg-config 0.29.2_3
 python 3.7.6_1
-python@3.8 3.8.1
+python@3.8 3.8.6_2
+python@3.9 3.9.0_4
 rbenv 1.1.2
-readline 8.0.1
-ruby-build 20191205
+readline 8.0.1 8.0.4
+ruby-build 20191205 20201118
 screen 4.6.2
-shared-mime-info 1.15
-sqlite 3.30.1
+shared-mime-info 1.15 2.0
+sphinx-doc 3.3.1_1
+sqlite 3.30.1 3.33.0
+stoken 0.92_1
 tree 1.7.0
-watchman 4.9.0_3
-webp 1.0.3
+unbound 1.12.0_1
+watchman 4.9.0_3 4.9.0_5
+webp 1.0.3 1.1.0
 wget 1.20.3_2
-x265 3.2.1
+x265 3.2.1 3.4_1
 xcbeautify 0.8.1
-xz 5.2.4
+xmlto 0.0.28
+xz 5.2.4 5.2.5
 yarn 1.7.0
 ========================================
 
 
 === Brew deps tree ==================
-bitrise-io/cask-versions/adoptopenjdk8
+adoptopenjdk/openjdk/adoptopenjdk11
+
+adoptopenjdk/openjdk/adoptopenjdk8
 
 ansible
 ├── libyaml
@@ -154,9 +183,22 @@ wix/brew/applesimutils
 
 autoconf
 
+bdw-gc
+
+c-ares
+
 carthage
 
+cmake
+
 coreutils
+
+cunit
+
+docbook
+
+docbook-xsl
+└── docbook
 
 flow
 
@@ -189,10 +231,55 @@ glib
     │   └── readline
     └── xz
 
+gmp
+
+gnu-getopt
+
+gnutls
+├── gmp
+├── guile
+│   ├── bdw-gc
+│   ├── gmp
+│   ├── libffi
+│   ├── libtool
+│   ├── libunistring
+│   ├── pkg-config
+│   └── readline
+├── libidn2
+│   ├── gettext
+│   └── libunistring
+├── libtasn1
+├── libunistring
+├── nettle
+│   └── gmp
+├── p11-kit
+│   └── libffi
+└── unbound
+    ├── libevent
+    │   └── openssl@1.1
+    ├── nghttp2
+    │   ├── c-ares
+    │   ├── jansson
+    │   ├── jemalloc
+    │   ├── libev
+    │   ├── libevent
+    │   │   └── openssl@1.1
+    │   └── openssl@1.1
+    └── openssl@1.1
+
 go
 
 gradle
 └── openjdk
+
+guile
+├── bdw-gc
+├── gmp
+├── libffi
+├── libtool
+├── libunistring
+├── pkg-config
+└── readline
 
 icu4c
 
@@ -266,6 +353,10 @@ imagemagick
 │       └── jpeg
 └── xz
 
+jansson
+
+jemalloc
+
 jenv
 
 jpeg
@@ -274,6 +365,11 @@ jq
 └── oniguruma
 
 libde265
+
+libev
+
+libevent
+└── openssl@1.1
 
 libffi
 
@@ -305,9 +401,24 @@ libidn2
 ├── gettext
 └── libunistring
 
+liblqr
+└── glib
+    ├── gettext
+    ├── libffi
+    ├── pcre
+    └── python@3.9
+        ├── gdbm
+        ├── openssl@1.1
+        ├── readline
+        ├── sqlite
+        │   └── readline
+        └── xz
+
 libomp
 
 libpng
+
+libtasn1
 
 libtiff
 └── jpeg
@@ -335,10 +446,68 @@ mercurial
     │   └── readline
     └── xz
 
+nettle
+└── gmp
+
+nghttp2
+├── c-ares
+├── jansson
+├── jemalloc
+├── libev
+├── libevent
+│   └── openssl@1.1
+└── openssl@1.1
+
+ninja
+└── python@3.9
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
 node
 └── icu4c
 
 oniguruma
+
+openconnect
+├── gettext
+├── gnutls
+│   ├── gmp
+│   ├── guile
+│   │   ├── bdw-gc
+│   │   ├── gmp
+│   │   ├── libffi
+│   │   ├── libtool
+│   │   ├── libunistring
+│   │   ├── pkg-config
+│   │   └── readline
+│   ├── libidn2
+│   │   ├── gettext
+│   │   └── libunistring
+│   ├── libtasn1
+│   ├── libunistring
+│   ├── nettle
+│   │   └── gmp
+│   ├── p11-kit
+│   │   └── libffi
+│   └── unbound
+│       ├── libevent
+│       │   └── openssl@1.1
+│       ├── nghttp2
+│       │   ├── c-ares
+│       │   ├── jansson
+│       │   ├── jemalloc
+│       │   ├── libev
+│       │   ├── libevent
+│       │   │   └── openssl@1.1
+│       │   └── openssl@1.1
+│       └── openssl@1.1
+└── stoken
+    └── nettle
+        └── gmp
 
 openexr
 └── ilmbase
@@ -355,6 +524,9 @@ openjpeg
         └── jpeg
 
 openssl@1.1
+
+p11-kit
+└── libffi
 
 pcre
 
@@ -410,10 +582,36 @@ shared-mime-info
     │   └── docbook
     └── gnu-getopt
 
+sphinx-doc
+└── python@3.9
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
 sqlite
 └── readline
 
+stoken
+└── nettle
+    └── gmp
+
 tree
+
+unbound
+├── libevent
+│   └── openssl@1.1
+├── nghttp2
+│   ├── c-ares
+│   ├── jansson
+│   ├── jemalloc
+│   ├── libev
+│   ├── libevent
+│   │   └── openssl@1.1
+│   └── openssl@1.1
+└── openssl@1.1
 
 watchman
 ├── openssl@1.1
@@ -442,6 +640,12 @@ x265
 
 thii/xcbeautify/xcbeautify
 
+xmlto
+├── docbook
+├── docbook-xsl
+│   └── docbook
+└── gnu-getopt
+
 xz
 
 yarn
@@ -452,164 +656,160 @@ yarn
 
 
 === Ruby and rubygems ==================
-* Ruby (default): ruby 2.5.7p206 (2019-10-01 revision 67816) [x86_64-darwin17]
+* Ruby (default): ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-darwin17]
 --- Available ruby versions ---
   system
   2.4.9
-* 2.5.7 (set by /Users/vagrant/.rbenv/version)
-  2.6.5
+  2.5.7
+* 2.6.5 (set by /Users/vagrant/.ruby-version)
 -------------------------------
 * rbenv: 1.1.2
-* Rubygems: 2.7.6.2
+* Rubygems: 3.0.3
 * Bundler: Bundler version 2.1.4
-* CocoaPods: 1.8.4
+* CocoaPods: 1.10.0
 * xcpretty: 0.3.0
 ========================================
 
 
 === All Ruby GEMs ======================
-activesupport (4.2.11.1)
+activesupport (5.2.4.4)
 addressable (2.7.0)
-algoliasearch (1.27.1)
+algoliasearch (1.27.5)
 atomos (0.1.3)
-aws-sdk (1.67.0)
-aws-sdk-v1 (1.67.0)
-babosa (1.0.3)
-bigdecimal (default: 1.3.4)
-bundler (2.1.4, 2.0.2)
-certified (1.0.0)
+aws-eventstream (1.1.0)
+aws-partitions (1.402.0)
+aws-sdk-core (3.109.3)
+aws-sdk-kms (1.39.0)
+aws-sdk-s3 (1.86.0)
+aws-sigv4 (1.2.2)
+babosa (1.0.4)
+bigdecimal (default: 1.4.1)
+bundler (2.1.4, default: 1.17.2)
 CFPropertyList (3.0.2)
 claide (1.0.3)
 clamp (1.3.2)
 cmath (default: 1.0.0)
-cocoapods (1.8.4)
-cocoapods-core (1.8.4)
+cocoapods (1.10.0)
+cocoapods-core (1.10.0)
 cocoapods-deintegrate (1.0.4)
-cocoapods-downloader (1.3.0)
+cocoapods-downloader (1.4.0)
 cocoapods-plugins (1.0.0)
 cocoapods-search (1.0.0)
-cocoapods-stats (1.1.0)
-cocoapods-trunk (1.4.1)
-cocoapods-try (1.1.0)
+cocoapods-trunk (1.5.0)
+cocoapods-try (1.2.0)
 colored (1.2)
 colored2 (3.1.2)
-commander (4.4.7)
 commander-fastlane (4.4.6)
-concurrent-ruby (1.1.5)
-csv (default: 1.0.0)
-cupertino (1.3.4)
-date (default: 1.0.0)
+concurrent-ruby (1.1.7)
+csv (default: 3.0.9)
+date (default: 2.0.0)
 dbm (default: 1.0.0)
-declarative (0.0.10)
+declarative (0.0.20)
 declarative-option (0.1.0)
-did_you_mean (1.2.0)
-digest-crc (0.4.1)
+digest-crc (0.6.1)
 domain_name (0.5.20190701)
-dotenv (2.7.5)
-dubai (0.2.0)
-emoji_regex (1.0.1)
+dotenv (2.7.6)
+e2mmap (default: 0.1.0)
+emoji_regex (3.2.1)
 escape (0.0.4)
-etc (default: 1.0.0)
-excon (0.70.0)
-faraday (0.17.1)
-faraday-cookie_jar (0.0.6)
-faraday_middleware (0.13.1)
-fastimage (2.1.7)
-fastlane (2.137.0)
+etc (default: 1.0.1)
+ethon (0.12.0)
+excon (0.78.0)
+faraday (1.1.0)
+faraday-cookie_jar (0.0.7)
+faraday_middleware (1.0.0)
+fastimage (2.2.0)
+fastlane (2.166.0)
 fcntl (default: 1.0.0)
+ffi (1.13.1)
 fiddle (default: 1.0.0)
-fileutils (default: 1.0.2)
+fileutils (default: 1.1.0)
+forwardable (default: 1.2.0)
 fourflusher (2.3.1)
 fuzzy_match (2.0.4)
 gdbm (default: 2.0.0)
 gh_inspector (1.1.3)
-google-api-client (0.23.9)
-google-cloud-core (1.4.1)
-google-cloud-env (1.3.0)
-google-cloud-storage (1.16.0)
-googleauth (0.6.7)
-highline (2.0.3, 1.7.10)
-houston (2.4.0)
+google-api-client (0.38.0)
+google-cloud-core (1.5.0)
+google-cloud-env (1.4.0)
+google-cloud-errors (1.0.1)
+google-cloud-storage (1.29.1)
+googleauth (0.14.0)
+highline (1.7.10)
 http-cookie (1.0.3)
 httpclient (2.8.3)
-i18n (0.9.5)
-io-console (default: 0.4.6)
-ipaddr (default: 1.2.0)
-json (default: 2.1.0, 1.8.6)
-jwt (2.1.0)
-mechanize (2.5.1)
+i18n (1.8.5)
+io-console (default: 0.4.7)
+ipaddr (default: 1.2.2)
+irb (default: 1.0.0)
+jmespath (1.4.0)
+json (default: 2.1.0)
+jwt (2.2.2)
+logger (default: 1.3.0)
+matrix (default: 0.1.0)
 memoist (0.16.2)
-mime-types (3.3, 1.25.1)
-mime-types-data (3.2019.1009)
-mini_magick (4.9.5)
-mini_portile2 (2.4.0, 2.1.0)
-minitest (5.10.3)
+mini_magick (4.11.0)
+mini_mime (1.0.2)
+mini_portile2 (2.4.0)
+minitest (5.14.2)
 molinillo (0.6.6)
-multi_json (1.14.1)
-multi_xml (0.6.0)
-multipart-post (2.1.1, 2.0.0)
-nanaimo (0.2.6)
+multi_json (1.15.0)
+multipart-post (2.0.0)
+mutex_m (default: 0.1.0)
+nanaimo (0.3.0)
 nap (1.1.0)
 naturally (2.2.0)
-net-http-digest_auth (1.4.1)
-net-http-persistent (2.9.4)
-net-sftp (2.1.2)
-net-ssh (5.2.0)
-net-telnet (0.1.1)
 netrc (0.11.0)
-nokogiri (1.10.10, 1.6.8.1)
-nomad-cli (0.0.2)
-ntlm-http (0.1.1)
+nokogiri (1.10.10)
 openssl (default: 2.1.2)
-os (1.0.1)
-plist (3.1.0)
-power_assert (1.1.1)
-psych (default: 3.0.2)
-public_suffix (2.0.5)
-rack (1.6.11)
-rack-protection (1.5.5)
-rake (12.3.0)
-rdoc (default: 6.0.1.1)
+os (1.1.1)
+ostruct (default: 0.1.0)
+plist (3.5.0)
+prime (default: 0.1.0)
+psych (default: 3.1.0)
+public_suffix (4.0.6)
+rake (13.0.1)
+rdoc (default: 6.1.2)
 representable (3.0.4)
 retriable (3.1.2)
+rexml (default: 3.1.9)
 rouge (2.0.7)
+rss (default: 0.2.7)
 ruby-macho (1.4.0)
-rubyzip (1.3.0)
+ruby2_keywords (0.0.2)
+rubyzip (2.3.0)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
-shenzhen (0.14.3)
-signet (0.12.0)
-simctl (1.6.6)
-sinatra (1.4.8)
+shell (default: 0.7)
+signet (0.14.0)
+simctl (1.6.8)
 slack-notifier (2.3.2)
 slather (2.5.0)
-stringio (default: 0.0.1)
+stringio (default: 0.0.2)
 strscan (default: 1.0.0)
-term-ansicolor (1.0.7)
+sync (default: 0.5.0)
 terminal-notifier (2.0.0)
-terminal-table (1.4.5)
-test-unit (3.2.7)
+terminal-table (1.8.0)
 thread_safe (0.3.6)
-tilt (2.0.10)
+thwait (default: 0.1.0)
+tracer (default: 0.1.0)
 trainer (0.9.1)
-tty-cursor (0.7.0)
-tty-screen (0.7.0)
-tty-spinner (0.9.2)
-tzinfo (1.2.5)
+tty-cursor (0.7.1)
+tty-screen (0.8.1)
+tty-spinner (0.9.3)
+typhoeus (1.4.0)
+tzinfo (1.2.8)
 uber (0.1.0)
 unf (0.1.4)
-unf_ext (0.0.7.6)
-venice (0.6.0)
+unf_ext (0.0.7.7)
+unicode-display_width (1.7.0)
 webrick (default: 1.4.2)
-webrobots (0.1.2)
 word_wrap (1.0.0)
-xcode-install (2.6.3)
-xcodeproj (1.13.0)
+xcodeproj (1.19.0)
 xcpretty (0.3.0)
 xcpretty-json-formatter (0.1.1)
 xcpretty-travis-formatter (1.0.0)
-xmlrpc (0.3.0)
 zlib (default: 1.0.0)
 ========================================
 
@@ -617,7 +817,7 @@ zlib (default: 1.0.0)
 === NPM global packages ==========================
 * Cordova: 8.0.0
 * Ionic: 3.20.0
-./system_report.sh: line 128: appcenter: command not found
+./system_report.sh: line 129: appcenter: command not found
 * AppCenter CLI: 
 ========================================
 
@@ -1066,20 +1266,20 @@ Software:
       Kernel Version: Darwin 17.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: stg-xcode-9-4-201126212109-4dKQYiN7VfjXQWpddjGrmZ
+      Computer Name: stg-xcode-9-4-201204174030-eHfcXpGU7RhD7Gf2RLA3gn
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 28 minutes
+      Time since boot: 23 minutes
 
 
 ========================================
 
 
 === System infos =======================
-* Free disk space: 
+* Free disk space:
     Filesystem         Size        Avail
-  /dev/disk0s2        199Gi         51Gi
+  /dev/disk0s2        199Gi         48Gi
 ========================================
 
 --- Android

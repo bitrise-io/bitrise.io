@@ -33,7 +33,9 @@
 * Node.js: v8.11.1
 * NPM: 6.13.4
 * Yarn: 1.6.0
-* aws: aws-cli/1.11.13 Python/3.5.2 Linux/4.4.0-57-generic botocore/1.4.70
+* aws: aws-cli/1.18.69 Python/3.5.2 Linux/4.4.0-57-generic botocore/1.16.19
+* jq: jq-1.5-1-a5b5cbe
+* aws-cli: aws-cli/1.18.69 Python/3.5.2 Linux/4.4.0-57-generic botocore/1.16.19
 
 * git: git version 2.7.4
 * git lfs: git-lfs/2.4.0 (GitHub; linux amd64; go 1.8.3)
@@ -58,7 +60,7 @@
 * bitrise: 1.44.0
 * stepman: 0.13.0
 * envman: 2.3.0
-/bitrise/bitrise-base/system_report.sh: line 91: bitrise-bridge: command not found
+/bitrise/bitrise-base/system_report.sh: line 93: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
 
@@ -158,7 +160,7 @@ zlib (default: 1.0.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-lts-usc1b-201126060923-gnqfwqhetj3j26qmqpwv5v 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-lts-usc1b-201203061006-yap7pvg9eryfdtszjbufx7 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -190,7 +192,7 @@ Swarm: inactive
 Runtimes: runc
 Default Runtime: runc
 Init Binary: docker-init
-containerd version: 8fba4e9a7d01810a393d5d25a3621dc101981175
+containerd version: ea765aba0d05254012b0b9e595e995c09186427f
 runc version: dc9208a3303feef5b3839f4323d9beb36df0a9dd
 init version: fec3683
 Security Options:
@@ -203,8 +205,8 @@ OSType: linux
 Architecture: x86_64
 CPUs: 2
 Total Memory: 7.304GiB
-Name: stg-lts-usc1b-201126060923-gnqfwqhetj3j26qmqpwv5v
-ID: QIDF:PC7U:FZRW:6ULD:VPNU:CLH2:6HQL:AP6V:IHXJ:N5AH:UPUA:YRYH
+Name: stg-lts-usc1b-201203061006-yap7pvg9eryfdtszjbufx7
+ID: CH4C:G4ZX:C5EP:MQXW:XKVI:LJ2Q:DXTN:D5XZ:FNUA:JBTX:Y53D:VQLW
 Docker Root Dir: /var/lib/docker
 Debug Mode (client): false
 Debug Mode (server): false
@@ -220,12 +222,12 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-lts - 21.4GB
-quay.io/bitriseio/android-ndk-lts - 21.4GB
-bitriseio/android - 31.6GB
-quay.io/bitriseio/android - 31.6GB
-bitriseio/bitrise-base - 2.63GB
-quay.io/bitriseio/bitrise-base - 2.63GB
+quay.io/bitriseio/android-ndk-lts - 21.5GB
+bitriseio/android-ndk-lts - 21.5GB
+bitriseio/android - 31.7GB
+quay.io/bitriseio/android - 31.7GB
+quay.io/bitriseio/bitrise-base - 2.7GB
+bitriseio/bitrise-base - 2.7GB
 ========================================
 
 
@@ -238,7 +240,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1       194G  166G   29G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        325M        5.7G        8.7M        1.3G        6.7G
+Mem:           7.3G        350M        5.6G        8.7M        1.3G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
