@@ -16,7 +16,7 @@
 
 === Pre-installed lib versions ========
 * zlib1g-dev: 1:1.2.8.dfsg-2ubuntu4.3
-* libssl-dev: 1.0.2g-1ubuntu4.17
+* libssl-dev: 1.0.2g-1ubuntu4.18
 * libreadline6-dev: 6.3-8ubuntu2
 * libyaml-dev: 0.1.6-3
 * libsqlite3-dev: 3.11.0-1ubuntu1.5
@@ -27,16 +27,16 @@
 * Go: go version go1.15.2 linux/amd64
 * Ruby: ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
   * bundler: Bundler version 2.1.4
-  * rubygems: 3.1.4
+  * rubygems: 3.1.5
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
 * Node.js: v12.20.0
 * NPM: 6.13.4
 * Yarn: 1.22.5
-aws-cli/1.18.188 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.28
+aws-cli/1.18.193 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.33
 * aws: 
 * jq: jq-1.5-1-a5b5cbe
-aws-cli/1.18.188 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.28
+aws-cli/1.18.193 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.33
 * aws-cli: 
 
 * git: git version 2.7.4
@@ -55,7 +55,7 @@ aws-cli/1.18.188 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.28
 
 * sudo: Sudo version 1.8.16
 
-* docker: Docker version 19.03.14, build 5eb3275d40
+* docker: Docker version 20.10.0, build 7287ab3
 * docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
@@ -71,8 +71,8 @@ aws-cli/1.18.188 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.28
 addressable (2.7.0)
 atomos (0.1.3)
 aws-eventstream (1.1.0)
-aws-partitions (1.402.0)
-aws-sdk-core (3.109.3)
+aws-partitions (1.405.0)
+aws-sdk-core (3.110.0)
 aws-sdk-kms (1.39.0)
 aws-sdk-s3 (1.86.0)
 aws-sigv4 (1.2.2)
@@ -80,7 +80,7 @@ babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
 bundler (default: 2.1.4)
-CFPropertyList (3.0.2)
+CFPropertyList (3.0.3)
 cgi (default: 0.1.0)
 claide (1.0.3)
 colored (1.2)
@@ -92,17 +92,17 @@ declarative (0.0.20)
 declarative-option (0.1.0)
 delegate (default: 0.1.0)
 did_you_mean (default: 1.4.0)
-digest-crc (0.6.1)
+digest-crc (0.6.2)
 domain_name (0.5.20190701)
 dotenv (2.7.6)
 emoji_regex (3.2.1)
 etc (default: 1.1.0)
-excon (0.78.0)
+excon (0.78.1)
 faraday (1.1.0)
 faraday-cookie_jar (0.0.7)
 faraday_middleware (1.0.0)
 fastimage (2.2.0)
-fastlane (2.169.0)
+fastlane (2.170.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.4.1)
@@ -150,7 +150,7 @@ pstore (default: 0.1.0)
 psych (default: 3.1.0)
 public_suffix (4.0.6)
 racc (default: 1.4.16)
-rake (13.0.1)
+rake (13.0.1, 12.3.3)
 rdoc (default: 6.2.1)
 readline (default: 0.0.2)
 readline-ext (default: 0.1.0)
@@ -161,7 +161,7 @@ rexml (default: 3.2.3)
 rouge (2.0.7)
 rss (default: 0.2.8)
 ruby2_keywords (0.0.2)
-rubygems-update (3.1.4)
+rubygems-update (3.1.5)
 rubyzip (2.3.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
@@ -197,7 +197,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-201203061006-x7v8zuj7vb6romzztzwdsb 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-201210150024-mhn5spbpzwsqpjuds9dbkz 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -211,7 +211,11 @@ Codename:	xenial
 
 === Docker info ========================
 Client:
+ Context:    default
  Debug Mode: false
+ Plugins:
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Build with BuildKit (Docker Inc., v0.4.2-docker)
 
 Server:
  Containers: 1
@@ -233,8 +237,8 @@ Server:
  Runtimes: runc
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: ea765aba0d05254012b0b9e595e995c09186427f
- runc version: dc9208a3303feef5b3839f4323d9beb36df0a9dd
+ containerd version: 269548fa27e0089a8b8278fc4fc781d7f65a939b
+ runc version: ff819c7e9184c13b7c2607fe6c30ae19403a7aff
  init version: fec3683
  Security Options:
   apparmor
@@ -246,8 +250,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-201203061006-x7v8zuj7vb6romzztzwdsb
- ID: YH3H:REXF:ZUGT:XDCO:PDZS:6PKZ:7YAE:PKI2:CNCL:5EXB:Q4XL:RDJZ
+ Name: stg-latest-usc1b-201210150024-mhn5spbpzwsqpjuds9dbkz
+ ID: GT5Q:QAA6:CW7L:BHEI:VG44:KFNJ:F35Z:ZAC2:AV5W:USGM:AF7E:5SNM
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -262,8 +266,8 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 35.9GB
 quay.io/bitriseio/android-ndk - 35.9GB
+bitriseio/android-ndk - 35.9GB
 bitriseio/android - 31.7GB
 quay.io/bitriseio/android - 31.7GB
 bitriseio/bitrise-base - 2.7GB
@@ -280,7 +284,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1       194G  166G   29G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        319M        5.4G        8.7M        1.6G        6.7G
+Mem:           7.3G        351M        5.4G        8.7M        1.6G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -305,6 +309,8 @@ Swap:          4.0G          0B        4.0G
 * Java: javac 1.8.0_275
 * Cordova CLI version: 10.0.0
 * Ionic CLI version: 5.4.16
+/bitrise/bitrise-android/system_report.sh: line 31: appcenter: command not found
+* Appcenter-CLI version: 
 ========================================
 
 === Java ===============================
@@ -315,18 +321,18 @@ Swap:          4.0G          0B        4.0G
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 319.0.0
-alpha 2020.11.13
-beta 2020.11.13
-bq 2.0.62
-core 2020.11.13
+Google Cloud SDK 320.0.0
+alpha 2020.12.04
+beta 2020.12.04
+bq 2.0.64
+core 2020.12.04
 gsutil 4.55
-kubectl 1.16.13
+kubectl 1.17.14
 ========================================
 
 
 === Firebase Tools components ==========
-8.17.0
+8.18.1
 ========================================
 
 
