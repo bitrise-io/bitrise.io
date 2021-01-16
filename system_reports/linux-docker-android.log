@@ -26,21 +26,21 @@
 === Pre-installed tool versions ========
 * Go: go version go1.15.2 linux/amd64
 * Ruby: ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
-  * bundler: Bundler version 2.2.4
-  * rubygems: 3.2.4
+  * bundler: Bundler version 2.2.5
+  * rubygems: 3.2.5
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
 * Node.js: v12.20.1
 * NPM: 6.13.4
 * Yarn: 1.22.5
-aws-cli/1.18.210 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.50
+aws-cli/1.18.214 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.54
 * aws: 
 * jq: jq-1.5-1-a5b5cbe
-aws-cli/1.18.210 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.50
+aws-cli/1.18.214 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.54
 * aws-cli: 
 
 * git: git version 2.7.4
-* git lfs: git-lfs/2.13.1 (GitHub; linux amd64; go 1.15.5)
+* git lfs: git-lfs/2.13.2 (GitHub; linux amd64; go 1.15.5)
 * mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
 * curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
 * wget: GNU Wget 1.17.1 built on linux-gnu.
@@ -71,15 +71,15 @@ aws-cli/1.18.210 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.19.50
 addressable (2.7.0)
 atomos (0.1.3)
 aws-eventstream (1.1.0)
-aws-partitions (1.414.0)
-aws-sdk-core (3.110.0)
-aws-sdk-kms (1.40.0)
+aws-partitions (1.416.0)
+aws-sdk-core (3.111.0)
+aws-sdk-kms (1.41.0)
 aws-sdk-s3 (1.87.0)
 aws-sigv4 (1.2.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (default: 2.2.4)
+bundler (default: 2.2.5)
 CFPropertyList (3.0.3)
 cgi (default: 0.1.0)
 claide (1.0.3)
@@ -100,7 +100,7 @@ etc (default: 1.1.0)
 excon (0.78.1)
 faraday (1.3.0)
 faraday-cookie_jar (0.0.7)
-faraday-net_http (1.0.0)
+faraday-net_http (1.0.1)
 faraday_middleware (1.0.0)
 fastimage (2.2.1)
 fastlane (2.171.0)
@@ -111,10 +111,13 @@ forwardable (default: 1.3.1)
 getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
 google-api-client (0.38.0)
+google-apis-core (0.2.0)
+google-apis-iamcredentials_v1 (0.1.0)
+google-apis-storage_v1 (0.1.0)
 google-cloud-core (1.5.0)
 google-cloud-env (1.4.0)
 google-cloud-errors (1.0.1)
-google-cloud-storage (1.29.2)
+google-cloud-storage (1.30.0)
 googleauth (0.14.0)
 highline (1.7.10)
 http-cookie (1.0.3)
@@ -162,7 +165,7 @@ rexml (default: 3.2.3)
 rouge (2.0.7)
 rss (default: 0.2.8)
 ruby2_keywords (0.0.2)
-rubygems-update (3.2.4)
+rubygems-update (3.2.5)
 rubyzip (2.3.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
@@ -198,7 +201,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-210107130720-8g9joclwbzgkngoe45wkdm 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-210114061131-b6kzzlknpa8smjckbwf9kh 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -251,8 +254,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-210107130720-8g9joclwbzgkngoe45wkdm
- ID: BYQT:TCLE:COUN:CRH2:J6HG:OLHT:6GRJ:N7GQ:TKJR:BDD2:7XW5:763H
+ Name: stg-latest-usc1b-210114061131-b6kzzlknpa8smjckbwf9kh
+ ID: QVJH:RYU4:HMGL:2YHJ:CHI7:7MAW:WIV3:HOF7:45ON:HNLI:VBIX:VRV2
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -267,8 +270,8 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 36GB
 quay.io/bitriseio/android-ndk - 36GB
+bitriseio/android-ndk - 36GB
 bitriseio/android - 31.8GB
 quay.io/bitriseio/android - 31.8GB
 bitriseio/bitrise-base - 2.7GB
@@ -282,10 +285,10 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop0      160G   35G  125G  22% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1       194G  167G   28G  86% /bitrise
+/dev/sda1       194G  166G   29G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        352M        4.4G        8.7M        2.6G        6.6G
+Mem:           7.3G        341M        5.4G        8.7M        1.6G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -321,24 +324,24 @@ Swap:          4.0G          0B        4.0G
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 321.0.0
-alpha 2020.12.11
-beta 2020.12.11
+Google Cloud SDK 323.0.0
+alpha 2021.01.08
+beta 2021.01.08
 bq 2.0.64
-core 2020.12.11
+core 2021.01.08
 gsutil 4.57
 ========================================
 
 
 === Firebase Tools components ==========
-9.1.1
+9.2.0
 ========================================
 
 
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-..done.
+...done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
