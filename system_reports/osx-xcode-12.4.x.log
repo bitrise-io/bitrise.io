@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_02_19_6
+* BITRISE_OSX_STACK_REV_ID: v2021_02_24
 ========================================
 
 
@@ -33,7 +33,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.282-b08, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.0.1
+* brew: Homebrew 3.0.2
 Homebrew/homebrew-core (git revision ea2952; last commit 2021-02-10)
 Homebrew/homebrew-cask (git revision 8c9c5; last commit 2021-02-10)
 * Ansible: ansible 2.10.3
@@ -951,6 +951,7 @@ Apple Watch SE - 44mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-SE-44mm
 Apple Watch Series 6 - 40mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-6-40mm)
 Apple Watch Series 6 - 44mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-6-44mm)
 == Runtimes ==
+iOS 13.7 (13.7 - 17H22) - com.apple.CoreSimulator.SimRuntime.iOS-13-7
 iOS 14.0 (14.0.1 - 18A394) - com.apple.CoreSimulator.SimRuntime.iOS-14-0
 iOS 14.1 (14.1 - 18A8394) - com.apple.CoreSimulator.SimRuntime.iOS-14-1
 iOS 14.2 (14.2 - 18B79) - com.apple.CoreSimulator.SimRuntime.iOS-14-2
@@ -962,6 +963,18 @@ watchOS 7.0 (7.0 - 18R382) - com.apple.CoreSimulator.SimRuntime.watchOS-7-0
 watchOS 7.1 (7.1 - 18R579) - com.apple.CoreSimulator.SimRuntime.watchOS-7-1
 watchOS 7.2 (7.2 - 18S561) - com.apple.CoreSimulator.SimRuntime.watchOS-7-2
 == Devices ==
+-- iOS 13.7 --
+    iPhone 8 (2E2DC00A-4BCA-436C-A5FB-4A163734D8B1) (Shutdown) 
+    iPhone 8 Plus (312601D3-4AA1-483B-95CB-7AAE83B70DD9) (Shutdown) 
+    iPhone 11 (BB950E42-0C5A-41FB-99A2-6431FC1133FB) (Shutdown) 
+    iPhone 11 Pro (15A8E5A1-F45F-4596-A38C-6BEED872F158) (Shutdown) 
+    iPhone 11 Pro Max (B12E5DD1-906E-40A4-8D4B-0DF312895AED) (Shutdown) 
+    iPhone SE (2nd generation) (8C36991D-1DC1-4174-AB06-0AA286BA7C8E) (Shutdown) 
+    iPad Pro (9.7-inch) (87E9158D-4555-466D-9BCB-D22922E1A58B) (Shutdown) 
+    iPad (7th generation) (02FC4F42-EB69-4392-8CA4-A35E25CF71D9) (Shutdown) 
+    iPad Pro (11-inch) (2nd generation) (6D9AF28A-8EED-4115-B1CF-792B5010C637) (Shutdown) 
+    iPad Pro (12.9-inch) (4th generation) (0DA4912F-CD79-4CF3-870C-F03B64760302) (Shutdown) 
+    iPad Air (3rd generation) (7648526A-6E36-4FA4-A50E-ABE76E987EE4) (Shutdown) 
 -- iOS 14.0 --
     iPhone 8 (2DEF24E3-BC1E-49A9-91D6-7E168ABA33DD) (Shutdown) 
     iPhone 8 Plus (DE17C48C-E4C9-4688-9D84-7C93EAC8F28F) (Shutdown) 
@@ -1086,11 +1099,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-12-4-210222010137-Z7FvGCkZuzVYbhBPLU5LAn
+      Computer Name: stg-xcode-12-4-210226124418-nU85xMpuqzEKZVbiJTcsrh
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 14:53
+      Time since boot: 22 minutes
 
 
 ========================================
@@ -1099,17 +1112,22 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-  /dev/disk1s5        200Gi         80Gi
+  /dev/disk1s5        200Gi         55Gi
 ========================================
 
 --- Android
 
 * ANDROID_HOME (/usr/local/share/android-sdk) content:
+add-ons
+build-tools
 cmdline-tools
 emulator
+extras
 licenses
 patcher
 platform-tools
+platforms
+system-images
 tools
 
 * ANDROID_NDK_HOME (/opt/android-ndk/android-ndk-r21) content:
@@ -1159,20 +1177,72 @@ sqlite3
 systrace
 
 * build-tools content:
-ls: /usr/local/share/android-sdk/build-tools: No such file or directory
+17.0.0
+19.1.0
+21.1.2
+22.0.1
+23.0.3
+24.0.3
+25.0.3
+26.0.1
+26.0.2
+27.0.0
+27.0.1
+27.0.2
+27.0.3
+28.0.0
+28.0.1
+28.0.2
+28.0.3
+29.0.0
+29.0.1
+29.0.2
+29.0.3
+30.0.0
 
 * extras content:
-/usr/local/share/android-sdk/extras [error opening dir]
+/usr/local/share/android-sdk/extras
+├── android
+│   └── m2repository
+├── google
+│   ├── google_play_services
+│   └── m2repository
+└── m2repository
+    └── com
 
-0 directories, 0 files
+7 directories, 0 files
 
 * platforms content:
-ls: /usr/local/share/android-sdk/platforms: No such file or directory
+android-15
+android-17
+android-19
+android-21
+android-22
+android-23
+android-24
+android-25
+android-26
+android-27
+android-28
+android-29
+android-30
 
 * system-images content:
-/usr/local/share/android-sdk/system-images [error opening dir]
+/usr/local/share/android-sdk/system-images
+├── android-26
+│   └── google_apis
+│       └── x86
+├── android-28
+│   └── google_apis
+│       └── x86_64
+├── android-29
+│   └── google_apis
+│       └── x86
+└── android-30
+    └── google_apis
+        └── x86
 
-0 directories, 0 files
+12 directories, 0 files
 
 ========================================
 
