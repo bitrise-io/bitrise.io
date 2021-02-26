@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_02_19_6
+* BITRISE_OSX_STACK_REV_ID: v2021_02_24
 ========================================
 
 
@@ -33,7 +33,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.282-b08, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.0.1
+* brew: Homebrew 3.0.2
 Homebrew/homebrew-core (git revision ea2952; last commit 2021-02-10)
 Homebrew/homebrew-cask (git revision 8c9c5; last commit 2021-02-10)
 * Ansible: ansible 2.10.5
@@ -1082,11 +1082,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-12-1-210219212632-hf2eGryTN8DA3AVoeVosRb
+      Computer Name: stg-xcode-12-1-210226102656-sodGkJq6metW7vmZ7fHWaf
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 days 18:32
+      Time since boot: 2:44
 
 
 ========================================
@@ -1095,17 +1095,22 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-  /dev/disk1s5        200Gi        106Gi
+  /dev/disk1s5        200Gi         89Gi
 ========================================
 
 --- Android
 
 * ANDROID_HOME (/usr/local/share/android-sdk) content:
+add-ons
+build-tools
 cmdline-tools
 emulator
+extras
 licenses
 patcher
 platform-tools
+platforms
+system-images
 tools
 
 * ANDROID_NDK_HOME (/opt/android-ndk/android-ndk-r21) content:
@@ -1155,20 +1160,72 @@ sqlite3
 systrace
 
 * build-tools content:
-ls: /usr/local/share/android-sdk/build-tools: No such file or directory
+17.0.0
+19.1.0
+21.1.2
+22.0.1
+23.0.3
+24.0.3
+25.0.3
+26.0.1
+26.0.2
+27.0.0
+27.0.1
+27.0.2
+27.0.3
+28.0.0
+28.0.1
+28.0.2
+28.0.3
+29.0.0
+29.0.1
+29.0.2
+29.0.3
+30.0.0
 
 * extras content:
-/usr/local/share/android-sdk/extras [error opening dir]
+/usr/local/share/android-sdk/extras
+├── android
+│   └── m2repository
+├── google
+│   ├── google_play_services
+│   └── m2repository
+└── m2repository
+    └── com
 
-0 directories, 0 files
+7 directories, 0 files
 
 * platforms content:
-ls: /usr/local/share/android-sdk/platforms: No such file or directory
+android-15
+android-17
+android-19
+android-21
+android-22
+android-23
+android-24
+android-25
+android-26
+android-27
+android-28
+android-29
+android-30
 
 * system-images content:
-/usr/local/share/android-sdk/system-images [error opening dir]
+/usr/local/share/android-sdk/system-images
+├── android-26
+│   └── google_apis
+│       └── x86
+├── android-28
+│   └── google_apis
+│       └── x86_64
+├── android-29
+│   └── google_apis
+│       └── x86
+└── android-30
+    └── google_apis
+        └── x86
 
-0 directories, 0 files
+12 directories, 0 files
 
 ========================================
 
