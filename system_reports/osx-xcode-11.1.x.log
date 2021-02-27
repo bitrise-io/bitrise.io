@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_01_08
+* BITRISE_OSX_STACK_REV_ID: v2021_02_24
 ========================================
 
 
@@ -22,34 +22,33 @@ OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_222-b10)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.222-b10, mixed mode)
 * Flutter: Flutter 1.22.1 • channel stable • https://github.com/flutter/flutter.git
 
-* git: git version 2.29.2
+* git: git version 2.30.1
 * git lfs: git-lfs/2.8.0 (GitHub; darwin amd64; go 1.12.7)
-* mercurial/hg: Mercurial Distributed SCM (version 5.6.1)
+* mercurial/hg: Mercurial Distributed SCM (version 5.7)
 * curl: curl 7.54.0 (x86_64-apple-darwin18.0) libcurl/7.54.0 LibreSSL/2.6.5 zlib/1.2.11 nghttp2/1.24.1
-* wget: GNU Wget 1.20.3 built on darwin18.7.0.
+* wget: GNU Wget 1.21.1 built on darwin18.7.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 2.7.7
-Homebrew/homebrew-core (git revision 377d7b; last commit 2020-12-16)
-Homebrew/homebrew-cask (git revision f606d; last commit 2020-12-16)
-* Ansible: ansible 2.10.3
+* brew: Homebrew 3.0.2
+Homebrew/homebrew-core (git revision ea2952; last commit 2021-02-10)
+Homebrew/homebrew-cask (git revision 8c9c5; last commit 2021-02-10)
+* Ansible: ansible 2.10.5
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/2.10.4/libexec/lib/python3.9/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/2.10.7/libexec/lib/python3.9/site-packages/ansible
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.31
 * watchman: 4.9.0
 * flow: Flow, a static type checker for JavaScript, version 0.102.0
-Please update to the latest Carthage version: 0.37.0. You currently are on 0.36.0
 * carthage: 0.36.0
-* imagemagick (convert): Version: ImageMagick 7.0.10-48 Q16 x86_64 2020-12-10 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.0.10-62 Q16 x86_64 2021-02-07 https://imagemagick.org
 * ghostscript (ps2ascii): 9.53.3
 * screen: Screen version 4.06.02 (GNU) 23-Oct-17
-* firebase: 9.3.0
+* firebase: 9.5.0
 * applesimutils version 0.9.2
 * jq: 1.6
 * Version: 0.8.1
@@ -57,7 +56,8 @@ Please update to the latest Carthage version: 0.37.0. You currently are on 0.36.
 * Screen 4.06.02
 * applesimutils 0.9.2
 * OpenConnect version v8.10
-* aws-cli: aws-cli/2.1.11 Python/3.9.1 Darwin/18.7.0 source/x86_64 prompt/off
+* aws-cli: aws-cli/2.1.25 Python/3.9.1 Darwin/18.7.0 source/x86_64 prompt/off
+* cmake: 3.19.4
 
 --- Bitrise CLI tool versions
 * bitrise: 1.45.1
@@ -68,14 +68,16 @@ Please update to the latest Carthage version: 0.37.0. You currently are on 0.36.
 
 
 === Brew list versions ==================
-ansible 2.10.4
+ansible 2.10.7
 ant 1.10.6
+aom 2.0.1_1
 applesimutils 0.9.2
 autoconf 2.69
-awscli 2.1.11
-bdw-gc 8.0.4
+awscli 2.1.25
+bdw-gc 8.0.4_2
 c-ares 1.17.1
 carthage 0.36.0
+cmake 3.19.4
 coreutils 8.31
 docbook 5.1_1
 docbook-xsl 1.79.2_1
@@ -83,19 +85,19 @@ flow 0.102.0
 freetype 2.10.4
 gdbm 1.18.1_1
 gettext 0.21
-ghostscript 9.53.3
-git 2.29.2
+ghostscript 9.53.3_1
+git 2.30.1
 git-lfs 2.8.0
-glib 2.66.2_1
+glib 2.66.6
 gmp 6.2.1
 gnu-getopt 2.36.1
 gnutls 3.6.15
 go 1.12.7
 gradle 5.5.1
-guile 3.0.4
+guile 3.0.5
 icu4c 64.2
-ilmbase 2.5.3
-imagemagick 7.0.10-48
+ilmbase 2.5.4
+imagemagick 7.0.10-62
 jemalloc 5.2.1_1
 jenv 0.5.2
 jpeg 9d
@@ -103,51 +105,50 @@ jq 1.6
 libde265 1.0.8
 libev 4.33
 libevent 2.1.12
-libffi 3.3
-libheif 1.9.1
+libffi 3.3_2
+libheif 1.11.0
 libidn2 2.3.0
 liblqr 0.4.2_1
-libomp 11.0.0
+libomp 11.0.1
 libpng 1.6.37
-libtasn1 4.16.0
-libtiff 4.1.0_1
+libtasn1 4.16.0_1
+libtiff 4.2.0
 libtool 2.4.6_2
 libunistring 0.9.10
 libyaml 0.2.5
-little-cms2 2.11
+little-cms2 2.12
 maven 3.6.1
-mercurial 5.6.1
-nettle 3.6
-nghttp2 1.42.0_1
+mercurial 5.7
+nettle 3.7
+nghttp2 1.43.0
 node 12.6.0
 node@10 10.16.0
 oniguruma 6.9.6
 openconnect 8.10
-openexr 2.5.3
-openjpeg 2.3.1
+openexr 2.5.4
+openjpeg 2.4.0
 openssl@1.1 1.1.1i
 p11-kit 0.23.22
 pcre 8.44
 pcre2 10.36
 pkg-config 0.29.2_3
 python 3.7.6_1
-python@3.8 3.8.6_2
-python@3.9 3.9.1
+python@3.8 3.8.7_2
+python@3.9 3.9.1_8
 rbenv 1.1.2
 readline 8.1 8.0.1
-ruby-build 20201210 20190615
+ruby-build 20210119 20190615
 screen 4.6.2
-shared-mime-info 1.15 2.0
+shared-mime-info 1.15 2.1
 sqlite 3.34.0 3.30.1
 stoken 0.92_1
+tcl-tk 8.6.11_1
 tree 1.8.0
-unbound 1.13.0
+unbound 1.13.1
 watchman 4.9.0_3 4.9.0_5
-webp 1.1.0 1.0.3
-wget 1.20.3_2
-x265 3.4_1 3.1.1 3.2.1
-xcbeautify 0.8.1
-xclogparser 0.2.21
+webp 1.2.0 1.0.3
+wget 1.20.3_2 1.21.1
+x265 3.1.1 3.4_2 3.2.1
 xmlto 0.0.28
 xz 5.2.5 5.2.4
 yarn 1.17.3
@@ -168,10 +169,14 @@ ansible
     ├── readline
     ├── sqlite
     │   └── readline
+    ├── tcl-tk
+    │   └── openssl@1.1
     └── xz
 
 ant
 └── openjdk
+
+aom
 
 wix/brew/applesimutils
 
@@ -184,6 +189,8 @@ awscli
     ├── readline
     ├── sqlite
     │   └── readline
+    ├── tcl-tk
+    │   └── openssl@1.1
     └── xz
 
 bdw-gc
@@ -191,6 +198,8 @@ bdw-gc
 c-ares
 
 carthage
+
+cmake
 
 coreutils
 
@@ -228,6 +237,8 @@ glib
     ├── readline
     ├── sqlite
     │   └── readline
+    ├── tcl-tk
+    │   └── openssl@1.1
     └── xz
 
 gmp
@@ -289,6 +300,7 @@ imagemagick
 │       └── jpeg
 ├── jpeg
 ├── libheif
+│   ├── aom
 │   ├── jpeg
 │   ├── libde265
 │   ├── libpng
@@ -304,6 +316,8 @@ imagemagick
 │   │   │       ├── readline
 │   │   │       ├── sqlite
 │   │   │       │   └── readline
+│   │   │       ├── tcl-tk
+│   │   │       │   └── openssl@1.1
 │   │   │       └── xz
 │   │   └── xmlto
 │   │       ├── docbook
@@ -322,6 +336,8 @@ imagemagick
 │           ├── readline
 │           ├── sqlite
 │           │   └── readline
+│           ├── tcl-tk
+│           │   └── openssl@1.1
 │           └── xz
 ├── libomp
 ├── libpng
@@ -368,6 +384,7 @@ libevent
 libffi
 
 libheif
+├── aom
 ├── jpeg
 ├── libde265
 ├── libpng
@@ -383,6 +400,8 @@ libheif
 │   │       ├── readline
 │   │       ├── sqlite
 │   │       │   └── readline
+│   │       ├── tcl-tk
+│   │       │   └── openssl@1.1
 │   │       └── xz
 │   └── xmlto
 │       ├── docbook
@@ -406,6 +425,8 @@ liblqr
         ├── readline
         ├── sqlite
         │   └── readline
+        ├── tcl-tk
+        │   └── openssl@1.1
         └── xz
 
 libomp
@@ -438,6 +459,8 @@ mercurial
     ├── readline
     ├── sqlite
     │   └── readline
+    ├── tcl-tk
+    │   └── openssl@1.1
     └── xz
 
 nettle
@@ -520,6 +543,8 @@ python@3.8
 ├── readline
 ├── sqlite
 │   └── readline
+├── tcl-tk
+│   └── openssl@1.1
 └── xz
 
 python@3.9
@@ -528,6 +553,8 @@ python@3.9
 ├── readline
 ├── sqlite
 │   └── readline
+├── tcl-tk
+│   └── openssl@1.1
 └── xz
 
 rbenv
@@ -557,6 +584,8 @@ shared-mime-info
 │       ├── readline
 │       ├── sqlite
 │       │   └── readline
+│       ├── tcl-tk
+│       │   └── openssl@1.1
 │       └── xz
 └── xmlto
     ├── docbook
@@ -570,6 +599,9 @@ sqlite
 stoken
 └── nettle
     └── gmp
+
+tcl-tk
+└── openssl@1.1
 
 tree
 
@@ -592,6 +624,8 @@ watchman
     ├── readline
     ├── sqlite
     │   └── readline
+    ├── tcl-tk
+    │   └── openssl@1.1
     └── xz
 
 webp
@@ -607,10 +641,6 @@ wget
 └── openssl@1.1
 
 x265
-
-thii/xcbeautify/xcbeautify
-
-xclogparser
 
 xmlto
 ├── docbook
@@ -644,15 +674,15 @@ yarn
 
 
 === All Ruby GEMs ======================
-activesupport (5.2.4.4)
+activesupport (5.2.4.5)
 addressable (2.7.0)
 algoliasearch (1.27.5)
 atomos (0.1.3)
 aws-eventstream (1.1.0)
-aws-partitions (1.422.0)
+aws-partitions (1.429.0)
 aws-sdk-core (3.112.0)
 aws-sdk-kms (1.42.0)
-aws-sdk-s3 (1.88.0)
+aws-sdk-s3 (1.88.1)
 aws-sigv4 (1.2.2)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
@@ -682,7 +712,7 @@ digest-crc (0.6.3)
 domain_name (0.5.20190701)
 dotenv (2.7.6)
 e2mmap (default: 0.1.0)
-emoji_regex (3.2.1)
+emoji_regex (3.2.2)
 escape (0.0.4)
 etc (default: 1.0.1)
 ethon (0.12.0)
@@ -705,16 +735,16 @@ gh_inspector (1.1.3)
 google-api-client (0.38.0)
 google-apis-core (0.2.1)
 google-apis-iamcredentials_v1 (0.1.0)
-google-apis-storage_v1 (0.1.0)
+google-apis-storage_v1 (0.2.0)
 google-cloud-core (1.5.0)
 google-cloud-env (1.4.0)
 google-cloud-errors (1.0.1)
 google-cloud-storage (1.30.0)
-googleauth (0.15.0)
+googleauth (0.15.1)
 highline (1.7.10)
 http-cookie (1.0.3)
 httpclient (2.8.3)
-i18n (1.8.8)
+i18n (1.8.9)
 io-console (default: 0.4.7)
 ipaddr (default: 1.2.2)
 irb (default: 1.0.0)
@@ -726,7 +756,7 @@ matrix (default: 0.1.0)
 memoist (0.16.2)
 mini_magick (4.11.0)
 mini_mime (1.0.2)
-minitest (5.14.3)
+minitest (5.14.4)
 molinillo (0.6.6)
 multi_json (1.15.0)
 multipart-post (2.0.0)
@@ -793,7 +823,7 @@ zlib (default: 1.0.0)
 === NPM global packages ==========================
 * Cordova: 9.0.0 (cordova-lib@9.0.1)
 * Ionic: 5.2.3
-./system_report.sh: line 129: appcenter: command not found
+./system_report.sh: line 130: appcenter: command not found
 * Appcenter-CLI version: 
 ========================================
 
@@ -1264,11 +1294,11 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-xcode-11-1-210205145946-3dSyDwYmedAqrDEXKJVeAP
+      Computer Name: stg-xcode-11-1-210226124418-uyqqV4LomcjBJzSrxTPPeS
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 28 minutes
+      Time since boot: 38 minutes
 
 
 ========================================
@@ -1277,7 +1307,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-  /dev/disk1s1        200Gi         49Gi
+  /dev/disk1s1        200Gi         50Gi
 ========================================
 
 --- Android

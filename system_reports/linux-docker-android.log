@@ -16,7 +16,7 @@
 
 === Pre-installed lib versions ========
 * zlib1g-dev: 1:1.2.8.dfsg-2ubuntu4.3
-* libssl-dev: 1.0.2g-1ubuntu4.18
+* libssl-dev: 1.0.2g-1ubuntu4.19
 * libreadline6-dev: 6.3-8ubuntu2
 * libyaml-dev: 0.1.6-3
 * libsqlite3-dev: 3.11.0-1ubuntu1.5
@@ -26,17 +26,17 @@
 === Pre-installed tool versions ========
 * Go: go version go1.15.2 linux/amd64
 * Ruby: ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
-  * bundler: Bundler version 2.2.8
-  * rubygems: 3.2.8
+  * bundler: Bundler version 2.2.11
+  * rubygems: 3.2.11
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
-* Node.js: v12.20.1
+* Node.js: v12.21.0
 * NPM: 6.13.4
 * Yarn: 1.22.5
-aws-cli/1.19.2 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.2
+aws-cli/1.19.14 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.14
 * aws: 
 * jq: jq-1.5-1-a5b5cbe
-aws-cli/1.19.2 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.2
+aws-cli/1.19.14 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.14
 * aws-cli: 
 
 * git: git version 2.7.4
@@ -72,15 +72,15 @@ addressable (2.7.0)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.1.0)
-aws-partitions (1.423.0)
+aws-partitions (1.429.0)
 aws-sdk-core (3.112.0)
 aws-sdk-kms (1.42.0)
-aws-sdk-s3 (1.88.0)
+aws-sdk-s3 (1.88.1)
 aws-sigv4 (1.2.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (default: 2.2.8)
+bundler (default: 2.2.11)
 CFPropertyList (3.0.3)
 cgi (default: 0.1.0)
 claide (1.0.3)
@@ -96,7 +96,7 @@ did_you_mean (default: 1.4.0)
 digest-crc (0.6.3)
 domain_name (0.5.20190701)
 dotenv (2.7.6)
-emoji_regex (3.2.1)
+emoji_regex (3.2.2)
 etc (default: 1.1.0)
 excon (0.79.0)
 faraday (1.3.0)
@@ -104,7 +104,7 @@ faraday-cookie_jar (0.0.7)
 faraday-net_http (1.0.1)
 faraday_middleware (1.0.0)
 fastimage (2.2.2)
-fastlane (2.173.0)
+fastlane (2.175.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.4.1)
@@ -114,12 +114,12 @@ gh_inspector (1.1.3)
 google-api-client (0.38.0)
 google-apis-core (0.2.1)
 google-apis-iamcredentials_v1 (0.1.0)
-google-apis-storage_v1 (0.1.0)
+google-apis-storage_v1 (0.2.0)
 google-cloud-core (1.5.0)
 google-cloud-env (1.4.0)
 google-cloud-errors (1.0.1)
 google-cloud-storage (1.30.0)
-googleauth (0.15.0)
+googleauth (0.15.1)
 highline (1.7.10)
 http-cookie (1.0.3)
 httpclient (2.8.3)
@@ -166,7 +166,7 @@ rexml (default: 3.2.3)
 rouge (2.0.7)
 rss (default: 0.2.8)
 ruby2_keywords (0.0.4)
-rubygems-update (3.2.8)
+rubygems-update (3.2.11)
 rubyzip (2.3.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
@@ -202,7 +202,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-210205141654-slu4atnblwnryjqqkzqrha 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-210225081934-hhj7ee8bpyg8efqshigcys 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -255,8 +255,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-210205141654-slu4atnblwnryjqqkzqrha
- ID: 3EI6:CU2L:3777:V6YM:HKXR:NQCL:374K:4V7P:LEPJ:RA4G:WNEU:BI4C
+ Name: stg-latest-usc1b-210225081934-hhj7ee8bpyg8efqshigcys
+ ID: NZLK:UZHK:DNZY:SUWC:KS6X:3K5K:MOYB:WUZA:HZVV:OWKK:ATFZ:4XDQ
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -271,25 +271,25 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 35.6GB
-quay.io/bitriseio/android-ndk - 35.6GB
-bitriseio/android - 31.8GB
-quay.io/bitriseio/android - 31.8GB
-bitriseio/bitrise-base - 2.7GB
-quay.io/bitriseio/bitrise-base - 2.7GB
+bitriseio/bitrise-base - 2.71GB
+quay.io/bitriseio/bitrise-base - 2.71GB
+bitriseio/android-ndk - 35.7GB
+quay.io/bitriseio/android-ndk - 35.7GB
+bitriseio/android - 31.9GB
+quay.io/bitriseio/android - 31.9GB
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0      160G   35G  125G  22% /
+/dev/loop0      160G   38G  122G  24% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1       194G  166G   29G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        366M        5.4G        8.7M        1.6G        6.7G
+Mem:           7.3G        325M        5.4G        8.7M        1.6G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -311,7 +311,7 @@ Swap:          4.0G          0B        4.0G
 === Pre-installed tool versions ========
 * Gradle: Gradle 6.3
 * Maven: Apache Maven 3.3.9
-* Java: javac 1.8.0_275
+* Java: javac 1.8.0_282
 * Cordova CLI version: 10.0.0
 * Ionic CLI version: 5.4.16
 * Appcenter-CLI version: 2.7.4
@@ -319,23 +319,23 @@ Swap:          4.0G          0B        4.0G
 
 === Java ===============================
 * JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
-* Java: openjdk version "1.8.0_275"
-* Javac: javac 1.8.0_275
+* Java: openjdk version "1.8.0_282"
+* Javac: javac 1.8.0_282
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 326.0.0
-alpha 2021.01.29
-beta 2021.01.29
-bq 2.0.64
-core 2021.01.29
-gsutil 4.58
+Google Cloud SDK 329.0.0
+alpha 2021.02.19
+beta 2021.02.19
+bq 2.0.65
+core 2021.02.19
+gsutil 4.59
 ========================================
 
 
 === Firebase Tools components ==========
-9.3.0
+9.5.0
 ========================================
 
 
@@ -361,13 +361,13 @@ Property diagnostic passed (1/1 checks passed).
 
  * adb version:
 Android Debug Bridge version 1.0.41
-Version 30.0.5-6877874
+Version 31.0.0-7110759
 Installed as /opt/android-sdk-linux/platform-tools/adb
 
  * SDK packages:
 * Command line Tools version: 2.1
-* Platform Tools version: 30.0.5
-* Emulator version: 30.4.3
+* Platform Tools version: 31.0.0
+* Emulator version: 30.5.0
 ========================================
 
 
