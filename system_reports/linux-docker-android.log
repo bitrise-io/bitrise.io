@@ -26,17 +26,17 @@
 === Pre-installed tool versions ========
 * Go: go version go1.15.2 linux/amd64
 * Ruby: ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
-  * bundler: Bundler version 2.2.13
-  * rubygems: 3.2.13
+  * bundler: Bundler version 2.2.14
+  * rubygems: 3.2.14
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
 * Node.js: v12.21.0
 * NPM: 6.13.4
 * Yarn: 1.22.5
-aws-cli/1.19.20 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.20
+aws-cli/1.19.25 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.25
 * aws: 
 * jq: jq-1.5-1-a5b5cbe
-aws-cli/1.19.20 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.20
+aws-cli/1.19.25 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.25
 * aws-cli: 
 
 * git: git version 2.7.4
@@ -71,16 +71,16 @@ aws-cli/1.19.20 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.20
 addressable (2.7.0)
 artifactory (3.0.15)
 atomos (0.1.3)
-aws-eventstream (1.1.0)
-aws-partitions (1.430.0)
-aws-sdk-core (3.112.0)
-aws-sdk-kms (1.42.0)
-aws-sdk-s3 (1.89.0)
-aws-sigv4 (1.2.2)
+aws-eventstream (1.1.1)
+aws-partitions (1.432.0)
+aws-sdk-core (3.113.0)
+aws-sdk-kms (1.43.0)
+aws-sdk-s3 (1.91.0)
+aws-sigv4 (1.2.3)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (default: 2.2.13)
+bundler (default: 2.2.14)
 CFPropertyList (3.0.3)
 cgi (default: 0.1.0)
 claide (1.0.3)
@@ -104,7 +104,7 @@ faraday-cookie_jar (0.0.7)
 faraday-net_http (1.0.1)
 faraday_middleware (1.0.0)
 fastimage (2.2.3)
-fastlane (2.176.0)
+fastlane (2.177.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.4.1)
@@ -112,14 +112,14 @@ forwardable (default: 1.3.1)
 getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
 google-api-client (0.38.0)
-google-apis-core (0.2.1)
-google-apis-iamcredentials_v1 (0.1.0)
-google-apis-storage_v1 (0.2.0)
-google-cloud-core (1.5.0)
-google-cloud-env (1.4.0)
-google-cloud-errors (1.0.1)
-google-cloud-storage (1.30.0)
-googleauth (0.15.1)
+google-apis-core (0.3.0)
+google-apis-iamcredentials_v1 (0.2.0)
+google-apis-storage_v1 (0.3.0)
+google-cloud-core (1.6.0)
+google-cloud-env (1.5.0)
+google-cloud-errors (1.1.0)
+google-cloud-storage (1.31.0)
+googleauth (0.16.0)
 highline (1.7.10)
 http-cookie (1.0.3)
 httpclient (2.8.3)
@@ -166,11 +166,11 @@ rexml (default: 3.2.3)
 rouge (2.0.7)
 rss (default: 0.2.8)
 ruby2_keywords (0.0.4)
-rubygems-update (3.2.13)
+rubygems-update (3.2.14)
 rubyzip (2.3.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
-signet (0.14.1)
+signet (0.15.0)
 simctl (1.6.8)
 singleton (default: 0.1.0)
 slack-notifier (2.3.2)
@@ -202,7 +202,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-210304060846-joeapbnbnrrismkzktbm6o 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-210311060950-ryygt8uwmqfu6jkzaby3du 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -242,8 +242,8 @@ Server:
  Runtimes: runc
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: 269548fa27e0089a8b8278fc4fc781d7f65a939b
- runc version: ff819c7e9184c13b7c2607fe6c30ae19403a7aff
+ containerd version: 05f951a3781f4f2c1911b05e61c160e9c30eaa8e
+ runc version: 12644e614e25b05da6fd08a38ffa0cfe1903fdec
  init version: fec3683
  Security Options:
   apparmor
@@ -255,8 +255,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-210304060846-joeapbnbnrrismkzktbm6o
- ID: 5RYV:44VA:BHL3:EFZH:HS5S:OUU5:K3VB:GXF4:6R4U:UTQ5:ZF3O:MBLH
+ Name: stg-latest-usc1b-210311060950-ryygt8uwmqfu6jkzaby3du
+ ID: FO6T:G7S3:UUNY:RPVA:6UDF:6OAN:EY5Y:3VOL:QKEE:TPF2:ULZZ:UPKA
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -271,12 +271,12 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 35.7GB
-quay.io/bitriseio/android-ndk - 35.7GB
-bitriseio/android - 31.9GB
-quay.io/bitriseio/android - 31.9GB
-quay.io/bitriseio/bitrise-base - 2.71GB
+bitriseio/android-ndk - 35.9GB
+quay.io/bitriseio/android-ndk - 35.9GB
+bitriseio/android - 32.1GB
+quay.io/bitriseio/android - 32.1GB
 bitriseio/bitrise-base - 2.71GB
+quay.io/bitriseio/bitrise-base - 2.71GB
 ========================================
 
 
@@ -289,7 +289,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1       194G  166G   29G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        358M        5.4G        8.7M        1.6G        6.7G
+Mem:           7.3G        344M        5.4G        8.7M        1.6G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -304,7 +304,7 @@ Swap:          4.0G          0B        4.0G
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2020_09_22_1
+* BITRISE_DOCKER_REV_NUMBER_ANDROID: v2020_12_15_1
 ========================================
 
 
@@ -325,24 +325,24 @@ Swap:          4.0G          0B        4.0G
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 330.0.0
-alpha 2021.02.26
-beta 2021.02.26
+Google Cloud SDK 331.0.0
+alpha 2021.03.05
+beta 2021.03.05
 bq 2.0.65
-core 2021.02.26
+core 2021.03.05
 gsutil 4.59
 ========================================
 
 
 === Firebase Tools components ==========
-9.5.0
+9.6.0
 ========================================
 
 
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-...done.
+....done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -365,9 +365,9 @@ Version 31.0.0-7110759
 Installed as /opt/android-sdk-linux/platform-tools/adb
 
  * SDK packages:
-* Command line Tools version: 2.1
+grep: /opt/android-sdk-linux/cmdline-tools//tools/source.properties: No such file or directory
 * Platform Tools version: 31.0.0
-* Emulator version: 30.5.1
+* Emulator version: 30.5.2
 ========================================
 
 
@@ -434,6 +434,7 @@ systrace
 29.0.3
 30.0.0
 30.0.2
+30.0.3
 
 * ./emulator:
 android-info.txt
@@ -517,10 +518,10 @@ android-30
 === Android APK tools ==================
 
 * aapt2:
-Android Asset Packaging Tool (aapt) 2:19
+Android Asset Packaging Tool (aapt) 2.19-6503028
 
 * bundletool:
-0.10.3
+1.4.0
 
 ========================================
 
