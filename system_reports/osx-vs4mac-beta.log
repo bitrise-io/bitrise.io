@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_03_16
+* BITRISE_OSX_STACK_REV_ID: v2021_03_19_2
 ========================================
 
 
@@ -33,7 +33,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.282-b08, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.0.6
+* brew: Homebrew 3.0.7
 Homebrew/homebrew-core (git revision ea29526900; last commit 2021-02-10)
 Homebrew/homebrew-cask (git revision 8c9c53ada1; last commit 2021-02-10)
 * Ansible: ansible 2.10.5
@@ -1101,11 +1101,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Disk
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-beta-210316142226-oJiwJxMCGqti9VkLym8tVR
+      Computer Name: stg-vs4mac-beta-210322011336-ACuoxFysTjbzydsY5ypEES
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 51 minutes
+      Time since boot: 8:38
 
 
 ========================================
@@ -1155,31 +1155,79 @@ Current
 /Users/vagrant/.local/share/Xamarin/Mono for Android/debug.keystore
 --- Android
 
-* ANDROID_HOME (/usr/local/share/android-sdk) content:
-ls: /usr/local/share/android-sdk: No such file or directory
+* ANDROID_HOME (/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx) content:
+build-tools
+cmdline-tools
+emulator
+ndk-bundle
+patcher
+platform-tools
+platforms
+tools
 
-* ANDROID_NDK_HOME (/opt/android-ndk/android-ndk-r21) content:
-ls: /opt/android-ndk/android-ndk-r21: No such file or directory
+* ANDROID_NDK_HOME (/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/ndk-bundle) content:
+CHANGELOG.md
+NOTICE
+NOTICE.toolchain
+README.md
+build
+meta
+ndk-build
+ndk-gdb
+ndk-stack
+ndk-which
+package.xml
+platforms
+prebuilt
+python-packages
+shader-tools
+simpleperf
+source.properties
+sources
+sysroot
+toolchains
+wrap.sh
 
 * Android NDK Version:
-cat: /opt/android-ndk/android-ndk-r21/source.properties: No such file or directory
+Pkg.Desc = Android NDK
+Pkg.Revision = 21.3.6528147
 
 * platform-tools content:
-ls: /usr/local/share/android-sdk/platform-tools: No such file or directory
+NOTICE.txt
+adb
+api
+dmtracedump
+e2fsdroid
+etc1tool
+fastboot
+hprof-conv
+lib64
+make_f2fs
+mke2fs
+mke2fs.conf
+package.xml
+sload_f2fs
+source.properties
+sqlite3
+systrace
 
 * build-tools content:
-ls: /usr/local/share/android-sdk/build-tools: No such file or directory
+30.0.2
 
 * extras content:
-/usr/local/share/android-sdk/extras [error opening dir]
+/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/extras [error opening dir]
 
 0 directories, 0 files
 
 * platforms content:
-ls: /usr/local/share/android-sdk/platforms: No such file or directory
+android-26
+android-27
+android-28
+android-29
+android-30
 
 * system-images content:
-/usr/local/share/android-sdk/system-images [error opening dir]
+/Users/vagrant/Library/Developer/Xamarin/android-sdk-macosx/system-images [error opening dir]
 
 0 directories, 0 files
 
