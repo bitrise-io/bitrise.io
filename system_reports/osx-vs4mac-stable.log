@@ -7,12 +7,12 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_03_19_2
+* BITRISE_OSX_STACK_REV_ID: v2021_03_24
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.15.7 darwin/amd64
+* Go: go version go1.15.9 darwin/amd64
 * Python: Python 2.7.16
 * Node.js: v12.20.1
 * NPM: 6.14.10
@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.282-b08, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.0.7
-Homebrew/homebrew-core (git revision ea29526900; last commit 2021-02-10)
-Homebrew/homebrew-cask (git revision 8c9c53ada1; last commit 2021-02-10)
+* brew: Homebrew 3.0.9
+Homebrew/homebrew-core (git revision 8950942127; last commit 2021-03-11)
+Homebrew/homebrew-cask (git revision c6777fb3c2; last commit 2021-03-11)
 * Ansible: ansible 2.10.5
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
@@ -60,7 +60,7 @@ Homebrew/homebrew-cask (git revision 8c9c53ada1; last commit 2021-02-10)
 * cmake: 3.19.4
 
 --- Bitrise CLI tool versions
-* bitrise: 1.43.0
+* bitrise: 1.45.1
 * stepman: 0.13.0
 * envman: 2.3.0
 * cmd-bridge: 0.9.5
@@ -93,6 +93,7 @@ gmp 6.2.1
 gnu-getopt 2.36.1
 gnutls 3.6.15
 go 1.15.7_1
+go@1.15 1.15.9
 gradle 6.8.2
 guile 3.0.5
 icu4c 67.1
@@ -164,6 +165,7 @@ ansible
 ├── openssl@1.1
 └── python@3.9
     ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     ├── readline
     ├── sqlite
@@ -184,6 +186,7 @@ autoconf
 awscli
 └── python@3.9
     ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     ├── readline
     ├── sqlite
@@ -232,6 +235,7 @@ glib
 ├── pcre
 └── python@3.9
     ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     ├── readline
     ├── sqlite
@@ -275,6 +279,8 @@ gnutls
 
 go
 
+go@1.15
+
 gradle
 └── openjdk
 
@@ -311,6 +317,7 @@ imagemagick
 │   │   │   ├── pcre
 │   │   │   └── python@3.9
 │   │   │       ├── gdbm
+│   │   │       ├── mpdecimal
 │   │   │       ├── openssl@1.1
 │   │   │       ├── readline
 │   │   │       ├── sqlite
@@ -331,6 +338,7 @@ imagemagick
 │       ├── pcre
 │       └── python@3.9
 │           ├── gdbm
+│           ├── mpdecimal
 │           ├── openssl@1.1
 │           ├── readline
 │           ├── sqlite
@@ -395,6 +403,7 @@ libheif
 │   │   ├── pcre
 │   │   └── python@3.9
 │   │       ├── gdbm
+│   │       ├── mpdecimal
 │   │       ├── openssl@1.1
 │   │       ├── readline
 │   │       ├── sqlite
@@ -420,6 +429,7 @@ liblqr
     ├── pcre
     └── python@3.9
         ├── gdbm
+        ├── mpdecimal
         ├── openssl@1.1
         ├── readline
         ├── sqlite
@@ -454,6 +464,7 @@ maven
 mercurial
 └── python@3.9
     ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     ├── readline
     ├── sqlite
@@ -540,6 +551,7 @@ pkg-config
 
 python@3.9
 ├── gdbm
+├── mpdecimal
 ├── openssl@1.1
 ├── readline
 ├── sqlite
@@ -571,6 +583,7 @@ shared-mime-info
 │   ├── pcre
 │   └── python@3.9
 │       ├── gdbm
+│       ├── mpdecimal
 │       ├── openssl@1.1
 │       ├── readline
 │       ├── sqlite
@@ -611,6 +624,7 @@ watchman
 ├── pcre
 └── python@3.9
     ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     ├── readline
     ├── sqlite
@@ -1101,11 +1115,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Disk
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-210322010204-SyadG2SSteNPdxbAFZsUqf
+      Computer Name: stg-vs4mac-stable-210326201105-imKkCwDZGzwfs8eDp7iPTL
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 8:45
+      Time since boot: 11:22
 
 
 ========================================
