@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_04_21_2
+* BITRISE_OSX_STACK_REV_ID: v2021_04_27_2
 ========================================
 
 
@@ -17,9 +17,9 @@
 * Node.js: v12.22.1
 * NPM: 6.14.12
 * Yarn: 1.22.10
-* Java: openjdk version "1.8.0_282"
-OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_282-b08)
-OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.282-b08, mixed mode)
+* Java: openjdk version "1.8.0_292"
+OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_292-b10)
+OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
 * Flutter: Flutter 1.22.6 • channel stable • https://github.com/flutter/flutter.git
 
 * git: git version 2.31.1
@@ -58,8 +58,8 @@ Homebrew/homebrew-cask (git revision f2ef2b1128; last commit 2021-04-13)
 * OpenConnect version v8.10
 * aws-cli: aws-cli/2.1.36 Python/3.9.4 Darwin/20.3.0 source/x86_64 prompt/off
 * cmake: 3.20.1
-./system_report.sh: line 76: danger-swift: command not found
-* danger-swift: 
+* danger-swift: 3.10.1
+[0;0m
 
 --- Bitrise CLI tool versions
 * bitrise: 1.45.1
@@ -74,7 +74,7 @@ ansible 3.2.0
 ant 1.10.9
 aom 3.0.0
 applesimutils 0.9.2
-autoconf 2.69
+autoconf 2.71
 awscli 2.1.36
 bdw-gc 8.0.4_2
 brotli 1.0.9
@@ -82,6 +82,8 @@ c-ares 1.17.1
 carthage 0.37.0
 cmake 3.20.1
 coreutils 8.32
+danger-js 10.6.4
+danger-swift 3.10.1
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 flow 0.148.0
@@ -96,7 +98,7 @@ gmp 6.2.1
 gnu-getopt 2.36.2
 gnutls 3.6.15
 go@1.15 1.15.11
-gradle 6.8.2
+gradle 7.0
 guile 3.0.5
 icu4c 68.2
 ilmbase 2.5.5
@@ -122,7 +124,7 @@ libuv 1.41.0
 libyaml 0.2.5
 little-cms2 2.12
 m4 1.4.18
-maven 3.6.3_1
+maven 3.8.1
 mercurial 5.7.1
 mpdecimal 2.5.1
 nettle 3.7.2
@@ -132,7 +134,7 @@ node@12 12.22.1
 oniguruma 6.9.6
 openconnect 8.10
 openexr 2.5.5
-openjdk 15.0.1
+openjdk 15.0.2
 openjpeg 2.4.0
 openssl@1.1 1.1.1k
 p11-kit 0.23.22
@@ -142,7 +144,7 @@ pkg-config 0.29.2_3
 python@3.9 3.9.4
 rbenv 1.1.2
 readline 8.1
-ruby-build 20210119
+ruby-build 20210405
 screen 4.8.0
 shared-mime-info 2.1
 sqlite 3.35.4
@@ -160,30 +162,6 @@ yarn 1.22.10
 
 
 === Brew deps tree ==================
-Warning: Calling `sha256 "digest" => :tag` in a bottle block is deprecated! Use `brew style --fix` on the formula to update the style or use `sha256 tag: "digest"` instead.
-Please report this issue to the wix/brew tap (not Homebrew/brew or Homebrew/core), or even better, submit a PR to fix it:
-  /usr/local/Homebrew/Library/Taps/wix/homebrew-brew/applesimutils.rb:12
-
-Warning: Calling `sha256 "digest" => :tag` in a bottle block is deprecated! Use `brew style --fix` on the formula to update the style or use `sha256 tag: "digest"` instead.
-Please report this issue to the wix/brew tap (not Homebrew/brew or Homebrew/core), or even better, submit a PR to fix it:
-  /usr/local/Homebrew/Library/Taps/wix/homebrew-brew/applesimutils.rb:13
-
-Warning: Calling `sha256 "digest" => :tag` in a bottle block is deprecated! Use `brew style --fix` on the formula to update the style or use `sha256 tag: "digest"` instead.
-Please report this issue to the wix/brew tap (not Homebrew/brew or Homebrew/core), or even better, submit a PR to fix it:
-  /usr/local/Homebrew/Library/Taps/wix/homebrew-brew/applesimutils.rb:14
-
-Warning: Calling `sha256 "digest" => :tag` in a bottle block is deprecated! Use `brew style --fix` on the formula to update the style or use `sha256 tag: "digest"` instead.
-Please report this issue to the wix/brew tap (not Homebrew/brew or Homebrew/core), or even better, submit a PR to fix it:
-  /usr/local/Homebrew/Library/Taps/wix/homebrew-brew/applesimutils.rb:15
-
-Warning: Calling `sha256 "digest" => :tag` in a bottle block is deprecated! Use `brew style --fix` on the formula to update the style or use `sha256 tag: "digest"` instead.
-Please report this issue to the wix/brew tap (not Homebrew/brew or Homebrew/core), or even better, submit a PR to fix it:
-  /usr/local/Homebrew/Library/Taps/wix/homebrew-brew/applesimutils.rb:16
-
-Warning: Calling `sha256 "digest" => :tag` in a bottle block is deprecated! Use `brew style --fix` on the formula to update the style or use `sha256 tag: "digest"` instead.
-Please report this issue to the wix/brew tap (not Homebrew/brew or Homebrew/core), or even better, submit a PR to fix it:
-  /usr/local/Homebrew/Library/Taps/wix/homebrew-brew/applesimutils.rb:17
-
 adoptopenjdk/openjdk/adoptopenjdk11
 
 adoptopenjdk/openjdk/adoptopenjdk8
@@ -231,6 +209,11 @@ carthage
 cmake
 
 coreutils
+
+danger/tap/danger-js
+
+danger/tap/danger-swift
+└── danger/tap/danger-js
 
 docbook
 
@@ -1166,11 +1149,11 @@ Software:
       Kernel Version: Darwin 20.3.0
       Boot Volume: Disk
       Boot Mode: Normal
-      Computer Name: stg-xcode-12-5-210422101313-odmBWURT3VpDVya2vuNo2T
+      Computer Name: stg-xcode-12-5-210430190451-KRhofBM5dqiW5vdqtJCCSQ
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 13 minutes
+      Time since boot: 21 minutes
 
 
 ========================================
@@ -1179,7 +1162,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk1s5s1        200Gi         67Gi
+/dev/disk1s5s1        200Gi         66Gi
 ========================================
 
 --- Android
