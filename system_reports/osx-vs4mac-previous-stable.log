@@ -33,9 +33,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.282-b08, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.0.4
-Homebrew/homebrew-core (git revision ea2952; last commit 2021-02-10)
-Homebrew/homebrew-cask (git revision 8c9c5; last commit 2021-02-10)
+* brew: Homebrew 3.1.5
+Homebrew/homebrew-core (git revision 9e21f78f8d; last commit 2021-04-13)
+Homebrew/homebrew-cask (git revision f2ef2b1128; last commit 2021-04-13)
 * Ansible: ansible 2.10.3
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
@@ -58,6 +58,8 @@ Homebrew/homebrew-cask (git revision 8c9c5; last commit 2021-02-10)
 * OpenConnect version v8.10
 * aws-cli: aws-cli/2.1.25 Python/3.9.1 Darwin/19.6.0 source/x86_64 prompt/off
 * cmake: 3.19.4
+./system_report.sh: line 76: danger-swift: command not found
+* danger-swift: 
 
 --- Bitrise CLI tool versions
 * bitrise: 1.45.1
@@ -160,12 +162,11 @@ ansible
 ├── openssl@1.1
 └── python@3.9
     ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     ├── readline
     ├── sqlite
     │   └── readline
-    ├── tcl-tk
-    │   └── openssl@1.1
     └── xz
 
 aom
@@ -173,16 +174,16 @@ aom
 wix/brew/applesimutils
 
 autoconf
+└── m4
 
 awscli
 └── python@3.9
     ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     ├── readline
     ├── sqlite
     │   └── readline
-    ├── tcl-tk
-    │   └── openssl@1.1
     └── xz
 
 bdw-gc
@@ -225,12 +226,11 @@ glib
 ├── pcre
 └── python@3.9
     ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     ├── readline
     ├── sqlite
     │   └── readline
-    ├── tcl-tk
-    │   └── openssl@1.1
     └── xz
 
 gmp
@@ -244,6 +244,7 @@ gnutls
 │   ├── gmp
 │   ├── libffi
 │   ├── libtool
+│   │   └── m4
 │   ├── libunistring
 │   ├── pkg-config
 │   └── readline
@@ -273,6 +274,7 @@ guile
 ├── gmp
 ├── libffi
 ├── libtool
+│   └── m4
 ├── libunistring
 ├── pkg-config
 └── readline
@@ -301,12 +303,11 @@ imagemagick
 │   │   │   ├── pcre
 │   │   │   └── python@3.9
 │   │   │       ├── gdbm
+│   │   │       ├── mpdecimal
 │   │   │       ├── openssl@1.1
 │   │   │       ├── readline
 │   │   │       ├── sqlite
 │   │   │       │   └── readline
-│   │   │       ├── tcl-tk
-│   │   │       │   └── openssl@1.1
 │   │   │       └── xz
 │   │   └── xmlto
 │   │       ├── docbook
@@ -321,18 +322,18 @@ imagemagick
 │       ├── pcre
 │       └── python@3.9
 │           ├── gdbm
+│           ├── mpdecimal
 │           ├── openssl@1.1
 │           ├── readline
 │           ├── sqlite
 │           │   └── readline
-│           ├── tcl-tk
-│           │   └── openssl@1.1
 │           └── xz
 ├── libomp
 ├── libpng
 ├── libtiff
 │   └── jpeg
 ├── libtool
+│   └── m4
 ├── little-cms2
 │   ├── jpeg
 │   └── libtiff
@@ -385,12 +386,11 @@ libheif
 │   │   ├── pcre
 │   │   └── python@3.9
 │   │       ├── gdbm
+│   │       ├── mpdecimal
 │   │       ├── openssl@1.1
 │   │       ├── readline
 │   │       ├── sqlite
 │   │       │   └── readline
-│   │       ├── tcl-tk
-│   │       │   └── openssl@1.1
 │   │       └── xz
 │   └── xmlto
 │       ├── docbook
@@ -410,12 +410,11 @@ liblqr
     ├── pcre
     └── python@3.9
         ├── gdbm
+        ├── mpdecimal
         ├── openssl@1.1
         ├── readline
         ├── sqlite
         │   └── readline
-        ├── tcl-tk
-        │   └── openssl@1.1
         └── xz
 
 libomp
@@ -428,6 +427,7 @@ libtiff
 └── jpeg
 
 libtool
+└── m4
 
 libunistring
 
@@ -441,12 +441,11 @@ little-cms2
 mercurial
 └── python@3.9
     ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     ├── readline
     ├── sqlite
     │   └── readline
-    ├── tcl-tk
-    │   └── openssl@1.1
     └── xz
 
 nettle
@@ -459,7 +458,16 @@ nghttp2
 └── openssl@1.1
 
 node
-└── icu4c
+├── brotli
+├── c-ares
+├── icu4c
+├── libuv
+├── nghttp2
+│   ├── c-ares
+│   ├── jemalloc
+│   ├── libev
+│   └── openssl@1.1
+└── openssl@1.1
 
 node@12
 └── icu4c
@@ -475,6 +483,7 @@ openconnect
 │   │   ├── gmp
 │   │   ├── libffi
 │   │   ├── libtool
+│   │   │   └── m4
 │   │   ├── libunistring
 │   │   ├── pkg-config
 │   │   └── readline
@@ -525,17 +534,17 @@ pkg-config
 
 python@3.9
 ├── gdbm
+├── mpdecimal
 ├── openssl@1.1
 ├── readline
 ├── sqlite
 │   └── readline
-├── tcl-tk
-│   └── openssl@1.1
 └── xz
 
 rbenv
 └── ruby-build
     ├── autoconf
+    │   └── m4
     ├── pkg-config
     └── readline
 
@@ -543,6 +552,7 @@ readline
 
 ruby-build
 ├── autoconf
+│   └── m4
 ├── pkg-config
 └── readline
 
@@ -556,12 +566,11 @@ shared-mime-info
 │   ├── pcre
 │   └── python@3.9
 │       ├── gdbm
+│       ├── mpdecimal
 │       ├── openssl@1.1
 │       ├── readline
 │       ├── sqlite
 │       │   └── readline
-│       ├── tcl-tk
-│       │   └── openssl@1.1
 │       └── xz
 └── xmlto
     ├── docbook
@@ -596,12 +605,11 @@ watchman
 ├── pcre
 └── python@3.9
     ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     ├── readline
     ├── sqlite
     │   └── readline
-    ├── tcl-tk
-    │   └── openssl@1.1
     └── xz
 
 webp
@@ -628,7 +636,16 @@ xz
 
 yarn
 └── node
-    └── icu4c
+    ├── brotli
+    ├── c-ares
+    ├── icu4c
+    ├── libuv
+    ├── nghttp2
+    │   ├── c-ares
+    │   ├── jemalloc
+    │   ├── libev
+    │   └── openssl@1.1
+    └── openssl@1.1
 
 ========================================
 
@@ -995,11 +1012,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Untitled
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-previous-210412085526-E4yWoRCcHjfNFYQdB7KmML
+      Computer Name: stg-vs4mac-stable-previous-210503011107-rooomBz3pvdfFRh8cgJnj
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 50 minutes
+      Time since boot: 13:58
 
 
 ========================================
