@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_04_27_2
+* BITRISE_OSX_STACK_REV_ID: v2021_05_03_1
 ========================================
 
 
@@ -33,7 +33,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.1.3
+* brew: Homebrew 3.1.5
 Homebrew/homebrew-core (git revision 9e21f78f8d; last commit 2021-04-13)
 Homebrew/homebrew-cask (git revision f2ef2b1128; last commit 2021-04-13)
 * Ansible: ansible 2.10.7
@@ -695,7 +695,7 @@ yarn
 * rbenv: 1.1.2
 * Rubygems: 3.0.3
 * Bundler: Bundler version 2.1.4
-* CocoaPods: 1.10.0
+* CocoaPods: 1.10.1
 * xcpretty: 0.3.0
 ========================================
 
@@ -719,8 +719,8 @@ CFPropertyList (3.0.3)
 claide (1.0.3)
 clamp (1.3.2)
 cmath (default: 1.0.0)
-cocoapods (1.10.0)
-cocoapods-core (1.10.0)
+cocoapods (1.10.1, 1.10.0)
+cocoapods-core (1.10.1, 1.10.0)
 cocoapods-deintegrate (1.0.4)
 cocoapods-downloader (1.4.0)
 cocoapods-plugins (1.0.0)
@@ -776,9 +776,11 @@ i18n (1.8.10)
 io-console (default: 0.4.7)
 ipaddr (default: 1.2.2)
 irb (default: 1.0.0)
+jazzy (0.13.6)
 jmespath (1.4.0)
 json (default: 2.1.0)
 jwt (2.2.2)
+liferaft (0.0.6)
 logger (default: 1.3.0)
 matrix (default: 0.1.0)
 memoist (0.16.2)
@@ -788,6 +790,7 @@ minitest (5.11.3)
 molinillo (0.6.6)
 multi_json (1.15.0)
 multipart-post (2.0.0)
+mustache (1.1.1)
 mutex_m (default: 0.1.0)
 nanaimo (0.3.0)
 nap (1.1.0)
@@ -795,6 +798,7 @@ naturally (2.2.1)
 net-telnet (0.2.0)
 netrc (0.11.0)
 nokogiri (1.11.2 x86_64-darwin)
+open4 (1.3.4)
 openssl (default: 2.1.2)
 os (1.1.1)
 ostruct (default: 0.1.0)
@@ -806,6 +810,7 @@ public_suffix (4.0.6)
 racc (1.5.2)
 rake (12.3.2)
 rdoc (default: 6.1.2)
+redcarpet (3.5.1)
 representable (3.0.4)
 retriable (3.1.2)
 rexml (default: 3.1.9)
@@ -814,6 +819,7 @@ rss (default: 0.2.7)
 ruby-macho (1.4.0)
 ruby2_keywords (0.0.4)
 rubyzip (2.3.0)
+sassc (2.4.0)
 scanf (default: 1.0.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
@@ -822,6 +828,7 @@ signet (0.14.1)
 simctl (1.6.8)
 slack-notifier (2.3.2)
 slather (2.5.0)
+sqlite3 (1.4.2)
 stringio (default: 0.0.2)
 strscan (default: 1.0.0)
 sync (default: 0.5.0)
@@ -843,11 +850,14 @@ unf_ext (0.0.7.7)
 unicode-display_width (1.7.0)
 webrick (default: 1.4.2)
 word_wrap (1.0.0)
+xcinvoke (0.3.0)
 xcode-install (2.6.8)
 xcodeproj (1.19.0)
+xcov (1.7.5)
 xcpretty (0.3.0)
 xcpretty-json-formatter (0.1.1)
 xcpretty-travis-formatter (1.0.1)
+xcresult (0.2.1)
 xmlrpc (0.3.0)
 zlib (default: 1.0.0)
 ========================================
@@ -999,16 +1009,16 @@ watchOS 6.1 (6.1.1 - 17S445) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
 watchOS 7.0 (7.0 - 18R382) - com.apple.CoreSimulator.SimRuntime.watchOS-7-0
 == Devices ==
 -- iOS 13.3 --
-    iPhone 8 (935B81FE-EEC6-4C57-9395-411BA3A63036) (Shutdown) 
-    iPhone 8 Plus (CCD75447-4187-4C41-9253-E511C4A59525) (Shutdown) 
-    iPhone 11 (EFCC329B-ABCE-46D3-8E57-528CBB17216A) (Shutdown) 
-    iPhone 11 Pro (4D285BCC-3188-42F9-AAF5-18E1157E011D) (Shutdown) 
-    iPhone 11 Pro Max (FCAFFC3D-7309-4C58-9729-CEB41E37A9B5) (Shutdown) 
-    iPad Pro (9.7-inch) (931D2E04-CF35-4502-8874-1A2102E3D8E6) (Shutdown) 
-    iPad (7th generation) (394D8498-5F1F-42CF-A84E-3AEDBDAF1A54) (Shutdown) 
-    iPad Pro (11-inch) (1st generation) (8A93F9E8-6BBA-4049-A8CC-159CBB8123AF) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (46C813BC-720B-4636-B2A6-37D370083105) (Shutdown) 
-    iPad Air (3rd generation) (C6244808-8E16-4081-A05E-28DEB6E5757F) (Shutdown) 
+    iPhone 8 (E7B21371-2E79-4C04-BF29-5B32E15BCEDB) (Shutdown) 
+    iPhone 8 Plus (E95B03A5-9E1F-45F0-A58C-289C8CA27ED7) (Shutdown) 
+    iPhone 11 (DFDF6FA1-ECC8-43B8-9264-7AAEF4824FEE) (Shutdown) 
+    iPhone 11 Pro (D529600B-844E-4541-B4DC-93D0C60F03B6) (Shutdown) 
+    iPhone 11 Pro Max (2797FE38-008F-4B2F-B63A-B67931EB75D1) (Shutdown) 
+    iPad Pro (9.7-inch) (A06092E4-A549-4637-8B3D-BC13AFFD3573) (Shutdown) 
+    iPad (7th generation) (211B3D45-9C8B-4D05-86DE-A91FCD73E0D7) (Shutdown) 
+    iPad Pro (11-inch) (1st generation) (69D933C6-03E4-4E3C-9BEB-D93578EA511F) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (1449379F-C154-4646-9F81-758ECB56EA77) (Shutdown) 
+    iPad Air (3rd generation) (C12EE7A9-F15D-409E-885D-2BFDF8C6C579) (Shutdown) 
 -- iOS 13.4 --
     iPhone 8 (79E6B762-4280-46C7-9067-A38DEB608B59) (Shutdown) 
     iPhone 8 Plus (CACB5FE3-9541-4708-B7B9-8B13F3A2FBB9) (Shutdown) 
@@ -1117,11 +1127,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Disk
       Boot Mode: Normal
-      Computer Name: stg-xcode-12-210430191026-ygMedoBQ3TbSrRhmdPDt5k
+      Computer Name: stg-xcode-12-210504155037-wkWizSdsNmSoALF3MFoQwj
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 25 minutes
+      Time since boot: 1:29
 
 
 ========================================
@@ -1130,7 +1140,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-  /dev/disk1s5        200Gi         87Gi
+  /dev/disk1s5        200Gi         88Gi
 ========================================
 
 --- Android
