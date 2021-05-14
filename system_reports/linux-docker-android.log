@@ -10,7 +10,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_DOCKER_REV_NUMBER_BASE: v2020_09_21_1
+* BITRISE_DOCKER_REV_NUMBER_BASE: v2021_03_30
 ========================================
 
 
@@ -26,21 +26,21 @@
 === Pre-installed tool versions ========
 * Go: go version go1.15.2 linux/amd64
 * Ruby: ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
-  * bundler: Bundler version 2.2.15
-  * rubygems: 3.2.15
+  * bundler: Bundler version 2.2.17
+  * rubygems: 3.2.17
 * Python: Python 2.7.12
   * pip: pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
-* Node.js: v12.21.0
+* Node.js: v12.22.1
 * NPM: 6.13.4
 * Yarn: 1.22.5
-aws-cli/1.19.36 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.36
+aws-cli/1.19.72 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.72
 * aws: 
 * jq: jq-1.5-1-a5b5cbe
-aws-cli/1.19.36 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.36
+aws-cli/1.19.72 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.72
 * aws-cli: 
 
-* git: git version 2.7.4
-* git lfs: git-lfs/2.13.2 (GitHub; linux amd64; go 1.15.5)
+* git: git version 2.31.1
+* git lfs: git-lfs/2.13.3 (GitHub; linux amd64; go 1.16.2)
 * mercurial/hg: Mercurial Distributed SCM (version 3.7.3)
 * curl: curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
 * wget: GNU Wget 1.17.1 built on linux-gnu.
@@ -55,7 +55,7 @@ aws-cli/1.19.36 Python/2.7.12 Linux/4.4.0-57-generic botocore/1.20.36
 
 * sudo: Sudo version 1.8.16
 
-* docker: Docker version 20.10.5, build 55c4c88
+* docker: Docker version 20.10.6, build 370c289
 * docker-compose: docker-compose version 1.21.2, build a133471
 
 --- Bitrise CLI tool versions
@@ -72,25 +72,24 @@ addressable (2.7.0)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.1.1)
-aws-partitions (1.434.0)
-aws-sdk-core (3.113.0)
+aws-partitions (1.455.0)
+aws-sdk-core (3.114.0)
 aws-sdk-kms (1.43.0)
-aws-sdk-s3 (1.93.0)
+aws-sdk-s3 (1.94.1)
 aws-sigv4 (1.2.3)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (default: 2.2.15)
+bundler (default: 2.2.17)
 CFPropertyList (3.0.3)
 cgi (default: 0.1.0)
 claide (1.0.3)
 colored (1.2)
 colored2 (3.1.2)
-commander-fastlane (4.4.6)
+commander (4.6.0)
 csv (default: 3.1.2)
 date (default: 3.0.0)
 declarative (0.0.20)
-declarative-option (0.1.0)
 delegate (default: 0.1.0)
 did_you_mean (default: 1.4.0)
 digest-crc (0.6.3)
@@ -98,13 +97,15 @@ domain_name (0.5.20190701)
 dotenv (2.7.6)
 emoji_regex (3.2.2)
 etc (default: 1.1.0)
-excon (0.79.0)
-faraday (1.3.0)
+excon (0.81.0)
+faraday (1.4.1)
 faraday-cookie_jar (0.0.7)
+faraday-excon (1.1.0)
 faraday-net_http (1.0.1)
+faraday-net_http_persistent (1.1.0)
 faraday_middleware (1.0.0)
 fastimage (2.2.3)
-fastlane (2.178.0)
+fastlane (2.182.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.4.1)
@@ -113,14 +114,14 @@ getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
 google-api-client (0.38.0)
 google-apis-core (0.3.0)
-google-apis-iamcredentials_v1 (0.2.0)
+google-apis-iamcredentials_v1 (0.3.0)
 google-apis-storage_v1 (0.3.0)
 google-cloud-core (1.6.0)
 google-cloud-env (1.5.0)
 google-cloud-errors (1.1.0)
 google-cloud-storage (1.31.0)
-googleauth (0.16.0)
-highline (1.7.10)
+googleauth (0.16.2)
+highline (2.0.3)
 http-cookie (1.0.3)
 httpclient (2.8.3)
 io-console (default: 0.5.3)
@@ -128,12 +129,12 @@ ipaddr (default: 1.2.2)
 irb (default: 1.2.1)
 jmespath (1.4.0)
 json (default: 2.3.0)
-jwt (2.2.2)
+jwt (2.2.3)
 logger (default: 1.4.2)
 matrix (default: 0.2.0)
 memoist (0.16.2)
 mini_magick (4.11.0)
-mini_mime (1.0.2)
+mini_mime (1.1.0)
 minitest (5.13.0)
 multi_json (1.15.0)
 multipart-post (2.0.0)
@@ -160,20 +161,19 @@ rdoc (default: 6.2.1)
 readline (default: 0.0.2)
 readline-ext (default: 0.1.0)
 reline (default: 0.1.2)
-representable (3.0.4)
+representable (3.1.1)
 retriable (3.1.2)
 rexml (default: 3.2.3)
 rouge (2.0.7)
 rss (default: 0.2.8)
 ruby2_keywords (0.0.4)
-rubygems-update (3.2.15)
+rubygems-update (3.2.17)
 rubyzip (2.3.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
 signet (0.15.0)
 simctl (1.6.8)
 singleton (default: 0.1.0)
-slack-notifier (2.3.2)
 stringio (default: 0.1.0)
 strscan (default: 1.0.3)
 terminal-notifier (2.0.0)
@@ -181,6 +181,7 @@ terminal-table (1.8.0)
 test-unit (3.3.4)
 timeout (default: 0.1.0)
 tracer (default: 0.1.0)
+trailblazer-option (0.1.1)
 tty-cursor (0.7.1)
 tty-screen (0.8.1)
 tty-spinner (0.9.3)
@@ -202,7 +203,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-latest-usc1b-210325061044-zmbmywnwhhjabtjnuidhnz 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-latest-usc1b-210514172928-mr7hziekahfkl5f2bylj4s 4.4.0-57-generic #78-Ubuntu SMP Fri Dec 9 23:50:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 4.4.0-57-generic
 * lsb_release --all
@@ -221,6 +222,7 @@ Client:
  Plugins:
   app: Docker App (Docker Inc., v0.9.1-beta3)
   buildx: Build with BuildKit (Docker Inc., v0.5.1-docker)
+  scan: Docker Scan (Docker Inc., v0.7.0)
 
 Server:
  Containers: 1
@@ -255,8 +257,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.304GiB
- Name: stg-latest-usc1b-210325061044-zmbmywnwhhjabtjnuidhnz
- ID: HOKQ:JKY3:HNVE:FLFS:O4D2:4QJ2:ZGV4:F5V4:RZN4:IVSY:XK4G:BEQA
+ Name: stg-latest-usc1b-210514172928-mr7hziekahfkl5f2bylj4s
+ ID: P3IH:UXXZ:YZQ3:7FOV:GLTW:PNW4:VWF4:NWUQ:J6SA:KLTV:IZSB:HLTO
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -271,25 +273,25 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk - 35.8GB
-quay.io/bitriseio/android-ndk - 35.8GB
-bitriseio/android - 32GB
-quay.io/bitriseio/android - 32GB
-bitriseio/bitrise-base - 2.71GB
-quay.io/bitriseio/bitrise-base - 2.71GB
+bitriseio/bitrise-base - 2.76GB
+quay.io/bitriseio/bitrise-base - 2.76GB
+bitriseio/android-ndk - 35.9GB
+quay.io/bitriseio/android-ndk - 35.9GB
+bitriseio/android - 32.1GB
+quay.io/bitriseio/android - 32.1GB
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop0      160G   35G  125G  22% /
+/dev/loop0      160G   38G  122G  24% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1       194G  166G   29G  86% /bitrise
+/dev/sda1       194G  166G   28G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           7.3G        343M        5.3G        8.7M        1.6G        6.7G
+Mem:           7.3G        340M        5.3G        8.7M        1.7G        6.7G
 Swap:          4.0G          0B        4.0G
 ========================================
 
@@ -311,31 +313,31 @@ Swap:          4.0G          0B        4.0G
 === Pre-installed tool versions ========
 * Gradle: Gradle 6.3
 * Maven: Apache Maven 3.3.9
-* Java: javac 1.8.0_282
+* Java: javac 1.8.0_292
 * Cordova CLI version: 10.0.0
 * Ionic CLI version: 5.4.16
-* Appcenter-CLI version: 2.8.1
+* Appcenter-CLI version: 2.9.0
 ========================================
 
 === Java ===============================
 * JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
-* Java: openjdk version "1.8.0_282"
-* Javac: javac 1.8.0_282
+* Java: openjdk version "1.8.0_292"
+* Javac: javac 1.8.0_292
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 333.0.0
-alpha 2021.03.19
-beta 2021.03.19
-bq 2.0.65
-core 2021.03.19
-gsutil 4.60
+Google Cloud SDK 340.0.0
+alpha 2021.05.07
+beta 2021.05.07
+bq 2.0.67
+core 2021.05.07
+gsutil 4.61
 ========================================
 
 
 === Firebase Tools components ==========
-9.7.0
+9.10.2
 ========================================
 
 
@@ -361,13 +363,13 @@ Property diagnostic passed (1/1 checks passed).
 
  * adb version:
 Android Debug Bridge version 1.0.41
-Version 31.0.1-7187441
+Version 31.0.2-7242960
 Installed as /opt/android-sdk-linux/platform-tools/adb
 
  * SDK packages:
 grep: /opt/android-sdk-linux/cmdline-tools//tools/source.properties: No such file or directory
-* Platform Tools version: 31.0.1
-* Emulator version: 30.6.0
+* Platform Tools version: 31.0.2
+* Emulator version: 30.7.0
 ========================================
 
 
