@@ -7,12 +7,12 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_05_07_1
+* BITRISE_OSX_STACK_REV_ID: v2012_05_29
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.15.11 darwin/amd64
+* Go: go version go1.15.12 darwin/amd64
 * Python: Python 2.7.16
 * Node.js: v12.22.1
 * NPM: 6.14.12
@@ -20,11 +20,12 @@
 * Java: openjdk version "1.8.0_292"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_292-b10)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
-* Flutter: Flutter 1.22.6 • channel stable • https://github.com/flutter/flutter.git
+* Flutter: Flutter 1.26.0-17.8.pre • channel unknown • unknown source
+* fvm: 2.0.5
 
 * git: git version 2.31.1
 * git lfs: git-lfs/2.13.3 (GitHub; darwin amd64; go 1.16.2)
-* mercurial/hg: Mercurial Distributed SCM (version 5.7.1)
+* mercurial/hg: Mercurial Distributed SCM (version 5.8)
 * curl: curl 7.64.1 (x86_64-apple-darwin20.0) libcurl/7.64.1 (SecureTransport) LibreSSL/2.8.3 zlib/1.2.11 nghttp2/1.41.0
 * wget: GNU Wget 1.21.1 built on darwin20.2.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -33,22 +34,23 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.1.7
-Homebrew/homebrew-core (git revision 9e21f78f8d; last commit 2021-04-13)
-Homebrew/homebrew-cask (git revision f2ef2b1128; last commit 2021-04-13)
-* Ansible: ansible 2.10.7
+* brew: Homebrew 3.1.9
+Homebrew/homebrew-core (git revision a5077bea81; last commit 2021-05-28)
+Homebrew/homebrew-cask (git revision c9e6109c14; last commit 2021-05-28)
+* Ansible: ansible [core 2.11.0] 
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/3.2.0/libexec/lib/python3.9/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/4.0.0/libexec/lib/python3.9/site-packages/ansible
+  ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.32
 * watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.148.0
-* carthage: 0.37.0
-* imagemagick (convert): Version: ImageMagick 7.0.11-7 Q16 x86_64 2021-04-12 https://imagemagick.org
-* ghostscript (ps2ascii): 9.53.3
+* flow: Flow, a static type checker for JavaScript, version 0.152.0
+* carthage: 0.38.0
+* imagemagick (convert): Version: ImageMagick 7.0.11-13 Q16 x86_64 2021-05-17 https://imagemagick.org
+* ghostscript (ps2ascii): 9.54.0
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
-* firebase: 9.10.0
+* firebase: 9.12.0
 * applesimutils version 0.9.2
 * jq: 1.6
 * Version: 0.8.1
@@ -56,8 +58,8 @@ Homebrew/homebrew-cask (git revision f2ef2b1128; last commit 2021-04-13)
 * Screen 4.08.00
 * applesimutils 0.9.2
 * OpenConnect version v8.10
-* aws-cli: aws-cli/2.1.36 Python/3.9.4 Darwin/20.3.0 source/x86_64 prompt/off
-* cmake: 3.20.1
+* aws-cli: aws-cli/2.2.7 Python/3.9.5 Darwin/20.5.0 source/x86_64 prompt/off
+* cmake: 3.20.3
 * danger-swift: 3.10.1
 [0;0m
 
@@ -70,39 +72,43 @@ Homebrew/homebrew-cask (git revision f2ef2b1128; last commit 2021-04-13)
 
 
 === Brew list versions ==================
-ansible 3.2.0
-ant 1.10.9
-aom 3.0.0
+ansible 4.0.0
+ant 1.10.10
+aom 3.1.0
 applesimutils 0.9.2
 autoconf 2.71
-awscli 2.1.36
+awscli 2.2.7
 bdw-gc 8.0.4_2
 brotli 1.0.9
 c-ares 1.17.1
-carthage 0.37.0
-cmake 3.20.1
+carthage 0.38.0
+cmake 3.20.3
 coreutils 8.32
 danger-js 10.6.4
 danger-swift 3.10.1
+dart 2.13.1
 docbook 5.1_1
 docbook-xsl 1.79.2_1
-flow 0.148.0
+flow 0.152.0
+fontconfig 2.13.1
 freetype 2.10.4
+fvm 2.0.5
 gdbm 1.19
 gettext 0.21
-ghostscript 9.53.3_1
+ghostscript 9.54.0
 git 2.31.1
 git-lfs 2.13.3
-glib 2.68.0
+glib 2.68.2
 gmp 6.2.1
 gnu-getopt 2.36.2
-gnutls 3.6.15
-go@1.15 1.15.11
-gradle 7.0
-guile 3.0.5
-icu4c 68.2
-ilmbase 2.5.5
-imagemagick 7.0.11-7
+gnutls 3.6.16
+go@1.15 1.15.12
+gradle 7.0.2_2
+guile 3.0.7
+icu4c 69.1
+imagemagick 7.0.11-13_2
+imath 3.0.3
+jbig2dec 0.19
 jemalloc 5.2.1_1
 jenv 0.5.4
 jpeg 9d
@@ -111,13 +117,14 @@ libde265 1.0.8
 libev 4.33
 libevent 2.1.12
 libffi 3.3_3
-libheif 1.11.0_2
-libidn2 2.3.0
+libheif 1.12.0
+libidn 1.37
+libidn2 2.3.1
 liblqr 0.4.2_1
-libomp 11.1.0
+libomp 12.0.0
 libpng 1.6.37
-libtasn1 4.16.0_1
-libtiff 4.2.0
+libtasn1 4.17.0
+libtiff 4.3.0
 libtool 2.4.6_3
 libunistring 0.9.10
 libuv 1.41.0
@@ -125,29 +132,29 @@ libyaml 0.2.5
 little-cms2 2.12
 m4 1.4.18
 maven 3.8.1
-mercurial 5.7.1
+mercurial 5.8
 mpdecimal 2.5.1
 nettle 3.7.2
 nghttp2 1.43.0
-node 15.14.0
-node@12 12.22.1
-oniguruma 6.9.6
+node 16.2.0
+node@12 12.22.1_1
+oniguruma 6.9.7.1
 openconnect 8.10
-openexr 2.5.5
+openexr 3.0.3
 openjdk 15.0.2
 openjpeg 2.4.0
 openssl@1.1 1.1.1k
 p11-kit 0.23.22
 pcre 8.44
-pcre2 10.36
+pcre2 10.37
 pkg-config 0.29.2_3
-python@3.9 3.9.4
+python@3.9 3.9.5
 rbenv 1.1.2
 readline 8.1
-ruby-build 20210405
+ruby-build 20210526
 screen 4.8.0
 shared-mime-info 2.1
-sqlite 3.35.4
+sqlite 3.35.5
 stoken 0.92_1
 tree 1.8.0
 unbound 1.13.1
@@ -215,6 +222,8 @@ danger/tap/danger-js
 danger/tap/danger-swift
 └── danger/tap/danger-js
 
+dart-lang/dart/dart
+
 docbook
 
 docbook-xsl
@@ -222,16 +231,43 @@ docbook-xsl
 
 flow
 
+fontconfig
+└── freetype
+    └── libpng
+
 freetype
 └── libpng
+
+leoafarias/fvm/fvm
 
 gdbm
 
 gettext
 
 ghostscript
-└── libtiff
-    └── jpeg
+├── fontconfig
+│   └── freetype
+│       └── libpng
+├── freetype
+│   └── libpng
+├── jbig2dec
+├── jpeg
+├── libidn
+├── libpng
+├── libtiff
+│   └── jpeg
+├── little-cms2
+│   ├── jpeg
+│   └── libtiff
+│       └── jpeg
+└── openjpeg
+    ├── libpng
+    ├── libtiff
+    │   └── jpeg
+    └── little-cms2
+        ├── jpeg
+        └── libtiff
+            └── jpeg
 
 git
 ├── gettext
@@ -303,14 +339,33 @@ guile
 
 icu4c
 
-ilmbase
-
 imagemagick
 ├── freetype
 │   └── libpng
 ├── ghostscript
-│   └── libtiff
-│       └── jpeg
+│   ├── fontconfig
+│   │   └── freetype
+│   │       └── libpng
+│   ├── freetype
+│   │   └── libpng
+│   ├── jbig2dec
+│   ├── jpeg
+│   ├── libidn
+│   ├── libpng
+│   ├── libtiff
+│   │   └── jpeg
+│   ├── little-cms2
+│   │   ├── jpeg
+│   │   └── libtiff
+│   │       └── jpeg
+│   └── openjpeg
+│       ├── libpng
+│       ├── libtiff
+│       │   └── jpeg
+│       └── little-cms2
+│           ├── jpeg
+│           └── libtiff
+│               └── jpeg
 ├── jpeg
 ├── libheif
 │   ├── aom
@@ -361,7 +416,7 @@ imagemagick
 │   └── libtiff
 │       └── jpeg
 ├── openexr
-│   └── ilmbase
+│   └── imath
 ├── openjpeg
 │   ├── libpng
 │   ├── libtiff
@@ -376,6 +431,10 @@ imagemagick
 │   └── libtiff
 │       └── jpeg
 └── xz
+
+imath
+
+jbig2dec
 
 jemalloc
 
@@ -420,6 +479,8 @@ libheif
 │       │   └── docbook
 │       └── gnu-getopt
 └── x265
+
+libidn
 
 libidn2
 ├── gettext
@@ -541,7 +602,7 @@ openconnect
         └── gmp
 
 openexr
-└── ilmbase
+└── imath
 
 openjdk
 
@@ -687,6 +748,8 @@ yarn
   2.4.5
   2.5.3
 * 2.6.5 (set by /Users/vagrant/.rbenv/version)
+  2.7.2
+  3.0.0
 -------------------------------
 * rbenv: 1.1.2
 * Rubygems: 3.0.3
@@ -697,7 +760,7 @@ yarn
 
 
 === All Ruby GEMs ======================
-activesupport (5.2.5)
+activesupport (5.2.6)
 addressable (2.7.0)
 algoliasearch (1.27.5)
 artifactory (3.0.15)
@@ -715,8 +778,8 @@ CFPropertyList (3.0.3)
 claide (1.0.3)
 clamp (1.3.2)
 cmath (default: 1.0.0)
-cocoapods (1.10.1, 1.10.0)
-cocoapods-core (1.10.1, 1.10.0)
+cocoapods (1.10.1)
+cocoapods-core (1.10.1)
 cocoapods-deintegrate (1.0.4)
 cocoapods-downloader (1.4.0)
 cocoapods-plugins (1.0.0)
@@ -739,7 +802,7 @@ e2mmap (default: 0.1.0)
 emoji_regex (3.2.2)
 escape (0.0.4)
 etc (default: 1.0.1)
-ethon (0.13.0)
+ethon (0.14.0)
 excon (0.80.1)
 faraday (1.4.1)
 faraday-cookie_jar (0.0.7)
@@ -750,7 +813,7 @@ faraday_middleware (1.0.0)
 fastimage (2.2.3)
 fastlane (2.181.0, 2.166.0)
 fcntl (default: 1.0.0)
-ffi (1.15.0)
+ffi (1.15.1)
 fiddle (default: 1.0.0)
 fileutils (default: 1.1.0)
 forwardable (default: 1.2.0)
@@ -794,7 +857,7 @@ nap (1.1.0)
 naturally (2.2.1)
 net-telnet (0.2.0)
 netrc (0.11.0)
-nokogiri (1.11.3 x86_64-darwin)
+nokogiri (1.11.6 x86_64-darwin)
 open4 (1.3.4)
 openssl (default: 2.1.2)
 os (1.1.1)
@@ -887,8 +950,8 @@ SDKs
 usr
 
  * /Library/Developer/CommandLineTools/usr/bin/swift --version
-Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
-Target: x86_64-apple-darwin20.3.0
+Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+Target: x86_64-apple-darwin20.5.0
 
 ========================================
 
@@ -904,7 +967,7 @@ Build version 12E262
 
 * /usr/bin/swift --version
 Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
-Target: x86_64-apple-darwin20.3.0
+Target: x86_64-apple-darwin20.5.0
 
 * Installed SDKs:
 iOS SDKs:
@@ -1147,23 +1210,23 @@ F578AA06-955B-43C9-9BA7-EA6A457748DC (active, disconnected)
 
 * sw_vers
 ProductName:	macOS
-ProductVersion:	11.2
-BuildVersion:	20D64
+ProductVersion:	11.4
+BuildVersion:	20F71
 
 * system_profiler SPSoftwareDataType
 Software:
 
     System Software Overview:
 
-      System Version: macOS 11.2 (20D64)
-      Kernel Version: Darwin 20.3.0
+      System Version: macOS 11.4 (20F71)
+      Kernel Version: Darwin 20.5.0
       Boot Volume: Disk
       Boot Mode: Normal
-      Computer Name: stg-xcode-12-5-210513042841-qbGngz294Yhs5gWbKhBHHm
+      Computer Name: stg-xcode-12-5-210529234802-CuEzvJsEjTWfMmNUoYPT2J
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 12 minutes
+      Time since boot: 26 minutes
 
 
 ========================================
@@ -1172,7 +1235,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk1s5s1        200Gi         66Gi
+/dev/disk1s5s1        200Gi         42Gi
 ========================================
 
 --- Android
