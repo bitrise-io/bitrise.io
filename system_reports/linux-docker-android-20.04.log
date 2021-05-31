@@ -10,7 +10,7 @@
 
 === Pre-installed lib versions ========
 * zlib1g-dev: 1:1.2.11.dfsg-2ubuntu1.2
-* libssl-dev: 1.1.1f-1ubuntu2.3
+* libssl-dev: 1.1.1f-1ubuntu2.4
 dpkg-query: package 'libreadline6-dev' is not installed and no information is available
 Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * libreadline6-dev: 
@@ -35,13 +35,13 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.19.72 Python/3.8.5 Linux/5.4.0-1036-gcp botocore/1.20.72
+* aws-cli: aws-cli/1.19.83 Python/3.8.5 Linux/5.4.0-1036-gcp botocore/1.20.83
 * Ruby: ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
-  * bundler: Bundler version 2.2.17
-  * rubygems: 3.2.17
+  * bundler: Bundler version 2.2.18
+  * rubygems: 3.2.18
 * Go: go version go1.15.2 linux/amd64
 * Node.js: v12.22.1
-* NPM: 6.14.12
+* NPM: 7.15.0
 * Yarn: 1.22.5
 * docker: Docker version 20.10.6, build 370c289
 * docker-compose: docker-compose version 1.21.2, build a133471
@@ -49,13 +49,13 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 
 * Terraform: v0.12.19
 * Packer: 1.6.5
-* Ansible: 2.10.9
+* Ansible: [core
 * Openconnect: v8.05-1
 * Gradle: Gradle 6.3
 * Maven: [1mApache Maven 3.6.3[m
 * Java: javac 1.8.0_292
 * Cordova CLI version: 10.0.0
-* Ionic CLI version: 6.15.0
+* Ionic CLI version: 6.16.1
 * Appcenter-CLI version: 2.9.0
 ========================================
 
@@ -67,17 +67,17 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 340.0.0
-alpha 2021.05.07
-beta 2021.05.07
-bq 2.0.67
-core 2021.05.07
-gsutil 4.61
+Google Cloud SDK 342.0.0
+alpha 2021.05.21
+beta 2021.05.21
+bq 2.0.68
+core 2021.05.21
+gsutil 4.62
 ========================================
 
 
 === Firebase Tools components ==========
-system_report.sh: line 122: firebase: command not found
+9.12.0
 ========================================
 
 === Google Cloud Network Check =========
@@ -108,7 +108,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * Command line Tools version: 2.1
 * Platform Tools version: 31.0.2
-* Emulator version: 30.7.0
+* Emulator version: 30.7.1
 ========================================
 
 
@@ -391,15 +391,15 @@ addressable (2.7.0)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.1.1)
-aws-partitions (1.455.0)
+aws-partitions (1.464.0)
 aws-sdk-core (3.114.0)
 aws-sdk-kms (1.43.0)
-aws-sdk-s3 (1.94.1)
+aws-sdk-s3 (1.95.1)
 aws-sigv4 (1.2.3)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (default: 2.2.17)
+bundler (default: 2.2.18)
 CFPropertyList (3.0.3)
 cgi (default: 0.1.0)
 claide (1.0.3)
@@ -416,29 +416,32 @@ domain_name (0.5.20190701)
 dotenv (2.7.6)
 emoji_regex (3.2.2)
 etc (default: 1.1.0)
-excon (0.81.0)
-faraday (1.4.1)
+excon (0.82.0)
+faraday (1.4.2)
 faraday-cookie_jar (0.0.7)
+faraday-em_http (1.0.0)
+faraday-em_synchrony (1.0.0)
 faraday-excon (1.1.0)
 faraday-net_http (1.0.1)
 faraday-net_http_persistent (1.1.0)
 faraday_middleware (1.0.0)
 fastimage (2.2.3)
-fastlane (2.182.0)
+fastlane (2.184.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.4.1)
 forwardable (default: 1.3.1)
 getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
-google-api-client (0.38.0)
+google-apis-androidpublisher_v3 (0.4.0)
 google-apis-core (0.3.0)
-google-apis-iamcredentials_v1 (0.3.0)
-google-apis-storage_v1 (0.3.0)
+google-apis-iamcredentials_v1 (0.4.0)
+google-apis-playcustomapp_v1 (0.3.0)
+google-apis-storage_v1 (0.4.0)
 google-cloud-core (1.6.0)
 google-cloud-env (1.5.0)
 google-cloud-errors (1.1.0)
-google-cloud-storage (1.31.0)
+google-cloud-storage (1.31.1)
 googleauth (0.16.2)
 highline (2.0.3)
 http-cookie (1.0.3)
@@ -486,7 +489,7 @@ rexml (default: 3.2.3)
 rouge (2.0.7)
 rss (default: 0.2.8)
 ruby2_keywords (0.0.4)
-rubygems-update (3.2.17)
+rubygems-update (3.2.18)
 rubyzip (2.3.0)
 sdbm (default: 1.0.0)
 security (0.1.3)
@@ -522,7 +525,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-210514163127-nbz6faincchjnxm7whjuig 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-210528094844-z4ppalpqhqz3rbw9pur4uv 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.4.0-1036-gcp
 * lsb_release --all
@@ -548,7 +551,7 @@ Server:
   Running: 1
   Paused: 0
   Stopped: 0
- Images: 3
+ Images: 4
  Server Version: 20.10.6
  Storage Driver: btrfs
   Build Version: Btrfs v5.4.1 
@@ -564,8 +567,8 @@ Server:
  Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: 05f951a3781f4f2c1911b05e61c160e9c30eaa8e
- runc version: 12644e614e25b05da6fd08a38ffa0cfe1903fdec
+ containerd version: d71fcd7d8303cbf684402823e425e9dd2e99285d
+ runc version: b9ee9c6314599f1b4a7f497e1f1f856fe433d3b7
  init version: de40ad0
  Security Options:
   apparmor
@@ -575,10 +578,10 @@ Server:
  Operating System: Ubuntu 20.04.2 LTS
  OSType: linux
  Architecture: x86_64
- CPUs: 2
- Total Memory: 7.283GiB
- Name: stg-20-04-usc1b-210514163127-nbz6faincchjnxm7whjuig
- ID: ZS7E:5B4B:4IYU:QXYY:IGR5:LBQV:TLUZ:E24N:NHG6:5SEI:ALGY:UUKG
+ CPUs: 4
+ Total Memory: 14.65GiB
+ Name: stg-20-04-usc1b-210528094844-z4ppalpqhqz3rbw9pur4uv
+ ID: GATR:WAGQ:2GYP:4ZLR:LNXG:GO26:PIYN:FESN:BNUJ:U2VU:JPZT:DSFR
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -593,25 +596,26 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 37.2GB
-quay.io/bitriseio/android-ndk-20.04 - 37.2GB
-bitriseio/android-20.04 - 33GB
-quay.io/bitriseio/android-20.04 - 33GB
-bitriseio/bitrise-base-20.04 - 3.78GB
-quay.io/bitriseio/bitrise-base-20.04 - 3.78GB
+bitriseio/android-ndk-20.04 - 37.3GB
+quay.io/bitriseio/android-ndk-20.04 - 37.3GB
+quay.io/bitriseio/android-20.04 - 33.1GB
+bitriseio/android-20.04 - 33.1GB
+bitriseio/bitrise-base-20.04 - 3.81GB
+quay.io/bitriseio/bitrise-base-20.04 - 3.81GB
+bitrisedev/build-env - 5.2GB
 ========================================
 
 
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop3       60G   36G   24G  61% /
+/dev/loop4      160G   42G  119G  26% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   67G  128G  35% /bitrise
+/dev/root       194G  167G   28G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:          7.3Gi       493Mi       4.2Gi       1.0Mi       2.6Gi       6.6Gi
+Mem:           14Gi       529Mi        11Gi       1.0Mi       2.8Gi        13Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
