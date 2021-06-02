@@ -525,7 +525,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-210528094844-z4ppalpqhqz3rbw9pur4uv 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-210531000641-db2knzctmmeucemursdexf 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.4.0-1036-gcp
 * lsb_release --all
@@ -564,7 +564,7 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Runtimes: runc io.containerd.runc.v2 io.containerd.runtime.v1.linux
  Default Runtime: runc
  Init Binary: docker-init
  containerd version: d71fcd7d8303cbf684402823e425e9dd2e99285d
@@ -580,7 +580,7 @@ Server:
  Architecture: x86_64
  CPUs: 4
  Total Memory: 14.65GiB
- Name: stg-20-04-usc1b-210528094844-z4ppalpqhqz3rbw9pur4uv
+ Name: stg-20-04-usc1b-210531000641-db2knzctmmeucemursdexf
  ID: GATR:WAGQ:2GYP:4ZLR:LNXG:GO26:PIYN:FESN:BNUJ:U2VU:JPZT:DSFR
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
@@ -598,8 +598,8 @@ WARNING: No swap limit support
 === Docker pre-cached images ===========
 bitriseio/android-ndk-20.04 - 37.3GB
 quay.io/bitriseio/android-ndk-20.04 - 37.3GB
-quay.io/bitriseio/android-20.04 - 33.1GB
 bitriseio/android-20.04 - 33.1GB
+quay.io/bitriseio/android-20.04 - 33.1GB
 bitriseio/bitrise-base-20.04 - 3.81GB
 quay.io/bitriseio/bitrise-base-20.04 - 3.81GB
 bitrisedev/build-env - 5.2GB
@@ -612,10 +612,10 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop4      160G   42G  119G  26% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G  167G   28G  86% /bitrise
+/dev/root       194G   48G  146G  25% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           14Gi       529Mi        11Gi       1.0Mi       2.8Gi        13Gi
+Mem:           14Gi       566Mi       9.7Gi       1.0Mi       4.4Gi        13Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
