@@ -84,7 +84,7 @@ gsutil 4.63
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-..done.
+...done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -107,7 +107,7 @@ Version 31.0.2-7242960
 Installed as /opt/android-sdk-linux/platform-tools/adb
 
  * SDK packages:
-grep: /opt/android-sdk-linux/cmdline-tools//tools/source.properties: No such file or directory
+* Command line Tools version: 4.0
 * Platform Tools version: 31.0.2
 * Emulator version: 30.7.4
 ========================================
@@ -527,7 +527,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-210624162231-ekp5qspzsek2uxpyeow3jn 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-210624162231-xe4vjkzauuqnr9jchvhdcj 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.4.0-1036-gcp
 * lsb_release --all
@@ -566,7 +566,7 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: io.containerd.runtime.v1.linux runc io.containerd.runc.v2
+ Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
  Default Runtime: runc
  Init Binary: docker-init
  containerd version: d71fcd7d8303cbf684402823e425e9dd2e99285d
@@ -582,7 +582,7 @@ Server:
  Architecture: x86_64
  CPUs: 4
  Total Memory: 14.65GiB
- Name: stg-20-04-usc1b-210624162231-ekp5qspzsek2uxpyeow3jn
+ Name: stg-20-04-usc1b-210624162231-xe4vjkzauuqnr9jchvhdcj
  ID: B5JI:FCDT:2NTG:4JNY:SNTV:I4DJ:LMKL:6DJK:YTZ4:ZRIX:IASH:GEO6
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
@@ -617,7 +617,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G  167G   28G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           14Gi       488Mi        11Gi       1.0Mi       3.0Gi        13Gi
+Mem:           14Gi       502Mi        11Gi       1.0Mi       2.8Gi        13Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
