@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_06_15_1
+* BITRISE_OSX_STACK_REV_ID: v2021_06_21
 ========================================
 
 
@@ -21,7 +21,7 @@
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_292-b10)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
 * Flutter: Flutter 1.26.0-17.8.pre • channel unknown • unknown source
-* fvm: 2.1.1
+* fvm: 2.2.2
 
 * git: git version 2.32.0
 * git lfs: git-lfs/2.13.3 (GitHub; darwin amd64; go 1.16.2)
@@ -34,7 +34,7 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.1.12
+* brew: Homebrew 3.2.0
 Homebrew/homebrew-core (git revision 803ea333d9; last commit 2021-06-15)
 Homebrew/homebrew-cask (git revision 59ef557f23; last commit 2021-06-15)
 * Ansible: ansible [core 2.11.0] 
@@ -96,7 +96,7 @@ fmt 7.1.3
 folly 2021.06.14.00
 fontconfig 2.13.1
 freetype 2.10.4
-fvm 2.1.1
+fvm 2.2.2
 gdbm 1.19
 gettext 0.21
 gflags 2.2.2
@@ -473,6 +473,8 @@ imagemagick
 └── xz
 
 imath
+
+intel-haxm
 
 jbig2dec
 
@@ -1132,15 +1134,10 @@ iOS 14.0 (14.0.1 - 18A394) - com.apple.CoreSimulator.SimRuntime.iOS-14-0
 iOS 14.1 (14.1 - 18A8394) - com.apple.CoreSimulator.SimRuntime.iOS-14-1
 iOS 14.2 (14.2 - 18B79) - com.apple.CoreSimulator.SimRuntime.iOS-14-2
 iOS 14.4 (14.4 - 18D46) - com.apple.CoreSimulator.SimRuntime.iOS-14-4
-tvOS 13.0 (13.0 - 17J585) - com.apple.CoreSimulator.SimRuntime.tvOS-13-0
-tvOS 13.2 (13.2 - 17K90) - com.apple.CoreSimulator.SimRuntime.tvOS-13-2
-tvOS 13.3 (13.3 - 17K446) - com.apple.CoreSimulator.SimRuntime.tvOS-13-3
 tvOS 13.4 (13.4 - 17L255) - com.apple.CoreSimulator.SimRuntime.tvOS-13-4
-tvOS 14.0 (14.0 - 18J383) - com.apple.CoreSimulator.SimRuntime.tvOS-14-0
 tvOS 14.2 (14.2 - 18K54) - com.apple.CoreSimulator.SimRuntime.tvOS-14-2
 tvOS 14.3 (14.3 - 18K559) - com.apple.CoreSimulator.SimRuntime.tvOS-14-3
 watchOS 6.2 (6.2.1 - 17T531) - com.apple.CoreSimulator.SimRuntime.watchOS-6-2
-watchOS 7.0 (7.0 - 18R382) - com.apple.CoreSimulator.SimRuntime.watchOS-7-0
 watchOS 7.1 (7.1 - 18R579) - com.apple.CoreSimulator.SimRuntime.watchOS-7-1
 watchOS 7.2 (7.2 - 18S561) - com.apple.CoreSimulator.SimRuntime.watchOS-7-2
 == Devices ==
@@ -1220,26 +1217,10 @@ watchOS 7.2 (7.2 - 18S561) - com.apple.CoreSimulator.SimRuntime.watchOS-7-2
     iPad Pro (12.9-inch) (4th generation) (71239CBC-08F1-4312-8910-69541CBF4CFC) (Shutdown) 
     iPad (8th generation) (AEE7A5A1-CADA-4B35-95BD-A4AF3F532835) (Shutdown) 
     iPad Air (4th generation) (9C7C442A-491E-4C51-96C0-7215B6FAFC03) (Shutdown) 
--- tvOS 13.0 --
-    Apple TV (434AD37E-ACAA-473A-B549-4CB6D64629C0) (Shutdown) 
-    Apple TV 4K (51DCF6C7-ADDB-489B-8E29-B69E2A19B013) (Shutdown) 
-    Apple TV 4K (at 1080p) (14B0566B-8BFE-4FA0-9578-91FEB4F04E43) (Shutdown) 
--- tvOS 13.2 --
-    Apple TV (DE347FFC-ED27-4203-A246-D2D6E0723305) (Shutdown) 
-    Apple TV 4K (FBBEB2AB-FB26-4733-AB33-197AA9720EE4) (Shutdown) 
-    Apple TV 4K (at 1080p) (8CA4D87A-F3AE-4E55-9E01-17B145CBC6D8) (Shutdown) 
--- tvOS 13.3 --
-    Apple TV (3A946FAA-65C5-41A4-8BEF-2AE02D5F09F7) (Shutdown) 
-    Apple TV 4K (E5B5D454-D268-440F-B6AD-83E8F482918F) (Shutdown) 
-    Apple TV 4K (at 1080p) (FD292477-61A4-494E-8FEE-6240C56058C5) (Shutdown) 
 -- tvOS 13.4 --
     Apple TV (E523BABB-BAFC-43AB-BE95-8CB8DE9BAF4B) (Shutdown) 
     Apple TV 4K (4CA49C61-4D3A-4DDF-B944-217DEFEF889C) (Shutdown) 
     Apple TV 4K (at 1080p) (9929F019-FC2E-4B45-A695-DF4AE6E01C68) (Shutdown) 
--- tvOS 14.0 --
-    Apple TV (F6161F4C-AEC4-404C-8A94-800D2E40A197) (Shutdown) 
-    Apple TV 4K (2EFDD2DC-A161-4F73-B460-FD965F340E9F) (Shutdown) 
-    Apple TV 4K (at 1080p) (80C69175-67F4-4053-891C-1A3AA708B523) (Shutdown) 
 -- tvOS 14.2 --
     Apple TV (75B6E5AC-AB79-4D11-8BB2-5F7747F8855D) (Shutdown) 
     Apple TV 4K (6D78B800-78E8-4ECE-9354-121D4F1B8C36) (Shutdown) 
@@ -1253,11 +1234,6 @@ watchOS 7.2 (7.2 - 18S561) - com.apple.CoreSimulator.SimRuntime.watchOS-7-2
     Apple Watch Series 4 - 44mm (CA63C9E4-D6B3-4611-9A8A-18B351F0950D) (Shutdown) 
     Apple Watch Series 5 - 40mm (4E5AA489-F3FC-44DB-83B2-22AE30919B00) (Shutdown) 
     Apple Watch Series 5 - 44mm (4E80FDB8-DB93-4D25-8DE1-EAF31621C83D) (Shutdown) 
--- watchOS 7.0 --
-    Apple Watch Series 5 - 40mm (B35BF7D4-C6AC-42EA-89EB-1B5809BED92B) (Shutdown) 
-    Apple Watch Series 5 - 44mm (8AD3C824-0293-4F79-A827-9FDBF3D2167C) (Shutdown) 
-    Apple Watch Series 6 - 40mm (BEA2550C-343A-406D-AA5D-5F3D7F193C9F) (Shutdown) 
-    Apple Watch Series 6 - 44mm (06442F78-7488-483F-8F04-48BFE7336243) (Shutdown) 
 -- watchOS 7.1 --
     Apple Watch Series 5 - 40mm (C6518002-CC47-4303-BF29-40B6BC887794) (Shutdown) 
     Apple Watch Series 5 - 44mm (DF1F64A5-7A21-4517-8640-DC2272346A36) (Shutdown) 
@@ -1301,11 +1277,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Disk
       Boot Mode: Normal
-      Computer Name: stg-vs4mac-stable-previous-210621080812-XghGcDZFikPFwoJuAtAFz
+      Computer Name: stg-vs4mac-stable-previous-210625140336-RgN7ZSH4W7LtK9gnFbTUnW
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 21 minutes
+      Time since boot: 30 minutes
 
 
 ========================================
@@ -1314,7 +1290,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-  /dev/disk1s5        200Gi         39Gi
+  /dev/disk1s5        200Gi         65Gi
 ========================================
 
 
