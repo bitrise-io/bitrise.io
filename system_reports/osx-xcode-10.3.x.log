@@ -7,12 +7,12 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2012_06_08_4
+* BITRISE_OSX_STACK_REV_ID: v2021_06_21
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.15.12 darwin/amd64
+* Go: go version go1.16.5 darwin/amd64
 * Python: Python 2.7.10
 * Node.js: v12.22.1
 * NPM: 6.14.12
@@ -20,10 +20,10 @@
 * Java: openjdk version "1.8.0_292"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_292-b10)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
-* Flutter: Flutter 1.26.0-17.8.pre • channel unknown • unknown source
-* fvm: 2.0.5
+* Flutter: Flutter 1.26.0-17.8.pre • channel beta • https://github.com/flutter/flutter.git
+* fvm: 2.2.2
 
-* git: git version 2.31.1
+* git: git version 2.32.0
 * git lfs: git-lfs/2.13.3 (GitHub; darwin amd64; go 1.16.2)
 * mercurial/hg: Mercurial Distributed SCM (version 5.8)
 * curl: curl 7.54.0 (x86_64-apple-darwin18.0) libcurl/7.54.0 LibreSSL/2.6.5 zlib/1.2.11 nghttp2/1.24.1
@@ -34,9 +34,9 @@ OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
 * tar: bsdtar 2.8.3 - libarchive 2.8.3
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.1.11
-Homebrew/homebrew-core (git revision a5077bea81; last commit 2021-05-28)
-Homebrew/homebrew-cask (git revision c9e6109c14; last commit 2021-05-28)
+* brew: Homebrew 3.2.0
+Homebrew/homebrew-core (git revision 803ea333d9; last commit 2021-06-15)
+Homebrew/homebrew-cask (git revision 59ef557f23; last commit 2021-06-15)
 * Ansible: ansible [core 2.11.0] 
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
@@ -44,10 +44,10 @@ Homebrew/homebrew-cask (git revision c9e6109c14; last commit 2021-05-28)
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 8.32
-* watchman: 4.9.0
-* flow: Flow, a static type checker for JavaScript, version 0.152.0
+* watchman: 2021.06.07.00
+* flow: Flow, a static type checker for JavaScript, version 0.153.0
 * carthage: 0.38.0
-* imagemagick (convert): Version: ImageMagick 7.0.11-13 Q16 x86_64 2021-05-17 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.0-0 Q16 x86_64 2021-06-13 https://imagemagick.org
 * ghostscript (ps2ascii): 9.54.0
 * screen: Screen version 4.08.00 (GNU) 05-Feb-20
 * firebase: 9.8.0
@@ -58,13 +58,13 @@ Homebrew/homebrew-cask (git revision c9e6109c14; last commit 2021-05-28)
 * Screen 4.08.00
 * applesimutils 0.9.2
 * OpenConnect version v8.10
-* aws-cli: aws-cli/2.2.7 Python/3.9.5 Darwin/18.7.0 source/x86_64 prompt/off
-* cmake: 3.20.3
+* aws-cli: aws-cli/2.2.11 Python/3.9.5 Darwin/18.7.0 source/x86_64 prompt/off
+* cmake: 3.20.4
 ./system_report.sh: line 77: danger-swift: command not found
 * danger-swift: 
 
 --- Bitrise CLI tool versions
-* bitrise: 1.46.0
+* bitrise: 1.47.1
 * stepman: 0.13.1
 * envman: 2.3.1
 * cmd-bridge: 0.9.5
@@ -74,39 +74,46 @@ Homebrew/homebrew-cask (git revision c9e6109c14; last commit 2021-05-28)
 === Brew list versions ==================
 ansible 4.0.0
 ant 1.10.10
-aom 3.1.0
+aom 3.1.1
 applesimutils 0.9.2
 autoconf 2.71
-awscli 2.2.7
+awscli 2.2.11
 bdw-gc 8.0.4_2
+boost 1.76.0
 brotli 1.0.9
 c-ares 1.17.1
 carthage 0.38.0
-cmake 3.20.3
+cmake 3.20.4
 coreutils 8.32
 dart 2.13.3
 docbook 5.1_1
 docbook-xsl 1.79.2_1
-flow 0.152.0
+double-conversion 3.1.5_1
+flow 0.153.0
+fmt 7.1.3
+folly 2021.06.14.00
 fontconfig 2.13.1
 freetype 2.10.4
-fvm 2.0.5
+fvm 2.2.2
 gdbm 1.19
 gettext 0.21
+gflags 2.2.2
 ghostscript 9.54.0
-git 2.31.1
+git 2.32.0
 git-lfs 2.13.3
-glib 2.68.2
+glib 2.68.3
+glog 0.5.0
 gmp 6.2.1
-gnu-getopt 2.36.2
+gnu-getopt 2.37
 gnutls 3.6.16
-go@1.15 1.15.12
-gradle 7.0.2_2
+go 1.16.5
+go@1.15 1.15.13
+gradle 7.1
 guile 3.0.7
 icu4c 69.1
 ilmbase 2.5.5_1
-imagemagick 7.0.11-13_2
-imath 3.0.3
+imagemagick 7.1.0-0
+imath 3.0.4
 jbig2dec 0.19
 jemalloc 5.2.1_1
 jenv 0.5.4
@@ -129,42 +136,46 @@ libunistring 0.9.10
 libuv 1.41.0
 libyaml 0.2.5
 little-cms2 2.12
+llvm 12.0.0_1
+lz4 1.9.3
 m4 1.4.18
 maven 3.8.1
 mercurial 5.8
 mpdecimal 2.5.1
-nettle 3.7.2
+nettle 3.7.3
 nghttp2 1.43.0
-node 16.2.0
+node 16.3.0
 node@12 12.22.1_1
 oniguruma 6.9.7.1
 openconnect 8.10
-openexr 3.0.3
-openjdk 15.0.2
+openexr 3.0.4
+openjdk 16.0.1
 openjpeg 2.4.0
 openssl@1.1 1.1.1k
-p11-kit 0.23.22
+p11-kit 0.24.0
 pcre 8.44
 pcre2 10.37
 pkg-config 0.29.2_3
 python@3.9 3.9.5
 rbenv 1.1.2
 readline 8.1
-ruby-build 20210526
+ruby-build 20210611
 screen 4.8.0
 shared-mime-info 2.1
+snappy 1.1.9
 sqlite 3.35.5
 stoken 0.92_1
 tcl-tk 8.6.11_1
 tree 1.8.0
 unbound 1.13.1
-watchman 4.9.0_5
+watchman 2021.06.07.00
 webp 1.2.0
 wget 1.21.1
 x265 3.5
 xmlto 0.0.28
 xz 5.2.5
 yarn 1.22.10
+zstd 1.5.0
 ========================================
 
 
@@ -207,6 +218,9 @@ awscli
 
 bdw-gc
 
+boost
+└── icu4c
+
 brotli
 
 c-ares
@@ -224,7 +238,37 @@ docbook
 docbook-xsl
 └── docbook
 
+double-conversion
+
 flow
+
+fmt
+
+folly
+├── boost
+│   └── icu4c
+├── double-conversion
+├── fmt
+├── gflags
+├── glog
+│   └── gflags
+├── libevent
+│   └── openssl@1.1
+├── lz4
+├── openssl@1.1
+├── snappy
+├── xz
+├── zstd
+└── llvm
+    ├── python@3.9
+    │   ├── gdbm
+    │   ├── mpdecimal
+    │   ├── openssl@1.1
+    │   ├── readline
+    │   ├── sqlite
+    │   │   └── readline
+    │   └── xz
+    └── libffi
 
 fontconfig
 └── freetype
@@ -238,6 +282,8 @@ leoafarias/fvm/fvm
 gdbm
 
 gettext
+
+gflags
 
 ghostscript
 ├── fontconfig
@@ -283,6 +329,9 @@ glib
     │   └── readline
     └── xz
 
+glog
+└── gflags
+
 gmp
 
 gnu-getopt
@@ -316,6 +365,8 @@ gnutls
     │   ├── libev
     │   └── openssl@1.1
     └── openssl@1.1
+
+go
 
 go@1.15
 
@@ -431,6 +482,8 @@ imagemagick
 
 imath
 
+intel-haxm
+
 jbig2dec
 
 jemalloc
@@ -519,6 +572,19 @@ little-cms2
 ├── jpeg
 └── libtiff
     └── jpeg
+
+llvm
+├── python@3.9
+│   ├── gdbm
+│   ├── mpdecimal
+│   ├── openssl@1.1
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+└── libffi
+
+lz4
 
 m4
 
@@ -669,6 +735,8 @@ shared-mime-info
     │   └── docbook
     └── gnu-getopt
 
+snappy
+
 sqlite
 └── readline
 
@@ -692,6 +760,39 @@ unbound
 └── openssl@1.1
 
 watchman
+├── boost
+│   └── icu4c
+├── fmt
+├── folly
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   ├── lz4
+│   ├── openssl@1.1
+│   ├── snappy
+│   ├── xz
+│   ├── zstd
+│   └── llvm
+│       ├── python@3.9
+│       │   ├── gdbm
+│       │   ├── mpdecimal
+│       │   ├── openssl@1.1
+│       │   ├── readline
+│       │   ├── sqlite
+│       │   │   └── readline
+│       │   └── xz
+│       └── libffi
+├── gflags
+├── glog
+│   └── gflags
+├── libevent
+│   └── openssl@1.1
 ├── openssl@1.1
 ├── pcre
 └── python@3.9
@@ -738,11 +839,13 @@ yarn
     │   └── openssl@1.1
     └── openssl@1.1
 
+zstd
+
 ========================================
 
 
 === Ruby and rubygems ==================
-* Ruby (default): ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-darwin18]
+* Ruby (default): ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-darwin18]
 --- Available ruby versions ---
   system
   2.4.5
@@ -752,35 +855,31 @@ yarn
   3.0.0
 -------------------------------
 * rbenv: 1.1.2
-* Rubygems: 3.2.3
-* Bundler: Bundler version 2.2.3
+* Rubygems: 3.0.3
+* Bundler: Bundler version 2.1.4
 * CocoaPods: 1.10.1
 * xcpretty: 0.3.0
 ========================================
 
 
 === All Ruby GEMs ======================
-abbrev (default: 0.1.0)
 activesupport (5.2.6)
 addressable (2.7.0)
 algoliasearch (1.27.5)
-artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.1.1)
-aws-partitions (1.466.0)
-aws-sdk-core (3.114.2)
-aws-sdk-kms (1.43.0)
-aws-sdk-s3 (1.96.0)
+aws-partitions (1.470.0)
+aws-sdk-core (3.114.3)
+aws-sdk-kms (1.44.0)
+aws-sdk-s3 (1.96.1)
 aws-sigv4 (1.2.3)
 babosa (1.0.4)
-base64 (default: 0.1.0)
-benchmark (default: 0.1.1)
-bigdecimal (default: 3.0.0)
-bundler (default: 2.2.3, 2.1.4)
+bigdecimal (default: 1.4.1)
+bundler (2.1.4, default: 1.17.2)
 CFPropertyList (3.0.3)
-cgi (default: 0.2.0)
 claide (1.0.3)
 clamp (1.3.2)
+cmath (default: 1.0.0)
 cocoapods (1.10.1)
 cocoapods-core (1.10.1)
 cocoapods-deintegrate (1.0.4)
@@ -797,18 +896,13 @@ csv (default: 3.0.9)
 date (default: 2.0.0)
 dbm (default: 1.0.0)
 declarative (0.0.20)
-delegate (default: 0.2.0)
-did_you_mean (default: 1.5.0)
-digest (default: 3.0.0)
 digest-crc (0.6.3)
 domain_name (0.5.20190701)
 dotenv (2.7.6)
-drb (default: 2.0.4)
+e2mmap (default: 0.1.0)
 emoji_regex (3.2.2)
-english (default: 0.7.1)
-erb (default: 2.2.0)
 escape (0.0.4)
-etc (default: 1.2.0)
+etc (default: 1.0.1)
 ethon (0.14.0)
 excon (0.82.0)
 faraday (1.4.2)
@@ -822,40 +916,36 @@ faraday_middleware (1.0.0)
 fastimage (2.2.4)
 fastlane (2.166.0)
 fcntl (default: 1.0.0)
-ffi (1.15.1)
+ffi (1.15.3)
 fiddle (default: 1.0.0)
 fileutils (default: 1.1.0)
 forwardable (default: 1.2.0)
 fourflusher (2.3.1)
 fuzzy_match (2.0.4)
-gdbm (default: 2.1.0)
-getoptlong (default: 0.1.1)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.5.0)
+google-api-client (0.38.0)
 google-apis-core (0.3.0)
 google-apis-iamcredentials_v1 (0.4.0)
 google-apis-storage_v1 (0.4.0)
 google-cloud-core (1.6.0)
 google-cloud-env (1.5.0)
 google-cloud-errors (1.1.0)
-google-cloud-storage (1.31.1)
+google-cloud-storage (1.32.0)
 googleauth (0.16.2)
 highline (1.7.10)
 http-cookie (1.0.4)
 httpclient (2.8.3)
 i18n (1.8.10)
-io-console (default: 0.5.6)
-io-nonblock (default: 0.1.0)
-io-wait (default: 0.1.0)
+io-console (default: 0.4.7)
 ipaddr (default: 1.2.2)
-irb (default: 1.3.0)
+irb (default: 1.0.0)
 jazzy (0.13.6)
 jmespath (1.4.0)
-json (default: 2.5.1)
+json (default: 2.1.0)
 jwt (2.2.3)
 liferaft (0.0.6)
-logger (default: 1.4.3)
-matrix (default: 0.3.1)
+logger (default: 1.3.0)
+matrix (default: 0.1.0)
 memoist (0.16.2)
 mini_magick (4.11.0)
 mini_mime (1.1.0)
@@ -864,86 +954,62 @@ molinillo (0.6.6)
 multi_json (1.15.0)
 multipart-post (2.0.0)
 mustache (1.1.1)
-mutex_m (default: 0.1.1)
+mutex_m (default: 0.1.0)
 nanaimo (0.3.0)
 nap (1.1.0)
 naturally (2.2.1)
-net-ftp (default: 0.1.1)
-net-http (default: 0.1.1)
-net-imap (default: 0.1.1)
-net-pop (default: 0.1.1)
-net-protocol (default: 0.1.0)
-net-smtp (default: 0.2.1)
 netrc (0.11.0)
 nokogiri (1.11.7 x86_64-darwin)
 open4 (1.3.4)
-openssl (default: 2.2.0)
-optparse (default: 0.1.0)
+openssl (default: 2.1.2)
 os (1.1.1)
-ostruct (default: 0.3.1)
-pathname (default: 0.1.0)
+ostruct (default: 0.1.0)
 plist (3.6.0)
-pp (default: 0.1.0)
-prettyprint (default: 0.1.0)
-prime (default: 0.1.2)
-pstore (default: 0.1.1)
-psych (default: 3.3.0)
+prime (default: 0.1.0)
+psych (default: 3.1.0)
 public_suffix (4.0.6)
-racc (default: 1.5.1)
+racc (1.5.2)
 rake (13.0.3)
-rdoc (default: 6.3.0)
-readline (default: 0.0.2)
-readline-ext (default: 0.1.1)
+rdoc (default: 6.1.2)
 redcarpet (3.5.1)
-reline (default: 0.2.0)
 representable (3.1.1)
-resolv (default: 0.2.0)
-resolv-replace (default: 0.1.0)
 retriable (3.1.2)
-rexml (3.2.5)
-rinda (default: 0.1.0)
+rexml (default: 3.1.9)
 rouge (2.0.7)
+rss (default: 0.2.7)
 ruby-macho (1.4.0)
 ruby2_keywords (0.0.4)
 rubyzip (2.3.0)
 sassc (2.4.0)
-securerandom (default: 0.1.0)
+scanf (default: 1.0.0)
+sdbm (default: 1.0.0)
 security (0.1.3)
-set (default: 1.0.1)
-shellwords (default: 0.1.0)
+shell (default: 0.7)
 signet (0.15.0)
 simctl (1.6.8)
-singleton (default: 0.1.1)
 slack-notifier (2.4.0)
 slather (2.5.0)
 sqlite3 (1.4.2)
-stringio (default: 3.0.0)
-strscan (default: 3.0.0)
-syslog (default: 0.1.0)
-tempfile (default: 0.1.1)
+stringio (default: 0.0.2)
+strscan (default: 1.0.0)
+sync (default: 0.5.0)
 terminal-notifier (2.0.0)
 terminal-table (1.8.0)
 thread_safe (0.3.6)
-time (default: 0.1.0)
-timeout (default: 0.1.1)
-tmpdir (default: 0.1.1)
-tracer (default: 0.1.1)
+thwait (default: 0.1.0)
+tracer (default: 0.1.0)
 trailblazer-option (0.1.1)
 trainer (0.9.1)
-tsort (default: 0.1.0)
 tty-cursor (0.7.1)
 tty-screen (0.8.1)
 tty-spinner (0.9.3)
 typhoeus (1.4.0)
 tzinfo (1.2.9)
 uber (0.1.0)
-un (default: 0.1.0)
 unf (0.1.4)
 unf_ext (0.0.7.7)
 unicode-display_width (1.7.0)
-uri (default: 0.10.1)
-weakref (default: 0.1.1)
-webrick (1.7.0)
+webrick (default: 1.4.2)
 word_wrap (1.0.0)
 xcinvoke (0.3.0)
 xcode-install (2.7.0)
@@ -953,8 +1019,7 @@ xcpretty (0.3.0)
 xcpretty-json-formatter (0.1.1)
 xcpretty-travis-formatter (1.0.1)
 xcresult (0.2.1)
-yaml (default: 0.1.1)
-zlib (default: 1.1.0)
+zlib (default: 1.0.0)
 ========================================
 
 
@@ -1258,11 +1323,11 @@ Software:
       Kernel Version: Darwin 18.7.0
       Boot Volume: Disk
       Boot Mode: Normal
-      Computer Name: stg-xcode-10-3-210611095440-RDUUr7M2sE9UCdwXQcTwzh
+      Computer Name: stg-xcode-10-3-210625135912-2LdBtrSTsLq4FaDuwQ8hiS
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 43 minutes
+      Time since boot: 33 minutes
 
 
 ========================================
@@ -1271,7 +1336,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-  /dev/disk1s1        200Gi        104Gi
+  /dev/disk1s1        200Gi        101Gi
 ========================================
 
 --- Android
