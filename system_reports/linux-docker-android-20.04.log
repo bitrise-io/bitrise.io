@@ -35,13 +35,13 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.20.9 Python/3.8.10 Linux/5.4.0-1036-gcp botocore/1.21.9
+* aws-cli: aws-cli/1.20.10 Python/3.8.10 Linux/5.4.0-1036-gcp botocore/1.21.10
 * Ruby: ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
   * bundler: Bundler version 2.2.24
   * rubygems: 3.2.24
 * Go: go version go1.16.5 linux/amd64
-* Node.js: v12.22.2
-* NPM: 7.20.2
+* Node.js: v12.22.4
+* NPM: 7.20.3
 * Yarn: 1.22.5
 * docker: Docker version 20.10.7, build f0df350
 * docker-compose: docker-compose version 1.21.2, build a133471
@@ -57,7 +57,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * Java: javac 1.8.0_292
 * Cordova CLI version: 10.0.0
 * Ionic CLI version: 6.16.3
-* Appcenter-CLI version: 2.9.0
+* Appcenter-CLI version: 2.10.0
 ========================================
 
 === Java ===============================
@@ -266,10 +266,10 @@ android-31
 === Android APK tools ==================
 
 * aapt2:
-Android Asset Packaging Tool (aapt) 2:19
+Android Asset Packaging Tool (aapt) 2.19-7147631
 
 * bundletool:
-0.10.3
+1.7.0
 
 ========================================
 
@@ -399,7 +399,7 @@ addressable (2.8.0)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.1.1)
-aws-partitions (1.480.0)
+aws-partitions (1.481.0)
 aws-sdk-core (3.118.0)
 aws-sdk-kms (1.45.0)
 aws-sdk-s3 (1.97.0)
@@ -535,7 +535,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-210730072617-nzuh9ld64czu66bpavygqk 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-210730161513-fu24fw4el37ke7etugvwro 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.4.0-1036-gcp
 * lsb_release --all
@@ -577,8 +577,8 @@ Server:
  Runtimes: io.containerd.runtime.v1.linux runc io.containerd.runc.v2
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: 7eba5930496d9bbe375fdf71603e610ad737d2b2
- runc version: v1.0.0-0-g84113ee
+ containerd version: e25210fe30a0a703442421b0f60afac609f950a3
+ runc version: v1.0.1-0-g4144b63
  init version: de40ad0
  Security Options:
   apparmor
@@ -590,8 +590,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.28GiB
- Name: stg-20-04-usc1b-210730072617-nzuh9ld64czu66bpavygqk
- ID: A6HE:AGPZ:ESPH:4WTU:B4VZ:BXKX:5EC7:3UXI:5656:LLKC:LUOR:3JMI
+ Name: stg-20-04-usc1b-210730161513-fu24fw4el37ke7etugvwro
+ ID: JA6H:32SL:IEL2:5B5F:7YKX:N55Q:FJYR:BFYF:C4KJ:XMTY:T7KC:5ZEC
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -608,8 +608,8 @@ WARNING: No swap limit support
 === Docker pre-cached images ===========
 bitriseio/android-ndk-20.04 - 42.5GB
 quay.io/bitriseio/android-ndk-20.04 - 42.5GB
-bitriseio/android-20.04 - 38.2GB
-quay.io/bitriseio/android-20.04 - 38.2GB
+bitriseio/android-20.04 - 38.3GB
+quay.io/bitriseio/android-20.04 - 38.3GB
 bitriseio/bitrise-base-20.04 - 3.88GB
 quay.io/bitriseio/bitrise-base-20.04 - 3.88GB
 bitrisedev/build-env - 5.2GB
@@ -619,13 +619,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop4      160G   47G  114G  29% /
+/dev/loop3      160G   47G  114G  29% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G  167G   28G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:          7.3Gi       487Mi       3.1Gi       1.0Mi       3.7Gi       6.6Gi
+Mem:          7.3Gi       459Mi       3.9Gi       1.0Mi       3.0Gi       6.6Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
