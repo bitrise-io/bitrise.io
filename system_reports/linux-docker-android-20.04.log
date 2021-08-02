@@ -35,13 +35,13 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.20.5 Python/3.8.10 Linux/5.4.0-1036-gcp botocore/1.21.5
+* aws-cli: aws-cli/1.20.10 Python/3.8.10 Linux/5.4.0-1036-gcp botocore/1.21.10
 * Ruby: ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
   * bundler: Bundler version 2.2.24
   * rubygems: 3.2.24
 * Go: go version go1.16.5 linux/amd64
-* Node.js: v12.22.2
-* NPM: 7.20.1
+* Node.js: v12.22.4
+* NPM: 7.20.3
 * Yarn: 1.22.5
 * docker: Docker version 20.10.7, build f0df350
 * docker-compose: docker-compose version 1.21.2, build a133471
@@ -57,7 +57,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * Java: javac 1.8.0_292
 * Cordova CLI version: 10.0.0
 * Ionic CLI version: 6.16.3
-* Appcenter-CLI version: 2.9.0
+* Appcenter-CLI version: 2.10.0
 ========================================
 
 === Java ===============================
@@ -68,11 +68,11 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 349.0.0
-alpha 2021.07.19
-beta 2021.07.19
+Google Cloud SDK 350.0.0
+alpha 2021.07.23
+beta 2021.07.23
 bq 2.0.70
-core 2021.07.19
+core 2021.07.23
 gsutil 4.65
 ========================================
 
@@ -103,13 +103,13 @@ Property diagnostic passed (1/1 checks passed).
 
  * adb version:
 Android Debug Bridge version 1.0.41
-Version 31.0.2-7242960
+Version 31.0.3-7562133
 Installed as /opt/android-sdk-linux/platform-tools/adb
 
  * SDK packages:
 * Command line Tools version: 4.0
-* Platform Tools version: 31.0.2
-* Emulator version: 30.8.1
+* Platform Tools version: 31.0.3
+* Emulator version: 30.8.2
 ========================================
 
 
@@ -135,7 +135,6 @@ tools-2
 
 * ./platform-tools:
 adb
-api
 dmtracedump
 e2fsdroid
 etc1tool
@@ -176,7 +175,10 @@ systrace
 29.0.2
 29.0.3
 30.0.0
+30.0.1
 30.0.2
+30.0.3
+31.0.0
 
 * ./emulator:
 android-info.txt
@@ -225,6 +227,7 @@ android-27
 android-28
 android-29
 android-30
+android-31
 
 * ./system-images:
 /opt/android-sdk-linux/system-images
@@ -249,21 +252,24 @@ android-30
 ├── android-29
 │   └── google_apis
 │       └── x86
-└── android-30
+├── android-30
+│   └── google_apis
+│       └── x86
+└── android-31
     └── google_apis
-        └── x86
+        └── x86_64
 
-24 directories, 0 files
+27 directories, 0 files
 ========================================
 
 
 === Android APK tools ==================
 
 * aapt2:
-Android Asset Packaging Tool (aapt) 2:19
+Android Asset Packaging Tool (aapt) 2.19-7147631
 
 * bundletool:
-0.10.3
+1.7.0
 
 ========================================
 
@@ -271,7 +277,7 @@ Android Asset Packaging Tool (aapt) 2:19
 
 $ cat /opt/android-ndk/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 21.3.6528147
+Pkg.Revision = 21.4.7075529
 
 $ tree -L 2 /opt/android-ndk
 /opt/android-ndk
@@ -393,10 +399,10 @@ addressable (2.8.0)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.1.1)
-aws-partitions (1.479.0)
-aws-sdk-core (3.117.0)
-aws-sdk-kms (1.44.0)
-aws-sdk-s3 (1.96.2)
+aws-partitions (1.481.0)
+aws-sdk-core (3.118.0)
+aws-sdk-kms (1.45.0)
+aws-sdk-s3 (1.97.0)
 aws-sigv4 (1.2.4)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
@@ -413,7 +419,7 @@ date (default: 3.0.0)
 declarative (0.0.20)
 delegate (default: 0.1.0)
 did_you_mean (default: 1.4.0)
-digest-crc (0.6.3)
+digest-crc (0.6.4)
 domain_name (0.5.20190701)
 dotenv (2.7.6)
 emoji_regex (3.2.2)
@@ -430,14 +436,14 @@ faraday-net_http_persistent (1.2.0)
 faraday-patron (1.0.0)
 faraday_middleware (1.0.0)
 fastimage (2.2.4)
-fastlane (2.188.0)
+fastlane (2.189.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.4.1)
 forwardable (default: 1.3.1)
 getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.8.0)
+google-apis-androidpublisher_v3 (0.9.0)
 google-apis-core (0.4.1)
 google-apis-iamcredentials_v1 (0.6.0)
 google-apis-playcustomapp_v1 (0.5.0)
@@ -529,7 +535,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-210723141816-e86uwbdvnfvd2mqcwm733i 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-210730161513-fu24fw4el37ke7etugvwro 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.4.0-1036-gcp
 * lsb_release --all
@@ -568,11 +574,11 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Runtimes: io.containerd.runtime.v1.linux runc io.containerd.runc.v2
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: 7eba5930496d9bbe375fdf71603e610ad737d2b2
- runc version: v1.0.0-0-g84113ee
+ containerd version: e25210fe30a0a703442421b0f60afac609f950a3
+ runc version: v1.0.1-0-g4144b63
  init version: de40ad0
  Security Options:
   apparmor
@@ -584,8 +590,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.28GiB
- Name: stg-20-04-usc1b-210723141816-e86uwbdvnfvd2mqcwm733i
- ID: QIUS:ZQX5:WN43:MKCT:LO6M:QKFD:6VHA:BZ7L:Z4ZI:DYDR:64MF:FFHQ
+ Name: stg-20-04-usc1b-210730161513-fu24fw4el37ke7etugvwro
+ ID: JA6H:32SL:IEL2:5B5F:7YKX:N55Q:FJYR:BFYF:C4KJ:XMTY:T7KC:5ZEC
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -600,10 +606,10 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 37.4GB
-quay.io/bitriseio/android-ndk-20.04 - 37.4GB
-bitriseio/android-20.04 - 33.2GB
-quay.io/bitriseio/android-20.04 - 33.2GB
+bitriseio/android-ndk-20.04 - 42.5GB
+quay.io/bitriseio/android-ndk-20.04 - 42.5GB
+bitriseio/android-20.04 - 38.3GB
+quay.io/bitriseio/android-20.04 - 38.3GB
 bitriseio/bitrise-base-20.04 - 3.88GB
 quay.io/bitriseio/bitrise-base-20.04 - 3.88GB
 bitrisedev/build-env - 5.2GB
@@ -613,13 +619,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop4      160G   42G  119G  26% /
+/dev/loop3      160G   47G  114G  29% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G  167G   28G  86% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:          7.3Gi       467Mi       3.9Gi       1.0Mi       3.0Gi       6.6Gi
+Mem:          7.3Gi       459Mi       3.9Gi       1.0Mi       3.0Gi       6.6Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
