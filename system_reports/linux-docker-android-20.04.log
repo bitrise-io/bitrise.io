@@ -35,13 +35,13 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.20.38 Python/3.8.10 Linux/5.4.0-1036-gcp botocore/1.21.38
+* aws-cli: aws-cli/1.20.44 Python/3.8.10 Linux/5.4.0-1036-gcp botocore/1.21.44
 * Ruby: ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
   * bundler: Bundler version 2.2.27
   * rubygems: 3.2.27
 * Go: go version go1.16.5 linux/amd64
 * Node.js: v12.22.6
-* NPM: 7.22.0
+* NPM: 7.24.0
 * Yarn: 1.22.5
 * docker: Docker version 20.10.8, build 3967b7d
 * docker-compose: docker-compose version 1.21.2, build a133471
@@ -68,11 +68,11 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 356.0.0
-alpha 2021.09.03
-beta 2021.09.03
+Google Cloud SDK 357.0.0
+alpha 2021.09.10
+beta 2021.09.10
 bq 2.0.71
-core 2021.09.03
+core 2021.09.10
 gsutil 4.67
 ========================================
 
@@ -84,7 +84,7 @@ gsutil 4.67
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-..done.
+...done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -109,7 +109,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * Command line Tools version: 5.0
 * Platform Tools version: 31.0.3
-* Emulator version: 30.9.2
+* Emulator version: 30.9.3
 ========================================
 
 
@@ -400,10 +400,10 @@ addressable (2.8.0)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.498.0)
+aws-partitions (1.503.0)
 aws-sdk-core (3.121.0)
 aws-sdk-kms (1.48.0)
-aws-sdk-s3 (1.102.0)
+aws-sdk-s3 (1.103.0)
 aws-sigv4 (1.4.0)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
@@ -426,7 +426,7 @@ dotenv (2.7.6)
 emoji_regex (3.2.2)
 etc (default: 1.1.0)
 excon (0.85.0)
-faraday (1.7.1)
+faraday (1.8.0)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
 faraday-em_synchrony (1.0.0)
@@ -438,7 +438,7 @@ faraday-patron (1.0.0)
 faraday-rack (1.0.0)
 faraday_middleware (1.1.0)
 fastimage (2.2.5)
-fastlane (2.193.1)
+fastlane (2.194.0)
 fcntl (default: 1.0.0)
 fiddle (default: 1.0.0)
 fileutils (default: 1.4.1)
@@ -449,10 +449,10 @@ google-apis-androidpublisher_v3 (0.11.0)
 google-apis-core (0.4.1)
 google-apis-iamcredentials_v1 (0.7.0)
 google-apis-playcustomapp_v1 (0.5.0)
-google-apis-storage_v1 (0.6.0)
+google-apis-storage_v1 (0.7.0)
 google-cloud-core (1.6.0)
 google-cloud-env (1.5.0)
-google-cloud-errors (1.1.0)
+google-cloud-errors (1.2.0)
 google-cloud-storage (1.34.1)
 googleauth (0.17.1)
 highline (2.0.3)
@@ -522,8 +522,8 @@ tty-screen (0.8.1)
 tty-spinner (0.9.3)
 uber (0.1.0)
 unf (0.1.4)
-unf_ext (0.0.7.7)
-unicode-display_width (1.7.0)
+unf_ext (0.0.8)
+unicode-display_width (1.8.0)
 uri (default: 0.10.0)
 webrick (default: 1.6.0)
 word_wrap (1.0.0)
@@ -538,7 +538,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-210909092811-du4hvvxpugrbmwzivqjpzf 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-210921213002-qlpmuaxvfvuehi2uqebsna 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.4.0-1036-gcp
 * lsb_release --all
@@ -593,8 +593,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.772GiB
- Name: stg-20-04-usc1b-210909092811-du4hvvxpugrbmwzivqjpzf
- ID: GAQU:MBSX:5FEZ:6MDS:EZQA:BINV:2VNS:IRS7:EY2G:EWJQ:C2DI:P66C
+ Name: stg-20-04-usc1b-210921213002-qlpmuaxvfvuehi2uqebsna
+ ID: M6KW:ZMKI:GTVE:P2UP:WSUN:46UC:YN5X:LCYU:J2M2:PSY6:NN7E:Y7UB
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -609,8 +609,8 @@ WARNING: No swap limit support
 
 
 === Docker pre-cached images ===========
-quay.io/bitriseio/android-ndk-20.04 - 42GB
 bitriseio/android-ndk-20.04 - 42GB
+quay.io/bitriseio/android-ndk-20.04 - 42GB
 bitriseio/android-20.04 - 37.8GB
 quay.io/bitriseio/android-20.04 - 37.8GB
 bitriseio/bitrise-base-20.04 - 3.64GB
@@ -625,10 +625,10 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop4      160G   46G  114G  29% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   54G  141G  28% /bitrise
+/dev/root       194G  167G   28G  87% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:          7.8Gi       489Mi       2.1Gi       1.0Mi       5.2Gi       7.0Gi
+Mem:          7.8Gi       538Mi       3.7Gi       1.0Mi       3.6Gi       7.0Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
