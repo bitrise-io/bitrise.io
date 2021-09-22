@@ -84,7 +84,7 @@ gsutil 4.67
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-...done.
+.done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -538,7 +538,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-210921213002-qlpmuaxvfvuehi2uqebsna 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-210921213407-kcuufwtksowb9tdr2mrxji 5.4.0-1036-gcp #39-Ubuntu SMP Thu Jan 14 18:41:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.4.0-1036-gcp
 * lsb_release --all
@@ -577,7 +577,7 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Runtimes: io.containerd.runtime.v1.linux runc io.containerd.runc.v2
  Default Runtime: runc
  Init Binary: docker-init
  containerd version: e25210fe30a0a703442421b0f60afac609f950a3
@@ -593,7 +593,7 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.772GiB
- Name: stg-20-04-usc1b-210921213002-qlpmuaxvfvuehi2uqebsna
+ Name: stg-20-04-usc1b-210921213407-kcuufwtksowb9tdr2mrxji
  ID: M6KW:ZMKI:GTVE:P2UP:WSUN:46UC:YN5X:LCYU:J2M2:PSY6:NN7E:Y7UB
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
@@ -613,8 +613,8 @@ bitriseio/android-ndk-20.04 - 42GB
 quay.io/bitriseio/android-ndk-20.04 - 42GB
 bitriseio/android-20.04 - 37.8GB
 quay.io/bitriseio/android-20.04 - 37.8GB
-bitriseio/bitrise-base-20.04 - 3.64GB
 quay.io/bitriseio/bitrise-base-20.04 - 3.64GB
+bitriseio/bitrise-base-20.04 - 3.64GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -625,10 +625,10 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop4      160G   46G  114G  29% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G  167G   28G  87% /bitrise
+/dev/root       194G  167G   27G  87% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:          7.8Gi       538Mi       3.7Gi       1.0Mi       3.6Gi       7.0Gi
+Mem:          7.8Gi       475Mi       2.9Gi       1.0Mi       4.4Gi       7.0Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
