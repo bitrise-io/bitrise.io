@@ -7,61 +7,62 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_10_19
+* BITRISE_OSX_STACK_REV_ID: v2022_04_04
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.16.7 darwin/amd64
+* Go: go version go1.17.8 darwin/amd64
 * Python: Python 2.7.16
-* Node.js: v12.22.6
-* NPM: 6.14.15
-* Yarn: 1.22.11
+* Node.js: v12.22.11
+* NPM: 6.14.16
+* Yarn: 1.22.18
 * Java: openjdk version "11.0.11" 2021-04-20
 OpenJDK Runtime Environment AdoptOpenJDK-11.0.11+9 (build 11.0.11+9)
 OpenJDK 64-Bit Server VM AdoptOpenJDK-11.0.11+9 (build 11.0.11+9, mixed mode)
-* Flutter: Flutter 1.26.0-17.8.pre • channel beta • https://github.com/flutter/flutter.git
-* fvm: 2.2.3
+* Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
+* fvm: 2.3.0
 
-* git: git version 2.33.0
-* git lfs: git-lfs/2.13.3 (GitHub; darwin amd64; go 1.16.5)
-* mercurial/hg: Mercurial Distributed SCM (version 5.9.1)
+* git: git version 2.35.1
+* git lfs: git-lfs/3.1.2 (GitHub; darwin amd64; go 1.17.6)
+* mercurial/hg: Mercurial Distributed SCM (version 6.1)
 * curl: curl 7.64.1 (x86_64-apple-darwin20.0) libcurl/7.64.1 (SecureTransport) LibreSSL/2.8.3 zlib/1.2.11 nghttp2/1.41.0
-* wget: GNU Wget 1.21.1 built on darwin20.4.0.
+* wget: GNU Wget 1.21.3 built on darwin20.6.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
-* tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
+* tree: tree v2.0.2 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.2.17
-Homebrew/homebrew-core (git revision ad83b1f8bf; last commit 2021-09-07)
-Homebrew/homebrew-cask (git revision 79ee6f0965; last commit 2021-09-07)
-* Ansible: ansible [core 2.11.4] 
+* brew: Homebrew 3.4.5
+Homebrew/homebrew-core (git revision 4a6d9e1d7ea; last commit 2022-04-04)
+Homebrew/homebrew-cask (git revision 27de994dfe; last commit 2022-04-04)
+* Ansible: ansible [core 2.12.4]
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/4.5.0/libexec/lib/python3.9/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/5.5.0/libexec/lib/python3.10/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
-* gtimeout: timeout (GNU coreutils) 8.32
-* watchman: 2021.08.30.00
-* flow: Flow, a static type checker for JavaScript, version 0.159.0
+* gtimeout: timeout (GNU coreutils) 9.0
+* watchman: 2022.03.21.00
+* flow: Flow, a static type checker for JavaScript, version 0.175.0
 * carthage: 0.38.0
-* imagemagick (convert): Version: ImageMagick 7.1.0-6 Q16-HDRI x86_64 2021-09-04 https://imagemagick.org
-* ghostscript (ps2ascii): 9.54.0
-* screen: Screen version 4.08.00 (GNU) 05-Feb-20
+* imagemagick (convert): Version: ImageMagick 7.1.0-29 Q16-HDRI x86_64 19841 https://imagemagick.org
+* ghostscript (ps2ascii): 9.55.0
+* screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 9.20.0
-* applesimutils version 0.9.4
+* applesimutils version 0.9.5
 * jq: 1.6
 * Version: 0.8.1
 * XCLogParser 0.2.21
-* Screen 4.08.00
-* applesimutils 0.9.4
-* OpenConnect version v8.10
-* aws-cli: aws-cli/2.2.35 Python/3.9.7 Darwin/20.6.0 source/x86_64 prompt/off
-* cmake: 3.21.2
-* danger-swift: 3.12.1
+* Screen 4.09.00
+* applesimutils 0.9.5
+* OpenConnect version v8.20
+* aws-cli: aws-cli/2.5.2 Python/3.9.12 Darwin/20.6.0 source/x86_64 prompt/off
+* cmake: 3.23.0
+* danger-swift: 3.12.3
 [0;0m
+* OpenVPN 2.5.6 x86_64-apple-darwin20.6.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] built on Mar 23 2022
 
 --- Bitrise CLI tool versions
 * bitrise: 1.48.0
@@ -72,118 +73,137 @@ Homebrew/homebrew-cask (git revision 79ee6f0965; last commit 2021-09-07)
 
 
 === Brew list versions ==================
-ansible 4.5.0
-ant 1.10.11
-aom 3.1.2
-applesimutils 0.9.4
+ansible 5.5.0
+ant 1.10.12
+aom 3.3.0
+applesimutils 0.9.5
 autoconf 2.71
-awscli 2.2.35
-bdw-gc 8.0.4_2
-boost 1.76.0
+awscli 2.5.2
+bdw-gc 8.0.6
+boost 1.78.0_1
 brotli 1.0.9
-c-ares 1.17.2
+c-ares 1.18.1_1
+ca-certificates 2022-03-29
 carthage 0.38.0
-cmake 3.21.2
-coreutils 8.32
-danger-js 10.7.0
-danger-swift 3.12.1
-dart 2.14.4
+cmake 3.23.0
+coreutils 9.0_1
+danger-js 11.0.2
+danger-swift 3.12.3
+dart 2.16.2
 docbook 5.1_1
 docbook-xsl 1.79.2_1
-double-conversion 3.1.5_1
-flow 0.159.0
-fmt 8.0.1
-folly 2021.08.30.00
-fontconfig 2.13.1
-freetype 2.11.0
-fvm 2.2.3
-gdbm 1.20
+double-conversion 3.2.0
+fb303 2022.03.21.00
+fbthrift 2022.03.21.00
+fizz 2022.03.21.00
+flow 0.175.0
+fmt 8.1.1_1
+folly 2022.03.21.00
+fontconfig 2.14.0
+freetype 2.12.0
+fvm 2.3.0
+gdbm 1.23
 gettext 0.21
 gflags 2.2.2
-ghostscript 9.54.0
-git 2.33.0
-git-lfs 2.13.3
-glib 2.68.4
+ghostscript 9.55.0
+giflib 5.2.1
+git 2.35.1
+git-lfs 3.1.2
+glib 2.72.0
 glog 0.5.0
-gmp 6.2.1
-gnu-getopt 2.37.2
-gnupg 2.3.2
-gnutls 3.6.16
-go@1.16 1.16.7
-gradle 7.2
-guile 3.0.7
-icu4c 69.1
-imagemagick 7.1.0-6
-imath 3.1.3
+gmp 6.2.1_1
+gnu-getopt 2.37.4
+gnupg 2.3.4
+gnutls 3.7.4
+go@1.16 1.16.15
+go@1.17 1.17.8
+gradle 7.4.2
+guile 3.0.8
+icu4c 70.1
+imagemagick 7.1.0-29
+imath 3.1.4
 jbig2dec 0.19
 jemalloc 5.2.1_1
 jenv 0.5.4
-jpeg 9d
+jpeg 9e
+jpeg-xl 0.6.1
 jq 1.6
 libassuan 2.5.5
 libde265 1.0.8
 libev 4.33
 libevent 2.1.12
-libffi 3.3_3
-libgcrypt 1.9.4
-libgpg-error 1.42
-libheif 1.12.0
+libffi 3.4.2
+libgcrypt 1.10.1
+libgpg-error 1.44
+libheif 1.12.0_1
 libidn 1.38
 libidn2 2.3.2
 libksba 1.6.0
 liblqr 0.4.2_1
-libomp 12.0.1
+libnghttp2 1.47.0
+libomp 14.0.0
 libpng 1.6.37
-libtasn1 4.17.0
+libsodium 1.0.18_1
+libtasn1 4.18.0
 libtiff 4.3.0
-libtool 2.4.6_4
-libunistring 0.9.10
-libusb 1.0.24
-libuv 1.42.0
+libtool 2.4.7
+libunistring 1.0
+libusb 1.0.25
+libuv 1.44.1
+libvmaf 2.3.0_1
 libyaml 0.2.5
-little-cms2 2.12
+little-cms2 2.13.1
 lz4 1.9.3
+lzo 2.10
 m4 1.4.19
 macos-term-size 1.0.0
-maven 3.8.2
-mercurial 5.9.1
+maven 3.8.5
+mercurial 6.1
 mpdecimal 2.5.1
 nettle 3.7.3
-nghttp2 1.44.0
-node 16.8.0
-node@12 12.22.6
+nghttp2 1.47.0
+node 17.8.0
+node@12 12.22.11
 npth 1.6
 oniguruma 6.9.7.1
-openconnect 8.10
-openexr 3.1.1
+openconnect 8.20
+openexr 3.1.4
 openjpeg 2.4.0
-openssl@1.1 1.1.1l
-p11-kit 0.24.0
+openssl@1.1 1.1.1n
+openvpn 2.5.6
+p11-kit 0.24.1
 pcre 8.45
-pcre2 10.37_1
+pcre2 10.39
 pinentry 1.2.0
+pkcs11-helper 1.28.0
 pkg-config 0.29.2_3
-python@3.9 3.9.7
-rbenv 1.1.2
-readline 8.1
-ruby-build 20210825
-screen 4.8.0
+python@3.10 3.10.2
+python@3.9 3.9.12
+rbenv 1.2.0
+readline 8.1.2
+ruby-build 20220324
+screen 4.9.0
 shared-mime-info 2.1
-six 1.16.0_1
+six 1.16.0_2
 snappy 1.1.9
-sqlite 3.36.0
+sqlite 3.38.2
 stoken 0.92_1
-swiftlint 0.43.1
-tree 1.8.0
-unbound 1.13.2
-watchman 2021.08.30.00
-webp 1.2.1
-wget 1.21.1_1
+swiftlint 0.47.0_1
+tree 2.0.2
+unbound 1.15.0
+wangle 2022.03.21.00
+watchman 2022.03.21.00
+webp 1.2.2
+wget 1.21.3
 x265 3.5
 xmlto 0.0.28
 xz 5.2.5
-yarn 1.22.11
-zstd 1.5.0
+yarn 1.22.18
+zstd 1.5.2
+adoptopenjdk11 11.0.11,9
+adoptopenjdk8 8,292:b10
+intel-haxm 7.7.1
+temurin 17.0.2,8
 ========================================
 
 
@@ -195,19 +215,37 @@ adoptopenjdk/openjdk/adoptopenjdk8
 ansible
 ├── libyaml
 ├── openssl@1.1
-└── python@3.9
-    ├── gdbm
-    ├── mpdecimal
-    ├── openssl@1.1
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    └── xz
+│   └── ca-certificates
+├── python@3.10
+│   ├── gdbm
+│   ├── mpdecimal
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+└── six
 
 ant
 └── openjdk
 
 aom
+├── jpeg-xl
+│   ├── brotli
+│   ├── giflib
+│   ├── imath
+│   ├── jpeg
+│   ├── libpng
+│   ├── openexr
+│   │   └── imath
+│   └── webp
+│       ├── giflib
+│       ├── jpeg
+│       ├── libpng
+│       └── libtiff
+│           └── jpeg
+└── libvmaf
 
 wix/brew/applesimutils
 
@@ -219,6 +257,7 @@ awscli
 │   ├── gdbm
 │   ├── mpdecimal
 │   ├── openssl@1.1
+│   │   └── ca-certificates
 │   ├── readline
 │   ├── sqlite
 │   │   └── readline
@@ -234,11 +273,14 @@ brotli
 
 c-ares
 
+ca-certificates
+
 carthage
 
 cmake
 
 coreutils
+└── gmp
 
 danger/tap/danger-js
 
@@ -254,6 +296,427 @@ docbook-xsl
 
 double-conversion
 
+fb303
+├── fbthrift
+│   ├── boost
+│   │   └── icu4c
+│   ├── fizz
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   └── icu4c
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   └── zstd
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── wangle
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fizz
+│   │   │   ├── boost
+│   │   │   │   └── icu4c
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   └── icu4c
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@1.1
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@1.1
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   └── zstd
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   └── icu4c
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   └── zstd
+│   └── zstd
+├── fizz
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   └── zstd
+├── fmt
+├── folly
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+├── gflags
+├── glog
+│   └── gflags
+├── openssl@1.1
+│   └── ca-certificates
+└── wangle
+    ├── boost
+    │   └── icu4c
+    ├── double-conversion
+    ├── fizz
+    │   ├── boost
+    │   │   └── icu4c
+    │   ├── double-conversion
+    │   ├── fmt
+    │   ├── folly
+    │   │   ├── boost
+    │   │   │   └── icu4c
+    │   │   ├── double-conversion
+    │   │   ├── fmt
+    │   │   ├── gflags
+    │   │   ├── glog
+    │   │   │   └── gflags
+    │   │   ├── libevent
+    │   │   │   └── openssl@1.1
+    │   │   │       └── ca-certificates
+    │   │   ├── lz4
+    │   │   ├── openssl@1.1
+    │   │   │   └── ca-certificates
+    │   │   ├── snappy
+    │   │   ├── xz
+    │   │   └── zstd
+    │   ├── gflags
+    │   ├── glog
+    │   │   └── gflags
+    │   ├── libevent
+    │   │   └── openssl@1.1
+    │   │       └── ca-certificates
+    │   ├── libsodium
+    │   ├── lz4
+    │   ├── openssl@1.1
+    │   │   └── ca-certificates
+    │   ├── snappy
+    │   └── zstd
+    ├── fmt
+    ├── folly
+    │   ├── boost
+    │   │   └── icu4c
+    │   ├── double-conversion
+    │   ├── fmt
+    │   ├── gflags
+    │   ├── glog
+    │   │   └── gflags
+    │   ├── libevent
+    │   │   └── openssl@1.1
+    │   │       └── ca-certificates
+    │   ├── lz4
+    │   ├── openssl@1.1
+    │   │   └── ca-certificates
+    │   ├── snappy
+    │   ├── xz
+    │   └── zstd
+    ├── gflags
+    ├── glog
+    │   └── gflags
+    ├── libevent
+    │   └── openssl@1.1
+    │       └── ca-certificates
+    ├── libsodium
+    ├── lz4
+    ├── openssl@1.1
+    │   └── ca-certificates
+    ├── snappy
+    └── zstd
+
+fbthrift
+├── boost
+│   └── icu4c
+├── fizz
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   └── zstd
+├── fmt
+├── folly
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+├── gflags
+├── glog
+│   └── gflags
+├── openssl@1.1
+│   └── ca-certificates
+├── wangle
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fizz
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   └── icu4c
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   └── zstd
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   └── zstd
+└── zstd
+
+fizz
+├── boost
+│   └── icu4c
+├── double-conversion
+├── fmt
+├── folly
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+├── gflags
+├── glog
+│   └── gflags
+├── libevent
+│   └── openssl@1.1
+│       └── ca-certificates
+├── libsodium
+├── lz4
+├── openssl@1.1
+│   └── ca-certificates
+├── snappy
+└── zstd
+
 flow
 
 fmt
@@ -268,8 +731,10 @@ folly
 │   └── gflags
 ├── libevent
 │   └── openssl@1.1
+│       └── ca-certificates
 ├── lz4
 ├── openssl@1.1
+│   └── ca-certificates
 ├── snappy
 ├── xz
 └── zstd
@@ -314,6 +779,8 @@ ghostscript
         └── libtiff
             └── jpeg
 
+giflib
+
 git
 ├── gettext
 └── pcre2
@@ -328,6 +795,7 @@ glib
     ├── gdbm
     ├── mpdecimal
     ├── openssl@1.1
+    │   └── ca-certificates
     ├── readline
     ├── sqlite
     │   └── readline
@@ -343,6 +811,7 @@ gnu-getopt
 gnupg
 ├── gettext
 ├── gnutls
+│   ├── ca-certificates
 │   ├── gmp
 │   ├── guile
 │   │   ├── bdw-gc
@@ -361,16 +830,16 @@ gnupg
 │   ├── nettle
 │   │   └── gmp
 │   ├── p11-kit
-│   │   └── libffi
+│   │   ├── ca-certificates
+│   │   ├── libffi
+│   │   └── libtasn1
 │   └── unbound
 │       ├── libevent
 │       │   └── openssl@1.1
-│       ├── nghttp2
-│       │   ├── c-ares
-│       │   ├── jemalloc
-│       │   ├── libev
-│       │   └── openssl@1.1
+│       │       └── ca-certificates
+│       ├── libnghttp2
 │       └── openssl@1.1
+│           └── ca-certificates
 ├── libassuan
 │   └── libgpg-error
 ├── libgcrypt
@@ -386,6 +855,7 @@ gnupg
     └── libgpg-error
 
 gnutls
+├── ca-certificates
 ├── gmp
 ├── guile
 │   ├── bdw-gc
@@ -404,18 +874,20 @@ gnutls
 ├── nettle
 │   └── gmp
 ├── p11-kit
-│   └── libffi
+│   ├── ca-certificates
+│   ├── libffi
+│   └── libtasn1
 └── unbound
     ├── libevent
     │   └── openssl@1.1
-    ├── nghttp2
-    │   ├── c-ares
-    │   ├── jemalloc
-    │   ├── libev
-    │   └── openssl@1.1
+    │       └── ca-certificates
+    ├── libnghttp2
     └── openssl@1.1
+        └── ca-certificates
 
 go@1.16
+
+go@1.17
 
 gradle
 └── openjdk
@@ -462,6 +934,21 @@ imagemagick
 ├── jpeg
 ├── libheif
 │   ├── aom
+│   │   ├── jpeg-xl
+│   │   │   ├── brotli
+│   │   │   ├── giflib
+│   │   │   ├── imath
+│   │   │   ├── jpeg
+│   │   │   ├── libpng
+│   │   │   ├── openexr
+│   │   │   │   └── imath
+│   │   │   └── webp
+│   │   │       ├── giflib
+│   │   │       ├── jpeg
+│   │   │       ├── libpng
+│   │   │       └── libtiff
+│   │   │           └── jpeg
+│   │   └── libvmaf
 │   ├── jpeg
 │   ├── libde265
 │   ├── libpng
@@ -475,6 +962,7 @@ imagemagick
 │   │   │       ├── gdbm
 │   │   │       ├── mpdecimal
 │   │   │       ├── openssl@1.1
+│   │   │       │   └── ca-certificates
 │   │   │       ├── readline
 │   │   │       ├── sqlite
 │   │   │       │   └── readline
@@ -494,6 +982,7 @@ imagemagick
 │           ├── gdbm
 │           ├── mpdecimal
 │           ├── openssl@1.1
+│           │   └── ca-certificates
 │           ├── readline
 │           ├── sqlite
 │           │   └── readline
@@ -519,6 +1008,7 @@ imagemagick
 │       └── libtiff
 │           └── jpeg
 ├── webp
+│   ├── giflib
 │   ├── jpeg
 │   ├── libpng
 │   └── libtiff
@@ -537,6 +1027,21 @@ jenv
 
 jpeg
 
+jpeg-xl
+├── brotli
+├── giflib
+├── imath
+├── jpeg
+├── libpng
+├── openexr
+│   └── imath
+└── webp
+    ├── giflib
+    ├── jpeg
+    ├── libpng
+    └── libtiff
+        └── jpeg
+
 jq
 └── oniguruma
 
@@ -549,6 +1054,7 @@ libev
 
 libevent
 └── openssl@1.1
+    └── ca-certificates
 
 libffi
 
@@ -559,6 +1065,21 @@ libgpg-error
 
 libheif
 ├── aom
+│   ├── jpeg-xl
+│   │   ├── brotli
+│   │   ├── giflib
+│   │   ├── imath
+│   │   ├── jpeg
+│   │   ├── libpng
+│   │   ├── openexr
+│   │   │   └── imath
+│   │   └── webp
+│   │       ├── giflib
+│   │       ├── jpeg
+│   │       ├── libpng
+│   │       └── libtiff
+│   │           └── jpeg
+│   └── libvmaf
 ├── jpeg
 ├── libde265
 ├── libpng
@@ -572,6 +1093,7 @@ libheif
 │   │       ├── gdbm
 │   │       ├── mpdecimal
 │   │       ├── openssl@1.1
+│   │       │   └── ca-certificates
 │   │       ├── readline
 │   │       ├── sqlite
 │   │       │   └── readline
@@ -601,14 +1123,19 @@ liblqr
         ├── gdbm
         ├── mpdecimal
         ├── openssl@1.1
+        │   └── ca-certificates
         ├── readline
         ├── sqlite
         │   └── readline
         └── xz
 
+libnghttp2
+
 libomp
 
 libpng
+
+libsodium
 
 libtasn1
 
@@ -624,6 +1151,8 @@ libusb
 
 libuv
 
+libvmaf
+
 libyaml
 
 little-cms2
@@ -633,6 +1162,8 @@ little-cms2
 
 lz4
 
+lzo
+
 m4
 
 macos-term-size
@@ -641,10 +1172,11 @@ maven
 └── openjdk
 
 mercurial
-└── python@3.9
+└── python@3.10
     ├── gdbm
     ├── mpdecimal
     ├── openssl@1.1
+    │   └── ca-certificates
     ├── readline
     ├── sqlite
     │   └── readline
@@ -659,22 +1191,27 @@ nghttp2
 ├── c-ares
 ├── jemalloc
 ├── libev
+├── libnghttp2
 └── openssl@1.1
+    └── ca-certificates
 
 node
 ├── brotli
 ├── c-ares
 ├── icu4c
+├── libnghttp2
 ├── libuv
-├── nghttp2
-│   ├── c-ares
-│   ├── jemalloc
-│   ├── libev
-│   └── openssl@1.1
 └── openssl@1.1
+    └── ca-certificates
 
 node@12
+├── brotli
+├── c-ares
 ├── icu4c
+├── libnghttp2
+├── libuv
+├── openssl@1.1
+│   └── ca-certificates
 └── macos-term-size
 
 npth
@@ -684,6 +1221,7 @@ oniguruma
 openconnect
 ├── gettext
 ├── gnutls
+│   ├── ca-certificates
 │   ├── gmp
 │   ├── guile
 │   │   ├── bdw-gc
@@ -702,16 +1240,16 @@ openconnect
 │   ├── nettle
 │   │   └── gmp
 │   ├── p11-kit
-│   │   └── libffi
+│   │   ├── ca-certificates
+│   │   ├── libffi
+│   │   └── libtasn1
 │   └── unbound
 │       ├── libevent
 │       │   └── openssl@1.1
-│       ├── nghttp2
-│       │   ├── c-ares
-│       │   ├── jemalloc
-│       │   ├── libev
-│       │   └── openssl@1.1
+│       │       └── ca-certificates
+│       ├── libnghttp2
 │       └── openssl@1.1
+│           └── ca-certificates
 └── stoken
     └── nettle
         └── gmp
@@ -729,9 +1267,21 @@ openjpeg
         └── jpeg
 
 openssl@1.1
+└── ca-certificates
+
+openvpn
+├── lz4
+├── lzo
+├── openssl@1.1
+│   └── ca-certificates
+└── pkcs11-helper
+    └── openssl@1.1
+        └── ca-certificates
 
 p11-kit
-└── libffi
+├── ca-certificates
+├── libffi
+└── libtasn1
 
 pcre
 
@@ -742,12 +1292,27 @@ pinentry
 │   └── libgpg-error
 └── libgpg-error
 
+pkcs11-helper
+└── openssl@1.1
+    └── ca-certificates
+
 pkg-config
+
+python@3.10
+├── gdbm
+├── mpdecimal
+├── openssl@1.1
+│   └── ca-certificates
+├── readline
+├── sqlite
+│   └── readline
+└── xz
 
 python@3.9
 ├── gdbm
 ├── mpdecimal
 ├── openssl@1.1
+│   └── ca-certificates
 ├── readline
 ├── sqlite
 │   └── readline
@@ -780,6 +1345,7 @@ shared-mime-info
 │       ├── gdbm
 │       ├── mpdecimal
 │       ├── openssl@1.1
+│       │   └── ca-certificates
 │       ├── readline
 │       ├── sqlite
 │       │   └── readline
@@ -803,17 +1369,86 @@ stoken
 
 swiftlint
 
+temurin
+
 tree
 
 unbound
 ├── libevent
 │   └── openssl@1.1
-├── nghttp2
-│   ├── c-ares
-│   ├── jemalloc
-│   ├── libev
-│   └── openssl@1.1
+│       └── ca-certificates
+├── libnghttp2
 └── openssl@1.1
+    └── ca-certificates
+
+wangle
+├── boost
+│   └── icu4c
+├── double-conversion
+├── fizz
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   └── zstd
+├── fmt
+├── folly
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+├── gflags
+├── glog
+│   └── gflags
+├── libevent
+│   └── openssl@1.1
+│       └── ca-certificates
+├── libsodium
+├── lz4
+├── openssl@1.1
+│   └── ca-certificates
+├── snappy
+└── zstd
 
 watchman
 ├── boost
@@ -829,8 +1464,10 @@ watchman
 │   │   └── gflags
 │   ├── libevent
 │   │   └── openssl@1.1
+│   │       └── ca-certificates
 │   ├── lz4
 │   ├── openssl@1.1
+│   │   └── ca-certificates
 │   ├── snappy
 │   ├── xz
 │   └── zstd
@@ -839,18 +1476,277 @@ watchman
 │   └── gflags
 ├── libevent
 │   └── openssl@1.1
+│       └── ca-certificates
 ├── openssl@1.1
+│   └── ca-certificates
 ├── pcre
-└── python@3.9
-    ├── gdbm
-    ├── mpdecimal
+├── python@3.10
+│   ├── gdbm
+│   ├── mpdecimal
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+└── fb303
+    ├── fbthrift
+    │   ├── boost
+    │   │   └── icu4c
+    │   ├── fizz
+    │   │   ├── boost
+    │   │   │   └── icu4c
+    │   │   ├── double-conversion
+    │   │   ├── fmt
+    │   │   ├── folly
+    │   │   │   ├── boost
+    │   │   │   │   └── icu4c
+    │   │   │   ├── double-conversion
+    │   │   │   ├── fmt
+    │   │   │   ├── gflags
+    │   │   │   ├── glog
+    │   │   │   │   └── gflags
+    │   │   │   ├── libevent
+    │   │   │   │   └── openssl@1.1
+    │   │   │   │       └── ca-certificates
+    │   │   │   ├── lz4
+    │   │   │   ├── openssl@1.1
+    │   │   │   │   └── ca-certificates
+    │   │   │   ├── snappy
+    │   │   │   ├── xz
+    │   │   │   └── zstd
+    │   │   ├── gflags
+    │   │   ├── glog
+    │   │   │   └── gflags
+    │   │   ├── libevent
+    │   │   │   └── openssl@1.1
+    │   │   │       └── ca-certificates
+    │   │   ├── libsodium
+    │   │   ├── lz4
+    │   │   ├── openssl@1.1
+    │   │   │   └── ca-certificates
+    │   │   ├── snappy
+    │   │   └── zstd
+    │   ├── fmt
+    │   ├── folly
+    │   │   ├── boost
+    │   │   │   └── icu4c
+    │   │   ├── double-conversion
+    │   │   ├── fmt
+    │   │   ├── gflags
+    │   │   ├── glog
+    │   │   │   └── gflags
+    │   │   ├── libevent
+    │   │   │   └── openssl@1.1
+    │   │   │       └── ca-certificates
+    │   │   ├── lz4
+    │   │   ├── openssl@1.1
+    │   │   │   └── ca-certificates
+    │   │   ├── snappy
+    │   │   ├── xz
+    │   │   └── zstd
+    │   ├── gflags
+    │   ├── glog
+    │   │   └── gflags
+    │   ├── openssl@1.1
+    │   │   └── ca-certificates
+    │   ├── wangle
+    │   │   ├── boost
+    │   │   │   └── icu4c
+    │   │   ├── double-conversion
+    │   │   ├── fizz
+    │   │   │   ├── boost
+    │   │   │   │   └── icu4c
+    │   │   │   ├── double-conversion
+    │   │   │   ├── fmt
+    │   │   │   ├── folly
+    │   │   │   │   ├── boost
+    │   │   │   │   │   └── icu4c
+    │   │   │   │   ├── double-conversion
+    │   │   │   │   ├── fmt
+    │   │   │   │   ├── gflags
+    │   │   │   │   ├── glog
+    │   │   │   │   │   └── gflags
+    │   │   │   │   ├── libevent
+    │   │   │   │   │   └── openssl@1.1
+    │   │   │   │   │       └── ca-certificates
+    │   │   │   │   ├── lz4
+    │   │   │   │   ├── openssl@1.1
+    │   │   │   │   │   └── ca-certificates
+    │   │   │   │   ├── snappy
+    │   │   │   │   ├── xz
+    │   │   │   │   └── zstd
+    │   │   │   ├── gflags
+    │   │   │   ├── glog
+    │   │   │   │   └── gflags
+    │   │   │   ├── libevent
+    │   │   │   │   └── openssl@1.1
+    │   │   │   │       └── ca-certificates
+    │   │   │   ├── libsodium
+    │   │   │   ├── lz4
+    │   │   │   ├── openssl@1.1
+    │   │   │   │   └── ca-certificates
+    │   │   │   ├── snappy
+    │   │   │   └── zstd
+    │   │   ├── fmt
+    │   │   ├── folly
+    │   │   │   ├── boost
+    │   │   │   │   └── icu4c
+    │   │   │   ├── double-conversion
+    │   │   │   ├── fmt
+    │   │   │   ├── gflags
+    │   │   │   ├── glog
+    │   │   │   │   └── gflags
+    │   │   │   ├── libevent
+    │   │   │   │   └── openssl@1.1
+    │   │   │   │       └── ca-certificates
+    │   │   │   ├── lz4
+    │   │   │   ├── openssl@1.1
+    │   │   │   │   └── ca-certificates
+    │   │   │   ├── snappy
+    │   │   │   ├── xz
+    │   │   │   └── zstd
+    │   │   ├── gflags
+    │   │   ├── glog
+    │   │   │   └── gflags
+    │   │   ├── libevent
+    │   │   │   └── openssl@1.1
+    │   │   │       └── ca-certificates
+    │   │   ├── libsodium
+    │   │   ├── lz4
+    │   │   ├── openssl@1.1
+    │   │   │   └── ca-certificates
+    │   │   ├── snappy
+    │   │   └── zstd
+    │   └── zstd
+    ├── fizz
+    │   ├── boost
+    │   │   └── icu4c
+    │   ├── double-conversion
+    │   ├── fmt
+    │   ├── folly
+    │   │   ├── boost
+    │   │   │   └── icu4c
+    │   │   ├── double-conversion
+    │   │   ├── fmt
+    │   │   ├── gflags
+    │   │   ├── glog
+    │   │   │   └── gflags
+    │   │   ├── libevent
+    │   │   │   └── openssl@1.1
+    │   │   │       └── ca-certificates
+    │   │   ├── lz4
+    │   │   ├── openssl@1.1
+    │   │   │   └── ca-certificates
+    │   │   ├── snappy
+    │   │   ├── xz
+    │   │   └── zstd
+    │   ├── gflags
+    │   ├── glog
+    │   │   └── gflags
+    │   ├── libevent
+    │   │   └── openssl@1.1
+    │   │       └── ca-certificates
+    │   ├── libsodium
+    │   ├── lz4
+    │   ├── openssl@1.1
+    │   │   └── ca-certificates
+    │   ├── snappy
+    │   └── zstd
+    ├── fmt
+    ├── folly
+    │   ├── boost
+    │   │   └── icu4c
+    │   ├── double-conversion
+    │   ├── fmt
+    │   ├── gflags
+    │   ├── glog
+    │   │   └── gflags
+    │   ├── libevent
+    │   │   └── openssl@1.1
+    │   │       └── ca-certificates
+    │   ├── lz4
+    │   ├── openssl@1.1
+    │   │   └── ca-certificates
+    │   ├── snappy
+    │   ├── xz
+    │   └── zstd
+    ├── gflags
+    ├── glog
+    │   └── gflags
     ├── openssl@1.1
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    └── xz
+    │   └── ca-certificates
+    └── wangle
+        ├── boost
+        │   └── icu4c
+        ├── double-conversion
+        ├── fizz
+        │   ├── boost
+        │   │   └── icu4c
+        │   ├── double-conversion
+        │   ├── fmt
+        │   ├── folly
+        │   │   ├── boost
+        │   │   │   └── icu4c
+        │   │   ├── double-conversion
+        │   │   ├── fmt
+        │   │   ├── gflags
+        │   │   ├── glog
+        │   │   │   └── gflags
+        │   │   ├── libevent
+        │   │   │   └── openssl@1.1
+        │   │   │       └── ca-certificates
+        │   │   ├── lz4
+        │   │   ├── openssl@1.1
+        │   │   │   └── ca-certificates
+        │   │   ├── snappy
+        │   │   ├── xz
+        │   │   └── zstd
+        │   ├── gflags
+        │   ├── glog
+        │   │   └── gflags
+        │   ├── libevent
+        │   │   └── openssl@1.1
+        │   │       └── ca-certificates
+        │   ├── libsodium
+        │   ├── lz4
+        │   ├── openssl@1.1
+        │   │   └── ca-certificates
+        │   ├── snappy
+        │   └── zstd
+        ├── fmt
+        ├── folly
+        │   ├── boost
+        │   │   └── icu4c
+        │   ├── double-conversion
+        │   ├── fmt
+        │   ├── gflags
+        │   ├── glog
+        │   │   └── gflags
+        │   ├── libevent
+        │   │   └── openssl@1.1
+        │   │       └── ca-certificates
+        │   ├── lz4
+        │   ├── openssl@1.1
+        │   │   └── ca-certificates
+        │   ├── snappy
+        │   ├── xz
+        │   └── zstd
+        ├── gflags
+        ├── glog
+        │   └── gflags
+        ├── libevent
+        │   └── openssl@1.1
+        │       └── ca-certificates
+        ├── libsodium
+        ├── lz4
+        ├── openssl@1.1
+        │   └── ca-certificates
+        ├── snappy
+        └── zstd
 
 webp
+├── giflib
 ├── jpeg
 ├── libpng
 └── libtiff
@@ -861,6 +1757,7 @@ wget
 │   ├── gettext
 │   └── libunistring
 └── openssl@1.1
+    └── ca-certificates
 
 x265
 
@@ -873,17 +1770,6 @@ xmlto
 xz
 
 yarn
-└── node
-    ├── brotli
-    ├── c-ares
-    ├── icu4c
-    ├── libuv
-    ├── nghttp2
-    │   ├── c-ares
-    │   ├── jemalloc
-    │   ├── libev
-    │   └── openssl@1.1
-    └── openssl@1.1
 
 zstd
 
@@ -900,7 +1786,7 @@ zstd
   2.7.2
   3.0.0
 -------------------------------
-* rbenv: 1.1.2
+* rbenv: 1.2.0
 * Rubygems: 3.0.3
 * Bundler: Bundler version 2.1.4
 * CocoaPods: 1.11.2
@@ -1081,9 +1967,9 @@ zlib (default: 1.0.0)
 
 
 === NPM global packages ==========================
-* Cordova: 10.0.0 (cordova-lib@10.1.0)
-* Ionic: 6.11.12
-* Appcenter-CLI version: 2.9.0
+* Cordova: 11.0.0
+* Ionic: 6.19.0
+* Appcenter-CLI version: 2.10.8
 ========================================
 
 
@@ -1395,7 +2281,7 @@ Software:
       Kernel Version: Darwin 20.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-13.1.x-standard-9bf33650-cd64-47a4-bba2-73930e21fbbc
+      Computer Name: vm-osx-xcode-13.1.x-g2.8core-55a858cf-0e42-40f5-9b56-521bc5f841d1
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
@@ -1408,7 +2294,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk1s5s1        300Gi        154Gi
+/dev/disk1s5s1        300Gi        149Gi
 ========================================
 
 --- Android
