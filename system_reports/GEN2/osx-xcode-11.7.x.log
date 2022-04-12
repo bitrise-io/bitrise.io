@@ -7,61 +7,61 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2021_09_16_2
+* BITRISE_OSX_STACK_REV_ID: v2022_04_04
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.16.7 darwin/amd64
+* Go: go version go1.17.8 darwin/amd64
 * Python: Python 2.7.16
-* Node.js: v12.22.6
-* NPM: 6.14.15
-* Yarn: 1.22.11
+* Node.js: v12.22.11
+* NPM: 6.14.16
+* Yarn: 1.22.18
 * Java: openjdk version "11.0.11" 2021-04-20
 OpenJDK Runtime Environment AdoptOpenJDK-11.0.11+9 (build 11.0.11+9)
 OpenJDK 64-Bit Server VM AdoptOpenJDK-11.0.11+9 (build 11.0.11+9, mixed mode)
-* Flutter: Flutter 1.26.0-17.8.pre • channel beta • https://github.com/flutter/flutter.git
-* fvm: 2.2.3
+* Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
+* fvm: 2.2.6
 
-* git: git version 2.33.0
-* git lfs: git-lfs/2.13.3 (GitHub; darwin amd64; go 1.16.5)
-* mercurial/hg: Mercurial Distributed SCM (version 5.9.1)
+* git: git version 2.35.1
+* git lfs: git-lfs/3.1.2 (GitHub; darwin amd64; go 1.17.6)
+* mercurial/hg: Mercurial Distributed SCM (version 6.1)
 * curl: curl 7.64.1 (x86_64-apple-darwin19.0) libcurl/7.64.1 (SecureTransport) LibreSSL/2.8.3 zlib/1.2.11 nghttp2/1.39.2
-* wget: GNU Wget 1.21.1 built on darwin19.6.0.
+* wget: GNU Wget 1.21.3 built on darwin19.6.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
-* tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
+* tree: tree v2.0.2 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.2.12
-Homebrew/homebrew-core (git revision ad83b1f8bf; last commit 2021-09-07)
-Homebrew/homebrew-cask (git revision 79ee6f0965; last commit 2021-09-07)
-* Ansible: ansible [core 2.11.4] 
+* brew: Homebrew 3.4.5
+Homebrew/homebrew-core (git revision 4a6d9e1d7ea; last commit 2022-04-04)
+Homebrew/homebrew-cask (git revision 27de994dfe; last commit 2022-04-04)
+* Ansible: ansible [core 2.12.4]
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/4.5.0/libexec/lib/python3.9/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/5.5.0/libexec/lib/python3.10/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
-* gtimeout: timeout (GNU coreutils) 8.32
-* watchman: 2021.08.30.00
-* flow: Flow, a static type checker for JavaScript, version 0.159.0
+* gtimeout: timeout (GNU coreutils) 9.0
+* watchman: 2022.03.21.00
+* flow: Flow, a static type checker for JavaScript, version 0.175.0
 * carthage: 0.38.0
-* imagemagick (convert): Version: ImageMagick 7.1.0-6 Q16-HDRI x86_64 2021-09-04 https://imagemagick.org
-* ghostscript (ps2ascii): 9.54.0
-* screen: Screen version 4.08.00 (GNU) 05-Feb-20
-* firebase: 9.18.0
-* applesimutils version 0.9.4
+* imagemagick (convert): Version: ImageMagick 7.1.0-29 Q16-HDRI x86_64 19841 https://imagemagick.org
+* ghostscript (ps2ascii): 9.55.0
+* screen: Screen version 4.09.00 (GNU) 30-Jan-22
+* firebase: 9.20.0
+* applesimutils version 0.9.5
 * jq: 1.6
 * Version: 0.8.1
 * XCLogParser 0.2.21
-* Screen 4.08.00
-* applesimutils 0.9.4
-* OpenConnect version v8.10
-* aws-cli: aws-cli/2.2.35 Python/3.9.7 Darwin/19.6.0 source/x86_64 prompt/off
-* cmake: 3.21.2
-* danger-swift: 3.11.1
-[0;0m
+* Screen 4.09.00
+* applesimutils 0.9.5
+* OpenConnect version v8.20
+* aws-cli: aws-cli/2.5.2 Python/3.9.12 Darwin/19.6.0 source/x86_64 prompt/off
+* cmake: 3.23.0
+* danger-swift: 
+* OpenVPN 2.5.6 x86_64-apple-darwin19.6.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] built on Mar 23 2022
 
 --- Bitrise CLI tool versions
 * bitrise: 1.48.0
@@ -72,117 +72,137 @@ Homebrew/homebrew-cask (git revision 79ee6f0965; last commit 2021-09-07)
 
 
 === Brew list versions ==================
-ansible 4.5.0
-ant 1.10.11
-aom 3.1.2
-applesimutils 0.9.4
+ansible 5.5.0
+ant 1.10.12
+aom 3.3.0
+applesimutils 0.9.5
 autoconf 2.71
-awscli 2.2.35
-bdw-gc 8.0.4_2
-boost 1.76.0
+awscli 2.5.2
+bdw-gc 8.0.6
+boost 1.78.0_1
 brotli 1.0.9
-c-ares 1.17.2
+c-ares 1.18.1_1
+ca-certificates 2022-03-29
 carthage 0.38.0
-cmake 3.21.2
-coreutils 8.32
-danger-js 10.6.6
-danger-swift 3.11.1
-dart 2.14.2
+cmake 3.23.0
+coreutils 9.0_1
+danger-js 11.0.2
+danger-swift 3.12.3
+dart 2.16.2
 docbook 5.1_1
 docbook-xsl 1.79.2_1
-double-conversion 3.1.5_1
-flow 0.159.0
-fmt 8.0.1
-folly 2021.08.30.00
-fontconfig 2.13.1
-freetype 2.11.0
-fvm 2.2.3
-gdbm 1.20
+double-conversion 3.2.0
+fb303 2022.03.21.00
+fbthrift 2022.03.21.00
+fizz 2022.03.21.00
+flow 0.175.0
+fmt 8.1.1_1
+folly 2022.03.21.00
+fontconfig 2.14.0
+freetype 2.12.0
+fvm 2.2.6
+gdbm 1.23
 gettext 0.21
 gflags 2.2.2
-ghostscript 9.54.0
-git 2.33.0
-git-lfs 2.13.3
-glib 2.68.4
+ghostscript 9.55.0
+giflib 5.2.1
+git 2.35.1
+git-lfs 3.1.2
+glib 2.72.0
 glog 0.5.0
-gmp 6.2.1
-gnu-getopt 2.37.2
-gnupg 2.3.2
-gnutls 3.6.16
-go@1.16 1.16.7
-gradle 7.2
-guile 3.0.7
-icu4c 69.1
-imagemagick 7.1.0-6
-imath 3.1.3
+gmp 6.2.1_1
+gnu-getopt 2.37.4
+gnupg 2.3.4
+gnutls 3.7.4
+go@1.16 1.16.15
+go@1.17 1.17.8
+gradle 7.4.2
+guile 3.0.8
+icu4c 70.1
+imagemagick 7.1.0-29
+imath 3.1.4
 jbig2dec 0.19
 jemalloc 5.2.1_1
 jenv 0.5.4
-jpeg 9d
+jpeg 9e
+jpeg-xl 0.6.1
 jq 1.6
 libassuan 2.5.5
 libde265 1.0.8
 libev 4.33
 libevent 2.1.12
-libffi 3.3_3
-libgcrypt 1.9.4
-libgpg-error 1.42
-libheif 1.12.0
+libffi 3.4.2
+libgcrypt 1.10.1
+libgpg-error 1.44
+libheif 1.12.0_1
 libidn 1.38
 libidn2 2.3.2
 libksba 1.6.0
 liblqr 0.4.2_1
-libomp 12.0.1
+libnghttp2 1.47.0
+libomp 14.0.0
 libpng 1.6.37
-libtasn1 4.17.0
+libsodium 1.0.18_1
+libtasn1 4.18.0
 libtiff 4.3.0
-libtool 2.4.6_4
-libunistring 0.9.10
-libusb 1.0.24
-libuv 1.42.0
+libtool 2.4.7
+libunistring 1.0
+libusb 1.0.25
+libuv 1.44.1
+libvmaf 2.3.0_1
 libyaml 0.2.5
-little-cms2 2.12
+little-cms2 2.13.1
 lz4 1.9.3
+lzo 2.10
 m4 1.4.19
 macos-term-size 1.0.0
-maven 3.8.2
-mercurial 5.9.1
+maven 3.8.5
+mercurial 6.1
 mpdecimal 2.5.1
 nettle 3.7.3
-nghttp2 1.44.0
-node 16.8.0
-node@12 12.22.6
+nghttp2 1.47.0
+node 17.8.0
+node@12 12.22.11
 npth 1.6
 oniguruma 6.9.7.1
-openconnect 8.10
-openexr 3.1.1
+openconnect 8.20
+openexr 3.1.4
 openjpeg 2.4.0
-openssl@1.1 1.1.1l
-p11-kit 0.24.0
+openssl@1.1 1.1.1n
+openvpn 2.5.6
+p11-kit 0.24.1
 pcre 8.45
-pcre2 10.37_1
+pcre2 10.39
 pinentry 1.2.0
+pkcs11-helper 1.28.0
 pkg-config 0.29.2_3
-python@3.9 3.9.7
-rbenv 1.1.2
-readline 8.1
-ruby-build 20210825
-screen 4.8.0
+python@3.10 3.10.2
+python@3.9 3.9.12
+rbenv 1.2.0
+readline 8.1.2
+ruby-build 20220324
+screen 4.9.0
 shared-mime-info 2.1
-six 1.16.0_1
+six 1.16.0_2
 snappy 1.1.9
-sqlite 3.36.0
+sqlite 3.38.2
 stoken 0.92_1
-tree 1.8.0
-unbound 1.13.2
-watchman 2021.08.30.00
-webp 1.2.1
-wget 1.21.1_1
+swiftlint 0.43.1
+tree 2.0.2
+unbound 1.15.0
+wangle 2022.03.21.00
+watchman 2022.03.21.00
+webp 1.2.2
+wget 1.21.3
 x265 3.5
 xmlto 0.0.28
 xz 5.2.5
-yarn 1.22.11
-zstd 1.5.0
+yarn 1.22.18
+zstd 1.5.2
+adoptopenjdk11 11.0.11,9
+adoptopenjdk8 8,292:b10
+intel-haxm 7.7.1
+temurin 17.0.2,8
 ========================================
 
 
@@ -194,19 +214,37 @@ adoptopenjdk/openjdk/adoptopenjdk8
 ansible
 ├── libyaml
 ├── openssl@1.1
-└── python@3.9
-    ├── gdbm
-    ├── mpdecimal
-    ├── openssl@1.1
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    └── xz
+│   └── ca-certificates
+├── python@3.10
+│   ├── gdbm
+│   ├── mpdecimal
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+└── six
 
 ant
 └── openjdk
 
 aom
+├── jpeg-xl
+│   ├── brotli
+│   ├── giflib
+│   ├── imath
+│   ├── jpeg
+│   ├── libpng
+│   ├── openexr
+│   │   └── imath
+│   └── webp
+│       ├── giflib
+│       ├── jpeg
+│       ├── libpng
+│       └── libtiff
+│           └── jpeg
+└── libvmaf
 
 wix/brew/applesimutils
 
@@ -218,6 +256,7 @@ awscli
 │   ├── gdbm
 │   ├── mpdecimal
 │   ├── openssl@1.1
+│   │   └── ca-certificates
 │   ├── readline
 │   ├── sqlite
 │   │   └── readline
@@ -233,11 +272,14 @@ brotli
 
 c-ares
 
+ca-certificates
+
 carthage
 
 cmake
 
 coreutils
+└── gmp
 
 danger/tap/danger-js
 
@@ -253,6 +295,427 @@ docbook-xsl
 
 double-conversion
 
+fb303
+├── fbthrift
+│   ├── boost
+│   │   └── icu4c
+│   ├── fizz
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   └── icu4c
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   └── zstd
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── wangle
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fizz
+│   │   │   ├── boost
+│   │   │   │   └── icu4c
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   └── icu4c
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@1.1
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@1.1
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   └── zstd
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   └── icu4c
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   └── zstd
+│   └── zstd
+├── fizz
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   └── zstd
+├── fmt
+├── folly
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+├── gflags
+├── glog
+│   └── gflags
+├── openssl@1.1
+│   └── ca-certificates
+└── wangle
+    ├── boost
+    │   └── icu4c
+    ├── double-conversion
+    ├── fizz
+    │   ├── boost
+    │   │   └── icu4c
+    │   ├── double-conversion
+    │   ├── fmt
+    │   ├── folly
+    │   │   ├── boost
+    │   │   │   └── icu4c
+    │   │   ├── double-conversion
+    │   │   ├── fmt
+    │   │   ├── gflags
+    │   │   ├── glog
+    │   │   │   └── gflags
+    │   │   ├── libevent
+    │   │   │   └── openssl@1.1
+    │   │   │       └── ca-certificates
+    │   │   ├── lz4
+    │   │   ├── openssl@1.1
+    │   │   │   └── ca-certificates
+    │   │   ├── snappy
+    │   │   ├── xz
+    │   │   └── zstd
+    │   ├── gflags
+    │   ├── glog
+    │   │   └── gflags
+    │   ├── libevent
+    │   │   └── openssl@1.1
+    │   │       └── ca-certificates
+    │   ├── libsodium
+    │   ├── lz4
+    │   ├── openssl@1.1
+    │   │   └── ca-certificates
+    │   ├── snappy
+    │   └── zstd
+    ├── fmt
+    ├── folly
+    │   ├── boost
+    │   │   └── icu4c
+    │   ├── double-conversion
+    │   ├── fmt
+    │   ├── gflags
+    │   ├── glog
+    │   │   └── gflags
+    │   ├── libevent
+    │   │   └── openssl@1.1
+    │   │       └── ca-certificates
+    │   ├── lz4
+    │   ├── openssl@1.1
+    │   │   └── ca-certificates
+    │   ├── snappy
+    │   ├── xz
+    │   └── zstd
+    ├── gflags
+    ├── glog
+    │   └── gflags
+    ├── libevent
+    │   └── openssl@1.1
+    │       └── ca-certificates
+    ├── libsodium
+    ├── lz4
+    ├── openssl@1.1
+    │   └── ca-certificates
+    ├── snappy
+    └── zstd
+
+fbthrift
+├── boost
+│   └── icu4c
+├── fizz
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   └── zstd
+├── fmt
+├── folly
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+├── gflags
+├── glog
+│   └── gflags
+├── openssl@1.1
+│   └── ca-certificates
+├── wangle
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fizz
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   └── icu4c
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   └── zstd
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   └── zstd
+└── zstd
+
+fizz
+├── boost
+│   └── icu4c
+├── double-conversion
+├── fmt
+├── folly
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+├── gflags
+├── glog
+│   └── gflags
+├── libevent
+│   └── openssl@1.1
+│       └── ca-certificates
+├── libsodium
+├── lz4
+├── openssl@1.1
+│   └── ca-certificates
+├── snappy
+└── zstd
+
 flow
 
 fmt
@@ -267,8 +730,10 @@ folly
 │   └── gflags
 ├── libevent
 │   └── openssl@1.1
+│       └── ca-certificates
 ├── lz4
 ├── openssl@1.1
+│   └── ca-certificates
 ├── snappy
 ├── xz
 └── zstd
@@ -313,6 +778,8 @@ ghostscript
         └── libtiff
             └── jpeg
 
+giflib
+
 git
 ├── gettext
 └── pcre2
@@ -327,6 +794,7 @@ glib
     ├── gdbm
     ├── mpdecimal
     ├── openssl@1.1
+    │   └── ca-certificates
     ├── readline
     ├── sqlite
     │   └── readline
@@ -342,6 +810,7 @@ gnu-getopt
 gnupg
 ├── gettext
 ├── gnutls
+│   ├── ca-certificates
 │   ├── gmp
 │   ├── guile
 │   │   ├── bdw-gc
@@ -360,16 +829,16 @@ gnupg
 │   ├── nettle
 │   │   └── gmp
 │   ├── p11-kit
-│   │   └── libffi
+│   │   ├── ca-certificates
+│   │   ├── libffi
+│   │   └── libtasn1
 │   └── unbound
 │       ├── libevent
 │       │   └── openssl@1.1
-│       ├── nghttp2
-│       │   ├── c-ares
-│       │   ├── jemalloc
-│       │   ├── libev
-│       │   └── openssl@1.1
+│       │       └── ca-certificates
+│       ├── libnghttp2
 │       └── openssl@1.1
+│           └── ca-certificates
 ├── libassuan
 │   └── libgpg-error
 ├── libgcrypt
@@ -385,6 +854,7 @@ gnupg
     └── libgpg-error
 
 gnutls
+├── ca-certificates
 ├── gmp
 ├── guile
 │   ├── bdw-gc
@@ -403,18 +873,20 @@ gnutls
 ├── nettle
 │   └── gmp
 ├── p11-kit
-│   └── libffi
+│   ├── ca-certificates
+│   ├── libffi
+│   └── libtasn1
 └── unbound
     ├── libevent
     │   └── openssl@1.1
-    ├── nghttp2
-    │   ├── c-ares
-    │   ├── jemalloc
-    │   ├── libev
-    │   └── openssl@1.1
+    │       └── ca-certificates
+    ├── libnghttp2
     └── openssl@1.1
+        └── ca-certificates
 
 go@1.16
+
+go@1.17
 
 gradle
 └── openjdk
@@ -461,6 +933,21 @@ imagemagick
 ├── jpeg
 ├── libheif
 │   ├── aom
+│   │   ├── jpeg-xl
+│   │   │   ├── brotli
+│   │   │   ├── giflib
+│   │   │   ├── imath
+│   │   │   ├── jpeg
+│   │   │   ├── libpng
+│   │   │   ├── openexr
+│   │   │   │   └── imath
+│   │   │   └── webp
+│   │   │       ├── giflib
+│   │   │       ├── jpeg
+│   │   │       ├── libpng
+│   │   │       └── libtiff
+│   │   │           └── jpeg
+│   │   └── libvmaf
 │   ├── jpeg
 │   ├── libde265
 │   ├── libpng
@@ -474,6 +961,7 @@ imagemagick
 │   │   │       ├── gdbm
 │   │   │       ├── mpdecimal
 │   │   │       ├── openssl@1.1
+│   │   │       │   └── ca-certificates
 │   │   │       ├── readline
 │   │   │       ├── sqlite
 │   │   │       │   └── readline
@@ -493,6 +981,7 @@ imagemagick
 │           ├── gdbm
 │           ├── mpdecimal
 │           ├── openssl@1.1
+│           │   └── ca-certificates
 │           ├── readline
 │           ├── sqlite
 │           │   └── readline
@@ -518,6 +1007,7 @@ imagemagick
 │       └── libtiff
 │           └── jpeg
 ├── webp
+│   ├── giflib
 │   ├── jpeg
 │   ├── libpng
 │   └── libtiff
@@ -536,6 +1026,21 @@ jenv
 
 jpeg
 
+jpeg-xl
+├── brotli
+├── giflib
+├── imath
+├── jpeg
+├── libpng
+├── openexr
+│   └── imath
+└── webp
+    ├── giflib
+    ├── jpeg
+    ├── libpng
+    └── libtiff
+        └── jpeg
+
 jq
 └── oniguruma
 
@@ -548,6 +1053,7 @@ libev
 
 libevent
 └── openssl@1.1
+    └── ca-certificates
 
 libffi
 
@@ -558,6 +1064,21 @@ libgpg-error
 
 libheif
 ├── aom
+│   ├── jpeg-xl
+│   │   ├── brotli
+│   │   ├── giflib
+│   │   ├── imath
+│   │   ├── jpeg
+│   │   ├── libpng
+│   │   ├── openexr
+│   │   │   └── imath
+│   │   └── webp
+│   │       ├── giflib
+│   │       ├── jpeg
+│   │       ├── libpng
+│   │       └── libtiff
+│   │           └── jpeg
+│   └── libvmaf
 ├── jpeg
 ├── libde265
 ├── libpng
@@ -571,6 +1092,7 @@ libheif
 │   │       ├── gdbm
 │   │       ├── mpdecimal
 │   │       ├── openssl@1.1
+│   │       │   └── ca-certificates
 │   │       ├── readline
 │   │       ├── sqlite
 │   │       │   └── readline
@@ -600,14 +1122,19 @@ liblqr
         ├── gdbm
         ├── mpdecimal
         ├── openssl@1.1
+        │   └── ca-certificates
         ├── readline
         ├── sqlite
         │   └── readline
         └── xz
 
+libnghttp2
+
 libomp
 
 libpng
+
+libsodium
 
 libtasn1
 
@@ -623,6 +1150,8 @@ libusb
 
 libuv
 
+libvmaf
+
 libyaml
 
 little-cms2
@@ -632,6 +1161,8 @@ little-cms2
 
 lz4
 
+lzo
+
 m4
 
 macos-term-size
@@ -640,10 +1171,11 @@ maven
 └── openjdk
 
 mercurial
-└── python@3.9
+└── python@3.10
     ├── gdbm
     ├── mpdecimal
     ├── openssl@1.1
+    │   └── ca-certificates
     ├── readline
     ├── sqlite
     │   └── readline
@@ -658,22 +1190,27 @@ nghttp2
 ├── c-ares
 ├── jemalloc
 ├── libev
+├── libnghttp2
 └── openssl@1.1
+    └── ca-certificates
 
 node
 ├── brotli
 ├── c-ares
 ├── icu4c
+├── libnghttp2
 ├── libuv
-├── nghttp2
-│   ├── c-ares
-│   ├── jemalloc
-│   ├── libev
-│   └── openssl@1.1
 └── openssl@1.1
+    └── ca-certificates
 
 node@12
+├── brotli
+├── c-ares
 ├── icu4c
+├── libnghttp2
+├── libuv
+├── openssl@1.1
+│   └── ca-certificates
 └── macos-term-size
 
 npth
@@ -683,6 +1220,7 @@ oniguruma
 openconnect
 ├── gettext
 ├── gnutls
+│   ├── ca-certificates
 │   ├── gmp
 │   ├── guile
 │   │   ├── bdw-gc
@@ -701,16 +1239,16 @@ openconnect
 │   ├── nettle
 │   │   └── gmp
 │   ├── p11-kit
-│   │   └── libffi
+│   │   ├── ca-certificates
+│   │   ├── libffi
+│   │   └── libtasn1
 │   └── unbound
 │       ├── libevent
 │       │   └── openssl@1.1
-│       ├── nghttp2
-│       │   ├── c-ares
-│       │   ├── jemalloc
-│       │   ├── libev
-│       │   └── openssl@1.1
+│       │       └── ca-certificates
+│       ├── libnghttp2
 │       └── openssl@1.1
+│           └── ca-certificates
 └── stoken
     └── nettle
         └── gmp
@@ -728,9 +1266,21 @@ openjpeg
         └── jpeg
 
 openssl@1.1
+└── ca-certificates
+
+openvpn
+├── lz4
+├── lzo
+├── openssl@1.1
+│   └── ca-certificates
+└── pkcs11-helper
+    └── openssl@1.1
+        └── ca-certificates
 
 p11-kit
-└── libffi
+├── ca-certificates
+├── libffi
+└── libtasn1
 
 pcre
 
@@ -741,12 +1291,27 @@ pinentry
 │   └── libgpg-error
 └── libgpg-error
 
+pkcs11-helper
+└── openssl@1.1
+    └── ca-certificates
+
 pkg-config
+
+python@3.10
+├── gdbm
+├── mpdecimal
+├── openssl@1.1
+│   └── ca-certificates
+├── readline
+├── sqlite
+│   └── readline
+└── xz
 
 python@3.9
 ├── gdbm
 ├── mpdecimal
 ├── openssl@1.1
+│   └── ca-certificates
 ├── readline
 ├── sqlite
 │   └── readline
@@ -779,6 +1344,7 @@ shared-mime-info
 │       ├── gdbm
 │       ├── mpdecimal
 │       ├── openssl@1.1
+│       │   └── ca-certificates
 │       ├── readline
 │       ├── sqlite
 │       │   └── readline
@@ -800,17 +1366,88 @@ stoken
 └── nettle
     └── gmp
 
+swiftlint
+
+temurin
+
 tree
 
 unbound
 ├── libevent
 │   └── openssl@1.1
-├── nghttp2
-│   ├── c-ares
-│   ├── jemalloc
-│   ├── libev
-│   └── openssl@1.1
+│       └── ca-certificates
+├── libnghttp2
 └── openssl@1.1
+    └── ca-certificates
+
+wangle
+├── boost
+│   └── icu4c
+├── double-conversion
+├── fizz
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   └── icu4c
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   └── zstd
+├── fmt
+├── folly
+│   ├── boost
+│   │   └── icu4c
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+├── gflags
+├── glog
+│   └── gflags
+├── libevent
+│   └── openssl@1.1
+│       └── ca-certificates
+├── libsodium
+├── lz4
+├── openssl@1.1
+│   └── ca-certificates
+├── snappy
+└── zstd
 
 watchman
 ├── boost
@@ -826,8 +1463,10 @@ watchman
 │   │   └── gflags
 │   ├── libevent
 │   │   └── openssl@1.1
+│   │       └── ca-certificates
 │   ├── lz4
 │   ├── openssl@1.1
+│   │   └── ca-certificates
 │   ├── snappy
 │   ├── xz
 │   └── zstd
@@ -836,18 +1475,277 @@ watchman
 │   └── gflags
 ├── libevent
 │   └── openssl@1.1
+│       └── ca-certificates
 ├── openssl@1.1
+│   └── ca-certificates
 ├── pcre
-└── python@3.9
-    ├── gdbm
-    ├── mpdecimal
+├── python@3.10
+│   ├── gdbm
+│   ├── mpdecimal
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+└── fb303
+    ├── fbthrift
+    │   ├── boost
+    │   │   └── icu4c
+    │   ├── fizz
+    │   │   ├── boost
+    │   │   │   └── icu4c
+    │   │   ├── double-conversion
+    │   │   ├── fmt
+    │   │   ├── folly
+    │   │   │   ├── boost
+    │   │   │   │   └── icu4c
+    │   │   │   ├── double-conversion
+    │   │   │   ├── fmt
+    │   │   │   ├── gflags
+    │   │   │   ├── glog
+    │   │   │   │   └── gflags
+    │   │   │   ├── libevent
+    │   │   │   │   └── openssl@1.1
+    │   │   │   │       └── ca-certificates
+    │   │   │   ├── lz4
+    │   │   │   ├── openssl@1.1
+    │   │   │   │   └── ca-certificates
+    │   │   │   ├── snappy
+    │   │   │   ├── xz
+    │   │   │   └── zstd
+    │   │   ├── gflags
+    │   │   ├── glog
+    │   │   │   └── gflags
+    │   │   ├── libevent
+    │   │   │   └── openssl@1.1
+    │   │   │       └── ca-certificates
+    │   │   ├── libsodium
+    │   │   ├── lz4
+    │   │   ├── openssl@1.1
+    │   │   │   └── ca-certificates
+    │   │   ├── snappy
+    │   │   └── zstd
+    │   ├── fmt
+    │   ├── folly
+    │   │   ├── boost
+    │   │   │   └── icu4c
+    │   │   ├── double-conversion
+    │   │   ├── fmt
+    │   │   ├── gflags
+    │   │   ├── glog
+    │   │   │   └── gflags
+    │   │   ├── libevent
+    │   │   │   └── openssl@1.1
+    │   │   │       └── ca-certificates
+    │   │   ├── lz4
+    │   │   ├── openssl@1.1
+    │   │   │   └── ca-certificates
+    │   │   ├── snappy
+    │   │   ├── xz
+    │   │   └── zstd
+    │   ├── gflags
+    │   ├── glog
+    │   │   └── gflags
+    │   ├── openssl@1.1
+    │   │   └── ca-certificates
+    │   ├── wangle
+    │   │   ├── boost
+    │   │   │   └── icu4c
+    │   │   ├── double-conversion
+    │   │   ├── fizz
+    │   │   │   ├── boost
+    │   │   │   │   └── icu4c
+    │   │   │   ├── double-conversion
+    │   │   │   ├── fmt
+    │   │   │   ├── folly
+    │   │   │   │   ├── boost
+    │   │   │   │   │   └── icu4c
+    │   │   │   │   ├── double-conversion
+    │   │   │   │   ├── fmt
+    │   │   │   │   ├── gflags
+    │   │   │   │   ├── glog
+    │   │   │   │   │   └── gflags
+    │   │   │   │   ├── libevent
+    │   │   │   │   │   └── openssl@1.1
+    │   │   │   │   │       └── ca-certificates
+    │   │   │   │   ├── lz4
+    │   │   │   │   ├── openssl@1.1
+    │   │   │   │   │   └── ca-certificates
+    │   │   │   │   ├── snappy
+    │   │   │   │   ├── xz
+    │   │   │   │   └── zstd
+    │   │   │   ├── gflags
+    │   │   │   ├── glog
+    │   │   │   │   └── gflags
+    │   │   │   ├── libevent
+    │   │   │   │   └── openssl@1.1
+    │   │   │   │       └── ca-certificates
+    │   │   │   ├── libsodium
+    │   │   │   ├── lz4
+    │   │   │   ├── openssl@1.1
+    │   │   │   │   └── ca-certificates
+    │   │   │   ├── snappy
+    │   │   │   └── zstd
+    │   │   ├── fmt
+    │   │   ├── folly
+    │   │   │   ├── boost
+    │   │   │   │   └── icu4c
+    │   │   │   ├── double-conversion
+    │   │   │   ├── fmt
+    │   │   │   ├── gflags
+    │   │   │   ├── glog
+    │   │   │   │   └── gflags
+    │   │   │   ├── libevent
+    │   │   │   │   └── openssl@1.1
+    │   │   │   │       └── ca-certificates
+    │   │   │   ├── lz4
+    │   │   │   ├── openssl@1.1
+    │   │   │   │   └── ca-certificates
+    │   │   │   ├── snappy
+    │   │   │   ├── xz
+    │   │   │   └── zstd
+    │   │   ├── gflags
+    │   │   ├── glog
+    │   │   │   └── gflags
+    │   │   ├── libevent
+    │   │   │   └── openssl@1.1
+    │   │   │       └── ca-certificates
+    │   │   ├── libsodium
+    │   │   ├── lz4
+    │   │   ├── openssl@1.1
+    │   │   │   └── ca-certificates
+    │   │   ├── snappy
+    │   │   └── zstd
+    │   └── zstd
+    ├── fizz
+    │   ├── boost
+    │   │   └── icu4c
+    │   ├── double-conversion
+    │   ├── fmt
+    │   ├── folly
+    │   │   ├── boost
+    │   │   │   └── icu4c
+    │   │   ├── double-conversion
+    │   │   ├── fmt
+    │   │   ├── gflags
+    │   │   ├── glog
+    │   │   │   └── gflags
+    │   │   ├── libevent
+    │   │   │   └── openssl@1.1
+    │   │   │       └── ca-certificates
+    │   │   ├── lz4
+    │   │   ├── openssl@1.1
+    │   │   │   └── ca-certificates
+    │   │   ├── snappy
+    │   │   ├── xz
+    │   │   └── zstd
+    │   ├── gflags
+    │   ├── glog
+    │   │   └── gflags
+    │   ├── libevent
+    │   │   └── openssl@1.1
+    │   │       └── ca-certificates
+    │   ├── libsodium
+    │   ├── lz4
+    │   ├── openssl@1.1
+    │   │   └── ca-certificates
+    │   ├── snappy
+    │   └── zstd
+    ├── fmt
+    ├── folly
+    │   ├── boost
+    │   │   └── icu4c
+    │   ├── double-conversion
+    │   ├── fmt
+    │   ├── gflags
+    │   ├── glog
+    │   │   └── gflags
+    │   ├── libevent
+    │   │   └── openssl@1.1
+    │   │       └── ca-certificates
+    │   ├── lz4
+    │   ├── openssl@1.1
+    │   │   └── ca-certificates
+    │   ├── snappy
+    │   ├── xz
+    │   └── zstd
+    ├── gflags
+    ├── glog
+    │   └── gflags
     ├── openssl@1.1
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    └── xz
+    │   └── ca-certificates
+    └── wangle
+        ├── boost
+        │   └── icu4c
+        ├── double-conversion
+        ├── fizz
+        │   ├── boost
+        │   │   └── icu4c
+        │   ├── double-conversion
+        │   ├── fmt
+        │   ├── folly
+        │   │   ├── boost
+        │   │   │   └── icu4c
+        │   │   ├── double-conversion
+        │   │   ├── fmt
+        │   │   ├── gflags
+        │   │   ├── glog
+        │   │   │   └── gflags
+        │   │   ├── libevent
+        │   │   │   └── openssl@1.1
+        │   │   │       └── ca-certificates
+        │   │   ├── lz4
+        │   │   ├── openssl@1.1
+        │   │   │   └── ca-certificates
+        │   │   ├── snappy
+        │   │   ├── xz
+        │   │   └── zstd
+        │   ├── gflags
+        │   ├── glog
+        │   │   └── gflags
+        │   ├── libevent
+        │   │   └── openssl@1.1
+        │   │       └── ca-certificates
+        │   ├── libsodium
+        │   ├── lz4
+        │   ├── openssl@1.1
+        │   │   └── ca-certificates
+        │   ├── snappy
+        │   └── zstd
+        ├── fmt
+        ├── folly
+        │   ├── boost
+        │   │   └── icu4c
+        │   ├── double-conversion
+        │   ├── fmt
+        │   ├── gflags
+        │   ├── glog
+        │   │   └── gflags
+        │   ├── libevent
+        │   │   └── openssl@1.1
+        │   │       └── ca-certificates
+        │   ├── lz4
+        │   ├── openssl@1.1
+        │   │   └── ca-certificates
+        │   ├── snappy
+        │   ├── xz
+        │   └── zstd
+        ├── gflags
+        ├── glog
+        │   └── gflags
+        ├── libevent
+        │   └── openssl@1.1
+        │       └── ca-certificates
+        ├── libsodium
+        ├── lz4
+        ├── openssl@1.1
+        │   └── ca-certificates
+        ├── snappy
+        └── zstd
 
 webp
+├── giflib
 ├── jpeg
 ├── libpng
 └── libtiff
@@ -858,6 +1756,7 @@ wget
 │   ├── gettext
 │   └── libunistring
 └── openssl@1.1
+    └── ca-certificates
 
 x265
 
@@ -870,17 +1769,6 @@ xmlto
 xz
 
 yarn
-└── node
-    ├── brotli
-    ├── c-ares
-    ├── icu4c
-    ├── libuv
-    ├── nghttp2
-    │   ├── c-ares
-    │   ├── jemalloc
-    │   ├── libev
-    │   └── openssl@1.1
-    └── openssl@1.1
 
 zstd
 
@@ -897,25 +1785,25 @@ zstd
   2.7.2
   3.0.0
 -------------------------------
-* rbenv: 1.1.2
+* rbenv: 1.2.0
 * Rubygems: 3.0.3
 * Bundler: Bundler version 2.1.4
-* CocoaPods: 1.10.1
+* CocoaPods: 1.11.2
 * xcpretty: 0.3.0
 ========================================
 
 
 === All Ruby GEMs ======================
-activesupport (5.2.6)
+activesupport (6.1.4.1)
 addressable (2.8.0)
 algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.498.0)
+aws-partitions (1.502.0)
 aws-sdk-core (3.121.0)
 aws-sdk-kms (1.48.0)
-aws-sdk-s3 (1.102.0)
+aws-sdk-s3 (1.103.0)
 aws-sigv4 (1.4.0)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
@@ -924,8 +1812,8 @@ CFPropertyList (3.0.3)
 claide (1.0.3)
 clamp (1.3.2)
 cmath (default: 1.0.0)
-cocoapods (1.10.1)
-cocoapods-core (1.10.1)
+cocoapods (1.11.2)
+cocoapods-core (1.11.2)
 cocoapods-deintegrate (1.0.5)
 cocoapods-downloader (1.5.1)
 cocoapods-plugins (1.0.0)
@@ -948,9 +1836,9 @@ e2mmap (default: 0.1.0)
 emoji_regex (3.2.2)
 escape (0.0.4)
 etc (default: 1.0.1)
-ethon (0.14.0)
+ethon (0.15.0)
 excon (0.85.0)
-faraday (1.7.1)
+faraday (1.7.2)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
 faraday-em_synchrony (1.0.0)
@@ -962,7 +1850,7 @@ faraday-patron (1.0.0)
 faraday-rack (1.0.0)
 faraday_middleware (1.1.0)
 fastimage (2.2.5)
-fastlane (2.193.1, 2.192.0)
+fastlane (2.194.0, 2.192.0)
 fcntl (default: 1.0.0)
 ffi (1.15.4)
 fiddle (default: 1.0.0)
@@ -999,7 +1887,7 @@ memoist (0.16.2)
 mini_magick (4.11.0)
 mini_mime (1.1.1)
 minitest (5.11.3)
-molinillo (0.6.6)
+molinillo (0.8.0)
 multi_json (1.15.0)
 multipart-post (2.0.0)
 mustache (1.1.1)
@@ -1009,7 +1897,7 @@ nap (1.1.0)
 naturally (2.2.1)
 net-telnet (0.2.0)
 netrc (0.11.0)
-nokogiri (1.12.4 x86_64-darwin)
+nokogiri (1.12.5 x86_64-darwin)
 open4 (1.3.4)
 openssl (default: 2.1.2)
 optparse (0.1.1)
@@ -1020,7 +1908,7 @@ power_assert (1.1.3)
 prime (default: 0.1.0)
 psych (default: 3.1.0)
 public_suffix (4.0.6)
-racc (1.5.2)
+racc (1.6.0)
 rake (12.3.2)
 rdoc (default: 6.1.2)
 redcarpet (3.5.1)
@@ -1029,7 +1917,7 @@ retriable (3.1.2)
 rexml (3.2.5, default: 3.1.9)
 rouge (2.0.7)
 rss (default: 0.2.7)
-ruby-macho (1.4.0)
+ruby-macho (2.5.1)
 ruby2_keywords (0.0.5)
 rubyzip (2.3.2)
 sassc (2.4.0)
@@ -1048,7 +1936,6 @@ sync (default: 0.5.0)
 terminal-notifier (2.0.0)
 terminal-table (1.8.0)
 test-unit (3.2.9)
-thread_safe (0.3.6)
 thwait (default: 0.1.0)
 tracer (default: 0.1.0)
 trailblazer-option (0.1.1)
@@ -1057,11 +1944,11 @@ tty-cursor (0.7.1)
 tty-screen (0.8.1)
 tty-spinner (0.9.3)
 typhoeus (1.4.0)
-tzinfo (1.2.9)
+tzinfo (2.0.4)
 uber (0.1.0)
 unf (0.1.4)
-unf_ext (0.0.7.7)
-unicode-display_width (1.7.0)
+unf_ext (0.0.8)
+unicode-display_width (1.8.0)
 webrick (default: 1.4.2)
 word_wrap (1.0.0)
 xcinvoke (0.3.0)
@@ -1073,14 +1960,15 @@ xcpretty-json-formatter (0.1.1)
 xcpretty-travis-formatter (1.0.1)
 xcresult (0.2.1)
 xmlrpc (0.3.0)
+zeitwerk (2.4.2)
 zlib (default: 1.0.0)
 ========================================
 
 
 === NPM global packages ==========================
-* Cordova: 10.0.0
-* Ionic: 6.11.12
-* Appcenter-CLI version: 2.9.0
+* Cordova: 11.0.0
+* Ionic: 6.19.0
+* Appcenter-CLI version: 2.10.8
 ========================================
 
 
@@ -1219,132 +2107,132 @@ watchOS 6.1 (6.1.1 - 17S445) - com.apple.CoreSimulator.SimRuntime.watchOS-6-1
 watchOS 6.2 (6.2.1 - 17T531) - com.apple.CoreSimulator.SimRuntime.watchOS-6-2 
 == Devices ==
 -- iOS 13.0 --
-    iPhone 8 (79EB7AC6-4620-45D0-9CC7-FF6EF91D6635) (Shutdown) 
-    iPhone 8 Plus (22B0DEF0-6CFC-4127-A2BE-7404DE779794) (Shutdown) 
-    iPhone 11 (060D21C6-E871-4CF0-A5A2-9A1E2984A3A3) (Shutdown) 
-    iPhone 11 Pro (0236DB09-DBA1-4DDD-90C7-5FAEC6047964) (Shutdown) 
-    iPhone 11 Pro Max (8BBD9291-5A75-484F-9EB7-E2643CDFDEBD) (Shutdown) 
-    iPad Pro (9.7-inch) (60901A2A-7842-4B44-A497-3C4A15FB9FCB) (Shutdown) 
-    iPad Pro (11-inch) (1st generation) (D7F4248F-BE42-4693-9E0F-9FAE719D89AC) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (5D4C629E-A910-4F1C-8A5F-DE31EB75E4F9) (Shutdown) 
-    iPad Air (3rd generation) (2EF757A8-4ED1-4CF1-990B-B9FA58125ED8) (Shutdown) 
+    iPhone 8 (4B600693-0BB3-480E-8B31-3A2CFA0EAC49) (Shutdown) 
+    iPhone 8 Plus (07B2F799-446F-4240-B204-B57620157E7D) (Shutdown) 
+    iPhone 11 (4B8E37DB-2BB1-4A86-A223-75AE1E49D63C) (Shutdown) 
+    iPhone 11 Pro (618F2514-FA75-4E7B-A213-0CED35A6E9B0) (Shutdown) 
+    iPhone 11 Pro Max (D383EE00-358A-44D6-87BA-84E927E4961E) (Shutdown) 
+    iPad Pro (9.7-inch) (73220099-F62B-4507-B441-700A96551405) (Shutdown) 
+    iPad Pro (11-inch) (1st generation) (E5BD47A0-C1FF-483F-BF99-F86E6BC6FC36) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (758F5A99-33A2-413B-BB2B-3E7065511990) (Shutdown) 
+    iPad Air (3rd generation) (52E9700D-7D3B-4CC4-B4FD-1BC163638747) (Shutdown) 
 -- iOS 13.1 --
-    iPhone 8 (A248AFFF-EA0F-4BFA-8330-1408B699E824) (Shutdown) 
-    iPhone 8 Plus (211CA3CE-C058-46F8-B9B1-72D35324C39F) (Shutdown) 
-    iPhone 11 (B0059401-8A41-4199-BE4A-6ABD8BFC21C0) (Shutdown) 
-    iPhone 11 Pro (7FB85E3C-6524-4563-9C36-61BA61E76AA9) (Shutdown) 
-    iPhone 11 Pro Max (5F9DCACA-B1E4-4C65-B655-FD8C40FB7592) (Shutdown) 
-    iPad Pro (9.7-inch) (3C37077E-2334-48A8-86F3-F261288727FE) (Shutdown) 
-    iPad Pro (11-inch) (1st generation) (9A47074C-EAD4-45B9-93BF-3A6C3AAFC9A5) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (D0B8BD9F-6199-44DE-B67E-580BEEF76B14) (Shutdown) 
-    iPad Air (3rd generation) (EE584D5A-3119-44DD-AF92-61D68B99A159) (Shutdown) 
+    iPhone 8 (B2FDE20D-2AC8-4050-ACF9-C99D454DC12A) (Shutdown) 
+    iPhone 8 Plus (26346B28-402B-40BE-8C5D-9B72981428F4) (Shutdown) 
+    iPhone 11 (76BB30B6-0B89-409B-8375-02E49B7F4DBC) (Shutdown) 
+    iPhone 11 Pro (35CC4426-BC38-4EE7-AEC0-3EE2FE4B7D09) (Shutdown) 
+    iPhone 11 Pro Max (F6CABA87-B91D-4196-B434-1BCE1B7011B2) (Shutdown) 
+    iPad Pro (9.7-inch) (F1B54C39-F691-4896-A2D9-A4AD7B6460EC) (Shutdown) 
+    iPad Pro (11-inch) (1st generation) (F62CCFB6-9138-4C40-A8DC-E1ECAFD689EA) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (5D719C46-8E54-4003-902E-98344D4C9195) (Shutdown) 
+    iPad Air (3rd generation) (C8D745CC-75D2-4E02-9FC8-8A3DD5BDBDDB) (Shutdown) 
 -- iOS 13.2 --
-    iPhone 8 (A4E495E0-D429-4C24-9D27-F40B161538BA) (Shutdown) 
-    iPhone 8 Plus (BF910DF5-F769-4661-A5F0-364BC2B1F1AA) (Shutdown) 
-    iPhone 11 (B72FEDE1-C513-4F0A-A36F-534D38E404DD) (Shutdown) 
-    iPhone 11 Pro (D647A167-64FA-413A-BADB-C489C86A747C) (Shutdown) 
-    iPhone 11 Pro Max (AF4289FF-3BAC-4648-97B2-15EB027AAB98) (Shutdown) 
-    iPad Pro (9.7-inch) (DFD4E11A-1E60-4BAF-ABA9-85301DB0D07B) (Shutdown) 
-    iPad (7th generation) (A2D2C1DB-2E09-4623-AFA7-8BB47653F628) (Shutdown) 
-    iPad Pro (11-inch) (1st generation) (2286A738-FF00-40CE-8A54-152ADAB0648B) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (A6DC9DF9-1304-4E38-9F1A-BE912CA5564E) (Shutdown) 
-    iPad Air (3rd generation) (107A17EC-447D-446F-AF3E-8B580ED8CDF4) (Shutdown) 
+    iPhone 8 (91BA7AF0-25A6-4A0B-AB0C-F07F7F6245B8) (Shutdown) 
+    iPhone 8 Plus (571AE979-E2C4-4EBB-8246-279793E36D6C) (Shutdown) 
+    iPhone 11 (53B8DA7F-7128-4BDA-9097-B2C1C654C043) (Shutdown) 
+    iPhone 11 Pro (DC2DC1DA-EE58-4D09-B5C0-353FEA2B2ACA) (Shutdown) 
+    iPhone 11 Pro Max (A72BA501-0BD5-4936-8C53-716498488F48) (Shutdown) 
+    iPad Pro (9.7-inch) (C9E3077B-30CE-42EF-AB4B-E8D46A331BBD) (Shutdown) 
+    iPad (7th generation) (CFE9FB54-9B58-4EBC-BC81-F4D7B91812F3) (Shutdown) 
+    iPad Pro (11-inch) (1st generation) (BD0DA6C8-A88B-4923-BE83-3C3E54569E90) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (D9FBEAAA-1DD1-4FE1-A797-EFAAFA1ACFD0) (Shutdown) 
+    iPad Air (3rd generation) (24B7A6BE-9A0B-4704-A1A4-947EA31E6306) (Shutdown) 
 -- iOS 13.3 --
-    iPhone 8 (4C3830C4-DFD9-4701-BBA6-091CE5F1D761) (Shutdown) 
-    iPhone 8 Plus (9199F124-3BA9-41F9-9915-3A1F035E7C08) (Shutdown) 
-    iPhone 11 (6CE1B01B-77E0-4284-97FB-BDAA079EE8E3) (Shutdown) 
-    iPhone 11 Pro (B13AE743-C6F3-4AF2-8304-88ADFCB51BF3) (Shutdown) 
-    iPhone 11 Pro Max (B6A25DDF-FCC9-4F92-9753-CFCE521E25A9) (Shutdown) 
-    iPad Pro (9.7-inch) (01C7E4CB-709A-4727-95DC-D5598196EE3E) (Shutdown) 
-    iPad (7th generation) (5471A041-69EF-453A-83A3-0DC612C86779) (Shutdown) 
-    iPad Pro (11-inch) (1st generation) (01659A22-A1F5-4CE0-9794-82DBF3973568) (Shutdown) 
-    iPad Pro (12.9-inch) (3rd generation) (FF6413BB-A97B-4DCA-84D7-85461BD8D359) (Shutdown) 
-    iPad Air (3rd generation) (5DE23BF9-64C7-4D88-9001-FF93C1B8FB0B) (Shutdown) 
+    iPhone 8 (10B053D0-FFED-4964-B4D6-925574947C38) (Shutdown) 
+    iPhone 8 Plus (386A065D-C959-4EA8-85E5-F00821C34AD3) (Shutdown) 
+    iPhone 11 (4A6E598C-415A-4F05-88E4-961F9C6C40BE) (Shutdown) 
+    iPhone 11 Pro (AC696F14-5E38-4C60-8517-3CFBCD7BE03A) (Shutdown) 
+    iPhone 11 Pro Max (C5DEC969-3286-4DDA-A6BB-C91FEDE94214) (Shutdown) 
+    iPad Pro (9.7-inch) (C24BE8A1-111E-46F7-9BAC-6D16C22F0FC5) (Shutdown) 
+    iPad (7th generation) (7EFC9DDF-9048-4EB7-BC2C-F5C34D76E92B) (Shutdown) 
+    iPad Pro (11-inch) (1st generation) (9F501145-6395-4709-9704-837B38C3479A) (Shutdown) 
+    iPad Pro (12.9-inch) (3rd generation) (C932FFC0-9694-4429-8EC0-9D114B097E8B) (Shutdown) 
+    iPad Air (3rd generation) (F0A61735-B538-46A2-8DC0-4CB24DBC1D13) (Shutdown) 
 -- iOS 13.4 --
-    iPhone 8 (87D9DB2C-E575-41E6-9A05-004C51CE6638) (Shutdown) 
-    iPhone 8 Plus (79767293-7326-4B66-8234-669BA75647A5) (Shutdown) 
-    iPhone 11 (C127A765-A7CA-4BFC-9169-9BD6292878FA) (Shutdown) 
-    iPhone 11 Pro (5ADE8E39-C546-45A0-B8F0-8EF2B81851B4) (Shutdown) 
-    iPhone 11 Pro Max (478B7660-0078-4847-8369-486D712FBFBC) (Shutdown) 
-    iPad Pro (9.7-inch) (BE7D4E94-5E89-4E05-B071-A0A0AFBD1AA4) (Shutdown) 
-    iPad (7th generation) (8BDCB35E-B70D-473C-A0D1-002AFD23E403) (Shutdown) 
-    iPad Pro (11-inch) (2nd generation) (50728821-44ED-4A3C-A616-CBBE7D5DDB91) (Shutdown) 
-    iPad Pro (12.9-inch) (4th generation) (8B5A534B-65F0-484F-B55F-80F614B1078B) (Shutdown) 
-    iPad Air (3rd generation) (76DB10BD-791A-4F23-894C-BD5FE298CD83) (Shutdown) 
+    iPhone 8 (FD63B9B7-6488-4458-817F-DA359A1B739C) (Shutdown) 
+    iPhone 8 Plus (6B974B00-E95C-47AA-A556-DB333A06DAE0) (Shutdown) 
+    iPhone 11 (A1973C64-68CA-4C9B-B3DF-C53C4F65BF8F) (Shutdown) 
+    iPhone 11 Pro (CFFA68AA-862C-475F-B1BC-4BEC667372FB) (Shutdown) 
+    iPhone 11 Pro Max (348E6ECE-F2DA-4D4C-A133-88EDE09F99CA) (Shutdown) 
+    iPad Pro (9.7-inch) (2C847C47-5CEA-4691-90E8-5AFE325745CD) (Shutdown) 
+    iPad (7th generation) (BC7EBE9D-A28E-417B-BE37-FE37EDC2A51D) (Shutdown) 
+    iPad Pro (11-inch) (2nd generation) (0BFC9F8F-EB2D-4A0A-BED5-D3EA7FBFB534) (Shutdown) 
+    iPad Pro (12.9-inch) (4th generation) (6B3D789A-966F-4A5B-BAE5-2606B75A5179) (Shutdown) 
+    iPad Air (3rd generation) (A55D6896-5306-436A-B022-B4A291DB560F) (Shutdown) 
 -- iOS 13.5 --
-    iPhone 8 (339E41C8-0FC7-4B25-9EF0-566840CA3079) (Shutdown) 
-    iPhone 8 Plus (684CF579-B8AC-4391-BE87-0596197F028F) (Shutdown) 
-    iPhone 11 (4E1AA5F1-25A5-4FA9-856F-D98022BBF1C4) (Shutdown) 
-    iPhone 11 Pro (54E21D9E-D0A9-4BB8-9A79-17DD0BCE48E2) (Shutdown) 
-    iPhone 11 Pro Max (3F6BA92C-8B3F-4C88-85FE-9F6D7800DDCE) (Shutdown) 
-    iPhone SE (2nd generation) (CF6AA493-DB6C-4A08-8DF0-8210899751BE) (Shutdown) 
-    iPad Pro (9.7-inch) (35B5C7D6-1B1E-4756-B70B-A1D90E5D8D64) (Shutdown) 
-    iPad (7th generation) (2D07FF09-7C32-4C79-9655-3DE5E864609B) (Shutdown) 
-    iPad Pro (11-inch) (2nd generation) (ADDABFDD-4368-4E52-ADB4-AA5F04DB763A) (Shutdown) 
-    iPad Pro (12.9-inch) (4th generation) (86217514-F82A-4BAE-B225-40EDE22E3CBC) (Shutdown) 
-    iPad Air (3rd generation) (661FE37C-FA1F-467C-828B-E0487E43AB2A) (Shutdown) 
+    iPhone 8 (D7229BBA-7AEE-4B6A-9367-E4EC07A6BAE8) (Shutdown) 
+    iPhone 8 Plus (74C2C135-E58A-405F-AECC-C59A53D53349) (Shutdown) 
+    iPhone 11 (F8BF5065-EC2A-4A4C-8190-D38D5DD75C4C) (Shutdown) 
+    iPhone 11 Pro (526A5C84-FD4B-478D-915E-B4F1A8083222) (Shutdown) 
+    iPhone 11 Pro Max (1833D9BF-B5F8-4F61-A4A3-CB267AFED642) (Shutdown) 
+    iPhone SE (2nd generation) (A9071136-0EC5-42A0-A7ED-C09E2F5687C3) (Shutdown) 
+    iPad Pro (9.7-inch) (AAC9FD91-0261-4BEB-AFBB-C65B07519B46) (Shutdown) 
+    iPad (7th generation) (6D15C183-70D8-46E1-888A-89F9AA11C3D0) (Shutdown) 
+    iPad Pro (11-inch) (2nd generation) (C8D7359E-ED72-4C7D-9E16-27C4504A4448) (Shutdown) 
+    iPad Pro (12.9-inch) (4th generation) (AF0CB271-77FF-48D8-BA22-CFBE97C1DDE9) (Shutdown) 
+    iPad Air (3rd generation) (476408C6-1DF5-4509-BA3D-3624AE180E59) (Shutdown) 
 -- iOS 13.6 --
-    iPhone 8 (B7730B2E-4E03-411C-989C-CB9B3A90F66F) (Shutdown) 
-    iPhone 8 Plus (38C2A047-AA12-4676-93F3-F123380B8283) (Shutdown) 
-    iPhone 11 (20D96908-C312-41C6-BE0A-3E11A85369FA) (Shutdown) 
-    iPhone 11 Pro (67A9BD79-4422-4B64-814A-9356731613A1) (Shutdown) 
-    iPhone 11 Pro Max (3BCD944F-3D5B-4E08-BDCF-AF7AB4D8AAE7) (Shutdown) 
-    iPhone SE (2nd generation) (7C1F0942-3FD8-40BE-AF80-E084D3B8D0C0) (Shutdown) 
-    iPad Pro (9.7-inch) (2CF9C30F-6E88-418F-86E3-7F96B43F8EE5) (Shutdown) 
-    iPad (7th generation) (9FDE1149-908D-4166-9D2A-A92AD7B67C84) (Shutdown) 
-    iPad Pro (11-inch) (2nd generation) (E0F32729-F66E-4E1C-A3B2-20356C1DAA19) (Shutdown) 
-    iPad Pro (12.9-inch) (4th generation) (F6257095-E331-4240-93D5-16D0EB838C72) (Shutdown) 
-    iPad Air (3rd generation) (AB119F3C-C68E-46EC-BCD6-2FE548729FD6) (Shutdown) 
+    iPhone 8 (9B164614-BDAC-446F-94A8-B192FA92BD80) (Shutdown) 
+    iPhone 8 Plus (2B8C79C7-808F-4276-9F92-C7A2AD7A7070) (Shutdown) 
+    iPhone 11 (E25007BE-8979-4F4B-AC7E-699C4BE1EA99) (Shutdown) 
+    iPhone 11 Pro (0B147D85-023F-4009-B017-B2051A4B1039) (Shutdown) 
+    iPhone 11 Pro Max (4DB11ABA-9AAA-4F20-BE98-3307992A763E) (Shutdown) 
+    iPhone SE (2nd generation) (2C5B3341-85F7-4B31-B0B1-9355FE076C24) (Shutdown) 
+    iPad Pro (9.7-inch) (DFDA19BE-6F05-4422-A9E0-7DA43B49176F) (Shutdown) 
+    iPad (7th generation) (FCA9929E-AC30-4C04-9F22-DCFFF467E5A1) (Shutdown) 
+    iPad Pro (11-inch) (2nd generation) (F5B21CD1-F078-4C90-B60E-EDE71B185F6F) (Shutdown) 
+    iPad Pro (12.9-inch) (4th generation) (8D0228E2-7AAA-423E-9278-93E1911597D5) (Shutdown) 
+    iPad Air (3rd generation) (5A3914AC-BFC9-44AF-844E-1DA8275638C2) (Shutdown) 
 -- iOS 13.7 --
-    iPhone 8 (C9230BE9-2522-4FE6-B264-7B9A20ACC88C) (Shutdown) 
-    iPhone 8 Plus (0BD519FD-F6CD-4D59-8FDF-6643ED832565) (Shutdown) 
-    iPhone 11 (D114164D-E074-4654-9A53-324D38596B78) (Shutdown) 
-    iPhone 11 Pro (F8C5BFF9-B543-47F7-954C-8638B50F64C0) (Shutdown) 
-    iPhone 11 Pro Max (7252DABB-F797-4F13-A0CF-802347046A80) (Shutdown) 
-    iPhone SE (2nd generation) (28B8F663-91F3-4BA7-A5C9-D0795F257A28) (Shutdown) 
-    iPad Pro (9.7-inch) (08AF72E7-F05A-4F8F-BEC4-53845FE34B80) (Shutdown) 
-    iPad (7th generation) (743EA198-E584-4A6F-B171-BCB846C73AAD) (Shutdown) 
-    iPad Pro (11-inch) (2nd generation) (41304D8E-44C2-4204-93CE-7DB4F097E893) (Shutdown) 
-    iPad Pro (12.9-inch) (4th generation) (2325EDCB-B0C3-44BD-8CE9-E0DBC5A74751) (Shutdown) 
-    iPad Air (3rd generation) (C55239E1-D01F-4F0B-B081-80D2DAE81E00) (Shutdown) 
+    iPhone 8 (EA570F66-F2DF-417F-A15B-0D4BF860D66F) (Shutdown) 
+    iPhone 8 Plus (773CA5D5-4747-4F56-8484-4E45DB0D4AA3) (Shutdown) 
+    iPhone 11 (1588B8C6-434A-4E1B-8BFF-A365F5889AE9) (Shutdown) 
+    iPhone 11 Pro (2733D420-C50C-4F4D-9A71-D8866D39C3ED) (Shutdown) 
+    iPhone 11 Pro Max (8D3A186A-1FAD-485B-8137-68AFB6A0B8F5) (Shutdown) 
+    iPhone SE (2nd generation) (C6E53D92-73B7-4697-9664-7BBF694E28DB) (Shutdown) 
+    iPad Pro (9.7-inch) (89BC2114-7379-465D-BF72-DE7566067259) (Shutdown) 
+    iPad (7th generation) (73E3B8F5-F497-4430-9F37-2255730017FB) (Shutdown) 
+    iPad Pro (11-inch) (2nd generation) (730326C2-CF07-4E76-AEC2-C142E219C65C) (Shutdown) 
+    iPad Pro (12.9-inch) (4th generation) (E1D68E87-8506-44D6-91AC-46D7A5A8016B) (Shutdown) 
+    iPad Air (3rd generation) (2044805B-B1F9-4860-8CC6-22744BE34D36) (Shutdown) 
 -- tvOS 13.0 --
-    Apple TV (59D9A4C7-5744-4C4E-ADCC-4A3C8065A757) (Shutdown) 
-    Apple TV 4K (A05BF71C-1419-4AD2-AF17-7A270268EC3E) (Shutdown) 
-    Apple TV 4K (at 1080p) (6747156E-04D0-4600-91E7-A5FA12EBBDD8) (Shutdown) 
+    Apple TV (5137597B-A0D7-4527-AFE7-898172312ABD) (Shutdown) 
+    Apple TV 4K (648CD3BD-05D0-4164-A2B9-61422FB10CC5) (Shutdown) 
+    Apple TV 4K (at 1080p) (3B6355EE-6018-4E9C-AF42-48CA119F2282) (Shutdown) 
 -- tvOS 13.2 --
-    Apple TV (380BC79B-4993-467C-B62F-FFF6F125FDB5) (Shutdown) 
-    Apple TV 4K (F09C807C-1BC9-475E-9000-21B3FE58B252) (Shutdown) 
-    Apple TV 4K (at 1080p) (2A1B68BE-ABA4-4275-86BC-14EB6ABAC34E) (Shutdown) 
+    Apple TV (206A17FE-1746-4902-ABFA-037D4E1D7439) (Shutdown) 
+    Apple TV 4K (E7D08480-F6FE-4FB4-A8A4-B94EBD993967) (Shutdown) 
+    Apple TV 4K (at 1080p) (A87E03F7-BC6D-4F7B-AEEE-752419F1C922) (Shutdown) 
 -- tvOS 13.3 --
-    Apple TV (92921A1A-335B-48CA-892F-F35695D0D385) (Shutdown) 
-    Apple TV 4K (C01437AE-C377-4538-A76F-E8D697FF834A) (Shutdown) 
-    Apple TV 4K (at 1080p) (F531762C-E10C-4C72-8141-5A42FF944BC7) (Shutdown) 
+    Apple TV (B21FDB78-154E-485B-ADF8-ED8E945A1650) (Shutdown) 
+    Apple TV 4K (B6E20D71-95D1-4151-A8E5-E5A068E30B2D) (Shutdown) 
+    Apple TV 4K (at 1080p) (B86E7EE2-7975-4360-A31D-DF5CE4D442EA) (Shutdown) 
 -- tvOS 13.4 --
-    Apple TV (D402DD13-C4AC-4433-8248-872391976704) (Shutdown) 
-    Apple TV 4K (F38BCF0A-5AC8-4D19-B55F-F93385A9FF61) (Shutdown) 
-    Apple TV 4K (at 1080p) (1921802F-B7D5-4156-8395-5553F6450D99) (Shutdown) 
+    Apple TV (3BE71088-EF90-4C04-9FB1-92B631A4AE72) (Shutdown) 
+    Apple TV 4K (AE3F6AE6-61D6-4088-8313-CE66D08560C6) (Shutdown) 
+    Apple TV 4K (at 1080p) (AC1339E9-B81C-412D-885B-3BF2577CE4B5) (Shutdown) 
 -- watchOS 6.0 --
-    Apple Watch Series 4 - 40mm (1004D12E-38C5-49F8-97EF-ADC2E12A610D) (Shutdown) 
-    Apple Watch Series 4 - 44mm (A5E5A718-86CD-48CD-BF41-1C5C8D10829F) (Shutdown) 
-    Apple Watch Series 5 - 40mm (5E9583A8-CCFF-463C-AA98-33D5D9D59F26) (Shutdown) 
-    Apple Watch Series 5 - 44mm (968474F5-3C7B-4B4D-83D6-C9BBF8094E54) (Shutdown) 
+    Apple Watch Series 4 - 40mm (9710B8C3-C8A9-4F2D-AEA1-D27B70A79C1F) (Shutdown) 
+    Apple Watch Series 4 - 44mm (EFCC9E58-F5FE-4111-9961-AA62E21EB014) (Shutdown) 
+    Apple Watch Series 5 - 40mm (B86BCE47-59AB-46C9-9290-891B77F5D3AA) (Shutdown) 
+    Apple Watch Series 5 - 44mm (971CDBD1-3F12-405E-8C25-ECE3396AE2FD) (Shutdown) 
 -- watchOS 6.1 --
-    Apple Watch Series 4 - 40mm (F6B4F47B-D43B-48EE-B439-4A24797CA9A1) (Shutdown) 
-    Apple Watch Series 4 - 44mm (9B70E853-2A2A-445F-AA6A-F164F40C8E46) (Shutdown) 
-    Apple Watch Series 5 - 40mm (A4D2A078-CA2A-4A3C-A812-A4D440A44627) (Shutdown) 
-    Apple Watch Series 5 - 44mm (5197ACF6-B96E-4B72-A15D-A0BEE905EE23) (Shutdown) 
+    Apple Watch Series 4 - 40mm (E9CDE264-0A12-4DD5-90BF-6816A0B89B33) (Shutdown) 
+    Apple Watch Series 4 - 44mm (4ABD82C1-19BC-4527-858B-BC0553A0CE2F) (Shutdown) 
+    Apple Watch Series 5 - 40mm (6F737B3D-65E3-4AF1-A008-7421EDE8084A) (Shutdown) 
+    Apple Watch Series 5 - 44mm (7A99B985-03F4-4812-92B3-0E7524AAC2F9) (Shutdown) 
 -- watchOS 6.2 --
-    Apple Watch Series 4 - 40mm (0662C88C-18B8-48A8-B135-6A080901B7D2) (Shutdown) 
-    Apple Watch Series 4 - 44mm (CC462ED1-DD0E-48FD-BF3B-619F77CD75EB) (Shutdown) 
-    Apple Watch Series 5 - 40mm (3156DB18-7A51-4D73-9B6A-FFC8856C12EE) (Shutdown) 
-    Apple Watch Series 5 - 44mm (1AD77684-2F6B-43D8-9041-E0D62CDF2EC7) (Shutdown) 
+    Apple Watch Series 4 - 40mm (013A5585-6FED-4434-B03D-71EBE423FDAF) (Shutdown) 
+    Apple Watch Series 4 - 44mm (045E93BE-FBD2-48CC-B47C-54A3B0507C42) (Shutdown) 
+    Apple Watch Series 5 - 40mm (16C34A12-7A1A-4F34-B269-7040185D42D7) (Shutdown) 
+    Apple Watch Series 5 - 44mm (C0977351-D630-44FA-8186-3CD67EA6F04E) (Shutdown) 
 == Device Pairs ==
-8CBE1394-739E-4D63-AF63-138089B334BD (active, disconnected)
-    Watch: Apple Watch Series 5 - 40mm (3156DB18-7A51-4D73-9B6A-FFC8856C12EE) (Shutdown)
-    Phone: iPhone 11 Pro (F8C5BFF9-B543-47F7-954C-8638B50F64C0) (Shutdown)
-80E011D6-B60E-4388-BB48-2913A2BD4965 (active, disconnected)
-    Watch: Apple Watch Series 5 - 44mm (1AD77684-2F6B-43D8-9041-E0D62CDF2EC7) (Shutdown)
-    Phone: iPhone 11 Pro Max (7252DABB-F797-4F13-A0CF-802347046A80) (Shutdown)
+D25C177C-1B94-45DE-B230-1F5AAE4C436E (active, disconnected)
+    Watch: Apple Watch Series 5 - 40mm (16C34A12-7A1A-4F34-B269-7040185D42D7) (Shutdown)
+    Phone: iPhone 11 Pro (2733D420-C50C-4F4D-9A71-D8866D39C3ED) (Shutdown)
+639F3AF6-38F5-40BD-8F74-23DE315D0B06 (active, disconnected)
+    Watch: Apple Watch Series 5 - 44mm (C0977351-D630-44FA-8186-3CD67EA6F04E) (Shutdown)
+    Phone: iPhone 11 Pro Max (8D3A186A-1FAD-485B-8137-68AFB6A0B8F5) (Shutdown)
 
 ========================================
 
@@ -1354,22 +2242,22 @@ watchOS 6.2 (6.2.1 - 17T531) - com.apple.CoreSimulator.SimRuntime.watchOS-6-2
 * sw_vers
 ProductName:	Mac OS X
 ProductVersion:	10.15.7
-BuildVersion:	19H2
+BuildVersion:	19H15
 
 * system_profiler SPSoftwareDataType
 Software:
 
     System Software Overview:
 
-      System Version: macOS 10.15.7 (19H2)
+      System Version: macOS 10.15.7 (19H15)
       Kernel Version: Darwin 19.6.0
-      Boot Volume: Untitled
+      Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: prd-atl-std-x2-xcode-11-7-211210105005-htrFZKiHrhFTSv6Yxg5Eri
+      Computer Name: vm-osx-xcode-11.7.x-g2.8core-8d8a2438-d599-49a5-a12e-a709e9c59511
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 3 minutes
+      Time since boot: 2 minutes
 
 
 ========================================
@@ -1378,7 +2266,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-  /dev/disk1s5        200Gi         60Gi
+  /dev/disk1s5        300Gi        157Gi
 ========================================
 
 --- Android
