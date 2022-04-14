@@ -85,7 +85,7 @@ gsutil 5.8
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-.done.
+..done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -545,7 +545,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-220407105940-tfzus3vddcp9ptjjfhefps 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-220411050158-pxpwzx8b3wyaydousqmd9e 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -584,7 +584,7 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: runc io.containerd.runc.v2 io.containerd.runtime.v1.linux
+ Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
  Default Runtime: runc
  Init Binary: docker-init
  containerd version: 3df54a852345ae127d1fa3092b95168e4a88e2f8
@@ -600,8 +600,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.763GiB
- Name: stg-20-04-usc1b-220407105940-tfzus3vddcp9ptjjfhefps
- ID: XC7N:O7J5:BJEP:OM75:XNI4:OUTM:7WE6:5Z7E:HGNF:IZYB:X5CV:M73P
+ Name: stg-20-04-usc1b-220411050158-pxpwzx8b3wyaydousqmd9e
+ ID: 3W72:DC2D:CWDV:QLUF:WHRK:SVW7:NK5B:FDJC:IOKI:XDHD:HMGR:UX67
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -615,8 +615,8 @@ Server:
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 46.9GB
 quay.io/bitriseio/android-ndk-20.04 - 46.9GB
+bitriseio/android-ndk-20.04 - 46.9GB
 bitriseio/android-20.04 - 42.7GB
 quay.io/bitriseio/android-20.04 - 42.7GB
 bitriseio/bitrise-base-20.04 - 3.69GB
@@ -631,10 +631,10 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/loop5      130G   51G   80G  39% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G  137G   58G  71% /bitrise
+/dev/root       194G   58G  136G  30% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:          7.8Gi       434Mi       4.5Gi       1.0Mi       2.9Gi       7.1Gi
+Mem:          7.8Gi       481Mi       2.2Gi       1.0Mi       5.1Gi       7.0Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
