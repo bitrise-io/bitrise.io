@@ -20,7 +20,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 
 
 === Pre-installed tool versions ========
-* git: git version 2.25.1
+* git: git version 2.36.0
 * mercurial/hg: Mercurial Distributed SCM (version 5.3.1)
 * curl: curl 7.68.0 (x86_64-pc-linux-gnu) libcurl/7.68.0 OpenSSL/1.1.1f zlib/1.2.11 brotli/1.0.7 libidn2/2.2.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.3/openssl/zlib nghttp2/1.40.0 librtmp/2.3
 * wget: GNU Wget 1.20.3 built on linux-gnu.
@@ -35,13 +35,13 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.22.99 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.24.44
+* aws-cli: aws-cli/1.23.5 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.25.5
 * Ruby: ruby 2.7.5p203 (2021-11-24 revision f69aeb8314) [x86_64-linux]
   * bundler: Bundler version 2.3.12
   * rubygems: 3.3.12
 * Go: go version go1.17.8 linux/amd64
 * Node.js: v12.22.12
-* NPM: 8.7.0
+* NPM: 8.8.0
 * Yarn: 1.22.18
 * docker: Docker version 20.10.14, build a224086
 * docker-compose: docker-compose version 1.21.2, build a133471
@@ -54,7 +54,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * Shellcheck: 0.7.0
 * Gradle: Gradle 6.3
 * Maven: [1mApache Maven 3.6.3[m
-* Java: javac 11.0.14.1
+* Java: javac 11.0.15
 * Cordova CLI version: 11.0.0
 * Ionic CLI version: 6.19.0
 * Appcenter-CLI version: 2.10.10
@@ -62,24 +62,50 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 
 === Java ===============================
 * JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
-* Java: openjdk version "11.0.14.1" 2022-02-08
-* Javac: javac 11.0.14.1
+* Java: openjdk version "11.0.15" 2022-04-19
+* Javac: javac 11.0.15
+* Installed JAVA Versions
+/usr/lib/jvm/java-11-openjdk-amd64/bin/java:
+openjdk version "11.0.15" 2022-04-19
+OpenJDK Runtime Environment (build 11.0.15+10-Ubuntu-0ubuntu0.20.04.1)
+OpenJDK 64-Bit Server VM (build 11.0.15+10-Ubuntu-0ubuntu0.20.04.1, mixed mode, sharing)
+
+/usr/lib/jvm/java-17-openjdk-amd64/bin/java:
+openjdk version "17.0.3" 2022-04-19
+OpenJDK Runtime Environment (build 17.0.3+7-Ubuntu-0ubuntu0.20.04.1)
+OpenJDK 64-Bit Server VM (build 17.0.3+7-Ubuntu-0ubuntu0.20.04.1, mixed mode, sharing)
+
+/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java:
+openjdk version "1.8.0_312"
+OpenJDK Runtime Environment (build 1.8.0_312-8u312-b07-0ubuntu1~20.04-b07)
+OpenJDK 64-Bit Server VM (build 25.312-b07, mixed mode)
+
+* Installed JAVAC Language Compiler Versions
+/usr/lib/jvm/java-11-openjdk-amd64/bin/javac:
+javac 11.0.15
+
+/usr/lib/jvm/java-17-openjdk-amd64/bin/javac:
+javac 17.0.3
+
+/usr/lib/jvm/java-8-openjdk-amd64/bin/javac:
+javac 1.8.0_312
+
 ========================================
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 382.0.0
-alpha 2022.04.15
-beta 2022.04.15
+Google Cloud SDK 383.0.1
+alpha 2022.04.26
+beta 2022.04.26
 bq 2.0.74
 bundled-python3-unix 3.8.11
-core 2022.04.15
+core 2022.04.26
 gsutil 5.9
 ========================================
 
 
 === Firebase Tools components ==========
-10.7.0
+10.7.2
 ========================================
 
 === Google Cloud Network Check =========
@@ -108,9 +134,9 @@ Version 33.0.1-8253317
 Installed as /opt/android-sdk-linux/platform-tools/adb
 
  * SDK packages:
-* Command line Tools version: 5.0
+* Command line Tools version: 6.0
 * Platform Tools version: 33.0.1
-* Emulator version: 31.2.9
+* Emulator version: 31.2.10
 ========================================
 
 
@@ -119,7 +145,6 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
 * ANDROID_HOME:
 .
 ..
-add-ons
 build-tools
 cmdline-tools
 emulator
@@ -154,13 +179,6 @@ source.properties
 sqlite3
 
 * ./build-tools:
-17.0.0
-19.1.0
-21.1.2
-22.0.1
-23.0.3
-24.0.3
-25.0.3
 26.0.1
 26.0.2
 27.0.0
@@ -216,14 +234,6 @@ source.properties
 7 directories, 0 files
 
 * ./platforms:
-android-15
-android-17
-android-19
-android-21
-android-22
-android-23
-android-24
-android-25
 android-26
 android-27
 android-28
@@ -234,18 +244,6 @@ android-32
 
 * ./system-images:
 /opt/android-sdk-linux/system-images
-├── android-19
-│   └── default
-│       └── armeabi-v7a
-├── android-22
-│   └── default
-│       └── armeabi-v7a
-├── android-24
-│   └── default
-│       └── armeabi-v7a
-├── android-25
-│   └── google_apis
-│       └── armeabi-v7a
 ├── android-26
 │   └── google_apis
 │       └── x86
@@ -259,13 +257,15 @@ android-32
 │   └── google_apis
 │       └── x86
 ├── android-31
-│   └── google_apis
+│   ├── google_apis
+│   │   └── x86_64
+│   └── google_atd
 │       └── x86_64
 └── android-32
     └── google_apis
         └── x86_64
 
-30 directories, 0 files
+20 directories, 0 files
 ========================================
 
 
@@ -283,7 +283,7 @@ Android Asset Packaging Tool (aapt) 2.19-7147631
 
 $ cat /opt/android-sdk-linux/ndk-bundle/source.properties
 Pkg.Desc = Android NDK
-Pkg.Revision = 21.4.7075529
+Pkg.Revision = 23.1.7779620
 
 $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 /opt/android-sdk-linux/ndk-bundle
@@ -298,10 +298,8 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 │   ├── gmsl
 │   ├── __init__.py
 │   ├── ldflags_to_sanitizers.py
-│   ├── lib
 │   ├── ndk-build
 │   ├── ndk-build.cmd
-│   ├── __pycache__
 │   ├── test_extract_manifest.py
 │   ├── test_extract_platform.py
 │   ├── test_gen_cygpath.py
@@ -314,24 +312,11 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 │   └── system_libs.json
 ├── ndk-build
 ├── ndk-gdb
+├── ndk-lldb
 ├── ndk-stack
 ├── ndk-which
 ├── NOTICE
 ├── NOTICE.toolchain
-├── platforms
-│   ├── android-16
-│   ├── android-17
-│   ├── android-18
-│   ├── android-19
-│   ├── android-21
-│   ├── android-22
-│   ├── android-23
-│   ├── android-24
-│   ├── android-26
-│   ├── android-27
-│   ├── android-28
-│   ├── android-29
-│   └── android-30
 ├── prebuilt
 │   ├── android-arm
 │   ├── android-arm64
@@ -362,6 +347,7 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 │   ├── __init__.py
 │   ├── pprof_proto_generator.py
 │   ├── profile_pb2.py
+│   ├── purgatorio
 │   ├── report_html.js
 │   ├── report_html.py
 │   ├── report.py
@@ -369,33 +355,26 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 │   ├── run_simpleperf_on_device.py
 │   ├── run_simpleperf_without_usb_connection.py
 │   ├── simpleperf_report_lib.py
-│   └── utils.py
+│   └── simpleperf_utils.py
 ├── source.properties
 ├── sources
 │   ├── android
 │   ├── cxx-stl
 │   └── third_party
-├── sysroot
-│   ├── NOTICE
-│   └── usr
 ├── toolchains
-│   ├── aarch64-linux-android-4.9
-│   ├── arm-linux-androideabi-4.9
 │   ├── llvm
-│   ├── renderscript
-│   ├── x86-4.9
-│   └── x86_64-4.9
+│   └── renderscript
 └── wrap.sh
     └── asan.sh
 
-53 directories, 47 files
+32 directories, 47 files
 
 
 --- Bitrise CLI tool versions
 * bitrise: 1.49.0
 * stepman: 0.13.1
 * envman: 2.3.3
-system_report.sh: line 214: bitrise-bridge: command not found
+system_report.sh: line 220: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
 
@@ -405,10 +384,10 @@ addressable (2.8.0)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.579.0)
-aws-sdk-core (3.130.1)
+aws-partitions (1.582.0)
+aws-sdk-core (3.130.2)
 aws-sdk-kms (1.56.0)
-aws-sdk-s3 (1.113.0)
+aws-sdk-s3 (1.113.2)
 aws-sigv4 (1.5.0)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
@@ -430,7 +409,7 @@ domain_name (0.5.20190701)
 dotenv (2.7.6)
 emoji_regex (3.2.3)
 etc (default: 1.1.0)
-excon (0.92.2)
+excon (0.92.3)
 faraday (1.10.0)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
@@ -545,7 +524,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-220425082921-m69u2jzmnmljwgrwvqo84h 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-220503144221-w6ur7rejw3gyhky8x59c7a 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -600,8 +579,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.763GiB
- Name: stg-20-04-usc1b-220425082921-m69u2jzmnmljwgrwvqo84h
- ID: DM2T:FSOF:FGON:C3WC:FXWI:2FCA:4AQP:QA6L:O3IC:CK65:RUMX:HPKW
+ Name: stg-20-04-usc1b-220503144221-w6ur7rejw3gyhky8x59c7a
+ ID: AGLM:IGN3:NTZT:G5O6:WWGF:FHKU:BULN:5I2Q:5D4Q:WNJO:FBLI:6PMV
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -615,12 +594,12 @@ Server:
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 46.9GB
-quay.io/bitriseio/android-ndk-20.04 - 46.9GB
-bitriseio/android-20.04 - 42.7GB
-quay.io/bitriseio/android-20.04 - 42.7GB
-bitriseio/bitrise-base-20.04 - 3.67GB
-quay.io/bitriseio/bitrise-base-20.04 - 3.67GB
+bitriseio/android-ndk-20.04 - 40.4GB
+quay.io/bitriseio/android-ndk-20.04 - 40.4GB
+bitriseio/android-20.04 - 38GB
+quay.io/bitriseio/android-20.04 - 38GB
+bitriseio/bitrise-base-20.04 - 3.68GB
+quay.io/bitriseio/bitrise-base-20.04 - 3.68GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -628,13 +607,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop4      130G   51G   80G  39% /
+/dev/loop4      130G   45G   86G  35% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   58G  137G  30% /bitrise
+/dev/root       194G  137G   57G  71% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:          7.8Gi       464Mi       2.6Gi       1.0Mi       4.7Gi       7.0Gi
+Mem:          7.8Gi       466Mi       3.0Gi       1.0Mi       4.3Gi       7.1Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
