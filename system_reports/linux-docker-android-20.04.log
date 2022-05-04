@@ -35,10 +35,10 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.23.5 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.25.5
+* aws-cli: aws-cli/1.23.6 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.25.6
 * Ruby: ruby 2.7.5p203 (2021-11-24 revision f69aeb8314) [x86_64-linux]
-  * bundler: Bundler version 2.3.12
-  * rubygems: 3.3.12
+  * bundler: Bundler version 2.3.13
+  * rubygems: 3.3.13
 * Go: go version go1.17.8 linux/amd64
 * Node.js: v12.22.12
 * NPM: 8.8.0
@@ -94,13 +94,13 @@ javac 1.8.0_312
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 383.0.1
-alpha 2022.04.26
-beta 2022.04.26
+Google Cloud SDK 384.0.0
+alpha 2022.05.02
+beta 2022.05.02
 bq 2.0.74
 bundled-python3-unix 3.8.11
-core 2022.04.26
-gsutil 5.9
+core 2022.05.02
+gsutil 5.10
 ========================================
 
 
@@ -111,7 +111,7 @@ gsutil 5.9
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-.done.
+..done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -384,15 +384,15 @@ addressable (2.8.0)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.582.0)
+aws-partitions (1.583.0)
 aws-sdk-core (3.130.2)
 aws-sdk-kms (1.56.0)
-aws-sdk-s3 (1.113.2)
+aws-sdk-s3 (1.114.0)
 aws-sigv4 (1.5.0)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (default: 2.3.12)
+bundler (default: 2.3.13)
 CFPropertyList (3.0.5)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
@@ -488,7 +488,7 @@ rexml (3.2.5, default: 3.2.3.1)
 rouge (2.0.7)
 rss (default: 0.2.8)
 ruby2_keywords (0.0.5)
-rubygems-update (3.3.12)
+rubygems-update (3.3.13)
 rubyzip (2.3.2)
 sdbm (default: 1.0.0)
 security (0.1.3)
@@ -524,7 +524,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-220503144221-w6ur7rejw3gyhky8x59c7a 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-220504143149-gefdyjst3eq8xbdr88ncbr 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -552,9 +552,11 @@ Server:
   Stopped: 0
  Images: 4
  Server Version: 20.10.14
- Storage Driver: btrfs
-  Build Version: Btrfs v5.4.1 
-  Library Version: 102
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Native Overlay Diff: true
+  userxattr: false
  Logging Driver: json-file
  Cgroup Driver: cgroupfs
  Cgroup Version: 1
@@ -579,8 +581,8 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.763GiB
- Name: stg-20-04-usc1b-220503144221-w6ur7rejw3gyhky8x59c7a
- ID: AGLM:IGN3:NTZT:G5O6:WWGF:FHKU:BULN:5I2Q:5D4Q:WNJO:FBLI:6PMV
+ Name: stg-20-04-usc1b-220504143149-gefdyjst3eq8xbdr88ncbr
+ ID: MLJD:MJGC:ZEM2:PYYJ:PGQD:3PUG:B6LI:FN5C:6FNP:6SYV:5H4T:CIEB
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -607,13 +609,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/loop4      130G   45G   86G  35% /
+overlay         194G   51G  144G  27% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G  137G   57G  71% /bitrise
+/dev/root       194G   51G  144G  27% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:          7.8Gi       466Mi       3.0Gi       1.0Mi       4.3Gi       7.1Gi
+Mem:          7.8Gi       434Mi       5.9Gi       1.0Mi       1.4Gi       7.1Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
