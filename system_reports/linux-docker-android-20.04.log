@@ -111,7 +111,7 @@ gsutil 5.10
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-.done.
+..done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -279,33 +279,99 @@ Android Asset Packaging Tool (aapt) 2.19-7147631
 
 ========================================
 
-========================================
-
 $ cat /opt/android-sdk-linux/ndk-bundle/source.properties
 Pkg.Desc = Android NDK
 Pkg.Revision = 23.1.7779620
 
-Installed Android platforms:
-Warning: Observed package id 'cmdline-tools;6.0' in inconsistent location '/opt/android-sdk-linux/tools' (Expected '/opt/android-sdk-linux/cmdline-tools/6.0')
-Warning: Already observed package id 'cmdline-tools;6.0' in '/opt/android-sdk-linux/cmdline-tools/6.0'. Skipping duplicate at '/opt/android-sdk-linux/tools'
-Warning: Observed package id 'tools' in inconsistent location '/opt/android-sdk-linux/tools-2' (Expected '/opt/android-sdk-linux/tools')
-Warning: Observed package id 'cmdline-tools;6.0' in inconsistent location '/opt/android-sdk-linux/tools' (Expected '/opt/android-sdk-linux/cmdline-tools/6.0')
-Warning: Already observed package id 'cmdline-tools;6.0' in '/opt/android-sdk-linux/cmdline-tools/6.0'. Skipping duplicate at '/opt/android-sdk-linux/tools'
-Warning: Observed package id 'tools' in inconsistent location '/opt/android-sdk-linux/tools-2' (Expected '/opt/android-sdk-linux/tools')
-Platform: android-26
-Platform: android-27
-Platform: android-28
-Platform: android-29
-Platform: android-30
-Platform: android-31
-Platform: android-32
+$ tree -L 2 /opt/android-sdk-linux/ndk-bundle
+/opt/android-sdk-linux/ndk-bundle
+├── build
+│   ├── cmake
+│   ├── core
+│   ├── dump_compile_commands.py
+│   ├── extract_manifest.py
+│   ├── extract_platform.py
+│   ├── gen_compile_db.py
+│   ├── gen_cygpath.py
+│   ├── gmsl
+│   ├── __init__.py
+│   ├── ldflags_to_sanitizers.py
+│   ├── ndk-build
+│   ├── ndk-build.cmd
+│   ├── test_extract_manifest.py
+│   ├── test_extract_platform.py
+│   ├── test_gen_cygpath.py
+│   ├── test_ldflags_to_sanitizers.py
+│   └── tools
+├── CHANGELOG.md
+├── meta
+│   ├── abis.json
+│   ├── platforms.json
+│   └── system_libs.json
+├── ndk-build
+├── ndk-gdb
+├── ndk-lldb
+├── ndk-stack
+├── ndk-which
+├── NOTICE
+├── NOTICE.toolchain
+├── prebuilt
+│   ├── android-arm
+│   ├── android-arm64
+│   ├── android-x86
+│   ├── android-x86_64
+│   └── linux-x86_64
+├── python-packages
+│   ├── adb
+│   ├── fastboot
+│   ├── gdbrunner
+│   ├── NOTICE
+│   └── OWNERS
+├── README.md
+├── shader-tools
+│   └── linux-x86_64
+├── simpleperf
+│   ├── annotate.py
+│   ├── api_profiler.py
+│   ├── app_api
+│   ├── app_profiler.py
+│   ├── bin
+│   ├── binary_cache_builder.py
+│   ├── ChangeLog
+│   ├── debug_unwind_reporter.py
+│   ├── doc
+│   ├── inferno
+│   ├── inferno.sh
+│   ├── __init__.py
+│   ├── pprof_proto_generator.py
+│   ├── profile_pb2.py
+│   ├── purgatorio
+│   ├── report_html.js
+│   ├── report_html.py
+│   ├── report.py
+│   ├── report_sample.py
+│   ├── run_simpleperf_on_device.py
+│   ├── run_simpleperf_without_usb_connection.py
+│   ├── simpleperf_report_lib.py
+│   └── simpleperf_utils.py
+├── source.properties
+├── sources
+│   ├── android
+│   ├── cxx-stl
+│   └── third_party
+├── toolchains
+│   ├── llvm
+│   └── renderscript
+└── wrap.sh
+    └── asan.sh
 
+32 directories, 47 files
 
 --- Bitrise CLI tool versions
 * bitrise: 1.49.0
 * stepman: 0.13.1
 * envman: 2.3.3
-system_report.sh: line 220: bitrise-bridge: command not found
+system_report.sh: line 216: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
 
@@ -455,7 +521,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-20-04-usc1b-220505131349-wpvvu9nsxovmq6nlkalpza 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-20-04-usc1b-220505131454-cpdcosjw5e5mfn8ejoetnk 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -496,7 +562,7 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Runtimes: io.containerd.runtime.v1.linux runc io.containerd.runc.v2
  Default Runtime: runc
  Init Binary: docker-init
  containerd version: 3df54a852345ae127d1fa3092b95168e4a88e2f8
@@ -512,7 +578,7 @@ Server:
  Architecture: x86_64
  CPUs: 2
  Total Memory: 7.763GiB
- Name: stg-20-04-usc1b-220505131349-wpvvu9nsxovmq6nlkalpza
+ Name: stg-20-04-usc1b-220505131454-cpdcosjw5e5mfn8ejoetnk
  ID: FM75:4S6I:2I23:5X7A:YSFG:EGBI:AN7L:DQCS:EAMS:XKUT:2TZH:MFM7
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
@@ -546,7 +612,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   52G  143G  27% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:          7.8Gi       444Mi       4.9Gi       1.0Mi       2.5Gi       7.1Gi
+Mem:          7.8Gi       460Mi       4.9Gi       1.0Mi       2.4Gi       7.1Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
