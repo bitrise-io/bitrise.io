@@ -8,6 +8,8 @@
 === Pre-installed lib versions ========
 * zlib1g-dev: 1:1.2.11.dfsg-2ubuntu1.3
 * libssl-dev: 1.1.1f-1ubuntu2.13
+dpkg-query: package 'libreadline6-dev' is not installed and no information is available
+Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * libreadline6-dev: 
 * libyaml-dev: 0.2.2-1
 * libsqlite3-dev: 3.31.1-4ubuntu0.3
@@ -61,12 +63,21 @@
 * Javac: javac 11.0.15
 * Installed JAVA Versions
 /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+openjdk version "11.0.15" 2022-04-19
+OpenJDK Runtime Environment (build 11.0.15+10-Ubuntu-0ubuntu0.20.04.1)
+OpenJDK 64-Bit Server VM (build 11.0.15+10-Ubuntu-0ubuntu0.20.04.1, mixed mode, sharing)
 
 
 /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+openjdk version "17.0.3" 2022-04-19
+OpenJDK Runtime Environment (build 17.0.3+7-Ubuntu-0ubuntu0.20.04.1)
+OpenJDK 64-Bit Server VM (build 17.0.3+7-Ubuntu-0ubuntu0.20.04.1, mixed mode, sharing)
 
 
 /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+openjdk version "1.8.0_312"
+OpenJDK Runtime Environment (build 1.8.0_312-8u312-b07-0ubuntu1~20.04-b07)
+OpenJDK 64-Bit Server VM (build 25.312-b07, mixed mode)
 
 
 * Installed JAVAC Language Compiler Versions
@@ -79,6 +90,7 @@ javac 17.0.3
 
 
 /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
+javac 1.8.0_312
 
 
 ========================================
@@ -263,6 +275,7 @@ android-32
 === Android APK tools ==================
 
 * aapt2:
+Android Asset Packaging Tool (aapt) 2.19-7147631
 
 * bundletool:
 1.7.0
@@ -361,6 +374,7 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 * bitrise: 1.49.0
 * stepman: 0.13.1
 * envman: 2.3.3
+./system_report.sh: line 216: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
 
@@ -510,10 +524,11 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux prdfree-20-04-usc1c6c10513b-ac52-499a-9cc6-a38c5da07b04 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux prdfree-20-04-usc1bec08f4b1-b755-48cb-b721-e5c676a4f832 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
+No LSB modules are available.
 Distributor ID:	Ubuntu
 Description:	Ubuntu 20.04.4 LTS
 Release:	20.04
@@ -549,7 +564,7 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: runc io.containerd.runc.v2 io.containerd.runtime.v1.linux
+ Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
  Default Runtime: runc
  Init Binary: docker-init
  containerd version: 10c12954828e7c7c9b6e0ea9b0c02b01407d3ae1
@@ -565,7 +580,7 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: prdfree-20-04-usc1c6c10513b-ac52-499a-9cc6-a38c5da07b04
+ Name: prdfree-20-04-usc1bec08f4b1-b755-48cb-b721-e5c676a4f832
  ID: K5CI:3ANX:JRSP:KMHV:4RMZ:I4V6:HKJA:O7SI:CNS5:EQPW:GXUC:YCON
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
@@ -599,7 +614,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   51G  143G  27% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       771Mi        59Gi       1.0Mi       2.5Gi        61Gi
+Mem:           62Gi       760Mi        59Gi       1.0Mi       2.5Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
