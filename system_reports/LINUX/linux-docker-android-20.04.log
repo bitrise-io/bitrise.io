@@ -492,7 +492,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux prdfree-20-04-usc1b0d086060-3f84-4f72-8c2c-b9fb1d197524 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux prdfree-20-04-usc1b06f55d5c-42ce-470f-bf4b-3d9a62b7bde0 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -531,7 +531,7 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Runtimes: runc io.containerd.runc.v2 io.containerd.runtime.v1.linux
  Default Runtime: runc
  Init Binary: docker-init
  containerd version: 10c12954828e7c7c9b6e0ea9b0c02b01407d3ae1
@@ -545,9 +545,9 @@ Server:
  Operating System: Ubuntu 20.04.4 LTS
  OSType: linux
  Architecture: x86_64
- CPUs: 4
- Total Memory: 15.63GiB
- Name: prdfree-20-04-usc1b0d086060-3f84-4f72-8c2c-b9fb1d197524
+ CPUs: 16
+ Total Memory: 62.8GiB
+ Name: prdfree-20-04-usc1b06f55d5c-42ce-470f-bf4b-3d9a62b7bde0
  ID: K5CI:3ANX:JRSP:KMHV:4RMZ:I4V6:HKJA:O7SI:CNS5:EQPW:GXUC:YCON
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
@@ -581,7 +581,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   51G  143G  27% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           15Gi       690Mi        12Gi       1.0Mi       2.8Gi        14Gi
+Mem:           62Gi       769Mi        59Gi       1.0Mi       2.5Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
