@@ -67,31 +67,25 @@ openjdk version "11.0.15" 2022-04-19
 OpenJDK Runtime Environment (build 11.0.15+10-Ubuntu-0ubuntu0.20.04.1)
 OpenJDK 64-Bit Server VM (build 11.0.15+10-Ubuntu-0ubuntu0.20.04.1, mixed mode, sharing)
 
-
 /usr/lib/jvm/java-17-openjdk-amd64/bin/java
 openjdk version "17.0.3" 2022-04-19
 OpenJDK Runtime Environment (build 17.0.3+7-Ubuntu-0ubuntu0.20.04.1)
 OpenJDK 64-Bit Server VM (build 17.0.3+7-Ubuntu-0ubuntu0.20.04.1, mixed mode, sharing)
-
 
 /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 openjdk version "1.8.0_312"
 OpenJDK Runtime Environment (build 1.8.0_312-8u312-b07-0ubuntu1~20.04-b07)
 OpenJDK 64-Bit Server VM (build 25.312-b07, mixed mode)
 
-
 * Installed JAVAC Language Compiler Versions
 /usr/lib/jvm/java-11-openjdk-amd64/bin/javac
 javac 11.0.15
 
-
 /usr/lib/jvm/java-17-openjdk-amd64/bin/javac
 javac 17.0.3
 
-
 /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
 javac 1.8.0_312
-
 
 ========================================
 
@@ -524,7 +518,7 @@ zlib (default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux prdfree-20-04-usc1ca8adcd21-0785-4643-ba72-a99ee223243c 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux prdfree-20-04-usc1bf6dc7964-e3cb-42ff-a837-04f4c7f35309 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -564,7 +558,7 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: io.containerd.runtime.v1.linux runc io.containerd.runc.v2
+ Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
  Default Runtime: runc
  Init Binary: docker-init
  containerd version: 10c12954828e7c7c9b6e0ea9b0c02b01407d3ae1
@@ -580,7 +574,7 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: prdfree-20-04-usc1ca8adcd21-0785-4643-ba72-a99ee223243c
+ Name: prdfree-20-04-usc1bf6dc7964-e3cb-42ff-a837-04f4c7f35309
  ID: K5CI:3ANX:JRSP:KMHV:4RMZ:I4V6:HKJA:O7SI:CNS5:EQPW:GXUC:YCON
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
@@ -599,8 +593,8 @@ bitriseio/android-ndk-20.04 - 40GB
 quay.io/bitriseio/android-ndk-20.04 - 40GB
 bitriseio/android-20.04 - 37.6GB
 quay.io/bitriseio/android-20.04 - 37.6GB
-quay.io/bitriseio/bitrise-base-20.04 - 3.25GB
 bitriseio/bitrise-base-20.04 - 3.25GB
+quay.io/bitriseio/bitrise-base-20.04 - 3.25GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -614,7 +608,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   51G  143G  27% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       800Mi        59Gi       1.0Mi       2.7Gi        61Gi
+Mem:           62Gi       776Mi        59Gi       1.0Mi       2.5Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
