@@ -103,7 +103,7 @@ Check out our sample app repositories.
 
 **Android**
 
-- [Android sample project]([https://github.com/bitrise-io/sample-apps-android-sdk22](https://github.com/bitrise-io/Bitrise-Android-Sample))
+- [Android sample project](https://github.com/bitrise-io/Bitrise-Android-Sample)
 - [sample project with code sign](https://github.com/bitrise-io/android-sdk22-code-sign)
 
 **React Native**
