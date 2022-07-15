@@ -7,34 +7,44 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2022_05_02_02
+* BITRISE_OSX_STACK_REV_ID: v2022_07_7
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.17.9 darwin/amd64
+* Go: go version go1.17.11 darwin/amd64
 * Python: Python 2.7.16
-* Node.js: v16.15.0
-* NPM: 8.5.5
-* Yarn: 1.22.18
+* Node.js: v16.15.1
+* NPM: 8.11.0
+* Yarn: 1.22.19
 * Java:   system
   1.8
   1.8.0.292
-* 11 (set by /Users/vagrant/.jenv/version)
-  11.0
+  11
+* 11.0 (set by /Users/vagrant/.jenv/version)
   11.0.11
   17
   17.0
   17.0.2
+  17.0.3
   openjdk64-1.8.0.292
   openjdk64-11.0.11
   openjdk64-17.0.2
+  openjdk64-17.0.3
+  temurin64-17.0.3
 * Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
-* fvm: 2.3.1
+* fvm: 2.4.1
+* Flutter SDKs via fvm: Cache Directory:  /Users/vagrant/fvm/versions
 
-* git: git version 2.36.0
-* git lfs: git-lfs/3.1.4 (GitHub; darwin amd64; go 1.18.1)
-* mercurial/hg: Mercurial Distributed SCM (version 6.1.1)
+3.0.0
+2.10.3 (global)
+2.2.3
+1.26.0-17.8.pre
+1.22.6
+
+* git: git version 2.36.1
+* git lfs: git-lfs/3.2.0 (GitHub; darwin amd64; go 1.18.2)
+* mercurial/hg: Mercurial Distributed SCM (version 6.1.4)
 * curl: curl 7.64.1 (x86_64-apple-darwin19.0) libcurl/7.64.1 (SecureTransport) LibreSSL/2.8.3 zlib/1.2.11 nghttp2/1.39.2
 * wget: GNU Wget 1.21.3 built on darwin19.6.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -43,20 +53,20 @@
 * tar: bsdtar 3.3.2 - libarchive 3.3.2 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.6
 * tree: tree v2.0.2 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.4.10
-Homebrew/homebrew-core (git revision 4784dab0f72; last commit 2022-05-02)
-Homebrew/homebrew-cask (git revision 5d2ce9b004; last commit 2022-05-02)
-* Ansible: ansible [core 2.12.5]
+* brew: Homebrew 3.5.4
+Homebrew/homebrew-core (git revision 089d9362456; last commit 2022-06-22)
+Homebrew/homebrew-cask (git revision 510785cc35; last commit 2022-06-22)
+* Ansible: ansible [core 2.12.6]
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/5.7.0/libexec/lib/python3.10/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/5.9.0/libexec/lib/python3.10/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 9.1
-* watchman: 2022.03.21.00
-* flow: Flow, a static type checker for JavaScript, version 0.176.3
+* watchman: 2022.06.13.00
+* flow: Flow, a static type checker for JavaScript, version 0.180.1
 * carthage: 0.38.0
-* imagemagick (convert): Version: ImageMagick 7.1.0-32 Q16-HDRI x86_64 20006 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.0-39 Q16-HDRI x86_64 20175 https://imagemagick.org
 * ghostscript (ps2ascii): 9.56.1
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 9.20.0
@@ -66,11 +76,11 @@ Homebrew/homebrew-cask (git revision 5d2ce9b004; last commit 2022-05-02)
 * XCLogParser 0.2.21
 * Screen 4.09.00
 * applesimutils 0.9.5
-* OpenConnect version v8.20
-* aws-cli: aws-cli/2.6.1 Python/3.9.12 Darwin/19.6.0 source/x86_64 prompt/off
-* cmake: 3.23.1
+* OpenConnect version v9.01
+* aws-cli: aws-cli/2.7.9 Python/3.9.13 Darwin/19.6.0 source/x86_64 prompt/off
+* cmake: 3.23.2
 * danger-swift: 
-* OpenVPN 2.5.6 x86_64-apple-darwin19.6.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] built on Mar 23 2022
+* OpenVPN 2.5.7 x86_64-apple-darwin19.6.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] built on Jun  8 2022
 
 --- Bitrise CLI tool versions
 * bitrise: 1.49.0
@@ -81,60 +91,61 @@ Homebrew/homebrew-cask (git revision 5d2ce9b004; last commit 2022-05-02)
 
 
 === Brew list versions ==================
-ansible 5.7.0
+ansible 5.9.0
 ant 1.10.12
-aom 3.3.0
+aom 3.4.0
 applesimutils 0.9.5
 autoconf 2.71
-awscli 2.6.1
+awscli 2.7.9
+bazelisk 1.12.0
 bdw-gc 8.0.6
 boost 1.78.0_1
 brotli 1.0.9
 c-ares 1.18.1_1
 ca-certificates 2022-04-26
 carthage 0.38.0
-cmake 3.23.1
+cmake 3.23.2
 coreutils 9.1
-danger-js 11.0.5
+danger-js 11.1.1
 danger-swift 3.12.3
-dart 2.16.2
+dart 2.17.5
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 double-conversion 3.2.0
-fb303 2022.03.21.00_1
-fbthrift 2022.03.21.00_1
-fizz 2022.03.21.00_1
-flow 0.176.3
+fb303 2022.06.13.00
+fbthrift 2022.06.13.00
+fizz 2022.06.13.00
+flow 0.180.1
 fmt 8.1.1_1
-folly 2022.03.21.00_1
+folly 2022.06.13.00
 fontconfig 2.14.0
-freetype 2.12.0
-fvm 2.3.1
+freetype 2.12.1
+fvm 2.4.1
 gdbm 1.23
 gettext 0.21
 gflags 2.2.2
 ghostscript 9.56.1
 giflib 5.2.1
-git 2.36.0
-git-lfs 3.1.4
-glib 2.72.1
+git 2.36.1
+git-lfs 3.2.0
+glib 2.72.2
 glog 0.6.0
 gmp 6.2.1_1
 gnu-getopt 2.38
 gnupg 2.3.6
-gnutls 3.7.4
+gnutls 3.7.6
 go@1.16 1.16.15
-go@1.17 1.17.9
+go@1.17 1.17.11
 gradle 7.4.2
-groovy 4.0.2
+groovy 4.0.3_1
 guile 3.0.8
 icu4c 70.1
-imagemagick 7.1.0-32
+imagemagick 7.1.0-39
 imath 3.1.5
-jasper 3.0.3
+jasper 3.0.4
 jbig2dec 0.19
-jemalloc 5.2.1_1
-jenv 0.5.4
+jemalloc 5.3.0
+jenv 0.5.5_2
 jpeg 9e
 jpeg-xl 0.6.1
 jq 1.6
@@ -146,17 +157,17 @@ libffi 3.4.2
 libgcrypt 1.10.1
 libgpg-error 1.45
 libheif 1.12.0_1
-libidn 1.38
+libidn 1.40
 libidn2 2.3.2
 libksba 1.6.0
 liblqr 0.4.2_1
 libnghttp2 1.47.0
-libomp 14.0.0
+libomp 14.0.5
 libpng 1.6.37
-libraw 0.20.2_1
+libraw 0.20.2_2
 libsodium 1.0.18_1
 libtasn1 4.18.0
-libtiff 4.3.0
+libtiff 4.4.0
 libtool 2.4.7
 libunistring 1.0
 libusb 1.0.26
@@ -168,21 +179,23 @@ lz4 1.9.3
 lzo 2.10
 m4 1.4.19
 macos-term-size 1.0.0
-maven 3.8.5
-mercurial 6.1.1
+maven 3.8.6
+mercurial 6.1.4
+mint 0.17.1
 mpdecimal 2.5.1
-nettle 3.7.3
+nettle 3.8
 nghttp2 1.47.0
-node 18.0.0
+node 18.4.0
 node@12 12.22.12
-node@16 16.15.0
+node@16 16.15.1
 npth 1.6
 oniguruma 6.9.8
-openconnect 8.20
+openconnect 9.01
 openexr 3.1.5
-openjpeg 2.4.0
-openssl@1.1 1.1.1n
-openvpn 2.5.6
+openjdk 18.0.1.1
+openjpeg 2.5.0
+openssl@1.1 1.1.1o
+openvpn 2.5.7
 p11-kit 0.24.1
 pcre 8.45
 pcre2 10.40
@@ -190,39 +203,40 @@ pinentry 1.2.0
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
 python@3.10 3.10.4
-python@3.9 3.9.12
+python@3.9 3.9.13_1
 rbenv 1.2.0
 readline 8.1.2
-ruby-build 20220426
+ruby-build 20220610
 screen 4.9.0
 shared-mime-info 2.2
 six 1.16.0_2
 snappy 1.1.9
-sqlite 3.38.3
+sqlite 3.38.5
 stoken 0.92_1
 swiftlint 0.43.1
 tree 2.0.2
-unbound 1.15.0
-wangle 2022.03.21.00_1
-watchman 2022.03.21.00_1
+unbound 1.16.0
+wangle 2022.06.13.00
+watchman 2022.06.13.00
 webp 1.2.2
 wget 1.21.3
 x265 3.5
+xcbeautify 0.13.0
 xmlto 0.0.28
 xz 5.2.5
-yarn 1.22.18
+yarn 1.22.19
 zstd 1.5.2
 adoptopenjdk11 11.0.11,9
 adoptopenjdk8 8,292:b10
 intel-haxm 7.7.1
-temurin17 17.0.2,8
+temurin17 17.0.3,7
 ========================================
 
 
 === Brew deps tree ==================
 adoptopenjdk/openjdk/adoptopenjdk11
 
-adoptopenjdk8
+adoptopenjdk/openjdk/adoptopenjdk8
 
 ansible
 ├── libyaml
@@ -275,6 +289,8 @@ awscli
 │   │   └── readline
 │   └── xz
 └── six
+
+bazelisk
 
 bdw-gc
 
@@ -1002,17 +1018,16 @@ imagemagick
 │           ├── sqlite
 │           │   └── readline
 │           └── xz
-├── libomp
 ├── libpng
 ├── libraw
 │   ├── jasper
 │   │   └── jpeg
 │   ├── jpeg
-│   ├── libomp
-│   └── little-cms2
-│       ├── jpeg
-│       └── libtiff
-│           └── jpeg
+│   ├── little-cms2
+│   │   ├── jpeg
+│   │   └── libtiff
+│   │       └── jpeg
+│   └── libomp
 ├── libtiff
 │   └── jpeg
 ├── libtool
@@ -1037,7 +1052,8 @@ imagemagick
 │   ├── libpng
 │   └── libtiff
 │       └── jpeg
-└── xz
+├── xz
+└── libomp
 
 imath
 
@@ -1166,11 +1182,11 @@ libraw
 ├── jasper
 │   └── jpeg
 ├── jpeg
-├── libomp
-└── little-cms2
-    ├── jpeg
-    └── libtiff
-        └── jpeg
+├── little-cms2
+│   ├── jpeg
+│   └── libtiff
+│       └── jpeg
+└── libomp
 
 libsodium
 
@@ -1218,6 +1234,8 @@ mercurial
     ├── sqlite
     │   └── readline
     └── xz
+
+mint
 
 mpdecimal
 
@@ -1302,6 +1320,8 @@ openconnect
 
 openexr
 └── imath
+
+openjdk
 
 openjpeg
 ├── libpng
@@ -1807,6 +1827,8 @@ wget
 
 x265
 
+xcbeautify
+
 xmlto
 ├── docbook
 ├── docbook-xsl
@@ -1835,10 +1857,11 @@ zstd
   2.7.5
   3.0.0
   3.0.3
+  3.1.0
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.0.3.1
-* Bundler: Bundler version 2.3.12
+* Bundler: Bundler version 2.3.17
 * CocoaPods: 1.11.3
 * xcpretty: 0.3.0
 ========================================
@@ -1858,7 +1881,7 @@ aws-sdk-s3 (1.113.2)
 aws-sigv4 (1.5.0)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
-bundler (2.3.12, default: 1.17.2)
+bundler (2.3.17, 2.3.13, 2.3.12, default: 1.17.2)
 CFPropertyList (3.0.5)
 claide (1.1.0, 1.0.3)
 clamp (1.3.2)
@@ -1903,7 +1926,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
-fastlane (2.205.2)
+fastlane (2.207.0, 2.205.2)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -2307,11 +2330,11 @@ Software:
       Kernel Version: Darwin 19.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-11.7.x-g2.4core-46dba081-4f11-4c18-8dfb-2ef235a6f07f
+      Computer Name: vm-osx-xcode-11.7.x-g2.4core-adee0433-32e0-419f-b16b-acc1017cf011
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 3 minutes
+      Time since boot: 2 minutes
 
 
 ========================================
@@ -2320,7 +2343,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-  /dev/disk1s5        300Gi        156Gi
+  /dev/disk1s5        300Gi        154Gi
 ========================================
 
 --- Android
