@@ -7,14 +7,14 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2022_07_7
+* BITRISE_OSX_STACK_REV_ID: v2022_07_27
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.17.11 darwin/amd64
+* Go: go version go1.17.12 darwin/amd64
 * Python: Python 2.7.18
-* Node.js: v16.15.1
+* Node.js: v16.16.0
 * NPM: 8.11.0
 * Yarn: 1.22.19
 * Java:   system
@@ -32,8 +32,13 @@
   temurin64-17.0.3
 * Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
 * fvm: 2.4.1
+* Flutter SDKs via fvm: Cache Directory:  /Users/vagrant/fvm/versions
 
-* git: git version 2.36.1
+3.0.0
+2.10.3 (global)
+1.22.6
+
+* git: git version 2.37.1
 * git lfs: git-lfs/3.2.0 (GitHub; darwin amd64; go 1.18.2)
 * mercurial/hg: Mercurial Distributed SCM (version 6.1.4)
 * curl: curl 7.79.1 (x86_64-apple-darwin21.0) libcurl/7.79.1 (SecureTransport) LibreSSL/3.3.6 zlib/1.2.11 nghttp2/1.45.1
@@ -44,38 +49,39 @@
 * tar: bsdtar 3.5.1 - libarchive 3.5.1 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.0.2 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.5.4
-Homebrew/homebrew-core (git revision 089d9362456; last commit 2022-06-22)
-Homebrew/homebrew-cask (git revision 510785cc35; last commit 2022-06-22)
-* Ansible: ansible [core 2.12.6]
+* brew: Homebrew 3.5.7
+Homebrew/homebrew-core (git revision 53762e46f2b; last commit 2022-07-27)
+Homebrew/homebrew-cask (git revision 72f5567dc6; last commit 2022-07-27)
+* Ansible: ansible [core 2.13.1]
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/Cellar/ansible/5.9.0/libexec/lib/python3.10/site-packages/ansible
+  ansible python module location = /usr/local/Cellar/ansible/6.1.0/libexec/lib/python3.10/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
 * gtimeout: timeout (GNU coreutils) 9.1
-* watchman: 2022.06.13.00
-* flow: Flow, a static type checker for JavaScript, version 0.180.1
+* watchman: 2022.07.04.00
+* flow: Flow, a static type checker for JavaScript, version 0.183.0
 * carthage: 0.38.0
-* imagemagick (convert): Version: ImageMagick 7.1.0-39 Q16-HDRI x86_64 20175 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.0-44 Q16-HDRI x86_64 20294 https://imagemagick.org
 * ghostscript (ps2ascii): 9.56.1
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
-* firebase: 11.2.0
-* applesimutils version 0.9.5
+* firebase: 11.4.0
+* applesimutils version 0.9.7
 * jq: 1.6
 * 0.13.0
-* XCLogParser 0.2.33
+* XCLogParser 0.2.34
 * Screen 4.09.00
-* applesimutils 0.9.5
+* applesimutils 0.9.7
 * OpenConnect version v9.01
-* aws-cli: aws-cli/2.7.9 Python/3.9.13 Darwin/21.5.0 source/x86_64 prompt/off
+* aws-cli: aws-cli/2.7.18 Python/3.10.5 Darwin/21.5.0 source/x86_64 prompt/off
 * cmake: 3.23.2
 * danger-swift: 3.12.3
 [0;0m
 * OpenVPN 2.5.7 x86_64-apple-darwin21.5.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] built on Jun  8 2022
+* tuist: 3.8.0
 
 --- Bitrise CLI tool versions
-* bitrise: 1.49.0
+* bitrise: 1.49.3
 * stepman: 0.13.1
 * envman: 2.3.3
 * cmd-bridge: 
@@ -83,38 +89,38 @@ Homebrew/homebrew-cask (git revision 510785cc35; last commit 2022-06-22)
 
 
 === Brew list versions ==================
-ansible 5.9.0
+ansible 6.1.0
 ant 1.10.12
 aom 3.4.0
-applesimutils 0.9.5
+applesimutils 0.9.7
 apr 1.7.0_2
 apr-util 1.6.1_4
 argon2 20190702_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.7.9
+awscli 2.7.18
 bazelisk 1.12.0
 bdw-gc 8.0.6
-boost 1.78.0_1
+boost 1.79.0_1
 brotli 1.0.9
 c-ares 1.18.1_1
-ca-certificates 2022-04-26
+ca-certificates 2022-07-19_1
 carthage 0.38.0
 cmake 3.23.2
 coreutils 9.1
-curl 7.83.1
+curl 7.84.0
 danger-js 11.1.1
 danger-swift 3.12.3
-dart 2.17.5
+dart 2.17.6
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 double-conversion 3.2.0
-fb303 2022.06.13.00
-fbthrift 2022.06.13.00
-fizz 2022.06.13.00
-flow 0.180.1
+fb303 2022.07.04.00
+fbthrift 2022.07.04.00
+fizz 2022.07.04.00
+flow 0.183.0
 fmt 8.1.1_1
-folly 2022.06.13.00
+folly 2022.07.04.00
 fontconfig 2.14.0
 freetds 1.3.12
 freetype 2.12.1
@@ -125,22 +131,22 @@ gettext 0.21
 gflags 2.2.2
 ghostscript 9.56.1
 giflib 5.2.1
-git 2.36.1
+git 2.37.1
 git-lfs 3.2.0
-glib 2.72.2
+glib 2.72.3
 glog 0.6.0
 gmp 6.2.1_1
 gnu-getopt 2.38
-gnupg 2.3.6
+gnupg 2.3.7_1
 gnutls 3.7.6
-go@1.17 1.17.11
-gradle 7.4.2
-groovy 4.0.3_1
+go@1.17 1.17.12
+gradle 7.5
+groovy 4.0.4
 guile 3.0.8
 icu4c 70.1
-imagemagick 7.1.0-39
+imagemagick 7.1.0-44
 imath 3.1.5
-jasper 3.0.4
+jasper 3.0.6_1
 jbig2dec 0.19
 jenv 0.5.5_2
 jpeg 9e
@@ -155,12 +161,12 @@ libffi 3.4.2
 libgcrypt 1.10.1
 libgpg-error 1.45
 libheif 1.12.0_1
-libidn 1.40
-libidn2 2.3.2
+libidn 1.41
+libidn2 2.3.3
 libksba 1.6.0
 liblqr 0.4.2_1
-libnghttp2 1.47.0
-libomp 14.0.5
+libnghttp2 1.48.0
+libomp 14.0.6
 libpng 1.6.37
 libpq 14.4
 libraw 0.20.2_2
@@ -171,10 +177,10 @@ libtiff 4.4.0
 libtool 2.4.7
 libunistring 1.0
 libusb 1.0.26
-libuv 1.44.1_1
+libuv 1.44.2
 libvmaf 2.3.1
 libyaml 0.2.5
-libzip 1.9.0
+libzip 1.9.2
 little-cms2 2.13.1
 lz4 1.9.3
 lzo 2.10
@@ -184,15 +190,15 @@ mercurial 6.1.4
 mint 0.17.1
 mpdecimal 2.5.1
 nettle 3.8
-node@16 16.15.1
+node@16 16.16.0
 npth 1.6
 oniguruma 6.9.8
-openconnect 9.01
+openconnect 9.01_2
 openexr 3.1.5
-openjdk 18.0.1.1
+openjdk 18.0.2
 openjpeg 2.5.0
-openldap 2.6.2
-openssl@1.1 1.1.1o
+openldap 2.6.3
+openssl@1.1 1.1.1q
 openvpn 2.5.7
 p11-kit 0.24.1
 pcre 8.45
@@ -201,33 +207,34 @@ php@7.4 7.4.30
 pinentry 1.2.0
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
-pyenv 2.3.1
-python@3.10 3.10.4
+pyenv 2.3.2
+python@3.10 3.10.5
 python@3.9 3.9.13_1
 rbenv 1.2.0
 readline 8.1.2
 rtmpdump 2.4+20151223_1
-ruby-build 20220610
+ruby-build 20220726
 screen 4.9.0
 shared-mime-info 2.2
 six 1.16.0_2
 snappy 1.1.9
-sqlite 3.38.5
+sqlite 3.39.2
 stoken 0.92_1
-swiftlint 0.47.1
+swiftlint 0.48.0
 tidy-html5 5.8.0
 tree 2.0.2
-unbound 1.16.0
+unbound 1.16.1
 unixodbc 2.3.11
-wangle 2022.06.13.00
-watchman 2022.06.13.00
-webp 1.2.2
+wangle 2022.07.04.00
+watchman 2022.07.04.00
+webp 1.2.3
 wget 1.21.3
 x265 3.5
 xcbeautify 0.13.0
-xclogparser 0.2.33
+xclogparser 0.2.34
 xmlto 0.0.28
-xz 5.2.5
+xz 5.2.5_1
+yamllint 1.27.1
 yarn 1.22.19
 zstd 1.5.2
 adoptopenjdk11 11.0.11,9
@@ -293,7 +300,7 @@ autoconf
 └── m4
 
 awscli
-├── python@3.9
+├── python@3.10
 │   ├── gdbm
 │   ├── mpdecimal
 │   ├── openssl@1.1
@@ -309,7 +316,9 @@ bazelisk
 bdw-gc
 
 boost
-└── icu4c
+├── icu4c
+├── xz
+└── zstd
 
 brotli
 
@@ -360,15 +369,21 @@ double-conversion
 fb303
 ├── fbthrift
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── fizz
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── folly
 │   │   │   ├── boost
-│   │   │   │   └── icu4c
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── gflags
@@ -398,7 +413,9 @@ fb303
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -420,16 +437,22 @@ fb303
 │   │   └── ca-certificates
 │   ├── wangle
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fizz
 │   │   │   ├── boost
-│   │   │   │   └── icu4c
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── folly
 │   │   │   │   ├── boost
-│   │   │   │   │   └── icu4c
+│   │   │   │   │   ├── icu4c
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
 │   │   │   │   ├── double-conversion
 │   │   │   │   ├── fmt
 │   │   │   │   ├── gflags
@@ -459,7 +482,9 @@ fb303
 │   │   ├── fmt
 │   │   ├── folly
 │   │   │   ├── boost
-│   │   │   │   └── icu4c
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── gflags
@@ -489,12 +514,16 @@ fb303
 │   └── zstd
 ├── fizz
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -524,7 +553,9 @@ fb303
 ├── fmt
 ├── folly
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -546,16 +577,22 @@ fb303
 │   └── ca-certificates
 └── wangle
     ├── boost
-    │   └── icu4c
+    │   ├── icu4c
+    │   ├── xz
+    │   └── zstd
     ├── double-conversion
     ├── fizz
     │   ├── boost
-    │   │   └── icu4c
+    │   │   ├── icu4c
+    │   │   ├── xz
+    │   │   └── zstd
     │   ├── double-conversion
     │   ├── fmt
     │   ├── folly
     │   │   ├── boost
-    │   │   │   └── icu4c
+    │   │   │   ├── icu4c
+    │   │   │   ├── xz
+    │   │   │   └── zstd
     │   │   ├── double-conversion
     │   │   ├── fmt
     │   │   ├── gflags
@@ -585,7 +622,9 @@ fb303
     ├── fmt
     ├── folly
     │   ├── boost
-    │   │   └── icu4c
+    │   │   ├── icu4c
+    │   │   ├── xz
+    │   │   └── zstd
     │   ├── double-conversion
     │   ├── fmt
     │   ├── gflags
@@ -615,15 +654,21 @@ fb303
 
 fbthrift
 ├── boost
-│   └── icu4c
+│   ├── icu4c
+│   ├── xz
+│   └── zstd
 ├── fizz
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -653,7 +698,9 @@ fbthrift
 ├── fmt
 ├── folly
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -675,16 +722,22 @@ fbthrift
 │   └── ca-certificates
 ├── wangle
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fizz
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── folly
 │   │   │   ├── boost
-│   │   │   │   └── icu4c
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── gflags
@@ -714,7 +767,9 @@ fbthrift
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -745,12 +800,16 @@ fbthrift
 
 fizz
 ├── boost
-│   └── icu4c
+│   ├── icu4c
+│   ├── xz
+│   └── zstd
 ├── double-conversion
 ├── fmt
 ├── folly
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -784,7 +843,9 @@ fmt
 
 folly
 ├── boost
-│   └── icu4c
+│   ├── icu4c
+│   ├── xz
+│   └── zstd
 ├── double-conversion
 ├── fmt
 ├── gflags
@@ -894,16 +955,7 @@ git-lfs
 glib
 ├── gettext
 ├── libffi
-├── pcre
-└── python@3.9
-    ├── gdbm
-    ├── mpdecimal
-    ├── openssl@1.1
-    │   └── ca-certificates
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    └── xz
+└── pcre
 
 glog
 └── gflags
@@ -1062,16 +1114,7 @@ imagemagick
 │   │   ├── glib
 │   │   │   ├── gettext
 │   │   │   ├── libffi
-│   │   │   ├── pcre
-│   │   │   └── python@3.9
-│   │   │       ├── gdbm
-│   │   │       ├── mpdecimal
-│   │   │       ├── openssl@1.1
-│   │   │       │   └── ca-certificates
-│   │   │       ├── readline
-│   │   │       ├── sqlite
-│   │   │       │   └── readline
-│   │   │       └── xz
+│   │   │   └── pcre
 │   │   └── xmlto
 │   │       ├── docbook
 │   │       ├── docbook-xsl
@@ -1082,16 +1125,7 @@ imagemagick
 │   └── glib
 │       ├── gettext
 │       ├── libffi
-│       ├── pcre
-│       └── python@3.9
-│           ├── gdbm
-│           ├── mpdecimal
-│           ├── openssl@1.1
-│           │   └── ca-certificates
-│           ├── readline
-│           ├── sqlite
-│           │   └── readline
-│           └── xz
+│       └── pcre
 ├── libpng
 ├── libraw
 │   ├── jasper
@@ -1223,16 +1257,7 @@ libheif
 │   ├── glib
 │   │   ├── gettext
 │   │   ├── libffi
-│   │   ├── pcre
-│   │   └── python@3.9
-│   │       ├── gdbm
-│   │       ├── mpdecimal
-│   │       ├── openssl@1.1
-│   │       │   └── ca-certificates
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
+│   │   └── pcre
 │   └── xmlto
 │       ├── docbook
 │       ├── docbook-xsl
@@ -1253,16 +1278,7 @@ liblqr
 └── glib
     ├── gettext
     ├── libffi
-    ├── pcre
-    └── python@3.9
-        ├── gdbm
-        ├── mpdecimal
-        ├── openssl@1.1
-        │   └── ca-certificates
-        ├── readline
-        ├── sqlite
-        │   └── readline
-        └── xz
+    └── pcre
 
 libnghttp2
 
@@ -1597,16 +1613,7 @@ shared-mime-info
 ├── glib
 │   ├── gettext
 │   ├── libffi
-│   ├── pcre
-│   └── python@3.9
-│       ├── gdbm
-│       ├── mpdecimal
-│       ├── openssl@1.1
-│       │   └── ca-certificates
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
+│   └── pcre
 └── xmlto
     ├── docbook
     ├── docbook-xsl
@@ -1646,16 +1653,22 @@ unixodbc
 
 wangle
 ├── boost
-│   └── icu4c
+│   ├── icu4c
+│   ├── xz
+│   └── zstd
 ├── double-conversion
 ├── fizz
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -1685,7 +1698,9 @@ wangle
 ├── fmt
 ├── folly
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -1715,11 +1730,15 @@ wangle
 
 watchman
 ├── boost
-│   └── icu4c
+│   ├── icu4c
+│   ├── xz
+│   └── zstd
 ├── fmt
 ├── folly
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -1755,15 +1774,21 @@ watchman
 └── fb303
     ├── fbthrift
     │   ├── boost
-    │   │   └── icu4c
+    │   │   ├── icu4c
+    │   │   ├── xz
+    │   │   └── zstd
     │   ├── fizz
     │   │   ├── boost
-    │   │   │   └── icu4c
+    │   │   │   ├── icu4c
+    │   │   │   ├── xz
+    │   │   │   └── zstd
     │   │   ├── double-conversion
     │   │   ├── fmt
     │   │   ├── folly
     │   │   │   ├── boost
-    │   │   │   │   └── icu4c
+    │   │   │   │   ├── icu4c
+    │   │   │   │   ├── xz
+    │   │   │   │   └── zstd
     │   │   │   ├── double-conversion
     │   │   │   ├── fmt
     │   │   │   ├── gflags
@@ -1793,7 +1818,9 @@ watchman
     │   ├── fmt
     │   ├── folly
     │   │   ├── boost
-    │   │   │   └── icu4c
+    │   │   │   ├── icu4c
+    │   │   │   ├── xz
+    │   │   │   └── zstd
     │   │   ├── double-conversion
     │   │   ├── fmt
     │   │   ├── gflags
@@ -1815,16 +1842,22 @@ watchman
     │   │   └── ca-certificates
     │   ├── wangle
     │   │   ├── boost
-    │   │   │   └── icu4c
+    │   │   │   ├── icu4c
+    │   │   │   ├── xz
+    │   │   │   └── zstd
     │   │   ├── double-conversion
     │   │   ├── fizz
     │   │   │   ├── boost
-    │   │   │   │   └── icu4c
+    │   │   │   │   ├── icu4c
+    │   │   │   │   ├── xz
+    │   │   │   │   └── zstd
     │   │   │   ├── double-conversion
     │   │   │   ├── fmt
     │   │   │   ├── folly
     │   │   │   │   ├── boost
-    │   │   │   │   │   └── icu4c
+    │   │   │   │   │   ├── icu4c
+    │   │   │   │   │   ├── xz
+    │   │   │   │   │   └── zstd
     │   │   │   │   ├── double-conversion
     │   │   │   │   ├── fmt
     │   │   │   │   ├── gflags
@@ -1854,7 +1887,9 @@ watchman
     │   │   ├── fmt
     │   │   ├── folly
     │   │   │   ├── boost
-    │   │   │   │   └── icu4c
+    │   │   │   │   ├── icu4c
+    │   │   │   │   ├── xz
+    │   │   │   │   └── zstd
     │   │   │   ├── double-conversion
     │   │   │   ├── fmt
     │   │   │   ├── gflags
@@ -1884,12 +1919,16 @@ watchman
     │   └── zstd
     ├── fizz
     │   ├── boost
-    │   │   └── icu4c
+    │   │   ├── icu4c
+    │   │   ├── xz
+    │   │   └── zstd
     │   ├── double-conversion
     │   ├── fmt
     │   ├── folly
     │   │   ├── boost
-    │   │   │   └── icu4c
+    │   │   │   ├── icu4c
+    │   │   │   ├── xz
+    │   │   │   └── zstd
     │   │   ├── double-conversion
     │   │   ├── fmt
     │   │   ├── gflags
@@ -1919,7 +1958,9 @@ watchman
     ├── fmt
     ├── folly
     │   ├── boost
-    │   │   └── icu4c
+    │   │   ├── icu4c
+    │   │   ├── xz
+    │   │   └── zstd
     │   ├── double-conversion
     │   ├── fmt
     │   ├── gflags
@@ -1941,16 +1982,22 @@ watchman
     │   └── ca-certificates
     └── wangle
         ├── boost
-        │   └── icu4c
+        │   ├── icu4c
+        │   ├── xz
+        │   └── zstd
         ├── double-conversion
         ├── fizz
         │   ├── boost
-        │   │   └── icu4c
+        │   │   ├── icu4c
+        │   │   ├── xz
+        │   │   └── zstd
         │   ├── double-conversion
         │   ├── fmt
         │   ├── folly
         │   │   ├── boost
-        │   │   │   └── icu4c
+        │   │   │   ├── icu4c
+        │   │   │   ├── xz
+        │   │   │   └── zstd
         │   │   ├── double-conversion
         │   │   ├── fmt
         │   │   ├── gflags
@@ -1980,7 +2027,9 @@ watchman
         ├── fmt
         ├── folly
         │   ├── boost
-        │   │   └── icu4c
+        │   │   ├── icu4c
+        │   │   ├── xz
+        │   │   └── zstd
         │   ├── double-conversion
         │   ├── fmt
         │   ├── gflags
@@ -2036,6 +2085,18 @@ xmlto
 
 xz
 
+yamllint
+├── libyaml
+└── python@3.10
+    ├── gdbm
+    ├── mpdecimal
+    ├── openssl@1.1
+    │   └── ca-certificates
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
 yarn
 
 zstd
@@ -2060,29 +2121,29 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.0.3.1
-* Bundler: Bundler version 2.3.17
+* Bundler: Bundler version 2.3.19
 * CocoaPods: 1.11.3
 * xcpretty: 0.3.0
 ========================================
 
 
 === All Ruby GEMs ======================
-activesupport (6.1.6)
+activesupport (6.1.6.1)
 addressable (2.8.0)
 algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.603.0)
-aws-sdk-core (3.131.2)
-aws-sdk-kms (1.57.0)
+aws-partitions (1.613.0)
+aws-sdk-core (3.131.5)
+aws-sdk-kms (1.58.0)
 aws-sdk-s3 (1.114.0)
-aws-sigv4 (1.5.0)
+aws-sigv4 (1.5.1)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
-bundler (2.3.17, default: 1.17.2)
+bundler (2.3.19, default: 1.17.2)
 CFPropertyList (3.0.5)
-claide (1.0.3)
+claide (1.1.0)
 clamp (1.3.2)
 cmath (default: 1.0.0)
 cocoapods (1.11.3)
@@ -2104,13 +2165,13 @@ declarative (0.0.20)
 did_you_mean (1.3.0)
 digest-crc (0.6.4)
 domain_name (0.5.20190701)
-dotenv (2.7.6)
+dotenv (2.8.1)
 e2mmap (default: 0.1.0)
 emoji_regex (3.2.3)
 escape (0.0.4)
 etc (default: 1.0.1)
 ethon (0.15.0)
-excon (0.92.3)
+excon (0.92.4)
 faraday (1.10.0)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
@@ -2125,7 +2186,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
-fastlane (2.207.0)
+fastlane (2.208.0)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -2134,7 +2195,7 @@ forwardable (default: 1.2.0)
 fourflusher (2.3.1)
 fuzzy_match (2.0.4)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.24.0)
+google-apis-androidpublisher_v3 (0.25.0)
 google-apis-core (0.7.0)
 google-apis-iamcredentials_v1 (0.13.0)
 google-apis-playcustomapp_v1 (0.10.0)
@@ -2142,12 +2203,12 @@ google-apis-storage_v1 (0.17.0)
 google-cloud-core (1.6.0)
 google-cloud-env (1.6.0)
 google-cloud-errors (1.2.0)
-google-cloud-storage (1.37.0)
+google-cloud-storage (1.38.0)
 googleauth (1.2.0)
 highline (2.0.3)
 http-cookie (1.0.5)
 httpclient (2.8.3)
-i18n (1.10.0)
+i18n (1.12.0)
 io-console (default: 0.4.7)
 ipaddr (default: 1.2.2)
 irb (default: 1.0.0)
@@ -2172,7 +2233,7 @@ nap (1.1.0)
 naturally (2.2.1)
 net-telnet (0.2.0)
 netrc (0.11.0)
-nokogiri (1.13.6 x86_64-darwin)
+nokogiri (1.13.8 x86_64-darwin)
 open4 (1.3.4)
 openssl (default: 2.1.2)
 optparse (0.1.1)
@@ -2219,7 +2280,7 @@ tty-cursor (0.7.1)
 tty-screen (0.8.1)
 tty-spinner (0.9.3)
 typhoeus (1.4.0)
-tzinfo (2.0.4)
+tzinfo (2.0.5)
 uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.8.2)
@@ -2227,7 +2288,7 @@ unicode-display_width (1.8.0)
 webrick (default: 1.4.4)
 word_wrap (1.0.0)
 xcinvoke (0.3.0)
-xcode-install (2.8.0)
+xcode-install (2.8.1)
 xcodeproj (1.22.0)
 xcov (1.8.1)
 xcpretty (0.3.0)
@@ -2275,14 +2336,14 @@ Target: x86_64-apple-darwin21.5.0
 === Xcode ==============================
 
 * Active Xcode Command Line Tools:
-/Applications/Xcode-14.beta.3.app/Contents/Developer
+/Applications/Xcode-14.beta.4.app/Contents/Developer
 
 * Xcode Version:
 Xcode 14.0
-Build version 14A5270f
+Build version 14A5284g
 
 * /usr/bin/swift --version
-Apple Swift version 5.7 (swiftlang-5.7.0.120.1 clang-1400.0.28.1)
+Apple Swift version 5.7 (swiftlang-5.7.0.123.7 clang-1400.0.29.50)
 Target: x86_64-apple-macosx12.0
 
 * Installed SDKs:
@@ -2393,30 +2454,61 @@ Apple Watch Series 6 - 44mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-S
 Apple Watch Series 7 - 41mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-7-41mm)
 Apple Watch Series 7 - 45mm (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-7-45mm)
 == Runtimes ==
-iOS 16.0 (16.0 - 20A5312e) - com.apple.CoreSimulator.SimRuntime.iOS-16-0
+iOS 16.0 (16.0 - 20A5328h) - com.apple.CoreSimulator.SimRuntime.iOS-16-0
+tvOS 16.0 (16.0 - 20J5344e) - com.apple.CoreSimulator.SimRuntime.tvOS-16-0
+watchOS 9.0 (9.0 - 20R5332f) - com.apple.CoreSimulator.SimRuntime.watchOS-9-0
 == Devices ==
 -- iOS 16.0 --
-    iPhone 8 (5159C548-09E0-4E17-B5A3-1444C41D2A42) (Shutdown) 
-    iPhone 8 Plus (D7C074C0-4C78-41F0-B6B5-30DECFFAE3E3) (Shutdown) 
-    iPhone 11 (857E64A1-C969-48B8-9A8E-55766271CF05) (Shutdown) 
-    iPhone 11 Pro (3F138F51-BBB0-43F1-B341-7219B3A89E30) (Shutdown) 
-    iPhone 11 Pro Max (AC865B53-5E87-4162-805A-692FC439D0AE) (Shutdown) 
-    iPhone 12 mini (2354631F-CAD8-4370-A7E7-BC6079CEDC52) (Shutdown) 
-    iPhone 12 (646424BB-6567-4956-BA0B-53061EE641F4) (Shutdown) 
-    iPhone 12 Pro (3981927E-DC27-4C7E-970E-E41C3B84A7D1) (Shutdown) 
-    iPhone 12 Pro Max (05923776-4757-46E0-9669-D4E140D5BD70) (Shutdown) 
-    iPhone 13 Pro (E7B63227-C1F8-4D4E-87EE-54F17A933F91) (Shutdown) 
-    iPhone 13 Pro Max (1E7BACD6-F49F-4089-B2EF-4C80232377D6) (Shutdown) 
-    iPhone 13 mini (7B516A19-A06E-4FAD-AA9F-4159D6BB915D) (Shutdown) 
-    iPhone 13 (88660F43-89B7-483B-803F-3FA658360940) (Shutdown) 
-    iPhone SE (3rd generation) (472D89D7-AA61-408C-8E51-F1182ECA89A5) (Shutdown) 
-    iPad Pro (9.7-inch) (21C0A8BD-105C-4795-913F-C42FD870592E) (Shutdown) 
-    iPad (9th generation) (747D9132-6632-4B58-B092-537C569F5262) (Shutdown) 
-    iPad Pro (11-inch) (3rd generation) (2C93BA69-5CFE-47E7-B92A-BAF444CE101A) (Shutdown) 
-    iPad Pro (12.9-inch) (5th generation) (34B93699-5A6A-4192-BF25-A58D3FC6B9B4) (Shutdown) 
-    iPad Air (5th generation) (1B03C0C6-1AD4-4F15-B8F3-D72A02892AFA) (Shutdown) 
-    iPad mini (6th generation) (C888AE6C-8466-4335-8ACF-FE3765AC09EB) (Shutdown) 
+    iPhone 8 (3B5D303A-0CF0-4860-8356-07CE881B4D78) (Shutdown) 
+    iPhone 8 Plus (392F5A14-7A57-451B-8CB8-9C81131FD979) (Shutdown) 
+    iPhone 11 (D62E49C4-2F20-4E7B-B18F-C3F29CBE7EAC) (Shutdown) 
+    iPhone 11 Pro (51ADF4A8-6387-444B-B01B-75E0DCB55976) (Shutdown) 
+    iPhone 11 Pro Max (96AA0B1A-73EA-4961-A87E-57F7B8D81418) (Shutdown) 
+    iPhone 12 mini (CE1D075D-8AA0-46DF-A541-CBC4202D4317) (Shutdown) 
+    iPhone 12 (88635328-FFB0-4CD0-BB9A-E51C6292B848) (Shutdown) 
+    iPhone 12 Pro (23C674D1-189C-4FB7-8A6B-1A149A37C3DC) (Shutdown) 
+    iPhone 12 Pro Max (140B6150-B6A7-487C-8110-60F94544AAB5) (Shutdown) 
+    iPhone 13 Pro (E9CA89BD-7B52-493E-A55F-1F86737CC930) (Shutdown) 
+    iPhone 13 Pro Max (7F5B9485-0A24-4FE1-AA5A-71E557BAC306) (Shutdown) 
+    iPhone 13 mini (4EC40076-7818-4F7B-AE65-0FC5681707A0) (Shutdown) 
+    iPhone 13 (977D4C68-03A7-47E4-8197-E90AA43F4346) (Shutdown) 
+    iPhone SE (3rd generation) (80FEFF94-CACF-4BED-890B-9D67ED0D7FBA) (Shutdown) 
+    iPad Pro (9.7-inch) (A484A6DC-4A50-461E-BE60-97381616EC0F) (Shutdown) 
+    iPad (9th generation) (C2138CD8-5EDC-49E6-8616-3A0126879C63) (Shutdown) 
+    iPad Pro (11-inch) (3rd generation) (05FE0BE8-E6F5-42BE-824B-FA1AA66E1B9B) (Shutdown) 
+    iPad Pro (12.9-inch) (5th generation) (8DB7232C-8BDF-403D-B8F2-E861503E762A) (Shutdown) 
+    iPad Air (5th generation) (CDBEE9B0-49DD-449C-8AA4-71A085F57DF5) (Shutdown) 
+    iPad mini (6th generation) (38ABE736-1A3E-44EB-BCE5-D0343B3F4C27) (Shutdown) 
+-- tvOS 16.0 --
+    Apple TV (A9A6E2FE-BFE1-462C-A53D-CBC5A1482A4B) (Shutdown) 
+    Apple TV 4K (2nd generation) (A4C502E0-1328-4995-B044-2ACBF74067A9) (Shutdown) 
+    Apple TV 4K (at 1080p) (2nd generation) (3618FAF8-4004-46C0-BA09-072F6D1228E3) (Shutdown) 
+-- watchOS 9.0 --
+    Apple Watch Series 5 - 40mm (41C9B2A4-F332-44B1-8CEE-49BD3D980AAB) (Shutdown) 
+    Apple Watch Series 5 - 44mm (613DA272-DE3E-4F4F-BB5B-598192D26EE4) (Shutdown) 
+    Apple Watch Series 6 - 40mm (410323DF-4061-49F0-BA0E-94A4D577656E) (Shutdown) 
+    Apple Watch Series 6 - 44mm (FF91AFDE-9B8C-43CD-8D43-0795A12A2307) (Shutdown) 
+    Apple Watch Series 7 - 41mm (EFF50C5C-2884-41E4-B882-24A6188741F2) (Shutdown) 
+    Apple Watch Series 7 - 45mm (7A878BFE-D1ED-4E84-8B59-4A41182FFB0A) (Shutdown) 
 == Device Pairs ==
+44260C29-3ADA-4426-90E6-FFC2BD7832E0 (active, disconnected)
+    Watch: Apple Watch Series 5 - 40mm (41C9B2A4-F332-44B1-8CEE-49BD3D980AAB) (Shutdown)
+    Phone: iPhone 12 Pro (23C674D1-189C-4FB7-8A6B-1A149A37C3DC) (Shutdown)
+9FE461CA-6732-45A5-897F-6C8E81CB8222 (active, disconnected)
+    Watch: Apple Watch Series 5 - 44mm (613DA272-DE3E-4F4F-BB5B-598192D26EE4) (Shutdown)
+    Phone: iPhone 12 Pro Max (140B6150-B6A7-487C-8110-60F94544AAB5) (Shutdown)
+BE78A9D1-B0DA-42E0-9304-4AF2A6B992D4 (active, disconnected)
+    Watch: Apple Watch Series 6 - 40mm (410323DF-4061-49F0-BA0E-94A4D577656E) (Shutdown)
+    Phone: iPhone 13 Pro (E9CA89BD-7B52-493E-A55F-1F86737CC930) (Shutdown)
+29032B15-8EB2-4A96-B44C-F423DA4142AC (active, disconnected)
+    Watch: Apple Watch Series 6 - 44mm (FF91AFDE-9B8C-43CD-8D43-0795A12A2307) (Shutdown)
+    Phone: iPhone 13 Pro Max (7F5B9485-0A24-4FE1-AA5A-71E557BAC306) (Shutdown)
+2737DD06-E689-415A-B98B-C639999DA96E (active, disconnected)
+    Watch: Apple Watch Series 7 - 41mm (EFF50C5C-2884-41E4-B882-24A6188741F2) (Shutdown)
+    Phone: iPhone 13 mini (4EC40076-7818-4F7B-AE65-0FC5681707A0) (Shutdown)
+36C21769-4138-4FF8-A5F9-DEA634052E82 (active, disconnected)
+    Watch: Apple Watch Series 7 - 45mm (7A878BFE-D1ED-4E84-8B59-4A41182FFB0A) (Shutdown)
+    Phone: iPhone 13 (977D4C68-03A7-47E4-8197-E90AA43F4346) (Shutdown)
 
 ========================================
 
@@ -2437,7 +2529,7 @@ Software:
       Kernel Version: Darwin 21.5.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-14.0.x-g2.8core-b0d51b72-55b9-460d-a98a-354b7af0332b
+      Computer Name: vm-osx-xcode-14.0.x-g2.8core-c00db673-ec69-4c27-a1d7-285545f80d5f
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
@@ -2450,7 +2542,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk1s5s1        300Gi        218Gi
+/dev/disk1s5s1        300Gi        206Gi
 ========================================
 
 --- Android
