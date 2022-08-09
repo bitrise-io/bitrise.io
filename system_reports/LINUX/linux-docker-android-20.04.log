@@ -32,7 +32,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.25.46 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.27.46
+* aws-cli: aws-cli/1.25.47 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.27.47
 * Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
   * bundler: Bundler version 2.3.19
   * rubygems: 3.3.19
@@ -103,7 +103,7 @@ gsutil 5.11
 
 
 === Firebase Tools components ==========
-11.4.2
+11.5.0
 ========================================
 
 === Google Cloud Network Check =========
@@ -384,8 +384,8 @@ addressable (2.8.0)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.615.0)
-aws-sdk-core (3.131.6)
+aws-partitions (1.616.0)
+aws-sdk-core (3.132.0)
 aws-sdk-kms (1.58.0)
 aws-sdk-s3 (1.114.0)
 aws-sigv4 (1.5.1)
@@ -528,7 +528,7 @@ zlib (2.1.1, default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1cd04713e2-5f6e-40c2-88e7-86b260ad2087 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1cedfc671f-2366-4b8c-b450-26759ed0ba6e 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -584,8 +584,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1cd04713e2-5f6e-40c2-88e7-86b260ad2087
- ID: G2XT:B3NW:NFNH:P6IO:EEXS:WQZ3:XCWO:EXMR:4XGF:ON7G:AHBE:ZZUY
+ Name: stg-prdfree-20-04-usc1cedfc671f-2366-4b8c-b450-26759ed0ba6e
+ ID: XWB4:M4MB:3HXZ:3OP7:2MNJ:VAVA:NLCW:XBWW:OZRT:LVDO:42LW:ZITB
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -599,8 +599,8 @@ Server:
 
 
 === Docker pre-cached images ===========
-quay.io/bitriseio/android-ndk-20.04 - 44.6GB
 bitriseio/android-ndk-20.04 - 44.6GB
+quay.io/bitriseio/android-ndk-20.04 - 44.6GB
 bitriseio/android-20.04 - 42.2GB
 quay.io/bitriseio/android-20.04 - 42.2GB
 bitriseio/bitrise-base-20.04 - 3.1GB
@@ -612,13 +612,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-overlay         194G   55G  139G  29% /
+overlay         194G   55G  140G  29% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   55G  139G  29% /bitrise
+/dev/root       194G   55G  140G  29% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       768Mi        60Gi       1.0Mi       2.0Gi        61Gi
+Mem:           62Gi       732Mi        60Gi       1.0Mi       1.5Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
