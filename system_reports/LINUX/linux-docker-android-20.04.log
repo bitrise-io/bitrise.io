@@ -33,9 +33,10 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
 * aws-cli: aws-cli/1.25.46 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.27.46
-* Ruby: ruby 2.7.5p203 (2021-11-24 revision f69aeb8314) [x86_64-linux]
+* Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
   * bundler: Bundler version 2.3.19
-  * rubygems: 3.3.19
+/usr/local/bin/ruby: symbol lookup error: /usr/local/lib/ruby/gems/2.7.0/gems/etc-1.3.0/lib/etc.so: undefined symbol: rb_deprecate_constant
+  * rubygems: 
 * Go: go version go1.17.12 linux/amd64
 * Node.js: v16.16.0
 * NPM: 8.16.0
@@ -54,7 +55,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * Java: javac 11.0.16
 * Cordova CLI version: 11.0.0
 * Ionic CLI version: 6.20.1
-* Appcenter-CLI version: 2.10.10
+* Appcenter-CLI version: 2.11.0
 ========================================
 
 === Java ===============================
@@ -380,151 +381,13 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 
 
 === All Ruby GEMs ======================
-addressable (2.8.0)
-artifactory (3.0.15)
-atomos (0.1.3)
-aws-eventstream (1.2.0)
-aws-partitions (1.615.0)
-aws-sdk-core (3.131.6)
-aws-sdk-kms (1.58.0)
-aws-sdk-s3 (1.114.0)
-aws-sigv4 (1.5.1)
-babosa (1.0.4)
-benchmark (default: 0.1.0)
-bigdecimal (default: 2.0.0)
-bundler (default: 2.3.19)
-CFPropertyList (3.0.5)
-cgi (default: 0.1.0.1)
-claide (1.1.0)
-colored (1.2)
-colored2 (3.1.2)
-commander (4.6.0)
-csv (default: 3.1.2)
-date (default: 3.0.3)
-declarative (0.0.20)
-delegate (default: 0.1.0)
-did_you_mean (default: 1.4.0)
-digest-crc (0.6.4)
-domain_name (0.5.20190701)
-dotenv (2.8.1)
-emoji_regex (3.2.3)
-etc (default: 1.1.0)
-excon (0.92.4)
-faraday (1.10.0)
-faraday-cookie_jar (0.0.7)
-faraday-em_http (1.0.0)
-faraday-em_synchrony (1.0.0)
-faraday-excon (1.1.0)
-faraday-httpclient (1.0.1)
-faraday-multipart (1.0.4)
-faraday-net_http (1.0.1)
-faraday-net_http_persistent (1.2.0)
-faraday-patron (1.0.0)
-faraday-rack (1.0.0)
-faraday-retry (1.0.3)
-faraday_middleware (1.2.0)
-fastimage (2.2.6)
-fastlane (2.208.0)
-fcntl (default: 1.0.0)
-fiddle (default: 1.0.0)
-fileutils (default: 1.4.1)
-forwardable (default: 1.3.1)
-getoptlong (default: 0.1.0)
-gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.25.0)
-google-apis-core (0.7.0)
-google-apis-iamcredentials_v1 (0.13.0)
-google-apis-playcustomapp_v1 (0.10.0)
-google-apis-storage_v1 (0.17.0)
-google-cloud-core (1.6.0)
-google-cloud-env (1.6.0)
-google-cloud-errors (1.2.0)
-google-cloud-storage (1.38.0)
-googleauth (1.2.0)
-highline (2.0.3)
-http-cookie (1.0.5)
-httpclient (2.8.3)
-io-console (default: 0.5.6)
-ipaddr (default: 1.2.2)
-irb (default: 1.2.6)
-jmespath (1.6.1)
-json (default: 2.3.0)
-jwt (2.4.1)
-logger (default: 1.4.2)
-matrix (default: 0.2.0)
-memoist (0.16.2)
-mini_magick (4.11.0)
-mini_mime (1.1.2)
-minitest (5.13.0)
-multi_json (1.15.0)
-multipart-post (2.0.0)
-mutex_m (default: 0.1.0)
-nanaimo (0.3.0)
-naturally (2.2.1)
-net-pop (default: 0.1.0)
-net-smtp (default: 0.1.0)
-net-telnet (0.2.0)
-observer (default: 0.1.0)
-open3 (default: 0.1.0)
-openssl (default: 2.1.3)
-optparse (0.1.1)
-os (1.1.4)
-ostruct (default: 0.2.0)
-plist (3.6.0)
-power_assert (1.1.7)
-prime (default: 0.1.1)
-pstore (default: 0.1.0)
-psych (default: 3.1.0)
-public_suffix (4.0.7)
-racc (default: 1.4.16)
-rake (13.0.6, 13.0.1)
-rdoc (default: 6.2.1.1)
-readline (default: 0.0.2)
-readline-ext (default: 0.1.0)
-reline (default: 0.1.5)
-representable (3.2.0)
-retriable (3.1.2)
-rexml (3.2.5, default: 3.2.3.1)
-rouge (2.0.7)
-rss (default: 0.2.8)
-ruby2_keywords (0.0.5)
-rubygems-update (3.3.19)
-rubyzip (2.3.2)
-sdbm (default: 1.0.0)
-security (0.1.3)
-signet (0.17.0)
-simctl (1.6.8)
-singleton (default: 0.1.0)
-stringio (default: 0.1.0)
-strscan (default: 1.0.3)
-terminal-notifier (2.0.0)
-terminal-table (1.8.0)
-test-unit (3.3.4)
-timeout (default: 0.1.0)
-tracer (default: 0.1.0)
-trailblazer-option (0.1.2)
-tty-cursor (0.7.1)
-tty-screen (0.8.1)
-tty-spinner (0.9.3)
-uber (0.1.0)
-unf (0.1.4)
-unf_ext (0.0.8.2)
-unicode-display_width (1.8.0)
-uri (default: 0.10.0)
-webrick (default: 1.6.1)
-word_wrap (1.0.0)
-xcodeproj (1.22.0)
-xcpretty (0.3.0)
-xcpretty-travis-formatter (1.0.1)
-xmlrpc (0.3.0)
-yaml (default: 0.1.0)
-zlib (default: 1.1.0)
+/usr/local/bin/ruby: symbol lookup error: /usr/local/lib/ruby/gems/2.7.0/gems/etc-1.3.0/lib/etc.so: undefined symbol: rb_deprecate_constant
 ========================================
 
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1cd0151003-da41-4139-ac7d-3b26862c0500 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1ceb0094dd-6b5a-452a-870d-e680cf53f1b5 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -567,8 +430,8 @@ Server:
  Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: 10c12954828e7c7c9b6e0ea9b0c02b01407d3ae1
- runc version: v1.1.2-0-ga916309
+ containerd version: 0197261a30bf81f1ee8e6a4dd2dea0ef95d67ccb
+ runc version: v1.1.3-0-g6724737
  init version: de40ad0
  Security Options:
   apparmor
@@ -580,8 +443,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1cd0151003-da41-4139-ac7d-3b26862c0500
- ID: B6HM:UA47:TEYG:REU4:Z7QS:TCSE:UYAY:MN6F:3BOQ:YR2K:6ENP:7ZDA
+ Name: stg-prdfree-20-04-usc1ceb0094dd-6b5a-452a-870d-e680cf53f1b5
+ ID: G2XT:B3NW:NFNH:P6IO:EEXS:WQZ3:XCWO:EXMR:4XGF:ON7G:AHBE:ZZUY
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -608,13 +471,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-overlay         194G   55G  139G  29% /
+overlay         194G   56G  139G  29% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   55G  139G  29% /bitrise
+/dev/root       194G   56G  139G  29% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       774Mi        59Gi       1.0Mi       2.5Gi        61Gi
+Mem:           62Gi       821Mi        59Gi       1.0Mi       2.5Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
