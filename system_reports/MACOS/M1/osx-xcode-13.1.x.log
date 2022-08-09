@@ -7,14 +7,14 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2022_06_13
+* BITRISE_OSX_STACK_REV_ID: v2022_08_01
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.17.11 darwin/arm64
+* Go: go version go1.17.12 darwin/arm64
 * Python: Python 2.7.18
-* Node.js: v16.15.1
+* Node.js: v16.16.0
 * NPM: 8.11.0
 * Yarn: 1.22.19
 * Java:   system
@@ -28,16 +28,16 @@
   openjdk64-11.0.11
   temurin64-17.0.3
 * Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
-* fvm: 2.3.1
+* fvm: 2.4.1
 * Flutter SDKs via fvm: Cache Directory:  /Users/vagrant/fvm/versions
 
 3.0.0
 2.10.3 (global)
 1.22.6
 
-* git: git version 2.36.1
+* git: git version 2.37.1
 * git lfs: git-lfs/3.2.0 (GitHub; darwin arm64; go 1.18.2)
-* mercurial/hg: Mercurial Distributed SCM (version 6.1.3)
+* mercurial/hg: Mercurial Distributed SCM (version 6.1.4)
 * curl: curl 7.79.1 (x86_64-apple-darwin21.0) libcurl/7.79.1 (SecureTransport) LibreSSL/3.3.6 zlib/1.2.11 nghttp2/1.45.1
 * wget: GNU Wget 1.21.3 built on darwin21.3.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -46,38 +46,39 @@
 * tar: bsdtar 3.5.1 - libarchive 3.5.1 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.0.2 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.5.2
-Homebrew/homebrew-core (git revision 7e2f706ac39; last commit 2022-06-13)
-Homebrew/homebrew-cask (git revision 7e7c5077c4; last commit 2022-06-13)
-* Ansible: ansible [core 2.12.6]
+* brew: Homebrew 3.5.7
+Homebrew/homebrew-core (git revision 53762e46f2b; last commit 2022-07-27)
+Homebrew/homebrew-cask (git revision 72f5567dc6; last commit 2022-07-27)
+* Ansible: ansible [core 2.13.1]
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /opt/homebrew/Cellar/ansible/5.9.0/libexec/lib/python3.10/site-packages/ansible
+  ansible python module location = /opt/homebrew/Cellar/ansible/6.1.0/libexec/lib/python3.10/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /opt/homebrew/bin/ansible
 * gtimeout: timeout (GNU coreutils) 9.1
-* watchman: 2022.06.06.00
-* flow: Flow, a static type checker for JavaScript, version 0.180.0
+* watchman: 2022.07.04.00
+* flow: Flow, a static type checker for JavaScript, version 0.183.0
 * carthage: 0.38.0
-* imagemagick (convert): Version: ImageMagick 7.1.0-37 Q16-HDRI arm 20104 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.0-44 Q16-HDRI aarch64 20294 https://imagemagick.org
 * ghostscript (ps2ascii): 9.56.1
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 11.1.0
-* applesimutils version 0.9.5
+* applesimutils version 0.9.7
 * jq: 1.6
 * 0.13.0
-* XCLogParser 0.2.33
+* XCLogParser 0.2.34
 * Screen 4.09.00
-* applesimutils 0.9.5
+* applesimutils 0.9.7
 * OpenConnect version v9.01
-* aws-cli: aws-cli/2.7.7 Python/3.9.13 Darwin/21.5.0 source/arm64 prompt/off
+* aws-cli: aws-cli/2.7.18 Python/3.10.5 Darwin/21.5.0 source/arm64 prompt/off
 * cmake: 3.23.2
 * danger-swift: 3.12.3
 [0;0m
 * OpenVPN 2.5.7 arm-apple-darwin21.5.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] built on Jun  8 2022
+* tuist: 3.8.0
 
 --- Bitrise CLI tool versions
-* bitrise: 1.49.0
+* bitrise: 1.49.3
 * stepman: 0.13.1
 * envman: 2.3.3
 * cmd-bridge: 
@@ -85,64 +86,64 @@ Homebrew/homebrew-cask (git revision 7e7c5077c4; last commit 2022-06-13)
 
 
 === Brew list versions ==================
-ansible 5.9.0
+ansible 6.1.0
 ant 1.10.12
-aom 3.3.0
-applesimutils 0.9.5
+aom 3.4.0
+applesimutils 0.9.7
 apr 1.7.0_2
 apr-util 1.6.1_4
 argon2 20190702_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.7.7
-bazelisk 1.11.0
+awscli 2.7.18
+bazelisk 1.12.0
 bdw-gc 8.0.6
-boost 1.78.0_1
+boost 1.79.0_1
 brotli 1.0.9
 c-ares 1.18.1_1
-ca-certificates 2022-04-26
+ca-certificates 2022-07-19_1
 carthage 0.38.0
 cmake 3.23.2
 coreutils 9.1
-curl 7.83.1
-danger-js 11.0.7
+curl 7.84.0
+danger-js 11.1.1
 danger-swift 3.12.3
-dart 2.17.3
+dart 2.17.6
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 double-conversion 3.2.0
-fb303 2022.06.06.00
-fbthrift 2022.06.06.00_1
-fizz 2022.06.06.00
-flow 0.180.0
+fb303 2022.07.04.00
+fbthrift 2022.07.04.00
+fizz 2022.07.04.00
+flow 0.183.0
 fmt 8.1.1_1
-folly 2022.06.06.00
+folly 2022.07.04.00
 fontconfig 2.14.0
-freetds 1.3.11
+freetds 1.3.12
 freetype 2.12.1
-fvm 2.3.1
+fvm 2.4.1
 gd 2.3.3_2
 gdbm 1.23
 gettext 0.21
 gflags 2.2.2
 ghostscript 9.56.1
 giflib 5.2.1
-git 2.36.1
+git 2.37.1
 git-lfs 3.2.0
-glib 2.72.2
+glib 2.72.3
 glog 0.6.0
 gmp 6.2.1_1
 gnu-getopt 2.38
-gnupg 2.3.6
+gnupg 2.3.7_1
 gnutls 3.7.6
-go@1.17 1.17.11
-gradle 7.4.2
-groovy 4.0.3_1
+go@1.17 1.17.12
+gradle 7.5
+groovy 4.0.4
 guile 3.0.8
 icu4c 70.1
-imagemagick 7.1.0-37_1
+imagemagick 7.1.0-44
 imath 3.1.5
-jasper 3.0.4
+jasper 3.0.6_1
 jbig2dec 0.19
 jenv 0.5.5_2
 jpeg 9e
@@ -157,14 +158,14 @@ libffi 3.4.2
 libgcrypt 1.10.1
 libgpg-error 1.45
 libheif 1.12.0_1
-libidn 1.38
-libidn2 2.3.2
+libidn 1.41
+libidn2 2.3.3
 libksba 1.6.0
 liblqr 0.4.2_1
-libnghttp2 1.47.0
-libomp 14.0.5
+libnghttp2 1.48.0
+libomp 14.0.6
 libpng 1.6.37
-libpq 14.3
+libpq 14.4
 libraw 0.20.2_2
 libsodium 1.0.18_1
 libssh2 1.10.0
@@ -173,28 +174,28 @@ libtiff 4.4.0
 libtool 2.4.7
 libunistring 1.0
 libusb 1.0.26
-libuv 1.44.1_1
+libuv 1.44.2
 libvmaf 2.3.1
 libyaml 0.2.5
-libzip 1.8.0_1
+libzip 1.9.2
 little-cms2 2.13.1
 lz4 1.9.3
 lzo 2.10
 m4 1.4.19
 maven 3.8.6
-mercurial 6.1.3
+mercurial 6.1.4
 mint 0.17.1
 mpdecimal 2.5.1
 nettle 3.8
-node@16 16.15.1
+node@16 16.16.0
 npth 1.6
 oniguruma 6.9.8
-openconnect 9.01
+openconnect 9.01_2
 openexr 3.1.5
-openjdk 18.0.1.1
+openjdk 18.0.2
 openjpeg 2.5.0
-openldap 2.6.2
-openssl@1.1 1.1.1o
+openldap 2.6.3
+openssl@1.1 1.1.1q
 openvpn 2.5.7
 p11-kit 0.24.1
 pcre 8.45
@@ -203,37 +204,38 @@ php@7.4 7.4.30
 pinentry 1.2.0
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
-pyenv 2.3.1
-python@3.10 3.10.4
+pyenv 2.3.2
+python@3.10 3.10.5
 python@3.9 3.9.13_1
 rbenv 1.2.0
 readline 8.1.2
 rtmpdump 2.4+20151223_1
-ruby-build 20220610
+ruby-build 20220726
 screen 4.9.0
 shared-mime-info 2.2
 six 1.16.0_2
 snappy 1.1.9
-sqlite 3.38.5
+sqlite 3.39.2
 stoken 0.92_1
-swiftlint 0.47.1
+swiftlint 0.48.0
 tidy-html5 5.8.0
 tree 2.0.2
-unbound 1.16.0
+unbound 1.16.1
 unixodbc 2.3.11
-wangle 2022.06.06.00
-watchman 2022.06.06.00
-webp 1.2.2
+wangle 2022.07.04.00
+watchman 2022.07.04.00
+webp 1.2.3
 wget 1.21.3
 x265 3.5
 xcbeautify 0.13.0
-xclogparser 0.2.33
+xclogparser 0.2.34
 xmlto 0.0.28
-xz 5.2.5
+xz 5.2.5_1
+yamllint 1.27.1
 yarn 1.22.19
 zstd 1.5.2
 adoptopenjdk11 11.0.11,9
-adoptopenjdk8 8,292,b10
+adoptopenjdk8 8,292:b10
 temurin17 17.0.3,7
 ========================================
 
@@ -241,7 +243,7 @@ temurin17 17.0.3,7
 === Brew deps tree ==================
 adoptopenjdk/openjdk/adoptopenjdk11
 
-adoptopenjdk8
+adoptopenjdk/openjdk/adoptopenjdk8
 
 ansible
 ├── libyaml
@@ -295,7 +297,7 @@ autoconf
 └── m4
 
 awscli
-├── python@3.9
+├── python@3.10
 │   ├── gdbm
 │   ├── mpdecimal
 │   ├── openssl@1.1
@@ -311,7 +313,9 @@ bazelisk
 bdw-gc
 
 boost
-└── icu4c
+├── icu4c
+├── xz
+└── zstd
 
 brotli
 
@@ -362,15 +366,21 @@ double-conversion
 fb303
 ├── fbthrift
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── fizz
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── folly
 │   │   │   ├── boost
-│   │   │   │   └── icu4c
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── gflags
@@ -400,7 +410,9 @@ fb303
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -422,16 +434,22 @@ fb303
 │   │   └── ca-certificates
 │   ├── wangle
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fizz
 │   │   │   ├── boost
-│   │   │   │   └── icu4c
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── folly
 │   │   │   │   ├── boost
-│   │   │   │   │   └── icu4c
+│   │   │   │   │   ├── icu4c
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
 │   │   │   │   ├── double-conversion
 │   │   │   │   ├── fmt
 │   │   │   │   ├── gflags
@@ -461,7 +479,9 @@ fb303
 │   │   ├── fmt
 │   │   ├── folly
 │   │   │   ├── boost
-│   │   │   │   └── icu4c
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── gflags
@@ -491,12 +511,16 @@ fb303
 │   └── zstd
 ├── fizz
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -526,7 +550,9 @@ fb303
 ├── fmt
 ├── folly
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -548,16 +574,22 @@ fb303
 │   └── ca-certificates
 └── wangle
     ├── boost
-    │   └── icu4c
+    │   ├── icu4c
+    │   ├── xz
+    │   └── zstd
     ├── double-conversion
     ├── fizz
     │   ├── boost
-    │   │   └── icu4c
+    │   │   ├── icu4c
+    │   │   ├── xz
+    │   │   └── zstd
     │   ├── double-conversion
     │   ├── fmt
     │   ├── folly
     │   │   ├── boost
-    │   │   │   └── icu4c
+    │   │   │   ├── icu4c
+    │   │   │   ├── xz
+    │   │   │   └── zstd
     │   │   ├── double-conversion
     │   │   ├── fmt
     │   │   ├── gflags
@@ -587,7 +619,9 @@ fb303
     ├── fmt
     ├── folly
     │   ├── boost
-    │   │   └── icu4c
+    │   │   ├── icu4c
+    │   │   ├── xz
+    │   │   └── zstd
     │   ├── double-conversion
     │   ├── fmt
     │   ├── gflags
@@ -617,15 +651,21 @@ fb303
 
 fbthrift
 ├── boost
-│   └── icu4c
+│   ├── icu4c
+│   ├── xz
+│   └── zstd
 ├── fizz
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -655,7 +695,9 @@ fbthrift
 ├── fmt
 ├── folly
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -677,16 +719,22 @@ fbthrift
 │   └── ca-certificates
 ├── wangle
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fizz
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── folly
 │   │   │   ├── boost
-│   │   │   │   └── icu4c
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── gflags
@@ -716,7 +764,9 @@ fbthrift
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -747,12 +797,16 @@ fbthrift
 
 fizz
 ├── boost
-│   └── icu4c
+│   ├── icu4c
+│   ├── xz
+│   └── zstd
 ├── double-conversion
 ├── fmt
 ├── folly
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -786,7 +840,9 @@ fmt
 
 folly
 ├── boost
-│   └── icu4c
+│   ├── icu4c
+│   ├── xz
+│   └── zstd
 ├── double-conversion
 ├── fmt
 ├── gflags
@@ -896,16 +952,7 @@ git-lfs
 glib
 ├── gettext
 ├── libffi
-├── pcre
-└── python@3.9
-    ├── gdbm
-    ├── mpdecimal
-    ├── openssl@1.1
-    │   └── ca-certificates
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    └── xz
+└── pcre
 
 glog
 └── gflags
@@ -1064,16 +1111,7 @@ imagemagick
 │   │   ├── glib
 │   │   │   ├── gettext
 │   │   │   ├── libffi
-│   │   │   ├── pcre
-│   │   │   └── python@3.9
-│   │   │       ├── gdbm
-│   │   │       ├── mpdecimal
-│   │   │       ├── openssl@1.1
-│   │   │       │   └── ca-certificates
-│   │   │       ├── readline
-│   │   │       ├── sqlite
-│   │   │       │   └── readline
-│   │   │       └── xz
+│   │   │   └── pcre
 │   │   └── xmlto
 │   │       ├── docbook
 │   │       ├── docbook-xsl
@@ -1084,16 +1122,7 @@ imagemagick
 │   └── glib
 │       ├── gettext
 │       ├── libffi
-│       ├── pcre
-│       └── python@3.9
-│           ├── gdbm
-│           ├── mpdecimal
-│           ├── openssl@1.1
-│           │   └── ca-certificates
-│           ├── readline
-│           ├── sqlite
-│           │   └── readline
-│           └── xz
+│       └── pcre
 ├── libpng
 ├── libraw
 │   ├── jasper
@@ -1225,16 +1254,7 @@ libheif
 │   ├── glib
 │   │   ├── gettext
 │   │   ├── libffi
-│   │   ├── pcre
-│   │   └── python@3.9
-│   │       ├── gdbm
-│   │       ├── mpdecimal
-│   │       ├── openssl@1.1
-│   │       │   └── ca-certificates
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
+│   │   └── pcre
 │   └── xmlto
 │       ├── docbook
 │       ├── docbook-xsl
@@ -1255,16 +1275,7 @@ liblqr
 └── glib
     ├── gettext
     ├── libffi
-    ├── pcre
-    └── python@3.9
-        ├── gdbm
-        ├── mpdecimal
-        ├── openssl@1.1
-        │   └── ca-certificates
-        ├── readline
-        ├── sqlite
-        │   └── readline
-        └── xz
+    └── pcre
 
 libnghttp2
 
@@ -1599,16 +1610,7 @@ shared-mime-info
 ├── glib
 │   ├── gettext
 │   ├── libffi
-│   ├── pcre
-│   └── python@3.9
-│       ├── gdbm
-│       ├── mpdecimal
-│       ├── openssl@1.1
-│       │   └── ca-certificates
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
+│   └── pcre
 └── xmlto
     ├── docbook
     ├── docbook-xsl
@@ -1648,16 +1650,22 @@ unixodbc
 
 wangle
 ├── boost
-│   └── icu4c
+│   ├── icu4c
+│   ├── xz
+│   └── zstd
 ├── double-conversion
 ├── fizz
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
-│   │   │   └── icu4c
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -1687,7 +1695,9 @@ wangle
 ├── fmt
 ├── folly
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -1717,11 +1727,15 @@ wangle
 
 watchman
 ├── boost
-│   └── icu4c
+│   ├── icu4c
+│   ├── xz
+│   └── zstd
 ├── fmt
 ├── folly
 │   ├── boost
-│   │   └── icu4c
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -1757,15 +1771,21 @@ watchman
 └── fb303
     ├── fbthrift
     │   ├── boost
-    │   │   └── icu4c
+    │   │   ├── icu4c
+    │   │   ├── xz
+    │   │   └── zstd
     │   ├── fizz
     │   │   ├── boost
-    │   │   │   └── icu4c
+    │   │   │   ├── icu4c
+    │   │   │   ├── xz
+    │   │   │   └── zstd
     │   │   ├── double-conversion
     │   │   ├── fmt
     │   │   ├── folly
     │   │   │   ├── boost
-    │   │   │   │   └── icu4c
+    │   │   │   │   ├── icu4c
+    │   │   │   │   ├── xz
+    │   │   │   │   └── zstd
     │   │   │   ├── double-conversion
     │   │   │   ├── fmt
     │   │   │   ├── gflags
@@ -1795,7 +1815,9 @@ watchman
     │   ├── fmt
     │   ├── folly
     │   │   ├── boost
-    │   │   │   └── icu4c
+    │   │   │   ├── icu4c
+    │   │   │   ├── xz
+    │   │   │   └── zstd
     │   │   ├── double-conversion
     │   │   ├── fmt
     │   │   ├── gflags
@@ -1817,16 +1839,22 @@ watchman
     │   │   └── ca-certificates
     │   ├── wangle
     │   │   ├── boost
-    │   │   │   └── icu4c
+    │   │   │   ├── icu4c
+    │   │   │   ├── xz
+    │   │   │   └── zstd
     │   │   ├── double-conversion
     │   │   ├── fizz
     │   │   │   ├── boost
-    │   │   │   │   └── icu4c
+    │   │   │   │   ├── icu4c
+    │   │   │   │   ├── xz
+    │   │   │   │   └── zstd
     │   │   │   ├── double-conversion
     │   │   │   ├── fmt
     │   │   │   ├── folly
     │   │   │   │   ├── boost
-    │   │   │   │   │   └── icu4c
+    │   │   │   │   │   ├── icu4c
+    │   │   │   │   │   ├── xz
+    │   │   │   │   │   └── zstd
     │   │   │   │   ├── double-conversion
     │   │   │   │   ├── fmt
     │   │   │   │   ├── gflags
@@ -1856,7 +1884,9 @@ watchman
     │   │   ├── fmt
     │   │   ├── folly
     │   │   │   ├── boost
-    │   │   │   │   └── icu4c
+    │   │   │   │   ├── icu4c
+    │   │   │   │   ├── xz
+    │   │   │   │   └── zstd
     │   │   │   ├── double-conversion
     │   │   │   ├── fmt
     │   │   │   ├── gflags
@@ -1886,12 +1916,16 @@ watchman
     │   └── zstd
     ├── fizz
     │   ├── boost
-    │   │   └── icu4c
+    │   │   ├── icu4c
+    │   │   ├── xz
+    │   │   └── zstd
     │   ├── double-conversion
     │   ├── fmt
     │   ├── folly
     │   │   ├── boost
-    │   │   │   └── icu4c
+    │   │   │   ├── icu4c
+    │   │   │   ├── xz
+    │   │   │   └── zstd
     │   │   ├── double-conversion
     │   │   ├── fmt
     │   │   ├── gflags
@@ -1921,7 +1955,9 @@ watchman
     ├── fmt
     ├── folly
     │   ├── boost
-    │   │   └── icu4c
+    │   │   ├── icu4c
+    │   │   ├── xz
+    │   │   └── zstd
     │   ├── double-conversion
     │   ├── fmt
     │   ├── gflags
@@ -1943,16 +1979,22 @@ watchman
     │   └── ca-certificates
     └── wangle
         ├── boost
-        │   └── icu4c
+        │   ├── icu4c
+        │   ├── xz
+        │   └── zstd
         ├── double-conversion
         ├── fizz
         │   ├── boost
-        │   │   └── icu4c
+        │   │   ├── icu4c
+        │   │   ├── xz
+        │   │   └── zstd
         │   ├── double-conversion
         │   ├── fmt
         │   ├── folly
         │   │   ├── boost
-        │   │   │   └── icu4c
+        │   │   │   ├── icu4c
+        │   │   │   ├── xz
+        │   │   │   └── zstd
         │   │   ├── double-conversion
         │   │   ├── fmt
         │   │   ├── gflags
@@ -1982,7 +2024,9 @@ watchman
         ├── fmt
         ├── folly
         │   ├── boost
-        │   │   └── icu4c
+        │   │   ├── icu4c
+        │   │   ├── xz
+        │   │   └── zstd
         │   ├── double-conversion
         │   ├── fmt
         │   ├── gflags
@@ -2038,6 +2082,18 @@ xmlto
 
 xz
 
+yamllint
+├── libyaml
+└── python@3.10
+    ├── gdbm
+    ├── mpdecimal
+    ├── openssl@1.1
+    │   └── ca-certificates
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
 yarn
 
 zstd
@@ -2050,12 +2106,14 @@ zstd
 --- Available ruby versions ---
   system
 * 2.6.9 (set by /Users/vagrant/.rbenv/version)
+  2.7.2
   2.7.5
+  3.0.0
   3.0.3
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.0.3.1
-* Bundler: Bundler version 2.3.16
+* Bundler: Bundler version 2.3.19
 * CocoaPods: 1.11.3
 * xcpretty: 0.3.0
 ========================================
@@ -2075,7 +2133,7 @@ aws-sdk-s3 (1.114.0)
 aws-sigv4 (1.5.0)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
-bundler (2.3.16, default: 1.17.2)
+bundler (2.3.19, 2.3.16, default: 1.17.2)
 CFPropertyList (3.0.5)
 claide (1.0.3)
 clamp (1.3.2)
@@ -2120,7 +2178,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
-fastlane (2.206.2)
+fastlane (2.208.0, 2.206.2)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -2545,11 +2603,11 @@ Software:
       Kernel Version: Darwin 21.5.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-13.1.x-g2-m1.8core-c1611c42-a300-4789-be91-7c771a289347
+      Computer Name: vm-osx-xcode-13.1.x-g2-m1.8core-b6a89626-dee7-4baa-891c-d0256dce301c
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 35 minutes
+      Time since boot: 2:49
 
 
 ========================================
