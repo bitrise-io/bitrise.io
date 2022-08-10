@@ -63,14 +63,6 @@ You will run into `stepman` directly most probably when you are sharing your own
 
 All Bitrise CLI tools are written in Go.
 
-## Stack
-
-### OS X
-
-We are working with [vSphere](https://www.vmware.com/products/vsphere), [Ansible](https://docs.ansible.com/) and [vagrant](https://www.vagrantup.com/docs/) to virtualize, bootstrap and fire up the OS X build machines for builds on [bitrise.io](https://www.bitrise.io).
-
-You can find all of our bootstrap scripts on the [OS X bootstrap GitHub page](https://github.com/bitrise-io/osx-box-bootstrap).
-
 ### Docker
 
 We have a [base image](https://github.com/bitrise-io/bitrise-base) and an [Android version](https://github.com/bitrise-io/android) with pre-installed tools for Android builds.
@@ -80,7 +72,6 @@ We have a [base image](https://github.com/bitrise-io/bitrise-base) and an [Andro
 
 ### Request a tool to be pre-installed on a build machine
 
-* For OS X you can create an issue or pull request at [`osx-box-bootstrap`](https://github.com/bitrise-io/osx-box-bootstrap)
 * For our Docker based stack you can create an issue or pull request at:
     * [`bitrise-base`](https://github.com/bitrise-io/bitrise-base), for generic tools and configurations (which are not related to Android)
     * [`android`](https://github.com/bitrise-io/android), for Android related tools and configurations
@@ -104,7 +95,7 @@ Check out our sample app repositories.
 
 **iOS**
 
-- [Xcode 7 sample project (with UI Testing)](https://github.com/bitrise-io/sample-apps-ios-xcode7)
+- [iOS sample project (with UI Testing)](https://github.com/bitrise-io/Bitrise-iOS-Sample)
 - [Quick sample project](https://github.com/bitrise-io/sample-test-ios-quick)
 - [XCTest sample project](https://github.com/bitrise-io/sample-test-ios-xctest)
 - [Specta sample project](https://github.com/bitrise-io/sample-test-ios-specta)
@@ -112,18 +103,13 @@ Check out our sample app repositories.
 
 **Android**
 
-- [Android sample project](https://github.com/bitrise-io/sample-apps-android-sdk22)
+- [Android sample project](https://github.com/bitrise-io/Bitrise-Android-Sample)
 - [sample project with code sign](https://github.com/bitrise-io/android-sdk22-code-sign)
-
-**Xamarin**
-
-- [Android](https://github.com/bitrise-io/sample-apps-xamarin-android)
-- [iOS](https://github.com/bitrise-io/sample-apps-xamarin-ios)
 
 **React Native**
 
-- [React Native sample project](https://github.com/bitrise-io/ReactNativeSample)
+- [React Native sample project](https://github.com/bitrise-io/Bitrise-React-Native-Sample)
 
-Or simply search our GitHub account page for [sample-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=sample-) to see all of our sample projects.
+Or simply search our GitHub account page for [sample-](https://github.com/bitrise-io?utf8=%E2%9C%93&query=sample) to see all of our sample projects.
 
 Feel free to fork and test them on [bitrise.io](https://www.bitrise.io) or locally with the [Bitrise CLI](https://www.bitrise.io/cli).
