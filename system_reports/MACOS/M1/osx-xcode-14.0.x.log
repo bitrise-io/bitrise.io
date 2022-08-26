@@ -7,15 +7,15 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2022_08_01
+* BITRISE_OSX_STACK_REV_ID: v2022_08_24
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.17.12 darwin/arm64
+* Go: go version go1.18.5 darwin/arm64
 * Python: Python 2.7.18
-* Node.js: v16.16.0
-* NPM: 8.11.0
+* Node.js: v16.17.0
+* NPM: 8.15.0
 * Yarn: 1.22.19
 * Java:   system
   1.8
@@ -23,10 +23,10 @@
 * 11.0 (set by /Users/vagrant/.jenv/version)
   11.0.11
   17.0
-  17.0.3
+  17.0.4
   openjdk64-1.8.0.292
   openjdk64-11.0.11
-  temurin64-17.0.3
+  temurin64-17.0.4
 * Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
 * fvm: 2.4.1
 * Flutter SDKs via fvm: Cache Directory:  /Users/vagrant/fvm/versions
@@ -35,7 +35,7 @@
 2.10.3 (global)
 1.22.6
 
-* git: git version 2.37.1
+* git: git version 2.37.2
 * git lfs: git-lfs/3.2.0 (GitHub; darwin arm64; go 1.18.2)
 * mercurial/hg: Mercurial Distributed SCM (version 6.1.4)
 * curl: curl 7.79.1 (x86_64-apple-darwin21.0) libcurl/7.79.1 (SecureTransport) LibreSSL/3.3.6 zlib/1.2.11 nghttp2/1.45.1
@@ -46,23 +46,23 @@
 * tar: bsdtar 3.5.1 - libarchive 3.5.1 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.0.2 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.5.8
-Homebrew/homebrew-core (git revision 53762e46f2b; last commit 2022-07-27)
-Homebrew/homebrew-cask (git revision 72f5567dc6; last commit 2022-07-27)
-* Ansible: ansible [core 2.13.1]
+* brew: Homebrew 3.5.10
+Homebrew/homebrew-core (git revision ec329ebfc89; last commit 2022-08-24)
+Homebrew/homebrew-cask (git revision c9d9b61421; last commit 2022-08-24)
+* Ansible: ansible [core 2.13.3]
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /opt/homebrew/Cellar/ansible/6.1.0/libexec/lib/python3.10/site-packages/ansible
+  ansible python module location = /opt/homebrew/Cellar/ansible/6.3.0/libexec/lib/python3.10/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /opt/homebrew/bin/ansible
 * gtimeout: timeout (GNU coreutils) 9.1
-* watchman: 2022.07.04.00
-* flow: Flow, a static type checker for JavaScript, version 0.183.0
+* watchman: 2022.08.22.00
+* flow: Flow, a static type checker for JavaScript, version 0.185.1
 * carthage: 0.38.0
-* imagemagick (convert): Version: ImageMagick 7.1.0-44 Q16-HDRI aarch64 20294 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.0-46 Q16-HDRI aarch64 20370 https://imagemagick.org
 * ghostscript (ps2ascii): 9.56.1
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
-* firebase: 11.5.0
+* firebase: 11.8.0
 * applesimutils version 0.9.7
 * jq: 1.6
 * 0.13.0
@@ -70,94 +70,95 @@ Homebrew/homebrew-cask (git revision 72f5567dc6; last commit 2022-07-27)
 * Screen 4.09.00
 * applesimutils 0.9.7
 * OpenConnect version v9.01
-* aws-cli: aws-cli/2.7.18 Python/3.10.5 Darwin/21.5.0 source/arm64 prompt/off
-* cmake: 3.23.2
-* danger-swift: 3.12.3
+* aws-cli: aws-cli/2.7.25 Python/3.10.6 Darwin/21.6.0 source/arm64 prompt/off
+* cmake: 3.24.1
+* danger-swift: 3.14.0
 [0;0m
 * OpenVPN 2.5.7 arm-apple-darwin21.5.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] built on Jun  8 2022
 * tuist: 3.8.0
 
 --- Bitrise CLI tool versions
-* bitrise: 1.49.3
-* stepman: 0.13.1
+* bitrise: 1.50.0
+* stepman: 0.15.0
 * envman: 2.3.3
 * cmd-bridge: 
 ========================================
 
 
 === Brew list versions ==================
-ansible 6.1.0
+ansible 6.3.0
 ant 1.10.12
 aom 3.4.0
 applesimutils 0.9.7
-apr 1.7.0_2
+apr 1.7.0_3
 apr-util 1.6.1_4
 argon2 20190702_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.7.18
-bazelisk 1.12.0
+awscli 2.7.25
+bazelisk 1.12.2
 bdw-gc 8.0.6
 boost 1.79.0_1
 brotli 1.0.9
 c-ares 1.18.1_1
 ca-certificates 2022-07-19_1
 carthage 0.38.0
-cmake 3.23.2
+cmake 3.24.1
 coreutils 9.1
 curl 7.84.0
-danger-js 11.1.1
-danger-swift 3.12.3
+danger-js 11.1.2
+danger-swift 3.14.0
 dart 2.17.6
 docbook 5.1_1
 docbook-xsl 1.79.2_1
-double-conversion 3.2.0
-fb303 2022.07.04.00
-fbthrift 2022.07.04.00
-fizz 2022.07.04.00
-flow 0.183.0
-fmt 8.1.1_1
-folly 2022.07.04.00
+double-conversion 3.2.1
+fb303 2022.08.22.00
+fbthrift 2022.08.22.00
+fizz 2022.08.22.00
+flow 0.185.1
+fmt 9.0.0
+folly 2022.08.22.00
 fontconfig 2.14.0
-freetds 1.3.12
+freetds 1.3.13
 freetype 2.12.1
 fvm 2.4.1
-gd 2.3.3_2
+gd 2.3.3_3
 gdbm 1.23
 gettext 0.21
 gflags 2.2.2
-ghostscript 9.56.1
+ghostscript 9.56.1_1
 giflib 5.2.1
-git 2.37.1
+git 2.37.2
 git-lfs 3.2.0
-glib 2.72.3
+glib 2.72.3_1
 glog 0.6.0
 gmp 6.2.1_1
-gnu-getopt 2.38
+gnu-getopt 2.38.1
 gnupg 2.3.7_1
-gnutls 3.7.6
-go@1.17 1.17.12
-gradle 7.5
+gnutls 3.7.7
+go@1.18 1.18.5
+gradle 7.5.1
 groovy 4.0.4
-guile 3.0.8
+guile 3.0.8_1
+hub 2.14.2
 icu4c 70.1
-imagemagick 7.1.0-44
+imagemagick 7.1.0-46
 imath 3.1.5
-jasper 3.0.6_1
+jasper 3.0.6_2
 jbig2dec 0.19
 jenv 0.5.5_2
-jpeg 9e
-jpeg-xl 0.6.1
+jpeg-turbo 2.1.4
+jpeg-xl 0.6.1_1
 jq 1.6
 krb5 1.20
 libassuan 2.5.5
-libavif 0.10.1
+libavif 0.10.1_1
 libde265 1.0.8
 libevent 2.1.12
 libffi 3.4.2
 libgcrypt 1.10.1
 libgpg-error 1.45
-libheif 1.12.0_1
+libheif 1.12.0_2
 libidn 1.41
 libidn2 2.3.3
 libksba 1.6.0
@@ -165,12 +166,12 @@ liblqr 0.4.2_1
 libnghttp2 1.48.0
 libomp 14.0.6
 libpng 1.6.37
-libpq 14.4
-libraw 0.20.2_2
+libpq 14.5
+libraw 0.20.2_3
 libsodium 1.0.18_1
 libssh2 1.10.0
-libtasn1 4.18.0
-libtiff 4.4.0
+libtasn1 4.19.0
+libtiff 4.4.0_1
 libtool 2.4.7
 libunistring 1.0
 libusb 1.0.26
@@ -178,16 +179,20 @@ libuv 1.44.2
 libvmaf 2.3.1
 libyaml 0.2.5
 libzip 1.9.2
-little-cms2 2.13.1
-lz4 1.9.3
+little-cms2 2.13.1_1
+llvm 14.0.6_1
+lokalise2 2.6.8
+lz4 1.9.4
 lzo 2.10
 m4 1.4.19
+macos-term-size 1.0.0
 maven 3.8.6
 mercurial 6.1.4
 mint 0.17.1
 mpdecimal 2.5.1
-nettle 3.8
-node@16 16.16.0
+nettle 3.8.1
+node@12 12.22.12
+node@16 16.17.0
 npth 1.6
 oniguruma 6.9.8
 openconnect 9.01_2
@@ -198,15 +203,15 @@ openldap 2.6.3
 openssl@1.1 1.1.1q
 openvpn 2.5.7
 p11-kit 0.24.1
+parallel 20220822
 pcre 8.45
 pcre2 10.40
 php@7.4 7.4.30
 pinentry 1.2.0
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
-pyenv 2.3.2
-python@3.10 3.10.5
-python@3.9 3.9.13_1
+pyenv 2.3.3
+python@3.10 3.10.6_1
 rbenv 1.2.0
 readline 8.1.2
 rtmpdump 2.4+20151223_1
@@ -219,24 +224,25 @@ sqlite 3.39.2
 stoken 0.92_1
 swiftlint 0.48.0
 tidy-html5 5.8.0
+transcrypt 2.2.0
 tree 2.0.2
-unbound 1.16.1
+unbound 1.16.2
 unixodbc 2.3.11
-wangle 2022.07.04.00
-watchman 2022.07.04.00
-webp 1.2.3
+wangle 2022.08.22.00
+watchman 2022.08.22.00
+webp 1.2.4
 wget 1.21.3
 x265 3.5
 xcbeautify 0.13.0
 xclogparser 0.2.34
 xmlto 0.0.28
-xz 5.2.5_1
+xz 5.2.6
 yamllint 1.27.1
 yarn 1.22.19
 zstd 1.5.2
 adoptopenjdk11 11.0.11,9
 adoptopenjdk8 8,292:b10
-temurin17 17.0.3,7
+temurin17 17.0.4,8
 ========================================
 
 
@@ -268,16 +274,16 @@ aom
 │   ├── brotli
 │   ├── giflib
 │   ├── imath
-│   ├── jpeg
+│   ├── jpeg-turbo
 │   ├── libpng
 │   ├── openexr
 │   │   └── imath
 │   └── webp
 │       ├── giflib
-│       ├── jpeg
+│       ├── jpeg-turbo
 │       ├── libpng
 │       └── libtiff
-│           └── jpeg
+│           └── jpeg-turbo
 └── libvmaf
 
 wix/brew/applesimutils
@@ -316,6 +322,8 @@ boost
 ├── icu4c
 ├── xz
 └── zstd
+    ├── lz4
+    └── xz
 
 brotli
 
@@ -348,6 +356,8 @@ curl
 │   └── openssl@1.1
 │       └── ca-certificates
 └── zstd
+    ├── lz4
+    └── xz
 
 danger/tap/danger-js
 
@@ -369,11 +379,15 @@ fb303
 │   │   ├── icu4c
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── fizz
 │   │   ├── boost
 │   │   │   ├── icu4c
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── folly
@@ -381,6 +395,8 @@ fb303
 │   │   │   │   ├── icu4c
 │   │   │   │   ├── xz
 │   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── gflags
@@ -395,6 +411,8 @@ fb303
 │   │   │   ├── snappy
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── gflags
 │   │   ├── glog
 │   │   │   └── gflags
@@ -407,12 +425,16 @@ fb303
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
 │   │   │   ├── icu4c
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -427,6 +449,8 @@ fb303
 │   │   ├── snappy
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── gflags
 │   ├── glog
 │   │   └── gflags
@@ -437,12 +461,16 @@ fb303
 │   │   │   ├── icu4c
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── double-conversion
 │   │   ├── fizz
 │   │   │   ├── boost
 │   │   │   │   ├── icu4c
 │   │   │   │   ├── xz
 │   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── folly
@@ -450,6 +478,8 @@ fb303
 │   │   │   │   │   ├── icu4c
 │   │   │   │   │   ├── xz
 │   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
 │   │   │   │   ├── double-conversion
 │   │   │   │   ├── fmt
 │   │   │   │   ├── gflags
@@ -464,6 +494,8 @@ fb303
 │   │   │   │   ├── snappy
 │   │   │   │   ├── xz
 │   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
 │   │   │   ├── gflags
 │   │   │   ├── glog
 │   │   │   │   └── gflags
@@ -476,12 +508,16 @@ fb303
 │   │   │   │   └── ca-certificates
 │   │   │   ├── snappy
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── fmt
 │   │   ├── folly
 │   │   │   ├── boost
 │   │   │   │   ├── icu4c
 │   │   │   │   ├── xz
 │   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── gflags
@@ -496,6 +532,8 @@ fb303
 │   │   │   ├── snappy
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── gflags
 │   │   ├── glog
 │   │   │   └── gflags
@@ -508,12 +546,18 @@ fb303
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── fizz
 │   ├── boost
 │   │   ├── icu4c
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── double-conversion
 │   ├── fmt
 │   ├── folly
@@ -521,6 +565,8 @@ fb303
 │   │   │   ├── icu4c
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -535,6 +581,8 @@ fb303
 │   │   ├── snappy
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── gflags
 │   ├── glog
 │   │   └── gflags
@@ -547,12 +595,16 @@ fb303
 │   │   └── ca-certificates
 │   ├── snappy
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── fmt
 ├── folly
 │   ├── boost
 │   │   ├── icu4c
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -567,6 +619,8 @@ fb303
 │   ├── snappy
 │   ├── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── gflags
 ├── glog
 │   └── gflags
@@ -577,12 +631,16 @@ fb303
     │   ├── icu4c
     │   ├── xz
     │   └── zstd
+    │       ├── lz4
+    │       └── xz
     ├── double-conversion
     ├── fizz
     │   ├── boost
     │   │   ├── icu4c
     │   │   ├── xz
     │   │   └── zstd
+    │   │       ├── lz4
+    │   │       └── xz
     │   ├── double-conversion
     │   ├── fmt
     │   ├── folly
@@ -590,6 +648,8 @@ fb303
     │   │   │   ├── icu4c
     │   │   │   ├── xz
     │   │   │   └── zstd
+    │   │   │       ├── lz4
+    │   │   │       └── xz
     │   │   ├── double-conversion
     │   │   ├── fmt
     │   │   ├── gflags
@@ -604,6 +664,8 @@ fb303
     │   │   ├── snappy
     │   │   ├── xz
     │   │   └── zstd
+    │   │       ├── lz4
+    │   │       └── xz
     │   ├── gflags
     │   ├── glog
     │   │   └── gflags
@@ -616,12 +678,16 @@ fb303
     │   │   └── ca-certificates
     │   ├── snappy
     │   └── zstd
+    │       ├── lz4
+    │       └── xz
     ├── fmt
     ├── folly
     │   ├── boost
     │   │   ├── icu4c
     │   │   ├── xz
     │   │   └── zstd
+    │   │       ├── lz4
+    │   │       └── xz
     │   ├── double-conversion
     │   ├── fmt
     │   ├── gflags
@@ -636,6 +702,8 @@ fb303
     │   ├── snappy
     │   ├── xz
     │   └── zstd
+    │       ├── lz4
+    │       └── xz
     ├── gflags
     ├── glog
     │   └── gflags
@@ -648,17 +716,23 @@ fb303
     │   └── ca-certificates
     ├── snappy
     └── zstd
+        ├── lz4
+        └── xz
 
 fbthrift
 ├── boost
 │   ├── icu4c
 │   ├── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── fizz
 │   ├── boost
 │   │   ├── icu4c
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── double-conversion
 │   ├── fmt
 │   ├── folly
@@ -666,6 +740,8 @@ fbthrift
 │   │   │   ├── icu4c
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -680,6 +756,8 @@ fbthrift
 │   │   ├── snappy
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── gflags
 │   ├── glog
 │   │   └── gflags
@@ -692,12 +770,16 @@ fbthrift
 │   │   └── ca-certificates
 │   ├── snappy
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── fmt
 ├── folly
 │   ├── boost
 │   │   ├── icu4c
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -712,6 +794,8 @@ fbthrift
 │   ├── snappy
 │   ├── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── gflags
 ├── glog
 │   └── gflags
@@ -722,12 +806,16 @@ fbthrift
 │   │   ├── icu4c
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── double-conversion
 │   ├── fizz
 │   │   ├── boost
 │   │   │   ├── icu4c
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── folly
@@ -735,6 +823,8 @@ fbthrift
 │   │   │   │   ├── icu4c
 │   │   │   │   ├── xz
 │   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
 │   │   │   ├── double-conversion
 │   │   │   ├── fmt
 │   │   │   ├── gflags
@@ -749,6 +839,8 @@ fbthrift
 │   │   │   ├── snappy
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── gflags
 │   │   ├── glog
 │   │   │   └── gflags
@@ -761,12 +853,16 @@ fbthrift
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── fmt
 │   ├── folly
 │   │   ├── boost
 │   │   │   ├── icu4c
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -781,6 +877,8 @@ fbthrift
 │   │   ├── snappy
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── gflags
 │   ├── glog
 │   │   └── gflags
@@ -793,13 +891,19 @@ fbthrift
 │   │   └── ca-certificates
 │   ├── snappy
 │   └── zstd
+│       ├── lz4
+│       └── xz
 └── zstd
+    ├── lz4
+    └── xz
 
 fizz
 ├── boost
 │   ├── icu4c
 │   ├── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── double-conversion
 ├── fmt
 ├── folly
@@ -807,6 +911,8 @@ fizz
 │   │   ├── icu4c
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -821,6 +927,8 @@ fizz
 │   ├── snappy
 │   ├── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── gflags
 ├── glog
 │   └── gflags
@@ -833,6 +941,8 @@ fizz
 │   └── ca-certificates
 ├── snappy
 └── zstd
+    ├── lz4
+    └── xz
 
 flow
 
@@ -843,6 +953,8 @@ folly
 │   ├── icu4c
 │   ├── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── double-conversion
 ├── fmt
 ├── gflags
@@ -857,6 +969,8 @@ folly
 ├── snappy
 ├── xz
 └── zstd
+    ├── lz4
+    └── xz
 
 fontconfig
 └── freetype
@@ -880,35 +994,35 @@ gd
 │       └── libpng
 ├── freetype
 │   └── libpng
-├── jpeg
+├── jpeg-turbo
 ├── libavif
 │   ├── aom
 │   │   ├── jpeg-xl
 │   │   │   ├── brotli
 │   │   │   ├── giflib
 │   │   │   ├── imath
-│   │   │   ├── jpeg
+│   │   │   ├── jpeg-turbo
 │   │   │   ├── libpng
 │   │   │   ├── openexr
 │   │   │   │   └── imath
 │   │   │   └── webp
 │   │   │       ├── giflib
-│   │   │       ├── jpeg
+│   │   │       ├── jpeg-turbo
 │   │   │       ├── libpng
 │   │   │       └── libtiff
-│   │   │           └── jpeg
+│   │   │           └── jpeg-turbo
 │   │   └── libvmaf
-│   ├── jpeg
+│   ├── jpeg-turbo
 │   └── libpng
 ├── libpng
 ├── libtiff
-│   └── jpeg
+│   └── jpeg-turbo
 └── webp
     ├── giflib
-    ├── jpeg
+    ├── jpeg-turbo
     ├── libpng
     └── libtiff
-        └── jpeg
+        └── jpeg-turbo
 
 gdbm
 
@@ -923,23 +1037,23 @@ ghostscript
 ├── freetype
 │   └── libpng
 ├── jbig2dec
-├── jpeg
+├── jpeg-turbo
 ├── libidn
 ├── libpng
 ├── libtiff
-│   └── jpeg
+│   └── jpeg-turbo
 ├── little-cms2
-│   ├── jpeg
+│   ├── jpeg-turbo
 │   └── libtiff
-│       └── jpeg
+│       └── jpeg-turbo
 └── openjpeg
     ├── libpng
     ├── libtiff
-    │   └── jpeg
+    │   └── jpeg-turbo
     └── little-cms2
-        ├── jpeg
+        ├── jpeg-turbo
         └── libtiff
-            └── jpeg
+            └── jpeg-turbo
 
 giflib
 
@@ -951,7 +1065,6 @@ git-lfs
 
 glib
 ├── gettext
-├── libffi
 └── pcre
 
 glog
@@ -1038,7 +1151,7 @@ gnutls
     └── openssl@1.1
         └── ca-certificates
 
-go@1.17
+go@1.18
 
 gradle
 └── openjdk
@@ -1056,6 +1169,8 @@ guile
 ├── pkg-config
 └── readline
 
+hub
+
 icu4c
 
 imagemagick
@@ -1068,49 +1183,48 @@ imagemagick
 │   ├── freetype
 │   │   └── libpng
 │   ├── jbig2dec
-│   ├── jpeg
+│   ├── jpeg-turbo
 │   ├── libidn
 │   ├── libpng
 │   ├── libtiff
-│   │   └── jpeg
+│   │   └── jpeg-turbo
 │   ├── little-cms2
-│   │   ├── jpeg
+│   │   ├── jpeg-turbo
 │   │   └── libtiff
-│   │       └── jpeg
+│   │       └── jpeg-turbo
 │   └── openjpeg
 │       ├── libpng
 │       ├── libtiff
-│       │   └── jpeg
+│       │   └── jpeg-turbo
 │       └── little-cms2
-│           ├── jpeg
+│           ├── jpeg-turbo
 │           └── libtiff
-│               └── jpeg
-├── jpeg
+│               └── jpeg-turbo
+├── jpeg-turbo
 ├── libheif
 │   ├── aom
 │   │   ├── jpeg-xl
 │   │   │   ├── brotli
 │   │   │   ├── giflib
 │   │   │   ├── imath
-│   │   │   ├── jpeg
+│   │   │   ├── jpeg-turbo
 │   │   │   ├── libpng
 │   │   │   ├── openexr
 │   │   │   │   └── imath
 │   │   │   └── webp
 │   │   │       ├── giflib
-│   │   │       ├── jpeg
+│   │   │       ├── jpeg-turbo
 │   │   │       ├── libpng
 │   │   │       └── libtiff
-│   │   │           └── jpeg
+│   │   │           └── jpeg-turbo
 │   │   └── libvmaf
-│   ├── jpeg
+│   ├── jpeg-turbo
 │   ├── libde265
 │   ├── libpng
 │   ├── shared-mime-info
 │   │   ├── gettext
 │   │   ├── glib
 │   │   │   ├── gettext
-│   │   │   ├── libffi
 │   │   │   └── pcre
 │   │   └── xmlto
 │   │       ├── docbook
@@ -1121,70 +1235,69 @@ imagemagick
 ├── liblqr
 │   └── glib
 │       ├── gettext
-│       ├── libffi
 │       └── pcre
 ├── libpng
 ├── libraw
 │   ├── jasper
-│   │   └── jpeg
-│   ├── jpeg
+│   │   └── jpeg-turbo
+│   ├── jpeg-turbo
 │   ├── little-cms2
-│   │   ├── jpeg
+│   │   ├── jpeg-turbo
 │   │   └── libtiff
-│   │       └── jpeg
+│   │       └── jpeg-turbo
 │   └── libomp
 ├── libtiff
-│   └── jpeg
+│   └── jpeg-turbo
 ├── libtool
 │   └── m4
 ├── little-cms2
-│   ├── jpeg
+│   ├── jpeg-turbo
 │   └── libtiff
-│       └── jpeg
+│       └── jpeg-turbo
 ├── openexr
 │   └── imath
 ├── openjpeg
 │   ├── libpng
 │   ├── libtiff
-│   │   └── jpeg
+│   │   └── jpeg-turbo
 │   └── little-cms2
-│       ├── jpeg
+│       ├── jpeg-turbo
 │       └── libtiff
-│           └── jpeg
+│           └── jpeg-turbo
 ├── webp
 │   ├── giflib
-│   ├── jpeg
+│   ├── jpeg-turbo
 │   ├── libpng
 │   └── libtiff
-│       └── jpeg
+│       └── jpeg-turbo
 ├── xz
 └── libomp
 
 imath
 
 jasper
-└── jpeg
+└── jpeg-turbo
 
 jbig2dec
 
 jenv
 
-jpeg
+jpeg-turbo
 
 jpeg-xl
 ├── brotli
 ├── giflib
 ├── imath
-├── jpeg
+├── jpeg-turbo
 ├── libpng
 ├── openexr
 │   └── imath
 └── webp
     ├── giflib
-    ├── jpeg
+    ├── jpeg-turbo
     ├── libpng
     └── libtiff
-        └── jpeg
+        └── jpeg-turbo
 
 jq
 └── oniguruma
@@ -1202,18 +1315,18 @@ libavif
 │   │   ├── brotli
 │   │   ├── giflib
 │   │   ├── imath
-│   │   ├── jpeg
+│   │   ├── jpeg-turbo
 │   │   ├── libpng
 │   │   ├── openexr
 │   │   │   └── imath
 │   │   └── webp
 │   │       ├── giflib
-│   │       ├── jpeg
+│   │       ├── jpeg-turbo
 │   │       ├── libpng
 │   │       └── libtiff
-│   │           └── jpeg
+│   │           └── jpeg-turbo
 │   └── libvmaf
-├── jpeg
+├── jpeg-turbo
 └── libpng
 
 libde265
@@ -1235,25 +1348,24 @@ libheif
 │   │   ├── brotli
 │   │   ├── giflib
 │   │   ├── imath
-│   │   ├── jpeg
+│   │   ├── jpeg-turbo
 │   │   ├── libpng
 │   │   ├── openexr
 │   │   │   └── imath
 │   │   └── webp
 │   │       ├── giflib
-│   │       ├── jpeg
+│   │       ├── jpeg-turbo
 │   │       ├── libpng
 │   │       └── libtiff
-│   │           └── jpeg
+│   │           └── jpeg-turbo
 │   └── libvmaf
-├── jpeg
+├── jpeg-turbo
 ├── libde265
 ├── libpng
 ├── shared-mime-info
 │   ├── gettext
 │   ├── glib
 │   │   ├── gettext
-│   │   ├── libffi
 │   │   └── pcre
 │   └── xmlto
 │       ├── docbook
@@ -1274,7 +1386,6 @@ libksba
 liblqr
 └── glib
     ├── gettext
-    ├── libffi
     └── pcre
 
 libnghttp2
@@ -1292,12 +1403,12 @@ libpq
 
 libraw
 ├── jasper
-│   └── jpeg
-├── jpeg
+│   └── jpeg-turbo
+├── jpeg-turbo
 ├── little-cms2
-│   ├── jpeg
+│   ├── jpeg-turbo
 │   └── libtiff
-│       └── jpeg
+│       └── jpeg-turbo
 └── libomp
 
 libsodium
@@ -1309,7 +1420,7 @@ libssh2
 libtasn1
 
 libtiff
-└── jpeg
+└── jpeg-turbo
 
 libtool
 └── m4
@@ -1326,17 +1437,34 @@ libyaml
 
 libzip
 └── zstd
+    ├── lz4
+    └── xz
 
 little-cms2
-├── jpeg
+├── jpeg-turbo
 └── libtiff
-    └── jpeg
+    └── jpeg-turbo
+
+llvm
+└── python@3.10
+    ├── gdbm
+    ├── mpdecimal
+    ├── openssl@1.1
+    │   └── ca-certificates
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+lokalise/cli-2/lokalise2
 
 lz4
 
 lzo
 
 m4
+
+macos-term-size
 
 maven
 └── openjdk
@@ -1358,6 +1486,16 @@ mpdecimal
 
 nettle
 └── gmp
+
+node@12
+├── brotli
+├── c-ares
+├── icu4c
+├── libnghttp2
+├── libuv
+├── openssl@1.1
+│   └── ca-certificates
+└── macos-term-size
 
 node@16
 ├── brotli
@@ -1416,11 +1554,11 @@ openjdk
 openjpeg
 ├── libpng
 ├── libtiff
-│   └── jpeg
+│   └── jpeg-turbo
 └── little-cms2
-    ├── jpeg
+    ├── jpeg-turbo
     └── libtiff
-        └── jpeg
+        └── jpeg-turbo
 
 openldap
 └── openssl@1.1
@@ -1442,6 +1580,8 @@ p11-kit
 ├── ca-certificates
 ├── libffi
 └── libtasn1
+
+parallel
 
 pcre
 
@@ -1475,6 +1615,8 @@ php@7.4
 │   │   └── openssl@1.1
 │   │       └── ca-certificates
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── freetds
 │   ├── openssl@1.1
 │   │   └── ca-certificates
@@ -1487,35 +1629,35 @@ php@7.4
 │   │       └── libpng
 │   ├── freetype
 │   │   └── libpng
-│   ├── jpeg
+│   ├── jpeg-turbo
 │   ├── libavif
 │   │   ├── aom
 │   │   │   ├── jpeg-xl
 │   │   │   │   ├── brotli
 │   │   │   │   ├── giflib
 │   │   │   │   ├── imath
-│   │   │   │   ├── jpeg
+│   │   │   │   ├── jpeg-turbo
 │   │   │   │   ├── libpng
 │   │   │   │   ├── openexr
 │   │   │   │   │   └── imath
 │   │   │   │   └── webp
 │   │   │   │       ├── giflib
-│   │   │   │       ├── jpeg
+│   │   │   │       ├── jpeg-turbo
 │   │   │   │       ├── libpng
 │   │   │   │       └── libtiff
-│   │   │   │           └── jpeg
+│   │   │   │           └── jpeg-turbo
 │   │   │   └── libvmaf
-│   │   ├── jpeg
+│   │   ├── jpeg-turbo
 │   │   └── libpng
 │   ├── libpng
 │   ├── libtiff
-│   │   └── jpeg
+│   │   └── jpeg-turbo
 │   └── webp
 │       ├── giflib
-│       ├── jpeg
+│       ├── jpeg-turbo
 │       ├── libpng
 │       └── libtiff
-│           └── jpeg
+│           └── jpeg-turbo
 ├── gettext
 ├── gmp
 ├── icu4c
@@ -1531,6 +1673,8 @@ php@7.4
 ├── libsodium
 ├── libzip
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── oniguruma
 ├── openldap
 │   └── openssl@1.1
@@ -1574,16 +1718,6 @@ python@3.10
 │   └── readline
 └── xz
 
-python@3.9
-├── gdbm
-├── mpdecimal
-├── openssl@1.1
-│   └── ca-certificates
-├── readline
-├── sqlite
-│   └── readline
-└── xz
-
 rbenv
 └── ruby-build
     ├── autoconf
@@ -1609,7 +1743,6 @@ shared-mime-info
 ├── gettext
 ├── glib
 │   ├── gettext
-│   ├── libffi
 │   └── pcre
 └── xmlto
     ├── docbook
@@ -1634,6 +1767,8 @@ temurin17
 
 tidy-html5
 
+transcrypt
+
 tree
 
 unbound
@@ -1653,12 +1788,16 @@ wangle
 │   ├── icu4c
 │   ├── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── double-conversion
 ├── fizz
 │   ├── boost
 │   │   ├── icu4c
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── double-conversion
 │   ├── fmt
 │   ├── folly
@@ -1666,6 +1805,8 @@ wangle
 │   │   │   ├── icu4c
 │   │   │   ├── xz
 │   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
 │   │   ├── double-conversion
 │   │   ├── fmt
 │   │   ├── gflags
@@ -1680,6 +1821,8 @@ wangle
 │   │   ├── snappy
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── gflags
 │   ├── glog
 │   │   └── gflags
@@ -1692,12 +1835,16 @@ wangle
 │   │   └── ca-certificates
 │   ├── snappy
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── fmt
 ├── folly
 │   ├── boost
 │   │   ├── icu4c
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -1712,6 +1859,8 @@ wangle
 │   ├── snappy
 │   ├── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── gflags
 ├── glog
 │   └── gflags
@@ -1724,18 +1873,369 @@ wangle
 │   └── ca-certificates
 ├── snappy
 └── zstd
+    ├── lz4
+    └── xz
 
 watchman
 ├── boost
 │   ├── icu4c
 │   ├── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
+├── fb303
+│   ├── fbthrift
+│   │   ├── boost
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── fizz
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@1.1
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@1.1
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── wangle
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fizz
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── folly
+│   │   │   │   │   ├── boost
+│   │   │   │   │   │   ├── icu4c
+│   │   │   │   │   │   ├── xz
+│   │   │   │   │   │   └── zstd
+│   │   │   │   │   │       ├── lz4
+│   │   │   │   │   │       └── xz
+│   │   │   │   │   ├── double-conversion
+│   │   │   │   │   ├── fmt
+│   │   │   │   │   ├── gflags
+│   │   │   │   │   ├── glog
+│   │   │   │   │   │   └── gflags
+│   │   │   │   │   ├── libevent
+│   │   │   │   │   │   └── openssl@1.1
+│   │   │   │   │   │       └── ca-certificates
+│   │   │   │   │   ├── lz4
+│   │   │   │   │   ├── openssl@1.1
+│   │   │   │   │   │   └── ca-certificates
+│   │   │   │   │   ├── snappy
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@1.1
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@1.1
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@1.1
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@1.1
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fizz
+│   │   ├── boost
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@1.1
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@1.1
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   └── wangle
+│       ├── boost
+│       │   ├── icu4c
+│       │   ├── xz
+│       │   └── zstd
+│       │       ├── lz4
+│       │       └── xz
+│       ├── double-conversion
+│       ├── fizz
+│       │   ├── boost
+│       │   │   ├── icu4c
+│       │   │   ├── xz
+│       │   │   └── zstd
+│       │   │       ├── lz4
+│       │   │       └── xz
+│       │   ├── double-conversion
+│       │   ├── fmt
+│       │   ├── folly
+│       │   │   ├── boost
+│       │   │   │   ├── icu4c
+│       │   │   │   ├── xz
+│       │   │   │   └── zstd
+│       │   │   │       ├── lz4
+│       │   │   │       └── xz
+│       │   │   ├── double-conversion
+│       │   │   ├── fmt
+│       │   │   ├── gflags
+│       │   │   ├── glog
+│       │   │   │   └── gflags
+│       │   │   ├── libevent
+│       │   │   │   └── openssl@1.1
+│       │   │   │       └── ca-certificates
+│       │   │   ├── lz4
+│       │   │   ├── openssl@1.1
+│       │   │   │   └── ca-certificates
+│       │   │   ├── snappy
+│       │   │   ├── xz
+│       │   │   └── zstd
+│       │   │       ├── lz4
+│       │   │       └── xz
+│       │   ├── gflags
+│       │   ├── glog
+│       │   │   └── gflags
+│       │   ├── libevent
+│       │   │   └── openssl@1.1
+│       │   │       └── ca-certificates
+│       │   ├── libsodium
+│       │   ├── lz4
+│       │   ├── openssl@1.1
+│       │   │   └── ca-certificates
+│       │   ├── snappy
+│       │   └── zstd
+│       │       ├── lz4
+│       │       └── xz
+│       ├── fmt
+│       ├── folly
+│       │   ├── boost
+│       │   │   ├── icu4c
+│       │   │   ├── xz
+│       │   │   └── zstd
+│       │   │       ├── lz4
+│       │   │       └── xz
+│       │   ├── double-conversion
+│       │   ├── fmt
+│       │   ├── gflags
+│       │   ├── glog
+│       │   │   └── gflags
+│       │   ├── libevent
+│       │   │   └── openssl@1.1
+│       │   │       └── ca-certificates
+│       │   ├── lz4
+│       │   ├── openssl@1.1
+│       │   │   └── ca-certificates
+│       │   ├── snappy
+│       │   ├── xz
+│       │   └── zstd
+│       │       ├── lz4
+│       │       └── xz
+│       ├── gflags
+│       ├── glog
+│       │   └── gflags
+│       ├── libevent
+│       │   └── openssl@1.1
+│       │       └── ca-certificates
+│       ├── libsodium
+│       ├── lz4
+│       ├── openssl@1.1
+│       │   └── ca-certificates
+│       ├── snappy
+│       └── zstd
+│           ├── lz4
+│           └── xz
 ├── fmt
 ├── folly
 │   ├── boost
 │   │   ├── icu4c
 │   │   ├── xz
 │   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
 │   ├── double-conversion
 │   ├── fmt
 │   ├── gflags
@@ -1750,6 +2250,8 @@ watchman
 │   ├── snappy
 │   ├── xz
 │   └── zstd
+│       ├── lz4
+│       └── xz
 ├── gflags
 ├── glog
 │   └── gflags
@@ -1758,308 +2260,23 @@ watchman
 │       └── ca-certificates
 ├── openssl@1.1
 │   └── ca-certificates
-├── pcre
-├── python@3.10
-│   ├── gdbm
-│   ├── mpdecimal
-│   ├── openssl@1.1
-│   │   └── ca-certificates
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-└── fb303
-    ├── fbthrift
-    │   ├── boost
-    │   │   ├── icu4c
-    │   │   ├── xz
-    │   │   └── zstd
-    │   ├── fizz
-    │   │   ├── boost
-    │   │   │   ├── icu4c
-    │   │   │   ├── xz
-    │   │   │   └── zstd
-    │   │   ├── double-conversion
-    │   │   ├── fmt
-    │   │   ├── folly
-    │   │   │   ├── boost
-    │   │   │   │   ├── icu4c
-    │   │   │   │   ├── xz
-    │   │   │   │   └── zstd
-    │   │   │   ├── double-conversion
-    │   │   │   ├── fmt
-    │   │   │   ├── gflags
-    │   │   │   ├── glog
-    │   │   │   │   └── gflags
-    │   │   │   ├── libevent
-    │   │   │   │   └── openssl@1.1
-    │   │   │   │       └── ca-certificates
-    │   │   │   ├── lz4
-    │   │   │   ├── openssl@1.1
-    │   │   │   │   └── ca-certificates
-    │   │   │   ├── snappy
-    │   │   │   ├── xz
-    │   │   │   └── zstd
-    │   │   ├── gflags
-    │   │   ├── glog
-    │   │   │   └── gflags
-    │   │   ├── libevent
-    │   │   │   └── openssl@1.1
-    │   │   │       └── ca-certificates
-    │   │   ├── libsodium
-    │   │   ├── lz4
-    │   │   ├── openssl@1.1
-    │   │   │   └── ca-certificates
-    │   │   ├── snappy
-    │   │   └── zstd
-    │   ├── fmt
-    │   ├── folly
-    │   │   ├── boost
-    │   │   │   ├── icu4c
-    │   │   │   ├── xz
-    │   │   │   └── zstd
-    │   │   ├── double-conversion
-    │   │   ├── fmt
-    │   │   ├── gflags
-    │   │   ├── glog
-    │   │   │   └── gflags
-    │   │   ├── libevent
-    │   │   │   └── openssl@1.1
-    │   │   │       └── ca-certificates
-    │   │   ├── lz4
-    │   │   ├── openssl@1.1
-    │   │   │   └── ca-certificates
-    │   │   ├── snappy
-    │   │   ├── xz
-    │   │   └── zstd
-    │   ├── gflags
-    │   ├── glog
-    │   │   └── gflags
-    │   ├── openssl@1.1
-    │   │   └── ca-certificates
-    │   ├── wangle
-    │   │   ├── boost
-    │   │   │   ├── icu4c
-    │   │   │   ├── xz
-    │   │   │   └── zstd
-    │   │   ├── double-conversion
-    │   │   ├── fizz
-    │   │   │   ├── boost
-    │   │   │   │   ├── icu4c
-    │   │   │   │   ├── xz
-    │   │   │   │   └── zstd
-    │   │   │   ├── double-conversion
-    │   │   │   ├── fmt
-    │   │   │   ├── folly
-    │   │   │   │   ├── boost
-    │   │   │   │   │   ├── icu4c
-    │   │   │   │   │   ├── xz
-    │   │   │   │   │   └── zstd
-    │   │   │   │   ├── double-conversion
-    │   │   │   │   ├── fmt
-    │   │   │   │   ├── gflags
-    │   │   │   │   ├── glog
-    │   │   │   │   │   └── gflags
-    │   │   │   │   ├── libevent
-    │   │   │   │   │   └── openssl@1.1
-    │   │   │   │   │       └── ca-certificates
-    │   │   │   │   ├── lz4
-    │   │   │   │   ├── openssl@1.1
-    │   │   │   │   │   └── ca-certificates
-    │   │   │   │   ├── snappy
-    │   │   │   │   ├── xz
-    │   │   │   │   └── zstd
-    │   │   │   ├── gflags
-    │   │   │   ├── glog
-    │   │   │   │   └── gflags
-    │   │   │   ├── libevent
-    │   │   │   │   └── openssl@1.1
-    │   │   │   │       └── ca-certificates
-    │   │   │   ├── libsodium
-    │   │   │   ├── lz4
-    │   │   │   ├── openssl@1.1
-    │   │   │   │   └── ca-certificates
-    │   │   │   ├── snappy
-    │   │   │   └── zstd
-    │   │   ├── fmt
-    │   │   ├── folly
-    │   │   │   ├── boost
-    │   │   │   │   ├── icu4c
-    │   │   │   │   ├── xz
-    │   │   │   │   └── zstd
-    │   │   │   ├── double-conversion
-    │   │   │   ├── fmt
-    │   │   │   ├── gflags
-    │   │   │   ├── glog
-    │   │   │   │   └── gflags
-    │   │   │   ├── libevent
-    │   │   │   │   └── openssl@1.1
-    │   │   │   │       └── ca-certificates
-    │   │   │   ├── lz4
-    │   │   │   ├── openssl@1.1
-    │   │   │   │   └── ca-certificates
-    │   │   │   ├── snappy
-    │   │   │   ├── xz
-    │   │   │   └── zstd
-    │   │   ├── gflags
-    │   │   ├── glog
-    │   │   │   └── gflags
-    │   │   ├── libevent
-    │   │   │   └── openssl@1.1
-    │   │   │       └── ca-certificates
-    │   │   ├── libsodium
-    │   │   ├── lz4
-    │   │   ├── openssl@1.1
-    │   │   │   └── ca-certificates
-    │   │   ├── snappy
-    │   │   └── zstd
-    │   └── zstd
-    ├── fizz
-    │   ├── boost
-    │   │   ├── icu4c
-    │   │   ├── xz
-    │   │   └── zstd
-    │   ├── double-conversion
-    │   ├── fmt
-    │   ├── folly
-    │   │   ├── boost
-    │   │   │   ├── icu4c
-    │   │   │   ├── xz
-    │   │   │   └── zstd
-    │   │   ├── double-conversion
-    │   │   ├── fmt
-    │   │   ├── gflags
-    │   │   ├── glog
-    │   │   │   └── gflags
-    │   │   ├── libevent
-    │   │   │   └── openssl@1.1
-    │   │   │       └── ca-certificates
-    │   │   ├── lz4
-    │   │   ├── openssl@1.1
-    │   │   │   └── ca-certificates
-    │   │   ├── snappy
-    │   │   ├── xz
-    │   │   └── zstd
-    │   ├── gflags
-    │   ├── glog
-    │   │   └── gflags
-    │   ├── libevent
-    │   │   └── openssl@1.1
-    │   │       └── ca-certificates
-    │   ├── libsodium
-    │   ├── lz4
-    │   ├── openssl@1.1
-    │   │   └── ca-certificates
-    │   ├── snappy
-    │   └── zstd
-    ├── fmt
-    ├── folly
-    │   ├── boost
-    │   │   ├── icu4c
-    │   │   ├── xz
-    │   │   └── zstd
-    │   ├── double-conversion
-    │   ├── fmt
-    │   ├── gflags
-    │   ├── glog
-    │   │   └── gflags
-    │   ├── libevent
-    │   │   └── openssl@1.1
-    │   │       └── ca-certificates
-    │   ├── lz4
-    │   ├── openssl@1.1
-    │   │   └── ca-certificates
-    │   ├── snappy
-    │   ├── xz
-    │   └── zstd
-    ├── gflags
-    ├── glog
-    │   └── gflags
+├── pcre2
+└── python@3.10
+    ├── gdbm
+    ├── mpdecimal
     ├── openssl@1.1
     │   └── ca-certificates
-    └── wangle
-        ├── boost
-        │   ├── icu4c
-        │   ├── xz
-        │   └── zstd
-        ├── double-conversion
-        ├── fizz
-        │   ├── boost
-        │   │   ├── icu4c
-        │   │   ├── xz
-        │   │   └── zstd
-        │   ├── double-conversion
-        │   ├── fmt
-        │   ├── folly
-        │   │   ├── boost
-        │   │   │   ├── icu4c
-        │   │   │   ├── xz
-        │   │   │   └── zstd
-        │   │   ├── double-conversion
-        │   │   ├── fmt
-        │   │   ├── gflags
-        │   │   ├── glog
-        │   │   │   └── gflags
-        │   │   ├── libevent
-        │   │   │   └── openssl@1.1
-        │   │   │       └── ca-certificates
-        │   │   ├── lz4
-        │   │   ├── openssl@1.1
-        │   │   │   └── ca-certificates
-        │   │   ├── snappy
-        │   │   ├── xz
-        │   │   └── zstd
-        │   ├── gflags
-        │   ├── glog
-        │   │   └── gflags
-        │   ├── libevent
-        │   │   └── openssl@1.1
-        │   │       └── ca-certificates
-        │   ├── libsodium
-        │   ├── lz4
-        │   ├── openssl@1.1
-        │   │   └── ca-certificates
-        │   ├── snappy
-        │   └── zstd
-        ├── fmt
-        ├── folly
-        │   ├── boost
-        │   │   ├── icu4c
-        │   │   ├── xz
-        │   │   └── zstd
-        │   ├── double-conversion
-        │   ├── fmt
-        │   ├── gflags
-        │   ├── glog
-        │   │   └── gflags
-        │   ├── libevent
-        │   │   └── openssl@1.1
-        │   │       └── ca-certificates
-        │   ├── lz4
-        │   ├── openssl@1.1
-        │   │   └── ca-certificates
-        │   ├── snappy
-        │   ├── xz
-        │   └── zstd
-        ├── gflags
-        ├── glog
-        │   └── gflags
-        ├── libevent
-        │   └── openssl@1.1
-        │       └── ca-certificates
-        ├── libsodium
-        ├── lz4
-        ├── openssl@1.1
-        │   └── ca-certificates
-        ├── snappy
-        └── zstd
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
 
 webp
 ├── giflib
-├── jpeg
+├── jpeg-turbo
 ├── libpng
 └── libtiff
-    └── jpeg
+    └── jpeg-turbo
 
 wget
 ├── libidn2
@@ -2097,6 +2314,8 @@ yamllint
 yarn
 
 zstd
+├── lz4
+└── xz
 
 ========================================
 
@@ -2113,7 +2332,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.0.3.1
-* Bundler: Bundler version 2.3.19
+* Bundler: Bundler version 2.3.20
 * CocoaPods: 1.11.3
 * xcpretty: 0.3.0
 ========================================
@@ -2121,19 +2340,19 @@ zstd
 
 === All Ruby GEMs ======================
 activesupport (6.1.6.1)
-addressable (2.8.0)
+addressable (2.8.1)
 algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.616.0)
-aws-sdk-core (3.132.0)
+aws-partitions (1.621.0)
+aws-sdk-core (3.134.0)
 aws-sdk-kms (1.58.0)
 aws-sdk-s3 (1.114.0)
 aws-sigv4 (1.5.1)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
-bundler (2.3.19, default: 1.17.2)
+bundler (2.3.20, default: 1.17.2)
 CFPropertyList (3.0.5)
 claide (1.1.0)
 clamp (1.3.2)
@@ -2164,7 +2383,7 @@ escape (0.0.4)
 etc (default: 1.0.1)
 ethon (0.15.0)
 excon (0.92.4)
-faraday (1.10.1)
+faraday (1.10.2)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
 faraday-em_synchrony (1.0.0)
@@ -2178,7 +2397,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
-fastlane (2.208.0)
+fastlane (2.209.1)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -2235,7 +2454,7 @@ plist (3.6.0)
 power_assert (1.1.3)
 prime (default: 0.1.0)
 psych (default: 3.1.0)
-public_suffix (4.0.7)
+public_suffix (5.0.0, 4.0.7)
 racc (1.6.0)
 rake (12.3.3)
 rdoc (default: 6.1.2.1)
@@ -2320,7 +2539,7 @@ usr
 
  * /Library/Developer/CommandLineTools/usr/bin/swift --version
 Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-Target: arm64-apple-darwin21.5.0
+Target: arm64-apple-darwin21.6.0
 
 ========================================
 
@@ -2328,11 +2547,11 @@ Target: arm64-apple-darwin21.5.0
 === Xcode ==============================
 
 * Active Xcode Command Line Tools:
-/Applications/Xcode-14.beta.5.app/Contents/Developer
+/Applications/Xcode-14.beta.6.app/Contents/Developer
 
 * Xcode Version:
 Xcode 14.0
-Build version 14A5294e
+Build version 14A5294g
 
 * /usr/bin/swift --version
 Apple Swift version 5.7 (swiftlang-5.7.0.123.8 clang-1400.0.29.50)
@@ -2451,55 +2670,55 @@ tvOS 16.0 (16.0 - 20J5355f) - com.apple.CoreSimulator.SimRuntime.tvOS-16-0
 watchOS 9.0 (9.0 - 20R5343e) - com.apple.CoreSimulator.SimRuntime.watchOS-9-0
 == Devices ==
 -- iOS 16.0 --
-    iPhone 8 (1FA54E54-ECF0-4134-8DF6-A3C1926A4E0B) (Shutdown) 
-    iPhone 8 Plus (9156C96B-CC73-49B4-B3BF-F7825ADA4591) (Shutdown) 
-    iPhone 11 (6B82047B-0D18-4E00-BE66-D535C50443F6) (Shutdown) 
-    iPhone 11 Pro (9AB4805B-7B20-4AAF-BF18-ADA54F3E7AEB) (Shutdown) 
-    iPhone 11 Pro Max (5B64E8A1-6B0B-4DEC-8B41-44F121238A09) (Shutdown) 
-    iPhone 12 mini (F3A52669-A2FC-426A-9898-D8BE4EC84A65) (Shutdown) 
-    iPhone 12 (5D7DBD47-B63D-4CEE-8314-D079B6024F24) (Shutdown) 
-    iPhone 12 Pro (8C602A66-1FC0-47B3-954C-EE1E048C8993) (Shutdown) 
-    iPhone 12 Pro Max (FC121D51-04C8-424C-A790-FF6726F1241B) (Shutdown) 
-    iPhone 13 Pro (37162889-EF5B-4CA9-9DEC-9857DB254534) (Shutdown) 
-    iPhone 13 Pro Max (D651FCE3-4320-474B-A4B3-E80D1C06819D) (Shutdown) 
-    iPhone 13 mini (F4490321-626F-4DB7-8086-0ADC56624A15) (Shutdown) 
-    iPhone 13 (696AD9E1-22FE-499E-83D5-F34959A3742C) (Shutdown) 
-    iPhone SE (3rd generation) (F4AADFE9-79FE-4BDF-A206-81D62E68C981) (Shutdown) 
-    iPad Pro (9.7-inch) (7500195B-1D8F-4698-B5AC-6A58BF51D873) (Shutdown) 
-    iPad Pro (11-inch) (3rd generation) (430864AE-7F2C-46BF-808C-41A6650A664B) (Shutdown) 
-    iPad Pro (12.9-inch) (5th generation) (8CC62B28-1B2A-4F7F-84D3-A04EF93476E9) (Shutdown) 
-    iPad Air (5th generation) (F4C6B862-37C7-4694-B28A-C0F4FC0D34A2) (Shutdown) 
-    iPad mini (6th generation) (CB4D2375-6882-4A93-B5D3-817756957ACC) (Shutdown) 
+    iPhone 8 (6BDF9EF1-C7D7-4B08-AC67-57B69478B236) (Shutdown) 
+    iPhone 8 Plus (C98ED425-DE08-4A74-9458-9BDE5C6FCE54) (Shutdown) 
+    iPhone 11 (D074AE45-8486-4643-A6A0-14F4FB8D6187) (Shutdown) 
+    iPhone 11 Pro (220C6192-BAA8-421E-AD56-3C609ACAB4B9) (Shutdown) 
+    iPhone 11 Pro Max (04A5D53C-6A38-454E-BE9D-6E175FE40CA8) (Shutdown) 
+    iPhone 12 mini (A01185C4-6CC5-408F-9A75-F6C74F6F7B40) (Shutdown) 
+    iPhone 12 (61CBAF1C-5E86-4CB8-9D15-072A8E99AA0D) (Shutdown) 
+    iPhone 12 Pro (9EF9B75A-EF11-4403-8FB2-A91ACB2FE7D4) (Shutdown) 
+    iPhone 12 Pro Max (EA5505D2-D570-479E-AC26-15CDC3569DC3) (Shutdown) 
+    iPhone 13 Pro (7E604CF0-0E13-4C00-9993-4CA9A0448B19) (Shutdown) 
+    iPhone 13 Pro Max (C563023A-2A54-4320-9A63-FA4617DD9A35) (Shutdown) 
+    iPhone 13 mini (50E5D6F6-C897-4837-A5AF-3DB58E3BF432) (Shutdown) 
+    iPhone 13 (11F45A41-A1D5-465A-A047-8F7CC587F0C5) (Shutdown) 
+    iPhone SE (3rd generation) (85C0D056-4AD8-45DD-B5B0-2EE1230C36F1) (Shutdown) 
+    iPad Pro (9.7-inch) (7EC04FD8-0A9B-4278-A010-5C0B96143E92) (Shutdown) 
+    iPad Pro (11-inch) (3rd generation) (761D7DB3-BB87-4EC7-BD33-F591D46C8296) (Shutdown) 
+    iPad Pro (12.9-inch) (5th generation) (AF38CC8C-3DEE-4F51-A86D-97030E249FA6) (Shutdown) 
+    iPad Air (5th generation) (E523A3BF-910F-4EBB-83F7-4B3D6E79CAEC) (Shutdown) 
+    iPad mini (6th generation) (94C8A17C-32AC-4186-B597-F5CD2CABC869) (Shutdown) 
 -- tvOS 16.0 --
-    Apple TV (9646E29A-228D-44E1-AC7B-0D5B50180D90) (Shutdown) 
-    Apple TV 4K (2nd generation) (622126FA-7D2C-4A87-ABC0-B60D4726E83A) (Shutdown) 
-    Apple TV 4K (at 1080p) (2nd generation) (8E4609F9-66C7-4322-B657-8A339EE67217) (Shutdown) 
+    Apple TV (BB6088F5-6FB8-4876-957D-B3CB7891563E) (Shutdown) 
+    Apple TV 4K (2nd generation) (A3C2F850-258D-41B6-8ACF-F447745B14AA) (Shutdown) 
+    Apple TV 4K (at 1080p) (2nd generation) (3D73D7F6-AC25-4D36-A6B4-1DED7B1939A9) (Shutdown) 
 -- watchOS 9.0 --
-    Apple Watch Series 5 - 40mm (F9547615-8AA7-4770-AB5D-4D3CFF6E0266) (Shutdown) 
-    Apple Watch Series 5 - 44mm (3116F584-6231-461D-821D-5A85033D5B15) (Shutdown) 
-    Apple Watch Series 6 - 40mm (02C9A3EF-7BE7-439B-B2A1-3CC76B8969FF) (Shutdown) 
-    Apple Watch Series 6 - 44mm (C6A26A52-0126-4FB0-A45B-DB7990402D1B) (Shutdown) 
-    Apple Watch Series 7 - 41mm (4DB0E193-90CE-46DB-8CBD-96155C08D26B) (Shutdown) 
-    Apple Watch Series 7 - 45mm (A54BB9CA-EF82-411E-A13B-5A6385EB9003) (Shutdown) 
+    Apple Watch Series 5 - 40mm (4F0102EA-AB5D-4847-A6DC-CCAFABA88E83) (Shutdown) 
+    Apple Watch Series 5 - 44mm (A2190E8B-0643-4994-AEA2-FDBBEA8748BB) (Shutdown) 
+    Apple Watch Series 6 - 40mm (3E6CAFE3-2264-4F96-9403-BBA2A64621D7) (Shutdown) 
+    Apple Watch Series 6 - 44mm (A07F160B-5205-401A-893D-15233484583D) (Shutdown) 
+    Apple Watch Series 7 - 41mm (F2A843E1-BF8F-4A7D-B1CB-3C13772FCB4F) (Shutdown) 
+    Apple Watch Series 7 - 45mm (9362C28D-B549-4A16-9CA9-65105463D0B2) (Shutdown) 
 == Device Pairs ==
-150F196F-7C21-4FE3-8695-8DCFF3D786B5 (active, disconnected)
-    Watch: Apple Watch Series 5 - 40mm (F9547615-8AA7-4770-AB5D-4D3CFF6E0266) (Shutdown)
-    Phone: iPhone 12 Pro (8C602A66-1FC0-47B3-954C-EE1E048C8993) (Shutdown)
-03D0EDF9-54CA-4F1E-B451-6304EE281DC1 (active, disconnected)
-    Watch: Apple Watch Series 5 - 44mm (3116F584-6231-461D-821D-5A85033D5B15) (Shutdown)
-    Phone: iPhone 12 Pro Max (FC121D51-04C8-424C-A790-FF6726F1241B) (Shutdown)
-73FB75AB-746D-4B5D-A24F-298A70219B05 (active, disconnected)
-    Watch: Apple Watch Series 6 - 40mm (02C9A3EF-7BE7-439B-B2A1-3CC76B8969FF) (Shutdown)
-    Phone: iPhone 13 Pro (37162889-EF5B-4CA9-9DEC-9857DB254534) (Shutdown)
-B037773C-85BD-49A1-83E2-68A308064D18 (active, disconnected)
-    Watch: Apple Watch Series 6 - 44mm (C6A26A52-0126-4FB0-A45B-DB7990402D1B) (Shutdown)
-    Phone: iPhone 13 Pro Max (D651FCE3-4320-474B-A4B3-E80D1C06819D) (Shutdown)
-E8B7512B-316E-4A8F-A608-12E448916215 (active, disconnected)
-    Watch: Apple Watch Series 7 - 41mm (4DB0E193-90CE-46DB-8CBD-96155C08D26B) (Shutdown)
-    Phone: iPhone 13 mini (F4490321-626F-4DB7-8086-0ADC56624A15) (Shutdown)
-6B711ECC-DB77-4EA2-8624-E1A6537C3CF4 (active, disconnected)
-    Watch: Apple Watch Series 7 - 45mm (A54BB9CA-EF82-411E-A13B-5A6385EB9003) (Shutdown)
-    Phone: iPhone 13 (696AD9E1-22FE-499E-83D5-F34959A3742C) (Shutdown)
+45BEDCD8-DBD0-4757-92B6-2AE63E464BBC (active, disconnected)
+    Watch: Apple Watch Series 5 - 40mm (4F0102EA-AB5D-4847-A6DC-CCAFABA88E83) (Shutdown)
+    Phone: iPhone 12 Pro (9EF9B75A-EF11-4403-8FB2-A91ACB2FE7D4) (Shutdown)
+BB4F12DF-B0A5-4AA3-8708-B3E87A57DC6A (active, disconnected)
+    Watch: Apple Watch Series 5 - 44mm (A2190E8B-0643-4994-AEA2-FDBBEA8748BB) (Shutdown)
+    Phone: iPhone 12 Pro Max (EA5505D2-D570-479E-AC26-15CDC3569DC3) (Shutdown)
+BF724F62-B065-4D28-9DB6-BD337DA99793 (active, disconnected)
+    Watch: Apple Watch Series 6 - 40mm (3E6CAFE3-2264-4F96-9403-BBA2A64621D7) (Shutdown)
+    Phone: iPhone 13 Pro (7E604CF0-0E13-4C00-9993-4CA9A0448B19) (Shutdown)
+05120AAA-C5C5-4E06-B806-5C408AB5759F (active, disconnected)
+    Watch: Apple Watch Series 6 - 44mm (A07F160B-5205-401A-893D-15233484583D) (Shutdown)
+    Phone: iPhone 13 Pro Max (C563023A-2A54-4320-9A63-FA4617DD9A35) (Shutdown)
+E130AEC2-F24B-4946-AC95-7EB60A376575 (active, disconnected)
+    Watch: Apple Watch Series 7 - 41mm (F2A843E1-BF8F-4A7D-B1CB-3C13772FCB4F) (Shutdown)
+    Phone: iPhone 13 mini (50E5D6F6-C897-4837-A5AF-3DB58E3BF432) (Shutdown)
+ADCAFB5C-5796-482C-9143-D5DE2C446B50 (active, disconnected)
+    Watch: Apple Watch Series 7 - 45mm (9362C28D-B549-4A16-9CA9-65105463D0B2) (Shutdown)
+    Phone: iPhone 13 (11F45A41-A1D5-465A-A047-8F7CC587F0C5) (Shutdown)
 
 ========================================
 
@@ -2508,23 +2727,23 @@ E8B7512B-316E-4A8F-A608-12E448916215 (active, disconnected)
 
 * sw_vers
 ProductName:	macOS
-ProductVersion:	12.4
-BuildVersion:	21F79
+ProductVersion:	12.5
+BuildVersion:	21G72
 
 * system_profiler SPSoftwareDataType
 Software:
 
     System Software Overview:
 
-      System Version: macOS 12.4 (21F79)
-      Kernel Version: Darwin 21.5.0
+      System Version: macOS 12.5 (21G72)
+      Kernel Version: Darwin 21.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-14.0.x-g2-m1.8core-4f454059-2a31-4024-acd7-ba3f0e79eaa0
-      User Name: vagrant (vagrant)
+      Computer Name: vm-osx-xcode-14.0.x-g2-m1.8core-63609e8e-ee8f-4df1-8e93-ee27348a9603
+      User Name: Vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 6 minutes
+      Time since boot: 53 minutes
 
 
 ========================================
@@ -2533,7 +2752,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        123Gi         39Gi
+/dev/disk3s1s1        295Gi        210Gi
 ========================================
 
 --- Android
@@ -2638,7 +2857,7 @@ android-32
  * SDK packages:
 * Command line Tools version: 6.0
 * Platform Tools version: 33.0.2
-* Emulator version: 31.2.10
+* Emulator version: 31.3.10
 ========================================
 
 
