@@ -7,14 +7,14 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2022_08_24_1
+* BITRISE_OSX_STACK_REV_ID: v2022_10_11_v2
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.18.5 darwin/arm64
+* Go: go version go1.18.7 darwin/arm64
 * Python: Python 2.7.18
-* Node.js: v16.17.0
+* Node.js: v16.17.1
 * NPM: 8.15.0
 * Yarn: 1.22.19
 * Java:   system
@@ -35,47 +35,52 @@
 2.10.3 (global)
 1.22.6
 
-* git: git version 2.37.2
+=== Dart global packages ==================
+junitreport 2.0.2
+===========================================
+
+
+* git: git version 2.38.0
 * git lfs: git-lfs/3.2.0 (GitHub; darwin arm64; go 1.18.2)
-* mercurial/hg: Mercurial Distributed SCM (version 6.1.4)
+* mercurial/hg: Mercurial Distributed SCM (version 6.2.3)
 * curl: curl 7.79.1 (x86_64-apple-darwin21.0) libcurl/7.79.1 (SecureTransport) LibreSSL/3.3.6 zlib/1.2.11 nghttp2/1.45.1
 * wget: GNU Wget 1.21.3 built on darwin21.3.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: bsdtar 3.5.1 - libarchive 3.5.1 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
-* tree: tree v2.0.2 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
+* tree: tree v2.0.4 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.5.10
-Homebrew/homebrew-core (git revision ec329ebfc89; last commit 2022-08-24)
-Homebrew/homebrew-cask (git revision c9d9b61421; last commit 2022-08-24)
-* Ansible: ansible [core 2.13.3]
+* brew: Homebrew 3.6.5
+Homebrew/homebrew-core (git revision 20a991bff17; last commit 2022-10-07)
+Homebrew/homebrew-cask (git revision 83d4e3bd02; last commit 2022-10-07)
+* Ansible: ansible [core 2.13.4]
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /opt/homebrew/Cellar/ansible/6.3.0/libexec/lib/python3.10/site-packages/ansible
+  ansible python module location = /opt/homebrew/Cellar/ansible/6.4.0/libexec/lib/python3.10/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /opt/homebrew/bin/ansible
 * gtimeout: timeout (GNU coreutils) 9.1
-* watchman: 2022.08.22.00
-* flow: Flow, a static type checker for JavaScript, version 0.185.1
+* watchman: 2022.10.03.00
+* flow: Flow, a static type checker for JavaScript, version 0.188.2
 * carthage: 0.38.0
-* imagemagick (convert): Version: ImageMagick 7.1.0-46 Q16-HDRI aarch64 20370 https://imagemagick.org
-* ghostscript (ps2ascii): 9.56.1
+* imagemagick (convert): Version: ImageMagick 7.1.0-49 Q16-HDRI aarch64 20471 https://imagemagick.org
+* ghostscript (ps2ascii): 10.00.0
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 11.8.0
 * applesimutils version 0.9.7
 * jq: 1.6
-* 0.13.0
+* xcbeautify: 0.14.0
 * XCLogParser 0.2.34
 * Screen 4.09.00
 * applesimutils 0.9.7
 * OpenConnect version v9.01
-* aws-cli: aws-cli/2.7.25 Python/3.10.6 Darwin/21.6.0 source/arm64 prompt/off
-* cmake: 3.24.1
+* aws-cli: aws-cli/2.7.31 Python/3.10.7 Darwin/21.6.0 source/arm64 prompt/off
+* cmake: 3.24.2
 * danger-swift: 3.14.0
 [0;0m
 * OpenVPN 2.5.7 arm-apple-darwin21.5.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] built on Jun  8 2022
-* tuist: 3.8.0
+* tuist: 3.12.0
 
 --- Bitrise CLI tool versions
 * bitrise: 1.50.0
@@ -86,38 +91,40 @@ Homebrew/homebrew-cask (git revision c9d9b61421; last commit 2022-08-24)
 
 
 === Brew list versions ==================
-ansible 6.3.0
+ansible 6.4.0
 ant 1.10.12
-aom 3.4.0
+aom 3.5.0_1
 applesimutils 0.9.7
 apr 1.7.0_3
 apr-util 1.6.1_4
 argon2 20190702_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.7.25
-bazelisk 1.12.2
-bdw-gc 8.0.6
-boost 1.79.0_1
+awscli 2.7.31
+bazelisk 1.14.0
+bdw-gc 8.2.2
+boost 1.80.0
 brotli 1.0.9
 c-ares 1.18.1_1
 ca-certificates 2022-07-19_1
+cairo 1.16.0_5
 carthage 0.38.0
-cmake 3.24.1
+cmake 3.24.2
 coreutils 9.1
-curl 7.84.0
-danger-js 11.1.2
+curl 7.85.0
+danger-js 11.1.4
 danger-swift 3.14.0
-dart 2.18.0
+dart 2.18.2
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 double-conversion 3.2.1
-fb303 2022.08.22.00
-fbthrift 2022.08.22.00
-fizz 2022.08.22.00
-flow 0.185.1
-fmt 9.0.0
-folly 2022.08.22.00
+edencommon 2022.10.03.00
+fb303 2022.10.03.00
+fbthrift 2022.10.03.00
+fizz 2022.10.03.00
+flow 0.188.2
+fmt 9.1.0
+folly 2022.10.03.00
 fontconfig 2.14.0
 freetds 1.3.13
 freetype 2.12.1
@@ -126,47 +133,51 @@ gd 2.3.3_3
 gdbm 1.23
 gettext 0.21
 gflags 2.2.2
-ghostscript 9.56.1_1
+ghostscript 10.0.0
 giflib 5.2.1
-git 2.37.2
+git 2.38.0
 git-lfs 3.2.0
-glib 2.72.3_1
+glib 2.74.0
 glog 0.6.0
 gmp 6.2.1_1
 gnu-getopt 2.38.1
 gnupg 2.3.7_1
-gnutls 3.7.7
-go@1.18 1.18.5
-gradle 7.5.1
-groovy 4.0.4
-guile 3.0.8_1
+gnutls 3.7.8
+go@1.18 1.18.7
+gradle 7.5.1_1
+graphite2 1.3.14
+groovy 4.0.5
+guile 3.0.8_2
+harfbuzz 5.2.0
+highway 1.0.1
 hub 2.14.2
-icu4c 70.1
-imagemagick 7.1.0-46
+icu4c 71.1
+imagemagick 7.1.0-49_1
 imath 3.1.5
 jasper 3.0.6_2
 jbig2dec 0.19
 jenv 0.5.5_2
 jpeg-turbo 2.1.4
-jpeg-xl 0.6.1_1
+jpeg-xl 0.7.0_1
 jq 1.6
 krb5 1.20
 libassuan 2.5.5
-libavif 0.10.1_1
+libavif 0.10.1_2
 libde265 1.0.8
 libevent 2.1.12
-libffi 3.4.2
+libffi 3.4.3
 libgcrypt 1.10.1
 libgpg-error 1.45
-libheif 1.12.0_2
+libheif 1.13.0_1
 libidn 1.41
 libidn2 2.3.3
-libksba 1.6.0
+libksba 1.6.1
 liblqr 0.4.2_1
-libnghttp2 1.48.0
+libnghttp2 1.50.0
 libomp 14.0.6
-libpng 1.6.37
+libpng 1.6.38
 libpq 14.5
+libpthread-stubs 0.4
 libraw 0.20.2_3
 libsodium 1.0.18_1
 libssh2 1.10.0
@@ -177,68 +188,79 @@ libunistring 1.0
 libusb 1.0.26
 libuv 1.44.2
 libvmaf 2.3.1
+libx11 1.8.1
+libxau 1.0.10
+libxcb 1.15
+libxdmcp 1.1.3
+libxext 1.3.4
+libxrender 0.9.10
 libyaml 0.2.5
 libzip 1.9.2
 little-cms2 2.13.1_1
-llvm 14.0.6_1
+llvm 15.0.2
 lokalise2 2.6.8
 lz4 1.9.4
 lzo 2.10
 m4 1.4.19
 macos-term-size 1.0.0
 maven 3.8.6
-mercurial 6.1.4
-mint 0.17.1
+mercurial 6.2.3
+mint 0.17.2
 mpdecimal 2.5.1
 nettle 3.8.1
-node@12 12.22.12
-node@16 16.17.0
+node@12 12.22.12_1
+node@16 16.17.1
 npth 1.6
 oniguruma 6.9.8
 openconnect 9.01_2
 openexr 3.1.5
-openjdk 18.0.2
+openjdk 19
+openjdk@17 17.0.4.1_1
 openjpeg 2.5.0
 openldap 2.6.3
 openssl@1.1 1.1.1q
 openvpn 2.5.7
-p11-kit 0.24.1
-parallel 20220822
+p11-kit 0.24.1_1
+parallel 20220922
 pcre 8.45
 pcre2 10.40
-php@7.4 7.4.30
-pinentry 1.2.0
+php@7.4 7.4.32
+pinentry 1.2.1
+pixman 0.40.0
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
-pyenv 2.3.3
-python@3.10 3.10.6_1
+pyenv 2.3.4
+python@3.10 3.10.7
+pyyaml 6.0
 rbenv 1.2.0
 readline 8.1.2
 rtmpdump 2.4+20151223_1
-ruby-build 20220726
+ruby-build 20221004
 screen 4.9.0
 shared-mime-info 2.2
 six 1.16.0_2
 snappy 1.1.9
-sqlite 3.39.2
+sqlite 3.39.4
 stoken 0.92_1
-swiftlint 0.48.0
+swiftlint 0.49.1
 tidy-html5 5.8.0
 transcrypt 2.2.0
-tree 2.0.2
-unbound 1.16.2
+tree 2.0.4
+unbound 1.16.3
 unixodbc 2.3.11
-wangle 2022.08.22.00
-watchman 2022.08.22.00
+wangle 2022.10.03.00
+watchman 2022.10.03.00
 webp 1.2.4
 wget 1.21.3
 x265 3.5
-xcbeautify 0.13.0
+xcbeautify 0.14.0
 xclogparser 0.2.34
 xmlto 0.0.28
-xz 5.2.6
-yamllint 1.27.1
+xorgproto 2022.2
+xz 5.2.7
+yamllint 1.28.0
 yarn 1.22.19
+z3 4.11.2
 zstd 1.5.2
 adoptopenjdk11 11.0.11,9
 adoptopenjdk8 8,292:b10
@@ -252,7 +274,6 @@ adoptopenjdk/openjdk/adoptopenjdk11
 adoptopenjdk/openjdk/adoptopenjdk8
 
 ansible
-├── libyaml
 ├── openssl@1.1
 │   └── ca-certificates
 ├── python@3.10
@@ -264,15 +285,83 @@ ansible
 │   ├── sqlite
 │   │   └── readline
 │   └── xz
+├── pyyaml
+│   └── libyaml
 └── six
 
 ant
 └── openjdk
+    ├── giflib
+    ├── harfbuzz
+    │   ├── cairo
+    │   │   ├── fontconfig
+    │   │   │   └── freetype
+    │   │   │       └── libpng
+    │   │   ├── freetype
+    │   │   │   └── libpng
+    │   │   ├── glib
+    │   │   │   ├── gettext
+    │   │   │   └── pcre2
+    │   │   ├── libpng
+    │   │   ├── libx11
+    │   │   │   ├── libxcb
+    │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   └── pkg-config
+    │   │   │   │   ├── libxau
+    │   │   │   │   │   └── xorgproto
+    │   │   │   │   └── libxdmcp
+    │   │   │   │       └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxcb
+    │   │   │   ├── libpthread-stubs
+    │   │   │   │   └── pkg-config
+    │   │   │   ├── libxau
+    │   │   │   │   └── xorgproto
+    │   │   │   └── libxdmcp
+    │   │   │       └── xorgproto
+    │   │   ├── libxext
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxrender
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── lzo
+    │   │   └── pixman
+    │   ├── freetype
+    │   │   └── libpng
+    │   ├── glib
+    │   │   ├── gettext
+    │   │   └── pcre2
+    │   ├── graphite2
+    │   └── icu4c
+    ├── jpeg-turbo
+    ├── libpng
+    └── little-cms2
+        ├── jpeg-turbo
+        └── libtiff
+            └── jpeg-turbo
 
 aom
 ├── jpeg-xl
 │   ├── brotli
 │   ├── giflib
+│   ├── highway
 │   ├── imath
 │   ├── jpeg-turbo
 │   ├── libpng
@@ -331,6 +420,57 @@ c-ares
 
 ca-certificates
 
+cairo
+├── fontconfig
+│   └── freetype
+│       └── libpng
+├── freetype
+│   └── libpng
+├── glib
+│   ├── gettext
+│   └── pcre2
+├── libpng
+├── libx11
+│   ├── libxcb
+│   │   ├── libpthread-stubs
+│   │   │   └── pkg-config
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   └── xorgproto
+├── libxcb
+│   ├── libpthread-stubs
+│   │   └── pkg-config
+│   ├── libxau
+│   │   └── xorgproto
+│   └── libxdmcp
+│       └── xorgproto
+├── libxext
+│   ├── libx11
+│   │   ├── libxcb
+│   │   │   ├── libpthread-stubs
+│   │   │   │   └── pkg-config
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   └── xorgproto
+│   └── xorgproto
+├── libxrender
+│   ├── libx11
+│   │   ├── libxcb
+│   │   │   ├── libpthread-stubs
+│   │   │   │   └── pkg-config
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   └── xorgproto
+│   └── xorgproto
+├── lzo
+└── pixman
+
 carthage
 
 cmake
@@ -372,6 +512,34 @@ docbook-xsl
 └── docbook
 
 double-conversion
+
+edencommon
+├── folly
+│   ├── boost
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── gflags
+└── glog
+    └── gflags
 
 fb303
 ├── fbthrift
@@ -1000,6 +1168,7 @@ gd
 │   │   ├── jpeg-xl
 │   │   │   ├── brotli
 │   │   │   ├── giflib
+│   │   │   ├── highway
 │   │   │   ├── imath
 │   │   │   ├── jpeg-turbo
 │   │   │   ├── libpng
@@ -1065,7 +1234,7 @@ git-lfs
 
 glib
 ├── gettext
-└── pcre
+└── pcre2
 
 glog
 └── gflags
@@ -1082,7 +1251,6 @@ gnupg
 │   ├── guile
 │   │   ├── bdw-gc
 │   │   ├── gmp
-│   │   ├── libffi
 │   │   ├── libtool
 │   │   │   └── m4
 │   │   ├── libunistring
@@ -1097,7 +1265,6 @@ gnupg
 │   │   └── gmp
 │   ├── p11-kit
 │   │   ├── ca-certificates
-│   │   ├── libffi
 │   │   └── libtasn1
 │   └── unbound
 │       ├── libevent
@@ -1126,7 +1293,6 @@ gnutls
 ├── guile
 │   ├── bdw-gc
 │   ├── gmp
-│   ├── libffi
 │   ├── libtool
 │   │   └── m4
 │   ├── libunistring
@@ -1141,7 +1307,6 @@ gnutls
 │   └── gmp
 ├── p11-kit
 │   ├── ca-certificates
-│   ├── libffi
 │   └── libtasn1
 └── unbound
     ├── libevent
@@ -1154,20 +1319,147 @@ gnutls
 go@1.18
 
 gradle
-└── openjdk
+└── openjdk@17
+
+graphite2
 
 groovy
 └── openjdk
+    ├── giflib
+    ├── harfbuzz
+    │   ├── cairo
+    │   │   ├── fontconfig
+    │   │   │   └── freetype
+    │   │   │       └── libpng
+    │   │   ├── freetype
+    │   │   │   └── libpng
+    │   │   ├── glib
+    │   │   │   ├── gettext
+    │   │   │   └── pcre2
+    │   │   ├── libpng
+    │   │   ├── libx11
+    │   │   │   ├── libxcb
+    │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   └── pkg-config
+    │   │   │   │   ├── libxau
+    │   │   │   │   │   └── xorgproto
+    │   │   │   │   └── libxdmcp
+    │   │   │   │       └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxcb
+    │   │   │   ├── libpthread-stubs
+    │   │   │   │   └── pkg-config
+    │   │   │   ├── libxau
+    │   │   │   │   └── xorgproto
+    │   │   │   └── libxdmcp
+    │   │   │       └── xorgproto
+    │   │   ├── libxext
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxrender
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── lzo
+    │   │   └── pixman
+    │   ├── freetype
+    │   │   └── libpng
+    │   ├── glib
+    │   │   ├── gettext
+    │   │   └── pcre2
+    │   ├── graphite2
+    │   └── icu4c
+    ├── jpeg-turbo
+    ├── libpng
+    └── little-cms2
+        ├── jpeg-turbo
+        └── libtiff
+            └── jpeg-turbo
 
 guile
 ├── bdw-gc
 ├── gmp
-├── libffi
 ├── libtool
 │   └── m4
 ├── libunistring
 ├── pkg-config
 └── readline
+
+harfbuzz
+├── cairo
+│   ├── fontconfig
+│   │   └── freetype
+│   │       └── libpng
+│   ├── freetype
+│   │   └── libpng
+│   ├── glib
+│   │   ├── gettext
+│   │   └── pcre2
+│   ├── libpng
+│   ├── libx11
+│   │   ├── libxcb
+│   │   │   ├── libpthread-stubs
+│   │   │   │   └── pkg-config
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   └── xorgproto
+│   ├── libxcb
+│   │   ├── libpthread-stubs
+│   │   │   └── pkg-config
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   ├── libxext
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libpthread-stubs
+│   │   │   │   │   └── pkg-config
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   └── xorgproto
+│   ├── libxrender
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libpthread-stubs
+│   │   │   │   │   └── pkg-config
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   └── xorgproto
+│   ├── lzo
+│   └── pixman
+├── freetype
+│   └── libpng
+├── glib
+│   ├── gettext
+│   └── pcre2
+├── graphite2
+└── icu4c
+
+highway
 
 hub
 
@@ -1206,6 +1498,7 @@ imagemagick
 │   │   ├── jpeg-xl
 │   │   │   ├── brotli
 │   │   │   ├── giflib
+│   │   │   ├── highway
 │   │   │   ├── imath
 │   │   │   ├── jpeg-turbo
 │   │   │   ├── libpng
@@ -1225,7 +1518,7 @@ imagemagick
 │   │   ├── gettext
 │   │   ├── glib
 │   │   │   ├── gettext
-│   │   │   └── pcre
+│   │   │   └── pcre2
 │   │   └── xmlto
 │   │       ├── docbook
 │   │       ├── docbook-xsl
@@ -1235,7 +1528,7 @@ imagemagick
 ├── liblqr
 │   └── glib
 │       ├── gettext
-│       └── pcre
+│       └── pcre2
 ├── libpng
 ├── libraw
 │   ├── jasper
@@ -1287,6 +1580,7 @@ jpeg-turbo
 jpeg-xl
 ├── brotli
 ├── giflib
+├── highway
 ├── imath
 ├── jpeg-turbo
 ├── libpng
@@ -1314,6 +1608,7 @@ libavif
 │   ├── jpeg-xl
 │   │   ├── brotli
 │   │   ├── giflib
+│   │   ├── highway
 │   │   ├── imath
 │   │   ├── jpeg-turbo
 │   │   ├── libpng
@@ -1347,6 +1642,7 @@ libheif
 │   ├── jpeg-xl
 │   │   ├── brotli
 │   │   ├── giflib
+│   │   ├── highway
 │   │   ├── imath
 │   │   ├── jpeg-turbo
 │   │   ├── libpng
@@ -1366,7 +1662,7 @@ libheif
 │   ├── gettext
 │   ├── glib
 │   │   ├── gettext
-│   │   └── pcre
+│   │   └── pcre2
 │   └── xmlto
 │       ├── docbook
 │       ├── docbook-xsl
@@ -1386,7 +1682,7 @@ libksba
 liblqr
 └── glib
     ├── gettext
-    └── pcre
+    └── pcre2
 
 libnghttp2
 
@@ -1400,6 +1696,9 @@ libpq
 │       └── ca-certificates
 └── openssl@1.1
     └── ca-certificates
+
+libpthread-stubs
+└── pkg-config
 
 libraw
 ├── jasper
@@ -1433,6 +1732,54 @@ libuv
 
 libvmaf
 
+libx11
+├── libxcb
+│   ├── libpthread-stubs
+│   │   └── pkg-config
+│   ├── libxau
+│   │   └── xorgproto
+│   └── libxdmcp
+│       └── xorgproto
+└── xorgproto
+
+libxau
+└── xorgproto
+
+libxcb
+├── libpthread-stubs
+│   └── pkg-config
+├── libxau
+│   └── xorgproto
+└── libxdmcp
+    └── xorgproto
+
+libxdmcp
+└── xorgproto
+
+libxext
+├── libx11
+│   ├── libxcb
+│   │   ├── libpthread-stubs
+│   │   │   └── pkg-config
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   └── xorgproto
+└── xorgproto
+
+libxrender
+├── libx11
+│   ├── libxcb
+│   │   ├── libpthread-stubs
+│   │   │   └── pkg-config
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   └── xorgproto
+└── xorgproto
+
 libyaml
 
 libzip
@@ -1446,14 +1793,19 @@ little-cms2
     └── jpeg-turbo
 
 llvm
-└── python@3.10
-    ├── gdbm
-    ├── mpdecimal
-    ├── openssl@1.1
-    │   └── ca-certificates
-    ├── readline
-    ├── sqlite
-    │   └── readline
+├── python@3.10
+│   ├── gdbm
+│   ├── mpdecimal
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+├── six
+├── z3
+└── zstd
+    ├── lz4
     └── xz
 
 lokalise/cli-2/lokalise2
@@ -1468,6 +1820,71 @@ macos-term-size
 
 maven
 └── openjdk
+    ├── giflib
+    ├── harfbuzz
+    │   ├── cairo
+    │   │   ├── fontconfig
+    │   │   │   └── freetype
+    │   │   │       └── libpng
+    │   │   ├── freetype
+    │   │   │   └── libpng
+    │   │   ├── glib
+    │   │   │   ├── gettext
+    │   │   │   └── pcre2
+    │   │   ├── libpng
+    │   │   ├── libx11
+    │   │   │   ├── libxcb
+    │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   └── pkg-config
+    │   │   │   │   ├── libxau
+    │   │   │   │   │   └── xorgproto
+    │   │   │   │   └── libxdmcp
+    │   │   │   │       └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxcb
+    │   │   │   ├── libpthread-stubs
+    │   │   │   │   └── pkg-config
+    │   │   │   ├── libxau
+    │   │   │   │   └── xorgproto
+    │   │   │   └── libxdmcp
+    │   │   │       └── xorgproto
+    │   │   ├── libxext
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxrender
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── lzo
+    │   │   └── pixman
+    │   ├── freetype
+    │   │   └── libpng
+    │   ├── glib
+    │   │   ├── gettext
+    │   │   └── pcre2
+    │   ├── graphite2
+    │   └── icu4c
+    ├── jpeg-turbo
+    ├── libpng
+    └── little-cms2
+        ├── jpeg-turbo
+        └── libtiff
+            └── jpeg-turbo
 
 mercurial
 └── python@3.10
@@ -1518,7 +1935,6 @@ openconnect
 │   ├── guile
 │   │   ├── bdw-gc
 │   │   ├── gmp
-│   │   ├── libffi
 │   │   ├── libtool
 │   │   │   └── m4
 │   │   ├── libunistring
@@ -1533,7 +1949,6 @@ openconnect
 │   │   └── gmp
 │   ├── p11-kit
 │   │   ├── ca-certificates
-│   │   ├── libffi
 │   │   └── libtasn1
 │   └── unbound
 │       ├── libevent
@@ -1550,6 +1965,73 @@ openexr
 └── imath
 
 openjdk
+├── giflib
+├── harfbuzz
+│   ├── cairo
+│   │   ├── fontconfig
+│   │   │   └── freetype
+│   │   │       └── libpng
+│   │   ├── freetype
+│   │   │   └── libpng
+│   │   ├── glib
+│   │   │   ├── gettext
+│   │   │   └── pcre2
+│   │   ├── libpng
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libpthread-stubs
+│   │   │   │   │   └── pkg-config
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxcb
+│   │   │   ├── libpthread-stubs
+│   │   │   │   └── pkg-config
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   ├── libxext
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libpthread-stubs
+│   │   │   │   │   │   └── pkg-config
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxrender
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libpthread-stubs
+│   │   │   │   │   │   └── pkg-config
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── lzo
+│   │   └── pixman
+│   ├── freetype
+│   │   └── libpng
+│   ├── glib
+│   │   ├── gettext
+│   │   └── pcre2
+│   ├── graphite2
+│   └── icu4c
+├── jpeg-turbo
+├── libpng
+└── little-cms2
+    ├── jpeg-turbo
+    └── libtiff
+        └── jpeg-turbo
+
+openjdk@17
 
 openjpeg
 ├── libpng
@@ -1578,7 +2060,6 @@ openvpn
 
 p11-kit
 ├── ca-certificates
-├── libffi
 └── libtasn1
 
 parallel
@@ -1635,6 +2116,7 @@ php@7.4
 │   │   │   ├── jpeg-xl
 │   │   │   │   ├── brotli
 │   │   │   │   ├── giflib
+│   │   │   │   ├── highway
 │   │   │   │   ├── imath
 │   │   │   │   ├── jpeg-turbo
 │   │   │   │   ├── libpng
@@ -1694,6 +2176,8 @@ pinentry
 │   └── libgpg-error
 └── libgpg-error
 
+pixman
+
 pkcs11-helper
 └── openssl@1.1
     └── ca-certificates
@@ -1717,6 +2201,9 @@ python@3.10
 ├── sqlite
 │   └── readline
 └── xz
+
+pyyaml
+└── libyaml
 
 rbenv
 └── ruby-build
@@ -1743,7 +2230,7 @@ shared-mime-info
 ├── gettext
 ├── glib
 │   ├── gettext
-│   └── pcre
+│   └── pcre2
 └── xmlto
     ├── docbook
     ├── docbook-xsl
@@ -1883,6 +2370,33 @@ watchman
 │   └── zstd
 │       ├── lz4
 │       └── xz
+├── edencommon
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   └── glog
+│       └── gflags
 ├── fb303
 │   ├── fbthrift
 │   │   ├── boost
@@ -2297,21 +2811,26 @@ xmlto
 │   └── docbook
 └── gnu-getopt
 
+xorgproto
+
 xz
 
 yamllint
-├── libyaml
-└── python@3.10
-    ├── gdbm
-    ├── mpdecimal
-    ├── openssl@1.1
-    │   └── ca-certificates
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    └── xz
+├── python@3.10
+│   ├── gdbm
+│   ├── mpdecimal
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+└── pyyaml
+    └── libyaml
 
 yarn
+
+z3
 
 zstd
 ├── lz4
@@ -2327,12 +2846,14 @@ zstd
 * 2.6.9 (set by /Users/vagrant/.rbenv/version)
   2.7.2
   2.7.5
+  2.7.6
   3.0.0
   3.0.3
+  3.1.0
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.0.3.1
-* Bundler: Bundler version 2.3.21
+* Bundler: Bundler version 2.3.23
 * CocoaPods: 1.11.3
 * xcpretty: 0.3.0
 ========================================
@@ -2352,7 +2873,7 @@ aws-sdk-s3 (1.114.0)
 aws-sigv4 (1.5.1)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
-bundler (2.3.21, default: 1.17.2)
+bundler (2.3.23, 2.3.21, default: 1.17.2)
 CFPropertyList (3.0.5)
 claide (1.1.0)
 clamp (1.3.2)
@@ -2397,7 +2918,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
-fastlane (2.209.1, 2.209.0)
+fastlane (2.210.1, 2.209.1, 2.209.0)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -2423,7 +2944,7 @@ i18n (1.12.0)
 io-console (default: 0.4.7)
 ipaddr (default: 1.2.2)
 irb (default: 1.0.0)
-jazzy (0.14.2)
+jazzy (0.14.3, 0.14.2)
 jmespath (1.6.1)
 json (default: 2.1.0)
 jwt (2.4.1)
@@ -2514,8 +3035,8 @@ zlib (default: 1.0.0)
 
 === NPM global packages ==========================
 * Cordova: 11.0.0
-* Ionic: 6.19.0
-* Appcenter-CLI version: 2.10.8
+* Ionic: 6.20.1
+* Appcenter-CLI version: 2.11.0
 ========================================
 
 
@@ -2854,11 +3375,11 @@ Software:
       Kernel Version: Darwin 21.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-13.3.x-g2-m1.8core-c5e7aae0-5072-45c2-ad49-04dd0362ff65
+      Computer Name: vm-osx-xcode-13.3.x-g2-m1.8core-ff669269-ee56-4cb5-bbb9-fb43b3b1d6c9
       User Name: Vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2:13
+      Time since boot: 1:42
 
 
 ========================================
@@ -2867,7 +3388,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        295Gi        121Gi
+/dev/disk3s1s1        295Gi        120Gi
 ========================================
 
 --- Android
