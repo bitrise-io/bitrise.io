@@ -7,15 +7,15 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2022_09_08
+* BITRISE_OSX_STACK_REV_ID: v2022_10_17
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.18.6 darwin/arm64
+* Go: go version go1.18.7 darwin/arm64
 * Python: Python 2.7.18
-* Node.js: v16.17.0
-* NPM: 8.15.0
+* Node.js: v16.18.0
+* NPM: 8.19.2
 * Yarn: 1.22.19
 * Java:   system
   1.8
@@ -35,9 +35,14 @@
 2.10.3 (global)
 1.22.6
 
-* git: git version 2.37.3
+=== Dart global packages ==================
+junitreport 2.0.2
+===========================================
+
+
+* git: git version 2.38.0
 * git lfs: git-lfs/3.2.0 (GitHub; darwin arm64; go 1.18.2)
-* mercurial/hg: Mercurial Distributed SCM (version 6.1.4)
+* mercurial/hg: Mercurial Distributed SCM (version 6.2.3)
 * curl: curl 7.79.1 (x86_64-apple-darwin21.0) libcurl/7.79.1 (SecureTransport) LibreSSL/3.3.6 zlib/1.2.11 nghttp2/1.45.1
 * wget: GNU Wget 1.21.3 built on darwin21.3.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -46,33 +51,33 @@
 * tar: bsdtar 3.5.1 - libarchive 3.5.1 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.0.4 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.6.3
-Homebrew/homebrew-core (git revision 1d90b950ff0; last commit 2022-09-07)
-Homebrew/homebrew-cask (git revision e458601ff5; last commit 2022-09-07)
-* Ansible: ansible [core 2.13.3]
+* brew: Homebrew 3.6.6
+Homebrew/homebrew-core (git revision 17d7c743610; last commit 2022-10-17)
+Homebrew/homebrew-cask (git revision b7efa70bed; last commit 2022-10-17)
+* Ansible: ansible [core 2.13.5]
   config file = /Users/vagrant/git/ansible.cfg
   configured module search path = ['/Users/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /opt/homebrew/Cellar/ansible/6.3.0/libexec/lib/python3.10/site-packages/ansible
+  ansible python module location = /opt/homebrew/Cellar/ansible/6.5.0/libexec/lib/python3.10/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /opt/homebrew/bin/ansible
 * gtimeout: timeout (GNU coreutils) 9.1
-* watchman: 2022.09.05.00
-* flow: Flow, a static type checker for JavaScript, version 0.186.0
+* watchman: 2022.10.10.00
+* flow: Flow, a static type checker for JavaScript, version 0.190.0
 * carthage: 0.38.0
-* imagemagick (convert): Version: ImageMagick 7.1.0-47 Q16-HDRI aarch64 20393 https://imagemagick.org
-* ghostscript (ps2ascii): 9.56.1
+* imagemagick (convert): Version: ImageMagick 7.1.0-51 Q16-HDRI aarch64 20499 https://imagemagick.org
+* ghostscript (ps2ascii): 10.00.0
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
-* firebase: 11.11.0
+* firebase: 11.15.0
 * applesimutils version 0.9.7
 * jq: 1.6
-* 0.13.0
+* xcbeautify: 0.15.0
 * XCLogParser 0.2.34
 * Screen 4.09.00
 * applesimutils 0.9.7
 * OpenConnect version v9.01
-* aws-cli: aws-cli/2.7.29 Python/3.10.6 Darwin/21.6.0 source/arm64 prompt/off
-* cmake: 3.24.1
-* danger-swift: 3.14.0
+* aws-cli: aws-cli/2.8.3 Python/3.10.8 Darwin/21.6.0 source/arm64 prompt/off
+* cmake: 3.24.2
+* danger-swift: 3.14.2
 [0;0m
 * OpenVPN 2.5.7 arm-apple-darwin21.5.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] built on Jun  8 2022
 * tuist: 3.12.0
@@ -86,86 +91,92 @@ Homebrew/homebrew-cask (git revision e458601ff5; last commit 2022-09-07)
 
 
 === Brew list versions ==================
-ansible 6.3.0
+ansible 6.5.0
 ant 1.10.12
-aom 3.4.0
+aom 3.5.0_1
 applesimutils 0.9.7
 apr 1.7.0_3
 apr-util 1.6.1_4
 argon2 20190702_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.7.29
-bazelisk 1.13.2
+awscli 2.8.3
+bazelisk 1.14.0
 bdw-gc 8.2.2
-boost 1.79.0_2
+boost 1.80.0
 brotli 1.0.9
 c-ares 1.18.1_1
-ca-certificates 2022-07-19_1
+ca-certificates 2022-10-11
+cairo 1.16.0_5
 carthage 0.38.0
-cmake 3.24.1
+cmake 3.24.2
 coreutils 9.1
 curl 7.85.0
-danger-js 11.1.2
-danger-swift 3.14.0
-dart 2.18.1
+danger-js 11.1.4
+danger-swift 3.14.2
+dart 2.18.3
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 double-conversion 3.2.1
-fb303 2022.09.05.00
-fbthrift 2022.09.05.00
-fizz 2022.09.05.00
-flow 0.186.0
+edencommon 2022.10.10.00
+fb303 2022.10.10.00
+fbthrift 2022.10.10.00
+fizz 2022.10.10.00
+flow 0.190.0
 fmt 9.1.0
-folly 2022.09.05.00
+folly 2022.10.10.00
 fontconfig 2.14.0
 freetds 1.3.13
 freetype 2.12.1
 fvm 2.4.1
-gd 2.3.3_3
+gd 2.3.3_4
 gdbm 1.23
-gettext 0.21
+gettext 0.21.1
 gflags 2.2.2
-ghostscript 9.56.1_1
+ghostscript 10.0.0
 giflib 5.2.1
-git 2.37.3
+git 2.38.0
 git-lfs 3.2.0
-glib 2.72.3_1
+glib 2.74.0
 glog 0.6.0
 gmp 6.2.1_1
 gnu-getopt 2.38.1
-gnupg 2.3.7_1
-gnutls 3.7.7
-go@1.18 1.18.6
-gradle 7.5.1
-groovy 4.0.4
+gnupg 2.3.8
+gnutls 3.7.8
+go@1.18 1.18.7
+gradle 7.5.1_1
+graphite2 1.3.14
+groovy 4.0.6
 guile 3.0.8_2
+harfbuzz 5.3.0
+highway 1.0.1
 hub 2.14.2
 icu4c 71.1
-imagemagick 7.1.0-47
+imagemagick 7.1.0-51
 imath 3.1.5
 jasper 3.0.6_2
 jbig2dec 0.19
 jenv 0.5.5_2
 jpeg-turbo 2.1.4
-jpeg-xl 0.6.1_1
+jpeg-xl 0.7.0_1
 jq 1.6
 krb5 1.20
 libassuan 2.5.5
-libavif 0.10.1_1
+libavif 0.11.0
 libde265 1.0.8
 libevent 2.1.12
 libgcrypt 1.10.1
-libgpg-error 1.45
-libheif 1.13.0
+libgpg-error 1.46
+libheif 1.13.0_1
 libidn 1.41
 libidn2 2.3.3
-libksba 1.6.0
+libksba 1.6.2
 liblqr 0.4.2_1
-libnghttp2 1.49.0
-libomp 14.0.6
-libpng 1.6.37
-libpq 14.5
+libnghttp2 1.50.0
+libomp 15.0.2
+libpng 1.6.38
+libpq 15.0
+libpthread-stubs 0.4
 libraw 0.20.2_3
 libsodium 1.0.18_1
 libssh2 1.10.0
@@ -176,68 +187,78 @@ libunistring 1.0
 libusb 1.0.26
 libuv 1.44.2
 libvmaf 2.3.1
+libx11 1.8.1
+libxau 1.0.10
+libxcb 1.15
+libxdmcp 1.1.3
+libxext 1.3.4
+libxrender 0.9.10
 libyaml 0.2.5
 libzip 1.9.2
 little-cms2 2.13.1_1
-llvm 14.0.6_1
+llvm 15.0.2
 lokalise2 2.6.8
 lz4 1.9.4
 lzo 2.10
 m4 1.4.19
 macos-term-size 1.0.0
 maven 3.8.6
-mercurial 6.1.4
-mint 0.17.1
+mercurial 6.2.3
+mint 0.17.2
 mpdecimal 2.5.1
 nettle 3.8.1
 node@12 12.22.12_1
-node@16 16.17.0_1
+node@16 16.18.0
 npth 1.6
 oniguruma 6.9.8
 openconnect 9.01_2
 openexr 3.1.5
-openjdk 18.0.2.1
+openjdk 19
+openjdk@17 17.0.4.1_1
 openjpeg 2.5.0
 openldap 2.6.3
 openssl@1.1 1.1.1q
 openvpn 2.5.7
 p11-kit 0.24.1_1
-parallel 20220822
-pcre 8.45
+parallel 20220922
 pcre2 10.40
-php@7.4 7.4.30_1
+php@7.4 7.4.32
 pinentry 1.2.1
+pixman 0.40.0
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
-pyenv 2.3.4
-python@3.10 3.10.6_2
+pyenv 2.3.5
+python@3.10 3.10.8
+pyyaml 6.0
 rbenv 1.2.0
-readline 8.1.2
+readline 8.2.1
 rtmpdump 2.4+20151223_1
-ruby-build 20220825
+ruby-build 20221004
 screen 4.9.0
 shared-mime-info 2.2
 six 1.16.0_2
 snappy 1.1.9
-sqlite 3.39.3
+sqlite 3.39.4
 stoken 0.92_1
 swiftlint 0.49.1
 tidy-html5 5.8.0
 transcrypt 2.2.0
 tree 2.0.4
-unbound 1.16.2
+unbound 1.17.0
 unixodbc 2.3.11
-wangle 2022.09.05.00
-watchman 2022.09.05.00
+wangle 2022.10.10.00
+watchman 2022.10.10.00
 webp 1.2.4
 wget 1.21.3
 x265 3.5
-xcbeautify 0.13.0
-xclogparser 0.2.34
+xcbeautify 0.15.0
+xclogparser 0.2.34_1
 xmlto 0.0.28
-xz 5.2.6
-yamllint 1.27.1
+xorgproto 2022.2
+xz 5.2.7
+yamllint 1.28.0
 yarn 1.22.19
+z3 4.11.2
 zstd 1.5.2
 adoptopenjdk11 11.0.11,9
 adoptopenjdk8 8,292:b10
@@ -251,7 +272,6 @@ adoptopenjdk/openjdk/adoptopenjdk11
 adoptopenjdk/openjdk/adoptopenjdk8
 
 ansible
-├── libyaml
 ├── openssl@1.1
 │   └── ca-certificates
 ├── python@3.10
@@ -263,15 +283,83 @@ ansible
 │   ├── sqlite
 │   │   └── readline
 │   └── xz
+├── pyyaml
+│   └── libyaml
 └── six
 
 ant
 └── openjdk
+    ├── giflib
+    ├── harfbuzz
+    │   ├── cairo
+    │   │   ├── fontconfig
+    │   │   │   └── freetype
+    │   │   │       └── libpng
+    │   │   ├── freetype
+    │   │   │   └── libpng
+    │   │   ├── glib
+    │   │   │   ├── gettext
+    │   │   │   └── pcre2
+    │   │   ├── libpng
+    │   │   ├── libx11
+    │   │   │   ├── libxcb
+    │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   └── pkg-config
+    │   │   │   │   ├── libxau
+    │   │   │   │   │   └── xorgproto
+    │   │   │   │   └── libxdmcp
+    │   │   │   │       └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxcb
+    │   │   │   ├── libpthread-stubs
+    │   │   │   │   └── pkg-config
+    │   │   │   ├── libxau
+    │   │   │   │   └── xorgproto
+    │   │   │   └── libxdmcp
+    │   │   │       └── xorgproto
+    │   │   ├── libxext
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxrender
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── lzo
+    │   │   └── pixman
+    │   ├── freetype
+    │   │   └── libpng
+    │   ├── glib
+    │   │   ├── gettext
+    │   │   └── pcre2
+    │   ├── graphite2
+    │   └── icu4c
+    ├── jpeg-turbo
+    ├── libpng
+    └── little-cms2
+        ├── jpeg-turbo
+        └── libtiff
+            └── jpeg-turbo
 
 aom
 ├── jpeg-xl
 │   ├── brotli
 │   ├── giflib
+│   ├── highway
 │   ├── imath
 │   ├── jpeg-turbo
 │   ├── libpng
@@ -330,6 +418,57 @@ c-ares
 
 ca-certificates
 
+cairo
+├── fontconfig
+│   └── freetype
+│       └── libpng
+├── freetype
+│   └── libpng
+├── glib
+│   ├── gettext
+│   └── pcre2
+├── libpng
+├── libx11
+│   ├── libxcb
+│   │   ├── libpthread-stubs
+│   │   │   └── pkg-config
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   └── xorgproto
+├── libxcb
+│   ├── libpthread-stubs
+│   │   └── pkg-config
+│   ├── libxau
+│   │   └── xorgproto
+│   └── libxdmcp
+│       └── xorgproto
+├── libxext
+│   ├── libx11
+│   │   ├── libxcb
+│   │   │   ├── libpthread-stubs
+│   │   │   │   └── pkg-config
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   └── xorgproto
+│   └── xorgproto
+├── libxrender
+│   ├── libx11
+│   │   ├── libxcb
+│   │   │   ├── libpthread-stubs
+│   │   │   │   └── pkg-config
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   └── xorgproto
+│   └── xorgproto
+├── lzo
+└── pixman
+
 carthage
 
 cmake
@@ -371,6 +510,34 @@ docbook-xsl
 └── docbook
 
 double-conversion
+
+edencommon
+├── folly
+│   ├── boost
+│   │   ├── icu4c
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@1.1
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── gflags
+└── glog
+    └── gflags
 
 fb303
 ├── fbthrift
@@ -999,6 +1166,7 @@ gd
 │   │   ├── jpeg-xl
 │   │   │   ├── brotli
 │   │   │   ├── giflib
+│   │   │   ├── highway
 │   │   │   ├── imath
 │   │   │   ├── jpeg-turbo
 │   │   │   ├── libpng
@@ -1064,7 +1232,7 @@ git-lfs
 
 glib
 ├── gettext
-└── pcre
+└── pcre2
 
 glog
 └── gflags
@@ -1149,10 +1317,77 @@ gnutls
 go@1.18
 
 gradle
-└── openjdk
+└── openjdk@17
+
+graphite2
 
 groovy
 └── openjdk
+    ├── giflib
+    ├── harfbuzz
+    │   ├── cairo
+    │   │   ├── fontconfig
+    │   │   │   └── freetype
+    │   │   │       └── libpng
+    │   │   ├── freetype
+    │   │   │   └── libpng
+    │   │   ├── glib
+    │   │   │   ├── gettext
+    │   │   │   └── pcre2
+    │   │   ├── libpng
+    │   │   ├── libx11
+    │   │   │   ├── libxcb
+    │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   └── pkg-config
+    │   │   │   │   ├── libxau
+    │   │   │   │   │   └── xorgproto
+    │   │   │   │   └── libxdmcp
+    │   │   │   │       └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxcb
+    │   │   │   ├── libpthread-stubs
+    │   │   │   │   └── pkg-config
+    │   │   │   ├── libxau
+    │   │   │   │   └── xorgproto
+    │   │   │   └── libxdmcp
+    │   │   │       └── xorgproto
+    │   │   ├── libxext
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxrender
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── lzo
+    │   │   └── pixman
+    │   ├── freetype
+    │   │   └── libpng
+    │   ├── glib
+    │   │   ├── gettext
+    │   │   └── pcre2
+    │   ├── graphite2
+    │   └── icu4c
+    ├── jpeg-turbo
+    ├── libpng
+    └── little-cms2
+        ├── jpeg-turbo
+        └── libtiff
+            └── jpeg-turbo
 
 guile
 ├── bdw-gc
@@ -1162,6 +1397,67 @@ guile
 ├── libunistring
 ├── pkg-config
 └── readline
+
+harfbuzz
+├── cairo
+│   ├── fontconfig
+│   │   └── freetype
+│   │       └── libpng
+│   ├── freetype
+│   │   └── libpng
+│   ├── glib
+│   │   ├── gettext
+│   │   └── pcre2
+│   ├── libpng
+│   ├── libx11
+│   │   ├── libxcb
+│   │   │   ├── libpthread-stubs
+│   │   │   │   └── pkg-config
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   └── xorgproto
+│   ├── libxcb
+│   │   ├── libpthread-stubs
+│   │   │   └── pkg-config
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   ├── libxext
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libpthread-stubs
+│   │   │   │   │   └── pkg-config
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   └── xorgproto
+│   ├── libxrender
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libpthread-stubs
+│   │   │   │   │   └── pkg-config
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   └── xorgproto
+│   ├── lzo
+│   └── pixman
+├── freetype
+│   └── libpng
+├── glib
+│   ├── gettext
+│   └── pcre2
+├── graphite2
+└── icu4c
+
+highway
 
 hub
 
@@ -1200,6 +1496,7 @@ imagemagick
 │   │   ├── jpeg-xl
 │   │   │   ├── brotli
 │   │   │   ├── giflib
+│   │   │   ├── highway
 │   │   │   ├── imath
 │   │   │   ├── jpeg-turbo
 │   │   │   ├── libpng
@@ -1219,7 +1516,7 @@ imagemagick
 │   │   ├── gettext
 │   │   ├── glib
 │   │   │   ├── gettext
-│   │   │   └── pcre
+│   │   │   └── pcre2
 │   │   └── xmlto
 │   │       ├── docbook
 │   │       ├── docbook-xsl
@@ -1229,7 +1526,7 @@ imagemagick
 ├── liblqr
 │   └── glib
 │       ├── gettext
-│       └── pcre
+│       └── pcre2
 ├── libpng
 ├── libraw
 │   ├── jasper
@@ -1281,6 +1578,7 @@ jpeg-turbo
 jpeg-xl
 ├── brotli
 ├── giflib
+├── highway
 ├── imath
 ├── jpeg-turbo
 ├── libpng
@@ -1308,6 +1606,7 @@ libavif
 │   ├── jpeg-xl
 │   │   ├── brotli
 │   │   ├── giflib
+│   │   ├── highway
 │   │   ├── imath
 │   │   ├── jpeg-turbo
 │   │   ├── libpng
@@ -1339,6 +1638,7 @@ libheif
 │   ├── jpeg-xl
 │   │   ├── brotli
 │   │   ├── giflib
+│   │   ├── highway
 │   │   ├── imath
 │   │   ├── jpeg-turbo
 │   │   ├── libpng
@@ -1358,7 +1658,7 @@ libheif
 │   ├── gettext
 │   ├── glib
 │   │   ├── gettext
-│   │   └── pcre
+│   │   └── pcre2
 │   └── xmlto
 │       ├── docbook
 │       ├── docbook-xsl
@@ -1378,7 +1678,7 @@ libksba
 liblqr
 └── glib
     ├── gettext
-    └── pcre
+    └── pcre2
 
 libnghttp2
 
@@ -1392,6 +1692,9 @@ libpq
 │       └── ca-certificates
 └── openssl@1.1
     └── ca-certificates
+
+libpthread-stubs
+└── pkg-config
 
 libraw
 ├── jasper
@@ -1425,6 +1728,54 @@ libuv
 
 libvmaf
 
+libx11
+├── libxcb
+│   ├── libpthread-stubs
+│   │   └── pkg-config
+│   ├── libxau
+│   │   └── xorgproto
+│   └── libxdmcp
+│       └── xorgproto
+└── xorgproto
+
+libxau
+└── xorgproto
+
+libxcb
+├── libpthread-stubs
+│   └── pkg-config
+├── libxau
+│   └── xorgproto
+└── libxdmcp
+    └── xorgproto
+
+libxdmcp
+└── xorgproto
+
+libxext
+├── libx11
+│   ├── libxcb
+│   │   ├── libpthread-stubs
+│   │   │   └── pkg-config
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   └── xorgproto
+└── xorgproto
+
+libxrender
+├── libx11
+│   ├── libxcb
+│   │   ├── libpthread-stubs
+│   │   │   └── pkg-config
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   └── xorgproto
+└── xorgproto
+
 libyaml
 
 libzip
@@ -1438,14 +1789,19 @@ little-cms2
     └── jpeg-turbo
 
 llvm
-└── python@3.10
-    ├── gdbm
-    ├── mpdecimal
-    ├── openssl@1.1
-    │   └── ca-certificates
-    ├── readline
-    ├── sqlite
-    │   └── readline
+├── python@3.10
+│   ├── gdbm
+│   ├── mpdecimal
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+├── six
+├── z3
+└── zstd
+    ├── lz4
     └── xz
 
 lokalise/cli-2/lokalise2
@@ -1460,6 +1816,71 @@ macos-term-size
 
 maven
 └── openjdk
+    ├── giflib
+    ├── harfbuzz
+    │   ├── cairo
+    │   │   ├── fontconfig
+    │   │   │   └── freetype
+    │   │   │       └── libpng
+    │   │   ├── freetype
+    │   │   │   └── libpng
+    │   │   ├── glib
+    │   │   │   ├── gettext
+    │   │   │   └── pcre2
+    │   │   ├── libpng
+    │   │   ├── libx11
+    │   │   │   ├── libxcb
+    │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   └── pkg-config
+    │   │   │   │   ├── libxau
+    │   │   │   │   │   └── xorgproto
+    │   │   │   │   └── libxdmcp
+    │   │   │   │       └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxcb
+    │   │   │   ├── libpthread-stubs
+    │   │   │   │   └── pkg-config
+    │   │   │   ├── libxau
+    │   │   │   │   └── xorgproto
+    │   │   │   └── libxdmcp
+    │   │   │       └── xorgproto
+    │   │   ├── libxext
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxrender
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libpthread-stubs
+    │   │   │   │   │   │   └── pkg-config
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── lzo
+    │   │   └── pixman
+    │   ├── freetype
+    │   │   └── libpng
+    │   ├── glib
+    │   │   ├── gettext
+    │   │   └── pcre2
+    │   ├── graphite2
+    │   └── icu4c
+    ├── jpeg-turbo
+    ├── libpng
+    └── little-cms2
+        ├── jpeg-turbo
+        └── libtiff
+            └── jpeg-turbo
 
 mercurial
 └── python@3.10
@@ -1540,6 +1961,73 @@ openexr
 └── imath
 
 openjdk
+├── giflib
+├── harfbuzz
+│   ├── cairo
+│   │   ├── fontconfig
+│   │   │   └── freetype
+│   │   │       └── libpng
+│   │   ├── freetype
+│   │   │   └── libpng
+│   │   ├── glib
+│   │   │   ├── gettext
+│   │   │   └── pcre2
+│   │   ├── libpng
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libpthread-stubs
+│   │   │   │   │   └── pkg-config
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxcb
+│   │   │   ├── libpthread-stubs
+│   │   │   │   └── pkg-config
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   ├── libxext
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libpthread-stubs
+│   │   │   │   │   │   └── pkg-config
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxrender
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libpthread-stubs
+│   │   │   │   │   │   └── pkg-config
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── lzo
+│   │   └── pixman
+│   ├── freetype
+│   │   └── libpng
+│   ├── glib
+│   │   ├── gettext
+│   │   └── pcre2
+│   ├── graphite2
+│   └── icu4c
+├── jpeg-turbo
+├── libpng
+└── little-cms2
+    ├── jpeg-turbo
+    └── libtiff
+        └── jpeg-turbo
+
+openjdk@17
 
 openjpeg
 ├── libpng
@@ -1571,8 +2059,6 @@ p11-kit
 └── libtasn1
 
 parallel
-
-pcre
 
 pcre2
 
@@ -1624,6 +2110,7 @@ php@7.4
 │   │   │   ├── jpeg-xl
 │   │   │   │   ├── brotli
 │   │   │   │   ├── giflib
+│   │   │   │   ├── highway
 │   │   │   │   ├── imath
 │   │   │   │   ├── jpeg-turbo
 │   │   │   │   ├── libpng
@@ -1683,6 +2170,8 @@ pinentry
 │   └── libgpg-error
 └── libgpg-error
 
+pixman
+
 pkcs11-helper
 └── openssl@1.1
     └── ca-certificates
@@ -1706,6 +2195,9 @@ python@3.10
 ├── sqlite
 │   └── readline
 └── xz
+
+pyyaml
+└── libyaml
 
 rbenv
 └── ruby-build
@@ -1732,7 +2224,7 @@ shared-mime-info
 ├── gettext
 ├── glib
 │   ├── gettext
-│   └── pcre
+│   └── pcre2
 └── xmlto
     ├── docbook
     ├── docbook-xsl
@@ -1872,6 +2364,33 @@ watchman
 │   └── zstd
 │       ├── lz4
 │       └── xz
+├── edencommon
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@1.1
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@1.1
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   └── glog
+│       └── gflags
 ├── fb303
 │   ├── fbthrift
 │   │   ├── boost
@@ -2286,21 +2805,26 @@ xmlto
 │   └── docbook
 └── gnu-getopt
 
+xorgproto
+
 xz
 
 yamllint
-├── libyaml
-└── python@3.10
-    ├── gdbm
-    ├── mpdecimal
-    ├── openssl@1.1
-    │   └── ca-certificates
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    └── xz
+├── python@3.10
+│   ├── gdbm
+│   ├── mpdecimal
+│   ├── openssl@1.1
+│   │   └── ca-certificates
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   └── xz
+└── pyyaml
+    └── libyaml
 
 yarn
+
+z3
 
 zstd
 ├── lz4
@@ -2316,12 +2840,14 @@ zstd
 * 2.6.9 (set by /Users/vagrant/.rbenv/version)
   2.7.2
   2.7.5
+  2.7.6
   3.0.0
   3.0.3
+  3.1.0
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.0.3.1
-* Bundler: Bundler version 2.3.22
+* Bundler: Bundler version 2.3.24
 * CocoaPods: 1.11.3
 * xcpretty: 0.3.0
 ========================================
@@ -2334,14 +2860,14 @@ algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.638.0)
-aws-sdk-core (3.156.0)
+aws-partitions (1.647.0)
+aws-sdk-core (3.161.0)
 aws-sdk-kms (1.58.0)
 aws-sdk-s3 (1.114.0)
-aws-sigv4 (1.5.1)
+aws-sigv4 (1.5.2)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
-bundler (2.3.22, default: 1.17.2)
+bundler (2.3.24, default: 1.17.2)
 CFPropertyList (3.0.5)
 claide (1.1.0)
 clamp (1.3.2)
@@ -2371,7 +2897,7 @@ emoji_regex (3.2.3)
 escape (0.0.4)
 etc (default: 1.0.1)
 ethon (0.15.0)
-excon (0.92.5)
+excon (0.93.0)
 faraday (1.10.2)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
@@ -2395,16 +2921,16 @@ forwardable (default: 1.2.0)
 fourflusher (2.3.1)
 fuzzy_match (2.0.4)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.28.0)
-google-apis-core (0.9.0)
+google-apis-androidpublisher_v3 (0.29.0)
+google-apis-core (0.9.1)
 google-apis-iamcredentials_v1 (0.15.0)
 google-apis-playcustomapp_v1 (0.11.0)
-google-apis-storage_v1 (0.17.0)
+google-apis-storage_v1 (0.19.0)
 google-cloud-core (1.6.0)
 google-cloud-env (1.6.0)
 google-cloud-errors (1.3.0)
-google-cloud-storage (1.42.0)
-googleauth (1.2.0)
+google-cloud-storage (1.43.0)
+googleauth (1.3.0)
 highline (2.0.3)
 http-cookie (1.0.5)
 httpclient (2.8.3)
@@ -2433,7 +2959,7 @@ nap (1.1.0)
 naturally (2.2.1)
 net-telnet (0.2.0)
 netrc (0.11.0)
-nokogiri (1.13.8 arm64-darwin)
+nokogiri (1.13.9 arm64-darwin)
 open4 (1.3.4)
 openssl (default: 2.1.2)
 optparse (0.1.1)
@@ -2465,7 +2991,7 @@ signet (0.17.0)
 simctl (1.6.8)
 slack-notifier (2.4.0)
 slather (2.7.2)
-sqlite3 (1.5.0 arm64-darwin)
+sqlite3 (1.5.3 arm64-darwin)
 stringio (default: 0.0.2)
 strscan (default: 1.0.0)
 sync (default: 0.5.0)
@@ -2496,7 +3022,7 @@ xcpretty-json-formatter (0.1.1)
 xcpretty-travis-formatter (1.0.1)
 xcresult (0.2.1)
 xmlrpc (0.3.0)
-zeitwerk (2.6.0)
+zeitwerk (2.6.1)
 zlib (default: 1.0.0)
 ========================================
 
@@ -2536,14 +3062,14 @@ Target: arm64-apple-darwin21.6.0
 === Xcode ==============================
 
 * Active Xcode Command Line Tools:
-/Applications/Xcode-14.1.beta.3.app/Contents/Developer
+/Applications/Xcode-14.1.Release.Candidate.app/Contents/Developer
 
 * Xcode Version:
 Xcode 14.1
-Build version 14B5033e
+Build version 14B47
 
 * /usr/bin/swift --version
-Apple Swift version 5.7.1 (swiftlang-5.7.1.134.3 clang-1400.0.29.51)
+Apple Swift version 5.7.1 (swiftlang-5.7.1.135.2 clang-1400.0.29.51)
 Target: arm64-apple-macosx12.0
 
 * Installed SDKs:
@@ -2635,12 +3161,19 @@ iPad Air (4th generation) (com.apple.CoreSimulator.SimDeviceType.iPad-Air--4th-g
 iPad Pro (11-inch) (3rd generation) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-3rd-generation)
 iPad Pro (12.9-inch) (5th generation) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro-12-9-inch-5th-generation)
 iPad Air (5th generation) (com.apple.CoreSimulator.SimDeviceType.iPad-Air-5th-generation)
+iPad (10th generation) (com.apple.CoreSimulator.SimDeviceType.iPad-10th-generation)
 iPad mini (6th generation) (com.apple.CoreSimulator.SimDeviceType.iPad-mini-6th-generation)
+iPad Pro (11-inch) (4th generation) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-4th-generation-8GB)
+iPad Pro (11-inch) (4th generation) (16GB) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro-11-inch-4th-generation-16GB)
+iPad Pro (12.9-inch) (6th generation) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro-12-9-inch-6th-generation-8GB)
+iPad Pro (12.9-inch) (6th generation) (16GB) (com.apple.CoreSimulator.SimDeviceType.iPad-Pro-12-9-inch-6th-generation-16GB)
 Apple TV (com.apple.CoreSimulator.SimDeviceType.Apple-TV-1080p)
 Apple TV 4K (com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-4K)
 Apple TV 4K (at 1080p) (com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-1080p)
 Apple TV 4K (2nd generation) (com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-2nd-generation-4K)
-Apple TV 4K (at 1080p) (2nd generation) (com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-2nd-generation-1080p)
+Apple TV 4K (2nd generation) (at 1080p) (com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-2nd-generation-1080p)
+Apple TV 4K (3rd generation) (com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-3rd-generation-4K)
+Apple TV 4K (3rd generation) (at 1080p) (com.apple.CoreSimulator.SimDeviceType.Apple-TV-4K-3rd-generation-1080p)
 Apple Watch (38mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-38mm)
 Apple Watch (42mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-42mm)
 Apple Watch Series 2 (38mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-2-38mm)
@@ -2657,71 +3190,150 @@ Apple Watch Series 6 (40mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-S
 Apple Watch Series 6 (44mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-6-44mm)
 Apple Watch Series 7 (41mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-7-41mm)
 Apple Watch Series 7 (45mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-7-45mm)
-Apple Watch SE (40mm) (2nd generation) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-SE-44mm-2nd-generation)
+Apple Watch SE (40mm) (2nd generation) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-SE-40mm-2nd-generation)
 Apple Watch SE (44mm) (2nd generation) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-SE-44mm-2nd-generation)
 Apple Watch Series 8 (41mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-8-41mm)
 Apple Watch Series 8 (45mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-8-45mm)
 Apple Watch Ultra (49mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Ultra-49mm)
 == Runtimes ==
+iOS 14.5 (14.5 - 18E182) - com.apple.CoreSimulator.SimRuntime.iOS-14-5
+iOS 15.4 (15.4 - 19E240) - com.apple.CoreSimulator.SimRuntime.iOS-15-4
+iOS 15.5 (15.5 - 19F70) - com.apple.CoreSimulator.SimRuntime.iOS-15-5
 iOS 16.0 (16.0 - 20A360) - com.apple.CoreSimulator.SimRuntime.iOS-16-0
-iOS 16.1 (16.1 - 20B5056e) - com.apple.CoreSimulator.SimRuntime.iOS-16-1
-tvOS 16.1 (16.1 - 20K5052c) - com.apple.CoreSimulator.SimRuntime.tvOS-16-1
-watchOS 9.1 (9.1 - 20S5055e) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
+iOS 16.1 (16.1 - 20B72) - com.apple.CoreSimulator.SimRuntime.iOS-16-1
+tvOS 15.4 (15.4 - 19L439) - com.apple.CoreSimulator.SimRuntime.tvOS-15-4
+tvOS 16.0 (16.0 - 20J373) - com.apple.CoreSimulator.SimRuntime.tvOS-16-0
+tvOS 16.1 (16.1 - 20K67) - com.apple.CoreSimulator.SimRuntime.tvOS-16-1
+watchOS 8.5 (8.5 - 19T241) - com.apple.CoreSimulator.SimRuntime.watchOS-8-5
+watchOS 9.0 (9.0 - 20R362) - com.apple.CoreSimulator.SimRuntime.watchOS-9-0
+watchOS 9.1 (9.1 - 20S75) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
 == Devices ==
+-- iOS 14.5 --
+    iPhone 8 Plus (335DB280-69AB-49FF-8F40-4CF06E7D9793) (Shutdown) 
+    iPhone 11 (BB7F446D-B2DF-44F7-9D70-CB9BBFD52E26) (Shutdown) 
+    iPhone SE (2nd generation) (2CBB56D3-E3BE-4288-AB2B-1077CD0A322E) (Shutdown) 
+    iPhone 12 mini (C9DDE05A-7C75-497C-82F5-30E524897D05) (Shutdown) 
+    iPhone 12 (410CD9FA-1B88-40CB-B675-09EA8C6C38A1) (Shutdown) 
+    iPhone 12 Pro (0D3E9362-386F-40C2-85ED-768B1CC9BE6C) (Shutdown) 
+    iPhone 12 Pro Max (30C6C8E8-0354-4528-9ED5-F0E7D4049CA9) (Shutdown) 
+    iPod touch (7th generation) (8B5BAB50-2672-4410-946E-AA12C9709A9E) (Shutdown) 
+    iPad Pro (9.7-inch) (8CF91FA9-F827-46E2-8D45-82D22F6E842D) (Shutdown) 
+    iPad (8th generation) (50B4DBC4-2DA5-4A0B-8341-6893D376F8F6) (Shutdown) 
+    iPad Air (4th generation) (7FBCECFF-B92D-409D-AFDB-3FDE06C134BF) (Shutdown) 
+    iPad Pro (11-inch) (3rd generation) (B0335364-160F-4FED-9431-01766B4A20AC) (Shutdown) 
+    iPad Pro (12.9-inch) (5th generation) (D3697FAA-A647-4F6E-A4D3-D5C64E1E32F9) (Shutdown) 
+-- iOS 15.4 --
+    iPhone 8 Plus (535EA76A-6F8A-48F2-8873-490FAC1EAEA0) (Shutdown) 
+    iPhone 11 (D56DEA88-1A2E-4FF5-833C-BC7218FBE7F9) (Shutdown) 
+    iPhone 13 Pro (68DF7452-F525-4B8A-9956-DDC998B63D36) (Shutdown) 
+    iPhone 13 Pro Max (D1BAFA42-FC25-489C-9CA1-43486023262D) (Shutdown) 
+    iPhone 13 mini (225C3DDD-CEAE-4B62-B94C-0696C9B71A4B) (Shutdown) 
+    iPhone 13 (20B380BF-1255-4F25-9235-5CE0C41B0DA6) (Shutdown) 
+    iPhone SE (3rd generation) (56BE720F-5217-4856-BB90-B4A55131B337) (Shutdown) 
+    iPod touch (7th generation) (1CCE8E29-9719-4C2B-8B7C-88150B76F68A) (Shutdown) 
+    iPad Pro (9.7-inch) (F85BA59D-6746-4A5B-9A1F-8C81BFEAF989) (Shutdown) 
+    iPad (9th generation) (4AE3CCF1-C9E1-49E3-9C72-2F4CD40E384F) (Shutdown) 
+    iPad Pro (11-inch) (3rd generation) (FD19227F-7CF9-401D-9C0C-70DEE2539869) (Shutdown) 
+    iPad Pro (12.9-inch) (5th generation) (8AFB30A0-8A9B-4724-A6F3-FE41261470E1) (Shutdown) 
+    iPad Air (5th generation) (02DDD662-8B7A-4817-BB93-A7ED82ADF41A) (Shutdown) 
+    iPad mini (6th generation) (FCA6F400-5E05-484A-A073-AD1513E469DA) (Shutdown) 
+-- iOS 15.5 --
+    iPhone 8 Plus (DB6B4A49-AB97-4082-901C-C70378F046EE) (Shutdown) 
+    iPhone 11 (16D75B0F-EBD3-4467-B6F5-19D95819A0BE) (Shutdown) 
+    iPhone 13 Pro (3362D7FE-C1E7-4041-B9A0-897BF2C9695D) (Shutdown) 
+    iPhone 13 Pro Max (43F89182-83DF-42F2-8BDC-E23F3DAD53B1) (Shutdown) 
+    iPhone 13 mini (9F2D0E1A-4263-4CDD-973C-5A0B678C52B7) (Shutdown) 
+    iPhone 13 (109EA62C-5194-48C0-8F47-5343C0F91FB6) (Shutdown) 
+    iPhone SE (3rd generation) (9B4C587B-08A1-4DB3-89BA-60662935C2B9) (Shutdown) 
+    iPod touch (7th generation) (8A09F715-034D-4806-BE23-E54386CB3043) (Shutdown) 
+    iPad Pro (9.7-inch) (52DED21B-13F0-4F63-93B6-44FABA5E9E89) (Shutdown) 
+    iPad (9th generation) (A026D43D-C0C2-4E00-AD09-273A2F724888) (Shutdown) 
+    iPad Pro (11-inch) (3rd generation) (42C608FC-7E42-408E-BCD1-D463197AB97E) (Shutdown) 
+    iPad Pro (12.9-inch) (5th generation) (49C8B26D-291F-4717-B972-A0259CF10F82) (Shutdown) 
+    iPad Air (5th generation) (5F346AD5-6DB4-4C4D-ABE6-B00DC033F4DB) (Shutdown) 
+    iPad mini (6th generation) (853E375B-34D8-42CA-A1B0-BECE9FB3BFCB) (Shutdown) 
 -- iOS 16.0 --
-    iPhone 8 Plus (55A08892-3823-4478-9FC7-7953BE2F77A8) (Shutdown) 
-    iPhone 11 (A16B4FB1-5D9F-4904-ABAE-31AEDF7801DD) (Shutdown) 
-    iPhone SE (3rd generation) (3490ACB0-5877-4474-A2CC-710BD56233B9) (Shutdown) 
-    iPhone 14 (314049F4-ABB0-4F68-9ACB-AE4987332933) (Shutdown) 
-    iPhone 14 Plus (D0453D04-F0C7-44E1-BAF1-95AC8E379945) (Shutdown) 
-    iPhone 14 Pro (70BC8901-E8D3-4CF8-B46A-33FFBDF4D337) (Shutdown) 
-    iPhone 14 Pro Max (DCF70D66-FC12-416A-984B-5795AA91CE63) (Shutdown) 
-    iPad (9th generation) (06056501-CBFD-4B44-A5D8-7D96001E14FE) (Shutdown) 
-    iPad Pro (11-inch) (3rd generation) (EDF3D449-817E-4609-8448-DB4333D8D25D) (Shutdown) 
-    iPad Pro (12.9-inch) (5th generation) (4BEDFFDE-41F6-429B-AA3F-239559ADAF32) (Shutdown) 
-    iPad Air (5th generation) (0A026720-DAC8-4AAF-81E8-14CDB9BE4C7B) (Shutdown) 
-    iPad mini (6th generation) (70706AAD-F451-4F10-80F6-52C8568EA677) (Shutdown) 
+    iPhone 8 Plus (33F2F658-33DF-4F4C-8C8A-F38D100A2AF6) (Shutdown) 
+    iPhone 11 (998A424E-23CA-465B-96F9-E2564BD5779F) (Shutdown) 
+    iPhone SE (3rd generation) (4776390C-0FF1-4315-817A-EFE4171DD058) (Shutdown) 
+    iPhone 14 (AD402733-E6DF-4B77-89AF-F509C1CABE92) (Shutdown) 
+    iPhone 14 Plus (2B980439-DA52-4EB9-A605-8AABB36B7DF5) (Shutdown) 
+    iPhone 14 Pro (88F60BC7-70C7-488A-A65F-5B91E1B7C4DA) (Shutdown) 
+    iPhone 14 Pro Max (2808C907-C4AD-440D-BDBC-72468810014B) (Shutdown) 
+    iPad (9th generation) (0AE38DAA-ED53-42C1-A308-6109364219FB) (Shutdown) 
+    iPad Pro (11-inch) (3rd generation) (5F9AB1B4-8337-4681-BF98-6F1E5DD80B57) (Shutdown) 
+    iPad Pro (12.9-inch) (5th generation) (A8B10251-B9A3-488D-8A64-32439C5BD418) (Shutdown) 
+    iPad Air (5th generation) (EF3C53AF-B52C-483A-BE5D-8D5AC2728566) (Shutdown) 
+    iPad mini (6th generation) (C1104936-2B89-4DD1-801C-DF45403A78CB) (Shutdown) 
 -- iOS 16.1 --
-    iPhone 8 Plus (10118B0E-5AFA-4E16-AB23-AF3CD2BAF9C7) (Shutdown) 
-    iPhone 11 (1C51C260-EF0D-4C0B-8B9C-88EAF57A54A8) (Shutdown) 
-    iPhone SE (3rd generation) (A5020D5D-2034-4904-909A-9F7E64677F3D) (Shutdown) 
-    iPhone 14 (609C5951-A737-4D12-8D97-97C1F0B7408C) (Shutdown) 
-    iPhone 14 Plus (9B428165-F038-4193-9F72-DF82EC0E14F7) (Shutdown) 
-    iPhone 14 Pro (16226C63-872E-4F90-B372-D808DF836D8B) (Shutdown) 
-    iPhone 14 Pro Max (479FDCD4-66BE-465E-AAA3-FC802295C00F) (Shutdown) 
-    iPad (9th generation) (1A86DFBC-ACFD-47FD-A4E7-D26C68BEEEC2) (Shutdown) 
-    iPad Pro (11-inch) (3rd generation) (714A8BC7-2A34-4FF1-B60A-493EEFB25FBF) (Shutdown) 
-    iPad Pro (12.9-inch) (5th generation) (9A2BB83B-033D-431F-B600-809F9F03B67E) (Shutdown) 
-    iPad Air (5th generation) (51C64FC9-426A-44D8-8739-0CE94E10F4F6) (Shutdown) 
-    iPad mini (6th generation) (6A6B1E54-1D7B-40EB-BEF8-59EDD965875A) (Shutdown) 
+    iPhone 8 Plus (43847B82-3356-429F-B93F-E5AED3B6F2F5) (Shutdown) 
+    iPhone 11 (17F6E7DD-2A89-40BE-9087-FE166E3D43AA) (Shutdown) 
+    iPhone SE (3rd generation) (2329BDC6-146E-4573-8D4C-06B601893E39) (Shutdown) 
+    iPhone 14 (8C09528F-A71A-4D07-B0FD-64C36D728E20) (Shutdown) 
+    iPhone 14 Plus (EB9EAFD5-91E4-4A86-89F6-9F75958A340C) (Shutdown) 
+    iPhone 14 Pro (5B197A70-491D-4895-B997-7C83F335E00D) (Shutdown) 
+    iPhone 14 Pro Max (7D11C840-0FEB-4000-B7D6-A0A53E016909) (Shutdown) 
+    iPad Air (5th generation) (3B688819-B072-4131-848B-11E36B269DB2) (Shutdown) 
+    iPad (10th generation) (DBAC5B6B-8EC7-44F8-9AE1-ED2BC8695851) (Shutdown) 
+    iPad mini (6th generation) (39D0CFCB-51ED-444E-B26C-EC24FB6FB2EA) (Shutdown) 
+    iPad Pro (11-inch) (4th generation) (937DE061-31A9-418B-A115-79FA00BF2B69) (Shutdown) 
+    iPad Pro (12.9-inch) (6th generation) (18441904-BEBD-49C0-878A-1EC0264B82D1) (Shutdown) 
+-- tvOS 15.4 --
+    Apple TV (4052C762-7DC7-4BD0-A76D-C53CFEE80B40) (Shutdown) 
+    Apple TV 4K (2nd generation) (3E434ED6-46DF-4215-897E-057DE44B1BD4) (Shutdown) 
+    Apple TV 4K (2nd generation) (at 1080p) (2C4C7EEC-37F1-46DA-B110-F100878804E3) (Shutdown) 
+-- tvOS 16.0 --
+    Apple TV (F9BA9F74-0F07-44C6-8DA3-7599AB3D0CFB) (Shutdown) 
+    Apple TV 4K (2nd generation) (0D6A30E4-653A-4C7E-8447-F3F2F29EC344) (Shutdown) 
+    Apple TV 4K (2nd generation) (at 1080p) (8A54A2C8-8732-45A4-B63B-968CBA3504D5) (Shutdown) 
 -- tvOS 16.1 --
-    Apple TV (8C85459C-7D9F-4A4E-935C-7AA27887F189) (Shutdown) 
-    Apple TV 4K (2nd generation) (5164BB39-93C5-4538-8D45-597D08FA2FC4) (Shutdown) 
-    Apple TV 4K (at 1080p) (2nd generation) (6FDEE241-67AD-46A0-A14A-CC3BCCA094BA) (Shutdown) 
+    Apple TV (6D5E5AE0-C068-4410-BFBD-E458B2730F02) (Shutdown) 
+    Apple TV 4K (3rd generation) (101E899F-F563-4A97-98F9-F6B5D42A2933) (Shutdown) 
+    Apple TV 4K (3rd generation) (at 1080p) (EB6C080B-95BF-4AAC-8237-D6B3C9D2DABE) (Shutdown) 
+-- watchOS 8.5 --
+    Apple Watch Series 5 (40mm) (AF565E68-E18E-4088-8AF9-C8103C717C99) (Shutdown) 
+    Apple Watch Series 5 (44mm) (59B154CE-0B0C-4711-840A-2807353E73CC) (Shutdown) 
+    Apple Watch Series 6 (40mm) (1A8923FC-FF3F-49B7-A9BC-ADF9CE326F77) (Shutdown) 
+    Apple Watch Series 6 (44mm) (1B28DC40-5BBC-4B5B-90B7-37D067A5C4F3) (Shutdown) 
+    Apple Watch Series 7 (41mm) (CBB2C6EB-29AE-43A6-B220-E79FDB7D3DC1) (Shutdown) 
+    Apple Watch Series 7 (45mm) (A596AF7E-D47E-4DFE-9F58-3C7FBB45BB5C) (Shutdown) 
+-- watchOS 9.0 --
+    Apple Watch Series 5 (40mm) (3CE8BB8F-7273-4BBD-9B2C-D013D4FDEACB) (Shutdown) 
+    Apple Watch Series 5 (44mm) (0D4ABFE4-7CDE-400A-8BCF-FDF754747508) (Shutdown) 
+    Apple Watch Series 6 (40mm) (0DF6B54C-DC5C-4A29-87CE-EA3A3A4BC5A4) (Shutdown) 
+    Apple Watch Series 6 (44mm) (A104A11D-CAE7-46E2-955C-503A54E76B91) (Shutdown) 
+    Apple Watch Series 7 (41mm) (CED4AC29-3864-4285-ACCF-0EBACA27CF18) (Shutdown) 
+    Apple Watch Series 7 (45mm) (2AF62369-B463-4663-8210-D73746A23B91) (Shutdown) 
+    Apple Watch SE (40mm) (2nd generation) (D7EBF631-0FA7-4660-883A-7964FC7A69E7) (Shutdown) 
+    Apple Watch SE (44mm) (2nd generation) (436BF07A-7E54-4A7A-841D-723278570A73) (Shutdown) 
+    Apple Watch Series 8 (41mm) (E3F499E5-4C14-414A-9DB6-9F19D6EF4E4D) (Shutdown) 
+    Apple Watch Series 8 (45mm) (256F322B-CC03-45F1-9B16-25250E9E312D) (Shutdown) 
+    Apple Watch Ultra (49mm) (A57D6298-D1E8-4300-945B-BDCA00160D92) (Shutdown) 
 -- watchOS 9.1 --
-    Apple Watch Series 5 (40mm) (DD037152-C82A-4603-B0FE-83769E69663A) (Shutdown) 
-    Apple Watch Series 5 (44mm) (C4860F88-0C8B-44DB-9767-864CCC937070) (Shutdown) 
-    Apple Watch Series 6 (40mm) (38C51A95-2125-4ADA-AB30-84D9D3855B06) (Shutdown) 
-    Apple Watch Series 6 (44mm) (3EA768CD-97C5-41C2-8DE3-E0304E0ECAA6) (Shutdown) 
-    Apple Watch Series 7 (41mm) (8B332E31-5A62-42F7-AE8D-273ADECE5F23) (Shutdown) 
-    Apple Watch Series 7 (45mm) (909E1A5E-B6A4-45A5-9C19-025F28E3569A) (Shutdown) 
-    Apple Watch SE (44mm) (2nd generation) (4A6E33C1-BC00-4176-A72D-BE5C0F9127A2) (Shutdown) 
-    Apple Watch Series 8 (41mm) (1959E4A0-0737-421B-8819-3FB0B8D23889) (Shutdown) 
-    Apple Watch Series 8 (45mm) (D33D0677-59E8-4BA5-809A-45C277A86558) (Shutdown) 
-    Apple Watch Ultra (49mm) (72EFA825-C3C0-410C-A67F-A75BEF1463CC) (Shutdown) 
+    Apple Watch Series 5 (40mm) (ED56BFC8-6A68-425F-863F-CF94296DD861) (Shutdown) 
+    Apple Watch Series 5 (44mm) (1216F51F-DC66-471A-8BAA-A1E7D2E67658) (Shutdown) 
+    Apple Watch Series 6 (40mm) (7E1B49AD-1B44-4AD3-AABB-6381855937CC) (Shutdown) 
+    Apple Watch Series 6 (44mm) (F14A5D4F-C0D2-45BA-8D6B-95E24C285A73) (Shutdown) 
+    Apple Watch Series 7 (41mm) (A5CC7699-173C-4149-8334-F8536816A34A) (Shutdown) 
+    Apple Watch Series 7 (45mm) (21731989-8CC0-430B-ABAF-D44B38FAE7BF) (Shutdown) 
+    Apple Watch SE (40mm) (2nd generation) (5A9E1EDC-6329-41D7-BB38-0D2D3C17BB28) (Shutdown) 
+    Apple Watch SE (44mm) (2nd generation) (3CEFC3A9-74A2-4C0C-81F0-B12B85584AB5) (Shutdown) 
+    Apple Watch Series 8 (41mm) (32F98C46-DD06-418D-BBAC-E8E2E5E4DF7D) (Shutdown) 
+    Apple Watch Series 8 (45mm) (130EAA57-9515-410C-B88A-E1A953A5B0D3) (Shutdown) 
+    Apple Watch Ultra (49mm) (337FD934-484F-46B1-8497-E69BEF7FA74C) (Shutdown) 
 == Device Pairs ==
-200AD7D1-E39E-47BC-9173-8B2B92AC56C1 (active, disconnected)
-    Watch: Apple Watch Series 7 (45mm) (909E1A5E-B6A4-45A5-9C19-025F28E3569A) (Shutdown)
-    Phone: iPhone 14 (609C5951-A737-4D12-8D97-97C1F0B7408C) (Shutdown)
-24CC5D6B-7E71-47F5-AE09-4DBEDCE8497F (active, disconnected)
-    Watch: Apple Watch Series 8 (41mm) (1959E4A0-0737-421B-8819-3FB0B8D23889) (Shutdown)
-    Phone: iPhone 14 Plus (9B428165-F038-4193-9F72-DF82EC0E14F7) (Shutdown)
-0C78A6B5-8010-4E96-8220-F47657DEAA24 (active, disconnected)
-    Watch: Apple Watch Series 8 (45mm) (D33D0677-59E8-4BA5-809A-45C277A86558) (Shutdown)
-    Phone: iPhone 14 Pro (16226C63-872E-4F90-B372-D808DF836D8B) (Shutdown)
-726926B2-C11D-43E4-B01E-B6008E196379 (active, disconnected)
-    Watch: Apple Watch Ultra (49mm) (72EFA825-C3C0-410C-A67F-A75BEF1463CC) (Shutdown)
-    Phone: iPhone 14 Pro Max (479FDCD4-66BE-465E-AAA3-FC802295C00F) (Shutdown)
+185386B9-31C9-4377-94BA-8DB99CA3B802 (active, disconnected)
+    Watch: Apple Watch Series 7 (45mm) (21731989-8CC0-430B-ABAF-D44B38FAE7BF) (Shutdown)
+    Phone: iPhone 14 (8C09528F-A71A-4D07-B0FD-64C36D728E20) (Shutdown)
+1364252E-2208-4631-A15A-B9AA79531C62 (active, disconnected)
+    Watch: Apple Watch Series 8 (41mm) (32F98C46-DD06-418D-BBAC-E8E2E5E4DF7D) (Shutdown)
+    Phone: iPhone 14 Plus (EB9EAFD5-91E4-4A86-89F6-9F75958A340C) (Shutdown)
+F1D9A524-4261-4A0B-9850-E11D71347570 (active, disconnected)
+    Watch: Apple Watch Series 8 (45mm) (130EAA57-9515-410C-B88A-E1A953A5B0D3) (Shutdown)
+    Phone: iPhone 14 Pro (5B197A70-491D-4895-B997-7C83F335E00D) (Shutdown)
+0CFD3186-3AF5-4234-92A7-65831DD74695 (active, disconnected)
+    Watch: Apple Watch Ultra (49mm) (337FD934-484F-46B1-8497-E69BEF7FA74C) (Shutdown)
+    Phone: iPhone 14 Pro Max (7D11C840-0FEB-4000-B7D6-A0A53E016909) (Shutdown)
 
 ========================================
 
@@ -2742,11 +3354,11 @@ Software:
       Kernel Version: Darwin 21.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-14.1.x-g2-m1.8core-032a4cc6-abcf-4380-b883-654f477e746d
+      Computer Name: vm-osx-xcode-14.1.x-g2-m1.8core-deef85e8-3df4-4ab2-b27c-821ba5aef872
       User Name: Vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 16 minutes
+      Time since boot: 1:20
 
 
 ========================================
@@ -2755,7 +3367,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        295Gi        195Gi
+/dev/disk3s1s1        295Gi        128Gi
 ========================================
 
 --- Android
