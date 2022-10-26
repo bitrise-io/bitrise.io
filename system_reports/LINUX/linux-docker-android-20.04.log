@@ -6,7 +6,7 @@
 
 
 === Pre-installed lib versions ========
-* zlib1g-dev: 1:1.2.11.dfsg-2ubuntu1.4
+* zlib1g-dev: 1:1.2.11.dfsg-2ubuntu1.5
 * libssl-dev: 1.1.1f-1ubuntu2.16
 dpkg-query: package 'libreadline6-dev' is not installed and no information is available
 Use dpkg --info (= dpkg-deb --info) to examine archive files.
@@ -32,7 +32,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.25.92 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.27.91
+* aws-cli: aws-cli/1.25.93 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.27.92
 * Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
   * bundler: Bundler version 2.3.24
   * rubygems: 3.3.24
@@ -91,19 +91,19 @@ javac 1.8.0_342
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 405.0.1
-alpha 2022.10.14
-beta 2022.10.14
-bq 2.0.78
+Google Cloud SDK 406.0.0
+alpha 2022.10.17
+beta 2022.10.17
+bq 2.0.79
 bundled-python3-unix 3.9.12
-core 2022.10.14
+core 2022.10.17
 gcloud-crc32c 1.0.0
 gsutil 5.14
 ========================================
 
 
 === Firebase Tools components ==========
-11.14.4
+11.15.0
 ========================================
 
 === Google Cloud Network Check =========
@@ -433,7 +433,7 @@ forwardable (1.3.2, default: 1.3.1)
 getoptlong (0.1.1, default: 0.1.0)
 gh_inspector (1.1.3)
 google-apis-androidpublisher_v3 (0.29.0)
-google-apis-core (0.9.0)
+google-apis-core (0.9.1)
 google-apis-iamcredentials_v1 (0.15.0)
 google-apis-playcustomapp_v1 (0.11.0)
 google-apis-storage_v1 (0.19.0)
@@ -527,7 +527,7 @@ zlib (2.1.1, default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1cebf341bf-07dd-43f6-bca2-733c0c791c55 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1b1c052822-2624-4148-8698-f808f2e6abac 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -553,7 +553,7 @@ Server:
   Paused: 0
   Stopped: 0
  Images: 4
- Server Version: 20.10.19
+ Server Version: 20.10.20
  Storage Driver: overlay2
   Backing Filesystem: extfs
   Supports d_type: true
@@ -583,8 +583,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1cebf341bf-07dd-43f6-bca2-733c0c791c55
- ID: RRUA:ZCXK:HXD7:35OM:ELDT:JZEN:RBID:NZM4:QTHO:TWOE:MSKS:SDIB
+ Name: stg-prdfree-20-04-usc1b1c052822-2624-4148-8698-f808f2e6abac
+ ID: F7VS:DDBZ:NG7M:FW2K:MHWL:AVDS:IQQM:RHF3:N4QA:GVNY:SSVG:DREA
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -602,8 +602,8 @@ bitriseio/android-ndk-20.04 - 44.6GB
 quay.io/bitriseio/android-ndk-20.04 - 44.6GB
 bitriseio/android-20.04 - 42.3GB
 quay.io/bitriseio/android-20.04 - 42.3GB
-bitriseio/bitrise-base-20.04 - 3.15GB
-quay.io/bitriseio/bitrise-base-20.04 - 3.15GB
+bitriseio/bitrise-base-20.04 - 3.14GB
+quay.io/bitriseio/bitrise-base-20.04 - 3.14GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -617,7 +617,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   57G  138G  30% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       764Mi        59Gi       1.0Mi       2.9Gi        61Gi
+Mem:           62Gi       782Mi        59Gi       1.0Mi       2.9Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
