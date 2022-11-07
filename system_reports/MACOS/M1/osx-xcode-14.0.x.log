@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2022_10_07
+* BITRISE_OSX_STACK_REV_ID: v2022_11_02
 ========================================
 
 
@@ -51,7 +51,7 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.1 - libarchive 3.5.1 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.0.4 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.6.4
+* brew: Homebrew 3.6.8
 Homebrew/homebrew-core (git revision 20a991bff17; last commit 2022-10-07)
 Homebrew/homebrew-cask (git revision 83d4e3bd02; last commit 2022-10-07)
 * Ansible: ansible [core 2.13.4]
@@ -68,16 +68,16 @@ Homebrew/homebrew-cask (git revision 83d4e3bd02; last commit 2022-10-07)
 * ghostscript (ps2ascii): 10.00.0
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 11.10.0
-* applesimutils version 0.9.7
+* applesimutils version 0.9.8
 * jq: 1.6
-* 0.14.0
+* xcbeautify: 0.14.0
 * XCLogParser 0.2.34
 * Screen 4.09.00
-* applesimutils 0.9.7
+* applesimutils 0.9.8
 * OpenConnect version v9.01
 * aws-cli: aws-cli/2.7.31 Python/3.10.7 Darwin/21.6.0 source/arm64 prompt/off
 * cmake: 3.24.2
-* danger-swift: 3.14.0
+* danger-swift: 3.14.2
 [0;0m
 * OpenVPN 2.5.7 arm-apple-darwin21.5.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD] built on Jun  8 2022
 * tuist: 3.12.0
@@ -94,7 +94,7 @@ Homebrew/homebrew-cask (git revision 83d4e3bd02; last commit 2022-10-07)
 ansible 6.4.0
 ant 1.10.12
 aom 3.5.0_1
-applesimutils 0.9.7
+applesimutils 0.9.8
 apr 1.7.0_3
 apr-util 1.6.1_4
 argon2 20190702_1
@@ -113,8 +113,8 @@ cmake 3.24.2
 coreutils 9.1
 curl 7.85.0
 danger-js 11.1.4
-danger-swift 3.14.0
-dart 2.18.2
+danger-swift 3.14.2
+dart 2.18.4
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 double-conversion 3.2.1
@@ -2850,7 +2850,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.0.3.1
-* Bundler: Bundler version 2.3.23
+* Bundler: Bundler version 2.3.25
 * CocoaPods: 1.11.3
 * xcpretty: 0.3.0
 ========================================
@@ -2870,7 +2870,7 @@ aws-sdk-s3 (1.114.0)
 aws-sigv4 (1.5.1)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
-bundler (2.3.23, 2.3.22, default: 1.17.2)
+bundler (2.3.25, 2.3.23, 2.3.22, default: 1.17.2)
 CFPropertyList (3.0.5)
 claide (1.1.0)
 clamp (1.3.2)
@@ -3193,13 +3193,16 @@ Apple Watch Series 8 (45mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-S
 Apple Watch Ultra (49mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Ultra-49mm)
 == Runtimes ==
 iOS 14.5 (14.5 - 18E182) - com.apple.CoreSimulator.SimRuntime.iOS-14-5
+iOS 15.0 (15.0 - 19A339) - com.apple.CoreSimulator.SimRuntime.iOS-15-0
 iOS 15.2 (15.2 - 19C51) - com.apple.CoreSimulator.SimRuntime.iOS-15-2
 iOS 15.4 (15.4 - 19E240) - com.apple.CoreSimulator.SimRuntime.iOS-15-4
 iOS 15.5 (15.5 - 19F70) - com.apple.CoreSimulator.SimRuntime.iOS-15-5
 iOS 16.0 (16.0 - 20A360) - com.apple.CoreSimulator.SimRuntime.iOS-16-0
+tvOS 15.0 (15.0 - 19J344) - com.apple.CoreSimulator.SimRuntime.tvOS-15-0
 tvOS 15.2 (15.2 - 19K50) - com.apple.CoreSimulator.SimRuntime.tvOS-15-2
 tvOS 15.4 (15.4 - 19L439) - com.apple.CoreSimulator.SimRuntime.tvOS-15-4
 tvOS 16.0 (16.0 - 20J373) - com.apple.CoreSimulator.SimRuntime.tvOS-16-0
+watchOS 8.0 (8.0 - 19R345) - com.apple.CoreSimulator.SimRuntime.watchOS-8-0
 watchOS 8.3 (8.3 - 19S51) - com.apple.CoreSimulator.SimRuntime.watchOS-8-3
 watchOS 8.5 (8.5 - 19T241) - com.apple.CoreSimulator.SimRuntime.watchOS-8-5
 watchOS 9.0 (9.0 - 20R362) - com.apple.CoreSimulator.SimRuntime.watchOS-9-0
@@ -3218,6 +3221,21 @@ watchOS 9.0 (9.0 - 20R362) - com.apple.CoreSimulator.SimRuntime.watchOS-9-0
     iPad Air (4th generation) (8193C38A-0D43-47EC-9431-35A049177EC0) (Shutdown) 
     iPad Pro (11-inch) (3rd generation) (5BF36E3D-F21A-4316-A35E-B81F5D423556) (Shutdown) 
     iPad Pro (12.9-inch) (5th generation) (68CC7661-06C2-47C0-BB3D-9ACD344D1F8A) (Shutdown) 
+-- iOS 15.0 --
+    iPhone 8 Plus (BC386491-7EFA-4F10-8088-CF6A4481833A) (Shutdown) 
+    iPhone 11 (9DC62319-3312-460C-BEA1-06618EEC1CDC) (Shutdown) 
+    iPhone SE (2nd generation) (3729DF35-53D5-48E7-8340-274F849276C1) (Shutdown) 
+    iPhone 13 Pro (83D2E459-FE78-4BCE-B788-6CF3D56851CE) (Shutdown) 
+    iPhone 13 Pro Max (442D3B9E-0873-43F0-866D-8B440923CC76) (Shutdown) 
+    iPhone 13 mini (5788B9C5-6762-48CA-9DBE-88821F11DD54) (Shutdown) 
+    iPhone 13 (999BA3DE-862A-4ABF-B772-34A1EA3AE937) (Shutdown) 
+    iPod touch (7th generation) (1AD53D71-3F45-4C2B-86C2-BC12EB5C0A17) (Shutdown) 
+    iPad Pro (9.7-inch) (B976E377-5CE0-40FD-9214-FC90B62A892A) (Shutdown) 
+    iPad (9th generation) (AA71D46E-1AAA-47E8-A114-9055A9D59DAB) (Shutdown) 
+    iPad Air (4th generation) (71CD7DA9-DDD9-4818-AB74-26C42CEC4F22) (Shutdown) 
+    iPad Pro (11-inch) (3rd generation) (50AF21F9-24DF-48DB-AB41-D008F379E10B) (Shutdown) 
+    iPad Pro (12.9-inch) (5th generation) (F573C789-9F98-4CC9-9C84-D904A87A423F) (Shutdown) 
+    iPad mini (6th generation) (616CDDFB-5297-49F8-8308-10672BFAF426) (Shutdown) 
 -- iOS 15.2 --
     iPhone 8 Plus (8306F1C0-7C1C-4386-BC7B-BC6A020370F2) (Shutdown) 
     iPhone 11 (99A61A22-8F82-4D5E-82A9-CB691AED17F5) (Shutdown) 
@@ -3277,6 +3295,10 @@ watchOS 9.0 (9.0 - 20R362) - com.apple.CoreSimulator.SimRuntime.watchOS-9-0
     iPad Pro (12.9-inch) (5th generation) (B75608BD-2850-436E-9A6C-D247F095E34B) (Shutdown) 
     iPad Air (5th generation) (4EBBAAFF-8727-486A-A96B-8A40C97705B3) (Shutdown) 
     iPad mini (6th generation) (302F01E7-2F9E-4356-A82F-BC1367D26F8D) (Shutdown) 
+-- tvOS 15.0 --
+    Apple TV (39EFBC21-2949-4FD4-87EC-79C3CD38A13D) (Shutdown) 
+    Apple TV 4K (2nd generation) (BD4E81C4-2ECB-4127-8A48-086428139B83) (Shutdown) 
+    Apple TV 4K (at 1080p) (2nd generation) (DEBB5F0F-3911-42CB-B984-DABEEF7F0E49) (Shutdown) 
 -- tvOS 15.2 --
     Apple TV (678EEA84-88F7-4FFC-A755-D1C4719ECE7B) (Shutdown) 
     Apple TV 4K (2nd generation) (687B3A5C-F4F3-4BF1-9C51-A80D8256CC8E) (Shutdown) 
@@ -3289,6 +3311,13 @@ watchOS 9.0 (9.0 - 20R362) - com.apple.CoreSimulator.SimRuntime.watchOS-9-0
     Apple TV (10460274-664E-4BCB-812A-1CC06222BF9C) (Shutdown) 
     Apple TV 4K (2nd generation) (F0F364AA-D93B-41FF-94A8-764B64017302) (Shutdown) 
     Apple TV 4K (at 1080p) (2nd generation) (2DDBCB95-A0EB-4AB0-83BD-96D2CF60404C) (Shutdown) 
+-- watchOS 8.0 --
+    Apple Watch Series 5 (40mm) (D41FF3DC-D587-40D7-9D5C-489FB4938814) (Shutdown) 
+    Apple Watch Series 5 (44mm) (21C7B4D7-F857-47DB-9AFE-7C0DF11ECD8F) (Shutdown) 
+    Apple Watch Series 6 (40mm) (71ECD1B4-1DB3-46FF-9C9A-311922695906) (Shutdown) 
+    Apple Watch Series 6 (44mm) (9730CDDB-7E02-4991-BD65-931D360DBE10) (Shutdown) 
+    Apple Watch Series 7 (41mm) (4DC553CB-F0E6-48E1-BCD7-3DF7CAC5680B) (Shutdown) 
+    Apple Watch Series 7 (45mm) (0C66BFC8-311B-416C-8723-F57D19506D07) (Shutdown) 
 -- watchOS 8.3 --
     Apple Watch Series 5 (40mm) (8E580FE0-7B5B-436C-B1F5-D9702F943156) (Shutdown) 
     Apple Watch Series 5 (44mm) (678F55B6-84A2-4319-85C7-5FB43BB84E1A) (Shutdown) 
@@ -3347,11 +3376,11 @@ Software:
       Kernel Version: Darwin 21.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-14.0.x-g2-m1.8core-ce248584-d117-4fb4-9ce1-8ee9e78ed6be
+      Computer Name: vm-osx-xcode-14.0.x-g2-m1.8core-f8f8b39a-e593-4f8a-8ca7-b76606131ea5
       User Name: Vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 18 minutes
+      Time since boot: 7 minutes
 
 
 ========================================
@@ -3360,7 +3389,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        295Gi        125Gi
+/dev/disk3s1s1        295Gi         99Gi
 ========================================
 
 --- Android
