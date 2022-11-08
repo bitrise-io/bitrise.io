@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2022_10_17
+* BITRISE_OSX_STACK_REV_ID: v2022_11_03
 ========================================
 
 
@@ -51,7 +51,7 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.1 - libarchive 3.5.1 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.0.4 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.6.6
+* brew: Homebrew 3.6.8
 Homebrew/homebrew-core (git revision 17d7c743610; last commit 2022-10-17)
 Homebrew/homebrew-cask (git revision b7efa70bed; last commit 2022-10-17)
 * Ansible: ansible [core 2.13.5]
@@ -68,12 +68,12 @@ Homebrew/homebrew-cask (git revision b7efa70bed; last commit 2022-10-17)
 * ghostscript (ps2ascii): 10.00.0
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 11.15.0
-* applesimutils version 0.9.7
+* applesimutils version 0.9.8
 * jq: 1.6
 * xcbeautify: 0.15.0
 * XCLogParser 0.2.34
 * Screen 4.09.00
-* applesimutils 0.9.7
+* applesimutils 0.9.8
 * OpenConnect version v9.01
 * aws-cli: aws-cli/2.8.3 Python/3.10.8 Darwin/21.6.0 source/arm64 prompt/off
 * cmake: 3.24.2
@@ -94,7 +94,7 @@ Homebrew/homebrew-cask (git revision b7efa70bed; last commit 2022-10-17)
 ansible 6.5.0
 ant 1.10.12
 aom 3.5.0_1
-applesimutils 0.9.7
+applesimutils 0.9.8
 apr 1.7.0_3
 apr-util 1.6.1_4
 argon2 20190702_1
@@ -114,7 +114,7 @@ coreutils 9.1
 curl 7.85.0
 danger-js 11.1.4
 danger-swift 3.14.2
-dart 2.18.3
+dart 2.18.4
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 double-conversion 3.2.1
@@ -2847,7 +2847,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.0.3.1
-* Bundler: Bundler version 2.3.24
+* Bundler: Bundler version 2.3.25
 * CocoaPods: 1.11.3
 * xcpretty: 0.3.0
 ========================================
@@ -2867,7 +2867,7 @@ aws-sdk-s3 (1.114.0)
 aws-sigv4 (1.5.2)
 babosa (1.0.4)
 bigdecimal (default: 1.4.1)
-bundler (2.3.24, default: 1.17.2)
+bundler (2.3.25, 2.3.24, default: 1.17.2)
 CFPropertyList (3.0.5)
 claide (1.1.0)
 clamp (1.3.2)
@@ -3062,7 +3062,7 @@ Target: arm64-apple-darwin21.6.0
 === Xcode ==============================
 
 * Active Xcode Command Line Tools:
-/Applications/Xcode-14.1.Release.Candidate.2.app/Contents/Developer
+/Applications/Xcode-14.1.app/Contents/Developer
 
 * Xcode Version:
 Xcode 14.1
@@ -3197,6 +3197,7 @@ Apple Watch Series 8 (45mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-S
 Apple Watch Ultra (49mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Ultra-49mm)
 == Runtimes ==
 iOS 14.5 (14.5 - 18E182) - com.apple.CoreSimulator.SimRuntime.iOS-14-5
+iOS 15.0 (15.0 - 19A339) - com.apple.CoreSimulator.SimRuntime.iOS-15-0
 iOS 15.4 (15.4 - 19E240) - com.apple.CoreSimulator.SimRuntime.iOS-15-4
 iOS 15.5 (15.5 - 19F70) - com.apple.CoreSimulator.SimRuntime.iOS-15-5
 iOS 16.0 (16.0 - 20A360) - com.apple.CoreSimulator.SimRuntime.iOS-16-0
@@ -3222,6 +3223,21 @@ watchOS 9.1 (9.1 - 20S75) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
     iPad Air (4th generation) (7FBCECFF-B92D-409D-AFDB-3FDE06C134BF) (Shutdown) 
     iPad Pro (11-inch) (3rd generation) (B0335364-160F-4FED-9431-01766B4A20AC) (Shutdown) 
     iPad Pro (12.9-inch) (5th generation) (D3697FAA-A647-4F6E-A4D3-D5C64E1E32F9) (Shutdown) 
+-- iOS 15.0 --
+    iPhone 8 Plus (4E3E87C1-6AF7-444B-AC31-355162D534B6) (Shutdown) 
+    iPhone 11 (DE9AEE81-A997-4394-BA85-CC3D7578D7A5) (Shutdown) 
+    iPhone SE (2nd generation) (6CE2BABA-FDAA-428B-A362-0D48B383B7AB) (Shutdown) 
+    iPhone 13 Pro (1D596B0D-4594-4AD1-B7A9-D841153E7E69) (Shutdown) 
+    iPhone 13 Pro Max (5E297CDB-2BDB-4BFC-A7B5-EE3D5317E7DC) (Shutdown) 
+    iPhone 13 mini (B6B1A362-3555-454D-A248-A5CE1E162B4A) (Shutdown) 
+    iPhone 13 (E397D380-BBD0-4FF4-BBC5-90128CA41665) (Shutdown) 
+    iPod touch (7th generation) (B78BC83C-5BC9-46CB-8DFA-6BA97B7C4913) (Shutdown) 
+    iPad Pro (9.7-inch) (7D781AF7-9C43-45D3-8C34-6B4CFDC3C9B3) (Shutdown) 
+    iPad (9th generation) (FFBDF283-3557-4899-9CC2-761D45938BC0) (Shutdown) 
+    iPad Air (4th generation) (7B02AC3B-786D-4F0A-882F-D01075F01AE4) (Shutdown) 
+    iPad Pro (11-inch) (3rd generation) (7161869D-C400-4353-A4D5-0F7CD39FCB55) (Shutdown) 
+    iPad Pro (12.9-inch) (5th generation) (F19540CB-A593-47DD-821F-BB5FED401DF5) (Shutdown) 
+    iPad mini (6th generation) (EDC76974-7EB3-44CB-A085-FE74BCF8C0CD) (Shutdown) 
 -- iOS 15.4 --
     iPhone 8 Plus (535EA76A-6F8A-48F2-8873-490FAC1EAEA0) (Shutdown) 
     iPhone 11 (D56DEA88-1A2E-4FF5-833C-BC7218FBE7F9) (Shutdown) 
@@ -3354,11 +3370,11 @@ Software:
       Kernel Version: Darwin 21.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-14.1.x-g2-m1.8core-a56efc50-8fd6-4b99-ab0a-d46ac0c73208
+      Computer Name: vm-osx-xcode-14.1.x-g2-m1.8core-d5d727da-34ee-4f49-819d-fbfa7fb08e5a
       User Name: Vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes
+      Time since boot: 5 minutes
 
 
 ========================================
@@ -3367,7 +3383,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        295Gi        138Gi
+/dev/disk3s1s1        295Gi        126Gi
 ========================================
 
 --- Android
