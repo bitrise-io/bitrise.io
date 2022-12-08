@@ -32,21 +32,21 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.27.16 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.16
+* aws-cli: aws-cli/1.27.24 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.24
 * Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
   * bundler: Bundler version 2.3.26
   * rubygems: 3.3.26
 * Go: go version go1.18.5 linux/amd64
 * Node.js: v16.18.1
-* NPM: 9.1.2
+* NPM: 9.1.3
 * Yarn: 1.22.19
 * docker: Docker version 20.10.21, build baeda1f
 * docker-compose: docker-compose version 1.28.6, build 5db8d86f
-* git lfs: git-lfs/3.2.0 (GitHub; linux amd64; go 1.18.2)
+* git lfs: git-lfs/3.3.0 (GitHub; linux amd64; go 1.19.3)
 
 * Terraform: v0.12.31
 * Packer: 1.8.2
-* Ansible: 2.13.6
+* Ansible: 2.13.7
 * Openconnect: v8.05-1
 * Shellcheck: 0.7.0
 * Gradle: Gradle 7.5
@@ -91,14 +91,14 @@ javac 1.8.0_352
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 410.0.0
-alpha 2022.11.11
-beta 2022.11.11
-bq 2.0.81
+Google Cloud SDK 411.0.0
+alpha 2022.12.05
+beta 2022.12.05
+bq 2.0.83
 bundled-python3-unix 3.9.12
-core 2022.11.11
+core 2022.12.05
 gcloud-crc32c 1.0.0
-gsutil 5.16
+gsutil 5.17
 ========================================
 
 
@@ -384,32 +384,32 @@ addressable (2.8.1)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.665.0)
-aws-sdk-core (3.168.1)
-aws-sdk-kms (1.59.0)
-aws-sdk-s3 (1.117.1)
+aws-partitions (1.672.0)
+aws-sdk-core (3.168.3)
+aws-sdk-kms (1.60.0)
+aws-sdk-s3 (1.117.2)
 aws-sigv4 (1.5.2)
 babosa (2.0.0, 1.0.4)
-benchmark (0.2.0, default: 0.1.0)
-bigdecimal (3.1.2, default: 2.0.0)
+benchmark (0.2.1, default: 0.1.0)
+bigdecimal (3.1.3, default: 2.0.0)
 bundler (default: 2.3.26)
 CFPropertyList (3.0.5)
-cgi (0.3.5, default: 0.1.0.1)
+cgi (0.3.6, default: 0.1.0.1)
 claide (1.1.0)
 colored (1.2)
 colored2 (3.1.2)
 commander (4.6.0)
 connection_pool (2.3.0)
 csv (3.2.5, default: 3.1.2)
-date (3.2.2, default: 3.0.3)
+date (3.3.0, default: 3.0.3)
 declarative (0.0.20)
-delegate (0.2.0, default: 0.1.0)
-did_you_mean (1.6.1, default: 1.4.0)
+delegate (0.3.0, default: 0.1.0)
+did_you_mean (1.6.2, default: 1.4.0)
 digest-crc (0.6.4)
 domain_name (0.5.20190701)
 dotenv (2.8.1)
 emoji_regex (3.2.3)
-etc (default: 1.1.0)
+etc (1.4.1, default: 1.1.0)
 excon (0.94.0)
 faraday (2.7.1, 1.10.2)
 faraday-cookie_jar (0.0.7)
@@ -426,11 +426,11 @@ faraday-retry (2.0.0, 1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
 fastlane (2.211.0)
-fcntl (1.0.1, default: 1.0.0)
+fcntl (1.0.2, default: 1.0.0)
 fiddle (default: 1.0.0)
-fileutils (1.6.0, default: 1.4.1)
-forwardable (1.3.2, default: 1.3.1)
-getoptlong (0.1.1, default: 0.1.0)
+fileutils (1.7.0, default: 1.4.1)
+forwardable (1.3.3, default: 1.3.1)
+getoptlong (0.2.0, default: 0.1.0)
 gh_inspector (1.1.3)
 google-apis-androidpublisher_v3 (0.31.0)
 google-apis-core (0.9.1)
@@ -446,12 +446,12 @@ highline (2.0.3)
 http-cookie (1.0.5)
 httpclient (2.8.3)
 io-console (0.5.11, default: 0.5.6)
-ipaddr (1.2.4, default: 1.2.2)
-irb (1.5.0, default: 1.2.6)
-jmespath (1.6.1)
-json (2.6.2, default: 2.3.0)
+ipaddr (1.2.5, default: 1.2.2)
+irb (1.5.1, default: 1.2.6)
+jmespath (1.6.2)
+json (2.6.3, default: 2.3.0)
 jwt (2.5.0)
-logger (1.5.1, default: 1.4.2)
+logger (1.5.2, default: 1.4.2)
 matrix (0.4.2, default: 0.2.0)
 memoist (0.16.2)
 mini_magick (4.11.0)
@@ -459,29 +459,29 @@ mini_mime (1.1.2)
 minitest (5.16.3, 5.13.0)
 multi_json (1.15.0)
 multipart-post (2.2.3, 2.0.0)
-mutex_m (0.1.1, default: 0.1.0)
+mutex_m (0.1.2, default: 0.1.0)
 nanaimo (0.3.0)
 naturally (2.2.1)
 net-http-persistent (4.0.1)
 net-pop (0.1.2, default: 0.1.0)
-net-protocol (0.1.3)
+net-protocol (0.2.0)
 net-smtp (0.3.3, default: 0.1.0)
 net-telnet (0.2.0)
 observer (0.1.1, default: 0.1.0)
 open3 (0.1.1, default: 0.1.0)
 openssl (3.0.1, default: 2.1.3)
-optparse (0.2.0, 0.1.1)
+optparse (0.3.0, 0.1.1)
 os (1.1.4)
 ostruct (0.5.5, default: 0.2.0)
 plist (3.6.0)
 power_assert (2.0.2, 1.1.7)
 prime (0.1.2, default: 0.1.1)
-pstore (0.1.1, default: 0.1.0)
-psych (4.0.6, default: 3.1.0)
+pstore (0.1.2, default: 0.1.0)
+psych (5.0.0, default: 3.1.0)
 public_suffix (5.0.0)
-racc (1.6.0, default: 1.4.16)
+racc (1.6.1, default: 1.4.16)
 rake (13.0.6, 13.0.1)
-rdoc (6.4.0, default: 6.2.1.1)
+rdoc (6.5.0, default: 6.2.1.1)
 readline (0.0.3, default: 0.0.2)
 readline-ext (0.1.4, default: 0.1.0)
 reline (0.3.1, default: 0.1.5)
@@ -503,7 +503,7 @@ strscan (3.0.4, default: 1.0.3)
 terminal-notifier (2.0.0)
 terminal-table (3.0.2, 1.8.0)
 test-unit (3.5.5, 3.3.4)
-timeout (0.3.0, default: 0.1.0)
+timeout (0.3.1, default: 0.1.0)
 tracer (0.1.1, default: 0.1.0)
 trailblazer-option (0.1.2)
 tty-cursor (0.7.1)
@@ -513,21 +513,21 @@ uber (0.1.0)
 unf (0.1.4)
 unf_ext (0.0.8.2)
 unicode-display_width (2.3.0, 1.8.0)
-uri (0.11.0, default: 0.10.0)
+uri (0.12.0, default: 0.10.0)
 webrick (1.7.0, default: 1.6.1)
 word_wrap (1.0.0)
 xcodeproj (1.22.0)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.1)
 xmlrpc (0.3.2, 0.3.0)
-yaml (0.2.0, default: 0.1.0)
-zlib (2.1.1, default: 1.1.0)
+yaml (0.2.1, default: 0.1.0)
+zlib (3.0.0, default: 1.1.0)
 ========================================
 
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1c8bc26f0c-e68b-4b65-bb73-2084d1dc514d 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1b4a4db762-d618-4c65-a478-abe6b9c07000 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -567,10 +567,10 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Runtimes: io.containerd.runtime.v1.linux runc io.containerd.runc.v2
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: 770bd0108c32f3fb5c73ae1264f7e503fe7b2661
+ containerd version: d986545181c905378b0f90faa9c5eae3cbfa3755
  runc version: v1.1.4-0-g5fd4c4d
  init version: de40ad0
  Security Options:
@@ -583,8 +583,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1c8bc26f0c-e68b-4b65-bb73-2084d1dc514d
- ID: Y4UR:XZYW:UST6:HW6U:U42S:NLLY:SWPG:TJSE:H6FJ:RHBM:3JI4:UTKS
+ Name: stg-prdfree-20-04-usc1b4a4db762-d618-4c65-a478-abe6b9c07000
+ ID: T5ZA:4K35:VWIO:Z7ZF:TAPB:ISI4:LLLF:NGKI:IAB4:F4UR:WPE4:UFVJ
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -598,12 +598,12 @@ Server:
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 44.6GB
-quay.io/bitriseio/android-ndk-20.04 - 44.6GB
+bitriseio/android-ndk-20.04 - 44.7GB
+quay.io/bitriseio/android-ndk-20.04 - 44.7GB
 bitriseio/android-20.04 - 42.3GB
 quay.io/bitriseio/android-20.04 - 42.3GB
-bitriseio/bitrise-base-20.04 - 3.13GB
-quay.io/bitriseio/bitrise-base-20.04 - 3.13GB
+bitriseio/bitrise-base-20.04 - 3.14GB
+quay.io/bitriseio/bitrise-base-20.04 - 3.14GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -611,13 +611,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-overlay         194G   56G  138G  29% /
+overlay         194G   57G  138G  30% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   56G  138G  29% /bitrise
+/dev/root       194G   57G  138G  30% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       708Mi        60Gi       1.0Mi       1.8Gi        61Gi
+Mem:           62Gi       754Mi        59Gi       1.0Mi       2.9Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
