@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2022_12_07
+* BITRISE_OSX_STACK_REV_ID: v2022_12_15
 ========================================
 
 
@@ -51,7 +51,7 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.0.4 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.6.14
+* brew: Homebrew 3.6.15
 Homebrew/homebrew-core (git revision f9eebd3ef5a; last commit 2022-12-05)
 Homebrew/homebrew-cask (git revision 1297a6353e; last commit 2022-12-05)
 * Ansible: ansible [core 2.13.6]
@@ -113,7 +113,7 @@ coreutils 9.1
 curl 7.86.0
 danger-js 11.2.0
 danger-swift 3.15.0
-dart 2.18.5
+dart 2.18.6
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 docutils 0.19
@@ -2883,7 +2883,6 @@ zstd
   2.7.6
   3.0.0
   3.0.3
-  3.1.0
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.0.3.1
@@ -2900,9 +2899,9 @@ algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.672.0)
-aws-sdk-core (3.168.3)
-aws-sdk-kms (1.60.0)
+aws-partitions (1.678.0)
+aws-sdk-core (3.168.4)
+aws-sdk-kms (1.61.0)
 aws-sdk-s3 (1.117.2)
 aws-sigv4 (1.5.2)
 babosa (1.0.4)
@@ -2936,7 +2935,7 @@ emoji_regex (3.2.3)
 escape (0.0.4)
 etc (default: 1.0.1)
 ethon (0.16.0)
-excon (0.94.0)
+excon (0.95.0)
 faraday (1.10.2)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
@@ -2961,8 +2960,8 @@ fourflusher (2.3.1)
 fuzzy_match (2.0.4)
 gdbm (default: 2.0.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.31.0)
-google-apis-core (0.9.1)
+google-apis-androidpublisher_v3 (0.32.0)
+google-apis-core (0.9.2)
 google-apis-iamcredentials_v1 (0.16.0)
 google-apis-playcustomapp_v1 (0.12.0)
 google-apis-storage_v1 (0.19.0)
@@ -2998,7 +2997,7 @@ nanaimo (0.3.0)
 nap (1.1.0)
 naturally (2.2.1)
 netrc (0.11.0)
-nokogiri (1.13.9 x86_64-darwin)
+nokogiri (1.13.10 x86_64-darwin)
 open4 (1.3.4)
 openssl (default: 2.1.2)
 optparse (0.1.1)
@@ -3098,7 +3097,7 @@ Target: x86_64-apple-darwin22.1.0
 === Xcode ==============================
 
 * Active Xcode Command Line Tools:
-/Applications/Xcode-14.2.Release.Candidate.app/Contents/Developer
+/Applications/Xcode-14.2.app/Contents/Developer
 
 * Xcode Version:
 Xcode 14.2
@@ -3288,14 +3287,18 @@ watchOS 9.1 (9.1 - 20S75) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
     iPad Air (5th generation) (E16D7793-33C1-4E6D-9614-8A1963BEEED4) (Shutdown) 
     iPad mini (6th generation) (F82C9D59-C310-4E3C-BD1F-E3306C5661EE) (Shutdown) 
 -- iOS 16.2 --
-    iPhone SE (3rd generation) (61F70972-2BC2-450A-9D37-C4DBF813C0AF) (Shutdown) 
-    iPhone 14 (232CFDC0-4630-45E6-B704-88152122C7B2) (Shutdown) 
-    iPhone 14 Plus (2DA0CB26-8D72-4898-B8EF-92B520D73F7F) (Shutdown) 
-    iPhone 14 Pro (5BB7789A-58B3-4CAE-90DB-447A258AFAC1) (Shutdown) 
-    iPhone 14 Pro Max (2F9DE067-8859-4162-8213-8AE0F3573877) (Shutdown) 
-    iPad Air (5th generation) (F59B6131-0745-44DC-B8D2-823818D3EEA7) (Shutdown) 
-    iPad (10th generation) (750A30BD-6EE5-482B-874E-82C5BF1E15C1) (Shutdown) 
-    iPad Pro (12.9-inch) (6th generation) (5B34EFF5-6D9D-47AA-9C23-A42E536724C8) (Shutdown) 
+    iPhone 8 Plus (4657C7F7-81F6-441B-A711-8517985D9354) (Shutdown) 
+    iPhone 11 (1855BEBA-3A06-4206-B022-4C4C764AF9D9) (Shutdown) 
+    iPhone SE (3rd generation) (DA9EBFE9-323B-46EE-919D-C14199628C30) (Shutdown) 
+    iPhone 14 (860FB76E-433D-4481-9E40-18233792C567) (Shutdown) 
+    iPhone 14 Plus (688F2069-A606-4D8C-850C-009F6467D557) (Shutdown) 
+    iPhone 14 Pro (E46D5134-FF8F-4F08-8CD4-7E9B818C1CAC) (Shutdown) 
+    iPhone 14 Pro Max (2CCA34DE-11E9-4655-88D3-EC958C079D35) (Shutdown) 
+    iPad Air (5th generation) (4AA0A954-D665-4A6F-A61F-5D62B3E9E420) (Shutdown) 
+    iPad (10th generation) (D116C206-2EBF-4530-958D-D20631A1EABF) (Shutdown) 
+    iPad mini (6th generation) (08568F13-4D02-43B8-9C91-4550E297C352) (Shutdown) 
+    iPad Pro (11-inch) (4th generation) (4A349783-4598-4AED-806B-5A122AF253F6) (Shutdown) 
+    iPad Pro (12.9-inch) (6th generation) (55814B4D-00D5-49BB-9378-F32EB711BB4E) (Shutdown) 
 -- tvOS 15.4 --
     Apple TV (A2E12E14-9EB4-4BBC-A171-F873FF1C851A) (Shutdown) 
     Apple TV 4K (2nd generation) (6449DE97-F00D-410B-A12C-7B5C7ADE856B) (Shutdown) 
@@ -3358,14 +3361,18 @@ watchOS 9.1 (9.1 - 20S75) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
     Phone: iPhone 14 Pro (E420D7ED-AE29-4E47-9F77-C8651F6838EB) (Shutdown)
     Watch: Apple Watch Ultra (49mm) (8BE8037B-E7F1-409B-B44A-59B56D3734A6) (Shutdown)
     Phone: iPhone 14 Pro Max (CBFF17AF-D1E2-4235-9F4B-B7F993AF6D39) (Shutdown)
+1B6EE983-A856-4D94-9241-F91CF6DEADFC (active, disconnected)
     Watch: Apple Watch Series 7 (45mm) (84DA66C8-A6D9-4F03-82EF-3FEFFC8095ED) (Shutdown)
-    Phone: iPhone 14 (85E31E30-565E-4509-92DA-1F8950936BF2) (Shutdown)
+    Phone: iPhone 14 (860FB76E-433D-4481-9E40-18233792C567) (Shutdown)
+33EE023D-ACD3-43D6-9CDD-F0D8565D3224 (active, disconnected)
     Watch: Apple Watch Series 8 (41mm) (F3DC2B9F-62DF-426D-81B9-CD0797900FDA) (Shutdown)
-    Phone: iPhone 14 Plus (B2E18250-E25F-49CD-9A8E-48A36DCB0554) (Shutdown)
+    Phone: iPhone 14 Plus (688F2069-A606-4D8C-850C-009F6467D557) (Shutdown)
+78A39054-8ED4-4B77-8B5D-0AE367D64F80 (active, disconnected)
     Watch: Apple Watch Series 8 (45mm) (EBAF477D-EC1F-4988-B43D-FB4494364DCE) (Shutdown)
-    Phone: iPhone 14 Pro (4E1D06B6-8E80-4D5A-850D-ED2C404F9BD9) (Shutdown)
+    Phone: iPhone 14 Pro (E46D5134-FF8F-4F08-8CD4-7E9B818C1CAC) (Shutdown)
+33A858B0-F6E8-4781-B7E3-F3F260A2EA6E (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (1A80258A-0205-4FE9-9514-B52700636F64) (Shutdown)
-    Phone: iPhone 14 Pro Max (F2D03CB9-91CA-4A2F-B22F-E43C3502BC23) (Shutdown)
+    Phone: iPhone 14 Pro Max (2CCA34DE-11E9-4655-88D3-EC958C079D35) (Shutdown)
 
 ========================================
 
@@ -3386,11 +3393,11 @@ Software:
       Kernel Version: Darwin 22.1.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-14.2.x-ventura-g2.8core-542a523c-730e-48b8-a3ae-b252e3bf6c23
+      Computer Name: vm-osx-xcode-14.2.x-ventura-g2.8core-517162be-7505-4d8b-82b4-279c0103d95e
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 36 seconds
+      Time since boot: 2 minutes, 31 seconds
 
 
 ========================================
@@ -3399,7 +3406,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk1s5s1        300Gi        136Gi
+/dev/disk1s5s1        300Gi        134Gi
 ========================================
 
 --- Android
