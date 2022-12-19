@@ -7,7 +7,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2022_12_05
+* BITRISE_OSX_STACK_REV_ID: v2022_12_15
 ========================================
 
 
@@ -51,7 +51,7 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.0.4 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
 
-* brew: Homebrew 3.6.14
+* brew: Homebrew 3.6.15
 Homebrew/homebrew-core (git revision f9eebd3ef5a; last commit 2022-12-05)
 Homebrew/homebrew-cask (git revision 1297a6353e; last commit 2022-12-05)
 * Ansible: ansible [core 2.13.6]
@@ -113,7 +113,7 @@ coreutils 9.1
 curl 7.86.0
 danger-js 11.2.0
 danger-swift 3.15.0
-dart 2.18.5
+dart 2.18.6
 docbook 5.1_1
 docbook-xsl 1.79.2_1
 docutils 0.19
@@ -2952,7 +2952,6 @@ zstd
   2.7.6
   3.0.0
   3.0.3
-  3.1.0
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.0.3.1
@@ -3171,7 +3170,7 @@ Target: arm64-apple-darwin22.1.0
 === Xcode ==============================
 
 * Active Xcode Command Line Tools:
-/Applications/Xcode-14.2.Release.Candidate.app/Contents/Developer
+/Applications/Xcode-14.2.app/Contents/Developer
 
 * Xcode Version:
 Xcode 14.2
@@ -3387,8 +3386,18 @@ watchOS 9.1 (9.1 - 20S75) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
     iPad Air (5th generation) (2BB8EC3F-C838-4C04-8D90-536C8290FCDE) (Shutdown) 
     iPad mini (6th generation) (0A90B27A-0F68-485F-BAF5-23867AB2049D) (Shutdown) 
 -- iOS 16.2 --
-    iPhone 14 Pro (E48E2656-6229-40CA-948D-4843B69B511B) (Shutdown) 
-    iPhone 14 Pro Max (B608B3FB-BBF7-495F-A084-7631AE27EC1F) (Shutdown) 
+    iPhone 8 Plus (FB905311-037D-4008-B8F6-EB9395A32EDA) (Shutdown) 
+    iPhone 11 (2DA58989-924A-46F2-9177-4D2B2D906479) (Shutdown) 
+    iPhone SE (3rd generation) (48791389-3EDD-4664-9856-93B66C005C19) (Shutdown) 
+    iPhone 14 (FFF55A81-DA96-4F8F-B832-EE3B056F7E68) (Shutdown) 
+    iPhone 14 Plus (F2CECF14-085A-431A-9A8E-421261902CEC) (Shutdown) 
+    iPhone 14 Pro (B02BAEB4-F60C-4790-86EE-931C10DD0317) (Shutdown) 
+    iPhone 14 Pro Max (0F10F852-3DC5-4D86-87C0-57C04C34E1DB) (Shutdown) 
+    iPad Air (5th generation) (E82D3D96-9A46-4DD8-9879-75A2A1041A19) (Shutdown) 
+    iPad (10th generation) (C5F94996-2336-434B-B5D0-092B9368FCED) (Shutdown) 
+    iPad mini (6th generation) (A47842CA-04E2-4FEE-9DFB-F71B1661727E) (Shutdown) 
+    iPad Pro (11-inch) (4th generation) (F29E1CA7-EF0B-4577-B8CA-3A0163FD5BE0) (Shutdown) 
+    iPad Pro (12.9-inch) (6th generation) (83BD5327-AC13-42E9-87D2-54EF7248A0D6) (Shutdown) 
 -- tvOS 15.4 --
     Apple TV (271135D5-878A-485B-8E64-C70D45FA672C) (Shutdown) 
     Apple TV 4K (2nd generation) (96D00049-30E0-452B-AC17-C2BE3822C161) (Shutdown) 
@@ -3460,14 +3469,18 @@ D7C210B2-D133-464D-9D6C-A042E9A5655E (active, disconnected)
 000CB395-C5C6-4A73-838F-EC6D32EEFCB1 (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (2DBA42EC-17B6-47D6-8A34-6EDCD4DDD7F1) (Shutdown)
     Phone: iPhone 14 Pro Max (83F5AB59-E2A9-495E-8CB2-8C32AA301341) (Shutdown)
+95E59D4C-952F-4266-A049-EA388E3BD866 (active, disconnected)
     Watch: Apple Watch Series 7 (45mm) (9461AF01-DCC5-48F7-A0E9-3E53B14D0E0D) (Shutdown)
-    Phone: iPhone 14 (2D747A34-BF7A-4035-8F6F-93F7186B6F69) (Shutdown)
+    Phone: iPhone 14 (FFF55A81-DA96-4F8F-B832-EE3B056F7E68) (Shutdown)
+1550FF68-053C-4A3C-80DE-F8F1D78B89B5 (active, disconnected)
     Watch: Apple Watch Series 8 (41mm) (C04D76BE-AA57-4712-BCD3-1181C021A3BC) (Shutdown)
-    Phone: iPhone 14 Plus (7A6C4E8F-A88D-46BF-9889-4FAC07BDDD2F) (Shutdown)
+    Phone: iPhone 14 Plus (F2CECF14-085A-431A-9A8E-421261902CEC) (Shutdown)
+429F98AC-F679-4B04-9EE2-6FCAB3528C3A (active, disconnected)
     Watch: Apple Watch Series 8 (45mm) (3683F5F9-7A75-4541-B929-257AB1F9DF06) (Shutdown)
-    Phone: iPhone 14 Pro (E0EA30E5-2F26-4288-AE63-C6FD2A94634F) (Shutdown)
+    Phone: iPhone 14 Pro (B02BAEB4-F60C-4790-86EE-931C10DD0317) (Shutdown)
+E9AF80B1-3DF4-4836-BBFD-6F1F2CCDE56E (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (BED4B076-39E1-4CC8-BE0C-01A57E225472) (Shutdown)
-    Phone: iPhone 14 Pro Max (AE10E6E5-1DE2-4CBF-8B34-6A2FE8285BBA) (Shutdown)
+    Phone: iPhone 14 Pro Max (0F10F852-3DC5-4D86-87C0-57C04C34E1DB) (Shutdown)
 
 ========================================
 
@@ -3488,11 +3501,11 @@ Software:
       Kernel Version: Darwin 22.1.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-xcode-14.2.x-ventura-g2-m1.8core-4e8b3200-4901-4d9d-8f38-2ad861338042
+      Computer Name: vm-osx-xcode-14.2.x-ventura-g2-m1.8core-1b01c351-fef7-45b0-8148-e23c091a7e95
       User Name: Vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 hours, 32 minutes
+      Time since boot: 2 days, 19 hours, 57 minutes
 
 
 ========================================
@@ -3501,7 +3514,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        295Gi        123Gi
+/dev/disk3s1s1        295Gi        121Gi
 ========================================
 
 --- Android
