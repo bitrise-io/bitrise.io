@@ -531,7 +531,7 @@ zlib (3.0.0, default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1c-be38f4a7-987c-4193-a909-99034a9516cf 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1c-57555960-f05f-4615-b493-88401655886e 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -571,7 +571,7 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Runtimes: runc io.containerd.runc.v2 io.containerd.runtime.v1.linux
  Default Runtime: runc
  Init Binary: docker-init
  containerd version: 5b842e528e99d4d4c1686467debf2bd4b88ecd86
@@ -587,7 +587,7 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1c-be38f4a7-987c-4193-a909-99034a9516cf
+ Name: stg-prdfree-20-04-usc1c-57555960-f05f-4615-b493-88401655886e
  ID: I7OA:PBOZ:CUMI:YRAP:NU3J:GXKC:U45D:PXMJ:WFAW:4BYC:RNBZ:4OJ6
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
@@ -615,13 +615,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-overlay         194G   58G  136G  30% /
+overlay         194G   59G  136G  31% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   58G  136G  30% /bitrise
+/dev/root       194G   59G  136G  31% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       719Mi        59Gi       1.0Mi       2.4Gi        61Gi
+Mem:           62Gi       658Mi        59Gi       1.0Mi       3.0Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
