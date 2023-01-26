@@ -32,7 +32,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.27.54 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.54
+* aws-cli: aws-cli/1.27.56 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.56
 * Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
   * bundler: Bundler version 2.4.5
   * rubygems: 3.4.5
@@ -95,12 +95,12 @@ javac 1.8.0_352
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 414.0.0
-alpha 2023.01.13
-beta 2023.01.13
+Google Cloud SDK 415.0.0
+alpha 2023.01.20
+beta 2023.01.20
 bq 2.0.84
 bundled-python3-unix 3.9.16
-core 2023.01.13
+core 2023.01.20
 gcloud-crc32c 1.0.0
 gsutil 5.18
 ========================================
@@ -388,7 +388,7 @@ addressable (2.8.1)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.697.0)
+aws-partitions (1.699.0)
 aws-sdk-core (3.169.0)
 aws-sdk-kms (1.62.0)
 aws-sdk-s3 (1.118.0)
@@ -397,7 +397,7 @@ babosa (2.0.0, 1.0.4)
 benchmark (0.2.1, default: 0.1.0)
 bigdecimal (3.1.3, default: 2.0.0)
 bundler (default: 2.4.5)
-CFPropertyList (3.0.5)
+CFPropertyList (3.0.6)
 cgi (0.3.6, default: 0.1.0.1)
 claide (1.1.0)
 colored (1.2)
@@ -531,7 +531,7 @@ zlib (3.0.0, default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1c-57555960-f05f-4615-b493-88401655886e 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1b-89355527-70f4-4f50-b6bf-d2f06614a500 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -571,7 +571,7 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: runc io.containerd.runc.v2 io.containerd.runtime.v1.linux
+ Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
  Default Runtime: runc
  Init Binary: docker-init
  containerd version: 5b842e528e99d4d4c1686467debf2bd4b88ecd86
@@ -587,8 +587,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1c-57555960-f05f-4615-b493-88401655886e
- ID: I7OA:PBOZ:CUMI:YRAP:NU3J:GXKC:U45D:PXMJ:WFAW:4BYC:RNBZ:4OJ6
+ Name: stg-prdfree-20-04-usc1b-89355527-70f4-4f50-b6bf-d2f06614a500
+ ID: BGVI:65A3:5ALJ:B4LL:IIYJ:FQYO:4TDQ:3QAT:7JEQ:3UNI:CRJB:N4VO
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -602,12 +602,12 @@ Server:
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 46.6GB
-quay.io/bitriseio/android-ndk-20.04 - 46.6GB
-bitriseio/android-20.04 - 44.2GB
-quay.io/bitriseio/android-20.04 - 44.2GB
-bitriseio/bitrise-base-20.04 - 3.15GB
-quay.io/bitriseio/bitrise-base-20.04 - 3.15GB
+bitriseio/android-ndk-20.04 - 46.7GB
+quay.io/bitriseio/android-ndk-20.04 - 46.7GB
+bitriseio/android-20.04 - 44.3GB
+quay.io/bitriseio/android-20.04 - 44.3GB
+bitriseio/bitrise-base-20.04 - 3.16GB
+quay.io/bitriseio/bitrise-base-20.04 - 3.16GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -615,13 +615,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-overlay         194G   59G  136G  31% /
+overlay         194G   58G  136G  30% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   59G  136G  31% /bitrise
+/dev/root       194G   58G  136G  30% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       658Mi        59Gi       1.0Mi       3.0Gi        61Gi
+Mem:           62Gi       745Mi        59Gi       1.0Mi       2.4Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
