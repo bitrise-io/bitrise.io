@@ -32,13 +32,13 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.27.56 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.56
+* aws-cli: aws-cli/1.27.60 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.60
 * Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
   * bundler: Bundler version 2.4.5
   * rubygems: 3.4.5
 * Go: go version go1.18.5 linux/amd64
 * Node.js: v16.19.0
-* NPM: 9.3.1
+* NPM: 9.4.0
 * Yarn: 1.22.19
 * docker: Docker version 20.10.23, build 7155243
 * docker-compose: docker-compose version 1.28.6, build 5db8d86f
@@ -54,7 +54,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * Java: javac 11.0.17
 * Cordova CLI version: 11.1.0
 * Ionic CLI version: 6.20.8
-* Appcenter-CLI version: 2.13.0
+* Appcenter-CLI version: 2.13.1
 ========================================
 
 === Kotlin ===============================
@@ -375,7 +375,7 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 32 directories, 47 files
 
 --- Bitrise CLI tool versions
-* bitrise: 2.2.1
+* bitrise: 2.2.2
 * stepman: 0.16.0
 * envman: 2.4.0
 ./system_report.sh: line 221: bitrise-bridge: command not found
@@ -388,10 +388,10 @@ addressable (2.8.1)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.699.0)
-aws-sdk-core (3.169.0)
+aws-partitions (1.701.0)
+aws-sdk-core (3.170.0)
 aws-sdk-kms (1.62.0)
-aws-sdk-s3 (1.118.0)
+aws-sdk-s3 (1.119.0)
 aws-sigv4 (1.5.2)
 babosa (2.0.0, 1.0.4)
 benchmark (0.2.1, default: 0.1.0)
@@ -414,7 +414,7 @@ domain_name (0.5.20190701)
 dotenv (2.8.1)
 emoji_regex (3.2.3)
 etc (1.4.2, default: 1.1.0)
-excon (0.97.2)
+excon (0.98.0)
 faraday (2.7.4, 1.10.3)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
@@ -436,8 +436,8 @@ fileutils (1.7.0, default: 1.4.1)
 forwardable (1.3.3, default: 1.3.1)
 getoptlong (0.2.0, default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.32.0)
-google-apis-core (0.9.5)
+google-apis-androidpublisher_v3 (0.33.0)
+google-apis-core (0.10.0)
 google-apis-iamcredentials_v1 (0.16.0)
 google-apis-playcustomapp_v1 (0.12.0)
 google-apis-storage_v1 (0.20.0, 0.19.0)
@@ -462,7 +462,7 @@ mini_magick (4.12.0)
 mini_mime (1.1.2)
 minitest (5.17.0, 5.13.0)
 multi_json (1.15.0)
-multipart-post (2.2.3, 2.0.0)
+multipart-post (2.3.0, 2.0.0)
 mutex_m (0.1.2, default: 0.1.0)
 nanaimo (0.3.0)
 naturally (2.2.1)
@@ -500,7 +500,7 @@ rubyzip (2.3.2)
 sdbm (default: 1.0.0)
 security (0.1.5, 0.1.3)
 signet (0.17.0)
-simctl (1.6.8)
+simctl (1.6.10)
 singleton (0.1.1, default: 0.1.0)
 stringio (3.0.4, default: 0.1.0)
 strscan (3.0.5, default: 1.0.3)
@@ -518,7 +518,7 @@ unf (0.1.4)
 unf_ext (0.0.8.2)
 unicode-display_width (2.4.2, 1.8.0)
 uri (0.12.0, default: 0.10.0)
-webrick (1.7.0, default: 1.6.1)
+webrick (1.8.1, default: 1.6.1)
 word_wrap (1.0.0)
 xcodeproj (1.22.0)
 xcpretty (0.3.0)
@@ -531,7 +531,7 @@ zlib (3.0.0, default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1b-89355527-70f4-4f50-b6bf-d2f06614a500 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1c-89ffe6b9-1a35-4589-869b-5875dc5c2744 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -571,10 +571,10 @@ Server:
   Network: bridge host ipvlan macvlan null overlay
   Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
  Swarm: inactive
- Runtimes: io.containerd.runc.v2 io.containerd.runtime.v1.linux runc
+ Runtimes: runc io.containerd.runc.v2 io.containerd.runtime.v1.linux
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: 5b842e528e99d4d4c1686467debf2bd4b88ecd86
+ containerd version: 31aa4358a36870b21a992d3ad2bef29e1d693bec
  runc version: v1.1.4-0-g5fd4c4d
  init version: de40ad0
  Security Options:
@@ -587,8 +587,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1b-89355527-70f4-4f50-b6bf-d2f06614a500
- ID: BGVI:65A3:5ALJ:B4LL:IIYJ:FQYO:4TDQ:3QAT:7JEQ:3UNI:CRJB:N4VO
+ Name: stg-prdfree-20-04-usc1c-89ffe6b9-1a35-4589-869b-5875dc5c2744
+ ID: FG63:CHAW:YSAI:GFOI:EDY5:CLGZ:6Q35:EWUF:XEMY:DMQN:FLXD:HE2Z
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -621,7 +621,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   58G  136G  30% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       745Mi        59Gi       1.0Mi       2.4Gi        61Gi
+Mem:           62Gi       720Mi        60Gi       1.0Mi       1.9Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
