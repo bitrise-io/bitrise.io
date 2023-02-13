@@ -7,7 +7,7 @@
 
 === Pre-installed lib versions ========
 * zlib1g-dev: 1:1.2.11.dfsg-2ubuntu1.5
-* libssl-dev: 1.1.1f-1ubuntu2.17
+* libssl-dev: 1.1.1f-1ubuntu2.16
 dpkg-query: package 'libreadline6-dev' is not installed and no information is available
 Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * libreadline6-dev: 
@@ -17,7 +17,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 
 
 === Pre-installed tool versions ========
-* git: git version 2.39.1
+* git: git version 2.39.0
 * mercurial/hg: Mercurial Distributed SCM (version 5.3.1)
 * curl: curl 7.68.0 (x86_64-pc-linux-gnu) libcurl/7.68.0 OpenSSL/1.1.1f zlib/1.2.11 brotli/1.0.7 libidn2/2.2.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.3/openssl/zlib nghttp2/1.40.0 librtmp/2.3
 * wget: GNU Wget 1.20.3 built on linux-gnu.
@@ -32,15 +32,15 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.27.68 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.68
+* aws-cli: aws-cli/1.27.45 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.45
 * Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
-  * bundler: Bundler version 2.4.5
-  * rubygems: 3.4.5
+  * bundler: Bundler version 2.4.3
+  * rubygems: 3.4.3
 * Go: go version go1.18.5 linux/amd64
 * Node.js: v16.19.0
-* NPM: 9.4.2
+* NPM: 9.2.0
 * Yarn: 1.22.19
-* docker: Docker version 23.0.1, build a5ee5b1
+* docker: Docker version 20.10.22, build 3a2c30b
 * docker-compose: docker-compose version 1.28.6, build 5db8d86f
 * git lfs: git-lfs/3.3.0 (GitHub; linux amd64; go 1.19.3)
 
@@ -52,9 +52,9 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * Gradle: Gradle 7.5
 * Maven: [1mApache Maven 3.6.3[m
 * Java: javac 11.0.17
-* Cordova CLI version: 11.1.0
-* Ionic CLI version: 6.20.8
-* Appcenter-CLI version: 2.13.1
+* Cordova CLI version: 11.0.0
+* Ionic CLI version: 6.20.6
+* Appcenter-CLI version: 2.12.0
 ========================================
 
 === Kotlin ===============================
@@ -95,25 +95,25 @@ javac 1.8.0_352
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 417.0.1
-alpha 2023.02.08
-beta 2023.02.08
-bq 2.0.84
-bundled-python3-unix 3.9.16
-core 2023.02.08
+Google Cloud SDK 412.0.0
+alpha 2022.12.09
+beta 2022.12.09
+bq 2.0.83
+bundled-python3-unix 3.9.12
+core 2022.12.09
 gcloud-crc32c 1.0.0
-gsutil 5.18
+gsutil 5.17
 ========================================
 
 
 === Firebase Tools components ==========
-11.21.0
+11.20.0
 ========================================
 
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-..done.
+....done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -138,7 +138,7 @@ Installed as /opt/android-sdk-linux/platform-tools/adb
  * SDK packages:
 * Command line Tools version: 7.0
 * Platform Tools version: 33.0.3
-* Emulator version: 32.1.11
+* Emulator version: 31.3.14
 ========================================
 
 
@@ -206,19 +206,18 @@ sqlite3
 * ./emulator:
 android-info.txt
 bin64
-crashpad_handler
 emulator
+emulator64-crash-service
 emulator-check
 goldfish-webrtc-bridge
-include
 lib
 lib64
 LICENSE
 mksdcard
-nimble_bridge
 NOTICE.csv
 NOTICE.txt
 package.xml
+perfetto-protozero-protoc-plugin
 qemu
 qemu-img
 qsn
@@ -376,7 +375,7 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 32 directories, 47 files
 
 --- Bitrise CLI tool versions
-* bitrise: 2.2.2
+* bitrise: 2.2.3
 * stepman: 0.16.0
 * envman: 2.4.0
 ./system_report.sh: line 221: bitrise-bridge: command not found
@@ -389,16 +388,16 @@ addressable (2.8.1)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.709.0)
-aws-sdk-core (3.170.0)
-aws-sdk-kms (1.62.0)
-aws-sdk-s3 (1.119.0)
+aws-partitions (1.689.0)
+aws-sdk-core (3.168.4)
+aws-sdk-kms (1.61.0)
+aws-sdk-s3 (1.117.2)
 aws-sigv4 (1.5.2)
 babosa (2.0.0, 1.0.4)
 benchmark (0.2.1, default: 0.1.0)
 bigdecimal (3.1.3, default: 2.0.0)
-bundler (default: 2.4.5)
-CFPropertyList (3.0.6)
+bundler (default: 2.4.3)
+CFPropertyList (3.0.5)
 cgi (0.3.6, default: 0.1.0.1)
 claide (1.1.0)
 colored (1.2)
@@ -415,8 +414,8 @@ domain_name (0.5.20190701)
 dotenv (2.8.1)
 emoji_regex (3.2.3)
 etc (1.4.2, default: 1.1.0)
-excon (0.98.0)
-faraday (2.7.4, 1.10.3)
+excon (0.96.0)
+faraday (2.7.2, 1.10.2)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
 faraday-em_synchrony (1.0.0)
@@ -437,8 +436,8 @@ fileutils (1.7.0, default: 1.4.1)
 forwardable (1.3.3, default: 1.3.1)
 getoptlong (0.2.0, default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.33.0)
-google-apis-core (0.11.0)
+google-apis-androidpublisher_v3 (0.32.0)
+google-apis-core (0.9.4)
 google-apis-iamcredentials_v1 (0.16.0)
 google-apis-playcustomapp_v1 (0.12.0)
 google-apis-storage_v1 (0.20.0, 0.19.0)
@@ -463,7 +462,7 @@ mini_magick (4.12.0)
 mini_mime (1.1.2)
 minitest (5.17.0, 5.13.0)
 multi_json (1.15.0)
-multipart-post (2.3.0, 2.0.0)
+multipart-post (2.2.3, 2.0.0)
 mutex_m (0.1.2, default: 0.1.0)
 nanaimo (0.3.0)
 naturally (2.2.1)
@@ -482,7 +481,7 @@ plist (3.6.0)
 power_assert (2.0.3, 1.1.7)
 prime (0.1.2, default: 0.1.1)
 pstore (0.1.2, default: 0.1.0)
-psych (5.1.0, default: 3.1.0)
+psych (5.0.1, default: 3.1.0)
 public_suffix (5.0.1)
 racc (1.6.2, default: 1.4.16)
 rake (13.0.6, 13.0.1)
@@ -496,15 +495,15 @@ rexml (3.2.5, default: 3.2.3.1)
 rouge (4.0.1, 2.0.7)
 rss (0.2.9, default: 0.2.8)
 ruby2_keywords (0.0.5)
-rubygems-update (3.4.5)
+rubygems-update (3.4.3)
 rubyzip (2.3.2)
 sdbm (default: 1.0.0)
 security (0.1.5, 0.1.3)
 signet (0.17.0)
-simctl (1.6.10)
+simctl (1.6.8)
 singleton (0.1.1, default: 0.1.0)
-stringio (3.0.5, default: 0.1.0)
-strscan (3.0.6, default: 1.0.3)
+stringio (3.0.4, default: 0.1.0)
+strscan (3.0.5, default: 1.0.3)
 terminal-notifier (2.0.0)
 terminal-table (3.0.2, 1.8.0)
 test-unit (3.5.7, 3.3.4)
@@ -519,7 +518,7 @@ unf (0.1.4)
 unf_ext (0.0.8.2)
 unicode-display_width (2.4.2, 1.8.0)
 uri (0.12.0, default: 0.10.0)
-webrick (1.8.1, default: 1.6.1)
+webrick (1.7.0, default: 1.6.1)
 word_wrap (1.0.0)
 xcodeproj (1.22.0)
 xcpretty (0.3.0)
@@ -532,7 +531,7 @@ zlib (3.0.0, default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1c-994262e7-11f4-45a4-bb07-f40020e4d4b9 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux prd-20-04-use4b-d0379024-863a-496d-92b3-460886b3a0c5 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -549,12 +548,8 @@ Client:
  Context:    default
  Debug Mode: false
  Plugins:
-  buildx: Docker Buildx (Docker Inc.)
-    Version:  v0.10.2
-    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
-  compose: Docker Compose (Docker Inc.)
-    Version:  v2.16.0
-    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Docker Buildx (Docker Inc., v0.9.1-docker)
 
 Server:
  Containers: 1
@@ -562,7 +557,7 @@ Server:
   Paused: 0
   Stopped: 0
  Images: 4
- Server Version: 23.0.1
+ Server Version: 20.10.22
  Storage Driver: overlay2
   Backing Filesystem: extfs
   Supports d_type: true
@@ -579,7 +574,7 @@ Server:
  Runtimes: runc io.containerd.runc.v2 io.containerd.runtime.v1.linux
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: 31aa4358a36870b21a992d3ad2bef29e1d693bec
+ containerd version: 9ba4b250366a5ddde94bb7c9d1def331423aa323
  runc version: v1.1.4-0-g5fd4c4d
  init version: de40ad0
  Security Options:
@@ -592,8 +587,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1c-994262e7-11f4-45a4-bb07-f40020e4d4b9
- ID: 891f10f4-1435-442e-8a46-f74e3c7c4ff2
+ Name: prd-20-04-use4b-d0379024-863a-496d-92b3-460886b3a0c5
+ ID: FLHC:HXUZ:VQAQ:IDDT:DKKF:HV4A:KSRR:5OW3:KQTB:6M5T:KCQR:ROLF
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -607,12 +602,12 @@ Server:
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 46.6GB
-quay.io/bitriseio/android-ndk-20.04 - 46.6GB
-bitriseio/android-20.04 - 44.3GB
-quay.io/bitriseio/android-20.04 - 44.3GB
-bitriseio/bitrise-base-20.04 - 3.17GB
-quay.io/bitriseio/bitrise-base-20.04 - 3.17GB
+bitriseio/android-ndk-20.04 - 44.7GB
+quay.io/bitriseio/android-ndk-20.04 - 44.7GB
+bitriseio/android-20.04 - 42.3GB
+quay.io/bitriseio/android-20.04 - 42.3GB
+quay.io/bitriseio/bitrise-base-20.04 - 3.14GB
+bitriseio/bitrise-base-20.04 - 3.14GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -620,13 +615,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-overlay         194G   58G  136G  30% /
+overlay         194G   57G  138G  30% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   58G  136G  30% /bitrise
+/dev/root       194G   57G  138G  30% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       679Mi        59Gi       1.0Mi       3.1Gi        61Gi
+Mem:           62Gi       806Mi        58Gi       1.0Mi       3.2Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
