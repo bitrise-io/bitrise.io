@@ -2,14 +2,14 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023_02_13
+* BITRISE_OSX_STACK_REV_ID: v2023_03_01
 ========================================
 
 
 === Pre-installed tool versions ========
 * Go: go version go1.18.10 darwin/arm64
 * Python: Python 2.7.18
-* Node.js: v16.19.0
+* Node.js: v16.19.1
 * NPM: 8.19.3
 * Yarn: 1.22.19
 * Java:   system
@@ -23,7 +23,7 @@
   temurin64-1.8.0.352
   temurin64-11.0.17
   temurin64-17.0.5
-* Kotlin: Kotlin version 1.8.0-release-345 (JRE 11.0.17+8)
+* Kotlin: Kotlin version 1.8.10-release-430 (JRE 11.0.17+8)
 * Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
 * fvm: 2.4.1
 * Flutter SDKs via fvm: Cache Directory:  /Users/vagrant/fvm/versions
@@ -37,10 +37,10 @@ junitreport 2.0.2
 ===========================================
 
 
-* git: git version 2.39.1
+* git: git version 2.39.2
 * git lfs: git-lfs/3.3.0 (GitHub; darwin arm64; go 1.19.3)
 * mercurial/hg: Mercurial Distributed SCM (version 6.3.2)
-* curl: curl 7.87.0 (aarch64-apple-darwin21.6.0) libcurl/7.87.0 (SecureTransport) OpenSSL/1.1.1s zlib/1.2.11 brotli/1.0.9 zstd/1.5.2 libidn2/2.3.4 libssh2/1.10.0 nghttp2/1.51.0 librtmp/2.3
+* curl: curl 7.88.1 (aarch64-apple-darwin21.6.0) libcurl/7.88.1 (SecureTransport) OpenSSL/1.1.1t zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.4 libssh2/1.10.0 nghttp2/1.52.0 librtmp/2.3
 * wget: GNU Wget 1.21.3 built on darwin21.6.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
@@ -48,31 +48,31 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.1 - libarchive 3.5.1 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 3.6.21
-Homebrew/homebrew-core (git revision 1cf0d0b7ed9; last commit 2023-02-01)
-Homebrew/homebrew-cask (git revision 95926f1357; last commit 2023-02-01)
-* Ansible: ansible [core 2.14.2]
+* brew: Homebrew 4.0.4
+Homebrew/homebrew-core (git revision f0315bc993d; last commit 2023-03-01)
+Homebrew/homebrew-cask (git revision 8578e584f9; last commit 2023-03-01)
+* Ansible: ansible [core 2.14.3]
   config file = /Users/vagrant/git/ansible.cfg
-  ansible python module location = /opt/homebrew/Cellar/ansible/7.2.0/libexec/lib/python3.11/site-packages/ansible
+  ansible python module location = /opt/homebrew/Cellar/ansible/7.3.0/libexec/lib/python3.11/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /opt/homebrew/bin/ansible
-  python version = 3.11.1 (main, Dec 23 2022, 09:25:23) [Clang 14.0.0 (clang-1400.0.29.202)] (/opt/homebrew/Cellar/ansible/7.2.0/libexec/bin/python3.11)
+  python version = 3.11.2 (main, Feb 16 2023, 02:51:42) [Clang 14.0.0 (clang-1400.0.29.202)] (/opt/homebrew/Cellar/ansible/7.3.0/libexec/bin/python3.11)
 * gtimeout: timeout (GNU coreutils) 9.1
-* watchman: 2023.01.30.00
-* flow: Flow, a static type checker for JavaScript, version 0.198.2
+* watchman: 2023.02.27.00
+* flow: Flow, a static type checker for JavaScript, version 0.200.1
 * carthage: 0.39.0
-* imagemagick (convert): Version: ImageMagick 7.1.0-60 Q16-HDRI aarch64 20831 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.0-62 Q16-HDRI aarch64 20885 https://imagemagick.org
 * ghostscript (ps2ascii): 10.00.0
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 11.22.0
 * applesimutils version 0.9.9
 * jq: 1.6
-* xcbeautify: 0.16.0
+* xcbeautify: 0.17.0
 * XCLogParser 0.2.36
 * Screen 4.09.00
 * applesimutils 0.9.9
 * OpenConnect version v9.01
-* aws-cli: aws-cli/2.9.19 Python/3.11.1 Darwin/21.6.0 source/arm64 prompt/off
+* aws-cli: aws-cli/2.10.3 Python/3.11.2 Darwin/21.6.0 source/arm64 prompt/off
 * cmake: 3.25.2
 * danger-swift: 3.15.0
 [0;0m
@@ -87,18 +87,18 @@ Homebrew/homebrew-cask (git revision 95926f1357; last commit 2023-02-01)
 
 
 === Brew list versions ==================
-ansible 7.2.0
+ansible 7.3.0
 ant 1.10.13
-aom 3.5.0_2
+aom 3.6.0
 applesimutils 0.9.9
-apr 1.7.1
-apr-util 1.6.2
+apr 1.7.2
+apr-util 1.6.3
 argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.9.19
-bazelisk 1.15.0
+awscli 2.10.3
+bazelisk 1.16.0
 bdw-gc 8.2.2
 boost 1.81.0_1
 brotli 1.0.9
@@ -108,22 +108,22 @@ cairo 1.16.0_5
 carthage 0.39.0
 cmake 3.25.2
 coreutils 9.1
-curl 7.87.0
+curl 7.88.1
 danger-js 64
 danger-swift 3.15.0
-dart 2.19.2
-docutils 0.19
+dart 2.19.3
+docutils 0.19_1
 double-conversion 3.2.1
-edencommon 2023.01.30.00
-fb303 2023.01.30.00
-fbthrift 2023.01.30.00
-fizz 2023.01.30.00
-flow 0.198.2
+edencommon 2023.02.27.00
+fb303 2023.02.20.00
+fbthrift 2023.02.27.00
+fizz 2023.02.27.00
+flow 0.200.1
 fmt 9.1.0
-folly 2023.01.30.00
+folly 2023.02.27.00
 fontconfig 2.14.2
 freetds 1.3.17
-freetype 2.12.1
+freetype 2.13.0
 fvm 2.4.1
 gd 2.3.3_4
 gdbm 1.23
@@ -131,47 +131,47 @@ gettext 0.21.1
 gflags 2.2.2
 ghostscript 10.0.0
 giflib 5.2.1
-git 2.39.1
+git 2.39.2
 git-lfs 3.3.0
-glib 2.74.5
+glib 2.74.6
 glog 0.6.0
 gmp 6.2.1_1
 gnupg 2.4.0
-gnutls 3.7.8_1
+gnutls 3.8.0
 go@1.18 1.18.10
-gradle 7.6
+gradle 8.0.1
 graphite2 1.3.14
-groovy 4.0.8
+groovy 4.0.9
 guile 3.0.9
-harfbuzz 6.0.0_1
+harfbuzz 7.0.1
 highway 1.0.3
 hub 2.14.2
 icu4c 72.1
-imagemagick 7.1.0-60
+imagemagick 7.1.0-62
 imath 3.1.6
 jasper 4.0.0
 jbig2dec 0.19
-jenv 0.5.5_2
-jpeg-turbo 2.1.4
-jpeg-xl 0.8.0
+jenv 0.5.6
+jpeg-turbo 2.1.5.1
+jpeg-xl 0.8.1
 jq 1.6
-kotlin 1.8.0
+kotlin 1.8.10
 krb5 1.20.1
 libassuan 2.5.5
 libavif 0.11.1
-libde265 1.0.10
+libde265 1.0.11
 libevent 2.1.12
 libgcrypt 1.10.1
 libgpg-error 1.46
-libheif 1.14.2_1
+libheif 1.15.1
 libidn 1.41
 libidn2 2.3.4_1
 libksba 1.6.3
 liblqr 0.4.2_1
-libnghttp2 1.51.0
+libnghttp2 1.52.0
 libomp 15.0.7
 libpng 1.6.39
-libpq 15.1
+libpq 15.2
 libraw 0.21.1
 libsodium 1.0.18_1
 libssh2 1.10.0
@@ -182,9 +182,9 @@ libunistring 1.1
 libusb 1.0.26
 libuv 1.44.2
 libvmaf 2.3.1
-libx11 1.8.3
+libx11 1.8.4
 libxau 1.0.11
-libxcb 1.15
+libxcb 1.15_1
 libxdmcp 1.1.4
 libxext 1.3.5
 libxrender 0.9.11
@@ -197,13 +197,13 @@ lz4 1.9.4
 lzo 2.10
 m4 1.4.19
 macos-term-size 1.0.0
-maven 3.8.7
+maven 3.9.0
 mercurial 6.3.2
 mint 0.17.5
 mpdecimal 2.5.1
 nettle 3.8.1
 node@12 12.22.12_1.reinstall
-node@16 16.19.0_1
+node@16 16.19.1
 npth 1.6
 oniguruma 6.9.8
 openconnect 9.01_2
@@ -211,44 +211,44 @@ openexr 3.1.5
 openjdk 19.0.2
 openjdk@17 17.0.6
 openjpeg 2.5.0
-openldap 2.6.3
-openssl@1.1 1.1.1s
-openssl@3 3.0.7
+openldap 2.6.4
+openssl@1.1 1.1.1t
+openssl@3 3.0.8
 openvpn 2.6.0
 p11-kit 0.24.1_1
-parallel 20230122
+parallel 20230222
 pcre2 10.42
-php 8.2.1_1
+php 8.2.3
 pinentry 1.2.1
 pixman 0.42.2
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
-pyenv 2.3.12
-python@3.10 3.10.9
-python@3.11 3.11.1
+pyenv 2.3.13
+python@3.10 3.10.10_1
+python@3.11 3.11.2_1
 pyyaml 6.0_1
 rbenv 1.2.0
 readline 8.2.1
 rtmpdump 2.4+20151223_1
-ruby-build 20230124
+ruby-build 20230222
 screen 4.9.0_1
 shared-mime-info 2.2
 six 1.16.0_3
 snappy 1.1.9
-sqlite 3.40.1
+sqlite 3.41.0
 stoken 0.92_1
 swiftlint 0.50.3
 tidy-html5 5.8.0
-transcrypt 2.2.0
+transcrypt 2.2.1
 tree 2.1.0
 unbound 1.17.1
 unixodbc 2.3.11
-wangle 2023.01.30.00
-watchman 2023.01.30.00
+wangle 2023.02.27.00
+watchman 2023.02.27.00
 webp 1.3.0
 wget 1.21.3_1
 x265 3.5
-xcbeautify 0.16.0
+xcbeautify 0.17.0
 xclogparser 0.2.36
 xcodes 1.2.0
 xorgproto 2022.2
@@ -256,7 +256,7 @@ xz 5.4.1
 yamllint 1.29.0
 yarn 1.22.19
 z3 4.12.1
-zstd 1.5.2
+zstd 1.5.4
 temurin11 11.0.17,8
 temurin17 17.0.5,8
 temurin8 8,352,08
@@ -1277,14 +1277,6 @@ gnupg
 ├── gnutls
 │   ├── ca-certificates
 │   ├── gmp
-│   ├── guile
-│   │   ├── bdw-gc
-│   │   ├── gmp
-│   │   ├── libtool
-│   │   │   └── m4
-│   │   ├── libunistring
-│   │   ├── pkg-config
-│   │   └── readline
 │   ├── libidn2
 │   │   ├── libunistring
 │   │   └── gettext
@@ -1304,31 +1296,29 @@ gnupg
 │           └── ca-certificates
 ├── libassuan
 │   └── libgpg-error
+│       └── gettext
 ├── libgcrypt
 │   └── libgpg-error
+│       └── gettext
 ├── libgpg-error
+│   └── gettext
 ├── libksba
 │   └── libgpg-error
+│       └── gettext
 ├── libusb
 ├── npth
 ├── pinentry
 │   ├── libassuan
 │   │   └── libgpg-error
+│   │       └── gettext
 │   └── libgpg-error
+│       └── gettext
 ├── readline
 └── gettext
 
 gnutls
 ├── ca-certificates
 ├── gmp
-├── guile
-│   ├── bdw-gc
-│   ├── gmp
-│   ├── libtool
-│   │   └── m4
-│   ├── libunistring
-│   ├── pkg-config
-│   └── readline
 ├── libidn2
 │   ├── libunistring
 │   └── gettext
@@ -1350,7 +1340,7 @@ gnutls
 go@1.18
 
 gradle
-└── openjdk@17
+└── openjdk
     ├── giflib
     ├── harfbuzz
     │   ├── cairo
@@ -1787,6 +1777,7 @@ krb5
 
 libassuan
 └── libgpg-error
+    └── gettext
 
 libavif
 ├── aom
@@ -1827,8 +1818,10 @@ libevent
 
 libgcrypt
 └── libgpg-error
+    └── gettext
 
 libgpg-error
+└── gettext
 
 libheif
 ├── aom
@@ -1875,6 +1868,7 @@ libidn2
 
 libksba
 └── libgpg-error
+    └── gettext
 
 liblqr
 └── glib
@@ -2118,14 +2112,6 @@ openconnect
 ├── gnutls
 │   ├── ca-certificates
 │   ├── gmp
-│   ├── guile
-│   │   ├── bdw-gc
-│   │   ├── gmp
-│   │   ├── libtool
-│   │   │   └── m4
-│   │   ├── libunistring
-│   │   ├── pkg-config
-│   │   └── readline
 │   ├── libidn2
 │   │   ├── libunistring
 │   │   └── gettext
@@ -2438,7 +2424,9 @@ php
 pinentry
 ├── libassuan
 │   └── libgpg-error
+│       └── gettext
 └── libgpg-error
+    └── gettext
 
 pixman
 
@@ -3119,8 +3107,8 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
-* Bundler: Bundler version 2.4.6
-* CocoaPods: 1.11.3
+* Bundler: Bundler version 2.4.7
+* CocoaPods: 1.12.0
 * xcpretty: 0.3.0
 ========================================
 
@@ -3140,13 +3128,13 @@ aws-sigv4 (1.5.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (2.4.6, default: 2.1.4)
+bundler (2.4.7, 2.4.6, default: 2.1.4)
 CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
 clamp (1.3.2)
-cocoapods (1.11.3)
-cocoapods-core (1.11.3)
+cocoapods (1.12.0, 1.11.3)
+cocoapods-core (1.12.0, 1.11.3)
 cocoapods-deintegrate (1.0.5)
 cocoapods-downloader (1.6.3)
 cocoapods-plugins (1.0.0)
@@ -3185,7 +3173,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
-fastlane (2.211.0)
+fastlane (2.212.1, 2.212.0, 2.211.0)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -3674,11 +3662,11 @@ Software:
       Kernel Version: Darwin 21.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-monterey13-g2-m1.8core-91783fa1-c37e-41bb-918f-564a3bf41692
+      Computer Name: vm-osx-monterey13-g2-m1.8core-996eff05-24ee-421e-ac00-03416ef29deb
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 days 47 minutes
+      Time since boot: 2 minutes
 
 
 ========================================
