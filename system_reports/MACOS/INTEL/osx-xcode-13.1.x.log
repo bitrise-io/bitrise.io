@@ -2,12 +2,12 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023_03_06
+* BITRISE_OSX_STACK_REV_ID: v2023_03_21
 ========================================
 
 
 === Pre-installed tool versions ========
-* Go: go version go1.18.10 darwin/amd64
+* Go: go version go1.18 darwin/amd64
 * Python: Python 2.7.18
 * Node.js: v16.19.1
 * NPM: 8.19.3
@@ -41,7 +41,7 @@ junitreport 2.0.2
 * git: git version 2.40.0
 * git lfs: git-lfs/3.3.0 (GitHub; darwin amd64; go 1.19.3)
 * mercurial/hg: Mercurial Distributed SCM (version 6.3.3)
-* curl: curl 7.88.1 (x86_64-apple-darwin21.6.0) libcurl/7.88.1 (SecureTransport) OpenSSL/1.1.1t zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.4 libssh2/1.10.0 nghttp2/1.52.0 librtmp/2.3
+* curl: curl 8.0.1 (x86_64-apple-darwin21.6.0) libcurl/8.0.1 (SecureTransport) OpenSSL/1.1.1t zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.4 libssh2/1.10.0 nghttp2/1.52.0 librtmp/2.3
 * wget: GNU Wget 1.21.3 built on darwin21.6.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
@@ -49,21 +49,21 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.1 - libarchive 3.5.1 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.6
-Homebrew/homebrew-core (git revision c659ac95f3d; last commit 2023-03-16)
-Homebrew/homebrew-cask (git revision 11a13d5342; last commit 2023-03-16)
+* brew: Homebrew 4.0.9
+Homebrew/homebrew-core (git revision af498acd3aa; last commit 2023-03-23)
+Homebrew/homebrew-cask (git revision b405f51f18; last commit 2023-03-23)
 * Ansible: ansible [core 2.14.3]
   config file = /Users/vagrant/git/ansible.cfg
   ansible python module location = /usr/local/Cellar/ansible/7.3.0/libexec/lib/python3.11/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
   python version = 3.11.2 (main, Feb 16 2023, 03:15:23) [Clang 14.0.0 (clang-1400.0.29.202)] (/usr/local/Cellar/ansible/7.3.0/libexec/bin/python3.11)
-* gtimeout: timeout (GNU coreutils) 9.1
-* watchman: 2023.03.13.00
-* flow: Flow, a static type checker for JavaScript, version 0.201.0
+* gtimeout: timeout (GNU coreutils) 9.2
+* watchman: 2023.03.20.00
+* flow: Flow, a static type checker for JavaScript, version 0.202.0
 * carthage: 0.39.0
-* imagemagick (convert): Version: ImageMagick 7.1.1-3 Q16-HDRI x86_64 20959 https://imagemagick.org
-* ghostscript (ps2ascii): 10.00.0
+* imagemagick (convert): Version: ImageMagick 7.1.1-4 Q16-HDRI x86_64 20976 https://imagemagick.org
+* ghostscript (ps2ascii): 10.01.0
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 11.22.0
 * applesimutils version 0.9.9
@@ -73,7 +73,7 @@ Homebrew/homebrew-cask (git revision 11a13d5342; last commit 2023-03-16)
 * Screen 4.09.00
 * applesimutils 0.9.9
 * OpenConnect version v9.01
-* aws-cli: aws-cli/2.11.3 Python/3.11.2 Darwin/21.6.0 source/x86_64 prompt/off
+* aws-cli: aws-cli/2.11.5 Python/3.11.2 Darwin/21.6.0 source/x86_64 prompt/off
 * cmake: 3.26.0
 * danger-swift: 3.16.0
 [0;0m
@@ -98,7 +98,7 @@ argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.11.3
+awscli 2.11.5
 bazelisk 1.16.0
 bdw-gc 8.2.2
 boost 1.81.0_1
@@ -108,20 +108,20 @@ ca-certificates 2023-01-10
 cairo 1.16.0_5
 carthage 0.39.0
 cmake 3.26.0
-coreutils 9.1
-curl 7.88.1
+coreutils 9.2
+curl 8.0.1
 danger-js 64
 danger-swift 3.16.0
-dart 2.19.4
+dart 2.19.5
 docutils 0.19_1
 double-conversion 3.2.1
-edencommon 2023.03.13.00
-fb303 2023.03.13.00
-fbthrift 2023.03.13.00
-fizz 2023.03.13.00
-flow 0.201.0
+edencommon 2023.03.20.00
+fb303 2023.03.20.00
+fbthrift 2023.03.20.00
+fizz 2023.03.20.00
+flow 0.202.0
 fmt 9.1.0
-folly 2023.03.13.00
+folly 2023.03.20.00
 fontconfig 2.14.2
 freetds 1.3.17
 freetype 2.13.0_1
@@ -130,11 +130,12 @@ gd 2.3.3_4
 gdbm 1.23
 gettext 0.21.1
 gflags 2.2.2
-ghostscript 10.0.0
+gh 2.25.1
+ghostscript 10.01.0
 giflib 5.2.1
 git 2.40.0
 git-lfs 3.3.0
-glib 2.74.6
+glib 2.76.0
 glog 0.6.0
 gmp 6.2.1_1
 gnupg 2.4.0
@@ -145,10 +146,10 @@ graphite2 1.3.14
 groovy 4.0.10
 guile 3.0.9
 harfbuzz 7.1.0
-highway 1.0.3
+highway 1.0.4
 hub 2.14.2
 icu4c 72.1
-imagemagick 7.1.1-3
+imagemagick 7.1.1-4_1
 imath 3.1.7
 jasper 4.0.0
 jbig2dec 0.19
@@ -170,7 +171,7 @@ libidn2 2.3.4_1
 libksba 1.6.3
 liblqr 0.4.2_1
 libnghttp2 1.52.0
-libomp 15.0.7
+libomp 16.0.0
 libpng 1.6.39
 libpq 15.2
 libraw 0.21.1
@@ -198,7 +199,7 @@ lz4 1.9.4
 lzo 2.10
 m4 1.4.19
 macos-term-size 1.0.0
-maven 3.9.0
+maven 3.9.1
 mercurial 6.3.3
 mint 0.17.5
 mpdecimal 2.5.1
@@ -217,13 +218,14 @@ openssl@1.1 1.1.1t
 openssl@3 3.1.0
 openvpn 2.6.1
 p11-kit 0.24.1_1
-parallel 20230222
+parallel 20230322
 pcre2 10.42
-php 8.2.3
+php 8.2.4
 pinentry 1.2.1
 pixman 0.42.2
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
+pycparser 2.21
 pyenv 2.3.15
 python@3.10 3.10.10_1
 python@3.11 3.11.2_1
@@ -244,8 +246,8 @@ transcrypt 2.2.3
 tree 2.1.0
 unbound 1.17.1
 unixodbc 2.3.11
-wangle 2023.03.13.00
-watchman 2023.03.13.00
+wangle 2023.03.20.00
+watchman 2023.03.20.00
 webp 1.3.0
 wget 1.21.3_1
 x265 3.5
@@ -253,10 +255,11 @@ xcbeautify 0.18.0
 xclogparser 0.2.36
 xcodes 1.3.0
 xorgproto 2022.2
-xz 5.4.1
-yamllint 1.29.0
+xz 5.4.2
+yamllint 1.30.0
 yarn 1.22.19
 z3 4.12.1
+zeromq 4.3.4
 zstd 1.5.4
 temurin11 11.0.17,8
 temurin17 17.0.5,8
@@ -396,6 +399,14 @@ autoconf
 
 awscli
 ├── docutils
+│   └── python@3.11
+│       ├── mpdecimal
+│       ├── openssl@1.1
+│       │   └── ca-certificates
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
+├── pycparser
 │   └── python@3.11
 │       ├── mpdecimal
 │       ├── openssl@1.1
@@ -1220,6 +1231,8 @@ gettext
 
 gflags
 
+gh
+
 ghostscript
 ├── fontconfig
 │   └── freetype
@@ -1341,7 +1354,7 @@ gnutls
 go@1.18
 
 gradle
-└── openjdk
+└── openjdk@17
     ├── giflib
     ├── harfbuzz
     │   ├── cairo
@@ -2437,6 +2450,15 @@ pkcs11-helper
 
 pkg-config
 
+pycparser
+└── python@3.11
+    ├── mpdecimal
+    ├── openssl@1.1
+    │   └── ca-certificates
+    ├── sqlite
+    │   └── readline
+    └── xz
+
 pyenv
 ├── autoconf
 │   └── m4
@@ -3086,6 +3108,9 @@ yarn
 
 z3
 
+zeromq
+└── libsodium
+
 zstd
 ├── lz4
 └── xz
@@ -3108,7 +3133,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
-* Bundler: Bundler version 2.4.8
+* Bundler: Bundler version 2.4.9
 * CocoaPods: 1.12.0
 * xcpretty: 0.3.0
 ========================================
@@ -3121,15 +3146,15 @@ algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.728.0)
-aws-sdk-core (3.170.0)
+aws-partitions (1.733.0)
+aws-sdk-core (3.171.0)
 aws-sdk-kms (1.63.0)
-aws-sdk-s3 (1.119.1)
+aws-sdk-s3 (1.119.2)
 aws-sigv4 (1.5.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (2.4.8, default: 2.1.4)
+bundler (2.4.9, default: 2.1.4)
 CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
@@ -3185,7 +3210,7 @@ fuzzy_match (2.0.4)
 gdbm (default: 2.1.0)
 getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.36.0)
+google-apis-androidpublisher_v3 (0.37.0)
 google-apis-core (0.11.0)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
@@ -3194,7 +3219,7 @@ google-cloud-core (1.6.0)
 google-cloud-env (1.6.0)
 google-cloud-errors (1.3.1)
 google-cloud-storage (1.44.0)
-googleauth (1.3.0)
+googleauth (1.5.0)
 highline (2.0.3)
 http-cookie (1.0.5)
 httpclient (2.8.3)
@@ -3659,7 +3684,7 @@ Software:
       Kernel Version: Darwin 21.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-monterey13-g2.8core-145fcc06-6ec5-4776-98f9-eb68ed388414
+      Computer Name: vm-osx-monterey13-g2.8core-dd792f5e-17d1-4f05-aea4-4bf34783492d
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
@@ -3672,7 +3697,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk1s5s1        380Gi         98Gi
+/dev/disk1s5s1        380Gi         97Gi
 ========================================
 
 --- Android
