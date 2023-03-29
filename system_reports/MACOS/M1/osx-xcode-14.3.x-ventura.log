@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023_03_20
+* BITRISE_OSX_STACK_REV_ID: v2023_03_28
 ========================================
 
 
@@ -40,7 +40,7 @@ junitreport 2.0.2
 
 * git: git version 2.40.0
 * git lfs: git-lfs/3.3.0 (GitHub; darwin arm64; go 1.19.3)
-* mercurial/hg: Mercurial Distributed SCM (version 6.3.3)
+* mercurial/hg: Mercurial Distributed SCM (version 6.4)
 * curl: curl 8.0.1 (aarch64-apple-darwin22.3.0) libcurl/8.0.1 (SecureTransport) OpenSSL/1.1.1t zlib/1.2.11 brotli/1.0.9 zstd/1.5.4 libidn2/2.3.4 libssh2/1.10.0 nghttp2/1.52.0 librtmp/2.3
 * wget: GNU Wget 1.21.3 built on darwin22.1.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -49,21 +49,21 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.9
-Homebrew/homebrew-core (git revision 8cfc76286cf; last commit 2023-03-22)
-Homebrew/homebrew-cask (git revision d435a81f9b; last commit 2023-03-22)
+* brew: Homebrew 4.0.10
+Homebrew/homebrew-core (git revision eae491246b9; last commit 2023-03-27)
+Homebrew/homebrew-cask (git revision 479c94b376; last commit 2023-03-27)
 * Ansible: ansible [core 2.14.3]
   config file = /Users/vagrant/git/ansible.cfg
   ansible python module location = /opt/homebrew/Cellar/ansible/7.3.0/libexec/lib/python3.11/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /opt/homebrew/bin/ansible
-  python version = 3.11.2 (main, Feb 16 2023, 02:55:59) [Clang 14.0.0 (clang-1400.0.29.202)] (/opt/homebrew/Cellar/ansible/7.3.0/libexec/bin/python3.11)
+  python version = 3.11.2 (main, Mar 24 2023, 00:16:47) [Clang 14.0.0 (clang-1400.0.29.202)] (/opt/homebrew/Cellar/ansible/7.3.0/libexec/bin/python3.11)
 * gtimeout: timeout (GNU coreutils) 9.2
-* watchman: 2023.03.13.00
-* flow: Flow, a static type checker for JavaScript, version 0.202.0
+* watchman: 2023.03.27.00
+* flow: Flow, a static type checker for JavaScript, version 0.202.1
 * carthage: 0.39.0
-* imagemagick (convert): Version: ImageMagick 7.1.1-4 Q16-HDRI aarch64 20976 https://imagemagick.org
-* ghostscript (ps2ascii): 10.00.0
+* imagemagick (convert): Version: ImageMagick 7.1.1-5 Q16-HDRI aarch64 20993 https://imagemagick.org
+* ghostscript (ps2ascii): 10.01.1
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 11.25.1
 * applesimutils version 0.9.9
@@ -73,15 +73,15 @@ Homebrew/homebrew-cask (git revision d435a81f9b; last commit 2023-03-22)
 * Screen 4.09.00
 * applesimutils 0.9.9
 * OpenConnect version v9.01
-* aws-cli: aws-cli/2.11.4 Python/3.11.2 Darwin/22.3.0 source/arm64 prompt/off
-* cmake: 3.26.0
+* aws-cli: aws-cli/2.11.6 Python/3.11.2 Darwin/22.3.0 source/arm64 prompt/off
+* cmake: 3.26.1
 * danger-swift: 3.16.0
 [0;0m
-* OpenVPN 2.6.1 aarch64-apple-darwin22.3.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD]
+* OpenVPN 2.6.2 aarch64-apple-darwin22.3.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD]
 * tuist: 3.12.0
 
 --- Bitrise CLI tool versions
-* bitrise: 2.2.3
+* bitrise: 2.2.5
 * stepman: 0.16.0
 * envman: 2.4.0
 ========================================
@@ -98,7 +98,7 @@ argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.11.4
+awscli 2.11.6
 bazelisk 1.16.0
 boost 1.81.0_1
 brotli 1.0.9
@@ -106,7 +106,7 @@ c-ares 1.19.0
 ca-certificates 2023-01-10
 cairo 1.16.0_5
 carthage 0.39.0
-cmake 3.26.0
+cmake 3.26.1
 coreutils 9.2
 curl 8.0.1
 danger-js 64
@@ -114,13 +114,13 @@ danger-swift 3.16.0
 dart 2.19.5
 docutils 0.19_1
 double-conversion 3.2.1
-edencommon 2023.03.13.00
-fb303 2023.03.13.00
-fbthrift 2023.03.13.00
-fizz 2023.03.13.00
-flow 0.202.0
+edencommon 2023.03.27.00
+fb303 2023.03.27.00
+fbthrift 2023.03.27.00
+fizz 2023.03.27.00
+flow 0.202.1
 fmt 9.1.0
-folly 2023.03.13.00
+folly 2023.03.27.00
 fontconfig 2.14.2
 freetds 1.3.17
 freetype 2.13.0_1
@@ -129,16 +129,15 @@ gd 2.3.3_4
 gettext 0.21.1
 gflags 2.2.2
 gh 2.25.1
-ghostscript 10.0.0
+ghostscript 10.01.1
 giflib 5.2.1
 git 2.40.0
 git-lfs 3.3.0
-glib 2.76.0
+glib 2.76.1
 glog 0.6.0
 gmp 6.2.1_1
 gnupg 2.4.0
 gnutls 3.8.0
-go@1.18 1.18.10
 gradle 8.0.2
 graphite2 1.3.14
 groovy 4.0.10
@@ -146,7 +145,7 @@ harfbuzz 7.1.0
 highway 1.0.4
 hub 2.14.2
 icu4c 72.1
-imagemagick 7.1.1-4
+imagemagick 7.1.1-5
 imath 3.1.7
 jasper 4.0.0
 jbig2dec 0.19
@@ -190,13 +189,13 @@ libxrender 0.9.11
 libyaml 0.2.5
 libzip 1.9.2
 little-cms2 2.14
-llvm 15.0.7_1
+llvm 16.0.0
 lokalise2 2.6.8
 lz4 1.9.4
 lzo 2.10
 m4 1.4.19
 maven 3.9.1
-mercurial 6.3.3
+mercurial 6.4
 mint 0.17.5
 mpdecimal 2.5.1
 nettle 3.8.1
@@ -211,9 +210,9 @@ openjpeg 2.5.0
 openldap 2.6.4
 openssl@1.1 1.1.1t
 openssl@3 3.1.0
-openvpn 2.6.1
+openvpn 2.6.2
 p11-kit 0.24.1_1
-parallel 20230222
+parallel 20230322
 pcre2 10.42
 php 8.2.4
 pinentry 1.2.1
@@ -221,7 +220,7 @@ pixman 0.42.2
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
 pycparser 2.21
-pyenv 2.3.15
+pyenv 2.3.16
 python@3.11 3.11.2_1
 pyyaml 6.0_1
 rbenv 1.2.0
@@ -232,16 +231,16 @@ screen 4.9.0_1
 shared-mime-info 2.2
 six 1.16.0_3
 snappy 1.1.10
-sqlite 3.41.1
+sqlite 3.41.2
 stoken 0.92_1
-swiftlint 0.50.3
+swiftlint 0.51.0
 tidy-html5 5.8.0
 transcrypt 2.2.3
 tree 2.1.0
 unbound 1.17.1
 unixodbc 2.3.11
-wangle 2023.03.13.00
-watchman 2023.03.13.00
+wangle 2023.03.27.00
+watchman 2023.03.27.00
 webp 1.3.0
 wget 1.21.3_1
 x265 3.5
@@ -250,7 +249,7 @@ xclogparser 0.2.36
 xcodes 1.3.0
 xorgproto 2022.2
 xz 5.4.2
-yamllint 1.29.0
+yamllint 1.30.0
 yarn 1.22.19
 z3 4.12.1
 zeromq 4.3.4
@@ -1341,10 +1340,8 @@ gnutls
     └── openssl@1.1
         └── ca-certificates
 
-go@1.18
-
 gradle
-└── openjdk
+└── openjdk@17
     ├── giflib
     ├── harfbuzz
     │   ├── cairo
@@ -3092,7 +3089,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
-* Bundler: Bundler version 2.4.9
+* Bundler: Bundler version 2.4.10
 * CocoaPods: 1.12.0
 * xcpretty: 0.3.0
 ========================================
@@ -3105,15 +3102,15 @@ algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.732.0)
-aws-sdk-core (3.170.1)
+aws-partitions (1.735.0)
+aws-sdk-core (3.171.0)
 aws-sdk-kms (1.63.0)
-aws-sdk-s3 (1.119.1)
+aws-sdk-s3 (1.119.2)
 aws-sigv4 (1.5.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (2.4.9, default: 2.1.4)
+bundler (2.4.10, default: 2.1.4)
 CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
@@ -3245,7 +3242,7 @@ simctl (1.6.10)
 singleton (default: 0.1.0)
 slack-notifier (2.4.0)
 slather (2.7.4)
-sqlite3 (1.6.1 arm64-darwin)
+sqlite3 (1.6.2 arm64-darwin)
 stringio (default: 0.1.0)
 strscan (default: 1.0.3)
 terminal-notifier (2.0.0)
@@ -3311,7 +3308,7 @@ Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 Target: arm64-apple-darwin22.3.0
 
  * xcrun swift --version
-Apple Swift version 5.8 (swiftlang-5.8.0.124.1 clang-1403.0.22.11.100)
+Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 Target: arm64-apple-macosx13.0
 
 ========================================
@@ -3324,10 +3321,10 @@ Target: arm64-apple-macosx13.0
 
 * Xcode Version:
 Xcode 14.3
-Build version 14E222a
+Build version 14E222b
 
 * /usr/bin/swift --version
-Apple Swift version 5.8 (swiftlang-5.8.0.124.1 clang-1403.0.22.11.100)
+Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 Target: arm64-apple-macosx13.0
 
 * Installed SDKs:
@@ -3451,52 +3448,52 @@ Apple Watch Series 8 (41mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-S
 Apple Watch Series 8 (45mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-8-45mm)
 Apple Watch Ultra (49mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Ultra-49mm)
 == Runtimes ==
-iOS 16.4 (16.4 - 20E240) - com.apple.CoreSimulator.SimRuntime.iOS-16-4
+iOS 16.4 (16.4 - 20E247) - com.apple.CoreSimulator.SimRuntime.iOS-16-4
 tvOS 16.4 (16.4 - 20L494) - com.apple.CoreSimulator.SimRuntime.tvOS-16-4
 watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
 == Devices ==
 -- iOS 16.4 --
-    iPhone 8 Plus (F41983B5-F7DB-4B46-89F5-2E912BCCBEAC) (Shutdown) 
-    iPhone 11 (EA1CA2AB-B945-4A07-8E9A-5D9CA931DE40) (Shutdown) 
-    iPhone SE (3rd generation) (62E52698-F4FC-4DD0-8EF6-03098C746B7A) (Shutdown) 
-    iPhone 14 (D4F28707-F53B-4DC8-834A-0C3A1CDB78DE) (Shutdown) 
-    iPhone 14 Plus (810E7ECB-E9B4-4621-91EB-210CDCA0FFFC) (Shutdown) 
-    iPhone 14 Pro (A7096D9B-C4CD-4209-AE35-CB1CB48E00B7) (Shutdown) 
-    iPhone 14 Pro Max (FF8DD1A5-8F16-4DF8-8B62-C39289DCA3F9) (Shutdown) 
-    iPad Air (5th generation) (299EC717-8C01-44E8-A078-5087B715D977) (Shutdown) 
-    iPad (10th generation) (7A9C124D-5465-4907-BB9C-94036EDA7661) (Shutdown) 
-    iPad mini (6th generation) (27A8DD61-409D-4C53-A0D7-0901F1438C6C) (Shutdown) 
-    iPad Pro (11-inch) (4th generation) (0C4E3E4B-EAD7-4FFB-8DA5-652699ABF4AA) (Shutdown) 
-    iPad Pro (12.9-inch) (6th generation) (7719DC80-FB17-4E23-9D33-8E5FF710499B) (Shutdown) 
+    iPhone 8 Plus (0C429D2F-CB8A-4B6B-9DE4-611CD6183047) (Shutdown) 
+    iPhone 11 (47B81E27-17D4-4111-88E8-FF184C33CFDF) (Shutdown) 
+    iPhone SE (3rd generation) (64E20848-91CA-4F8E-A665-F68F36F54556) (Shutdown) 
+    iPhone 14 (F9982D4A-C6B4-44AA-A0A9-0D1D3B12D66B) (Shutdown) 
+    iPhone 14 Plus (ACFCF841-15CF-40F0-BD24-27AF3F428326) (Shutdown) 
+    iPhone 14 Pro (93065D46-BDA6-486B-9573-356129085C21) (Shutdown) 
+    iPhone 14 Pro Max (E553CF07-575C-4E2C-AE63-4E70749A8A65) (Shutdown) 
+    iPad Air (5th generation) (06F08B6F-E622-4F57-A28A-B1C7133E64AA) (Shutdown) 
+    iPad (10th generation) (C7DF1F89-DE68-4169-8673-CDD593EC46C6) (Shutdown) 
+    iPad mini (6th generation) (26F24224-810D-4CAB-ABFE-23D8C611579C) (Shutdown) 
+    iPad Pro (11-inch) (4th generation) (9C4ADFC7-136A-4D3D-B187-B432FF64DA1E) (Shutdown) 
+    iPad Pro (12.9-inch) (6th generation) (DA163B23-9E2B-4991-B49A-B55F1DB6BCDF) (Shutdown) 
 -- tvOS 16.4 --
-    Apple TV (7A5F4D75-086C-4A53-B177-B36D5DD16701) (Shutdown) 
-    Apple TV 4K (3rd generation) (6687519D-DB3F-43AE-9AA5-143682B95BF2) (Shutdown) 
-    Apple TV 4K (3rd generation) (at 1080p) (FD6D0EB8-73B6-485F-A301-919B6E8DD724) (Shutdown) 
+    Apple TV (A9DC9AC8-B8B6-4AC6-BA2D-D22127A6B22B) (Shutdown) 
+    Apple TV 4K (3rd generation) (F4CDD7A8-DFA4-4E2E-AA4C-3EC9E1A77BC9) (Shutdown) 
+    Apple TV 4K (3rd generation) (at 1080p) (81ECC9BD-50EC-40E8-AE44-CDFA1F57F23B) (Shutdown) 
 -- watchOS 9.4 --
-    Apple Watch Series 5 (40mm) (609D0B90-2D15-4214-B3CE-EC9FB4F25011) (Shutdown) 
-    Apple Watch Series 5 (44mm) (3DF8A80B-A475-4428-8511-D0D5881A824F) (Shutdown) 
-    Apple Watch Series 6 (40mm) (E941A0F2-75E6-4B15-A3AB-2D0334EEA107) (Shutdown) 
-    Apple Watch Series 6 (44mm) (84A37F05-7735-4296-B158-1F874E3B7871) (Shutdown) 
-    Apple Watch Series 7 (41mm) (C2A84383-B1AB-436B-B83E-4F29F42C2E90) (Shutdown) 
-    Apple Watch Series 7 (45mm) (F46EAB6D-AA5E-43CD-9174-32642ED87F87) (Shutdown) 
-    Apple Watch SE (40mm) (2nd generation) (0B821416-1E32-4CE5-940B-AF4D1E998749) (Shutdown) 
-    Apple Watch SE (44mm) (2nd generation) (63084ECA-4D26-43D0-B435-83A353008D92) (Shutdown) 
-    Apple Watch Series 8 (41mm) (7E79AA8F-EBEC-46EA-8356-DE54F8382223) (Shutdown) 
-    Apple Watch Series 8 (45mm) (A98C5B28-8640-4B44-A688-D3F59B962B7F) (Shutdown) 
-    Apple Watch Ultra (49mm) (C17F5509-B1CE-4930-B80C-B7D8A1FF2538) (Shutdown) 
+    Apple Watch Series 5 (40mm) (2863CF2D-C485-4100-9A8A-AD43DF439F1B) (Shutdown) 
+    Apple Watch Series 5 (44mm) (16B7E7CB-D8E3-4864-BF7C-34A40850A27A) (Shutdown) 
+    Apple Watch Series 6 (40mm) (3EF99A91-B5D3-4698-B58C-9FCE1114D91D) (Shutdown) 
+    Apple Watch Series 6 (44mm) (E50A6F0D-E3B1-4F07-A7FF-AD7DB8846F02) (Shutdown) 
+    Apple Watch Series 7 (41mm) (20B6A8CE-3C18-4A1E-988B-5D4ACB0C9ECD) (Shutdown) 
+    Apple Watch Series 7 (45mm) (65988C9B-1F2F-49EC-9454-D86DDF967097) (Shutdown) 
+    Apple Watch SE (40mm) (2nd generation) (9B1492EC-9CFD-4FD3-99DB-3C5C0D156E0E) (Shutdown) 
+    Apple Watch SE (44mm) (2nd generation) (1353F51C-9B0E-4605-B303-87A41026A329) (Shutdown) 
+    Apple Watch Series 8 (41mm) (952C4B55-23EB-47F4-98F9-E3C8C9C8F245) (Shutdown) 
+    Apple Watch Series 8 (45mm) (D51107DA-87D0-4879-9F55-FE61A64CC60D) (Shutdown) 
+    Apple Watch Ultra (49mm) (B88B5C62-25B1-4D48-9C85-D4A81F56063E) (Shutdown) 
 == Device Pairs ==
-E6F8B9BE-3E1B-41AA-AE39-E0BA35A059EA (active, disconnected)
-    Watch: Apple Watch Series 7 (45mm) (F46EAB6D-AA5E-43CD-9174-32642ED87F87) (Shutdown)
-    Phone: iPhone 14 (D4F28707-F53B-4DC8-834A-0C3A1CDB78DE) (Shutdown)
-249E5CD0-736A-4432-9D96-BF21BAE78DDD (active, disconnected)
-    Watch: Apple Watch Series 8 (41mm) (7E79AA8F-EBEC-46EA-8356-DE54F8382223) (Shutdown)
-    Phone: iPhone 14 Plus (810E7ECB-E9B4-4621-91EB-210CDCA0FFFC) (Shutdown)
-77FB2463-7F14-435B-B298-341EFE82AA2A (active, disconnected)
-    Watch: Apple Watch Series 8 (45mm) (A98C5B28-8640-4B44-A688-D3F59B962B7F) (Shutdown)
-    Phone: iPhone 14 Pro (A7096D9B-C4CD-4209-AE35-CB1CB48E00B7) (Shutdown)
-336522CC-4724-4C35-8980-86477DC2E9FE (active, disconnected)
-    Watch: Apple Watch Ultra (49mm) (C17F5509-B1CE-4930-B80C-B7D8A1FF2538) (Shutdown)
-    Phone: iPhone 14 Pro Max (FF8DD1A5-8F16-4DF8-8B62-C39289DCA3F9) (Shutdown)
+0E1D9404-4959-462F-B613-7E75084BC5AD (active, disconnected)
+    Watch: Apple Watch Series 7 (45mm) (65988C9B-1F2F-49EC-9454-D86DDF967097) (Shutdown)
+    Phone: iPhone 14 (F9982D4A-C6B4-44AA-A0A9-0D1D3B12D66B) (Shutdown)
+4675B9D4-94A4-4821-BDFB-2B850546EB15 (active, disconnected)
+    Watch: Apple Watch Series 8 (41mm) (952C4B55-23EB-47F4-98F9-E3C8C9C8F245) (Shutdown)
+    Phone: iPhone 14 Plus (ACFCF841-15CF-40F0-BD24-27AF3F428326) (Shutdown)
+99E24769-02ED-4A71-9F92-5F61B464AF7B (active, disconnected)
+    Watch: Apple Watch Series 8 (45mm) (D51107DA-87D0-4879-9F55-FE61A64CC60D) (Shutdown)
+    Phone: iPhone 14 Pro (93065D46-BDA6-486B-9573-356129085C21) (Shutdown)
+B8BED424-0A91-4746-B971-20762BB0E94E (active, disconnected)
+    Watch: Apple Watch Ultra (49mm) (B88B5C62-25B1-4D48-9C85-D4A81F56063E) (Shutdown)
+    Phone: iPhone 14 Pro Max (E553CF07-575C-4E2C-AE63-4E70749A8A65) (Shutdown)
 
 ========================================
 
@@ -3517,11 +3514,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-venturabeta-g2-m1.8core-90b47096-390e-4a5b-ab5a-1fe9d651025c
+      Computer Name: vm-osx-venturabeta-g2-m1.8core-4661e9c0-ab37-451f-a0d3-74dc984451e3
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 1 minute, 47 seconds
+      Time since boot: 2 minutes, 14 seconds
 
 
 ========================================
