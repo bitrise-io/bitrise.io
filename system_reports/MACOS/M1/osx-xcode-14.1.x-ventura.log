@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023_03_27
+* BITRISE_OSX_STACK_REV_ID: v2023_03_31
 ========================================
 
 
@@ -49,7 +49,7 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.9
+* brew: Homebrew 4.0.10
 Homebrew/homebrew-core (git revision eae491246b9; last commit 2023-03-27)
 Homebrew/homebrew-cask (git revision 479c94b376; last commit 2023-03-27)
 * Ansible: ansible [core 2.14.3]
@@ -112,7 +112,7 @@ coreutils 9.2
 curl 8.0.1
 danger-js 64
 danger-swift 3.16.0
-dart 2.19.5
+dart 2.19.6
 docutils 0.19_1
 double-conversion 3.2.1
 edencommon 2023.03.20.00
@@ -204,8 +204,6 @@ mercurial 6.4
 mint 0.17.5
 mpdecimal 2.5.1
 nettle 3.8.1
-node@12 12.22.12_1.reinstall
-node@16 16.19.1
 npth 1.6
 oniguruma 6.9.8
 openconnect 9.01_2
@@ -2098,25 +2096,6 @@ mpdecimal
 nettle
 └── gmp
 
-node@12
-├── brotli
-├── c-ares
-├── icu4c
-├── libnghttp2
-├── libuv
-├── openssl@1.1
-│   └── ca-certificates
-└── macos-term-size
-
-node@16
-├── brotli
-├── c-ares
-├── icu4c
-├── libnghttp2
-├── libuv
-└── openssl@1.1
-    └── ca-certificates
-
 npth
 
 oniguruma
@@ -3130,10 +3109,11 @@ zstd
   3.0.3
   3.1.0
   3.1.3
+  3.2.1
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
-* Bundler: Bundler version 2.4.9
+* Bundler: Bundler version 2.4.10
 * CocoaPods: 1.12.0
 * xcpretty: 0.3.0
 ========================================
@@ -3154,7 +3134,7 @@ aws-sigv4 (1.5.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (2.4.9, 2.4.8, 2.4.7, 2.4.6, default: 2.1.4)
+bundler (2.4.10, 2.4.9, 2.4.8, 2.4.7, 2.4.6, default: 2.1.4)
 CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
@@ -3349,7 +3329,7 @@ SDKs
 usr
 
  * /Library/Developer/CommandLineTools/usr/bin/swift --version
-Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 Target: arm64-apple-darwin22.3.0
 
  * xcrun swift --version
@@ -3496,6 +3476,7 @@ Apple Watch Series 8 (41mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-S
 Apple Watch Series 8 (45mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-8-45mm)
 Apple Watch Ultra (49mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Ultra-49mm)
 == Runtimes ==
+iOS 13.7 (13.7 - 17H22) - com.apple.CoreSimulator.SimRuntime.iOS-13-7
 iOS 14.5 (14.5 - 18E182) - com.apple.CoreSimulator.SimRuntime.iOS-14-5
 iOS 15.0 (15.0 - 19A339) - com.apple.CoreSimulator.SimRuntime.iOS-15-0
 iOS 15.2 (15.2 - 19C51) - com.apple.CoreSimulator.SimRuntime.iOS-15-2
@@ -3508,12 +3489,25 @@ tvOS 15.2 (15.2 - 19K50) - com.apple.CoreSimulator.SimRuntime.tvOS-15-2
 tvOS 15.4 (15.4 - 19L439) - com.apple.CoreSimulator.SimRuntime.tvOS-15-4
 tvOS 16.0 (16.0 - 20J373) - com.apple.CoreSimulator.SimRuntime.tvOS-16-0
 tvOS 16.1 (16.1 - 20K67) - com.apple.CoreSimulator.SimRuntime.tvOS-16-1
+tvOS 16.4 (16.4 - 20L494) - com.apple.CoreSimulator.SimRuntime.tvOS-16-4
 watchOS 8.0 (8.0 - 19R345) - com.apple.CoreSimulator.SimRuntime.watchOS-8-0
 watchOS 8.3 (8.3 - 19S51) - com.apple.CoreSimulator.SimRuntime.watchOS-8-3
 watchOS 8.5 (8.5 - 19T241) - com.apple.CoreSimulator.SimRuntime.watchOS-8-5
 watchOS 9.0 (9.0 - 20R362) - com.apple.CoreSimulator.SimRuntime.watchOS-9-0
 watchOS 9.1 (9.1 - 20S75) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
+watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
 == Devices ==
+-- iOS 13.7 --
+    iPhone 8 Plus (340DD38B-BEB1-4CE1-A1FD-2E8521F45796) (Shutdown) 
+    iPhone 11 (323517E9-D585-41FD-82CB-570E29463973) (Shutdown) 
+    iPhone 11 Pro (8F0D0E9F-DEA3-45FC-8973-0B7E9EF6DD9E) (Shutdown) 
+    iPhone 11 Pro Max (F043074E-093C-432C-B479-08353BA465C0) (Shutdown) 
+    iPhone SE (2nd generation) (70AC8A06-0C28-4D29-B93A-9CF5CA6BBCA8) (Shutdown) 
+    iPad Pro (9.7-inch) (7C10D515-0EEC-49AB-A8AB-96E405581595) (Shutdown) 
+    iPad (7th generation) (A11EF75C-0258-474F-89AF-F668F7A32E2B) (Shutdown) 
+    iPad Pro (11-inch) (2nd generation) (E46B1B23-C084-4B5E-8017-7A83D02260D1) (Shutdown) 
+    iPad Pro (12.9-inch) (4th generation) (CC85FE9D-5B8F-400E-BA6A-571442BB664B) (Shutdown) 
+    iPad Air (3rd generation) (96AC8981-EB2D-4AB3-A924-EF05E6184A79) (Shutdown) 
 -- iOS 14.5 --
     iPhone 8 Plus (42CE63D6-E331-4367-8CB8-46FC77A49414) (Shutdown) 
     iPhone 11 (7C940FE5-7517-4DAD-973D-2744179064B3) (Shutdown) 
@@ -3639,6 +3633,10 @@ watchOS 9.1 (9.1 - 20S75) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
     Apple TV 4K (at 1080p) (2nd generation) (306596B4-3423-4637-A16C-049E355A28FF) (Shutdown) 
     Apple TV 4K (3rd generation) (CF5A9F7D-2047-4EE7-9865-64FD70309BE6) (Shutdown) 
     Apple TV 4K (3rd generation) (at 1080p) (5F7B405E-6F4B-4E0F-9582-9AD3EF86C9C3) (Shutdown) 
+-- tvOS 16.4 --
+    Apple TV (4F6AAC5C-4BAC-49B1-8AE5-9DD657BD4CD6) (Shutdown) 
+    Apple TV 4K (3rd generation) (4350E9FE-DEFC-4BD9-9EBB-C6A15DD8A68F) (Shutdown) 
+    Apple TV 4K (3rd generation) (at 1080p) (A2FC6777-3AB4-4202-AEE2-C0E60DDD2FD8) (Shutdown) 
 -- watchOS 8.0 --
     Apple Watch Series 5 (40mm) (85A5F81F-5F6C-46B6-80A3-5D8577AC82B2) (Shutdown) 
     Apple Watch Series 5 (44mm) (8A5EE336-E1D1-43D1-90F5-3F5831254CED) (Shutdown) 
@@ -3682,8 +3680,20 @@ watchOS 9.1 (9.1 - 20S75) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
     Apple Watch SE (40mm) (2nd generation) (7B436ABE-4A38-4DBF-9E5D-D74B12BD20A0) (Shutdown) 
     Apple Watch SE (44mm) (2nd generation) (32979835-AAAC-4044-9A6B-9FB8F7A01DDF) (Shutdown) 
     Apple Watch Series 8 (41mm) (13C5E853-3305-4497-A0C5-E82FE4DA8E13) (Shutdown) 
-    Apple Watch Series 8 (45mm) (B446E39F-1465-4B0B-8289-4FE09A886EA7) (Shutdown) 
+    Apple Watch Series 8 (45mm) (B446E39F-1465-4B0B-8289-4FE09A886EA7) (Creating) 
     Apple Watch Ultra (49mm) (384FFD7F-996B-48E5-9C20-FEF0F889DBA0) (Shutdown) 
+-- watchOS 9.4 --
+    Apple Watch Series 5 (40mm) (E27DFB6D-9273-46BC-9415-50E082A0BDEA) (Shutdown) 
+    Apple Watch Series 5 (44mm) (233454D4-6271-4818-8288-C2DBFDBD380A) (Shutdown) 
+    Apple Watch Series 6 (40mm) (3E8ADC8A-8BCC-4277-AB26-D3411A7CC387) (Shutdown) 
+    Apple Watch Series 6 (44mm) (2453BCE4-5874-4CA9-8462-78C7EDC9085C) (Shutdown) 
+    Apple Watch Series 7 (41mm) (3BEFC8D9-BA8A-480E-8989-ECD84825E640) (Shutdown) 
+    Apple Watch Series 7 (45mm) (A59E4FF0-CD15-45CF-94B3-772BFC6F48AF) (Shutdown) 
+    Apple Watch SE (40mm) (2nd generation) (DB601F59-89E2-492D-9B6B-46DEDBDF65A2) (Shutdown) 
+    Apple Watch SE (44mm) (2nd generation) (B4FD2DFA-F64A-405B-B62C-2A2A13CEEB81) (Shutdown) 
+    Apple Watch Series 8 (41mm) (306D28C5-5267-4D70-9C86-275B89361764) (Shutdown) 
+    Apple Watch Series 8 (45mm) (1227ADAA-303B-4354-BCE7-204F7B8A4449) (Shutdown) 
+    Apple Watch Ultra (49mm) (99979C03-BB65-44CB-B1CB-8588FF78CC6E) (Shutdown) 
 == Device Pairs ==
 3BC18DB3-EC88-435A-8AB1-C3B60B506479 (active, disconnected)
     Watch: Apple Watch Series 7 (45mm) (FCC9D70C-011E-4676-A8EE-0DA62E22FCBF) (Shutdown)
@@ -3697,18 +3707,26 @@ watchOS 9.1 (9.1 - 20S75) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
 F3E7ED50-8B13-4C5A-9BB8-2E66F19F6D84 (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (BE1B7B63-2151-4812-BD8D-130EBBE2EFBC) (Shutdown)
     Phone: iPhone 14 Pro Max (4B307BDF-936E-4CC1-A07D-365147EEDC52) (Shutdown)
-3D3B25A7-B06E-4F22-A40C-C1914F62C392 (active, disconnected)
+6A7C7193-BF77-411F-B82C-33BD77106D5F (active, disconnected)
     Watch: Apple Watch Series 7 (45mm) (86693B82-B765-4B81-83C3-99E36CD2EFE8) (Shutdown)
     Phone: iPhone 14 (7DDAD086-9162-49ED-B2C4-3BD467256D71) (Shutdown)
-20F0CA44-D3E9-4C1F-99AC-C8724CE7E153 (active, disconnected)
+91F02E67-EB42-4987-B5AA-120BFE6B2265 (active, disconnected)
     Watch: Apple Watch Series 8 (41mm) (13C5E853-3305-4497-A0C5-E82FE4DA8E13) (Shutdown)
     Phone: iPhone 14 Plus (2DCFA7C7-E11A-442C-88A8-88CF6CC7120E) (Shutdown)
-A4C2E2CB-825A-4D52-854B-89BD8F429B8D (active, disconnected)
-    Watch: Apple Watch Series 8 (45mm) (B446E39F-1465-4B0B-8289-4FE09A886EA7) (Shutdown)
+34D457CC-BD9D-4641-89BB-8790C7472208 (active, disconnected)
+    Watch: Apple Watch Series 8 (45mm) (B446E39F-1465-4B0B-8289-4FE09A886EA7) (Creating)
     Phone: iPhone 14 Pro (95C7C783-A141-4D4B-9591-1208FC8B29E3) (Shutdown)
-767EDD85-AD95-4DC7-96B6-42F1C280419E (active, disconnected)
+0BA84946-F93E-4F12-8CD1-86DF4C134706 (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (384FFD7F-996B-48E5-9C20-FEF0F889DBA0) (Shutdown)
     Phone: iPhone 14 Pro Max (38CC0AA9-6C2B-42DF-ACC2-2AF6F410017D) (Shutdown)
+    Watch: Apple Watch Series 7 (45mm) (A59E4FF0-CD15-45CF-94B3-772BFC6F48AF) (Shutdown)
+    Phone: iPhone 14 (B80DE9AF-F9E5-4B64-A18D-CF313D72A8A6) (Shutdown)
+    Watch: Apple Watch Series 8 (41mm) (306D28C5-5267-4D70-9C86-275B89361764) (Shutdown)
+    Phone: iPhone 14 Plus (86890C8C-AC67-45E6-AC63-FA8745274618) (Shutdown)
+    Watch: Apple Watch Series 8 (45mm) (1227ADAA-303B-4354-BCE7-204F7B8A4449) (Shutdown)
+    Phone: iPhone 14 Pro (93D70158-C1C2-4F93-9D92-1FB02B4960C7) (Shutdown)
+    Watch: Apple Watch Ultra (49mm) (99979C03-BB65-44CB-B1CB-8588FF78CC6E) (Shutdown)
+    Phone: iPhone 14 Pro Max (AD982BF6-0C3A-4614-90E5-AEDEE59290DE) (Shutdown)
 
 ========================================
 
@@ -3729,11 +3747,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-g2-m1.8core-a32a23b9-3514-45b2-9a57-9ec4ee8fd475
+      Computer Name: vm-osx-ventura-g2-m1.8core-006190d8-3a82-4121-937a-348a6db8913c
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 6 minutes, 43 seconds
+      Time since boot: 24 minutes, 36 seconds
 
 
 ========================================
@@ -3742,7 +3760,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk2s1s1        350Gi        109Gi
+/dev/disk2s1s1        390Gi        116Gi
 ========================================
 
 --- Android
