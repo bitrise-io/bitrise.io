@@ -32,16 +32,16 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.27.102 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.102
+* aws-cli: aws-cli/1.27.115 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.115
 * Transcrypt: 3.9.0
 * Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
-  * bundler: Bundler version 2.4.10
-  * rubygems: 3.4.10
+  * bundler: Bundler version 2.4.12
+  * rubygems: 3.4.12
 * Go: go version go1.18.5 linux/amd64
 * Node.js: v16.19.1
-* NPM: 9.6.2
+* NPM: 9.6.4
 * Yarn: 1.22.19
-* docker: Docker version 23.0.2, build 569dd73
+* docker: Docker version 23.0.4, build f480fb1
 * docker-compose: docker-compose version 1.28.6, build 5db8d86f
 * git lfs: git-lfs/3.3.0 (GitHub; linux amd64; go 1.19.3)
 
@@ -54,8 +54,8 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * Maven: [1mApache Maven 3.6.3[m
 * Java: javac 11.0.18
 * Cordova CLI version: 11.1.0
-* Ionic CLI version: 7.0.0
-* Appcenter-CLI version: 2.13.4
+* Ionic CLI version: 7.0.1
+* Appcenter-CLI version: 2.13.5
 ========================================
 
 === Kotlin ===============================
@@ -96,19 +96,19 @@ javac 1.8.0_362
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 424.0.0
-alpha 2023.03.24
-beta 2023.03.24
-bq 2.0.89
+Google Cloud SDK 427.0.0
+alpha 2023.04.17
+beta 2023.04.17
+bq 2.0.91
 bundled-python3-unix 3.9.16
-core 2023.03.24
+core 2023.04.17
 gcloud-crc32c 1.0.0
-gsutil 5.21
+gsutil 5.23
 ========================================
 
 
 === Firebase Tools components ==========
-11.25.2
+11.28.0
 ========================================
 
 === Google Cloud Network Check =========
@@ -383,19 +383,19 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 
 
 === All Ruby GEMs ======================
-addressable (2.8.1)
+addressable (2.8.4)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.737.0)
+aws-partitions (1.749.0)
 aws-sdk-core (3.171.0)
 aws-sdk-kms (1.63.0)
-aws-sdk-s3 (1.119.2)
+aws-sdk-s3 (1.120.1)
 aws-sigv4 (1.5.2)
 babosa (2.0.0, 1.0.4)
 benchmark (0.2.1, default: 0.1.0)
 bigdecimal (3.1.4, default: 2.0.0)
-bundler (default: 2.4.10)
+bundler (default: 2.4.12)
 CFPropertyList (3.0.6)
 cgi (0.3.6, default: 0.1.0.1)
 claide (1.1.0)
@@ -411,7 +411,7 @@ did_you_mean (1.6.3, default: 1.4.0)
 digest-crc (0.6.4)
 domain_name (0.5.20190701)
 dotenv (2.8.1)
-emoji_regex (3.2.3)
+emoji_regex (15.0.0, 3.2.3)
 etc (1.4.2, default: 1.1.0)
 excon (0.99.0)
 faraday (2.7.4, 1.10.3)
@@ -428,15 +428,15 @@ faraday-rack (2.0.0, 1.0.0)
 faraday-retry (2.1.0, 1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
-fastlane (2.212.1)
+fastlane (2.212.2)
 fcntl (1.0.2, default: 1.0.0)
 fiddle (default: 1.0.0)
-fileutils (1.7.0, default: 1.4.1)
+fileutils (1.7.1, default: 1.4.1)
 forwardable (1.3.3, default: 1.3.1)
 gdbm (default: 2.1.0)
 getoptlong (0.2.0, default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.37.0)
+google-apis-androidpublisher_v3 (0.39.0)
 google-apis-core (0.11.0)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
@@ -445,13 +445,13 @@ google-cloud-core (1.6.0)
 google-cloud-env (1.6.0)
 google-cloud-errors (1.3.1)
 google-cloud-storage (1.44.0)
-googleauth (1.5.0)
+googleauth (1.5.2)
 highline (2.1.0, 2.0.3)
 http-cookie (1.0.5)
 httpclient (2.8.3)
 io-console (0.6.0, default: 0.5.6)
 ipaddr (1.2.5, default: 1.2.2)
-irb (1.6.3, default: 1.2.6)
+irb (1.6.4, default: 1.2.6)
 jmespath (1.6.2)
 json (2.6.3, default: 2.3.0)
 jwt (2.7.0)
@@ -495,14 +495,14 @@ rexml (3.2.5, default: 3.2.3.1)
 rouge (4.1.0, 2.0.7)
 rss (0.2.9, default: 0.2.8)
 ruby2_keywords (0.0.5)
-rubygems-update (3.4.10)
+rubygems-update (3.4.12)
 rubyzip (2.3.2)
 sdbm (default: 1.0.0)
 security (0.1.5, 0.1.3)
 signet (0.17.0)
 simctl (1.6.10)
 singleton (0.1.1, default: 0.1.0)
-stringio (3.0.5, default: 0.1.0)
+stringio (3.0.6, default: 0.1.0)
 strscan (3.0.6, default: 1.0.3)
 terminal-notifier (2.0.0)
 terminal-table (3.0.2, 1.8.0)
@@ -531,7 +531,7 @@ zlib (3.0.0, default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1b-90566675-a890-404d-8138-128610034f72 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1c-dfbb6bc5-668d-4d2b-9c37-a5d3b90d5dd5 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -561,7 +561,7 @@ Server:
   Paused: 0
   Stopped: 0
  Images: 4
- Server Version: 23.0.2
+ Server Version: 23.0.4
  Storage Driver: overlay2
   Backing Filesystem: extfs
   Supports d_type: true
@@ -579,8 +579,8 @@ Server:
  Runtimes: io.containerd.runc.v2 runc
  Default Runtime: runc
  Init Binary: docker-init
- containerd version: 1e1ea6e986c6c86565bc33d52e34b81b3e2bc71f
- runc version: v1.1.4-0-g5fd4c4d
+ containerd version: 2806fc1057397dbaeefbea0e4e17bddfbd388f38
+ runc version: v1.1.5-0-gf19387a
  init version: de40ad0
  Security Options:
   apparmor
@@ -592,8 +592,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1b-90566675-a890-404d-8138-128610034f72
- ID: 997d8465-7ce4-4616-aa8b-07aab4ac48b6
+ Name: stg-prdfree-20-04-usc1c-dfbb6bc5-668d-4d2b-9c37-a5d3b90d5dd5
+ ID: b1b7cfe6-9cdf-4cd8-bf9e-99549f7f6ab5
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -610,8 +610,8 @@ bitriseio/android-ndk-20.04 - 47.6GB
 quay.io/bitriseio/android-ndk-20.04 - 47.6GB
 bitriseio/android-20.04 - 45.3GB
 quay.io/bitriseio/android-20.04 - 45.3GB
-quay.io/bitriseio/bitrise-base-20.04 - 3.43GB
-bitriseio/bitrise-base-20.04 - 3.43GB
+bitriseio/bitrise-base-20.04 - 3.44GB
+quay.io/bitriseio/bitrise-base-20.04 - 3.44GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -625,7 +625,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   59G  135G  31% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       720Mi        60Gi       1.0Mi       2.0Gi        61Gi
+Mem:           62Gi       724Mi        60Gi       1.0Mi       1.9Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
