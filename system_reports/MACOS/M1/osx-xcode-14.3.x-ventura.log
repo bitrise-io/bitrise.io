@@ -2,16 +2,16 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023_04_14
+* BITRISE_OSX_STACK_REV_ID: v2023_04_21
 ========================================
 
 
 === Pre-installed tool versions ========
 
 == All Go versions selectable via asdf local golang x ==
-* Go default version: go version go1.18.10 darwin/arm64
- *1.18.10
-  1.20.2
+* Go default version: go version go1.20.2 darwin/arm64
+  1.18.10
+ *1.20.2
 ========================================
 
 * Python: Python 2.7.18
@@ -63,16 +63,16 @@ junitreport 2.0.2
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
 * brew: Homebrew 4.0.14
-Homebrew/homebrew-core (git revision 59745a26374; last commit 2023-04-14)
-Homebrew/homebrew-cask (git revision 06ebd34bde; last commit 2023-04-14)
+Homebrew/homebrew-core (git revision 974b6f2d2bb; last commit 2023-04-19)
+Homebrew/homebrew-cask (git revision f5a0e2f16f; last commit 2023-04-19)
 * Ansible: ansible [core 2.14.4]
   config file = /Users/vagrant/git/ansible.cfg
   ansible python module location = /opt/homebrew/Cellar/ansible/7.4.0/libexec/lib/python3.11/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /opt/homebrew/bin/ansible
   python version = 3.11.3 (main, Apr  7 2023, 20:13:31) [Clang 14.0.0 (clang-1400.0.29.202)] (/opt/homebrew/Cellar/ansible/7.4.0/libexec/bin/python3.11)
-* gtimeout: timeout (GNU coreutils) 9.2
-* watchman: 2023.04.10.00
+* gtimeout: timeout (GNU coreutils) 9.3
+* watchman: 2023.04.17.00
 * flow: Flow, a static type checker for JavaScript, version 0.204.0
 * carthage: 0.39.0
 * imagemagick (convert): Version: ImageMagick 7.1.1-7 Q16-HDRI aarch64 21117 https://imagemagick.org
@@ -120,20 +120,20 @@ cairo 1.16.0_5
 carthage 0.39.0
 cffi 1.15.1
 cmake 3.26.3
-coreutils 9.2
+coreutils 9.3
 curl 8.0.1
 danger-js 64
 danger-swift 3.16.0
 dart 2.19.6
 docutils 0.19_1
 double-conversion 3.2.1
-edencommon 2023.04.10.00
-fb303 2023.04.10.00
-fbthrift 2023.04.10.00
-fizz 2023.04.10.00
+edencommon 2023.04.17.00
+fb303 2023.04.17.00
+fbthrift 2023.04.17.00
+fizz 2023.04.17.00
 flow 0.204.0
 fmt 9.1.0
-folly 2023.04.10.00
+folly 2023.04.17.00
 fontconfig 2.14.2
 freetds 1.3.18
 freetype 2.13.0_1
@@ -216,6 +216,7 @@ oniguruma 6.9.8
 openconnect 9.01_2
 openexr 3.1.7
 openjdk 20
+openjdk@11 11.0.18
 openjdk@17 17.0.6
 openjpeg 2.5.0
 openldap 2.6.4
@@ -242,6 +243,7 @@ screen 4.9.0_1
 shared-mime-info 2.2
 six 1.16.0_3
 snappy 1.1.10
+sonar-scanner 4.8.0.2856
 sqlite 3.41.2
 stoken 0.92_1
 swiftlint 0.51.0
@@ -250,8 +252,8 @@ transcrypt 2.2.3
 tree 2.1.0
 unbound 1.17.1
 unixodbc 2.3.11
-wangle 2023.04.10.00
-watchman 2023.04.10.00
+wangle 2023.04.17.00
+watchman 2023.04.17.00
 webp 1.3.0
 wget 1.21.3_1
 x265 3.5
@@ -2211,6 +2213,68 @@ openjdk
             ├── lz4
             └── xz
 
+openjdk@11
+├── giflib
+├── harfbuzz
+│   ├── cairo
+│   │   ├── fontconfig
+│   │   │   └── freetype
+│   │   │       └── libpng
+│   │   ├── freetype
+│   │   │   └── libpng
+│   │   ├── glib
+│   │   │   ├── pcre2
+│   │   │   └── gettext
+│   │   ├── libpng
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxcb
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   ├── libxext
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxrender
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── lzo
+│   │   └── pixman
+│   ├── freetype
+│   │   └── libpng
+│   ├── glib
+│   │   ├── pcre2
+│   │   └── gettext
+│   ├── graphite2
+│   └── icu4c
+├── jpeg-turbo
+├── libpng
+└── little-cms2
+    ├── jpeg-turbo
+    └── libtiff
+        ├── jpeg-turbo
+        └── zstd
+            ├── lz4
+            └── xz
+
 openjdk@17
 ├── giflib
 ├── harfbuzz
@@ -2506,6 +2570,69 @@ shared-mime-info
 six
 
 snappy
+
+sonar-scanner
+└── openjdk@11
+    ├── giflib
+    ├── harfbuzz
+    │   ├── cairo
+    │   │   ├── fontconfig
+    │   │   │   └── freetype
+    │   │   │       └── libpng
+    │   │   ├── freetype
+    │   │   │   └── libpng
+    │   │   ├── glib
+    │   │   │   ├── pcre2
+    │   │   │   └── gettext
+    │   │   ├── libpng
+    │   │   ├── libx11
+    │   │   │   ├── libxcb
+    │   │   │   │   ├── libxau
+    │   │   │   │   │   └── xorgproto
+    │   │   │   │   └── libxdmcp
+    │   │   │   │       └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxcb
+    │   │   │   ├── libxau
+    │   │   │   │   └── xorgproto
+    │   │   │   └── libxdmcp
+    │   │   │       └── xorgproto
+    │   │   ├── libxext
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxrender
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── lzo
+    │   │   └── pixman
+    │   ├── freetype
+    │   │   └── libpng
+    │   ├── glib
+    │   │   ├── pcre2
+    │   │   └── gettext
+    │   ├── graphite2
+    │   └── icu4c
+    ├── jpeg-turbo
+    ├── libpng
+    └── little-cms2
+        ├── jpeg-turbo
+        └── libtiff
+            ├── jpeg-turbo
+            └── zstd
+                ├── lz4
+                └── xz
 
 sqlite
 └── readline
@@ -3124,7 +3251,7 @@ zstd
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
 * Bundler: Bundler version 2.4.12
-* CocoaPods: 1.12.0
+* CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
 
@@ -3149,8 +3276,8 @@ CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
 clamp (1.3.2)
-cocoapods (1.12.0)
-cocoapods-core (1.12.0)
+cocoapods (1.12.1, 1.12.0)
+cocoapods-core (1.12.1, 1.12.0)
 cocoapods-deintegrate (1.0.5)
 cocoapods-downloader (1.6.3)
 cocoapods-plugins (1.0.0)
@@ -3486,6 +3613,7 @@ iOS 13.7 (13.7 - 17H22) - com.apple.CoreSimulator.SimRuntime.iOS-13-7
 iOS 14.5 (14.5 - 18E182) - com.apple.CoreSimulator.SimRuntime.iOS-14-5
 iOS 15.5 (15.5 - 19F70) - com.apple.CoreSimulator.SimRuntime.iOS-15-5
 iOS 16.0 (16.0 - 20A360) - com.apple.CoreSimulator.SimRuntime.iOS-16-0
+iOS 16.2 (16.2 - 20C52) - com.apple.CoreSimulator.SimRuntime.iOS-16-2
 iOS 16.4 (16.4 - 20E247) - com.apple.CoreSimulator.SimRuntime.iOS-16-4
 tvOS 15.4 (15.4 - 19L439) - com.apple.CoreSimulator.SimRuntime.tvOS-15-4
 tvOS 16.0 (16.0 - 20J373) - com.apple.CoreSimulator.SimRuntime.tvOS-16-0
@@ -3549,6 +3677,19 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     iPad Pro (12.9-inch) (5th generation) (E51AFECA-F3E0-4E36-9E14-4868A85E84D7) (Shutdown) 
     iPad Air (5th generation) (F4F803F3-805B-4C67-A20D-68BBC3D23CFD) (Shutdown) 
     iPad mini (6th generation) (4EFEE134-FEF6-40A4-A19F-A697E1D12442) (Shutdown) 
+-- iOS 16.2 --
+    iPhone 8 Plus (EAB9BC1B-EE82-4D72-B8BD-0CB0CF63D27E) (Shutdown) 
+    iPhone 11 (2D94948A-24B8-436F-8EE6-50A3A8CBB488) (Shutdown) 
+    iPhone SE (3rd generation) (9B549040-6B87-4B9F-9B46-DDDF2E5FA7A6) (Shutdown) 
+    iPhone 14 (D9873725-9DA0-482C-881A-D51D375EA271) (Shutdown) 
+    iPhone 14 Plus (6FEF46E0-1A62-4094-8CDA-3E6C3A3FDEAF) (Shutdown) 
+    iPhone 14 Pro (382FB383-D93C-470D-B40D-70091D0B5697) (Shutdown) 
+    iPhone 14 Pro Max (2171D5D6-1E7F-4D6E-946E-871BC3C3C588) (Shutdown) 
+    iPad Air (5th generation) (4D592F1F-A3BC-439B-BAE3-2859FA607CB1) (Shutdown) 
+    iPad (10th generation) (DCD77729-193F-499B-BFED-6E8B370CB945) (Shutdown) 
+    iPad mini (6th generation) (F811B142-C6E6-44ED-90AC-6B768C5C6E2E) (Shutdown) 
+    iPad Pro (11-inch) (4th generation) (8A082207-E2D8-4811-8BA5-1552A99FE450) (Shutdown) 
+    iPad Pro (12.9-inch) (6th generation) (2AEABA4D-E357-47D7-A272-5546DB4666C8) (Shutdown) 
 -- iOS 16.4 --
     iPhone 8 Plus (26C420E2-5E53-4E84-AA3D-685259B05DC0) (Shutdown) 
     iPhone 11 (7FBD5FE0-1DD0-4303-A661-D0E30400479A) (Shutdown) 
@@ -3654,11 +3795,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-norosetta-g2-m1.8core-4e4bd9c1-5e68-4926-888f-0be0f9a69a8b
+      Computer Name: vm-osx-ventura-norosetta-g2-m1.4core-74190368-dc0b-4ea9-8702-6c09dfbc3f4e
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 22 seconds
+      Time since boot: 2 minutes, 23 seconds
 
 
 ========================================
@@ -3667,7 +3808,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        295Gi        117Gi
+/dev/disk3s1s1        295Gi        121Gi
 ========================================
 
 --- Android
