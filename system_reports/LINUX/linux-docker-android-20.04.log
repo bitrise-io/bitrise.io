@@ -32,14 +32,14 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.27.115 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.115
-* Transcrypt: 3.9.0
+* aws-cli: aws-cli/1.27.118 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.118
+* Transcrypt: 3.9.1
 * Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
   * bundler: Bundler version 2.4.12
   * rubygems: 3.4.12
 * Go: go version go1.18.5 linux/amd64
-* Node.js: v16.19.1
-* NPM: 9.6.4
+* Node.js: v16.20.0
+* NPM: 9.6.5
 * Yarn: 1.22.19
 * docker: Docker version 23.0.4, build f480fb1
 * docker-compose: docker-compose version 1.28.6, build 5db8d86f
@@ -55,7 +55,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * Java: javac 11.0.18
 * Cordova CLI version: 11.1.0
 * Ionic CLI version: 7.0.1
-* Appcenter-CLI version: 2.13.5
+* Appcenter-CLI version: 2.13.6
 ========================================
 
 === Kotlin ===============================
@@ -387,10 +387,10 @@ addressable (2.8.4)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.749.0)
+aws-partitions (1.752.0)
 aws-sdk-core (3.171.0)
 aws-sdk-kms (1.63.0)
-aws-sdk-s3 (1.120.1)
+aws-sdk-s3 (1.121.0)
 aws-sigv4 (1.5.2)
 babosa (2.0.0, 1.0.4)
 benchmark (0.2.1, default: 0.1.0)
@@ -405,6 +405,7 @@ commander (4.6.0)
 connection_pool (2.4.0)
 csv (3.2.6, default: 3.1.2)
 date (3.3.3, default: 3.0.3)
+dbm (default: 1.1.0)
 declarative (0.0.20)
 delegate (0.3.0, default: 0.1.0)
 did_you_mean (1.6.3, default: 1.4.0)
@@ -430,13 +431,13 @@ faraday_middleware (1.2.0)
 fastimage (2.2.6)
 fastlane (2.212.2)
 fcntl (1.0.2, default: 1.0.0)
-fiddle (default: 1.0.0)
+fiddle (1.1.1, default: 1.0.0)
 fileutils (1.7.1, default: 1.4.1)
 forwardable (1.3.3, default: 1.3.1)
 gdbm (default: 2.1.0)
 getoptlong (0.2.0, default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.39.0)
+google-apis-androidpublisher_v3 (0.40.0)
 google-apis-core (0.11.0)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
@@ -531,7 +532,7 @@ zlib (3.0.0, default: 1.1.0)
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1c-dfbb6bc5-668d-4d2b-9c37-a5d3b90d5dd5 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1b-8c74287e-43dd-44ea-ad79-ac58efaed8bd 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -592,8 +593,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1c-dfbb6bc5-668d-4d2b-9c37-a5d3b90d5dd5
- ID: b1b7cfe6-9cdf-4cd8-bf9e-99549f7f6ab5
+ Name: stg-prdfree-20-04-usc1b-8c74287e-43dd-44ea-ad79-ac58efaed8bd
+ ID: abb8dc23-44b2-4cab-a0e0-9c2555422f4b
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Registry: https://index.docker.io/v1/
@@ -606,12 +607,12 @@ Server:
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 47.6GB
-quay.io/bitriseio/android-ndk-20.04 - 47.6GB
-bitriseio/android-20.04 - 45.3GB
-quay.io/bitriseio/android-20.04 - 45.3GB
-bitriseio/bitrise-base-20.04 - 3.44GB
-quay.io/bitriseio/bitrise-base-20.04 - 3.44GB
+bitriseio/android-ndk-20.04 - 48.3GB
+quay.io/bitriseio/android-ndk-20.04 - 48.3GB
+quay.io/bitriseio/android-20.04 - 45.9GB
+bitriseio/android-20.04 - 45.9GB
+bitriseio/bitrise-base-20.04 - 4.21GB
+quay.io/bitriseio/bitrise-base-20.04 - 4.21GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -619,13 +620,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-overlay         194G   59G  135G  31% /
+overlay         194G   60G  134G  31% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   59G  135G  31% /bitrise
+/dev/root       194G   60G  134G  31% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       724Mi        60Gi       1.0Mi       1.9Gi        61Gi
+Mem:           62Gi       767Mi        59Gi       1.0Mi       2.9Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
