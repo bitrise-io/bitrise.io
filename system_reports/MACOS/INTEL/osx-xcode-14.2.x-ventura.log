@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023_04_14
+* BITRISE_OSX_STACK_REV_ID: v2023_04_17
 ========================================
 
 
@@ -62,20 +62,20 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.13
-Homebrew/homebrew-core (git revision 59745a26374; last commit 2023-04-14)
-Homebrew/homebrew-cask (git revision 06ebd34bde; last commit 2023-04-14)
+* brew: Homebrew 4.0.14
+Homebrew/homebrew-core (git revision 974b6f2d2bb; last commit 2023-04-19)
+Homebrew/homebrew-cask (git revision f5a0e2f16f; last commit 2023-04-19)
 * Ansible: ansible [core 2.14.4]
   config file = /Users/vagrant/git/ansible.cfg
   ansible python module location = /usr/local/Cellar/ansible/7.4.0/libexec/lib/python3.11/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
   python version = 3.11.3 (main, Apr  7 2023, 19:25:52) [Clang 14.0.0 (clang-1400.0.29.202)] (/usr/local/Cellar/ansible/7.4.0/libexec/bin/python3.11)
-* gtimeout: timeout (GNU coreutils) 9.2
-* watchman: 2023.04.10.00
-* flow: Flow, a static type checker for JavaScript, version 0.203.1
+* gtimeout: timeout (GNU coreutils) 9.3
+* watchman: 2023.04.17.00
+* flow: Flow, a static type checker for JavaScript, version 0.204.0
 * carthage: 0.39.0
-* imagemagick (convert): Version: ImageMagick 7.1.1-6 Q16-HDRI x86_64 21020 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.1-7 Q16-HDRI x86_64 21117 https://imagemagick.org
 * ghostscript (ps2ascii): 10.01.1
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 11.22.0
@@ -86,7 +86,7 @@ Homebrew/homebrew-cask (git revision 06ebd34bde; last commit 2023-04-14)
 * Screen 4.09.00
 * applesimutils 0.9.9
 * OpenConnect version v9.01
-* aws-cli: aws-cli/2.11.12 Python/3.11.3 Darwin/22.3.0 source/x86_64 prompt/off
+* aws-cli: aws-cli/2.11.13 Python/3.11.3 Darwin/22.3.0 source/x86_64 prompt/off
 * cmake: 3.26.3
 * danger-swift: 3.16.0
 [0;0m
@@ -105,13 +105,13 @@ ansible 7.4.0
 ant 1.10.13
 aom 3.6.0
 applesimutils 0.9.9
-apr 1.7.3
+apr 1.7.4
 apr-util 1.6.3
 argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.11.12
+awscli 2.11.13
 bazelisk 1.16.0
 bdw-gc 8.2.2
 boost 1.81.0_1
@@ -122,20 +122,20 @@ cairo 1.16.0_5
 carthage 0.39.0
 cffi 1.15.1
 cmake 3.26.3
-coreutils 9.2
+coreutils 9.3
 curl 8.0.1
 danger-js 64
 danger-swift 3.16.0
 dart 2.19.6
 docutils 0.19_1
 double-conversion 3.2.1
-edencommon 2023.04.10.00
-fb303 2023.04.10.00
-fbthrift 2023.04.10.00
-fizz 2023.04.10.00
-flow 0.203.1
+edencommon 2023.04.17.00
+fb303 2023.04.17.00
+fbthrift 2023.04.17.00
+fizz 2023.04.17.00
+flow 0.204.0
 fmt 9.1.0
-folly 2023.04.10.00
+folly 2023.04.17.00
 fontconfig 2.14.2
 freetds 1.3.18
 freetype 2.13.0_1
@@ -162,7 +162,7 @@ harfbuzz 7.1.0
 highway 1.0.4
 hub 2.14.2
 icu4c 72.1
-imagemagick 7.1.1-6
+imagemagick 7.1.1-7
 imath 3.1.7
 jasper 4.0.0
 jbig2dec 0.19
@@ -222,6 +222,7 @@ oniguruma 6.9.8
 openconnect 9.01_2
 openexr 3.1.7
 openjdk 20
+openjdk@11 11.0.18
 openjdk@17 17.0.6
 openjpeg 2.5.0
 openldap 2.6.4
@@ -249,6 +250,7 @@ screen 4.9.0_1
 shared-mime-info 2.2
 six 1.16.0_3
 snappy 1.1.10
+sonar-scanner 4.8.0.2856
 sqlite 3.41.2
 stoken 0.92_1
 swiftlint 0.51.0
@@ -257,8 +259,8 @@ transcrypt 2.2.3
 tree 2.1.0
 unbound 1.17.1
 unixodbc 2.3.11
-wangle 2023.04.10.00
-watchman 2023.04.10.00
+wangle 2023.04.17.00
+watchman 2023.04.17.00
 webp 1.3.0
 wget 1.21.3_1
 x265 3.5
@@ -2237,6 +2239,68 @@ openjdk
             ├── lz4
             └── xz
 
+openjdk@11
+├── giflib
+├── harfbuzz
+│   ├── cairo
+│   │   ├── fontconfig
+│   │   │   └── freetype
+│   │   │       └── libpng
+│   │   ├── freetype
+│   │   │   └── libpng
+│   │   ├── glib
+│   │   │   ├── pcre2
+│   │   │   └── gettext
+│   │   ├── libpng
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxcb
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   ├── libxext
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxrender
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── lzo
+│   │   └── pixman
+│   ├── freetype
+│   │   └── libpng
+│   ├── glib
+│   │   ├── pcre2
+│   │   └── gettext
+│   ├── graphite2
+│   └── icu4c
+├── jpeg-turbo
+├── libpng
+└── little-cms2
+    ├── jpeg-turbo
+    └── libtiff
+        ├── jpeg-turbo
+        └── zstd
+            ├── lz4
+            └── xz
+
 openjdk@17
 ├── giflib
 ├── harfbuzz
@@ -2542,6 +2606,69 @@ shared-mime-info
 six
 
 snappy
+
+sonar-scanner
+└── openjdk@11
+    ├── giflib
+    ├── harfbuzz
+    │   ├── cairo
+    │   │   ├── fontconfig
+    │   │   │   └── freetype
+    │   │   │       └── libpng
+    │   │   ├── freetype
+    │   │   │   └── libpng
+    │   │   ├── glib
+    │   │   │   ├── pcre2
+    │   │   │   └── gettext
+    │   │   ├── libpng
+    │   │   ├── libx11
+    │   │   │   ├── libxcb
+    │   │   │   │   ├── libxau
+    │   │   │   │   │   └── xorgproto
+    │   │   │   │   └── libxdmcp
+    │   │   │   │       └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxcb
+    │   │   │   ├── libxau
+    │   │   │   │   └── xorgproto
+    │   │   │   └── libxdmcp
+    │   │   │       └── xorgproto
+    │   │   ├── libxext
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxrender
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── lzo
+    │   │   └── pixman
+    │   ├── freetype
+    │   │   └── libpng
+    │   ├── glib
+    │   │   ├── pcre2
+    │   │   └── gettext
+    │   ├── graphite2
+    │   └── icu4c
+    ├── jpeg-turbo
+    ├── libpng
+    └── little-cms2
+        ├── jpeg-turbo
+        └── libtiff
+            ├── jpeg-turbo
+            └── zstd
+                ├── lz4
+                └── xz
 
 sqlite
 └── readline
@@ -3160,7 +3287,7 @@ zstd
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
 * Bundler: Bundler version 2.4.12
-* CocoaPods: 1.12.0
+* CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
 
@@ -3172,7 +3299,7 @@ algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.747.0)
+aws-partitions (1.749.0)
 aws-sdk-core (3.171.0)
 aws-sdk-kms (1.63.0)
 aws-sdk-s3 (1.120.1)
@@ -3185,8 +3312,8 @@ CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
 clamp (1.3.2)
-cocoapods (1.12.0)
-cocoapods-core (1.12.0)
+cocoapods (1.12.1)
+cocoapods-core (1.12.1)
 cocoapods-deintegrate (1.0.5)
 cocoapods-downloader (1.6.3)
 cocoapods-plugins (1.0.0)
@@ -3225,7 +3352,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
-fastlane (2.212.1)
+fastlane (2.212.2)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -3236,7 +3363,7 @@ fuzzy_match (2.0.4)
 gdbm (default: 2.1.0)
 getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.38.0)
+google-apis-androidpublisher_v3 (0.39.0)
 google-apis-core (0.11.0)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
@@ -3731,16 +3858,16 @@ A7F4720E-B061-4122-BDD9-05BC2483650B (active, disconnected)
 9FBB563C-40B2-431E-BE0B-DEB7D5764725 (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (A0EFDEBF-8BF1-4E20-B9D4-3D79085D080E) (Shutdown)
     Phone: iPhone 14 Pro Max (CEAFEF99-8CE2-4802-86BE-30881F88E247) (Shutdown)
-1BDD8EE3-ACD8-47FA-AF5B-234020A12DBE (active, disconnected)
+4C956A9B-C324-4C7F-A172-916A55038E6B (active, disconnected)
     Watch: Apple Watch Series 7 (45mm) (B0D064E7-BA45-4C2A-933C-04C704A9FF3D) (Shutdown)
     Phone: iPhone 14 (99734B84-23EB-42F7-85D9-654634B5CFB6) (Shutdown)
-711AD8CE-A553-49A0-854F-EBEA1AC2100D (active, disconnected)
+6FA969F3-2898-494E-9DF2-4974C4AA970A (active, disconnected)
     Watch: Apple Watch Series 8 (41mm) (3002379C-7911-4AD6-9DE8-B889F8381F34) (Shutdown)
     Phone: iPhone 14 Plus (62012A75-979E-4B39-9D62-FE6E46A2251B) (Shutdown)
-ACC9285B-6240-4B2E-B530-E04B0287A007 (active, disconnected)
+D0AA06BD-12C2-4965-9DD4-FFD510D29626 (active, disconnected)
     Watch: Apple Watch Series 8 (45mm) (3E115DD9-D0C7-4ABE-92E1-1C1F7B1DE582) (Shutdown)
     Phone: iPhone 14 Pro (79EB2DDC-8545-4F04-AFD5-DECE2F8FBB86) (Shutdown)
-793C7916-94E3-483D-AD64-6452CD07B0AE (active, disconnected)
+FC5808AF-A053-4B58-A3FE-F42B9D6676C4 (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (4761012D-E09B-4F58-9AE3-D04690F20317) (Shutdown)
     Phone: iPhone 14 Pro Max (1E655EAD-B6E5-4802-934B-3CFE0A5FB79A) (Shutdown)
 
@@ -3763,11 +3890,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-g2.8core-84b2824f-eea6-4283-a063-85790f5db5c1
+      Computer Name: vm-osx-ventura-g2.4core-dd87f8f9-25b7-48dc-9cba-9b94f2461ade
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 3 minutes, 21 seconds
+      Time since boot: 3 minutes, 47 seconds
 
 
 ========================================
