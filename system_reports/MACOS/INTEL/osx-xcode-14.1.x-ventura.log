@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023_04_14
+* BITRISE_OSX_STACK_REV_ID: v2023_04_25
 ========================================
 
 
@@ -36,7 +36,7 @@
   temurin64-1.8.0.362
   temurin64-11.0.17
   temurin64-17.0.6
-* Kotlin: Kotlin version 1.8.20-release-327 (JRE 11.0.17+8)
+* Kotlin: Kotlin version 1.8.21-release-380 (JRE 11.0.17+8)
 * Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
 * fvm: 2.4.1
 * Flutter SDKs via fvm: Cache Directory:  /Users/vagrant/fvm/versions
@@ -62,31 +62,31 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.13
-Homebrew/homebrew-core (git revision 59745a26374; last commit 2023-04-14)
-Homebrew/homebrew-cask (git revision 06ebd34bde; last commit 2023-04-14)
+* brew: Homebrew 4.0.15
+Homebrew/homebrew-core (git revision f517b910d01; last commit 2023-04-25)
+Homebrew/homebrew-cask (git revision fe3c1cc3f6; last commit 2023-04-25)
 * Ansible: ansible [core 2.14.4]
   config file = /Users/vagrant/git/ansible.cfg
   ansible python module location = /usr/local/Cellar/ansible/7.4.0/libexec/lib/python3.11/site-packages/ansible
   ansible collection location = /Users/vagrant/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
   python version = 3.11.3 (main, Apr  7 2023, 19:25:52) [Clang 14.0.0 (clang-1400.0.29.202)] (/usr/local/Cellar/ansible/7.4.0/libexec/bin/python3.11)
-* gtimeout: timeout (GNU coreutils) 9.2
-* watchman: 2023.04.10.00
-* flow: Flow, a static type checker for JavaScript, version 0.203.1
+* gtimeout: timeout (GNU coreutils) 9.3
+* watchman: 2023.04.17.00
+* flow: Flow, a static type checker for JavaScript, version 0.204.1
 * carthage: 0.39.0
-* imagemagick (convert): Version: ImageMagick 7.1.1-6 Q16-HDRI x86_64 21020 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.1-8 Q16-HDRI x86_64 21129 https://imagemagick.org
 * ghostscript (ps2ascii): 10.01.1
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 11.22.0
 * applesimutils version 0.9.9
 * jq: 1.6
-* xcbeautify: 0.19.0
+* xcbeautify: 0.20.0
 * XCLogParser 0.2.36
 * Screen 4.09.00
 * applesimutils 0.9.9
 * OpenConnect version v9.01
-* aws-cli: aws-cli/2.11.12 Python/3.11.3 Darwin/22.3.0 source/x86_64 prompt/off
+* aws-cli: aws-cli/2.11.15 Python/3.11.3 Darwin/22.3.0 source/x86_64 prompt/off
 * cmake: 3.26.3
 * danger-swift: 3.16.0
 [0;0m
@@ -105,13 +105,13 @@ ansible 7.4.0
 ant 1.10.13
 aom 3.6.0
 applesimutils 0.9.9
-apr 1.7.3
+apr 1.7.4
 apr-util 1.6.3
 argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.11.12
+awscli 2.11.15
 bazelisk 1.16.0
 bdw-gc 8.2.2
 boost 1.81.0_1
@@ -122,20 +122,20 @@ cairo 1.16.0_5
 carthage 0.39.0
 cffi 1.15.1
 cmake 3.26.3
-coreutils 9.2
+coreutils 9.3
 curl 8.0.1
 danger-js 64
 danger-swift 3.16.0
 dart 2.19.6
 docutils 0.19_1
 double-conversion 3.2.1
-edencommon 2023.04.10.00
-fb303 2023.04.10.00
-fbthrift 2023.04.10.00
-fizz 2023.04.10.00
-flow 0.203.1
+edencommon 2023.04.17.00
+fb303 2023.04.17.00
+fbthrift 2023.04.17.00
+fizz 2023.04.17.00
+flow 0.204.1
 fmt 9.1.0
-folly 2023.04.10.00
+folly 2023.04.17.00
 fontconfig 2.14.2
 freetds 1.3.18
 freetype 2.13.0_1
@@ -154,7 +154,7 @@ glog 0.6.0
 gmp 6.2.1_1
 gnupg 2.4.0
 gnutls 3.8.0
-gradle 8.1
+gradle 8.1.1
 graphite2 1.3.14
 groovy 4.0.11
 guile 3.0.9
@@ -162,7 +162,7 @@ harfbuzz 7.1.0
 highway 1.0.4
 hub 2.14.2
 icu4c 72.1
-imagemagick 7.1.1-6
+imagemagick 7.1.1-8
 imath 3.1.7
 jasper 4.0.0
 jbig2dec 0.19
@@ -170,7 +170,7 @@ jenv 0.5.6
 jpeg-turbo 2.1.5.1
 jpeg-xl 0.8.1_2
 jq 1.6
-kotlin 1.8.20
+kotlin 1.8.21
 krb5 1.20.1
 libassuan 2.5.5
 libavif 0.11.1
@@ -184,7 +184,7 @@ libidn2 2.3.4_1
 libksba 1.6.3
 liblqr 0.4.2_1
 libnghttp2 1.52.0
-libomp 16.0.1
+libomp 16.0.2
 libpng 1.6.39
 libpq 15.2
 libraw 0.21.1
@@ -206,7 +206,7 @@ libxrender 0.9.11
 libyaml 0.2.5
 libzip 1.9.2
 little-cms2 2.14
-llvm 16.0.1
+llvm 16.0.2
 lokalise2 2.6.8
 lz4 1.9.4
 lzo 2.10
@@ -222,14 +222,15 @@ oniguruma 6.9.8
 openconnect 9.01_2
 openexr 3.1.7
 openjdk 20
-openjdk@17 17.0.6
+openjdk@11 11.0.19
+openjdk@17 17.0.7
 openjpeg 2.5.0
 openldap 2.6.4
 openssl@1.1 1.1.1t
 openssl@3 3.1.0
 openvpn 2.6.3
 p11-kit 0.24.1_1
-parallel 20230322
+parallel 20230422
 pcre2 10.42
 php 8.2.5
 pinentry 1.2.1
@@ -244,11 +245,12 @@ pyyaml 6.0_1
 rbenv 1.2.0
 readline 8.2.1
 rtmpdump 2.4+20151223_1
-ruby-build 20230330
+ruby-build 20230424
 screen 4.9.0_1
 shared-mime-info 2.2
 six 1.16.0_3
 snappy 1.1.10
+sonar-scanner 4.8.0.2856
 sqlite 3.41.2
 stoken 0.92_1
 swiftlint 0.51.0
@@ -257,17 +259,17 @@ transcrypt 2.2.3
 tree 2.1.0
 unbound 1.17.1
 unixodbc 2.3.11
-wangle 2023.04.10.00
-watchman 2023.04.10.00
+wangle 2023.04.17.00
+watchman 2023.04.17.00
 webp 1.3.0
 wget 1.21.3_1
 x265 3.5
-xcbeautify 0.19.0
+xcbeautify 0.20.0
 xclogparser 0.2.36
 xcodes 1.3.0
 xorgproto 2022.2
 xz 5.4.2
-yamllint 1.30.0
+yamllint 1.31.0
 yarn 1.22.19
 z3 4.12.1
 zeromq 4.3.4
@@ -2237,6 +2239,68 @@ openjdk
             ├── lz4
             └── xz
 
+openjdk@11
+├── giflib
+├── harfbuzz
+│   ├── cairo
+│   │   ├── fontconfig
+│   │   │   └── freetype
+│   │   │       └── libpng
+│   │   ├── freetype
+│   │   │   └── libpng
+│   │   ├── glib
+│   │   │   ├── pcre2
+│   │   │   └── gettext
+│   │   ├── libpng
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxcb
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   ├── libxext
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxrender
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── lzo
+│   │   └── pixman
+│   ├── freetype
+│   │   └── libpng
+│   ├── glib
+│   │   ├── pcre2
+│   │   └── gettext
+│   ├── graphite2
+│   └── icu4c
+├── jpeg-turbo
+├── libpng
+└── little-cms2
+    ├── jpeg-turbo
+    └── libtiff
+        ├── jpeg-turbo
+        └── zstd
+            ├── lz4
+            └── xz
+
 openjdk@17
 ├── giflib
 ├── harfbuzz
@@ -2517,6 +2581,7 @@ rbenv
 └── ruby-build
     ├── autoconf
     │   └── m4
+    ├── libyaml
     ├── pkg-config
     └── readline
 
@@ -2529,6 +2594,7 @@ rtmpdump
 ruby-build
 ├── autoconf
 │   └── m4
+├── libyaml
 ├── pkg-config
 └── readline
 
@@ -2542,6 +2608,69 @@ shared-mime-info
 six
 
 snappy
+
+sonar-scanner
+└── openjdk@11
+    ├── giflib
+    ├── harfbuzz
+    │   ├── cairo
+    │   │   ├── fontconfig
+    │   │   │   └── freetype
+    │   │   │       └── libpng
+    │   │   ├── freetype
+    │   │   │   └── libpng
+    │   │   ├── glib
+    │   │   │   ├── pcre2
+    │   │   │   └── gettext
+    │   │   ├── libpng
+    │   │   ├── libx11
+    │   │   │   ├── libxcb
+    │   │   │   │   ├── libxau
+    │   │   │   │   │   └── xorgproto
+    │   │   │   │   └── libxdmcp
+    │   │   │   │       └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxcb
+    │   │   │   ├── libxau
+    │   │   │   │   └── xorgproto
+    │   │   │   └── libxdmcp
+    │   │   │       └── xorgproto
+    │   │   ├── libxext
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── libxrender
+    │   │   │   ├── libx11
+    │   │   │   │   ├── libxcb
+    │   │   │   │   │   ├── libxau
+    │   │   │   │   │   │   └── xorgproto
+    │   │   │   │   │   └── libxdmcp
+    │   │   │   │   │       └── xorgproto
+    │   │   │   │   └── xorgproto
+    │   │   │   └── xorgproto
+    │   │   ├── lzo
+    │   │   └── pixman
+    │   ├── freetype
+    │   │   └── libpng
+    │   ├── glib
+    │   │   ├── pcre2
+    │   │   └── gettext
+    │   ├── graphite2
+    │   └── icu4c
+    ├── jpeg-turbo
+    ├── libpng
+    └── little-cms2
+        ├── jpeg-turbo
+        └── libtiff
+            ├── jpeg-turbo
+            └── zstd
+                ├── lz4
+                └── xz
 
 sqlite
 └── readline
@@ -3160,7 +3289,7 @@ zstd
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
 * Bundler: Bundler version 2.4.12
-* CocoaPods: 1.12.0
+* CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
 
@@ -3172,7 +3301,7 @@ algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.747.0)
+aws-partitions (1.749.0)
 aws-sdk-core (3.171.0)
 aws-sdk-kms (1.63.0)
 aws-sdk-s3 (1.120.1)
@@ -3185,8 +3314,8 @@ CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
 clamp (1.3.2)
-cocoapods (1.12.0)
-cocoapods-core (1.12.0)
+cocoapods (1.12.1)
+cocoapods-core (1.12.1)
 cocoapods-deintegrate (1.0.5)
 cocoapods-downloader (1.6.3)
 cocoapods-plugins (1.0.0)
@@ -3225,7 +3354,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
-fastlane (2.212.1)
+fastlane (2.212.2)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -3236,7 +3365,7 @@ fuzzy_match (2.0.4)
 gdbm (default: 2.1.0)
 getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.38.0)
+google-apis-androidpublisher_v3 (0.39.0)
 google-apis-core (0.11.0)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
@@ -3731,16 +3860,16 @@ A7F4720E-B061-4122-BDD9-05BC2483650B (active, disconnected)
 9FBB563C-40B2-431E-BE0B-DEB7D5764725 (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (A0EFDEBF-8BF1-4E20-B9D4-3D79085D080E) (Shutdown)
     Phone: iPhone 14 Pro Max (CEAFEF99-8CE2-4802-86BE-30881F88E247) (Shutdown)
-EF729A45-60C7-4802-8167-0B468FE6531C (active, disconnected)
+1AEDE1F2-0470-4313-A1B8-15212BB99ED7 (active, disconnected)
     Watch: Apple Watch Series 7 (45mm) (B0D064E7-BA45-4C2A-933C-04C704A9FF3D) (Shutdown)
     Phone: iPhone 14 (899BCC7C-F6D1-40E9-9A93-4DDF71EB5EC1) (Shutdown)
-284F92C6-8CE6-4E5D-8253-11CC0E2CA93C (active, disconnected)
+53A80CDD-998A-4E6F-A8D4-5F4FBCFD5C72 (active, disconnected)
     Watch: Apple Watch Series 8 (41mm) (3002379C-7911-4AD6-9DE8-B889F8381F34) (Shutdown)
     Phone: iPhone 14 Plus (52C23055-C645-4FEE-AFA6-0A43938C0E97) (Shutdown)
-8CE05E4D-8B92-4096-92EA-103FD420BCA0 (active, disconnected)
+7E0CB2CB-5853-4B94-89AA-8185C77133ED (active, disconnected)
     Watch: Apple Watch Series 8 (45mm) (3E115DD9-D0C7-4ABE-92E1-1C1F7B1DE582) (Shutdown)
     Phone: iPhone 14 Pro (D44BE915-2741-4BC6-ACBD-368262DA2FDF) (Shutdown)
-9DAD5CAF-F976-4112-96C0-2127454D9646 (active, disconnected)
+63FAEC6D-9AB1-4BD0-AAB0-FCBC6850B5E1 (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (4761012D-E09B-4F58-9AE3-D04690F20317) (Shutdown)
     Phone: iPhone 14 Pro Max (9F41B56F-7AA6-4041-B5F6-2B9C252537EF) (Shutdown)
 
@@ -3763,11 +3892,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-g2.8core-d2ead7b4-6ba6-41c3-a125-d24f090dcc59
+      Computer Name: vm-osx-ventura-g2.4core-6587351f-4ea9-4478-91b7-bda43ca10dd6
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 3 minutes, 27 seconds
+      Time since boot: 3 minutes, 9 seconds
 
 
 ========================================
