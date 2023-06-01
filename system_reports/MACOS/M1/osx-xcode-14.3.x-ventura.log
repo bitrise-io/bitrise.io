@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023_05_18
+* BITRISE_OSX_STACK_REV_ID: v2023_05_25
 ========================================
 
 
@@ -62,9 +62,9 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.18
-Homebrew/homebrew-core (git revision 57f4d47f9db; last commit 2023-05-19)
-Homebrew/homebrew-cask (git revision c1fc35a4ec; last commit 2023-05-19)
+* brew: Homebrew 4.0.19
+Homebrew/homebrew-core (git revision 7aaf746a1c5; last commit 2023-05-26)
+Homebrew/homebrew-cask (git revision d119144a55; last commit 2023-05-26)
 * gtimeout: timeout (GNU coreutils) 9.3
 * watchman: 2023.04.17.00
 * flow: Flow, a static type checker for JavaScript, version 0.204.1
@@ -269,8 +269,32 @@ temurin8 8,352,08
 
 === Brew deps tree ==================
 ansible
+├── cffi
+│   ├── pycparser
+│   │   └── python@3.11
+│   │       ├── mpdecimal
+│   │       ├── openssl@1.1
+│   │       │   └── ca-certificates
+│   │       ├── sqlite
+│   │       │   └── readline
+│   │       └── xz
+│   └── python@3.11
+│       ├── mpdecimal
+│       ├── openssl@1.1
+│       │   └── ca-certificates
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
 ├── openssl@1.1
 │   └── ca-certificates
+├── pycparser
+│   └── python@3.11
+│       ├── mpdecimal
+│       ├── openssl@1.1
+│       │   └── ca-certificates
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
 ├── python@3.11
 │   ├── mpdecimal
 │   ├── openssl@1.1
@@ -3246,7 +3270,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
-* Bundler: Bundler version 2.4.12
+* Bundler: Bundler version 2.4.13
 * CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
@@ -3267,7 +3291,7 @@ aws-sigv4 (1.5.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (2.4.12, default: 2.1.4)
+bundler (2.4.13, 2.4.12, default: 2.1.4)
 CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
@@ -3312,7 +3336,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.6)
-fastlane (2.212.2)
+fastlane (2.213.0, 2.212.2)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -3839,11 +3863,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-norosetta-g2-m1.4core-bd772cff-519f-4bd1-aa8f-e05e8687b005
+      Computer Name: vm-osx-ventura-norosetta-g2-m1.4core-1f0ff70e-c3fe-4602-9541-0eda60dc5385
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 20 seconds
+      Time since boot: 2 minutes, 29 seconds
 
 
 ========================================
