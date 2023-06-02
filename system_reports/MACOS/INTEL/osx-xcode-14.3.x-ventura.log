@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023_05_08
+* BITRISE_OSX_STACK_REV_ID: v2023-06-01
 ========================================
 
 
@@ -62,9 +62,9 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.17
-Homebrew/homebrew-core (git revision be2dda92f7e; last commit 2023-05-08)
-Homebrew/homebrew-cask (git revision 1be92fe9bc; last commit 2023-05-08)
+* brew: Homebrew 4.0.20
+Homebrew/homebrew-core (git revision 359b15c73bc; last commit 2023-06-01)
+Homebrew/homebrew-cask (git revision 02e8561779; last commit 2023-06-01)
 * gtimeout: timeout (GNU coreutils) 9.3
 * watchman: 2023.04.17.00
 * flow: Flow, a static type checker for JavaScript, version 0.204.1
@@ -269,8 +269,32 @@ temurin8 8,362,09
 
 === Brew deps tree ==================
 ansible
+├── cffi
+│   ├── pycparser
+│   │   └── python@3.11
+│   │       ├── mpdecimal
+│   │       ├── openssl@1.1
+│   │       │   └── ca-certificates
+│   │       ├── sqlite
+│   │       │   └── readline
+│   │       └── xz
+│   └── python@3.11
+│       ├── mpdecimal
+│       ├── openssl@1.1
+│       │   └── ca-certificates
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
 ├── openssl@1.1
 │   └── ca-certificates
+├── pycparser
+│   └── python@3.11
+│       ├── mpdecimal
+│       ├── openssl@1.1
+│       │   └── ca-certificates
+│       ├── sqlite
+│       │   └── readline
+│       └── xz
 ├── python@3.11
 │   ├── mpdecimal
 │   ├── openssl@1.1
@@ -3246,28 +3270,28 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
-* Bundler: Bundler version 2.4.12
+* Bundler: Bundler version 2.4.13
 * CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
 
 
 === All Ruby GEMs ======================
-activesupport (7.0.4.3)
+activesupport (7.0.5)
 addressable (2.8.4)
 algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.752.0)
-aws-sdk-core (3.171.0)
-aws-sdk-kms (1.63.0)
-aws-sdk-s3 (1.121.0)
+aws-partitions (1.773.0)
+aws-sdk-core (3.174.0)
+aws-sdk-kms (1.65.0)
+aws-sdk-s3 (1.123.0)
 aws-sigv4 (1.5.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (2.4.12, default: 2.1.4)
+bundler (2.4.13, default: 2.1.4)
 CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
@@ -3311,8 +3335,8 @@ faraday-patron (1.0.0)
 faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
-fastimage (2.2.6)
-fastlane (2.212.2)
+fastimage (2.2.7)
+fastlane (2.213.0)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -3323,7 +3347,7 @@ fuzzy_match (2.0.4)
 gdbm (default: 2.1.0)
 getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.40.0)
+google-apis-androidpublisher_v3 (0.42.0)
 google-apis-core (0.11.0)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
@@ -3336,7 +3360,7 @@ googleauth (1.5.2)
 highline (2.0.3)
 http-cookie (1.0.5)
 httpclient (2.8.3)
-i18n (1.12.0)
+i18n (1.13.0)
 io-console (default: 0.5.6)
 ipaddr (default: 1.2.2)
 irb (default: 1.2.6)
@@ -3353,7 +3377,7 @@ mini_mime (1.1.2)
 minitest (5.18.0)
 molinillo (0.8.0)
 multi_json (1.15.0)
-multipart-post (2.0.0)
+multipart-post (2.3.0)
 mustache (1.1.1)
 mutex_m (default: 0.1.0)
 nanaimo (0.3.0)
@@ -3362,7 +3386,7 @@ naturally (2.2.1)
 net-pop (default: 0.1.0)
 net-smtp (default: 0.1.0)
 netrc (0.11.0)
-nokogiri (1.14.3 x86_64-darwin)
+nokogiri (1.15.2 x86_64-darwin)
 observer (default: 0.1.0)
 open3 (default: 0.1.0)
 open4 (1.3.4)
@@ -3398,7 +3422,7 @@ simctl (1.6.10)
 singleton (default: 0.1.0)
 slack-notifier (2.4.0)
 slather (2.7.4)
-sqlite3 (1.6.2 x86_64-darwin)
+sqlite3 (1.6.3 x86_64-darwin)
 stringio (default: 0.1.0)
 strscan (default: 1.0.3)
 terminal-notifier (2.0.0)
@@ -3462,7 +3486,7 @@ Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 Target: x86_64-apple-darwin22.3.0
 
  * xcrun swift --version
-Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 Target: x86_64-apple-macosx13.0
 
 ========================================
@@ -3471,14 +3495,14 @@ Target: x86_64-apple-macosx13.0
 === Xcode ==============================
 
 * Active Xcode Command Line Tools:
-/Applications/Xcode-14.3.0.app/Contents/Developer
+/Applications/Xcode-14.3.1.app/Contents/Developer
 
 * Xcode Version:
-Xcode 14.3
-Build version 14E222b
+Xcode 14.3.1
+Build version 14E300c
 
 * /usr/bin/swift --version
-Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 Target: x86_64-apple-macosx13.0
 
 * Installed SDKs:
@@ -3836,11 +3860,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-norosetta-g2.4core-a194fded-0e7f-4f5e-ba57-8bed07799974
+      Computer Name: vm-osx-ventura-norosetta-g2.4core-ee18f0e3-1f40-46d8-88aa-e595702b2b74
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 3 minutes, 6 seconds
+      Time since boot: 3 minutes, 40 seconds
 
 
 ========================================
@@ -3849,7 +3873,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk1s5s1        340Gi        123Gi
+/dev/disk1s5s1        340Gi        110Gi
 ========================================
 
 --- Android
