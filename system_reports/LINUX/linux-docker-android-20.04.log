@@ -7,7 +7,7 @@
 
 === Pre-installed lib versions ========
 * zlib1g-dev: 1:1.2.11.dfsg-2ubuntu1.5
-* libssl-dev: 1.1.1f-1ubuntu2.18
+* libssl-dev: 1.1.1f-1ubuntu2.19
 dpkg-query: package 'libreadline6-dev' is not installed and no information is available
 Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * libreadline6-dev: 
@@ -32,30 +32,30 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.27.135 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.135
+* aws-cli: aws-cli/1.27.149 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.149
 * Transcrypt: 3.9.1
 * Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
   * bundler: Bundler version 2.4.13
   * rubygems: 3.4.13
 * Go: go version go1.18.5 linux/amd64
 * Node.js: v16.20.0
-* NPM: 9.6.6
+* NPM: 9.7.1
 * Yarn: 1.22.19
-* docker: Docker version 24.0.0, build 98fdcd7
+* docker: Docker version 24.0.2, build cb74dfc
 * docker-compose: docker-compose version 1.28.6, build 5db8d86f
 * git lfs: git-lfs/3.3.0 (GitHub; linux amd64; go 1.19.3)
 
 * Terraform: v0.12.31
 * Packer: 1.8.2
-* Ansible: 2.13.9
+* Ansible: 2.13.10
 * Openconnect: v8.05-1
 * Shellcheck: 0.7.0
 * Gradle: Gradle 8.0.2
 * Maven: [1mApache Maven 3.6.3[m
 * Java: javac 11.0.19
-* Cordova CLI version: 11.1.0
+* Cordova CLI version: 12.0.0 (cordova-lib@12.0.1)
 * Ionic CLI version: 7.1.1
-* Appcenter-CLI version: 2.13.7
+* Appcenter-CLI version: 2.13.8
 ========================================
 
 === Kotlin ===============================
@@ -96,19 +96,19 @@ javac 1.8.0_362
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 431.0.0
-alpha 2023.05.12
-beta 2023.05.12
-bq 2.0.92
+Google Cloud SDK 434.0.0
+alpha 2023.06.02
+beta 2023.06.02
+bq 2.0.93
 bundled-python3-unix 3.9.16
-core 2023.05.12
+core 2023.06.02
 gcloud-crc32c 1.0.0
-gsutil 5.23
+gsutil 5.24
 ========================================
 
 
 === Firebase Tools components ==========
-12.0.1
+12.3.1
 ========================================
 
 === Google Cloud Network Check =========
@@ -133,13 +133,13 @@ Property diagnostic passed (1/1 checks passed).
 
  * adb version:
 Android Debug Bridge version 1.0.41
-Version 34.0.1-9979309
+Version 34.0.3-10161052
 Installed as /opt/android-sdk-linux/platform-tools/adb
 Running on Linux 5.13.0-1015-gcp (x86_64)
 
  * SDK packages:
 * Command line Tools version: 7.0
-* Platform Tools version: 34.0.1
+* Platform Tools version: 34.0.3
 * Emulator version: 31.3.14
 ========================================
 
@@ -203,6 +203,8 @@ sqlite3
 31.0.0
 32.0.0
 33.0.0
+33.0.1
+34.0.0
 
 * ./emulator:
 android-info.txt
@@ -388,10 +390,10 @@ addressable (2.8.4)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.765.0)
-aws-sdk-core (3.172.0)
-aws-sdk-kms (1.64.0)
-aws-sdk-s3 (1.122.0)
+aws-partitions (1.776.0)
+aws-sdk-core (3.174.0)
+aws-sdk-kms (1.66.0)
+aws-sdk-s3 (1.123.1)
 aws-sigv4 (1.5.2)
 babosa (2.0.0, 1.0.4)
 benchmark (0.2.1, default: 0.1.0)
@@ -403,7 +405,7 @@ claide (1.1.0)
 colored (1.2)
 colored2 (3.1.2)
 commander (4.6.0)
-connection_pool (2.4.0)
+connection_pool (2.4.1)
 csv (3.2.6, default: 3.1.2)
 date (3.3.3, default: 3.0.3)
 dbm (default: 1.1.0)
@@ -415,8 +417,8 @@ domain_name (0.5.20190701)
 dotenv (2.8.1)
 emoji_regex (15.0.0, 3.2.3)
 etc (1.4.2, default: 1.1.0)
-excon (0.99.0)
-faraday (2.7.4, 1.10.3)
+excon (0.100.0)
+faraday (2.7.6, 1.10.3)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
 faraday-em_synchrony (1.0.0)
@@ -427,10 +429,10 @@ faraday-net_http (3.0.2, 1.0.1)
 faraday-net_http_persistent (2.1.0, 1.2.0)
 faraday-patron (1.0.0)
 faraday-rack (2.0.0, 1.0.0)
-faraday-retry (2.1.0, 1.0.3)
+faraday-retry (2.2.0, 1.0.3)
 faraday_middleware (1.2.0)
-fastimage (2.2.6)
-fastlane (2.212.2)
+fastimage (2.2.7)
+fastlane (2.213.0)
 fcntl (1.0.2, default: 1.0.0)
 fiddle (1.1.1, default: 1.0.0)
 fileutils (1.7.1, default: 1.4.1)
@@ -453,7 +455,7 @@ http-cookie (1.0.5)
 httpclient (2.8.3)
 io-console (0.6.0, default: 0.5.6)
 ipaddr (1.2.5, default: 1.2.2)
-irb (1.6.4, default: 1.2.6)
+irb (1.7.0, default: 1.2.6)
 jmespath (1.6.2)
 json (2.6.3, default: 2.3.0)
 jwt (2.7.0)
@@ -464,7 +466,7 @@ mini_magick (4.12.0)
 mini_mime (1.1.2)
 minitest (5.18.0, 5.13.0)
 multi_json (1.15.0)
-multipart-post (2.3.0, 2.0.0)
+multipart-post (2.3.0)
 mutex_m (0.1.2, default: 0.1.0)
 nanaimo (0.3.0)
 naturally (2.2.1)
@@ -485,16 +487,16 @@ prime (0.1.2, default: 0.1.1)
 pstore (0.1.2, default: 0.1.0)
 psych (5.1.0, default: 3.1.0)
 public_suffix (5.0.1)
-racc (1.6.2, default: 1.4.16)
+racc (1.7.0, default: 1.4.16)
 rake (13.0.6, 13.0.1)
 rdoc (6.5.0, default: 6.2.1.1)
 readline (0.0.3, default: 0.0.2)
 readline-ext (0.1.5, default: 0.1.0)
-reline (0.3.3, default: 0.1.5)
+reline (0.3.5, default: 0.1.5)
 representable (3.2.0)
 retriable (3.1.2)
 rexml (3.2.5, default: 3.2.3.1)
-rouge (4.1.1, 2.0.7)
+rouge (4.1.2, 2.0.7)
 rss (0.2.9, default: 0.2.8)
 ruby2_keywords (0.0.5)
 rubygems-update (3.4.13)
@@ -504,13 +506,13 @@ security (0.1.5, 0.1.3)
 signet (0.17.0)
 simctl (1.6.10)
 singleton (0.1.1, default: 0.1.0)
-stringio (3.0.6, default: 0.1.0)
+stringio (3.0.7, default: 0.1.0)
 strscan (3.0.6, default: 1.0.3)
 terminal-notifier (2.0.0)
 terminal-table (3.0.2, 1.8.0)
-test-unit (3.5.8, 3.3.4)
+test-unit (3.5.9, 3.3.4)
 timeout (0.3.2, default: 0.1.0)
-tracer (0.1.1, default: 0.1.0)
+tracer (0.2.2, default: 0.1.0)
 trailblazer-option (0.1.2)
 tty-cursor (0.7.1)
 tty-screen (0.8.1)
@@ -541,7 +543,7 @@ ruby
 
 === Linux info =========================
 * uname -a
-Linux prd-20-04-use1b-dc3103a4-a64f-4ee7-b9e0-97aef10b207a 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1c-48b1d3fd-9e0d-4257-9cb7-f304380b4717 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -555,15 +557,15 @@ Codename:	focal
 
 === Docker info ========================
 Client: Docker Engine - Community
- Version:    24.0.0
+ Version:    24.0.2
  Context:    default
  Debug Mode: false
  Plugins:
   buildx: Docker Buildx (Docker Inc.)
-    Version:  v0.10.4
+    Version:  v0.10.5
     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
   compose: Docker Compose (Docker Inc.)
-    Version:  v2.17.3
+    Version:  v2.18.1
     Path:     /usr/libexec/docker/cli-plugins/docker-compose
 
 Server:
@@ -572,7 +574,7 @@ Server:
   Paused: 0
   Stopped: 0
  Images: 4
- Server Version: 24.0.0
+ Server Version: 24.0.2
  Storage Driver: overlay2
   Backing Filesystem: extfs
   Supports d_type: true
@@ -603,8 +605,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: prd-20-04-use1b-dc3103a4-a64f-4ee7-b9e0-97aef10b207a
- ID: 451c56d4-00a3-4d8e-8625-cb11fb5d3abe
+ Name: stg-prdfree-20-04-usc1c-48b1d3fd-9e0d-4257-9cb7-f304380b4717
+ ID: ddbf85bf-dc07-4c12-a1b4-7433e7ef0db0
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Experimental: false
@@ -616,12 +618,12 @@ Server:
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 47.8GB
-quay.io/bitriseio/android-ndk-20.04 - 47.8GB
-bitriseio/android-20.04 - 45.4GB
-quay.io/bitriseio/android-20.04 - 45.4GB
-bitriseio/bitrise-base-20.04 - 4.22GB
-quay.io/bitriseio/bitrise-base-20.04 - 4.22GB
+quay.io/bitriseio/android-ndk-20.04 - 48.3GB
+bitriseio/android-ndk-20.04 - 48.3GB
+bitriseio/android-20.04 - 45.9GB
+quay.io/bitriseio/android-20.04 - 45.9GB
+bitriseio/bitrise-base-20.04 - 4.23GB
+quay.io/bitriseio/bitrise-base-20.04 - 4.23GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -635,7 +637,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   60G  135G  31% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       744Mi        59Gi       1.0Mi       2.3Gi        61Gi
+Mem:           62Gi       727Mi        60Gi       1.0Mi       1.9Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
