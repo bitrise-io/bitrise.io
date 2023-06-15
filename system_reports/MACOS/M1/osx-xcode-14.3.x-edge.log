@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-06-06
+* BITRISE_OSX_STACK_REV_ID: v2023-06-12
 ========================================
 
 
@@ -35,7 +35,7 @@
   temurin64-1.8.0.352
   temurin64-11.0.17
   temurin64-17.0.5
-* Kotlin: Kotlin version 1.8.21-release-380 (JRE 11.0.17+8)
+* Kotlin: Kotlin version 1.8.22-release-407 (JRE 11.0.17+8)
 * Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
 * fvm: 2.4.1
 * Flutter SDKs via fvm: Cache Directory:  /Users/vagrant/fvm/versions
@@ -53,7 +53,7 @@ junitreport 2.0.2
 * git: git version 2.41.0
 * git lfs: git-lfs/3.3.0 (GitHub; darwin arm64; go 1.19.3)
 * mercurial/hg: Mercurial Distributed SCM (version 6.4)
-* curl: curl 8.1.2 (aarch64-apple-darwin22.4.0) libcurl/8.1.2 (SecureTransport) OpenSSL/1.1.1u zlib/1.2.11 brotli/1.0.9 zstd/1.5.5 libidn2/2.3.4 libssh2/1.11.0 nghttp2/1.53.0 librtmp/2.3
+* curl: curl 8.1.2 (aarch64-apple-darwin22.4.0) libcurl/8.1.2 (SecureTransport) OpenSSL/1.1.1u zlib/1.2.11 brotli/1.0.9 zstd/1.5.5 libidn2/2.3.4 libssh2/1.11.0 nghttp2/1.54.0 librtmp/2.3
 * wget: GNU Wget 1.21.4 built on darwin22.4.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
@@ -62,13 +62,13 @@ junitreport 2.0.2
 * tree: tree v2.1.1 © 1996 - 2023 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
 * brew: Homebrew 4.0.21
-Homebrew/homebrew-core (git revision 359b15c73bc; last commit 2023-06-01)
-Homebrew/homebrew-cask (git revision 02e8561779; last commit 2023-06-01)
+Homebrew/homebrew-core (git revision 1cf787ccea2; last commit 2023-06-12)
+Homebrew/homebrew-cask (git revision 349fb36416; last commit 2023-06-12)
 * gtimeout: timeout (GNU coreutils) 9.3
-* watchman: 2023.05.22.00
-* flow: Flow, a static type checker for JavaScript, version 0.207.0
+* watchman: 2023.06.08.00
+* flow: Flow, a static type checker for JavaScript, version 0.208.0
 * carthage: 0.39.0
-* imagemagick (convert): Version: ImageMagick 7.1.1-10 Q16-HDRI aarch64 21178 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.1-11 Q16-HDRI aarch64 21206 https://imagemagick.org
 * ghostscript (ps2ascii): 10.01.1
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 12.3.0
@@ -79,7 +79,7 @@ Homebrew/homebrew-cask (git revision 02e8561779; last commit 2023-06-01)
 * Screen 4.09.00
 * applesimutils 0.9.9
 * OpenConnect version v9.12
-* aws-cli: aws-cli/2.11.25 Python/3.11.3 Darwin/22.5.0 source/arm64 prompt/off
+* aws-cli: aws-cli/2.11.27 Python/3.11.4 Darwin/22.5.0 source/arm64 prompt/off
 * cmake: 3.26.4
 * danger-swift: 3.16.0
 [0;0m
@@ -103,7 +103,7 @@ argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.11.25
+awscli 2.11.27
 bazelisk 1.17.0
 boost 1.81.0_1
 brotli 1.0.9
@@ -119,13 +119,13 @@ danger-swift 3.16.0
 dart 2.18.6
 docutils 0.20.1
 double-conversion 3.3.0
-edencommon 2023.05.22.00
-fb303 2023.05.22.00
-fbthrift 2023.05.22.00
-fizz 2023.05.22.00
-flow 0.207.0
+edencommon 2023.06.08.00
+fb303 2023.06.08.00
+fbthrift 2023.06.08.00
+fizz 2023.06.08.00
+flow 0.208.0
 fmt 10.0.0
-folly 2023.05.22.00
+folly 2023.06.08.00
 fontconfig 2.14.2
 freetds 1.3.18
 freetype 2.13.0_1
@@ -150,16 +150,16 @@ harfbuzz 7.3.0
 highway 1.0.4
 hub 2.14.2
 icu4c 72.1
-imagemagick 7.1.1-10
-imath 3.1.7
+imagemagick 7.1.1-11_1
+imath 3.1.9
 jasper 4.0.0
 jbig2dec 0.19
 jenv 0.5.5_2
 jpeg-turbo 2.1.5.1
-jpeg-xl 0.8.1_2
+jpeg-xl 0.8.1_3
 jq 1.6
-kotlin 1.8.21
-krb5 1.20.1
+kotlin 1.8.22
+krb5 1.21
 libassuan 2.5.5
 libavif 0.11.1
 libde265 1.0.11
@@ -171,7 +171,7 @@ libidn 1.41
 libidn2 2.3.4_1
 libksba 1.6.3
 liblqr 0.4.2_1
-libnghttp2 1.53.0
+libnghttp2 1.54.0
 libomp 16.0.5
 libpng 1.6.39
 libpq 15.3
@@ -206,7 +206,7 @@ nettle 3.9
 npth 1.6
 oniguruma 6.9.8
 openconnect 9.12
-openexr 3.1.7
+openexr 3.1.8_1
 openjdk 20.0.1
 openjdk@11 11.0.19
 openjdk@17 17.0.7
@@ -218,14 +218,14 @@ openvpn 2.6.4
 p11-kit 0.24.1_1
 parallel 20230522
 pcre2 10.42
-php 8.2.6
+php 8.2.7
 pinentry 1.2.1
 pixman 0.42.2
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
 pycparser 2.21
 pyenv 2.3.18
-python@3.11 3.11.3
+python@3.11 3.11.4
 pyyaml 6.0_1
 rbenv 1.2.0
 readline 8.2.1
@@ -244,8 +244,8 @@ transcrypt 2.2.3
 tree 2.1.1
 unbound 1.17.1
 unixodbc 2.3.11
-wangle 2023.05.22.00
-watchman 2023.05.22.00
+wangle 2023.06.08.00
+watchman 2023.06.08.00
 webp 1.3.0_1
 wget 1.21.4
 x265 3.5
@@ -3215,7 +3215,7 @@ zstd
 
 
 === Ruby and rubygems ==================
-* Ruby (default): ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [arm64-darwin21]
+* Ruby (default): ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [arm64-darwin22]
 --- Available ruby versions ---
   system
   2.6.9
@@ -3231,7 +3231,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
-* Bundler: Bundler version 2.4.13
+* Bundler: Bundler version 2.4.14
 * CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
@@ -3244,7 +3244,7 @@ algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.775.0)
+aws-partitions (1.777.0)
 aws-sdk-core (3.174.0)
 aws-sdk-kms (1.66.0)
 aws-sdk-s3 (1.123.1)
@@ -3252,7 +3252,7 @@ aws-sigv4 (1.5.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (2.4.13, default: 2.1.4)
+bundler (2.4.14, default: 2.1.4)
 CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
@@ -3282,7 +3282,7 @@ emoji_regex (3.2.3)
 escape (0.0.4)
 etc (default: 1.1.0)
 ethon (0.16.0)
-excon (0.99.0)
+excon (0.100.0)
 faraday (1.10.3)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
@@ -3307,7 +3307,7 @@ fourflusher (2.3.1)
 fuzzy_match (2.0.4)
 getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.42.0)
+google-apis-androidpublisher_v3 (0.43.0)
 google-apis-core (0.11.0)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
@@ -3327,7 +3327,7 @@ irb (default: 1.2.6)
 jazzy (0.14.3)
 jmespath (1.6.2)
 json (default: 2.3.0)
-jwt (2.7.0)
+jwt (2.7.1)
 liferaft (0.0.6)
 logger (default: 1.4.2)
 matrix (default: 0.2.0)
@@ -3452,6 +3452,8 @@ Target: arm64-apple-darwin22.5.0
  * xcrun swift --version
 Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 Target: arm64-apple-macosx13.0
+
+ * swift-format --version
 
 ========================================
 
@@ -3600,6 +3602,7 @@ watchOS 10.0 (10.0 - 21R5275s) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0
 == Devices ==
 -- iOS 16.4 --
 -- iOS 16.4 --
+    iPhone 8 Plus (032974E0-0DCD-4954-9290-FBA3CCA57503) (Shutdown) 
     iPhone 11 (B9570AF6-A571-48BE-9F06-411AED330100) (Shutdown) 
     iPhone SE (3rd generation) (3D5A13AF-E295-470D-8166-264E67361832) (Shutdown) 
     iPhone 14 (1EE90A3C-0D1B-4198-8766-A43D108852F2) (Shutdown) 
@@ -3700,11 +3703,11 @@ Software:
       Kernel Version: Darwin 22.5.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-edge-g2-m1.4core-836c4111-57c6-4cf6-bdad-7954e97ae825
+      Computer Name: vm-osx-ventura-edge-g2-m1-max.5core-c6c9bb7c-dafb-4864-a973-406c60d067be
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 22 seconds
+      Time since boot: 2 minutes, 41 seconds
 
 
 ========================================
@@ -3713,7 +3716,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        295Gi        167Gi
+/dev/disk3s1s1        295Gi        168Gi
 ========================================
 
 --- Android
