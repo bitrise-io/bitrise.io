@@ -2,11 +2,24 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-06-12
+* BITRISE_OSX_STACK_REV_ID: v2023-06-19
 ========================================
 
 
 === Pre-installed tool versions ========
+
+== All Ruby versions selectable via asdf local ruby x ==
+* Ruby default version: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [arm64-darwin22]
+  2.6.9
+  2.7.2
+  2.7.5
+ *2.7.6
+  3.0.0
+  3.0.3
+  3.1.0
+  3.1.3
+  3.1.4
+  3.2.1
 
 == All Go versions selectable via asdf local golang x ==
 * Go default version: go version go1.18.10 darwin/arm64
@@ -37,13 +50,14 @@
   temurin64-11.0.17
   temurin64-17.0.5
 * Kotlin: Kotlin version 1.8.21-release-380 (JRE 11.0.17+8)
-* Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
+* Flutter: Flutter 3.7.12 • channel stable • https://github.com/flutter/flutter.git
 * fvm: 2.4.1
 * Flutter SDKs via fvm: Cache Directory:  /Users/vagrant/fvm/versions
 
+3.7.12 (global)
 3.7.6
 3.0.0
-2.10.3 (global)
+2.10.3
 1.22.6
 
 === Dart global packages ==================
@@ -54,23 +68,22 @@ junitreport 2.0.2
 * git: git version 2.40.0
 * git lfs: git-lfs/3.3.0 (GitHub; darwin arm64; go 1.19.3)
 * mercurial/hg: Mercurial Distributed SCM (version 6.4)
-* curl: curl 8.0.1 (aarch64-apple-darwin22.3.0) libcurl/8.0.1 (SecureTransport) OpenSSL/1.1.1t zlib/1.2.11 brotli/1.0.9 zstd/1.5.5 libidn2/2.3.4 libssh2/1.10.0 nghttp2/1.52.0 librtmp/2.3
-* wget: GNU Wget 1.21.3 built on darwin22.1.0.
+* curl: curl 8.1.2 (aarch64-apple-darwin22.4.0) libcurl/8.1.2 (SecureTransport) OpenSSL/1.1.1u zlib/1.2.11 brotli/1.0.9 zstd/1.5.5 libidn2/2.3.4 libssh2/1.11.0 nghttp2/1.54.0 librtmp/2.3
+* wget: GNU Wget 1.21.4 built on darwin22.4.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
 * zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.21
-Homebrew/homebrew-core (git revision 1cf787ccea2; last commit 2023-06-12)
-Homebrew/homebrew-cask (git revision 349fb36416; last commit 2023-06-12)
+* brew: Homebrew 4.0.23
+Homebrew/homebrew-core (git revision 05842073887; last commit 2023-06-19)
+Homebrew/homebrew-cask (git revision edf480502d; last commit 2023-06-19)
 * gtimeout: timeout (GNU coreutils) 9.3
-* watchman: 2023.04.17.00
+* watchman: 2023.06.08.00
 * flow: Flow, a static type checker for JavaScript, version 0.204.1
 * carthage: 0.39.0
 * imagemagick (convert): Version: ImageMagick 7.1.1-8 Q16-HDRI aarch64 21129 https://imagemagick.org
-* ghostscript (ps2ascii): 10.01.1
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 11.27.0
 * applesimutils version 0.9.9
@@ -79,12 +92,12 @@ Homebrew/homebrew-cask (git revision 349fb36416; last commit 2023-06-12)
 * XCLogParser 0.2.36
 * Screen 4.09.00
 * applesimutils 0.9.9
-* OpenConnect version v9.01
-* aws-cli: aws-cli/2.11.15 Python/3.11.3 Darwin/22.3.0 source/arm64 prompt/off
+* OpenConnect version v9.12
+* aws-cli: aws-cli/2.11.27 Python/3.11.4 Darwin/22.3.0 source/arm64 prompt/off
 * cmake: 3.26.3
 * danger-swift: 3.16.0
 [0;0m
-* OpenVPN 2.6.3 aarch64-apple-darwin22.4.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD]
+* OpenVPN 2.6.4 aarch64-apple-darwin22.4.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD]
 * tuist: 3.12.0
 
 --- Bitrise CLI tool versions
@@ -95,9 +108,9 @@ Homebrew/homebrew-cask (git revision 349fb36416; last commit 2023-06-12)
 
 
 === Brew list versions ==================
-ansible 7.4.0
+ansible 8.0.0
 ant 1.10.13
-aom 3.6.0
+aom 3.6.1
 applesimutils 0.9.9
 apr 1.7.4
 apr-util 1.6.3
@@ -105,34 +118,34 @@ argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.11.15
+awscli 2.11.27
 bazelisk 1.16.0
 boost 1.81.0_1
 brotli 1.0.9
-ca-certificates 2023-01-10
+ca-certificates 2023-05-30
 cairo 1.16.0_5
 carthage 0.39.0
 cffi 1.15.1
 cmake 3.26.3
 coreutils 9.3
-curl 8.0.1
+curl 8.1.2
 danger-js 64
 danger-swift 3.16.0
 dart 2.19.6
-docutils 0.19_1
-double-conversion 3.2.1
-edencommon 2023.04.17.00
-fb303 2023.04.17.00
-fbthrift 2023.04.17.00
-fizz 2023.04.17.00
+docutils 0.20.1
+double-conversion 3.3.0
+edencommon 2023.06.08.00
+fb303 2023.06.08.00
+fbthrift 2023.06.08.00
+fizz 2023.06.08.00
 flow 0.204.1
-fmt 9.1.0
-folly 2023.04.17.00
+fmt 10.0.0
+folly 2023.06.08.00
 fontconfig 2.14.2
 freetds 1.3.18
 freetype 2.13.0_1
 fvm 2.4.1
-gd 2.3.3_4
+gd 2.3.3_5
 gettext 0.21.1
 gflags 2.2.2
 gh 2.27.0
@@ -143,7 +156,7 @@ git-lfs 3.3.0
 glib 2.76.1
 glog 0.6.0
 gmp 6.2.1_1
-gnupg 2.4.0
+gnupg 2.4.2
 gnutls 3.8.0
 gradle 8.1.1
 graphite2 1.3.14
@@ -153,15 +166,15 @@ highway 1.0.4
 hub 2.14.2
 icu4c 72.1
 imagemagick 7.1.1-8
-imath 3.1.7
+imath 3.1.9
 jasper 4.0.0
 jbig2dec 0.19
 jenv 0.5.6
 jpeg-turbo 2.1.5.1
-jpeg-xl 0.8.1_2
+jpeg-xl 0.8.1_2 0.8.1_3
 jq 1.6
 kotlin 1.8.21
-krb5 1.20.1
+krb5 1.21
 libassuan 2.5.5
 libavif 0.11.1
 libde265 1.0.11
@@ -173,15 +186,15 @@ libidn 1.41
 libidn2 2.3.4_1
 libksba 1.6.3
 liblqr 0.4.2_1
-libnghttp2 1.52.0
+libnghttp2 1.54.0
 libomp 16.0.2
 libpng 1.6.39
-libpq 15.2
+libpq 15.3
 libraw 0.21.1
 libsodium 1.0.18_1
-libssh2 1.10.0
+libssh2 1.11.0
 libtasn1 4.19.0
-libtiff 4.4.0_1
+libtiff 4.5.0 4.4.0_1
 libtool 2.4.7
 libunistring 1.1
 libusb 1.0.26
@@ -194,8 +207,8 @@ libxext 1.3.5
 libxrender 0.9.11
 libyaml 0.2.5
 libzip 1.9.2
-little-cms2 2.14
-llvm 16.0.2
+little-cms2 2.15
+llvm 16.0.5
 lokalise2 2.6.8
 lz4 1.9.4
 lzo 2.10
@@ -204,41 +217,41 @@ maven 3.9.1
 mercurial 6.4
 mint 0.17.5
 mpdecimal 2.5.1
-nettle 3.8.1
+nettle 3.9.1
 npth 1.6
 oniguruma 6.9.8
-openconnect 9.01_2
-openexr 3.1.7
+openconnect 9.12
+openexr 3.1.8_1
 openjdk 20
 openjdk@11 11.0.19
 openjdk@17 17.0.7
 openjpeg 2.5.0
 openldap 2.6.4
-openssl@1.1 1.1.1t
-openssl@3 3.1.0
-openvpn 2.6.3
+openssl@1.1 1.1.1u
+openssl@3 3.1.1
+openvpn 2.6.4
 p11-kit 0.24.1_1
 parallel 20230422
 pcre2 10.42
-php 8.2.5
+php 8.2.7
 pinentry 1.2.1
 pixman 0.42.2
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
 pycparser 2.21
-pyenv 2.3.17
-python@3.11 3.11.3
+pyenv 2.3.19
+python@3.11 3.11.4
 pyyaml 6.0_1
 rbenv 1.2.0
 readline 8.2.1
 rtmpdump 2.4+20151223_1
-ruby-build 20230424
+ruby-build 20230615
 screen 4.9.0_1
 shared-mime-info 2.2
 six 1.16.0_3
 snappy 1.1.10
 sonar-scanner 4.8.0.2856
-sqlite 3.41.2
+sqlite 3.42.0
 stoken 0.92_1
 swiftlint 0.51.0
 tidy-html5 5.8.0
@@ -246,19 +259,19 @@ transcrypt 2.2.3
 tree 2.1.0
 unbound 1.17.1
 unixodbc 2.3.11
-wangle 2023.04.17.00
-watchman 2023.04.17.00
-webp 1.3.0
-wget 1.21.3_1
+wangle 2023.06.08.00
+watchman 2023.06.08.00
+webp 1.3.0_1
+wget 1.21.4
 x265 3.5
 xcbeautify 0.20.0
 xclogparser 0.2.36
 xcodes 1.3.0
 xorgproto 2022.2
-xz 5.4.2
-yamllint 1.31.0
+xz 5.4.3
+yamllint 1.32.0
 yarn 1.22.19
-z3 4.12.1
+z3 4.12.2
 zeromq 4.3.4
 zstd 1.5.5
 temurin11 11.0.17,8
@@ -365,6 +378,7 @@ ant
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -381,6 +395,7 @@ aom
 │   │   ├── jpeg-turbo
 │   │   └── libtiff
 │   │       ├── jpeg-turbo
+│   │       ├── xz
 │   │       └── zstd
 │   │           ├── lz4
 │   │           └── xz
@@ -392,6 +407,7 @@ aom
 │       ├── libpng
 │       └── libtiff
 │           ├── jpeg-turbo
+│           ├── xz
 │           └── zstd
 │               ├── lz4
 │               └── xz
@@ -1247,6 +1263,7 @@ gd
 │   │   │   │   ├── jpeg-turbo
 │   │   │   │   └── libtiff
 │   │   │   │       ├── jpeg-turbo
+│   │   │   │       ├── xz
 │   │   │   │       └── zstd
 │   │   │   │           ├── lz4
 │   │   │   │           └── xz
@@ -1258,6 +1275,7 @@ gd
 │   │   │       ├── libpng
 │   │   │       └── libtiff
 │   │   │           ├── jpeg-turbo
+│   │   │           ├── xz
 │   │   │           └── zstd
 │   │   │               ├── lz4
 │   │   │               └── xz
@@ -1267,6 +1285,7 @@ gd
 ├── libpng
 ├── libtiff
 │   ├── jpeg-turbo
+│   ├── xz
 │   └── zstd
 │       ├── lz4
 │       └── xz
@@ -1276,6 +1295,7 @@ gd
     ├── libpng
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -1298,6 +1318,7 @@ ghostscript
 ├── libpng
 ├── libtiff
 │   ├── jpeg-turbo
+│   ├── xz
 │   └── zstd
 │       ├── lz4
 │       └── xz
@@ -1305,6 +1326,7 @@ ghostscript
 │   ├── jpeg-turbo
 │   └── libtiff
 │       ├── jpeg-turbo
+│       ├── xz
 │       └── zstd
 │           ├── lz4
 │           └── xz
@@ -1312,6 +1334,7 @@ ghostscript
     ├── libpng
     ├── libtiff
     │   ├── jpeg-turbo
+    │   ├── xz
     │   └── zstd
     │       ├── lz4
     │       └── xz
@@ -1319,6 +1342,7 @@ ghostscript
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -1463,6 +1487,7 @@ gradle
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -1528,6 +1553,7 @@ groovy
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -1604,6 +1630,7 @@ imagemagick
 │   ├── libpng
 │   ├── libtiff
 │   │   ├── jpeg-turbo
+│   │   ├── xz
 │   │   └── zstd
 │   │       ├── lz4
 │   │       └── xz
@@ -1611,6 +1638,7 @@ imagemagick
 │   │   ├── jpeg-turbo
 │   │   └── libtiff
 │   │       ├── jpeg-turbo
+│   │       ├── xz
 │   │       └── zstd
 │   │           ├── lz4
 │   │           └── xz
@@ -1618,6 +1646,7 @@ imagemagick
 │       ├── libpng
 │       ├── libtiff
 │       │   ├── jpeg-turbo
+│       │   ├── xz
 │       │   └── zstd
 │       │       ├── lz4
 │       │       └── xz
@@ -1625,6 +1654,7 @@ imagemagick
 │           ├── jpeg-turbo
 │           └── libtiff
 │               ├── jpeg-turbo
+│               ├── xz
 │               └── zstd
 │                   ├── lz4
 │                   └── xz
@@ -1642,6 +1672,7 @@ imagemagick
 │   │   │   │   ├── jpeg-turbo
 │   │   │   │   └── libtiff
 │   │   │   │       ├── jpeg-turbo
+│   │   │   │       ├── xz
 │   │   │   │       └── zstd
 │   │   │   │           ├── lz4
 │   │   │   │           └── xz
@@ -1653,6 +1684,7 @@ imagemagick
 │   │   │       ├── libpng
 │   │   │       └── libtiff
 │   │   │           ├── jpeg-turbo
+│   │   │           ├── xz
 │   │   │           └── zstd
 │   │   │               ├── lz4
 │   │   │               └── xz
@@ -1678,12 +1710,14 @@ imagemagick
 │   │   ├── jpeg-turbo
 │   │   └── libtiff
 │   │       ├── jpeg-turbo
+│   │       ├── xz
 │   │       └── zstd
 │   │           ├── lz4
 │   │           └── xz
 │   └── libomp
 ├── libtiff
 │   ├── jpeg-turbo
+│   ├── xz
 │   └── zstd
 │       ├── lz4
 │       └── xz
@@ -1693,6 +1727,7 @@ imagemagick
 │   ├── jpeg-turbo
 │   └── libtiff
 │       ├── jpeg-turbo
+│       ├── xz
 │       └── zstd
 │           ├── lz4
 │           └── xz
@@ -1702,6 +1737,7 @@ imagemagick
 │   ├── libpng
 │   ├── libtiff
 │   │   ├── jpeg-turbo
+│   │   ├── xz
 │   │   └── zstd
 │   │       ├── lz4
 │   │       └── xz
@@ -1709,6 +1745,7 @@ imagemagick
 │       ├── jpeg-turbo
 │       └── libtiff
 │           ├── jpeg-turbo
+│           ├── xz
 │           └── zstd
 │               ├── lz4
 │               └── xz
@@ -1718,6 +1755,7 @@ imagemagick
 │   ├── libpng
 │   └── libtiff
 │       ├── jpeg-turbo
+│       ├── xz
 │       └── zstd
 │           ├── lz4
 │           └── xz
@@ -1746,6 +1784,7 @@ jpeg-xl
 │   ├── jpeg-turbo
 │   └── libtiff
 │       ├── jpeg-turbo
+│       ├── xz
 │       └── zstd
 │           ├── lz4
 │           └── xz
@@ -1757,6 +1796,7 @@ jpeg-xl
     ├── libpng
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -1823,6 +1863,7 @@ kotlin
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -1848,6 +1889,7 @@ libavif
 │   │   │   ├── jpeg-turbo
 │   │   │   └── libtiff
 │   │   │       ├── jpeg-turbo
+│   │   │       ├── xz
 │   │   │       └── zstd
 │   │   │           ├── lz4
 │   │   │           └── xz
@@ -1859,6 +1901,7 @@ libavif
 │   │       ├── libpng
 │   │       └── libtiff
 │   │           ├── jpeg-turbo
+│   │           ├── xz
 │   │           └── zstd
 │   │               ├── lz4
 │   │               └── xz
@@ -1892,6 +1935,7 @@ libheif
 │   │   │   ├── jpeg-turbo
 │   │   │   └── libtiff
 │   │   │       ├── jpeg-turbo
+│   │   │       ├── xz
 │   │   │       └── zstd
 │   │   │           ├── lz4
 │   │   │           └── xz
@@ -1903,6 +1947,7 @@ libheif
 │   │       ├── libpng
 │   │       └── libtiff
 │   │           ├── jpeg-turbo
+│   │           ├── xz
 │   │           └── zstd
 │   │               ├── lz4
 │   │               └── xz
@@ -1952,6 +1997,7 @@ libraw
 │   ├── jpeg-turbo
 │   └── libtiff
 │       ├── jpeg-turbo
+│       ├── xz
 │       └── zstd
 │           ├── lz4
 │           └── xz
@@ -1967,6 +2013,7 @@ libtasn1
 
 libtiff
 ├── jpeg-turbo
+├── xz
 └── zstd
     ├── lz4
     └── xz
@@ -2031,6 +2078,7 @@ little-cms2
 ├── jpeg-turbo
 └── libtiff
     ├── jpeg-turbo
+    ├── xz
     └── zstd
         ├── lz4
         └── xz
@@ -2116,6 +2164,7 @@ maven
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -2227,6 +2276,7 @@ openjdk
     ├── jpeg-turbo
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -2289,6 +2339,7 @@ openjdk@11
     ├── jpeg-turbo
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -2351,6 +2402,7 @@ openjdk@17
     ├── jpeg-turbo
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -2359,6 +2411,7 @@ openjpeg
 ├── libpng
 ├── libtiff
 │   ├── jpeg-turbo
+│   ├── xz
 │   └── zstd
 │       ├── lz4
 │       └── xz
@@ -2366,6 +2419,7 @@ openjpeg
     ├── jpeg-turbo
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -2453,6 +2507,7 @@ php
 │   │   │   │   │   ├── jpeg-turbo
 │   │   │   │   │   └── libtiff
 │   │   │   │   │       ├── jpeg-turbo
+│   │   │   │   │       ├── xz
 │   │   │   │   │       └── zstd
 │   │   │   │   │           ├── lz4
 │   │   │   │   │           └── xz
@@ -2464,6 +2519,7 @@ php
 │   │   │   │       ├── libpng
 │   │   │   │       └── libtiff
 │   │   │   │           ├── jpeg-turbo
+│   │   │   │           ├── xz
 │   │   │   │           └── zstd
 │   │   │   │               ├── lz4
 │   │   │   │               └── xz
@@ -2473,6 +2529,7 @@ php
 │   ├── libpng
 │   ├── libtiff
 │   │   ├── jpeg-turbo
+│   │   ├── xz
 │   │   └── zstd
 │   │       ├── lz4
 │   │       └── xz
@@ -2482,6 +2539,7 @@ php
 │       ├── libpng
 │       └── libtiff
 │           ├── jpeg-turbo
+│           ├── xz
 │           └── zstd
 │               ├── lz4
 │               └── xz
@@ -2650,6 +2708,7 @@ sonar-scanner
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -3206,6 +3265,7 @@ webp
 ├── libpng
 └── libtiff
     ├── jpeg-turbo
+    ├── xz
     └── zstd
         ├── lz4
         └── xz
@@ -3255,7 +3315,7 @@ zstd
 
 
 === Ruby and rubygems ==================
-* Ruby (default): ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [arm64-darwin21]
+* Ruby (default): ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [arm64-darwin22]
 --- Available ruby versions ---
   system
   2.6.9
@@ -3271,34 +3331,34 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.1.6
-* Bundler: Bundler version 2.4.13
+* Bundler: Bundler version 2.4.14
 * CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
 
 
 === All Ruby GEMs ======================
-activesupport (7.0.4.3)
+activesupport (7.0.5)
 addressable (2.8.4)
 algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.748.0)
-aws-sdk-core (3.171.0)
-aws-sdk-kms (1.63.0)
-aws-sdk-s3 (1.120.1)
+aws-partitions (1.780.0)
+aws-sdk-core (3.175.0)
+aws-sdk-kms (1.67.0)
+aws-sdk-s3 (1.126.0)
 aws-sigv4 (1.5.2)
 babosa (1.0.4)
 benchmark (default: 0.1.0)
 bigdecimal (default: 2.0.0)
-bundler (2.4.13, 2.4.12, default: 2.1.4)
+bundler (2.4.14, default: 2.1.4)
 CFPropertyList (3.0.6)
 cgi (default: 0.1.0.1)
 claide (1.1.0)
 clamp (1.3.2)
-cocoapods (1.12.1, 1.12.0)
-cocoapods-core (1.12.1, 1.12.0)
+cocoapods (1.12.1)
+cocoapods-core (1.12.1)
 cocoapods-deintegrate (1.0.5)
 cocoapods-downloader (1.6.3)
 cocoapods-plugins (1.0.0)
@@ -3322,7 +3382,7 @@ emoji_regex (3.2.3)
 escape (0.0.4)
 etc (default: 1.1.0)
 ethon (0.16.0)
-excon (0.99.0)
+excon (0.100.0)
 faraday (1.10.3)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
@@ -3336,8 +3396,8 @@ faraday-patron (1.0.0)
 faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
-fastimage (2.2.6)
-fastlane (2.213.0, 2.212.2)
+fastimage (2.2.7)
+fastlane (2.213.0)
 fcntl (default: 1.0.0)
 ffi (1.15.5)
 fiddle (default: 1.0.0)
@@ -3347,7 +3407,7 @@ fourflusher (2.3.1)
 fuzzy_match (2.0.4)
 getoptlong (default: 0.1.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.39.0)
+google-apis-androidpublisher_v3 (0.44.0)
 google-apis-core (0.11.0)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
@@ -3360,14 +3420,14 @@ googleauth (1.5.2)
 highline (2.0.3)
 http-cookie (1.0.5)
 httpclient (2.8.3)
-i18n (1.12.0)
+i18n (1.14.1)
 io-console (default: 0.5.6)
 ipaddr (default: 1.2.2)
 irb (default: 1.2.6)
 jazzy (0.14.3)
 jmespath (1.6.2)
 json (default: 2.3.0)
-jwt (2.7.0)
+jwt (2.7.1)
 liferaft (0.0.6)
 logger (default: 1.4.2)
 matrix (default: 0.2.0)
@@ -3377,7 +3437,7 @@ mini_mime (1.1.2)
 minitest (5.13.0)
 molinillo (0.8.0)
 multi_json (1.15.0)
-multipart-post (2.0.0)
+multipart-post (2.3.0)
 mustache (1.1.1)
 mutex_m (default: 0.1.0)
 nanaimo (0.3.0)
@@ -3387,7 +3447,7 @@ net-pop (default: 0.1.0)
 net-smtp (default: 0.1.0)
 net-telnet (0.2.0)
 netrc (0.11.0)
-nokogiri (1.14.3 arm64-darwin)
+nokogiri (1.15.2 arm64-darwin)
 observer (default: 0.1.0)
 open3 (default: 0.1.0)
 open4 (1.3.4)
@@ -3424,7 +3484,7 @@ simctl (1.6.10)
 singleton (default: 0.1.0)
 slack-notifier (2.4.0)
 slather (2.7.4)
-sqlite3 (1.6.2 arm64-darwin)
+sqlite3 (1.6.3 arm64-darwin)
 stringio (default: 0.1.0)
 strscan (default: 1.0.3)
 terminal-notifier (2.0.0)
@@ -3464,6 +3524,7 @@ zlib (default: 1.1.0)
 * Cordova: 11.0.0 (cordova-lib@11.1.0)
 * Ionic: 6.20.1
 * Appcenter-CLI version: 2.11.0
+* OpenUPM version: 
 ========================================
 
 
@@ -3492,6 +3553,8 @@ Target: arm64-apple-darwin22.3.0
  * xcrun swift --version
 Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 Target: arm64-apple-macosx13.0
+
+ * swift-format --version
 
 ========================================
 
@@ -3642,13 +3705,12 @@ iOS 16.4 (16.4 - 20E247) - com.apple.CoreSimulator.SimRuntime.iOS-16-4
 tvOS 15.4 (15.4 - 19L439) - com.apple.CoreSimulator.SimRuntime.tvOS-15-4
 tvOS 16.0 (16.0 - 20J373) - com.apple.CoreSimulator.SimRuntime.tvOS-16-0
 tvOS 16.1 (16.1 - 20K67) - com.apple.CoreSimulator.SimRuntime.tvOS-16-1
-tvOS 16.4 (16.4 - 20L494) - com.apple.CoreSimulator.SimRuntime.tvOS-16-4
 watchOS 8.5 (8.5 - 19T241) - com.apple.CoreSimulator.SimRuntime.watchOS-8-5
 watchOS 9.0 (9.0 - 20R362) - com.apple.CoreSimulator.SimRuntime.watchOS-9-0
 watchOS 9.1 (9.1 - 20S75) - com.apple.CoreSimulator.SimRuntime.watchOS-9-1
-watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
 == Devices ==
 -- iOS 13.7 --
+    Bitrise iOS default (EEFCD884-939A-43FB-908E-2005F0D3ED22) (Shutdown) 
     iPhone 8 Plus (34DCC8C3-A5C4-4096-A8CC-373BEAC7D84E) (Shutdown) 
     iPhone 11 (01D55590-7CE5-4A1D-8251-20204A5D5733) (Shutdown) 
     iPhone 11 Pro (D5ABF829-8840-4087-B202-EDE8E8A21280) (Shutdown) 
@@ -3660,6 +3722,7 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     iPad Pro (12.9-inch) (4th generation) (F88D8C93-76D5-4D6D-8683-A5B997218FCE) (Shutdown) 
     iPad Air (3rd generation) (8D6C7FFF-E1E1-44E2-B5DE-461E4AF3087D) (Shutdown) 
 -- iOS 14.5 --
+    Bitrise iOS default (22E44330-650B-4459-B1B6-EA2DBD1D10A0) (Shutdown) 
     iPhone 8 Plus (69C463DA-6BC7-43CE-B61B-1E336E438945) (Shutdown) 
     iPhone 11 (865D86A8-7A3E-4F91-BA39-BE67FCC48FD7) (Shutdown) 
     iPhone SE (2nd generation) (8BA30180-3A04-4DA0-AD84-A75876C0A52D) (Shutdown) 
@@ -3674,6 +3737,7 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     iPad Pro (11-inch) (3rd generation) (2ED8A236-8A81-4932-BF5D-6856165AA262) (Shutdown) 
     iPad Pro (12.9-inch) (5th generation) (FF62CE61-5642-4715-8B98-1592E74319EA) (Shutdown) 
 -- iOS 15.0 --
+    Bitrise iOS default (059DD5A5-E2C5-48B3-9B3F-EA66EF8AA961) (Shutdown) 
     iPhone 8 Plus (53E02A59-ECC3-465C-899C-6492C1971B4A) (Shutdown) 
     iPhone 11 (3AF63F18-25CB-49E7-AF63-159728D310F6) (Shutdown) 
     iPhone SE (2nd generation) (E0214C46-BEF0-44D0-B6C4-F77D5402AC33) (Shutdown) 
@@ -3689,6 +3753,7 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     iPad Pro (12.9-inch) (5th generation) (F31C6D25-4267-49DD-B07C-FE5F7DA297EB) (Shutdown) 
     iPad mini (6th generation) (61F43A66-32DD-4A08-B6B8-280AE40F0040) (Shutdown) 
 -- iOS 15.2 --
+    Bitrise iOS default (1C9A8BC9-29F4-4CCF-A64A-B52D3766719D) (Shutdown) 
     iPhone 8 Plus (547BA2F8-B096-4D7C-9E51-FF75BA739FBC) (Shutdown) 
     iPhone 11 (30FC9254-5F36-4FF7-A2ED-85C24231DDA8) (Shutdown) 
     iPhone SE (2nd generation) (EB6D132A-CE92-49B3-95A6-FAF7F0FCBBE9) (Shutdown) 
@@ -3704,6 +3769,7 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     iPad Pro (12.9-inch) (5th generation) (3BB52D49-3B13-4D44-BC1E-39CBBFE8F826) (Shutdown) 
     iPad mini (6th generation) (2534C00A-2FA3-4204-9FEF-37EE545927EB) (Shutdown) 
 -- iOS 15.4 --
+    Bitrise iOS default (CC2C7098-F078-4287-9049-8569CCBC6382) (Shutdown) 
     iPhone 8 Plus (3F15F642-C7AD-49FE-97DF-A3B0C65C2EAF) (Shutdown) 
     iPhone 11 (F575FF2E-0486-4F5C-9673-A07885C38CA3) (Shutdown) 
     iPhone 13 Pro (6B817117-606E-432D-963F-1DD5D4B757A3) (Shutdown) 
@@ -3719,6 +3785,7 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     iPad Air (5th generation) (295F7090-548C-4AED-8372-655D4DB0E359) (Shutdown) 
     iPad mini (6th generation) (809D34A7-F0C6-4578-8B1F-E82DDA036CC0) (Shutdown) 
 -- iOS 15.5 --
+    Bitrise iOS default (6FBFADD4-36F4-4C32-A668-380DF6B02012) (Shutdown) 
     iPhone 8 Plus (C5895478-1E5C-409F-85F4-998801C73B15) (Shutdown) 
     iPhone 11 (C7B19EEF-4E3D-49D7-83BF-923DCE6E2592) (Shutdown) 
     iPhone 13 Pro (61F2F055-2C2A-4211-B400-B9E3AD0864B3) (Shutdown) 
@@ -3734,6 +3801,7 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     iPad Air (5th generation) (C753239F-AC6B-41A7-8416-5E2487248FD2) (Shutdown) 
     iPad mini (6th generation) (1EC06E90-0519-4FC6-986F-0AED35930A12) (Shutdown) 
 -- iOS 16.0 --
+    Bitrise iOS default (C8685E93-F304-44B1-83AD-EF2CC6297C73) (Shutdown) 
     iPhone 8 Plus (5E21EACF-5E4C-4E53-9F3D-DA2E1F73D962) (Shutdown) 
     iPhone 11 (AB43FF50-19F9-428C-BB68-6B14B2B63C74) (Shutdown) 
     iPhone SE (3rd generation) (5426AFB3-8D88-453A-9CEE-204A42FCBD95) (Shutdown) 
@@ -3747,6 +3815,7 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     iPad Air (5th generation) (F4F803F3-805B-4C67-A20D-68BBC3D23CFD) (Shutdown) 
     iPad mini (6th generation) (4EFEE134-FEF6-40A4-A19F-A697E1D12442) (Shutdown) 
 -- iOS 16.2 --
+    Bitrise iOS default (A56EDF7F-4829-4F2D-AB37-721CEE2D66CC) (Shutdown) 
     iPhone 8 Plus (EAB9BC1B-EE82-4D72-B8BD-0CB0CF63D27E) (Shutdown) 
     iPhone 11 (2D94948A-24B8-436F-8EE6-50A3A8CBB488) (Shutdown) 
     iPhone SE (3rd generation) (9B549040-6B87-4B9F-9B46-DDDF2E5FA7A6) (Shutdown) 
@@ -3760,6 +3829,7 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     iPad Pro (11-inch) (4th generation) (8A082207-E2D8-4811-8BA5-1552A99FE450) (Shutdown) 
     iPad Pro (12.9-inch) (6th generation) (2AEABA4D-E357-47D7-A272-5546DB4666C8) (Shutdown) 
 -- iOS 16.4 --
+    Bitrise iOS default (88C0EBEE-658B-49EF-8AE3-0BA3527920DC) (Shutdown) 
     iPhone 8 Plus (26C420E2-5E53-4E84-AA3D-685259B05DC0) (Shutdown) 
     iPhone 11 (7FBD5FE0-1DD0-4303-A661-D0E30400479A) (Shutdown) 
     iPhone SE (3rd generation) (4652F9FF-7769-46F8-AAE5-CCCC1BB4BDB3) (Shutdown) 
@@ -3784,10 +3854,6 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     Apple TV (9A99C2E9-5EBD-4354-98C9-E598CFEF8B27) (Shutdown) 
     Apple TV 4K (3rd generation) (8922531F-E4BA-4037-8D84-85B8AE658972) (Shutdown) 
     Apple TV 4K (3rd generation) (at 1080p) (B4E02925-8FD1-4325-B1D0-47382B6B323F) (Shutdown) 
--- tvOS 16.4 --
-    Apple TV (C805AB09-6648-426E-BFD6-1DFE78FADCAF) (Shutdown) 
-    Apple TV 4K (3rd generation) (6D049071-3294-4C51-8330-4ADA84437010) (Shutdown) 
-    Apple TV 4K (3rd generation) (at 1080p) (51C9068C-A14E-4CF9-ACDA-29FF18C13687) (Shutdown) 
 -- watchOS 8.5 --
     Apple Watch Series 5 (40mm) (B1235CA5-F3C4-41BD-9D0B-0544B375FA0B) (Shutdown) 
     Apple Watch Series 5 (44mm) (BCACE52E-6DC4-4CDD-B269-F3B2A0D72B52) (Shutdown) 
@@ -3819,29 +3885,13 @@ watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
     Apple Watch Series 8 (41mm) (DC9E603E-FA98-41BE-80D2-7EE148E19EE3) (Shutdown) 
     Apple Watch Series 8 (45mm) (C2C22B85-66D8-4FC1-857B-0143755F46A4) (Shutdown) 
     Apple Watch Ultra (49mm) (C1042522-A371-4973-BC61-174084B67F9E) (Shutdown) 
--- watchOS 9.4 --
-    Apple Watch Series 5 (40mm) (47ACD00F-33C7-4A93-BE5A-FDD6DB698509) (Shutdown) 
-    Apple Watch Series 5 (44mm) (B580D72C-6748-4873-883C-EA4A2497BE09) (Shutdown) 
-    Apple Watch Series 6 (40mm) (9B615EC5-3676-4675-BD81-2A003E13A34F) (Shutdown) 
-    Apple Watch Series 6 (44mm) (48CC6213-BC81-40EB-A00B-EED7A10527F5) (Shutdown) 
-    Apple Watch Series 7 (41mm) (8D740CB8-95D0-416E-9348-088171758F01) (Shutdown) 
-    Apple Watch Series 7 (45mm) (D2243570-3A2F-489C-A5BD-89565F090727) (Shutdown) 
-    Apple Watch SE (40mm) (2nd generation) (EBEC7027-DABA-4E9B-9123-D027C7D3B909) (Shutdown) 
-    Apple Watch SE (44mm) (2nd generation) (E5B86CE1-1A4A-4051-B724-CF93066EA54B) (Shutdown) 
-    Apple Watch Series 8 (41mm) (448658BF-5075-49BC-AAEA-8989DC253B90) (Shutdown) 
-    Apple Watch Series 8 (45mm) (6B9500F8-2D79-4F3D-A24E-9721354C98D6) (Shutdown) 
-    Apple Watch Ultra (49mm) (6EF54838-B2DC-4D75-BCBC-4339F4F32A9B) (Shutdown) 
 == Device Pairs ==
-B4FA6469-6A1B-4A38-8190-48AEA70D8DF9 (active, disconnected)
     Watch: Apple Watch Series 7 (45mm) (D2243570-3A2F-489C-A5BD-89565F090727) (Shutdown)
     Phone: iPhone 14 (1741AF14-04AE-4879-8833-86BC318E0958) (Shutdown)
-076B0E6E-8757-4FDA-AFB9-949A98E94DC6 (active, disconnected)
     Watch: Apple Watch Series 8 (41mm) (448658BF-5075-49BC-AAEA-8989DC253B90) (Shutdown)
     Phone: iPhone 14 Plus (0CB802E5-0BCF-4FDC-8732-344E32E5E20C) (Shutdown)
-6B16D403-12E6-486C-929C-7964B7F58E76 (active, disconnected)
     Watch: Apple Watch Series 8 (45mm) (6B9500F8-2D79-4F3D-A24E-9721354C98D6) (Shutdown)
     Phone: iPhone 14 Pro (D7CA41A8-547E-4DC0-9C53-FF5A41928CA5) (Shutdown)
-F3552511-B049-4BF8-9E6C-637995F2133E (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (6EF54838-B2DC-4D75-BCBC-4339F4F32A9B) (Shutdown)
     Phone: iPhone 14 Pro Max (5BFAB25D-2C6D-4B98-B9F4-639E6C7D4A4F) (Shutdown)
 
@@ -3864,11 +3914,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-norosetta-g2-m1-max.5core-e0260ad5-373d-46ac-9f20-41edb67060bd
+      Computer Name: vm-osx-ventura-norosetta-g2-m1-max.5core-0c2ed3a5-039d-4228-ad54-f0c1e96d70bb
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 19 seconds
+      Time since boot: 2 minutes, 51 seconds
 
 
 ========================================
@@ -3877,7 +3927,7 @@ Software:
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk2s1s1        340Gi        115Gi
+/dev/disk2s1s1        340Gi        114Gi
 ========================================
 
 --- Android
@@ -3983,13 +4033,6 @@ android-32
 * Command line Tools version: 6.0
 * Platform Tools version: 33.0.3
 * Emulator version: 31.3.14
-========================================
-
-
-=== Android APK tools ==================
-
-* aapt2:
-
 ========================================
 
 
