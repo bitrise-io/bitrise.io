@@ -2,11 +2,25 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-06-12
+* BITRISE_OSX_STACK_REV_ID: v2023-06-22
 ========================================
 
 
 === Pre-installed tool versions ========
+
+== All Ruby versions selectable via asdf local ruby x ==
+* Ruby default version: ruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]
+  2.6.9
+  2.7.2
+  2.7.5
+  2.7.6
+  3.0.0
+  3.0.3
+  3.1.0
+  3.1.3
+  3.1.4
+  3.2.1
+ *3.2.2
 
 == All Go versions selectable via asdf local golang x ==
 * Go default version: go version go1.20.4 darwin/arm64
@@ -36,13 +50,14 @@
   temurin64-11.0.17
   temurin64-17.0.5
 * Kotlin: Kotlin version 1.8.22-release-407 (JRE 11.0.17+8)
-* Flutter: Flutter 2.10.3 • channel stable • https://github.com/flutter/flutter.git
+* Flutter: Flutter 3.7.12 • channel stable • https://github.com/flutter/flutter.git
 * fvm: 2.4.1
 * Flutter SDKs via fvm: Cache Directory:  /Users/vagrant/fvm/versions
 
+3.7.12 (global)
 3.7.6
 3.0.0
-2.10.3 (global)
+2.10.3
 1.22.6
 
 === Dart global packages ==================
@@ -61,15 +76,14 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.1 © 1996 - 2023 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.21
-Homebrew/homebrew-core (git revision 1cf787ccea2; last commit 2023-06-12)
-Homebrew/homebrew-cask (git revision 349fb36416; last commit 2023-06-12)
+* brew: Homebrew 4.0.24
+Homebrew/homebrew-core (git revision 29d4e1f5764; last commit 2023-06-22)
+Homebrew/homebrew-cask (git revision acb2e4f87a; last commit 2023-06-22)
 * gtimeout: timeout (GNU coreutils) 9.3
-* watchman: 2023.06.08.00
-* flow: Flow, a static type checker for JavaScript, version 0.208.0
+* watchman: 2023.06.12.00
+* flow: Flow, a static type checker for JavaScript, version 0.209.1
 * carthage: 0.39.0
 * imagemagick (convert): Version: ImageMagick 7.1.1-11 Q16-HDRI aarch64 21206 https://imagemagick.org
-* ghostscript (ps2ascii): 10.01.1
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 12.3.0
 * applesimutils version 0.9.9
@@ -79,11 +93,11 @@ Homebrew/homebrew-cask (git revision 349fb36416; last commit 2023-06-12)
 * Screen 4.09.00
 * applesimutils 0.9.9
 * OpenConnect version v9.12
-* aws-cli: aws-cli/2.11.27 Python/3.11.4 Darwin/22.5.0 source/arm64 prompt/off
+* aws-cli: aws-cli/2.12.1 Python/3.11.4 Darwin/22.5.0 source/arm64 prompt/off
 * cmake: 3.26.4
 * danger-swift: 3.16.0
 [0;0m
-* OpenVPN 2.6.4 aarch64-apple-darwin22.4.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD]
+* OpenVPN 2.6.5 aarch64-apple-darwin22.4.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD]
 * tuist: 3.12.0
 
 --- Bitrise CLI tool versions
@@ -103,9 +117,9 @@ argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.11.27
+awscli 2.12.1
 bazelisk 1.17.0
-boost 1.81.0_1
+boost 1.82.0_1
 brotli 1.0.9
 ca-certificates 2023-05-30
 cairo 1.16.0_5
@@ -119,13 +133,13 @@ danger-swift 3.16.0
 dart 2.18.6
 docutils 0.20.1
 double-conversion 3.3.0
-edencommon 2023.06.08.00
-fb303 2023.06.08.00
-fbthrift 2023.06.08.00
-fizz 2023.06.08.00
-flow 0.208.0
+edencommon 2023.06.12.00
+fb303 2023.06.12.00
+fbthrift 2023.06.12.00
+fizz 2023.06.12.00
+flow 0.209.1
 fmt 10.0.0
-folly 2023.06.08.00
+folly 2023.06.12.00
 fontconfig 2.14.2
 freetds 1.3.18
 freetype 2.13.0_1
@@ -133,8 +147,8 @@ fvm 2.4.1
 gd 2.3.3_5
 gettext 0.21.1
 gflags 2.2.2
-gh 2.30.0
-ghostscript 10.01.1_1
+gh 2.31.0
+ghostscript 10.01.2
 giflib 5.2.1
 git 2.41.0
 git-lfs 3.3.0
@@ -146,17 +160,17 @@ gnutls 3.8.0
 gradle 8.1.1
 graphite2 1.3.14
 groovy 4.0.12
-harfbuzz 7.3.0
+harfbuzz 7.3.0_1
 highway 1.0.4
 hub 2.14.2
-icu4c 72.1
+icu4c 73.2
 imagemagick 7.1.1-11_1
 imath 3.1.9
 jasper 4.0.0
 jbig2dec 0.19
 jenv 0.5.5_2
 jpeg-turbo 2.1.5.1
-jpeg-xl 0.8.1_3
+jpeg-xl 0.8.2
 jq 1.6
 kotlin 1.8.22
 krb5 1.21
@@ -179,7 +193,7 @@ libraw 0.21.1
 libsodium 1.0.18_1
 libssh2 1.11.0
 libtasn1 4.19.0
-libtiff 4.5.0
+libtiff 4.5.1
 libtool 2.4.7
 libunistring 1.1
 libusb 1.0.26
@@ -214,11 +228,11 @@ openjpeg 2.5.0_1
 openldap 2.6.4
 openssl@1.1 1.1.1u
 openssl@3 3.1.1
-openvpn 2.6.4
+openvpn 2.6.5
 p11-kit 0.24.1_1
 parallel 20230522
 pcre2 10.42
-php 8.2.7
+php 8.2.7_1
 pinentry 1.2.1
 pixman 0.42.2
 pkcs11-helper 1.29.0
@@ -230,7 +244,7 @@ pyyaml 6.0_1
 rbenv 1.2.0
 readline 8.2.1
 rtmpdump 2.4+20151223_1
-ruby-build 20221225
+ruby-build 20230615
 screen 4.9.0_1
 shared-mime-info 2.2
 six 1.16.0_3
@@ -238,21 +252,22 @@ snappy 1.1.10
 sonar-scanner 4.8.0.2856
 sqlite 3.42.0
 stoken 0.92_1
+swift-format 508.0.1
 swiftlint 0.52.2
 tidy-html5 5.8.0
 transcrypt 2.2.3
 tree 2.1.1
 unbound 1.17.1
 unixodbc 2.3.11
-wangle 2023.06.08.00
-watchman 2023.06.08.00
+wangle 2023.06.12.00
+watchman 2023.06.12.00
 webp 1.3.0_1
 wget 1.21.4
 x265 3.5
 xcbeautify 0.20.0
 xclogparser 0.2.36
 xcodes 1.3.0
-xorgproto 2022.2
+xorgproto 2023.2
 xz 5.4.3
 yamllint 1.32.0
 yarn 1.22.19
@@ -325,6 +340,7 @@ ant
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -341,6 +357,7 @@ aom
 │   │   ├── jpeg-turbo
 │   │   └── libtiff
 │   │       ├── jpeg-turbo
+│   │       ├── xz
 │   │       └── zstd
 │   │           ├── lz4
 │   │           └── xz
@@ -352,6 +369,7 @@ aom
 │       ├── libpng
 │       └── libtiff
 │           ├── jpeg-turbo
+│           ├── xz
 │           └── zstd
 │               ├── lz4
 │               └── xz
@@ -1207,6 +1225,7 @@ gd
 │   │   │   │   ├── jpeg-turbo
 │   │   │   │   └── libtiff
 │   │   │   │       ├── jpeg-turbo
+│   │   │   │       ├── xz
 │   │   │   │       └── zstd
 │   │   │   │           ├── lz4
 │   │   │   │           └── xz
@@ -1218,6 +1237,7 @@ gd
 │   │   │       ├── libpng
 │   │   │       └── libtiff
 │   │   │           ├── jpeg-turbo
+│   │   │           ├── xz
 │   │   │           └── zstd
 │   │   │               ├── lz4
 │   │   │               └── xz
@@ -1227,6 +1247,7 @@ gd
 ├── libpng
 ├── libtiff
 │   ├── jpeg-turbo
+│   ├── xz
 │   └── zstd
 │       ├── lz4
 │       └── xz
@@ -1236,6 +1257,7 @@ gd
     ├── libpng
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -1258,6 +1280,7 @@ ghostscript
 ├── libpng
 ├── libtiff
 │   ├── jpeg-turbo
+│   ├── xz
 │   └── zstd
 │       ├── lz4
 │       └── xz
@@ -1265,6 +1288,7 @@ ghostscript
 │   ├── jpeg-turbo
 │   └── libtiff
 │       ├── jpeg-turbo
+│       ├── xz
 │       └── zstd
 │           ├── lz4
 │           └── xz
@@ -1272,6 +1296,7 @@ ghostscript
     ├── libpng
     ├── libtiff
     │   ├── jpeg-turbo
+    │   ├── xz
     │   └── zstd
     │       ├── lz4
     │       └── xz
@@ -1279,6 +1304,7 @@ ghostscript
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -1423,6 +1449,7 @@ gradle
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -1488,6 +1515,7 @@ groovy
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -1564,6 +1592,7 @@ imagemagick
 │   ├── libpng
 │   ├── libtiff
 │   │   ├── jpeg-turbo
+│   │   ├── xz
 │   │   └── zstd
 │   │       ├── lz4
 │   │       └── xz
@@ -1571,6 +1600,7 @@ imagemagick
 │   │   ├── jpeg-turbo
 │   │   └── libtiff
 │   │       ├── jpeg-turbo
+│   │       ├── xz
 │   │       └── zstd
 │   │           ├── lz4
 │   │           └── xz
@@ -1578,6 +1608,7 @@ imagemagick
 │       ├── libpng
 │       ├── libtiff
 │       │   ├── jpeg-turbo
+│       │   ├── xz
 │       │   └── zstd
 │       │       ├── lz4
 │       │       └── xz
@@ -1585,6 +1616,7 @@ imagemagick
 │           ├── jpeg-turbo
 │           └── libtiff
 │               ├── jpeg-turbo
+│               ├── xz
 │               └── zstd
 │                   ├── lz4
 │                   └── xz
@@ -1602,6 +1634,7 @@ imagemagick
 │   │   │   │   ├── jpeg-turbo
 │   │   │   │   └── libtiff
 │   │   │   │       ├── jpeg-turbo
+│   │   │   │       ├── xz
 │   │   │   │       └── zstd
 │   │   │   │           ├── lz4
 │   │   │   │           └── xz
@@ -1613,6 +1646,7 @@ imagemagick
 │   │   │       ├── libpng
 │   │   │       └── libtiff
 │   │   │           ├── jpeg-turbo
+│   │   │           ├── xz
 │   │   │           └── zstd
 │   │   │               ├── lz4
 │   │   │               └── xz
@@ -1638,12 +1672,14 @@ imagemagick
 │   │   ├── jpeg-turbo
 │   │   └── libtiff
 │   │       ├── jpeg-turbo
+│   │       ├── xz
 │   │       └── zstd
 │   │           ├── lz4
 │   │           └── xz
 │   └── libomp
 ├── libtiff
 │   ├── jpeg-turbo
+│   ├── xz
 │   └── zstd
 │       ├── lz4
 │       └── xz
@@ -1653,6 +1689,7 @@ imagemagick
 │   ├── jpeg-turbo
 │   └── libtiff
 │       ├── jpeg-turbo
+│       ├── xz
 │       └── zstd
 │           ├── lz4
 │           └── xz
@@ -1662,6 +1699,7 @@ imagemagick
 │   ├── libpng
 │   ├── libtiff
 │   │   ├── jpeg-turbo
+│   │   ├── xz
 │   │   └── zstd
 │   │       ├── lz4
 │   │       └── xz
@@ -1669,6 +1707,7 @@ imagemagick
 │       ├── jpeg-turbo
 │       └── libtiff
 │           ├── jpeg-turbo
+│           ├── xz
 │           └── zstd
 │               ├── lz4
 │               └── xz
@@ -1678,6 +1717,7 @@ imagemagick
 │   ├── libpng
 │   └── libtiff
 │       ├── jpeg-turbo
+│       ├── xz
 │       └── zstd
 │           ├── lz4
 │           └── xz
@@ -1706,6 +1746,7 @@ jpeg-xl
 │   ├── jpeg-turbo
 │   └── libtiff
 │       ├── jpeg-turbo
+│       ├── xz
 │       └── zstd
 │           ├── lz4
 │           └── xz
@@ -1717,6 +1758,7 @@ jpeg-xl
     ├── libpng
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -1783,6 +1825,7 @@ kotlin
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -1808,6 +1851,7 @@ libavif
 │   │   │   ├── jpeg-turbo
 │   │   │   └── libtiff
 │   │   │       ├── jpeg-turbo
+│   │   │       ├── xz
 │   │   │       └── zstd
 │   │   │           ├── lz4
 │   │   │           └── xz
@@ -1819,6 +1863,7 @@ libavif
 │   │       ├── libpng
 │   │       └── libtiff
 │   │           ├── jpeg-turbo
+│   │           ├── xz
 │   │           └── zstd
 │   │               ├── lz4
 │   │               └── xz
@@ -1852,6 +1897,7 @@ libheif
 │   │   │   ├── jpeg-turbo
 │   │   │   └── libtiff
 │   │   │       ├── jpeg-turbo
+│   │   │       ├── xz
 │   │   │       └── zstd
 │   │   │           ├── lz4
 │   │   │           └── xz
@@ -1863,6 +1909,7 @@ libheif
 │   │       ├── libpng
 │   │       └── libtiff
 │   │           ├── jpeg-turbo
+│   │           ├── xz
 │   │           └── zstd
 │   │               ├── lz4
 │   │               └── xz
@@ -1912,6 +1959,7 @@ libraw
 │   ├── jpeg-turbo
 │   └── libtiff
 │       ├── jpeg-turbo
+│       ├── xz
 │       └── zstd
 │           ├── lz4
 │           └── xz
@@ -1927,6 +1975,7 @@ libtasn1
 
 libtiff
 ├── jpeg-turbo
+├── xz
 └── zstd
     ├── lz4
     └── xz
@@ -1991,6 +2040,7 @@ little-cms2
 ├── jpeg-turbo
 └── libtiff
     ├── jpeg-turbo
+    ├── xz
     └── zstd
         ├── lz4
         └── xz
@@ -2076,6 +2126,7 @@ maven
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -2187,6 +2238,7 @@ openjdk
     ├── jpeg-turbo
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -2249,6 +2301,7 @@ openjdk@11
     ├── jpeg-turbo
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -2311,6 +2364,7 @@ openjdk@17
     ├── jpeg-turbo
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -2319,6 +2373,7 @@ openjpeg
 ├── libpng
 ├── libtiff
 │   ├── jpeg-turbo
+│   ├── xz
 │   └── zstd
 │       ├── lz4
 │       └── xz
@@ -2326,6 +2381,7 @@ openjpeg
     ├── jpeg-turbo
     └── libtiff
         ├── jpeg-turbo
+        ├── xz
         └── zstd
             ├── lz4
             └── xz
@@ -2413,6 +2469,7 @@ php
 │   │   │   │   │   ├── jpeg-turbo
 │   │   │   │   │   └── libtiff
 │   │   │   │   │       ├── jpeg-turbo
+│   │   │   │   │       ├── xz
 │   │   │   │   │       └── zstd
 │   │   │   │   │           ├── lz4
 │   │   │   │   │           └── xz
@@ -2424,6 +2481,7 @@ php
 │   │   │   │       ├── libpng
 │   │   │   │       └── libtiff
 │   │   │   │           ├── jpeg-turbo
+│   │   │   │           ├── xz
 │   │   │   │           └── zstd
 │   │   │   │               ├── lz4
 │   │   │   │               └── xz
@@ -2433,6 +2491,7 @@ php
 │   ├── libpng
 │   ├── libtiff
 │   │   ├── jpeg-turbo
+│   │   ├── xz
 │   │   └── zstd
 │   │       ├── lz4
 │   │       └── xz
@@ -2442,6 +2501,7 @@ php
 │       ├── libpng
 │       └── libtiff
 │           ├── jpeg-turbo
+│           ├── xz
 │           └── zstd
 │               ├── lz4
 │               └── xz
@@ -2610,6 +2670,7 @@ sonar-scanner
         ├── jpeg-turbo
         └── libtiff
             ├── jpeg-turbo
+            ├── xz
             └── zstd
                 ├── lz4
                 └── xz
@@ -2620,6 +2681,8 @@ sqlite
 stoken
 └── nettle
     └── gmp
+
+swift-format
 
 swiftlint
 
@@ -3166,6 +3229,7 @@ webp
 ├── libpng
 └── libtiff
     ├── jpeg-turbo
+    ├── xz
     └── zstd
         ├── lz4
         └── xz
@@ -3215,22 +3279,22 @@ zstd
 
 
 === Ruby and rubygems ==================
-* Ruby (default): ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [arm64-darwin22]
+* Ruby (default): ruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]
 --- Available ruby versions ---
   system
   2.6.9
   2.7.2
   2.7.5
-* 2.7.6 (set by /Users/vagrant/.rbenv/version)
+  2.7.6
   3.0.0
   3.0.3
   3.1.0
   3.1.3
   3.1.4
-  3.2.1
+* 3.2.2 (set by /Users/vagrant/.rbenv/version)
 -------------------------------
 * rbenv: 1.2.0
-* Rubygems: 3.1.6
+* Rubygems: 3.4.10
 * Bundler: Bundler version 2.4.14
 * CocoaPods: 1.12.1
 * xcpretty: 0.3.0
@@ -3238,23 +3302,25 @@ zstd
 
 
 === All Ruby GEMs ======================
+abbrev (default: 0.1.1)
 activesupport (7.0.5)
 addressable (2.8.4)
 algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.777.0)
-aws-sdk-core (3.174.0)
-aws-sdk-kms (1.66.0)
-aws-sdk-s3 (1.123.1)
+aws-partitions (1.781.0)
+aws-sdk-core (3.175.0)
+aws-sdk-kms (1.67.0)
+aws-sdk-s3 (1.126.0)
 aws-sigv4 (1.5.2)
 babosa (1.0.4)
-benchmark (default: 0.1.0)
-bigdecimal (default: 2.0.0)
-bundler (2.4.14, default: 2.1.4)
+base64 (default: 0.1.1)
+benchmark (default: 0.2.1)
+bigdecimal (default: 3.1.3)
+bundler (2.4.14, default: 2.4.10)
 CFPropertyList (3.0.6)
-cgi (default: 0.1.0.1)
+cgi (default: 0.3.6)
 claide (1.1.0)
 clamp (1.3.2)
 cocoapods (1.12.1)
@@ -3269,18 +3335,23 @@ colored (1.2)
 colored2 (3.1.2)
 commander (4.6.0)
 concurrent-ruby (1.2.2)
-csv (default: 3.1.2)
-date (default: 3.0.3)
-dbm (default: 1.1.0)
+csv (default: 3.2.6)
+date (default: 3.3.3)
+debug (1.7.1)
 declarative (0.0.20)
-delegate (default: 0.1.0)
-did_you_mean (default: 1.4.0)
+delegate (default: 0.3.0)
+did_you_mean (default: 1.6.3)
+digest (default: 3.1.1)
 digest-crc (0.6.4)
 domain_name (0.5.20190701)
 dotenv (2.8.1)
+drb (default: 2.1.1)
 emoji_regex (3.2.3)
+english (default: 0.7.2)
+erb (default: 4.0.2)
+error_highlight (default: 0.5.1)
 escape (0.0.4)
-etc (default: 1.1.0)
+etc (default: 1.4.2)
 ethon (0.16.0)
 excon (0.100.0)
 faraday (1.10.3)
@@ -3298,16 +3369,17 @@ faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.7)
 fastlane (2.213.0)
-fcntl (default: 1.0.0)
+fcntl (default: 1.0.2)
 ffi (1.15.5)
-fiddle (default: 1.0.0)
-fileutils (default: 1.4.1)
-forwardable (default: 1.3.1)
+fiddle (default: 1.1.1)
+fileutils (default: 1.7.0)
+find (default: 0.1.1)
+forwardable (default: 1.3.3)
 fourflusher (2.3.1)
 fuzzy_match (2.0.4)
-getoptlong (default: 0.1.0)
+getoptlong (default: 0.2.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.43.0)
+google-apis-androidpublisher_v3 (0.44.0)
 google-apis-core (0.11.0)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
@@ -3321,90 +3393,114 @@ highline (2.0.3)
 http-cookie (1.0.5)
 httpclient (2.8.3)
 i18n (1.14.1)
-io-console (default: 0.5.6)
-ipaddr (default: 1.2.2)
-irb (default: 1.2.6)
+io-console (default: 0.6.0)
+io-nonblock (default: 0.2.0)
+io-wait (default: 0.3.0)
+ipaddr (default: 1.2.5)
+irb (default: 1.6.2)
 jazzy (0.14.3)
 jmespath (1.6.2)
-json (default: 2.3.0)
+json (default: 2.6.3)
 jwt (2.7.1)
 liferaft (0.0.6)
-logger (default: 1.4.2)
-matrix (default: 0.2.0)
+logger (default: 1.5.3)
+matrix (0.4.2)
 memoist (0.16.2)
 mini_magick (4.12.0)
 mini_mime (1.1.2)
-minitest (5.13.0)
+minitest (5.16.3)
 molinillo (0.8.0)
 multi_json (1.15.0)
 multipart-post (2.3.0)
 mustache (1.1.1)
-mutex_m (default: 0.1.0)
+mutex_m (default: 0.1.2)
 nanaimo (0.3.0)
 nap (1.1.0)
 naturally (2.2.1)
-net-pop (default: 0.1.0)
-net-smtp (default: 0.1.0)
-net-telnet (0.2.0)
+net-ftp (0.2.0)
+net-http (default: 0.3.2)
+net-imap (0.3.4)
+net-pop (0.1.2)
+net-protocol (default: 0.2.1)
+net-smtp (0.3.3)
 netrc (0.11.0)
+nkf (default: 0.1.2)
 nokogiri (1.15.2 arm64-darwin)
-observer (default: 0.1.0)
-open3 (default: 0.1.0)
+observer (default: 0.1.1)
+open-uri (default: 0.3.0)
+open3 (default: 0.1.2)
 open4 (1.3.4)
-openssl (default: 2.1.3)
-optparse (0.1.1)
+openssl (default: 3.1.0)
+optparse (default: 0.3.1, 0.1.1)
 os (1.1.4)
-ostruct (default: 0.2.0)
+ostruct (default: 0.5.5)
+pathname (default: 0.2.1)
 plist (3.7.0)
-power_assert (1.1.7)
-prime (default: 0.1.1)
-pstore (default: 0.1.0)
-psych (default: 3.1.0)
+power_assert (2.0.3)
+pp (default: 0.4.0)
+prettyprint (default: 0.1.1)
+prime (0.1.2)
+pstore (default: 0.1.2)
+psych (default: 5.0.1)
 public_suffix (4.0.7)
-racc (default: 1.4.16)
-rake (13.0.1)
-rdoc (default: 6.2.1.1)
-readline (default: 0.0.2)
-readline-ext (default: 0.1.0)
+racc (default: 1.6.2)
+rake (13.0.6)
+rbs (2.8.2)
+rdoc (default: 6.5.0)
+readline (default: 0.0.3)
+readline-ext (default: 0.1.5)
 redcarpet (3.6.0)
-reline (default: 0.1.5)
+reline (default: 0.3.2)
 representable (3.2.0)
+resolv (default: 0.2.2)
+resolv-replace (default: 0.1.1)
 retriable (3.1.2)
-rexml (3.2.5, default: 3.2.3.1)
+rexml (3.2.5)
+rinda (default: 0.1.1)
 rouge (2.0.7)
-rss (default: 0.2.8)
+rss (0.2.9)
 ruby-macho (2.5.1)
-ruby2_keywords (0.0.5)
+ruby2_keywords (default: 0.0.5)
 rubyzip (2.3.2)
 sassc (2.4.0)
-sdbm (default: 1.0.0)
+securerandom (default: 0.2.2)
 security (0.1.3)
+set (default: 1.0.3)
+shellwords (default: 0.1.0)
 signet (0.17.0)
 simctl (1.6.10)
-singleton (default: 0.1.0)
+singleton (default: 0.1.1)
 slack-notifier (2.4.0)
 slather (2.7.4)
 sqlite3 (1.6.3 arm64-darwin)
-stringio (default: 0.1.0)
-strscan (default: 1.0.3)
+stringio (default: 3.0.4)
+strscan (default: 3.0.5)
+syntax_suggest (default: 1.0.2)
+syslog (default: 0.1.1)
+tempfile (default: 0.1.3)
 terminal-notifier (2.0.0)
 terminal-table (1.8.0)
-test-unit (3.3.4)
-timeout (default: 0.1.0)
-tracer (default: 0.1.0)
+test-unit (3.5.7)
+time (default: 0.2.2)
+timeout (default: 0.3.1)
+tmpdir (default: 0.1.3)
 trailblazer-option (0.1.2)
 trainer (0.9.1)
+tsort (default: 0.1.1)
 tty-cursor (0.7.1)
 tty-screen (0.8.1)
 tty-spinner (0.9.3)
+typeprof (0.21.3)
 typhoeus (1.4.0)
 tzinfo (2.0.6)
 uber (0.1.0)
+un (default: 0.2.1)
 unf (0.1.4)
 unf_ext (0.0.8.2)
 unicode-display_width (1.8.0)
-uri (default: 0.10.0)
-webrick (default: 1.6.1)
+uri (default: 0.12.1)
+weakref (default: 0.1.2)
+webrick (1.8.1)
 word_wrap (1.0.0)
 xcinvoke (0.3.0)
 xcode-install (2.8.1)
@@ -3414,9 +3510,8 @@ xcpretty (0.3.0)
 xcpretty-json-formatter (0.1.1)
 xcpretty-travis-formatter (1.0.1)
 xcresult (0.2.1)
-xmlrpc (0.3.0)
-yaml (default: 0.1.0)
-zlib (default: 1.1.0)
+yaml (default: 0.2.1)
+zlib (default: 3.0.0)
 ========================================
 
 
@@ -3424,6 +3519,7 @@ zlib (default: 1.1.0)
 * Cordova: 11.0.0 (cordova-lib@11.1.0)
 * Ionic: 6.20.1
 * Appcenter-CLI version: 2.11.0
+* OpenUPM version: 1.15.5
 ========================================
 
 
@@ -3450,10 +3546,11 @@ Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 Target: arm64-apple-darwin22.5.0
 
  * xcrun swift --version
-Apple Swift version 5.9 (swiftlang-5.9.0.114.6 clang-1500.0.27.1)
+Apple Swift version 5.9 (swiftlang-5.9.0.114.10 clang-1500.0.29.1)
 Target: arm64-apple-macosx13.0
 
  * swift-format --version
+508.0.1
 
 ========================================
 
@@ -3465,10 +3562,10 @@ Target: arm64-apple-macosx13.0
 
 * Xcode Version:
 Xcode 15.0
-Build version 15A5160n
+Build version 15A5161b
 
 * /usr/bin/swift --version
-Apple Swift version 5.9 (swiftlang-5.9.0.114.6 clang-1500.0.27.1)
+Apple Swift version 5.9 (swiftlang-5.9.0.114.10 clang-1500.0.29.1)
 Target: arm64-apple-macosx13.0
 
 * Installed SDKs:
@@ -3490,6 +3587,18 @@ tvOS SDKs:
 
 tvOS Simulator SDKs:
 	Simulator - tvOS 17.0         	-sdk appletvsimulator17.0
+
+visionOS SDKs:
+	visionOS 1.0                  	-sdk xros1.0
+
+visionOS Additional SDKs:
+	Xcode 15.0                    	-sdk com.apple.dt.xcode.xros.support.internal
+
+visionOS Simulator SDKs:
+	Simulator - visionOS 1.0      	-sdk xrsimulator1.0
+
+visionOS Simulator Additional SDKs:
+	Xcode 15.0                    	-sdk com.apple.dt.xcode.xrsimulator.support.internal
 
 watchOS SDKs:
 	watchOS 10.0                  	-sdk watchos10.0
@@ -3582,15 +3691,15 @@ Apple Watch SE (44mm) (2nd generation) (com.apple.CoreSimulator.SimDeviceType.Ap
 Apple Watch Series 8 (41mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-8-41mm)
 Apple Watch Series 8 (45mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-8-45mm)
 Apple Watch Ultra (49mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Ultra-49mm)
+Apple Vision Pro (com.apple.CoreSimulator.SimDeviceType.Apple-Vision-Pro)
 == Runtimes ==
 iOS 16.4 (16.4 - 20E247) - com.apple.CoreSimulator.SimRuntime.iOS-16-4
-iOS 17.0 (17.0 - 21A5248u) - com.apple.CoreSimulator.SimRuntime.iOS-17-0
-tvOS 16.4 (16.4 - 20L494) - com.apple.CoreSimulator.SimRuntime.tvOS-16-4
-tvOS 17.0 (17.0 - 21J5273p) - com.apple.CoreSimulator.SimRuntime.tvOS-17-0
-watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4
-watchOS 10.0 (10.0 - 21R5275s) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0
+iOS 17.0 (17.0 - 21A5268h) - com.apple.CoreSimulator.SimRuntime.iOS-17-0
+tvOS 17.0 (17.0 - 21J5293g) - com.apple.CoreSimulator.SimRuntime.tvOS-17-0
+watchOS 10.0 (10.0 - 21R5295g) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0
 == Devices ==
 -- iOS 16.4 --
+    Bitrise iOS default (EC831ACF-96E8-497D-99A1-E2C1CD8E282B) (Shutdown) 
     iPhone 8 Plus (032974E0-0DCD-4954-9290-FBA3CCA57503) (Shutdown) 
     iPhone 11 (B9570AF6-A571-48BE-9F06-411AED330100) (Shutdown) 
     iPhone SE (3rd generation) (3D5A13AF-E295-470D-8166-264E67361832) (Shutdown) 
@@ -3604,6 +3713,7 @@ watchOS 10.0 (10.0 - 21R5275s) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0
     iPad Pro (11-inch) (4th generation) (9ECF56FA-2D26-42E9-856C-0D9066BAF2B6) (Shutdown) 
     iPad Pro (12.9-inch) (6th generation) (8448859D-9031-4BBC-8084-49341EDF2AA4) (Shutdown) 
 -- iOS 17.0 --
+    Bitrise iOS default (216F1ECE-9545-4CDD-A706-199C432EA348) (Shutdown) 
     iPhone 11 (B1B441E7-50B6-4751-8EF1-136BF8161F84) (Shutdown) 
     iPhone SE (3rd generation) (175306A2-B0C8-4D15-84FC-75137F2A1BAA) (Shutdown) 
     iPhone 14 (3306050B-8C65-4E75-8D04-9FCFFEA917F3) (Shutdown) 
@@ -3615,26 +3725,10 @@ watchOS 10.0 (10.0 - 21R5275s) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0
     iPad mini (6th generation) (05FD8B8E-6F67-4DF9-B539-A63DABB7DFA6) (Shutdown) 
     iPad Pro (11-inch) (4th generation) (3E8C8654-8D47-4645-9CFF-D64E1741A4CF) (Shutdown) 
     iPad Pro (12.9-inch) (6th generation) (6A0DFA7A-961D-48FD-B8E3-84929EC375A4) (Shutdown) 
--- tvOS 16.4 --
-    Apple TV (1A3E26CB-429F-4AAD-8CC5-EACF84371BA0) (Shutdown) 
-    Apple TV 4K (3rd generation) (C933B779-5338-472F-BF2F-CB3B3A0DD6E4) (Shutdown) 
-    Apple TV 4K (3rd generation) (at 1080p) (6A8D9600-16A5-4C39-919D-60310F130F9E) (Shutdown) 
 -- tvOS 17.0 --
     Apple TV (39603652-1D36-4A1B-815B-12D8FF86A729) (Shutdown) 
     Apple TV 4K (3rd generation) (66196AE2-8A52-44DD-B85E-311944D0B408) (Shutdown) 
     Apple TV 4K (3rd generation) (at 1080p) (A17BC062-4173-4DA0-9F32-910F0B7EDF60) (Shutdown) 
--- watchOS 9.4 --
-    Apple Watch Series 5 (40mm) (167A63EB-A0B8-4E85-A54E-0E8CF6974C61) (Shutdown) 
-    Apple Watch Series 5 (44mm) (167F8ECB-0140-4942-B219-52FB70570770) (Shutdown) 
-    Apple Watch Series 6 (40mm) (F696D432-0A98-4335-9B80-B37B0845B936) (Shutdown) 
-    Apple Watch Series 6 (44mm) (F5EF3C1F-B913-43C0-AE41-16988E34FDF4) (Shutdown) 
-    Apple Watch Series 7 (41mm) (34951E68-825F-4923-A1D3-60558F5B820F) (Shutdown) 
-    Apple Watch Series 7 (45mm) (CAEA0234-65E3-47EC-BB1F-21A138F48489) (Shutdown) 
-    Apple Watch SE (40mm) (2nd generation) (C85ACDED-E63B-4C7E-ADD1-EAD831489444) (Shutdown) 
-    Apple Watch SE (44mm) (2nd generation) (61B5FC1F-5D82-45F0-9B35-1C052AFFB036) (Shutdown) 
-    Apple Watch Series 8 (41mm) (4AA6FBFD-333B-4F1E-AC3F-824EF57EAD42) (Shutdown) 
-    Apple Watch Series 8 (45mm) (06156580-DAA5-48F3-BA0C-BB0ABA0B5A3B) (Shutdown) 
-    Apple Watch Ultra (49mm) (EA0B06A6-B1E3-429A-BD03-C25C98E7319A) (Shutdown) 
 -- watchOS 10.0 --
     Apple Watch Series 5 (40mm) (1B0B7430-7BD6-460C-BAC3-4E09A3DE907D) (Shutdown) 
     Apple Watch Series 5 (44mm) (F0C90F39-8ADC-41C5-91C4-E05620553C74) (Shutdown) 
@@ -3648,18 +3742,6 @@ watchOS 10.0 (10.0 - 21R5275s) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0
     Apple Watch Series 8 (45mm) (5A1F5F5F-A8BA-4D37-934C-207730DFA6AF) (Shutdown) 
     Apple Watch Ultra (49mm) (E93F336F-E4EE-4B88-88BF-2F9593C2B26F) (Shutdown) 
 == Device Pairs ==
-C5C7C49C-2C59-493F-A1AE-33F0872FE558 (active, disconnected)
-    Watch: Apple Watch Series 7 (45mm) (CAEA0234-65E3-47EC-BB1F-21A138F48489) (Shutdown)
-    Phone: iPhone 14 (1EE90A3C-0D1B-4198-8766-A43D108852F2) (Shutdown)
-97AB6D6F-32C4-4CDC-93C3-0BC05D4B9139 (active, disconnected)
-    Watch: Apple Watch Series 8 (41mm) (4AA6FBFD-333B-4F1E-AC3F-824EF57EAD42) (Shutdown)
-    Phone: iPhone 14 Plus (83435156-A853-4581-818E-F66A05E8EC0D) (Shutdown)
-216A806B-7363-4A27-9F83-9972D1CD1070 (active, disconnected)
-    Watch: Apple Watch Series 8 (45mm) (06156580-DAA5-48F3-BA0C-BB0ABA0B5A3B) (Shutdown)
-    Phone: iPhone 14 Pro (DEDAFECA-3B1E-4CF3-A7C5-BFAB86BB1F99) (Shutdown)
-1DBF6463-B212-4811-A40F-81494666DE63 (active, disconnected)
-    Watch: Apple Watch Ultra (49mm) (EA0B06A6-B1E3-429A-BD03-C25C98E7319A) (Shutdown)
-    Phone: iPhone 14 Pro Max (74F5FD37-84D4-4B66-8CBE-329E6BF46A87) (Shutdown)
 5C23D64D-F4D9-4A09-ADAE-FCA98EA5FD92 (active, disconnected)
     Watch: Apple Watch Series 7 (45mm) (972D3492-D181-43F5-A3FA-692BCBC684FB) (Shutdown)
     Phone: iPhone 14 (3306050B-8C65-4E75-8D04-9FCFFEA917F3) (Shutdown)
@@ -3672,6 +3754,14 @@ C10177F9-8F80-4ED7-9910-492A92CD0E68 (active, disconnected)
 36454668-1E27-407B-95BB-69111B1C0919 (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (E93F336F-E4EE-4B88-88BF-2F9593C2B26F) (Shutdown)
     Phone: iPhone 14 Pro Max (DB5490F3-4608-4CA6-9EAC-338937771B4B) (Shutdown)
+    Watch: Apple Watch Series 7 (45mm) (CAEA0234-65E3-47EC-BB1F-21A138F48489) (Shutdown)
+    Phone: iPhone 14 (1EE90A3C-0D1B-4198-8766-A43D108852F2) (Shutdown)
+    Watch: Apple Watch Series 8 (41mm) (4AA6FBFD-333B-4F1E-AC3F-824EF57EAD42) (Shutdown)
+    Phone: iPhone 14 Plus (83435156-A853-4581-818E-F66A05E8EC0D) (Shutdown)
+    Watch: Apple Watch Series 8 (45mm) (06156580-DAA5-48F3-BA0C-BB0ABA0B5A3B) (Shutdown)
+    Phone: iPhone 14 Pro (DEDAFECA-3B1E-4CF3-A7C5-BFAB86BB1F99) (Shutdown)
+    Watch: Apple Watch Ultra (49mm) (EA0B06A6-B1E3-429A-BD03-C25C98E7319A) (Shutdown)
+    Phone: iPhone 14 Pro Max (74F5FD37-84D4-4B66-8CBE-329E6BF46A87) (Shutdown)
 
 ========================================
 
@@ -3692,14 +3782,17 @@ Software:
       Kernel Version: Darwin 22.5.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-edge-g2-m1-max.5core-4fc06bfb-e732-4640-b536-af9197a9ad3b
+      Computer Name: vm-osx-ventura-edge-g2-m1-max.5core-7a627d71-08de-415b-a22b-fb3f97155cda
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 39 seconds
+      Time since boot: 2 minutes, 17 seconds
 
 
 ========================================
+
+Rosetta translation cache size
+466M	/var/db/oah
 
 
 === System infos =======================
@@ -3811,13 +3904,6 @@ android-32
 * Command line Tools version: 6.0
 * Platform Tools version: 33.0.3
 * Emulator version: 31.3.14
-========================================
-
-
-=== Android APK tools ==================
-
-* aapt2:
-
 ========================================
 
 
