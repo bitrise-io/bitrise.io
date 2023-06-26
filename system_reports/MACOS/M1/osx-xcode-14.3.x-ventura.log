@@ -2,24 +2,25 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-06-20
+* BITRISE_OSX_STACK_REV_ID: v2023-06-26
 ========================================
 
 
 === Pre-installed tool versions ========
 
 == All Ruby versions selectable via asdf local ruby x ==
-* Ruby default version: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [arm64-darwin22]
+* Ruby default version: ruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]
   2.6.9
   2.7.2
   2.7.5
- *2.7.6
+  2.7.6
   3.0.0
   3.0.3
   3.1.0
   3.1.3
   3.1.4
   3.2.1
+ *3.2.2
 
 == All Go versions selectable via asdf local golang x ==
 * Go default version: go version go1.18.10 darwin/arm64
@@ -76,9 +77,9 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.0 © 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.24
-Homebrew/homebrew-core (git revision 05842073887; last commit 2023-06-19)
-Homebrew/homebrew-cask (git revision edf480502d; last commit 2023-06-19)
+* brew: Homebrew 4.0.25
+Homebrew/homebrew-core (git revision a8712178bbb; last commit 2023-06-26)
+Homebrew/homebrew-cask (git revision e5894c8e05; last commit 2023-06-26)
 * gtimeout: timeout (GNU coreutils) 9.3
 * watchman: 2023.06.08.00
 * flow: Flow, a static type checker for JavaScript, version 0.204.1
@@ -3315,22 +3316,23 @@ zstd
 
 
 === Ruby and rubygems ==================
-* Ruby (default): ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [arm64-darwin22]
+* Ruby (default): ruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]
 --- Available ruby versions ---
   system
   2.6.9
   2.7.2
   2.7.5
-* 2.7.6 (set by /Users/vagrant/.rbenv/version)
+  2.7.6
   3.0.0
   3.0.3
   3.1.0
   3.1.3
   3.1.4
   3.2.1
+* 3.2.2 (set by /Users/vagrant/.rbenv/version)
 -------------------------------
 * rbenv: 1.2.0
-* Rubygems: 3.1.6
+* Rubygems: 3.4.10
 * Bundler: Bundler version 2.4.14
 * CocoaPods: 1.12.1
 * xcpretty: 0.3.0
@@ -3338,23 +3340,25 @@ zstd
 
 
 === All Ruby GEMs ======================
+abbrev (default: 0.1.1)
 activesupport (7.0.5)
 addressable (2.8.4)
 algoliasearch (1.27.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.780.0)
+aws-partitions (1.781.0)
 aws-sdk-core (3.175.0)
 aws-sdk-kms (1.67.0)
 aws-sdk-s3 (1.126.0)
 aws-sigv4 (1.5.2)
 babosa (1.0.4)
-benchmark (default: 0.1.0)
-bigdecimal (default: 2.0.0)
-bundler (2.4.14, default: 2.1.4)
+base64 (default: 0.1.1)
+benchmark (default: 0.2.1)
+bigdecimal (default: 3.1.3)
+bundler (2.4.14, default: 2.4.10)
 CFPropertyList (3.0.6)
-cgi (default: 0.1.0.1)
+cgi (default: 0.3.6)
 claide (1.1.0)
 clamp (1.3.2)
 cocoapods (1.12.1)
@@ -3369,18 +3373,23 @@ colored (1.2)
 colored2 (3.1.2)
 commander (4.6.0)
 concurrent-ruby (1.2.2)
-csv (default: 3.1.2)
-date (default: 3.0.3)
-dbm (default: 1.1.0)
+csv (default: 3.2.6)
+date (default: 3.3.3)
+debug (1.7.1)
 declarative (0.0.20)
-delegate (default: 0.1.0)
-did_you_mean (default: 1.4.0)
+delegate (default: 0.3.0)
+did_you_mean (default: 1.6.3)
+digest (default: 3.1.1)
 digest-crc (0.6.4)
 domain_name (0.5.20190701)
 dotenv (2.8.1)
+drb (default: 2.1.1)
 emoji_regex (3.2.3)
+english (default: 0.7.2)
+erb (default: 4.0.2)
+error_highlight (default: 0.5.1)
 escape (0.0.4)
-etc (default: 1.1.0)
+etc (default: 1.4.2)
 ethon (0.16.0)
 excon (0.100.0)
 faraday (1.10.3)
@@ -3398,14 +3407,15 @@ faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.7)
 fastlane (2.213.0)
-fcntl (default: 1.0.0)
+fcntl (default: 1.0.2)
 ffi (1.15.5)
-fiddle (default: 1.0.0)
-fileutils (default: 1.4.1)
-forwardable (default: 1.3.1)
+fiddle (default: 1.1.1)
+fileutils (default: 1.7.0)
+find (default: 0.1.1)
+forwardable (default: 1.3.3)
 fourflusher (2.3.1)
 fuzzy_match (2.0.4)
-getoptlong (default: 0.1.0)
+getoptlong (default: 0.2.0)
 gh_inspector (1.1.3)
 google-apis-androidpublisher_v3 (0.44.0)
 google-apis-core (0.11.0)
@@ -3416,95 +3426,119 @@ google-cloud-core (1.6.0)
 google-cloud-env (1.6.0)
 google-cloud-errors (1.3.1)
 google-cloud-storage (1.44.0)
-googleauth (1.5.2)
+googleauth (1.6.0)
 highline (2.0.3)
 http-cookie (1.0.5)
 httpclient (2.8.3)
 i18n (1.14.1)
-io-console (default: 0.5.6)
-ipaddr (default: 1.2.2)
-irb (default: 1.2.6)
+io-console (default: 0.6.0)
+io-nonblock (default: 0.2.0)
+io-wait (default: 0.3.0)
+ipaddr (default: 1.2.5)
+irb (default: 1.6.2)
 jazzy (0.14.3)
 jmespath (1.6.2)
-json (default: 2.3.0)
+json (default: 2.6.3)
 jwt (2.7.1)
 liferaft (0.0.6)
-logger (default: 1.4.2)
-matrix (default: 0.2.0)
+logger (default: 1.5.3)
+matrix (0.4.2)
 memoist (0.16.2)
 mini_magick (4.12.0)
 mini_mime (1.1.2)
-minitest (5.13.0)
+minitest (5.16.3)
 molinillo (0.8.0)
 multi_json (1.15.0)
 multipart-post (2.3.0)
 mustache (1.1.1)
-mutex_m (default: 0.1.0)
+mutex_m (default: 0.1.2)
 nanaimo (0.3.0)
 nap (1.1.0)
 naturally (2.2.1)
-net-pop (default: 0.1.0)
-net-smtp (default: 0.1.0)
-net-telnet (0.2.0)
+net-ftp (0.2.0)
+net-http (default: 0.3.2)
+net-imap (0.3.4)
+net-pop (0.1.2)
+net-protocol (default: 0.2.1)
+net-smtp (0.3.3)
 netrc (0.11.0)
+nkf (default: 0.1.2)
 nokogiri (1.15.2 arm64-darwin)
-observer (default: 0.1.0)
-open3 (default: 0.1.0)
+observer (default: 0.1.1)
+open-uri (default: 0.3.0)
+open3 (default: 0.1.2)
 open4 (1.3.4)
-openssl (default: 2.1.3)
-optparse (0.1.1)
+openssl (default: 3.1.0)
+optparse (default: 0.3.1, 0.1.1)
 os (1.1.4)
-ostruct (default: 0.2.0)
+ostruct (default: 0.5.5)
+pathname (default: 0.2.1)
 plist (3.7.0)
-power_assert (1.1.7)
-prime (default: 0.1.1)
-pstore (default: 0.1.0)
-psych (default: 3.1.0)
+power_assert (2.0.3)
+pp (default: 0.4.0)
+prettyprint (default: 0.1.1)
+prime (0.1.2)
+pstore (default: 0.1.2)
+psych (default: 5.0.1)
 public_suffix (4.0.7)
-racc (default: 1.4.16)
-rake (13.0.1)
-rdoc (default: 6.2.1.1)
-readline (default: 0.0.2)
-readline-ext (default: 0.1.0)
+racc (default: 1.6.2)
+rake (13.0.6)
+rbs (2.8.2)
+rdoc (default: 6.5.0)
+readline (default: 0.0.3)
+readline-ext (default: 0.1.5)
 redcarpet (3.6.0)
-reline (default: 0.1.5)
+reline (default: 0.3.2)
 representable (3.2.0)
+resolv (default: 0.2.2)
+resolv-replace (default: 0.1.1)
 retriable (3.1.2)
-rexml (3.2.5, default: 3.2.3.1)
+rexml (3.2.5)
+rinda (default: 0.1.1)
 rouge (2.0.7)
-rss (default: 0.2.8)
+rss (0.2.9)
 ruby-macho (2.5.1)
-ruby2_keywords (0.0.5)
+ruby2_keywords (default: 0.0.5)
 rubyzip (2.3.2)
 sassc (2.4.0)
-sdbm (default: 1.0.0)
+securerandom (default: 0.2.2)
 security (0.1.3)
+set (default: 1.0.3)
+shellwords (default: 0.1.0)
 signet (0.17.0)
 simctl (1.6.10)
-singleton (default: 0.1.0)
+singleton (default: 0.1.1)
 slack-notifier (2.4.0)
 slather (2.7.4)
 sqlite3 (1.6.3 arm64-darwin)
-stringio (default: 0.1.0)
-strscan (default: 1.0.3)
+stringio (default: 3.0.4)
+strscan (default: 3.0.5)
+syntax_suggest (default: 1.0.2)
+syslog (default: 0.1.1)
+tempfile (default: 0.1.3)
 terminal-notifier (2.0.0)
 terminal-table (1.8.0)
-test-unit (3.3.4)
-timeout (default: 0.1.0)
-tracer (default: 0.1.0)
+test-unit (3.5.7)
+time (default: 0.2.2)
+timeout (default: 0.3.1)
+tmpdir (default: 0.1.3)
 trailblazer-option (0.1.2)
 trainer (0.9.1)
+tsort (default: 0.1.1)
 tty-cursor (0.7.1)
 tty-screen (0.8.1)
 tty-spinner (0.9.3)
+typeprof (0.21.3)
 typhoeus (1.4.0)
 tzinfo (2.0.6)
 uber (0.1.0)
+un (default: 0.2.1)
 unf (0.1.4)
 unf_ext (0.0.8.2)
 unicode-display_width (1.8.0)
-uri (default: 0.10.0)
-webrick (default: 1.6.1)
+uri (default: 0.12.1)
+weakref (default: 0.1.2)
+webrick (1.8.1)
 word_wrap (1.0.0)
 xcinvoke (0.3.0)
 xcode-install (2.8.1)
@@ -3514,9 +3548,8 @@ xcpretty (0.3.0)
 xcpretty-json-formatter (0.1.1)
 xcpretty-travis-formatter (1.0.1)
 xcresult (0.2.1)
-xmlrpc (0.3.0)
-yaml (default: 0.1.0)
-zlib (default: 1.1.0)
+yaml (default: 0.2.1)
+zlib (default: 3.0.0)
 ========================================
 
 
@@ -3936,14 +3969,17 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-norosetta-g2-m1-max.5core-f83e35b8-0041-4ea3-8eb7-870ddb12a37a
+      Computer Name: vm-osx-ventura-norosetta-g2-m1-max.5core-a814d99d-0e26-456a-a8b0-0272ca70d186
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 55 seconds
+      Time since boot: 2 minutes, 29 seconds
 
 
 ========================================
+
+Rosetta translation cache size
+5.0G	/var/db/oah
 
 
 === System infos =======================
