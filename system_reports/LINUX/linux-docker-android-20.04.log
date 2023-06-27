@@ -17,7 +17,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 
 
 === Pre-installed tool versions ========
-* git: git version 2.40.1
+* git: git version 2.41.0
 * mercurial/hg: Mercurial Distributed SCM (version 5.3.1)
 * curl: curl 7.68.0 (x86_64-pc-linux-gnu) libcurl/7.68.0 OpenSSL/1.1.1f zlib/1.2.11 brotli/1.0.7 libidn2/2.2.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.3/openssl/zlib nghttp2/1.40.0 librtmp/2.3
 * wget: GNU Wget 1.20.3 built on linux-gnu.
@@ -32,14 +32,14 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.27.149 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.149
+* aws-cli: aws-cli/1.27.160 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.29.160
 * Transcrypt: 3.9.1
-* Ruby: ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
-  * bundler: Bundler version 2.4.13
-  * rubygems: 3.4.13
+* Ruby: ruby 3.2.1 (2023-02-08 revision 31819e82c8) [x86_64-linux]
+  * bundler: Bundler version 2.4.14
+  * rubygems: 3.4.14
 * Go: go version go1.18.5 linux/amd64
-* Node.js: v16.20.0
-* NPM: 9.7.1
+* Node.js: v16.20.1
+* NPM: 9.7.2
 * Yarn: 1.22.19
 * docker: Docker version 24.0.2, build cb74dfc
 * docker-compose: docker-compose version 1.28.6, build 5db8d86f
@@ -55,7 +55,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * Java: javac 11.0.19
 * Cordova CLI version: 12.0.0 (cordova-lib@12.0.1)
 * Ionic CLI version: 7.1.1
-* Appcenter-CLI version: 2.13.8
+* Appcenter-CLI version: 2.13.9
 ========================================
 
 === Kotlin ===============================
@@ -96,19 +96,19 @@ javac 1.8.0_362
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 434.0.0
-alpha 2023.06.02
-beta 2023.06.02
+Google Cloud SDK 436.0.0
+alpha 2023.06.16
+beta 2023.06.16
 bq 2.0.93
 bundled-python3-unix 3.9.16
-core 2023.06.02
+core 2023.06.16
 gcloud-crc32c 1.0.0
 gsutil 5.24
 ========================================
 
 
 === Firebase Tools components ==========
-12.3.1
+12.4.0
 ========================================
 
 === OpenUPM CLI ==========
@@ -118,7 +118,7 @@ gsutil 5.24
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-....done.
+..done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -390,39 +390,46 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 
 
 === All Ruby GEMs ======================
+abbrev (default: 0.1.1)
 addressable (2.8.4)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.776.0)
-aws-sdk-core (3.174.0)
-aws-sdk-kms (1.66.0)
-aws-sdk-s3 (1.123.1)
+aws-partitions (1.781.0)
+aws-sdk-core (3.175.0)
+aws-sdk-kms (1.67.0)
+aws-sdk-s3 (1.126.0)
 aws-sigv4 (1.5.2)
 babosa (2.0.0, 1.0.4)
-benchmark (0.2.1, default: 0.1.0)
-bigdecimal (3.1.4, default: 2.0.0)
-bundler (default: 2.4.13)
+base64 (default: 0.1.1)
+benchmark (default: 0.2.1)
+bigdecimal (3.1.4, default: 3.1.3)
+bundler (default: 2.4.14)
 CFPropertyList (3.0.6)
-cgi (0.3.6, default: 0.1.0.1)
+cgi (default: 0.3.6)
 claide (1.1.0)
 colored (1.2)
 colored2 (3.1.2)
 commander (4.6.0)
 connection_pool (2.4.1)
-csv (3.2.6, default: 3.1.2)
-date (3.3.3, default: 3.0.3)
-dbm (default: 1.1.0)
+csv (3.2.7, default: 3.2.6)
+date (default: 3.3.3)
+debug (1.8.0, 1.7.1)
 declarative (0.0.20)
-delegate (0.3.0, default: 0.1.0)
-did_you_mean (1.6.3, default: 1.4.0)
+delegate (default: 0.3.0)
+did_you_mean (default: 1.6.3)
+digest (default: 3.1.1)
 digest-crc (0.6.4)
 domain_name (0.5.20190701)
 dotenv (2.8.1)
+drb (default: 2.1.1)
 emoji_regex (15.0.0, 3.2.3)
-etc (1.4.2, default: 1.1.0)
+english (default: 0.7.2)
+erb (default: 4.0.2)
+error_highlight (default: 0.5.1)
+etc (default: 1.4.2)
 excon (0.100.0)
-faraday (2.7.6, 1.10.3)
+faraday (2.7.7, 1.10.3)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
 faraday-em_synchrony (1.0.0)
@@ -437,103 +444,125 @@ faraday-retry (2.2.0, 1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.7)
 fastlane (2.213.0)
-fcntl (1.0.2, default: 1.0.0)
-fiddle (1.1.1, default: 1.0.0)
-fileutils (1.7.1, default: 1.4.1)
-forwardable (1.3.3, default: 1.3.1)
-gdbm (default: 2.1.0)
-getoptlong (0.2.0, default: 0.1.0)
+fcntl (default: 1.0.2)
+fiddle (default: 1.1.1)
+fileutils (1.7.1, default: 1.7.0)
+find (default: 0.1.1)
+forwardable (default: 1.3.3)
+getoptlong (default: 0.2.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.42.0)
+google-apis-androidpublisher_v3 (0.44.0)
 google-apis-core (0.11.0)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
-google-apis-storage_v1 (0.22.0, 0.19.0)
+google-apis-storage_v1 (0.23.0, 0.19.0)
 google-cloud-core (1.6.0)
 google-cloud-env (1.6.0)
 google-cloud-errors (1.3.1)
 google-cloud-storage (1.44.0)
-googleauth (1.5.2)
+googleauth (1.6.0)
 highline (2.1.0, 2.0.3)
 http-cookie (1.0.5)
 httpclient (2.8.3)
-io-console (0.6.0, default: 0.5.6)
-ipaddr (1.2.5, default: 1.2.2)
-irb (1.7.0, default: 1.2.6)
+io-console (default: 0.6.0)
+io-nonblock (default: 0.2.0)
+io-wait (default: 0.3.0)
+ipaddr (default: 1.2.5)
+irb (1.7.0, default: 1.6.2)
 jmespath (1.6.2)
-json (2.6.3, default: 2.3.0)
-jwt (2.7.0)
-logger (1.5.3, default: 1.4.2)
-matrix (0.4.2, default: 0.2.0)
+json (default: 2.6.3)
+jwt (2.7.1)
+logger (default: 1.5.3)
+matrix (0.4.2)
 memoist (0.16.2)
 mini_magick (4.12.0)
 mini_mime (1.1.2)
-minitest (5.18.0, 5.13.0)
+minitest (5.18.1, 5.16.3)
 multi_json (1.15.0)
 multipart-post (2.3.0)
-mutex_m (0.1.2, default: 0.1.0)
+mutex_m (default: 0.1.2)
 nanaimo (0.3.0)
 naturally (2.2.1)
+net-ftp (0.2.0)
+net-http (default: 0.3.2)
 net-http-persistent (4.0.2)
-net-pop (0.1.2, default: 0.1.0)
-net-protocol (0.2.1)
-net-smtp (0.3.3, default: 0.1.0)
-net-telnet (0.2.0)
-observer (0.1.1, default: 0.1.0)
-open3 (0.1.2, default: 0.1.0)
-openssl (3.1.0, default: 2.1.3)
-optparse (0.3.1, 0.1.1)
+net-imap (0.3.6, 0.3.4)
+net-pop (0.1.2)
+net-protocol (default: 0.2.1)
+net-smtp (0.3.3)
+nkf (0.1.3, default: 0.1.2)
+observer (default: 0.1.1)
+open-uri (default: 0.3.0)
+open3 (default: 0.1.2)
+openssl (default: 3.1.0)
+optparse (default: 0.3.1, 0.1.1)
 os (1.1.4)
-ostruct (0.5.5, default: 0.2.0)
+ostruct (default: 0.5.5)
+pathname (default: 0.2.1)
 plist (3.7.0)
-power_assert (2.0.3, 1.1.7)
-prime (0.1.2, default: 0.1.1)
-pstore (0.1.2, default: 0.1.0)
-psych (5.1.0, default: 3.1.0)
+power_assert (2.0.3)
+pp (default: 0.4.0)
+prettyprint (default: 0.1.1)
+prime (0.1.2)
+pstore (default: 0.1.2)
+psych (5.1.0, default: 5.0.1)
 public_suffix (5.0.1)
-racc (1.7.0, default: 1.4.16)
-rake (13.0.6, 13.0.1)
-rdoc (6.5.0, default: 6.2.1.1)
-readline (0.0.3, default: 0.0.2)
-readline-ext (0.1.5, default: 0.1.0)
-reline (0.3.5, default: 0.1.5)
+racc (1.7.1, default: 1.6.2)
+rake (13.0.6)
+rbs (3.1.0, 2.8.2)
+rdoc (default: 6.5.0)
+readline (default: 0.0.3)
+readline-ext (default: 0.1.5)
+reline (0.3.5, default: 0.3.2)
 representable (3.2.0)
+resolv (default: 0.2.2)
+resolv-replace (default: 0.1.1)
 retriable (3.1.2)
-rexml (3.2.5, default: 3.2.3.1)
+rexml (3.2.5)
+rinda (default: 0.1.1)
 rouge (4.1.2, 2.0.7)
-rss (0.2.9, default: 0.2.8)
-ruby2_keywords (0.0.5)
-rubygems-update (3.4.13)
+rss (0.2.9)
+ruby2_keywords (default: 0.0.5)
+rubygems-update (3.4.14)
 rubyzip (2.3.2)
-sdbm (default: 1.0.0)
+securerandom (default: 0.2.2)
 security (0.1.5, 0.1.3)
+set (default: 1.0.3)
+shellwords (default: 0.1.0)
 signet (0.17.0)
 simctl (1.6.10)
-singleton (0.1.1, default: 0.1.0)
-stringio (3.0.7, default: 0.1.0)
-strscan (3.0.6, default: 1.0.3)
+singleton (default: 0.1.1)
+stringio (3.0.7, default: 3.0.4)
+strscan (3.0.6, default: 3.0.5)
+syntax_suggest (1.1.0, default: 1.0.2)
+syslog (default: 0.1.1)
+tempfile (default: 0.1.3)
 terminal-notifier (2.0.0)
 terminal-table (3.0.2, 1.8.0)
-test-unit (3.5.9, 3.3.4)
-timeout (0.3.2, default: 0.1.0)
-tracer (0.2.2, default: 0.1.0)
+test-unit (3.6.1, 3.5.7)
+time (0.2.2, default: 0.2.1)
+timeout (0.4.0, default: 0.3.1)
+tmpdir (default: 0.1.3)
 trailblazer-option (0.1.2)
+tsort (default: 0.1.1)
 tty-cursor (0.7.1)
 tty-screen (0.8.1)
 tty-spinner (0.9.3)
+typeprof (0.21.7, 0.21.3)
 uber (0.1.0)
+un (default: 0.2.1)
 unf (0.1.4)
 unf_ext (0.0.8.2)
 unicode-display_width (2.4.2, 1.8.0)
-uri (0.12.1, default: 0.10.0)
-webrick (1.8.1, default: 1.6.1)
+uri (0.12.1, default: 0.12.0)
+weakref (default: 0.1.2)
+webrick (1.8.1)
 word_wrap (1.0.0)
 xcodeproj (1.22.0)
 xcpretty (0.3.0)
 xcpretty-travis-formatter (1.0.1)
-xmlrpc (0.3.2, 0.3.0)
-yaml (0.2.1, default: 0.1.0)
-zlib (3.0.0, default: 1.1.0)
+yaml (default: 0.2.1)
+zlib (default: 3.0.0)
 ========================================
 
 
@@ -541,13 +570,13 @@ zlib (3.0.0, default: 1.1.0)
 python
   3.11.3
 ruby
-  3.2.1
+ *3.2.1
 ========================================
 
 
 === Linux info =========================
 * uname -a
-Linux prd-20-04-use5a-305d7a4a-44ea-42db-8ea3-3d51aa285ab3 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1b-98a05a3b-e54a-4351-8909-a081cf74c8f1 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -609,8 +638,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: prd-20-04-use5a-305d7a4a-44ea-42db-8ea3-3d51aa285ab3
- ID: ddbf85bf-dc07-4c12-a1b4-7433e7ef0db0
+ Name: stg-prdfree-20-04-usc1b-98a05a3b-e54a-4351-8909-a081cf74c8f1
+ ID: eb82ab09-ddf9-4841-9095-719607719f09
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Experimental: false
@@ -622,12 +651,12 @@ Server:
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 48.3GB
 quay.io/bitriseio/android-ndk-20.04 - 48.3GB
+bitriseio/android-ndk-20.04 - 48.3GB
 bitriseio/android-20.04 - 45.9GB
 quay.io/bitriseio/android-20.04 - 45.9GB
-bitriseio/bitrise-base-20.04 - 4.23GB
-quay.io/bitriseio/bitrise-base-20.04 - 4.23GB
+bitriseio/bitrise-base-20.04 - 4.25GB
+quay.io/bitriseio/bitrise-base-20.04 - 4.25GB
 bitrisedev/build-env - 5.2GB
 ========================================
 
@@ -641,7 +670,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   60G  135G  31% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       765Mi        59Gi       1.0Mi       2.2Gi        61Gi
+Mem:           62Gi       750Mi        59Gi       1.0Mi       2.1Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
