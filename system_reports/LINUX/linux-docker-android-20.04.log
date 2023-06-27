@@ -111,10 +111,14 @@ gsutil 5.24
 12.3.1
 ========================================
 
+=== OpenUPM CLI ==========
+1.15.5
+========================================
+
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-..done.
+....done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -380,7 +384,7 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 * bitrise: 2.2.5
 * stepman: 0.16.0
 * envman: 2.4.0
-./system_report.sh: line 222: bitrise-bridge: command not found
+./system_report.sh: line 227: bitrise-bridge: command not found
 * bitrise-bridge: No bitrise-bridge installed
 ========================================
 
@@ -543,7 +547,7 @@ ruby
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1c-48b1d3fd-9e0d-4257-9cb7-f304380b4717 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux prd-20-04-use5a-305d7a4a-44ea-42db-8ea3-3d51aa285ab3 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -605,7 +609,7 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1c-48b1d3fd-9e0d-4257-9cb7-f304380b4717
+ Name: prd-20-04-use5a-305d7a4a-44ea-42db-8ea3-3d51aa285ab3
  ID: ddbf85bf-dc07-4c12-a1b4-7433e7ef0db0
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
@@ -618,8 +622,8 @@ Server:
 
 
 === Docker pre-cached images ===========
-quay.io/bitriseio/android-ndk-20.04 - 48.3GB
 bitriseio/android-ndk-20.04 - 48.3GB
+quay.io/bitriseio/android-ndk-20.04 - 48.3GB
 bitriseio/android-20.04 - 45.9GB
 quay.io/bitriseio/android-20.04 - 45.9GB
 bitriseio/bitrise-base-20.04 - 4.23GB
@@ -637,7 +641,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   60G  135G  31% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       727Mi        60Gi       1.0Mi       1.9Gi        61Gi
+Mem:           62Gi       765Mi        59Gi       1.0Mi       2.2Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
