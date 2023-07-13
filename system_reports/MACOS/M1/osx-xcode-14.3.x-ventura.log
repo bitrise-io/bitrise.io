@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-06-26
+* BITRISE_OSX_STACK_REV_ID: v2023-07-12
 ========================================
 
 
@@ -99,17 +99,16 @@ Homebrew/homebrew-cask (git revision e5894c8e05; last commit 2023-06-26)
 * danger-swift: 3.16.0
 [0;0m
 * OpenVPN 2.6.4 aarch64-apple-darwin22.4.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD]
-* tuist: 3.12.0
+* tuist: 3.19.0
 
 --- Bitrise CLI tool versions
-* bitrise: 2.2.5
+* bitrise: 2.2.7
 * stepman: 0.16.0
 * envman: 2.4.0
 ========================================
 
 
 === Brew list versions ==================
-ansible 8.0.0
 ant 1.10.13
 aom 3.6.1
 applesimutils 0.9.9
@@ -282,44 +281,6 @@ temurin8 8,352,08
 
 
 === Brew deps tree ==================
-ansible
-├── cffi
-│   ├── pycparser
-│   │   └── python@3.11
-│   │       ├── mpdecimal
-│   │       ├── openssl@1.1
-│   │       │   └── ca-certificates
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
-│   └── python@3.11
-│       ├── mpdecimal
-│       ├── openssl@1.1
-│       │   └── ca-certificates
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-├── openssl@1.1
-│   └── ca-certificates
-├── pycparser
-│   └── python@3.11
-│       ├── mpdecimal
-│       ├── openssl@1.1
-│       │   └── ca-certificates
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-├── python@3.11
-│   ├── mpdecimal
-│   ├── openssl@1.1
-│   │   └── ca-certificates
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── pyyaml
-│   └── libyaml
-└── six
-
 ant
 └── openjdk
     ├── giflib
@@ -3333,7 +3294,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.4.10
-* Bundler: Bundler version 2.4.14
+* Bundler: Bundler version 2.4.16
 * CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
@@ -3356,7 +3317,7 @@ babosa (1.0.4)
 base64 (default: 0.1.1)
 benchmark (default: 0.2.1)
 bigdecimal (default: 3.1.3)
-bundler (2.4.14, default: 2.4.10)
+bundler (2.4.16, 2.4.14, default: 2.4.10)
 CFPropertyList (3.0.6)
 cgi (default: 0.3.6)
 claide (1.1.0)
@@ -3969,11 +3930,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-norosetta-g2-m1-max.5core-2eacaee1-e013-4894-8796-3cb8ca551949
+      Computer Name: vm-osx-ventura-norosetta-g2-m1-max.5core-ab22cead-ba1c-4266-a4f8-c6608120cb40
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 43 seconds
+      Time since boot: 2 minutes, 55 seconds
 
 
 ========================================
@@ -3985,7 +3946,7 @@ Rosetta translation cache size
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk2s1s1        340Gi        107Gi
+/dev/disk2s1s1        340Gi        123Gi
 ========================================
 
 --- Android
@@ -4072,18 +4033,14 @@ android-32
 /usr/local/share/android-sdk/system-images
 ├── android-29
 │   └── google_apis
-│       └── arm64-v8a
 ├── android-30
 │   └── google_apis
-│       └── arm64-v8a
 ├── android-31
 │   └── google_apis
-│       └── arm64-v8a
 └── android-32
     └── google_apis
-        └── arm64-v8a
 
-13 directories, 0 files
+9 directories, 0 files
 
 ========================================
 
