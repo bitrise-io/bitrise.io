@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-07-12
+* BITRISE_OSX_STACK_REV_ID: v2023-07-18
 ========================================
 
 
@@ -11,21 +11,41 @@
 == All Ruby versions selectable via asdf local ruby x ==
 * Ruby default version: ruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]
   2.6.9
+  2.6
   2.7.2
   2.7.5
   2.7.6
+  2.7
+  2
   3.0.0
   3.0.3
+  3.0
   3.1.0
   3.1.3
   3.1.4
+  3.1
   3.2.1
  *3.2.2
+  3.2
+  3
+2 => 2.7.6
+2.6 => 2.6.9
+2.7 => 2.7.6
+3 => 3.2.2
+3.0 => 3.0.3
+3.1 => 3.1.4
+3.2 => 3.2.2
 
 == All Go versions selectable via asdf local golang x ==
 * Go default version: go version go1.18.10 darwin/arm64
  *1.18.10
+  1.18
   1.20.2
+  1.20
+  1
+1 => 1.20.2
+1.18 => 1.18.10
+1.20 => 1.20.2
 ========================================
 
 * Python: Python 2.7.18
@@ -33,8 +53,20 @@
 == All Nodejs versions selectable via asdf local nodejs x ==
 * Node.js default version: v16.19.1
   12.22.9
+  12.22
+  12
  *16.19.1
+  16.19
+  16
   19.8.1
+  19.8
+  19
+12 => 12.22.9
+12.22 => 12.22.9
+16 => 16.19.1
+16.19 => 16.19.1
+19 => 19.8.1
+19.8 => 19.8.1
 * NPM: 8.19.3
 * Yarn: 1.22.19
 ========================================
@@ -102,7 +134,7 @@ Homebrew/homebrew-cask (git revision e5894c8e05; last commit 2023-06-26)
 * tuist: 3.19.0
 
 --- Bitrise CLI tool versions
-* bitrise: 2.2.7
+* bitrise: 2.3.0
 * stepman: 0.16.0
 * envman: 2.4.0
 ========================================
@@ -3294,7 +3326,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.4.10
-* Bundler: Bundler version 2.4.16
+* Bundler: Bundler version 2.4.17
 * CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
@@ -3317,7 +3349,7 @@ babosa (1.0.4)
 base64 (default: 0.1.1)
 benchmark (default: 0.2.1)
 bigdecimal (default: 3.1.3)
-bundler (2.4.16, 2.4.14, default: 2.4.10)
+bundler (2.4.17, 2.4.16, 2.4.14, default: 2.4.10)
 CFPropertyList (3.0.6)
 cgi (default: 0.3.6)
 claide (1.1.0)
@@ -3367,7 +3399,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.7)
-fastlane (2.213.0)
+fastlane (2.214.0, 2.213.0)
 fcntl (default: 1.0.2)
 ffi (1.15.5)
 fiddle (default: 1.1.1)
@@ -3930,11 +3962,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-norosetta-g2-m1-max.5core-ab22cead-ba1c-4266-a4f8-c6608120cb40
+      Computer Name: vm-osx-ventura-norosetta-g2-m1-max.5core-dff38bf8-3d50-45e3-ab27-a8f1540e9307
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 55 seconds
+      Time since boot: 2 minutes, 52 seconds
 
 
 ========================================
@@ -3946,7 +3978,7 @@ Rosetta translation cache size
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk2s1s1        340Gi        123Gi
+/dev/disk2s1s1        340Gi        125Gi
 ========================================
 
 --- Android
