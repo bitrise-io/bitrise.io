@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-07-11
+* BITRISE_OSX_STACK_REV_ID: v2023-07-18
 ========================================
 
 
@@ -11,21 +11,41 @@
 == All Ruby versions selectable via asdf local ruby x ==
 * Ruby default version: ruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]
   2.6.9
+  2.6
   2.7.2
   2.7.5
   2.7.6
+  2.7
+  2
   3.0.0
   3.0.3
+  3.0
   3.1.0
   3.1.3
   3.1.4
+  3.1
   3.2.1
  *3.2.2
+  3.2
+  3
+2 => 2.7.6
+2.6 => 2.6.9
+2.7 => 2.7.6
+3 => 3.2.2
+3.0 => 3.0.3
+3.1 => 3.1.4
+3.2 => 3.2.2
 
 == All Go versions selectable via asdf local golang x ==
 * Go default version: go version go1.18.10 darwin/arm64
  *1.18.10
+  1.18
   1.20.2
+  1.20
+  1
+1 => 1.20.2
+1.18 => 1.18.10
+1.20 => 1.20.2
 ========================================
 
 * Python: Python 2.7.18
@@ -33,8 +53,20 @@
 == All Nodejs versions selectable via asdf local nodejs x ==
 * Node.js default version: v16.19.1
   12.22.9
+  12.22
+  12
  *16.19.1
+  16.19
+  16
   19.8.1
+  19.8
+  19
+12 => 12.22.9
+12.22 => 12.22.9
+16 => 16.19.1
+16.19 => 16.19.1
+19 => 19.8.1
+19.8 => 19.8.1
 * NPM: 8.19.3
 * Yarn: 1.22.19
 ========================================
@@ -102,7 +134,7 @@ Homebrew/homebrew-cask (git revision e5894c8e05; last commit 2023-06-26)
 * tuist: 3.19.0
 
 --- Bitrise CLI tool versions
-* bitrise: 2.2.5
+* bitrise: 2.3.0
 * stepman: 0.16.0
 * envman: 2.4.0
 ========================================
@@ -3294,7 +3326,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.4.10
-* Bundler: Bundler version 2.4.16
+* Bundler: Bundler version 2.4.17
 * CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
@@ -3317,7 +3349,7 @@ babosa (1.0.4)
 base64 (default: 0.1.1)
 benchmark (default: 0.2.1)
 bigdecimal (default: 3.1.3)
-bundler (2.4.16, 2.4.14, default: 2.4.10)
+bundler (2.4.17, 2.4.16, 2.4.14, default: 2.4.10)
 CFPropertyList (3.0.6)
 cgi (default: 0.3.6)
 claide (1.1.0)
@@ -3367,7 +3399,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.7)
-fastlane (2.213.0)
+fastlane (2.214.0, 2.213.0)
 fcntl (default: 1.0.2)
 ffi (1.15.5)
 fiddle (default: 1.1.1)
@@ -3913,16 +3945,16 @@ B7F51DFD-3534-4B09-86A8-71E26F498C6F (active, disconnected)
 426A3692-A466-4AB3-B9B2-AAED015555AF (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (A37B39E3-E25A-4E6F-B6FC-76C61653ADC7) (Shutdown)
     Phone: iPhone 14 Pro Max (77A43D26-64C7-4A7B-81F6-35E1485A7E19) (Shutdown)
-FB64DFEF-4B43-4A8A-BE4C-1FE559273BBC (active, disconnected)
+D222C0B1-EE41-4DAA-B173-D7D53E3C2B60 (active, disconnected)
     Watch: Apple Watch Series 7 (45mm) (512452CD-683F-41AE-B87E-9B086EA48D0C) (Shutdown)
     Phone: iPhone 14 (06B7AD78-2F01-4DD9-9616-71029DC22CB4) (Shutdown)
-68E6BEE5-3E64-4A63-9F5C-BF1FFB8B394B (active, disconnected)
+1E19A148-A905-4B56-B45C-0A9051E5B80F (active, disconnected)
     Watch: Apple Watch Series 8 (41mm) (18198252-24EA-4B0B-B009-82F82C334D67) (Shutdown)
     Phone: iPhone 14 Plus (CD2885ED-CA16-4CE8-806B-790216083E6E) (Shutdown)
-7E4AE2C7-52A0-4B12-A716-ED52753CD877 (active, disconnected)
+3437EEEE-5F99-4CFD-9B59-F0F99A13C250 (active, disconnected)
     Watch: Apple Watch Series 8 (45mm) (4AC203CD-FA87-444E-90F0-38576013D270) (Shutdown)
     Phone: iPhone 14 Pro (72973B7D-F614-4916-930E-3D0A6A0899BF) (Shutdown)
-EF38270F-6187-41A9-B996-A33C12A142C8 (active, disconnected)
+31754AAF-AF01-4562-A4CB-9241E672AEB0 (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (8D1892AD-0A13-4643-86CC-3ED06B2EE474) (Shutdown)
     Phone: iPhone 14 Pro Max (56B297F6-70A8-4905-A462-5119AA5F6B7F) (Shutdown)
 
@@ -3945,11 +3977,11 @@ Software:
       Kernel Version: Darwin 22.3.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-g2-m1-max.5core-47f9eb72-7856-447e-928a-33a6a0c46399
+      Computer Name: vm-osx-ventura-g2-m1-max.5core-3cfcd82e-5feb-4d68-9c6a-bb68f2d00722
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 46 seconds
+      Time since boot: 2 minutes, 33 seconds
 
 
 ========================================
@@ -3961,7 +3993,7 @@ Rosetta translation cache size
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk2s1s1        365Gi        113Gi
+/dev/disk2s1s1        365Gi        112Gi
 ========================================
 
 --- Android
