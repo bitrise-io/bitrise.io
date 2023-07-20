@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-07-12
+* BITRISE_OSX_STACK_REV_ID: v2023-07-18
 ========================================
 
 
@@ -11,30 +11,59 @@
 == All Ruby versions selectable via asdf local ruby x ==
 * Ruby default version: ruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]
   2.6.9
+  2.6
   2.7.2
   2.7.5
   2.7.6
+  2.7
+  2
   3.0.0
   3.0.3
+  3.0
   3.1.0
   3.1.3
   3.1.4
+  3.1
   3.2.1
- *3.2.2
+  3.2.2
+ *3.2
+  3
+2 => 2.7.6
+2.6 => 2.6.9
+2.7 => 2.7.6
+3 => 3.2.2
+3.0 => 3.0.3
+3.1 => 3.1.4
+3.2 => 3.2.2
 
 == All Go versions selectable via asdf local golang x ==
-* Go default version: go version go1.20.4 darwin/arm64
-  1.19.9
- *1.20.4
+* Go default version: go version go1.20.5 darwin/arm64
+  1.19.10
+  1.19
+ *1.20.5
+  1.20
+  1
+1 => 1.20.5
+1.19 => 1.19.10
+1.20 => 1.20.5
 ========================================
 
 * Python: Python 2.7.18
 
 == All Nodejs versions selectable via asdf local nodejs x ==
-* Node.js default version: v20.2.0
-  18.16.0
- *20.2.0
-* NPM: 9.6.6
+* Node.js default version: v20.4.0
+  18.16.1
+  18.16
+  18
+  20.4.0
+ *20.4
+  20
+18 => 18.16.1
+18.16 => 18.16.1
+20 => 20.4.0
+20.4 => 20.4.0
+lts => 18.16.0
+* NPM: 9.7.2
 * Yarn: 1.22.19
 ========================================
 
@@ -49,7 +78,7 @@
   temurin64-1.8.0.352
   temurin64-11.0.17
   temurin64-17.0.5
-* Kotlin: Kotlin version 1.8.22-release-407 (JRE 11.0.17+8)
+* Kotlin: Kotlin version 1.9.0-release-358 (JRE 11.0.17+8)
 * Flutter: Flutter 3.7.12 • channel stable • https://github.com/flutter/flutter.git
 * fvm: 2.4.1
 * Flutter SDKs via fvm: Cache Directory:  /Users/vagrant/fvm/versions
@@ -67,8 +96,8 @@ junitreport 2.0.2
 
 * git: git version 2.41.0
 * git lfs: git-lfs/3.3.0 (GitHub; darwin arm64; go 1.19.3)
-* mercurial/hg: Mercurial Distributed SCM (version 6.4)
-* curl: curl 8.1.2 (aarch64-apple-darwin22.4.0) libcurl/8.1.2 (SecureTransport) OpenSSL/1.1.1u zlib/1.2.11 brotli/1.0.9 zstd/1.5.5 libidn2/2.3.4 libssh2/1.11.0 nghttp2/1.54.0 librtmp/2.3
+* mercurial/hg: Mercurial Distributed SCM (version 6.5)
+* curl: curl 8.1.2 (aarch64-apple-darwin22.4.0) libcurl/8.1.2 (SecureTransport) OpenSSL/3.1.1 zlib/1.2.11 brotli/1.0.9 zstd/1.5.5 libidn2/2.3.4 libssh2/1.11.0 nghttp2/1.55.1 librtmp/2.3
 * wget: GNU Wget 1.21.4 built on darwin22.4.0.
 * rsync: rsync  version 2.6.9  protocol version 29
 * unzip: UnZip 6.00 of 20 April 2009, by Info-ZIP.  Maintained by C. Spieler.  Send
@@ -76,24 +105,24 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.1 © 1996 - 2023 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.28
-Homebrew/homebrew-core (git revision 29d4e1f5764; last commit 2023-06-22)
-Homebrew/homebrew-cask (git revision acb2e4f87a; last commit 2023-06-22)
+* brew: Homebrew 4.0.29
+Homebrew/homebrew-core (git revision 85066554f6a; last commit 2023-07-17)
+Homebrew/homebrew-cask (git revision 774151d057; last commit 2023-07-17)
 * gtimeout: timeout (GNU coreutils) 9.3
-* watchman: 2023.06.12.00
-* flow: Flow, a static type checker for JavaScript, version 0.209.1
+* watchman: 2023.07.10.00
+* flow: Flow, a static type checker for JavaScript, version 0.212.0
 * carthage: 0.39.0
-* imagemagick (convert): Version: ImageMagick 7.1.1-11 Q16-HDRI aarch64 21206 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.1-13 Q16-HDRI aarch64 21276 https://imagemagick.org
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 12.3.0
 * applesimutils version 0.9.9
 * jq: 1.6
-* xcbeautify: 0.20.0
+* xcbeautify: 0.21.0
 * XCLogParser 0.2.36
 * Screen 4.09.00
 * applesimutils 0.9.9
 * OpenConnect version v9.12
-* aws-cli: aws-cli/2.12.1 Python/3.11.4 Darwin/22.5.0 source/arm64 prompt/off
+* aws-cli: aws-cli/2.13.1 Python/3.11.4 Darwin/22.5.0 source/arm64 prompt/off
 * cmake: 3.26.4
 * danger-swift: 3.16.0
 [0;0m
@@ -101,7 +130,7 @@ Homebrew/homebrew-cask (git revision acb2e4f87a; last commit 2023-06-22)
 * tuist: 3.20.0
 
 --- Bitrise CLI tool versions
-* bitrise: 2.2.5
+* bitrise: 2.3.0
 * stepman: 0.16.0
 * envman: 2.4.0
 ========================================
@@ -112,12 +141,12 @@ ant 1.10.13
 aom 3.6.1
 applesimutils 0.9.9
 apr 1.7.4
-apr-util 1.6.3
+apr-util 1.6.3_1
 argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.12.1
+awscli 2.13.1
 bazelisk 1.17.0
 boost 1.82.0_1
 brotli 1.0.9
@@ -127,44 +156,44 @@ carthage 0.39.0
 cffi 1.15.1
 cmake 3.26.4
 coreutils 9.3
-curl 8.1.2
+curl 8.1.2_1
 danger-js 64
 danger-swift 3.16.0
 dart 2.18.6
 docutils 0.20.1
 double-conversion 3.3.0
-edencommon 2023.06.12.00
-fb303 2023.06.12.00
-fbthrift 2023.06.12.00
-fizz 2023.06.12.00
-flow 0.209.1
+edencommon 2023.07.10.00_1
+fb303 2023.07.10.00_1
+fbthrift 2023.07.10.00_1
+fizz 2023.07.10.00_1
+flow 0.212.0
 fmt 10.0.0
-folly 2023.06.12.00
+folly 2023.07.10.00_1
 fontconfig 2.14.2
-freetds 1.3.18
-freetype 2.13.0_1
+freetds 1.3.18_1
+freetype 2.13.1
 fvm 2.4.1
 gd 2.3.3_5
 gettext 0.21.1
 gflags 2.2.2
-gh 2.31.0
+gh 2.32.0
 ghostscript 10.01.2
 giflib 5.2.1
-git 2.41.0
+git 2.41.0_2
 git-lfs 3.3.0
-glib 2.76.3
+glib 2.76.4
 glog 0.6.0
 gmp 6.2.1_1
-gnupg 2.4.2
+gnupg 2.4.3
 gnutls 3.8.0
-gradle 8.1.1
+gradle 8.2.1
 graphite2 1.3.14
-groovy 4.0.12
-harfbuzz 7.3.0_1
+groovy 4.0.13
+harfbuzz 8.0.1
 highway 1.0.4
 hub 2.14.2
 icu4c 73.2
-imagemagick 7.1.1-11_1
+imagemagick 7.1.1-13
 imath 3.1.9
 jasper 4.0.0
 jbig2dec 0.19
@@ -172,78 +201,78 @@ jenv 0.5.5_2
 jpeg-turbo 2.1.5.1
 jpeg-xl 0.8.2
 jq 1.6
-kotlin 1.8.22
-krb5 1.21
-libassuan 2.5.5
+kotlin 1.9.0
+krb5 1.21.1
+libassuan 2.5.6
 libavif 0.11.1
-libde265 1.0.11
-libevent 2.1.12
+libde265 1.0.12
+libevent 2.1.12_1
 libgcrypt 1.10.2
 libgpg-error 1.47
 libheif 1.16.2
 libidn 1.41
 libidn2 2.3.4_1
-libksba 1.6.3
+libksba 1.6.4
 liblqr 0.4.2_1
-libnghttp2 1.54.0
-libomp 16.0.5
-libpng 1.6.39
-libpq 15.3
+libnghttp2 1.55.1
+libomp 16.0.6
+libpng 1.6.40
+libpq 15.3_1
 libraw 0.21.1
 libsodium 1.0.18_1
-libssh2 1.11.0
+libssh2 1.11.0_1
 libtasn1 4.19.0
 libtiff 4.5.1
 libtool 2.4.7
 libunistring 1.1
 libusb 1.0.26
 libvmaf 2.3.1
-libx11 1.8.4
+libx11 1.8.6
 libxau 1.0.11
 libxcb 1.15_1
 libxdmcp 1.1.4
 libxext 1.3.5
 libxrender 0.9.11
 libyaml 0.2.5
-libzip 1.9.2
+libzip 1.10.0_1
 little-cms2 2.15
 llvm 16.0.5
 lokalise2 2.6.8
 lz4 1.9.4
 lzo 2.10
 m4 1.4.19
-maven 3.9.2
-mercurial 6.4
+maven 3.9.3
+mercurial 6.5
 mint 0.17.5
 mpdecimal 2.5.1
-nettle 3.9
+nettle 3.9.1
 npth 1.6
 oniguruma 6.9.8
 openconnect 9.12
-openexr 3.1.8_1
+openexr 3.1.9
 openjdk 20.0.1
 openjdk@11 11.0.19
 openjdk@17 17.0.7
 openjpeg 2.5.0_1
-openldap 2.6.4
+openldap 2.6.5
 openssl@1.1 1.1.1u
-openssl@3 3.1.1
+openssl@3 3.1.1_1
 openvpn 2.6.5
-p11-kit 0.24.1_1
-parallel 20230522
+p11-kit 0.25.0
+parallel 20230622
 pcre2 10.42
-php 8.2.7_1
+php 8.2.8
 pinentry 1.2.1
 pixman 0.42.2
 pkcs11-helper 1.29.0
 pkg-config 0.29.2_3
 pycparser 2.21
 pyenv 2.3.18
-python@3.11 3.11.4
+python@3.11 3.11.4_1
 pyyaml 6.0_1
 rbenv 1.2.0
 readline 8.2.1
-rtmpdump 2.4+20151223_1
+rtmpdump 2.4+20151223_2
 ruby-build 20230615
 screen 4.9.0_1
 shared-mime-info 2.2
@@ -253,18 +282,18 @@ sonar-scanner 4.8.0.2856
 sqlite 3.42.0
 stoken 0.92_1
 swift-format 508.0.1
-swiftlint 0.52.2
+swiftlint 0.52.4
 tidy-html5 5.8.0
 transcrypt 2.2.3
 tree 2.1.1
-unbound 1.17.1
+unbound 1.17.1_1
 unixodbc 2.3.11
-wangle 2023.06.12.00
-watchman 2023.06.12.00
-webp 1.3.0_1
+wangle 2023.07.10.00_1
+watchman 2023.07.10.00_1
+webp 1.3.1
 wget 1.21.4
 x265 3.5
-xcbeautify 0.20.0
+xcbeautify 0.21.0
 xclogparser 0.2.36
 xcodes 1.3.0
 xorgproto 2023.2
@@ -381,7 +410,7 @@ apr
 
 apr-util
 ├── apr
-└── openssl@1.1
+└── openssl@3
     └── ca-certificates
 
 argon2
@@ -389,8 +418,10 @@ argon2
 aria2
 ├── gettext
 ├── libssh2
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
+├── openssl@3
+│   └── ca-certificates
 └── sqlite
     └── readline
 
@@ -404,14 +435,14 @@ awscli
 │   ├── pycparser
 │   │   └── python@3.11
 │   │       ├── mpdecimal
-│   │       ├── openssl@1.1
+│   │       ├── openssl@3
 │   │       │   └── ca-certificates
 │   │       ├── sqlite
 │   │       │   └── readline
 │   │       └── xz
 │   └── python@3.11
 │       ├── mpdecimal
-│       ├── openssl@1.1
+│       ├── openssl@3
 │       │   └── ca-certificates
 │       ├── sqlite
 │       │   └── readline
@@ -419,24 +450,24 @@ awscli
 ├── docutils
 │   └── python@3.11
 │       ├── mpdecimal
-│       ├── openssl@1.1
+│       ├── openssl@3
 │       │   └── ca-certificates
 │       ├── sqlite
 │       │   └── readline
 │       └── xz
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 ├── pycparser
 │   └── python@3.11
 │       ├── mpdecimal
-│       ├── openssl@1.1
+│       ├── openssl@3
 │       │   └── ca-certificates
 │       ├── sqlite
 │       │   └── readline
 │       └── xz
 ├── python@3.11
 │   ├── mpdecimal
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── sqlite
 │   │   └── readline
@@ -505,14 +536,14 @@ cffi
 ├── pycparser
 │   └── python@3.11
 │       ├── mpdecimal
-│       ├── openssl@1.1
+│       ├── openssl@3
 │       │   └── ca-certificates
 │       ├── sqlite
 │       │   └── readline
 │       └── xz
 └── python@3.11
     ├── mpdecimal
-    ├── openssl@1.1
+    ├── openssl@3
     │   └── ca-certificates
     ├── sqlite
     │   └── readline
@@ -530,15 +561,15 @@ curl
 │   └── gettext
 ├── libnghttp2
 ├── libssh2
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
 ├── openldap
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 ├── rtmpdump
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
 └── zstd
     ├── lz4
@@ -554,7 +585,7 @@ dart-lang/dart/dart
 docutils
 └── python@3.11
     ├── mpdecimal
-    ├── openssl@1.1
+    ├── openssl@3
     │   └── ca-certificates
     ├── sqlite
     │   └── readline
@@ -576,10 +607,11 @@ edencommon
 │   ├── glog
 │   │   └── gflags
 │   ├── libevent
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
+│   ├── libsodium
 │   ├── lz4
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── snappy
 │   ├── xz
@@ -587,8 +619,10 @@ edencommon
 │       ├── lz4
 │       └── xz
 ├── gflags
-└── glog
-    └── gflags
+├── glog
+│   └── gflags
+└── openssl@3
+    └── ca-certificates
 
 fb303
 ├── fbthrift
@@ -620,10 +654,11 @@ fb303
 │   │   │   ├── glog
 │   │   │   │   └── gflags
 │   │   │   ├── libevent
-│   │   │   │   └── openssl@1.1
+│   │   │   │   └── openssl@3
 │   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
 │   │   │   ├── lz4
-│   │   │   ├── openssl@1.1
+│   │   │   ├── openssl@3
 │   │   │   │   └── ca-certificates
 │   │   │   ├── snappy
 │   │   │   ├── xz
@@ -634,11 +669,11 @@ fb303
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
 │   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   └── zstd
@@ -658,10 +693,11 @@ fb303
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
+│   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   ├── xz
@@ -671,7 +707,7 @@ fb303
 │   ├── gflags
 │   ├── glog
 │   │   └── gflags
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── wangle
 │   │   ├── boost
@@ -703,10 +739,11 @@ fb303
 │   │   │   │   ├── glog
 │   │   │   │   │   └── gflags
 │   │   │   │   ├── libevent
-│   │   │   │   │   └── openssl@1.1
+│   │   │   │   │   └── openssl@3
 │   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
 │   │   │   │   ├── lz4
-│   │   │   │   ├── openssl@1.1
+│   │   │   │   ├── openssl@3
 │   │   │   │   │   └── ca-certificates
 │   │   │   │   ├── snappy
 │   │   │   │   ├── xz
@@ -717,11 +754,11 @@ fb303
 │   │   │   ├── glog
 │   │   │   │   └── gflags
 │   │   │   ├── libevent
-│   │   │   │   └── openssl@1.1
+│   │   │   │   └── openssl@3
 │   │   │   │       └── ca-certificates
 │   │   │   ├── libsodium
 │   │   │   ├── lz4
-│   │   │   ├── openssl@1.1
+│   │   │   ├── openssl@3
 │   │   │   │   └── ca-certificates
 │   │   │   ├── snappy
 │   │   │   └── zstd
@@ -741,10 +778,11 @@ fb303
 │   │   │   ├── glog
 │   │   │   │   └── gflags
 │   │   │   ├── libevent
-│   │   │   │   └── openssl@1.1
+│   │   │   │   └── openssl@3
 │   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
 │   │   │   ├── lz4
-│   │   │   ├── openssl@1.1
+│   │   │   ├── openssl@3
 │   │   │   │   └── ca-certificates
 │   │   │   ├── snappy
 │   │   │   ├── xz
@@ -755,11 +793,11 @@ fb303
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
 │   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   └── zstd
@@ -790,10 +828,11 @@ fb303
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
+│   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   ├── xz
@@ -804,11 +843,11 @@ fb303
 │   ├── glog
 │   │   └── gflags
 │   ├── libevent
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
 │   ├── libsodium
 │   ├── lz4
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── snappy
 │   └── zstd
@@ -828,10 +867,11 @@ fb303
 │   ├── glog
 │   │   └── gflags
 │   ├── libevent
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
+│   ├── libsodium
 │   ├── lz4
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── snappy
 │   ├── xz
@@ -841,7 +881,7 @@ fb303
 ├── gflags
 ├── glog
 │   └── gflags
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 └── wangle
     ├── boost
@@ -873,10 +913,11 @@ fb303
     │   │   ├── glog
     │   │   │   └── gflags
     │   │   ├── libevent
-    │   │   │   └── openssl@1.1
+    │   │   │   └── openssl@3
     │   │   │       └── ca-certificates
+    │   │   ├── libsodium
     │   │   ├── lz4
-    │   │   ├── openssl@1.1
+    │   │   ├── openssl@3
     │   │   │   └── ca-certificates
     │   │   ├── snappy
     │   │   ├── xz
@@ -887,11 +928,11 @@ fb303
     │   ├── glog
     │   │   └── gflags
     │   ├── libevent
-    │   │   └── openssl@1.1
+    │   │   └── openssl@3
     │   │       └── ca-certificates
     │   ├── libsodium
     │   ├── lz4
-    │   ├── openssl@1.1
+    │   ├── openssl@3
     │   │   └── ca-certificates
     │   ├── snappy
     │   └── zstd
@@ -911,10 +952,11 @@ fb303
     │   ├── glog
     │   │   └── gflags
     │   ├── libevent
-    │   │   └── openssl@1.1
+    │   │   └── openssl@3
     │   │       └── ca-certificates
+    │   ├── libsodium
     │   ├── lz4
-    │   ├── openssl@1.1
+    │   ├── openssl@3
     │   │   └── ca-certificates
     │   ├── snappy
     │   ├── xz
@@ -925,11 +967,11 @@ fb303
     ├── glog
     │   └── gflags
     ├── libevent
-    │   └── openssl@1.1
+    │   └── openssl@3
     │       └── ca-certificates
     ├── libsodium
     ├── lz4
-    ├── openssl@1.1
+    ├── openssl@3
     │   └── ca-certificates
     ├── snappy
     └── zstd
@@ -965,10 +1007,11 @@ fbthrift
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
+│   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   ├── xz
@@ -979,11 +1022,11 @@ fbthrift
 │   ├── glog
 │   │   └── gflags
 │   ├── libevent
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
 │   ├── libsodium
 │   ├── lz4
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── snappy
 │   └── zstd
@@ -1003,10 +1046,11 @@ fbthrift
 │   ├── glog
 │   │   └── gflags
 │   ├── libevent
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
+│   ├── libsodium
 │   ├── lz4
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── snappy
 │   ├── xz
@@ -1016,7 +1060,7 @@ fbthrift
 ├── gflags
 ├── glog
 │   └── gflags
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 ├── wangle
 │   ├── boost
@@ -1048,10 +1092,11 @@ fbthrift
 │   │   │   ├── glog
 │   │   │   │   └── gflags
 │   │   │   ├── libevent
-│   │   │   │   └── openssl@1.1
+│   │   │   │   └── openssl@3
 │   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
 │   │   │   ├── lz4
-│   │   │   ├── openssl@1.1
+│   │   │   ├── openssl@3
 │   │   │   │   └── ca-certificates
 │   │   │   ├── snappy
 │   │   │   ├── xz
@@ -1062,11 +1107,11 @@ fbthrift
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
 │   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   └── zstd
@@ -1086,10 +1131,11 @@ fbthrift
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
+│   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   ├── xz
@@ -1100,11 +1146,11 @@ fbthrift
 │   ├── glog
 │   │   └── gflags
 │   ├── libevent
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
 │   ├── libsodium
 │   ├── lz4
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── snappy
 │   └── zstd
@@ -1136,10 +1182,11 @@ fizz
 │   ├── glog
 │   │   └── gflags
 │   ├── libevent
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
+│   ├── libsodium
 │   ├── lz4
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── snappy
 │   ├── xz
@@ -1150,11 +1197,11 @@ fizz
 ├── glog
 │   └── gflags
 ├── libevent
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
 ├── libsodium
 ├── lz4
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 ├── snappy
 └── zstd
@@ -1178,10 +1225,11 @@ folly
 ├── glog
 │   └── gflags
 ├── libevent
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
+├── libsodium
 ├── lz4
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 ├── snappy
 ├── xz
@@ -1194,7 +1242,7 @@ fontconfig
     └── libpng
 
 freetds
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 └── unixodbc
     └── libtool
@@ -1342,10 +1390,10 @@ gnupg
 │   │   └── libtasn1
 │   └── unbound
 │       ├── libevent
-│       │   └── openssl@1.1
+│       │   └── openssl@3
 │       │       └── ca-certificates
 │       ├── libnghttp2
-│       └── openssl@1.1
+│       └── openssl@3
 │           └── ca-certificates
 ├── libassuan
 │   └── libgpg-error
@@ -1360,6 +1408,9 @@ gnupg
 │       └── gettext
 ├── libusb
 ├── npth
+├── openldap
+│   └── openssl@3
+│       └── ca-certificates
 ├── pinentry
 │   ├── libassuan
 │   │   └── libgpg-error
@@ -1384,14 +1435,14 @@ gnutls
 │   └── libtasn1
 └── unbound
     ├── libevent
-    │   └── openssl@1.1
+    │   └── openssl@3
     │       └── ca-certificates
     ├── libnghttp2
-    └── openssl@1.1
+    └── openssl@3
         └── ca-certificates
 
 gradle
-└── openjdk@17
+└── openjdk
     ├── giflib
     ├── harfbuzz
     │   ├── cairo
@@ -1831,7 +1882,7 @@ kotlin
                 └── xz
 
 krb5
-└── openssl@1.1
+└── openssl@3
     └── ca-certificates
 
 libassuan
@@ -1874,7 +1925,7 @@ libavif
 libde265
 
 libevent
-└── openssl@1.1
+└── openssl@3
     └── ca-certificates
 
 libgcrypt
@@ -1946,9 +1997,9 @@ libpng
 
 libpq
 ├── krb5
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
-└── openssl@1.1
+└── openssl@3
     └── ca-certificates
 
 libraw
@@ -1968,7 +2019,7 @@ libraw
 libsodium
 
 libssh2
-└── openssl@1.1
+└── openssl@3
     └── ca-certificates
 
 libtasn1
@@ -2048,7 +2099,7 @@ little-cms2
 llvm
 ├── python@3.11
 │   ├── mpdecimal
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── sqlite
 │   │   └── readline
@@ -2134,7 +2185,7 @@ maven
 mercurial
 └── python@3.11
     ├── mpdecimal
-    ├── openssl@1.1
+    ├── openssl@3
     │   └── ca-certificates
     ├── sqlite
     │   └── readline
@@ -2168,10 +2219,10 @@ openconnect
 │   │   └── libtasn1
 │   └── unbound
 │       ├── libevent
-│       │   └── openssl@1.1
+│       │   └── openssl@3
 │       │       └── ca-certificates
 │       ├── libnghttp2
-│       └── openssl@1.1
+│       └── openssl@3
 │           └── ca-certificates
 └── stoken
     └── nettle
@@ -2387,7 +2438,7 @@ openjpeg
             └── xz
 
 openldap
-└── openssl@1.1
+└── openssl@3
     └── ca-certificates
 
 openssl@1.1
@@ -2417,7 +2468,7 @@ php
 ├── apr
 ├── apr-util
 │   ├── apr
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
 ├── argon2
 ├── aspell
@@ -2430,21 +2481,21 @@ php
 │   │   └── gettext
 │   ├── libnghttp2
 │   ├── libssh2
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
 │   ├── openldap
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── rtmpdump
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
 │   └── zstd
 │       ├── lz4
 │       └── xz
 ├── freetds
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   └── unixodbc
 │       └── libtool
@@ -2509,13 +2560,13 @@ php
 ├── gmp
 ├── icu4c
 ├── krb5
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
 ├── libpq
 │   ├── krb5
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
 ├── libsodium
 ├── libzip
@@ -2524,9 +2575,9 @@ php
 │       └── xz
 ├── oniguruma
 ├── openldap
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 ├── pcre2
 ├── sqlite
@@ -2554,7 +2605,7 @@ pkg-config
 pycparser
 └── python@3.11
     ├── mpdecimal
-    ├── openssl@1.1
+    ├── openssl@3
     │   └── ca-certificates
     ├── sqlite
     │   └── readline
@@ -2570,7 +2621,7 @@ pyenv
 
 python@3.11
 ├── mpdecimal
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 ├── sqlite
 │   └── readline
@@ -2590,7 +2641,7 @@ rbenv
 readline
 
 rtmpdump
-└── openssl@1.1
+└── openssl@3
     └── ca-certificates
 
 ruby-build
@@ -2700,10 +2751,10 @@ tree
 
 unbound
 ├── libevent
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
 ├── libnghttp2
-└── openssl@1.1
+└── openssl@3
     └── ca-certificates
 
 unixodbc
@@ -2740,10 +2791,11 @@ wangle
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
+│   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   ├── xz
@@ -2754,11 +2806,11 @@ wangle
 │   ├── glog
 │   │   └── gflags
 │   ├── libevent
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
 │   ├── libsodium
 │   ├── lz4
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── snappy
 │   └── zstd
@@ -2778,10 +2830,11 @@ wangle
 │   ├── glog
 │   │   └── gflags
 │   ├── libevent
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
+│   ├── libsodium
 │   ├── lz4
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── snappy
 │   ├── xz
@@ -2792,11 +2845,11 @@ wangle
 ├── glog
 │   └── gflags
 ├── libevent
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
 ├── libsodium
 ├── lz4
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 ├── snappy
 └── zstd
@@ -2824,10 +2877,11 @@ watchman
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
+│   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   ├── xz
@@ -2835,8 +2889,10 @@ watchman
 │   │       ├── lz4
 │   │       └── xz
 │   ├── gflags
-│   └── glog
-│       └── gflags
+│   ├── glog
+│   │   └── gflags
+│   └── openssl@3
+│       └── ca-certificates
 ├── fb303
 │   ├── fbthrift
 │   │   ├── boost
@@ -2867,10 +2923,11 @@ watchman
 │   │   │   │   ├── glog
 │   │   │   │   │   └── gflags
 │   │   │   │   ├── libevent
-│   │   │   │   │   └── openssl@1.1
+│   │   │   │   │   └── openssl@3
 │   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
 │   │   │   │   ├── lz4
-│   │   │   │   ├── openssl@1.1
+│   │   │   │   ├── openssl@3
 │   │   │   │   │   └── ca-certificates
 │   │   │   │   ├── snappy
 │   │   │   │   ├── xz
@@ -2881,11 +2938,11 @@ watchman
 │   │   │   ├── glog
 │   │   │   │   └── gflags
 │   │   │   ├── libevent
-│   │   │   │   └── openssl@1.1
+│   │   │   │   └── openssl@3
 │   │   │   │       └── ca-certificates
 │   │   │   ├── libsodium
 │   │   │   ├── lz4
-│   │   │   ├── openssl@1.1
+│   │   │   ├── openssl@3
 │   │   │   │   └── ca-certificates
 │   │   │   ├── snappy
 │   │   │   └── zstd
@@ -2905,10 +2962,11 @@ watchman
 │   │   │   ├── glog
 │   │   │   │   └── gflags
 │   │   │   ├── libevent
-│   │   │   │   └── openssl@1.1
+│   │   │   │   └── openssl@3
 │   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
 │   │   │   ├── lz4
-│   │   │   ├── openssl@1.1
+│   │   │   ├── openssl@3
 │   │   │   │   └── ca-certificates
 │   │   │   ├── snappy
 │   │   │   ├── xz
@@ -2918,7 +2976,7 @@ watchman
 │   │   ├── gflags
 │   │   ├── glog
 │   │   │   └── gflags
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── wangle
 │   │   │   ├── boost
@@ -2950,10 +3008,11 @@ watchman
 │   │   │   │   │   ├── glog
 │   │   │   │   │   │   └── gflags
 │   │   │   │   │   ├── libevent
-│   │   │   │   │   │   └── openssl@1.1
+│   │   │   │   │   │   └── openssl@3
 │   │   │   │   │   │       └── ca-certificates
+│   │   │   │   │   ├── libsodium
 │   │   │   │   │   ├── lz4
-│   │   │   │   │   ├── openssl@1.1
+│   │   │   │   │   ├── openssl@3
 │   │   │   │   │   │   └── ca-certificates
 │   │   │   │   │   ├── snappy
 │   │   │   │   │   ├── xz
@@ -2964,11 +3023,11 @@ watchman
 │   │   │   │   ├── glog
 │   │   │   │   │   └── gflags
 │   │   │   │   ├── libevent
-│   │   │   │   │   └── openssl@1.1
+│   │   │   │   │   └── openssl@3
 │   │   │   │   │       └── ca-certificates
 │   │   │   │   ├── libsodium
 │   │   │   │   ├── lz4
-│   │   │   │   ├── openssl@1.1
+│   │   │   │   ├── openssl@3
 │   │   │   │   │   └── ca-certificates
 │   │   │   │   ├── snappy
 │   │   │   │   └── zstd
@@ -2988,10 +3047,11 @@ watchman
 │   │   │   │   ├── glog
 │   │   │   │   │   └── gflags
 │   │   │   │   ├── libevent
-│   │   │   │   │   └── openssl@1.1
+│   │   │   │   │   └── openssl@3
 │   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
 │   │   │   │   ├── lz4
-│   │   │   │   ├── openssl@1.1
+│   │   │   │   ├── openssl@3
 │   │   │   │   │   └── ca-certificates
 │   │   │   │   ├── snappy
 │   │   │   │   ├── xz
@@ -3002,11 +3062,11 @@ watchman
 │   │   │   ├── glog
 │   │   │   │   └── gflags
 │   │   │   ├── libevent
-│   │   │   │   └── openssl@1.1
+│   │   │   │   └── openssl@3
 │   │   │   │       └── ca-certificates
 │   │   │   ├── libsodium
 │   │   │   ├── lz4
-│   │   │   ├── openssl@1.1
+│   │   │   ├── openssl@3
 │   │   │   │   └── ca-certificates
 │   │   │   ├── snappy
 │   │   │   └── zstd
@@ -3037,10 +3097,11 @@ watchman
 │   │   │   ├── glog
 │   │   │   │   └── gflags
 │   │   │   ├── libevent
-│   │   │   │   └── openssl@1.1
+│   │   │   │   └── openssl@3
 │   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
 │   │   │   ├── lz4
-│   │   │   ├── openssl@1.1
+│   │   │   ├── openssl@3
 │   │   │   │   └── ca-certificates
 │   │   │   ├── snappy
 │   │   │   ├── xz
@@ -3051,11 +3112,11 @@ watchman
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
 │   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   └── zstd
@@ -3075,10 +3136,11 @@ watchman
 │   │   ├── glog
 │   │   │   └── gflags
 │   │   ├── libevent
-│   │   │   └── openssl@1.1
+│   │   │   └── openssl@3
 │   │   │       └── ca-certificates
+│   │   ├── libsodium
 │   │   ├── lz4
-│   │   ├── openssl@1.1
+│   │   ├── openssl@3
 │   │   │   └── ca-certificates
 │   │   ├── snappy
 │   │   ├── xz
@@ -3088,7 +3150,7 @@ watchman
 │   ├── gflags
 │   ├── glog
 │   │   └── gflags
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   └── wangle
 │       ├── boost
@@ -3120,10 +3182,11 @@ watchman
 │       │   │   ├── glog
 │       │   │   │   └── gflags
 │       │   │   ├── libevent
-│       │   │   │   └── openssl@1.1
+│       │   │   │   └── openssl@3
 │       │   │   │       └── ca-certificates
+│       │   │   ├── libsodium
 │       │   │   ├── lz4
-│       │   │   ├── openssl@1.1
+│       │   │   ├── openssl@3
 │       │   │   │   └── ca-certificates
 │       │   │   ├── snappy
 │       │   │   ├── xz
@@ -3134,11 +3197,11 @@ watchman
 │       │   ├── glog
 │       │   │   └── gflags
 │       │   ├── libevent
-│       │   │   └── openssl@1.1
+│       │   │   └── openssl@3
 │       │   │       └── ca-certificates
 │       │   ├── libsodium
 │       │   ├── lz4
-│       │   ├── openssl@1.1
+│       │   ├── openssl@3
 │       │   │   └── ca-certificates
 │       │   ├── snappy
 │       │   └── zstd
@@ -3158,10 +3221,11 @@ watchman
 │       │   ├── glog
 │       │   │   └── gflags
 │       │   ├── libevent
-│       │   │   └── openssl@1.1
+│       │   │   └── openssl@3
 │       │   │       └── ca-certificates
+│       │   ├── libsodium
 │       │   ├── lz4
-│       │   ├── openssl@1.1
+│       │   ├── openssl@3
 │       │   │   └── ca-certificates
 │       │   ├── snappy
 │       │   ├── xz
@@ -3172,11 +3236,11 @@ watchman
 │       ├── glog
 │       │   └── gflags
 │       ├── libevent
-│       │   └── openssl@1.1
+│       │   └── openssl@3
 │       │       └── ca-certificates
 │       ├── libsodium
 │       ├── lz4
-│       ├── openssl@1.1
+│       ├── openssl@3
 │       │   └── ca-certificates
 │       ├── snappy
 │       └── zstd
@@ -3196,10 +3260,11 @@ watchman
 │   ├── glog
 │   │   └── gflags
 │   ├── libevent
-│   │   └── openssl@1.1
+│   │   └── openssl@3
 │   │       └── ca-certificates
+│   ├── libsodium
 │   ├── lz4
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── snappy
 │   ├── xz
@@ -3210,14 +3275,14 @@ watchman
 ├── glog
 │   └── gflags
 ├── libevent
-│   └── openssl@1.1
+│   └── openssl@3
 │       └── ca-certificates
-├── openssl@1.1
+├── openssl@3
 │   └── ca-certificates
 ├── pcre2
 └── python@3.11
     ├── mpdecimal
-    ├── openssl@1.1
+    ├── openssl@3
     │   └── ca-certificates
     ├── sqlite
     │   └── readline
@@ -3256,7 +3321,7 @@ xz
 yamllint
 ├── python@3.11
 │   ├── mpdecimal
-│   ├── openssl@1.1
+│   ├── openssl@3
 │   │   └── ca-certificates
 │   ├── sqlite
 │   │   └── readline
@@ -3295,7 +3360,7 @@ zstd
 -------------------------------
 * rbenv: 1.2.0
 * Rubygems: 3.4.10
-* Bundler: Bundler version 2.4.16
+* Bundler: Bundler version 2.4.17
 * CocoaPods: 1.12.1
 * xcpretty: 0.3.0
 ========================================
@@ -3318,7 +3383,7 @@ babosa (1.0.4)
 base64 (default: 0.1.1)
 benchmark (default: 0.2.1)
 bigdecimal (default: 3.1.3)
-bundler (2.4.16, 2.4.15, 2.4.14, default: 2.4.10)
+bundler (2.4.17, 2.4.16, 2.4.15, 2.4.14, default: 2.4.10)
 CFPropertyList (3.0.6)
 cgi (default: 0.3.6)
 claide (1.1.0)
@@ -3368,7 +3433,7 @@ faraday-rack (1.0.0)
 faraday-retry (1.0.3)
 faraday_middleware (1.2.0)
 fastimage (2.2.7)
-fastlane (2.213.0)
+fastlane (2.214.0, 2.213.0)
 fcntl (default: 1.0.2)
 ffi (1.15.5)
 fiddle (default: 1.1.1)
@@ -3802,11 +3867,11 @@ Software:
       Kernel Version: Darwin 22.5.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-edge-g2-m1-max.5core-b3cf87d7-5918-4ab4-a306-803ee294ed01
+      Computer Name: vm-osx-ventura-edge-g2-m1-max.5core-075cbb0d-dae5-4e82-9996-f6c9a27cc216
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 50 seconds
+      Time since boot: 2 minutes, 52 seconds
 
 
 ========================================
@@ -3818,7 +3883,7 @@ Rosetta translation cache size
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        295Gi        168Gi
+/dev/disk3s1s1        295Gi        169Gi
 ========================================
 
 --- Android
