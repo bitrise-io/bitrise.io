@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-07-18
+* BITRISE_OSX_STACK_REV_ID: v2023-07-26
 ========================================
 
 
@@ -105,14 +105,14 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.1 © 1996 - 2023 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.0.29
-Homebrew/homebrew-core (git revision 85066554f6a; last commit 2023-07-17)
-Homebrew/homebrew-cask (git revision 774151d057; last commit 2023-07-17)
+* brew: Homebrew 4.1.1
+Homebrew/homebrew-core (git revision 9e53756244a; last commit 2023-07-25)
+Homebrew/homebrew-cask (git revision 66ff44db5a; last commit 2023-07-25)
 * gtimeout: timeout (GNU coreutils) 9.3
-* watchman: 2023.07.10.00
-* flow: Flow, a static type checker for JavaScript, version 0.212.0
+* watchman: 2023.07.24.00
+* flow: Flow, a static type checker for JavaScript, version 0.213.1
 * carthage: 0.39.0
-* imagemagick (convert): Version: ImageMagick 7.1.1-13 Q16-HDRI aarch64 21276 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.1-14 Q16-HDRI aarch64 21286 https://imagemagick.org
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 12.3.0
 * applesimutils version 0.9.9
@@ -122,8 +122,8 @@ Homebrew/homebrew-cask (git revision 774151d057; last commit 2023-07-17)
 * Screen 4.09.00
 * applesimutils 0.9.9
 * OpenConnect version v9.12
-* aws-cli: aws-cli/2.13.1 Python/3.11.4 Darwin/22.5.0 source/arm64 prompt/off
-* cmake: 3.26.4
+* aws-cli: aws-cli/2.13.3 Python/3.11.4 Darwin/22.5.0 source/arm64 prompt/off
+* cmake: 3.27.0
 * danger-swift: 3.16.0
 [0;0m
 * OpenVPN 2.6.5 aarch64-apple-darwin22.4.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD]
@@ -146,7 +146,7 @@ argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.13.1
+awscli 2.13.3
 bazelisk 1.17.0
 boost 1.82.0_1
 brotli 1.0.9
@@ -154,7 +154,7 @@ ca-certificates 2023-05-30
 cairo 1.16.0_5
 carthage 0.39.0
 cffi 1.15.1
-cmake 3.26.4
+cmake 3.27.0
 coreutils 9.3
 curl 8.1.2_1
 danger-js 64
@@ -162,13 +162,13 @@ danger-swift 3.16.0
 dart 2.18.6
 docutils 0.20.1
 double-conversion 3.3.0
-edencommon 2023.07.10.00_1
-fb303 2023.07.10.00_1
-fbthrift 2023.07.10.00_1
-fizz 2023.07.10.00_1
-flow 0.212.0
+edencommon 2023.07.24.00
+fb303 2023.07.24.00
+fbthrift 2023.07.24.00
+fizz 2023.07.24.00
+flow 0.213.1
 fmt 10.0.0
-folly 2023.07.10.00_1
+folly 2023.07.24.00
 fontconfig 2.14.2
 freetds 1.3.18_1
 freetype 2.13.1
@@ -176,7 +176,7 @@ fvm 2.4.1
 gd 2.3.3_5
 gettext 0.21.1
 gflags 2.2.2
-gh 2.32.0
+gh 2.32.1
 ghostscript 10.01.2
 giflib 5.2.1
 git 2.41.0_2
@@ -190,15 +190,15 @@ gradle 8.2.1
 graphite2 1.3.14
 groovy 4.0.13
 harfbuzz 8.0.1
-highway 1.0.4
+highway 1.0.5
 hub 2.14.2
 icu4c 73.2
-imagemagick 7.1.1-13
+imagemagick 7.1.1-14
 imath 3.1.9
 jasper 4.0.0
 jbig2dec 0.19
 jenv 0.5.5_2
-jpeg-turbo 2.1.5.1
+jpeg-turbo 3.0.0
 jpeg-xl 0.8.2
 jq 1.6
 kotlin 1.9.0
@@ -251,8 +251,8 @@ oniguruma 6.9.8
 openconnect 9.12
 openexr 3.1.9
 openjdk 20.0.1
-openjdk@11 11.0.19
-openjdk@17 17.0.7
+openjdk@11 11.0.20
+openjdk@17 17.0.8
 openjpeg 2.5.0_1
 openldap 2.6.5
 openssl@1.1 1.1.1u
@@ -288,8 +288,8 @@ transcrypt 2.2.3
 tree 2.1.1
 unbound 1.17.1_1
 unixodbc 2.3.11
-wangle 2023.07.10.00_1
-watchman 2023.07.10.00_1
+wangle 2023.07.24.00
+watchman 2023.07.24.00
 webp 1.3.1
 wget 1.21.4
 x265 3.5
@@ -3611,7 +3611,7 @@ Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 Target: arm64-apple-darwin22.5.0
 
  * xcrun swift --version
-Apple Swift version 5.9 (swiftlang-5.9.0.120.7 clang-1500.0.34.3)
+Apple Swift version 5.9 (swiftlang-5.9.0.124.4 clang-1500.0.38.1)
 Target: arm64-apple-macosx13.0
 
  * swift-format --version
@@ -3627,10 +3627,10 @@ Target: arm64-apple-macosx13.0
 
 * Xcode Version:
 Xcode 15.0
-Build version 15A5195m
+Build version 15A5209g
 
 * /usr/bin/swift --version
-Apple Swift version 5.9 (swiftlang-5.9.0.120.7 clang-1500.0.34.3)
+Apple Swift version 5.9 (swiftlang-5.9.0.124.4 clang-1500.0.38.1)
 Target: arm64-apple-macosx13.0
 
 * Installed SDKs:
@@ -3753,11 +3753,11 @@ Apple Watch Ultra (49mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Ultr
 Apple Vision Pro (com.apple.CoreSimulator.SimDeviceType.Apple-Vision-Pro) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/XROS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/Apple Vision Pro.simdevicetype]
 == Runtimes ==
 iOS 16.4 (16.4 - 20E247) - com.apple.CoreSimulator.SimRuntime.iOS-16-4 [/Library/Developer/CoreSimulator/Volumes/iOS_20E247/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 16.4.simruntime]
-iOS 17.0 (17.0 - 21A5277g) - com.apple.CoreSimulator.SimRuntime.iOS-17-0 [/Library/Developer/CoreSimulator/Volumes/iOS_21A5277g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime]
+iOS 17.0 (17.0 - 21A5291g) - com.apple.CoreSimulator.SimRuntime.iOS-17-0 [/Library/Developer/CoreSimulator/Volumes/iOS_21A5291g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime]
 tvOS 16.4 (16.4 - 20L494) - com.apple.CoreSimulator.SimRuntime.tvOS-16-4 [/Library/Developer/CoreSimulator/Volumes/tvOS_20L494/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 16.4.simruntime]
-tvOS 17.0 (17.0 - 21J5303f) - com.apple.CoreSimulator.SimRuntime.tvOS-17-0 [/Library/Developer/CoreSimulator/Volumes/tvOS_21J5303f/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 17.0.simruntime]
+tvOS 17.0 (17.0 - 21J5318f) - com.apple.CoreSimulator.SimRuntime.tvOS-17-0 [/Library/Developer/CoreSimulator/Volumes/tvOS_21J5318f/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 17.0.simruntime]
 watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4 [/Library/Developer/CoreSimulator/Volumes/watchOS_20T253/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS 9.4.simruntime]
-watchOS 10.0 (10.0 - 21R5305e) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0 [/Library/Developer/CoreSimulator/Volumes/watchOS_21R5305e/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS 10.0.simruntime]
+watchOS 10.0 (10.0 - 21R5320g) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0 [/Library/Developer/CoreSimulator/Volumes/watchOS_21R5320g/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS 10.0.simruntime]
 == Devices ==
 -- iOS 16.4 (20E247) [/Library/Developer/CoreSimulator/Volumes/iOS_20E247/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 16.4.simruntime] --
     Bitrise iOS default (EC831ACF-96E8-497D-99A1-E2C1CD8E282B) (Shutdown) 
@@ -3773,7 +3773,7 @@ watchOS 10.0 (10.0 - 21R5305e) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0
     iPad mini (6th generation) (2CFF2825-7FE4-47E7-BCE0-580EB3B63272) (Shutdown) 
     iPad Pro (11-inch) (4th generation) (9ECF56FA-2D26-42E9-856C-0D9066BAF2B6) (Shutdown) 
     iPad Pro (12.9-inch) (6th generation) (8448859D-9031-4BBC-8084-49341EDF2AA4) (Shutdown) 
--- iOS 17.0 (21A5277g) [/Library/Developer/CoreSimulator/Volumes/iOS_21A5277g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime] --
+-- iOS 17.0 (21A5291g) [/Library/Developer/CoreSimulator/Volumes/iOS_21A5291g/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime] --
     Bitrise iOS default (216F1ECE-9545-4CDD-A706-199C432EA348) (Shutdown) 
     iPhone 11 (B1B441E7-50B6-4751-8EF1-136BF8161F84) (Shutdown) 
     iPhone SE (3rd generation) (175306A2-B0C8-4D15-84FC-75137F2A1BAA) (Shutdown) 
@@ -3790,7 +3790,7 @@ watchOS 10.0 (10.0 - 21R5305e) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0
     Apple TV (1A3E26CB-429F-4AAD-8CC5-EACF84371BA0) (Shutdown) 
     Apple TV 4K (3rd generation) (C933B779-5338-472F-BF2F-CB3B3A0DD6E4) (Shutdown) 
     Apple TV 4K (3rd generation) (at 1080p) (6A8D9600-16A5-4C39-919D-60310F130F9E) (Shutdown) 
--- tvOS 17.0 (21J5303f) [/Library/Developer/CoreSimulator/Volumes/tvOS_21J5303f/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 17.0.simruntime] --
+-- tvOS 17.0 (21J5318f) [/Library/Developer/CoreSimulator/Volumes/tvOS_21J5318f/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 17.0.simruntime] --
     Apple TV (39603652-1D36-4A1B-815B-12D8FF86A729) (Shutdown) 
     Apple TV 4K (3rd generation) (66196AE2-8A52-44DD-B85E-311944D0B408) (Shutdown) 
     Apple TV 4K (3rd generation) (at 1080p) (A17BC062-4173-4DA0-9F32-910F0B7EDF60) (Shutdown) 
@@ -3806,7 +3806,7 @@ watchOS 10.0 (10.0 - 21R5305e) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0
     Apple Watch Series 8 (41mm) (4AA6FBFD-333B-4F1E-AC3F-824EF57EAD42) (Shutdown) 
     Apple Watch Series 8 (45mm) (06156580-DAA5-48F3-BA0C-BB0ABA0B5A3B) (Shutdown) 
     Apple Watch Ultra (49mm) (EA0B06A6-B1E3-429A-BD03-C25C98E7319A) (Shutdown) 
--- watchOS 10.0 (21R5305e) [/Library/Developer/CoreSimulator/Volumes/watchOS_21R5305e/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS 10.0.simruntime] --
+-- watchOS 10.0 (21R5320g) [/Library/Developer/CoreSimulator/Volumes/watchOS_21R5320g/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS 10.0.simruntime] --
     Apple Watch Series 5 (40mm) (1B0B7430-7BD6-460C-BAC3-4E09A3DE907D) (Shutdown) 
     Apple Watch Series 5 (44mm) (F0C90F39-8ADC-41C5-91C4-E05620553C74) (Shutdown) 
     Apple Watch Series 6 (40mm) (02A00EFE-C604-43F3-8567-909A2D34B5CD) (Shutdown) 
@@ -3863,23 +3863,23 @@ Software:
       Kernel Version: Darwin 22.5.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-edge-g2-m1-max.5core-6d38bf2c-7fc4-4d47-997c-a9a13fed1a71
+      Computer Name: vm-osx-ventura-edge-g2-m1-max.5core-eea47812-49fc-4a72-9735-2ce2f3118fd5
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 45 seconds
+      Time since boot: 3 minutes, 7 seconds
 
 
 ========================================
 
 Rosetta translation cache size
-476M	/var/db/oah
+485M	/var/db/oah
 
 
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        295Gi        169Gi
+/dev/disk3s1s1        295Gi        149Gi
 ========================================
 
 --- Android
