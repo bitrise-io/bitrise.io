@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-07-26
+* BITRISE_OSX_STACK_REV_ID: v2023-08-02
 ========================================
 
 
@@ -20,7 +20,6 @@
   3.0.0
   3.0.3
   3.0
-  3.1.0
   3.1.3
   3.1.4
   3.1
@@ -95,7 +94,7 @@ junitreport 2.0.2
 
 
 * git: git version 2.41.0
-* git lfs: git-lfs/3.3.0 (GitHub; darwin arm64; go 1.19.3)
+* git lfs: git-lfs/3.4.0 (GitHub; darwin arm64; go 1.20.6)
 * mercurial/hg: Mercurial Distributed SCM (version 6.5)
 * curl: curl 8.1.2 (aarch64-apple-darwin22.4.0) libcurl/8.1.2 (SecureTransport) OpenSSL/3.1.1 zlib/1.2.11 brotli/1.0.9 zstd/1.5.5 libidn2/2.3.4 libssh2/1.11.0 nghttp2/1.55.1 librtmp/2.3
 * wget: GNU Wget 1.21.4 built on darwin22.4.0.
@@ -105,25 +104,25 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.1 © 1996 - 2023 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.1.1
-Homebrew/homebrew-core (git revision 9e53756244a; last commit 2023-07-25)
-Homebrew/homebrew-cask (git revision 66ff44db5a; last commit 2023-07-25)
+* brew: Homebrew 4.1.3
+Homebrew/homebrew-core (git revision 9afe1e23e31; last commit 2023-07-31)
+Homebrew/homebrew-cask (git revision 9e944ae828; last commit 2023-07-31)
 * gtimeout: timeout (GNU coreutils) 9.3
 * watchman: 2023.07.24.00
 * flow: Flow, a static type checker for JavaScript, version 0.213.1
 * carthage: 0.39.0
-* imagemagick (convert): Version: ImageMagick 7.1.1-14 Q16-HDRI aarch64 21286 https://imagemagick.org
+* imagemagick (convert): Version: ImageMagick 7.1.1-15 Q16-HDRI aarch64 21298 https://imagemagick.org
 * screen: Screen version 4.09.00 (GNU) 30-Jan-22
 * firebase: 12.3.0
 * applesimutils version 0.9.9
 * jq: 1.6
-* xcbeautify: 0.21.0
+* xcbeautify: 1.0.0
 * XCLogParser 0.2.36
 * Screen 4.09.00
 * applesimutils 0.9.9
 * OpenConnect version v9.12
-* aws-cli: aws-cli/2.13.3 Python/3.11.4 Darwin/22.5.0 source/arm64 prompt/off
-* cmake: 3.27.0
+* aws-cli: aws-cli/2.13.5 Python/3.11.4 Darwin/22.5.0 source/arm64 prompt/off
+* cmake: 3.27.1
 * danger-swift: 3.16.0
 [0;0m
 * OpenVPN 2.6.5 aarch64-apple-darwin22.4.0 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [MH/RECVDA] [AEAD]
@@ -146,7 +145,7 @@ argon2 20190702_1
 aria2 1.36.0_1
 aspell 0.60.8
 autoconf 2.71
-awscli 2.13.3
+awscli 2.13.5
 bazelisk 1.17.0
 boost 1.82.0_1
 brotli 1.0.9
@@ -154,7 +153,7 @@ ca-certificates 2023-05-30
 cairo 1.16.0_5
 carthage 0.39.0
 cffi 1.15.1
-cmake 3.27.0
+cmake 3.27.1
 coreutils 9.3
 curl 8.1.2_1
 danger-js 64
@@ -180,7 +179,7 @@ gh 2.32.1
 ghostscript 10.01.2
 giflib 5.2.1
 git 2.41.0_2
-git-lfs 3.3.0
+git-lfs 3.4.0
 glib 2.76.4
 glog 0.6.0
 gmp 6.2.1_1
@@ -189,11 +188,11 @@ gnutls 3.8.0
 gradle 8.2.1
 graphite2 1.3.14
 groovy 4.0.13
-harfbuzz 8.0.1
+harfbuzz 8.1.0
 highway 1.0.5
 hub 2.14.2
 icu4c 73.2
-imagemagick 7.1.1-14
+imagemagick 7.1.1-15
 imath 3.1.9
 jasper 4.0.0
 jbig2dec 0.19
@@ -259,7 +258,7 @@ openssl@1.1 1.1.1u
 openssl@3 3.1.1_1
 openvpn 2.6.5
 p11-kit 0.25.0
-parallel 20230622
+parallel 20230722
 pcre2 10.42
 php 8.2.8
 pinentry 1.2.1
@@ -278,7 +277,7 @@ screen 4.9.0_1
 shared-mime-info 2.2
 six 1.16.0_3
 snappy 1.1.10
-sonar-scanner 4.8.0.2856
+sonar-scanner 5.0.0.2966
 sqlite 3.42.0
 stoken 0.92_1
 swift-format 508.0.1
@@ -293,7 +292,7 @@ watchman 2023.07.24.00
 webp 1.3.1
 wget 1.21.4
 x265 3.5
-xcbeautify 0.21.0
+xcbeautify 1.0.0
 xclogparser 0.2.36
 xcodes 1.3.0
 xorgproto 2023.2
@@ -2663,7 +2662,7 @@ six
 snappy
 
 sonar-scanner
-└── openjdk@11
+└── openjdk
     ├── giflib
     ├── harfbuzz
     │   ├── cairo
@@ -3353,7 +3352,6 @@ zstd
   2.7.6
   3.0.0
   3.0.3
-  3.1.0
   3.1.3
   3.1.4
 * 3.2.2 (set by /Users/vagrant/.rbenv/version)
@@ -3863,11 +3861,11 @@ Software:
       Kernel Version: Darwin 22.5.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-edge-g2-m1-max.5core-eea47812-49fc-4a72-9735-2ce2f3118fd5
+      Computer Name: vm-osx-ventura-edge-g2-m1-max.5core-ad1c70f6-3591-4823-9c00-671906961ad8
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 3 minutes, 7 seconds
+      Time since boot: 2 minutes, 58 seconds
 
 
 ========================================
@@ -3879,7 +3877,7 @@ Rosetta translation cache size
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk3s1s1        295Gi        149Gi
+/dev/disk3s1s1        295Gi        166Gi
 ========================================
 
 --- Android
