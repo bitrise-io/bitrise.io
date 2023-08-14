@@ -117,7 +117,7 @@ gsutil 5.25
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-....done.
+..done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -327,6 +327,7 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 ├── ndk-which
 ├── NOTICE
 ├── NOTICE.toolchain
+├── package.xml
 ├── prebuilt
 │   ├── android-arm
 │   ├── android-arm64
@@ -377,7 +378,7 @@ $ tree -L 2 /opt/android-sdk-linux/ndk-bundle
 └── wrap.sh
     └── asan.sh
 
-32 directories, 47 files
+32 directories, 48 files
 
 --- Bitrise CLI tool versions
 * bitrise: 2.3.1
@@ -588,7 +589,7 @@ Python:
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1b-82589d48-acba-494c-9c8d-90ad6ad53bdf 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux prd-20-04-use4b-6c3917bf-affa-4d8e-99e8-a0add4145454 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -650,7 +651,7 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1b-82589d48-acba-494c-9c8d-90ad6ad53bdf
+ Name: prd-20-04-use4b-6c3917bf-affa-4d8e-99e8-a0add4145454
  ID: f3b5917b-98f1-4140-863a-e9f7f24da23b
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
@@ -682,7 +683,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       194G   60G  135G  31% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       771Mi        59Gi       1.0Mi       2.2Gi        61Gi
+Mem:           62Gi       763Mi        59Gi       1.0Mi       2.3Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
