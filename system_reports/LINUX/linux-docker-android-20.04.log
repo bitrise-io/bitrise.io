@@ -17,7 +17,7 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 
 
 === Pre-installed tool versions ========
-* git: git version 2.41.0
+* git: git version 2.42.0
 * mercurial/hg: Mercurial Distributed SCM (version 5.3.1)
 * curl: curl 7.68.0 (x86_64-pc-linux-gnu) libcurl/7.68.0 OpenSSL/1.1.1f zlib/1.2.11 brotli/1.0.7 libidn2/2.2.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.3/openssl/zlib nghttp2/1.40.0 librtmp/2.3
 * wget: GNU Wget 1.20.3 built on linux-gnu.
@@ -29,13 +29,13 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 * unzip: UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
 * tar: tar (GNU tar) 1.30
 * tree: tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro 
-* gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+* gcc: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
 * clang: clang version 10.0.0-4ubuntu1 
 * imagemagick (convert): Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
-* aws-cli: aws-cli/1.29.24 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.31.24
+* aws-cli: aws-cli/1.29.35 Python/3.8.10 Linux/5.13.0-1015-gcp botocore/1.31.35
 * Transcrypt: 3.9.1
 * Ruby: ruby 3.2.1 (2023-02-08 revision 31819e82c8) [x86_64-linux]
-  * bundler: Bundler version 2.4.18
+  * bundler: Bundler version 2.4.19
   * rubygems: 3.4.6
 * Go: go version go1.18.5 linux/amd64
 * Node.js: v16.20.2
@@ -95,19 +95,19 @@ javac 1.8.0_382
 
 
 === Google Cloud SDK components ========
-Google Cloud SDK 442.0.0
-alpha 2023.08.04
-beta 2023.08.04
-bq 2.0.96
+Google Cloud SDK 444.0.0
+alpha 2023.08.22
+beta 2023.08.22
+bq 2.0.97
 bundled-python3-unix 3.9.16
-core 2023.08.04
+core 2023.08.22
 gcloud-crc32c 1.0.0
 gsutil 5.25
 ========================================
 
 
 === Firebase Tools components ==========
-12.4.7
+12.5.2
 ========================================
 
 === OpenUPM CLI ==========
@@ -117,7 +117,7 @@ gsutil 5.25
 === Google Cloud Network Check =========
 Network diagnostic detects and fixes local network connection issues.
 Checking network connection...
-....done.
+.....done.
 Reachability Check passed.
 Network diagnostic passed (1/1 checks passed).
 
@@ -251,12 +251,10 @@ android-30
 android-31
 android-32
 android-33
+android-34
 
 * ./system-images:
 /opt/android-sdk-linux/system-images
-├── android-26
-│   └── google_apis
-│       └── x86
 ├── android-28
 │   └── google_apis
 │       └── x86_64
@@ -274,7 +272,10 @@ android-33
 ├── android-32
 │   └── google_apis
 │       └── x86_64
-└── android-33
+├── android-33
+│   └── google_apis
+│       └── x86_64
+└── android-34
     └── google_apis
         └── x86_64
 
@@ -396,21 +397,21 @@ addressable (2.8.5)
 artifactory (3.0.15)
 atomos (0.1.3)
 aws-eventstream (1.2.0)
-aws-partitions (1.802.0)
-aws-sdk-core (3.180.3)
+aws-partitions (1.812.0)
+aws-sdk-core (3.181.0)
 aws-sdk-kms (1.71.0)
-aws-sdk-s3 (1.132.1)
+aws-sdk-s3 (1.134.0)
 aws-sigv4 (1.6.0)
 babosa (2.0.0, 1.0.4)
 base64 (default: 0.1.1)
 benchmark (default: 0.2.1)
 bigdecimal (3.1.4, default: 3.1.3)
-bundler (2.4.18, default: 2.4.6)
+bundler (2.4.19, default: 2.4.6)
 CFPropertyList (3.0.6)
 cgi (default: 0.3.6)
 claide (1.1.0)
 colored (1.2)
-colored2 (3.1.2)
+colored2 (4.0.0, 3.1.2)
 commander (4.6.0)
 connection_pool (2.4.1)
 csv (3.2.7, default: 3.2.6)
@@ -426,10 +427,10 @@ dotenv (2.8.1)
 drb (default: 2.1.1)
 emoji_regex (15.0.0, 3.2.3)
 english (default: 0.7.2)
-erb (default: 4.0.2)
+erb (4.0.3, default: 4.0.2)
 error_highlight (default: 0.5.1)
 etc (default: 1.4.2)
-excon (0.100.0)
+excon (0.102.0)
 faraday (2.7.10, 1.10.3)
 faraday-cookie_jar (0.0.7)
 faraday-em_http (1.0.0)
@@ -452,7 +453,7 @@ find (default: 0.1.1)
 forwardable (default: 1.3.3)
 getoptlong (default: 0.2.0)
 gh_inspector (1.1.3)
-google-apis-androidpublisher_v3 (0.47.0)
+google-apis-androidpublisher_v3 (0.49.0)
 google-apis-core (0.11.1)
 google-apis-iamcredentials_v1 (0.17.0)
 google-apis-playcustomapp_v1 (0.13.0)
@@ -510,11 +511,11 @@ psych (5.1.0, default: 5.0.1)
 public_suffix (5.0.3)
 racc (1.7.1, default: 1.6.2)
 rake (13.0.6)
-rbs (3.1.3, 2.8.2)
+rbs (3.2.0, 2.8.2)
 rdoc (default: 6.5.0)
 readline (default: 0.0.3)
 readline-ext (default: 0.1.5)
-reline (0.3.7, default: 0.3.2)
+reline (0.3.8, default: 0.3.2)
 representable (3.2.0)
 resolv (default: 0.2.2)
 resolv-replace (default: 0.1.1)
@@ -522,7 +523,7 @@ retriable (3.1.2)
 rexml (3.2.6, 3.2.5)
 rinda (default: 0.1.1)
 rouge (4.1.3, 2.0.7)
-rss (0.2.9)
+rss (0.3.0, 0.2.9)
 ruby2_keywords (default: 0.0.5)
 rubyzip (2.3.2)
 securerandom (default: 0.2.2)
@@ -548,7 +549,7 @@ tsort (default: 0.1.1)
 tty-cursor (0.7.1)
 tty-screen (0.8.1)
 tty-spinner (0.9.3)
-typeprof (0.21.7, 0.21.3)
+typeprof (0.21.8, 0.21.3)
 uber (0.1.0)
 un (default: 0.2.1)
 unf (0.1.4)
@@ -589,7 +590,7 @@ Python:
 
 === Linux info =========================
 * uname -a
-Linux stg-prdfree-20-04-usc1c-53e09dfd-6822-48f2-ac75-bf6c41c471b1 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux stg-prdfree-20-04-usc1c-92cc86a4-bb13-4edd-9f1e-8dab55840523 5.13.0-1015-gcp #18~20.04.1-Ubuntu SMP Wed Feb 16 09:46:08 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 * uname -r
 5.13.0-1015-gcp
 * lsb_release --all
@@ -651,8 +652,8 @@ Server:
  Architecture: x86_64
  CPUs: 16
  Total Memory: 62.8GiB
- Name: stg-prdfree-20-04-usc1c-53e09dfd-6822-48f2-ac75-bf6c41c471b1
- ID: 34eb159a-d040-4054-828b-01ec6d668647
+ Name: stg-prdfree-20-04-usc1c-92cc86a4-bb13-4edd-9f1e-8dab55840523
+ ID: a6ba7d75-0ea7-47c5-96ec-3cda0707bb04
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Experimental: false
@@ -664,10 +665,10 @@ Server:
 
 
 === Docker pre-cached images ===========
-bitriseio/android-ndk-20.04 - 47.1GB
-quay.io/bitriseio/android-ndk-20.04 - 47.1GB
-bitriseio/android-20.04 - 44.7GB
-quay.io/bitriseio/android-20.04 - 44.7GB
+quay.io/bitriseio/android-ndk-20.04 - 48.3GB
+bitriseio/android-ndk-20.04 - 48.3GB
+bitriseio/android-20.04 - 45.9GB
+quay.io/bitriseio/android-20.04 - 45.9GB
 bitriseio/bitrise-base-20.04 - 3.68GB
 quay.io/bitriseio/bitrise-base-20.04 - 3.68GB
 bitrisedev/build-env - 5.2GB
@@ -677,13 +678,13 @@ bitrisedev/build-env - 5.2GB
 === System infos =======================
 * Free disk space under / :
 Filesystem      Size  Used Avail Use% Mounted on
-overlay         194G   59G  135G  31% /
+overlay         194G   60G  135G  31% /
 * Free disk space under /bitrise/ :
 Filesystem      Size  Used Avail Use% Mounted on
-/dev/root       194G   59G  135G  31% /bitrise
+/dev/root       194G   60G  135G  31% /bitrise
 * Free RAM & swap:
               total        used        free      shared  buff/cache   available
-Mem:           62Gi       785Mi        59Gi       1.0Mi       2.9Gi        61Gi
+Mem:           62Gi       710Mi        60Gi       1.0Mi       1.7Gi        61Gi
 Swap:         4.0Gi          0B       4.0Gi
 ========================================
 
