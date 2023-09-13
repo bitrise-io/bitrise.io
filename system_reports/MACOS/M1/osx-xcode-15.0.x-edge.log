@@ -2,7 +2,7 @@
 
 
 === Revision / ID ======================
-* BITRISE_OSX_STACK_REV_ID: v2023-09-05
+* BITRISE_OSX_STACK_REV_ID: v2023-09-13
 ========================================
 
 
@@ -28,8 +28,8 @@
 * Go default version: go version go1.21.0 darwin/arm64
   1.20.7
   1.20
- *1.21.0
-  1.21
+  1.21.0
+ *1.21
   1
 1 => 1.21.0
 1.20 => 1.20.7
@@ -81,7 +81,7 @@ junitreport 2.0.2
 
 * git: git version 2.42.0
 * git lfs: git-lfs/3.4.0 (GitHub; darwin arm64; go 1.20.6)
-* mercurial/hg: Mercurial Distributed SCM (version 6.5.1)
+* mercurial/hg: Mercurial Distributed SCM (version 6.5.2)
 * curl: curl 8.2.1 (aarch64-apple-darwin22.4.0) libcurl/8.2.1 (SecureTransport) OpenSSL/3.1.2 zlib/1.2.11 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.4 libssh2/1.11.0 nghttp2/1.55.1 librtmp/2.3 OpenLDAP/2.6.6
 * wget: GNU Wget 1.21.4 built on darwin22.4.0.
 * rsync: rsync  version 2.6.9  protocol version 29
@@ -90,24 +90,24 @@ junitreport 2.0.2
 * tar: bsdtar 3.5.3 - libarchive 3.5.3 zlib/1.2.11 liblzma/5.0.5 bz2lib/1.0.8 
 * tree: tree v2.1.1 © 1996 - 2023 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro
 
-* brew: Homebrew 4.1.8
-Homebrew/homebrew-core (git revision 260dbe7542f; last commit 2023-09-05)
-Homebrew/homebrew-cask (git revision 3cc0118f36; last commit 2023-09-05)
+* brew: Homebrew 4.1.11
+Homebrew/homebrew-core (git revision c051e18219c; last commit 2023-09-08)
+Homebrew/homebrew-cask (git revision eb84598b68; last commit 2023-09-07)
 * gtimeout: timeout (GNU coreutils) 9.4
 * watchman: 2023.09.04.00
-* flow: Flow, a static type checker for JavaScript, version 0.215.1
+* flow: Flow, a static type checker for JavaScript, version 0.216.1
 * carthage: 0.39.0
 * imagemagick (convert): Version: ImageMagick 7.1.1-15 Q16-HDRI aarch64 21298 https://imagemagick.org
 * screen: Screen version 4.09.01 (GNU) 20-Aug-23
 * firebase: 12.4.8
 * applesimutils version 0.9.9
-* jq: 1.6
+* jq: 1.7
 * xcbeautify: 1.0.0
 * XCLogParser 0.2.36
 * Screen 4.09.01
 * applesimutils 0.9.9
 * OpenConnect version v9.12
-* aws-cli: aws-cli/2.13.15 Python/3.11.5 Darwin/22.6.0 source/arm64 prompt/off
+* aws-cli: aws-cli/2.13.17 Python/3.11.5 Darwin/22.6.0 source/arm64 prompt/off
 * cmake: 3.27.4
 * danger-swift: 3.17.1
 [0;0m
@@ -131,7 +131,7 @@ argon2 20190702_1
 aria2 1.36.0_2
 aspell 0.60.8
 autoconf 2.71
-awscli 2.13.15
+awscli 2.13.17
 bazelisk 1.18.0
 boost 1.82.0_1
 brotli 1.1.0
@@ -151,7 +151,7 @@ edencommon 2023.09.04.00
 fb303 2023.09.04.00
 fbthrift 2023.09.04.00
 fizz 2023.09.04.00
-flow 0.215.1
+flow 0.216.1
 fmt 10.1.1
 folly 2023.09.04.00
 fontconfig 2.14.2
@@ -161,7 +161,7 @@ fvm 2.4.1
 gd 2.3.3_6
 gettext 0.21.1
 gflags 2.2.2
-gh 2.33.0
+gh 2.34.0
 ghostscript 10.01.2
 giflib 5.2.1
 git 2.42.0
@@ -185,7 +185,7 @@ jbig2dec 0.19
 jenv 0.5.6
 jpeg-turbo 3.0.0
 jpeg-xl 0.8.2_1
-jq 1.6
+jq 1.7
 kotlin 1.9.10
 krb5 1.21.2
 libassuan 2.5.6
@@ -226,7 +226,7 @@ lz4 1.9.4
 lzo 2.10
 m4 1.4.19
 maven 3.9.4
-mercurial 6.5.1
+mercurial 6.5.2
 mint 0.17.5
 mpdecimal 2.5.1
 nettle 3.9.1
@@ -3441,7 +3441,7 @@ Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 Target: arm64-apple-darwin22.6.0
 
  * xcrun swift --version
-Apple Swift version 5.9 (swiftlang-5.9.0.128.106 clang-1500.0.40.1)
+Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 Target: arm64-apple-macosx13.0
 
  * swift-format --version
@@ -3457,10 +3457,10 @@ Target: arm64-apple-macosx13.0
 
 * Xcode Version:
 Xcode 15.0
-Build version 15A5229m
+Build version 15A240d
 
 * /usr/bin/swift --version
-Apple Swift version 5.9 (swiftlang-5.9.0.128.106 clang-1500.0.40.1)
+Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 Target: arm64-apple-macosx13.0
 
 * Installed SDKs:
@@ -3482,12 +3482,6 @@ tvOS SDKs:
 
 tvOS Simulator SDKs:
 	Simulator - tvOS 17.0         	-sdk appletvsimulator17.0
-
-visionOS SDKs:
-	visionOS 1.0                  	-sdk xros1.0
-
-visionOS Simulator SDKs:
-	Simulator - visionOS 1.0      	-sdk xrsimulator1.0
 
 watchOS SDKs:
 	watchOS 10.0                  	-sdk watchos10.0
@@ -3526,6 +3520,10 @@ iPhone 14 (com.apple.CoreSimulator.SimDeviceType.iPhone-14) [/Applications/Xcode
 iPhone 14 Plus (com.apple.CoreSimulator.SimDeviceType.iPhone-14-Plus) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPhone 14 Plus.simdevicetype]
 iPhone 14 Pro (com.apple.CoreSimulator.SimDeviceType.iPhone-14-Pro) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPhone 14 Pro.simdevicetype]
 iPhone 14 Pro Max (com.apple.CoreSimulator.SimDeviceType.iPhone-14-Pro-Max) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPhone 14 Pro Max.simdevicetype]
+iPhone 15 (com.apple.CoreSimulator.SimDeviceType.iPhone-15) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPhone 15.simdevicetype]
+iPhone 15 Plus (com.apple.CoreSimulator.SimDeviceType.iPhone-15-Plus) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPhone 15 Plus.simdevicetype]
+iPhone 15 Pro (com.apple.CoreSimulator.SimDeviceType.iPhone-15-Pro) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPhone 15 Pro.simdevicetype]
+iPhone 15 Pro Max (com.apple.CoreSimulator.SimDeviceType.iPhone-15-Pro-Max) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPhone 15 Pro Max.simdevicetype]
 iPod touch (7th generation) (com.apple.CoreSimulator.SimDeviceType.iPod-touch--7th-generation-) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPod touch (7th generation).simdevicetype]
 iPad mini 4 (com.apple.CoreSimulator.SimDeviceType.iPad-mini-4) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPad mini 4.simdevicetype]
 iPad Air 2 (com.apple.CoreSimulator.SimDeviceType.iPad-Air-2) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/iPad Air 2.simdevicetype]
@@ -3580,14 +3578,16 @@ Apple Watch SE (44mm) (2nd generation) (com.apple.CoreSimulator.SimDeviceType.Ap
 Apple Watch Series 8 (41mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-8-41mm) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/WatchOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/Apple Watch Series 8 (41mm).simdevicetype]
 Apple Watch Series 8 (45mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-8-45mm) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/WatchOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/Apple Watch Series 8 (45mm).simdevicetype]
 Apple Watch Ultra (49mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Ultra-49mm) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/WatchOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/Apple Watch Ultra (49mm).simdevicetype]
-Apple Vision Pro (com.apple.CoreSimulator.SimDeviceType.Apple-Vision-Pro) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/XROS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/Apple Vision Pro.simdevicetype]
+Apple Watch Series 9 (41mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-9-41mm) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/WatchOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/Apple Watch Series 9 (41mm).simdevicetype]
+Apple Watch Series 9 (45mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Series-9-45mm) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/WatchOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/Apple Watch Series 9 (45mm).simdevicetype]
+Apple Watch Ultra 2 (49mm) (com.apple.CoreSimulator.SimDeviceType.Apple-Watch-Ultra-2-49mm) [/Applications/Xcode-15.0.0.app/Contents/Developer/Platforms/WatchOS.platform/Library/Developer/CoreSimulator/Profiles/DeviceTypes/Apple Watch Ultra 2 (49mm).simdevicetype]
 == Runtimes ==
 iOS 15.5 (15.5 - 19F70) - com.apple.CoreSimulator.SimRuntime.iOS-15-5 [/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 15.5.simruntime]
 iOS 16.4 (16.4 - 20E247) - com.apple.CoreSimulator.SimRuntime.iOS-16-4 [/Library/Developer/CoreSimulator/Volumes/iOS_20E247/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 16.4.simruntime]
-iOS 17.0 (17.0 - 21A5326a) - com.apple.CoreSimulator.SimRuntime.iOS-17-0 [/Library/Developer/CoreSimulator/Volumes/iOS_21A5326a/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime]
-tvOS 17.0 (17.0 - 21J5352a) - com.apple.CoreSimulator.SimRuntime.tvOS-17-0 [/Library/Developer/CoreSimulator/Volumes/tvOS_21J5352a/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 17.0.simruntime]
+iOS 17.0 (17.0 - 21A328) - com.apple.CoreSimulator.SimRuntime.iOS-17-0 [/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime]
+tvOS 17.0 (17.0 - 21J353) - com.apple.CoreSimulator.SimRuntime.tvOS-17-0 [/Library/Developer/CoreSimulator/Volumes/tvOS_21J353/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 17.0.simruntime]
 watchOS 9.4 (9.4 - 20T253) - com.apple.CoreSimulator.SimRuntime.watchOS-9-4 [/Library/Developer/CoreSimulator/Volumes/watchOS_20T253/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS 9.4.simruntime]
-watchOS 10.0 (10.0 - 21R5355a) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0 [/Library/Developer/CoreSimulator/Volumes/watchOS_21R5355a/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS 10.0.simruntime]
+watchOS 10.0 (10.0 - 21R355) - com.apple.CoreSimulator.SimRuntime.watchOS-10-0 [/Library/Developer/CoreSimulator/Volumes/watchOS_21R355/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS 10.0.simruntime]
 visionOS 1.0 (1.0 - 21N5207f) - com.apple.CoreSimulator.SimRuntime.xrOS-1-0 [/Library/Developer/CoreSimulator/Volumes/xrOS_21N5207f/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 1.0.simruntime]
 == Devices ==
 -- iOS 15.5 (19F70) [/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 15.5.simruntime] --
@@ -3620,7 +3620,7 @@ visionOS 1.0 (1.0 - 21N5207f) - com.apple.CoreSimulator.SimRuntime.xrOS-1-0 [/Li
     iPad mini (6th generation) (C9F179BD-82A4-4860-ADF9-35F8E3B6DE41) (Shutdown) 
     iPad Pro (11-inch) (4th generation) (7DB8E0C9-2518-4E88-A20D-9A0B35AB016C) (Shutdown) 
     iPad Pro (12.9-inch) (6th generation) (2BBB469F-96B5-4FC0-BB00-E5FBDA4FB312) (Shutdown) 
--- iOS 17.0 (21A5326a) [/Library/Developer/CoreSimulator/Volumes/iOS_21A5326a/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime] --
+-- iOS 17.0 (21A328) [/Library/Developer/CoreSimulator/Volumes/iOS_21A328/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 17.0.simruntime] --
     Bitrise iOS default (6A0A85DA-93C0-4277-BE98-C308808E0EAD) (Shutdown) 
     iPhone 11 (176D7AC9-439C-426B-9B33-B0F141F55F30) (Shutdown) 
     iPhone SE (3rd generation) (5CEB65A2-E7C0-40C8-B9A8-630A0B19A5C2) (Shutdown) 
@@ -3628,12 +3628,16 @@ visionOS 1.0 (1.0 - 21N5207f) - com.apple.CoreSimulator.SimRuntime.xrOS-1-0 [/Li
     iPhone 14 Plus (9732ECC3-D793-460E-804A-1638A7E7CD4E) (Shutdown) 
     iPhone 14 Pro (D9FE9FCC-6C76-440E-9BFC-6595A35D1B95) (Shutdown) 
     iPhone 14 Pro Max (20547134-BE1E-449C-B0DC-D44859857A3C) (Shutdown) 
+    iPhone 15 (7B7F8C19-2DAB-4BFD-9004-FAD320C67321) (Shutdown) 
+    iPhone 15 Plus (14D7046C-07F5-46A9-8AD8-6E4C48AF14F6) (Shutdown) 
+    iPhone 15 Pro (2F9F2578-17A5-48A1-A936-64F280BDC8E3) (Shutdown) 
+    iPhone 15 Pro Max (EE841E6E-8764-4232-B1BC-4D603CA01E04) (Shutdown) 
     iPad Air (5th generation) (802E8609-5E83-44E0-AB9A-51B9DD1AD6D8) (Shutdown) 
     iPad (10th generation) (CB63B72E-92BB-466A-BD29-664447FA074E) (Shutdown) 
     iPad mini (6th generation) (944C22E2-AEA1-4334-9A0D-D820B6B1D9A5) (Shutdown) 
     iPad Pro (11-inch) (4th generation) (40EE90C7-711F-4A30-9A37-DF5D280F8C9B) (Shutdown) 
     iPad Pro (12.9-inch) (6th generation) (FCCB578E-B008-41B9-9A80-A9B23BCFC659) (Shutdown) 
--- tvOS 17.0 (21J5352a) [/Library/Developer/CoreSimulator/Volumes/tvOS_21J5352a/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 17.0.simruntime] --
+-- tvOS 17.0 (21J353) [/Library/Developer/CoreSimulator/Volumes/tvOS_21J353/Library/Developer/CoreSimulator/Profiles/Runtimes/tvOS 17.0.simruntime] --
     Apple TV (7D6B7191-92A3-43C0-9D41-4DD37668C1A6) (Shutdown) 
     Apple TV 4K (3rd generation) (4A1C1580-F4FA-47E0-A56E-C80E1229606F) (Shutdown) 
     Apple TV 4K (3rd generation) (at 1080p) (B72181CF-5C87-4876-8421-0A93D549A310) (Shutdown) 
@@ -3649,7 +3653,7 @@ visionOS 1.0 (1.0 - 21N5207f) - com.apple.CoreSimulator.SimRuntime.xrOS-1-0 [/Li
     Apple Watch Series 8 (41mm) (CAAF5750-1097-439F-9BFC-0B7468C54E41) (Shutdown) 
     Apple Watch Series 8 (45mm) (763734A4-3B19-4AEC-989D-62F03734E251) (Shutdown) 
     Apple Watch Ultra (49mm) (D136264D-8BCC-40F4-B8A5-AAEA0FE82FBB) (Shutdown) 
--- watchOS 10.0 (21R5355a) [/Library/Developer/CoreSimulator/Volumes/watchOS_21R5355a/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS 10.0.simruntime] --
+-- watchOS 10.0 (21R355) [/Library/Developer/CoreSimulator/Volumes/watchOS_21R355/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS 10.0.simruntime] --
     Apple Watch Series 5 (40mm) (28D02477-9451-40C4-A252-D6CACA10F217) (Shutdown) 
     Apple Watch Series 5 (44mm) (9A06A979-AC15-419D-808A-68ADA00E2216) (Shutdown) 
     Apple Watch Series 6 (40mm) (E970FEF2-A4C5-4344-8B72-2359A2FB6A14) (Shutdown) 
@@ -3661,11 +3665,14 @@ visionOS 1.0 (1.0 - 21N5207f) - com.apple.CoreSimulator.SimRuntime.xrOS-1-0 [/Li
     Apple Watch Series 8 (41mm) (6B59709C-292A-4A3B-B352-6D5B3A6A5703) (Shutdown) 
     Apple Watch Series 8 (45mm) (4666E879-87A3-481B-AE1E-94C8B0AC6D78) (Shutdown) 
     Apple Watch Ultra (49mm) (15CB94E7-F3C9-4F7D-9963-EDB391F09B37) (Shutdown) 
+    Apple Watch Series 9 (41mm) (DAB51699-799B-41A6-BDEC-525C0BE42058) (Shutdown) 
+    Apple Watch Series 9 (45mm) (7D25CFB7-9E8E-4E3C-AB55-070556C4D8E9) (Shutdown) 
+    Apple Watch Ultra 2 (49mm) (318F14CE-C939-4887-9A43-259F80C7C671) (Shutdown) 
 -- visionOS 1.0 (21N5207f) [/Library/Developer/CoreSimulator/Volumes/xrOS_21N5207f/Library/Developer/CoreSimulator/Profiles/Runtimes/xrOS 1.0.simruntime] --
 == Device Pairs ==
-EDF9165A-245E-4DA2-B27D-7CD70B390901 (active, disconnected)
+1AD8BD99-0E53-4D98-941B-D9C3788D1781 (active, disconnected)
     Watch: Apple Watch Series 7 (45mm) (FD68F5CB-502B-4168-9296-D6B72A0BE5F3) (Shutdown)
-    Phone: iPhone 14 (63FA2B69-72CB-49CC-97FE-47FD3DB0C33D) (Shutdown)
+    Phone: iPhone 15 (7B7F8C19-2DAB-4BFD-9004-FAD320C67321) (Shutdown)
 7AA44F3A-1553-4607-B7A6-B190AE48A1A6 (active, disconnected)
     Watch: Apple Watch Series 8 (41mm) (6B59709C-292A-4A3B-B352-6D5B3A6A5703) (Shutdown)
     Phone: iPhone 14 Plus (9732ECC3-D793-460E-804A-1638A7E7CD4E) (Shutdown)
@@ -3675,6 +3682,15 @@ F28974DF-E65F-4F4B-AA2B-BA6EF5FF1144 (active, disconnected)
 F7A918B5-C608-4119-854D-CB06C08B3C98 (active, disconnected)
     Watch: Apple Watch Ultra (49mm) (15CB94E7-F3C9-4F7D-9963-EDB391F09B37) (Shutdown)
     Phone: iPhone 14 Pro Max (20547134-BE1E-449C-B0DC-D44859857A3C) (Shutdown)
+5AD9A169-CCD1-4078-8F93-402BD52A0F6D (active, disconnected)
+    Watch: Apple Watch Series 9 (41mm) (DAB51699-799B-41A6-BDEC-525C0BE42058) (Shutdown)
+    Phone: iPhone 15 Plus (14D7046C-07F5-46A9-8AD8-6E4C48AF14F6) (Shutdown)
+6A52EE7F-90CF-482B-BECF-001D108AE539 (active, disconnected)
+    Watch: Apple Watch Series 9 (45mm) (7D25CFB7-9E8E-4E3C-AB55-070556C4D8E9) (Shutdown)
+    Phone: iPhone 15 Pro (2F9F2578-17A5-48A1-A936-64F280BDC8E3) (Shutdown)
+7402A86D-AD5E-43CE-9068-5966BE62085D (active, disconnected)
+    Watch: Apple Watch Ultra 2 (49mm) (318F14CE-C939-4887-9A43-259F80C7C671) (Shutdown)
+    Phone: iPhone 15 Pro Max (EE841E6E-8764-4232-B1BC-4D603CA01E04) (Shutdown)
 
 ========================================
 
@@ -3695,23 +3711,23 @@ Software:
       Kernel Version: Darwin 22.6.0
       Boot Volume: Macintosh HD
       Boot Mode: Normal
-      Computer Name: vm-osx-ventura-15-edge-g2-m1-max.5core-9faabbfc-4b4b-46ad-8d74-4cac1ae0f040
+      Computer Name: vm-osx-ventura-15-edge-g2-m1-max.5core-afaaa40f-1215-4175-bb97-bcd9eac4fa6c
       User Name: vagrant (vagrant)
       Secure Virtual Memory: Enabled
       System Integrity Protection: Disabled
-      Time since boot: 2 minutes, 38 seconds
+      Time since boot: 2 minutes, 35 seconds
 
 
 ========================================
 
 Rosetta translation cache size
-236M	/var/db/oah
+245M	/var/db/oah
 
 
 === System infos =======================
 * Free disk space:
     Filesystem         Size        Avail
-/dev/disk2s1s1        230Gi        121Gi
+/dev/disk2s1s1        230Gi        116Gi
 ========================================
 
 --- Android
@@ -3775,6 +3791,7 @@ sqlite3
 * build-tools content:
 32.0.0
 32.1.0-rc1
+34.0.0
 
 * extras content:
 /usr/local/share/android-sdk/extras
